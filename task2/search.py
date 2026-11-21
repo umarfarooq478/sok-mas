@@ -5,6 +5,7 @@ from net import get
 from queries import QUERIES
 NS = {"a": "http://www.w3.org/2005/Atom"}
 N = 100
+USE_DBLP = False  # dblp.org serves a bot-check page to scripts; not bypassed. See protocol, limitations.
 hits = []
 
 def row(src, fam, q, rank, **kw):
@@ -42,7 +43,7 @@ for fam, qs in QUERIES.items():
                     venue=p.get("venue"), citations=p.get("citationCount"),
                     authors=[a["name"] for a in (p.get("authors") or [])][:8], abstract=p.get("abstract") or "")
         url = "https://dblp.org/search/publ/api?" + urllib.parse.urlencode({"q": q, "format": "json", "h": N})
-        raw = get(url)
+        raw = get(url, tries=1) if USE_DBLP else None
         if raw:
             for r, h in enumerate((json.loads(raw)["result"]["hits"].get("hit") or [])):
                 i = h["info"]

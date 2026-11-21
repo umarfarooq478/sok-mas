@@ -26,6 +26,8 @@ def get(url, ext=".json", binary=False, tries=5, dest=None):
         try:
             req = urllib.request.Request(url, headers={"User-Agent": UA})
             data = urllib.request.urlopen(req, timeout=90).read()
+            if ext == ".json" and not data.lstrip()[:1] in (b"{", b"["):
+                print("NOT-JSON (bot check?)", url[:100], file=sys.stderr); return None
             os.makedirs(os.path.dirname(p), exist_ok=True)
             open(p, "wb").write(data)
             with open(os.path.join(ROOT, "_index.tsv"), "a") as f:
