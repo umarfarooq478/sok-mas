@@ -36,3 +36,10 @@ HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=role+drift+
 HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=role+drift+specification+multi-agent+LLM&limit=100
 HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=role+drift+specification+multi-agent+LLM&limit=100
 HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=role+drift+specification+multi-agent+LLM&limit=100
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=role+drift+specification+multi-agent+LLM&limit=100
+A-benign role drift specification multi-agent LLM 400
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=multi-agent+debate+failure+consensus&limit=100&fie
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=multi-agent+debate+failure+consensus&limit=100&fie
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=multi-agent+debate+failure+consensus&limit=100&fie
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=multi-agent+debate+failure+consensus&limit=100&fie
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=multi-agent+debate+failure+consensus&limit=100&fie
