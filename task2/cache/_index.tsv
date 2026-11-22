@@ -433,3 +433,11 @@ api.openalex.org/14fd50129155d21f.json	https://api.openalex.org/works?filter=cit
 ../papers/2610.31985.pdf	https://arxiv.org/pdf/2610.31985
 api.semanticscholar.org/a287bcad4466e428.json	https://api.semanticscholar.org/graph/v1/paper/search?query=fault+injection+multi-agent+LLM&limit=100&fields=title%2Cauthors%2Cyear%2Cvenue%2CexternalIds%2CcitationCount%2Cabstract%2CpublicationDate%2CpublicationTypes
 api.semanticscholar.org/2f8708b1b307329f.json	https://api.semanticscholar.org/graph/v1/paper/search?query=error+propagation+multi-agent+LLM&limit=100&fields=title%2Cauthors%2Cyear%2Cvenue%2CexternalIds%2CcitationCount%2Cabstract%2CpublicationDate%2CpublicationTypes
+api.semanticscholar.org/1b45563e3fd0f631.json	https://api.semanticscholar.org/graph/v1/paper/search?query=hallucination+propagation+multi-agent+LLM&limit=100&fields=title%2Cauthors%2Cyear%2Cvenue%2CexternalIds%2CcitationCount%2Cabstract%2CpublicationDate%2CpublicationTypes
+api.semanticscholar.org/9e35c4477f1e24b2.json	https://api.semanticscholar.org/graph/v1/paper/search?query=cascading+errors+multi-agent+LLM+adversarial&limit=100&fields=title%2Cauthors%2Cyear%2Cvenue%2CexternalIds%2CcitationCount%2Cabstract%2CpublicationDate%2CpublicationTypes
+api.semanticscholar.org/1968ea7a0666659f.json	https://api.semanticscholar.org/graph/v1/paper/search?query=provenance+authorization+LLM+agents&limit=100&fields=title%2Cauthors%2Cyear%2Cvenue%2CexternalIds%2CcitationCount%2Cabstract%2CpublicationDate%2CpublicationTypes
+../papers/2504.00374.pdf	https://arxiv.org/pdf/2504.00374
+../papers/2606.01365.pdf	https://arxiv.org/pdf/2606.01365
+../papers/2606.20493.pdf	https://arxiv.org/pdf/2606.20493
+../papers/2607.24893.pdf	https://arxiv.org/pdf/2607.24893
+../papers/2606.19111.pdf	https://arxiv.org/pdf/2606.19111
