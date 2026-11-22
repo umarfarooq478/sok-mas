@@ -1,0 +1,1142 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/u1BHiSnIfpY5eFM/60p0dFcWGTk</id>
+  <title>arXiv Query: search_query=all:collusion AND all:LLM AND all:agents&amp;id_list=&amp;start=0&amp;max_results=100</title>
+  <updated>2026-11-21T23:58:28Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:collusion+AND+(all:LLM+AND+all:agents)&amp;start=0&amp;max_results=100&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>100</opensearch:itemsPerPage>
+  <opensearch:totalResults>46</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2611.10620v1</id>
+    <title>What Do Collusion Probes Read? Three Pitfalls in Evaluating Multi-Agent Collusion Monitors</title>
+    <updated>2026-11-07T09:53:19Z</updated>
+    <link href="https://arxiv.org/abs/2611.10620v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.10620v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Activation probes look like near-perfect monitors for secret collusion among large language model (LLM) agents. We show that they mostly detect that an agent was told to collude, not that it decided to. Our benchmark (2,500 committee and 1,476 code-review episodes) adds agents who receive the collusion instruction and refuse it, separating instruction from decision. Published detectors barely tell colluders from these refusers, and our best probe separates them mostly by reading the instruction: without it, agent AUROC falls from 1.00 to 0.61. Two further pitfalls inflate reported results: scored after the vote, a rule that only reads the votes reaches AUROC 0.990 but finds nothing before it; and in 57% of attempts no colluder argues for the target in public. The decision is still there: a probe trained on agents' own choices reads it (AUROC 0.73 without the instruction), and probes find colluders whose goal was fine-tuned into the weights (AUROC 0.995; pre-registered). We turn the controls into a protocol for testing any collusion monitor, and adapt scan statistics into an online monitor for groups of any size.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-07T09:53:19Z</published>
+    <arxiv:comment>30 pages, 5 figures. Code: https://github.com/mainul3195/collusion-probe-pitfalls ; data: https://huggingface.co/datasets/mainul3195/collusion-probe-pitfalls ; archive: doi:10.5281/zenodo.23636508</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Mainul Hasan Mohsin</name>
+    </author>
+    <author>
+      <name>Mohammad Shahidur Rahman</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.27593v2</id>
+    <title>Voluntary Collusion with Secret Tools in Competing LLM Agents</title>
+    <updated>2026-10-05T19:46:20Z</updated>
+    <link href="https://arxiv.org/abs/2605.27593v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.27593v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Even when a tool is explicitly described as unfair and harmful to others, ostensibly safety-aligned LLM agents still voluntarily engage in secret collusion whenever doing so confers a strategic advantage. To investigate this phenomenon, we introduce an empirical framework built on two strategic multi-agent environments: Liar's Bar, a competitive deception scenario, and Cleanup, a mixed-motive resource-management scenario, in which agents are offered secret collusion tools that provide significant advantages while clearly disadvantaging the other agents. Across 12 models (at the 7B, 70B, and proprietary scales) and 6 prompt variants, we find that most agents consistently accept these tools and develop collusive strategies, while explicitly acknowledging the unfairness of the tools before accepting. We further show that neither the unfairness labels nor baseline alignment alone reliably deters collusion: only explicit ethical framing reduces adoption and, even then, smaller models remain susceptible. More broadly, our work presents the first systematic investigation of voluntary collusion adoption in LLM-based multi-agent systems, and suggests that preventing such behaviour requires explicit safeguards rather than reliance on general alignment.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-26T19:06:39Z</published>
+    <arxiv:comment>54 pages. v2: revised and extended version</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Xijie Zeng</name>
+    </author>
+    <author>
+      <name>Frank Rudzicz</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.17774v1</id>
+    <title>Prompt Optimization Enables Stable Algorithmic Collusion in LLM Agents</title>
+    <updated>2026-04-20T03:53:08Z</updated>
+    <link href="https://arxiv.org/abs/2604.17774v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.17774v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM agents in markets present algorithmic collusion risks. While prior work shows LLM agents reach supracompetitive prices through tacit coordination, existing research focuses on hand-crafted prompts. The emerging paradigm of prompt optimization necessitates new methodologies for understanding autonomous agent behavior. We investigate whether prompt optimization leads to emergent collusive behaviors in market simulations. We propose a meta-learning loop where LLM agents participate in duopoly markets and an LLM meta-optimizer iteratively refines shared strategic guidance. Our experiments reveal that meta-prompt optimization enables agents to discover stable tacit collusion strategies with substantially improved coordination quality compared to baseline agents. These behaviors generalize to held-out test markets, indicating discovery of general coordination principles. Analysis of evolved prompts reveals systematic coordination mechanisms through stable shared strategies. Our findings call for further investigation into AI safety implications in autonomous multi-agent systems.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-20T03:53:08Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Yingtao Tian</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.24967v2</id>
+    <title>Emergent Collusion in Long-Horizon LLM Agent Interaction</title>
+    <updated>2026-09-26T08:28:29Z</updated>
+    <link href="https://arxiv.org/abs/2609.24967v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.24967v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM agents are increasingly deployed in collaborative settings, yet long-term interaction may give rise to undesirable coordination. We study the emergence of collusion in a long-horizon multi-agent environment: two agents repeatedly complete individual tasks, share task logs, verify each other's work, and receive rewards. We introduce realistic constraints under which higher reward is attainable only by violating the verification protocol, and find that agents increasingly deviate from the protocol over repeated interactions. Collusion emerges in 94% of trajectories across 10 models, and more capable models within the same family reach it earlier. Controlled peer interventions show that collusion is shaped by peer behavior, while ablations reveal additional effects of the verification feedback agents receive, their interaction history, and the reward structure. In particular, restricting the amount and scope of interaction history available to agents reduces collusion. Overall, our findings show that long-horizon interaction can reshape how agents coordinate in ways that create safety risks.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-21T17:52:48Z</published>
+    <arxiv:comment>53 pages, 13 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Xinrui Shi</name>
+    </author>
+    <author>
+      <name>Yanzhe Zhang</name>
+    </author>
+    <author>
+      <name>Diyi Yang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.39660v1</id>
+    <title>Sticky Collusion: Persistence of LLM Agent Collusion after Incentive Removal and Partner Replacement</title>
+    <updated>2026-10-29T09:13:06Z</updated>
+    <link href="https://arxiv.org/abs/2610.39660v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.39660v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We ask whether collusion between AI agents survives once formed, when its incentive is removed or a colluder is replaced. Q-learning pricing agents stop colluding with a new rival; we test whether LLM agents do. We use the joint-task environment of Shi et al.\ (2026), where two agents verify each other's work under a rule they cannot satisfy and a reward that favours acceptance. We save each pair's history once its collusion has formed and resume it under interventions, with three models (GPT-6-Luna, DeepSeek V4.1 Flash and Gemini-3.1-Flash-Lite), \TotalHistories{} saved histories and \TotalRuns{} runs. Collusion is \emph{sticky}. First, it outlives its incentive: told that the reward has stopped, pairs still accept each other's unverified work in \GptToldRate, \DsToldRate{} and \GemToldRate{} of episodes, including pairs whose collusion began with an explicit agreement, and a payoff penalty has no significant effect. Second, replacing a colluder ends the pair's collusion but not the colluder's behaviour. Without the reward, the remaining colluder still accepts unverified work in \GptSwapSilentColluderRate, \DsSwapSilentColluderRate{} and \GemSwapSilentColluderRate{} of its verdicts while the newcomer never does; with the reward, collusion re-forms around it, even when the newcomer is a different model. Third, the agents' memory carries it: wiping memory ends it in every history, but partial memory often sustains it. Fourth, removing its cause ends collusion that has already formed: once the channel is repaired, colluders reject planted faulty work as reliably as fresh agents, immediately and with no monitor needed to catch it first.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-29T09:13:06Z</published>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Joshua Adrian Cahyono</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2507.01413v1</id>
+    <title>Evaluating LLM Agent Collusion in Double Auctions</title>
+    <updated>2025-07-02T07:06:49Z</updated>
+    <link href="https://arxiv.org/abs/2507.01413v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2507.01413v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) have demonstrated impressive capabilities as autonomous agents with rapidly expanding applications in various domains. As these agents increasingly engage in socioeconomic interactions, identifying their potential for undesirable behavior becomes essential. In this work, we examine scenarios where they can choose to collude, defined as secretive cooperation that harms another party. To systematically study this, we investigate the behavior of LLM agents acting as sellers in simulated continuous double auction markets. Through a series of controlled experiments, we analyze how parameters such as the ability to communicate, choice of model, and presence of environmental pressures affect the stability and emergence of seller collusion. We find that direct seller communication increases collusive tendencies, the propensity to collude varies across models, and environmental pressures, such as oversight and urgency from authority figures, influence collusive behavior. Our findings highlight important economic and ethical considerations for the deployment of LLM-based market agents.</summary>
+    <category term="cs.GT" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-07-02T07:06:49Z</published>
+    <arxiv:primary_category term="cs.GT"/>
+    <author>
+      <name>Kushal Agrawal</name>
+    </author>
+    <author>
+      <name>Verona Teo</name>
+    </author>
+    <author>
+      <name>Juan J. Vazquez</name>
+    </author>
+    <author>
+      <name>Sudarsh Kunnavakkam</name>
+    </author>
+    <author>
+      <name>Vishak Srikanth</name>
+    </author>
+    <author>
+      <name>Andy Liu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.18346v1</id>
+    <title>Faithful yet Collusive: Why Chain-of-Thought Monitoring Cannot Detect Collusion in LLM Pricing Agents under Oligopolistic Competition</title>
+    <updated>2026-09-16T09:09:26Z</updated>
+    <link href="https://arxiv.org/abs/2609.18346v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.18346v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLM) deployed as autonomous pricing agents may sustain supracompetitive prices through tacit coordination. We develop a causal graph divergence framework that separately measures structural faithfulness and intent faithfulness of LLM pricing agents in Bertrand competition. Across nine LLMs under duopoly and triopoly conditions, collusive behavior and chain-of-thought (CoT) faithfulness dissociate along both dimensions: the most collusive model accurately reports cooperative intent yet reasons structurally unfaithfully, while the most structurally faithful model sustains supra-Nash pricing under both market structures. These findings establish that CoT monitoring alone cannot serve as a standalone safeguard against algorithmic collusion.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-16T09:09:26Z</published>
+    <arxiv:comment>20 pages, Accepted to Findings of EMNLP 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <arxiv:journal_ref>https://aclanthology.org/2026.findings-emnlp.25/</arxiv:journal_ref>
+    <author>
+      <name>Dohun Lee</name>
+    </author>
+    <author>
+      <name>Hyunwoo Park</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.20281v1</id>
+    <title>On the Fragility of AI Agent Collusion</title>
+    <updated>2026-03-18T01:55:13Z</updated>
+    <link href="https://arxiv.org/abs/2603.20281v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.20281v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent work shows that pricing with symmetric LLM agents leads to algorithmic collusion. We show that collusion is fragile under the heterogeneity typical of real deployments. In a stylized repeated-pricing model, heterogeneity in patience or data access reduces the set of collusive equilibria. Experiments with open-source LLM agents (totaling over 2,000 compute hours) align with these predictions: patience heterogeneity reduces price lift from 22% to 10% above competitive levels; asymmetric data access, to 7%. Increasing the number of competing LLMs breaks up collusion; so does cross-algorithm heterogeneity, that is, setting LLMs against Q-learning agents. But model-size differences (e.g., 32B vs. 14B weights) do not; they generate leader-follower dynamics that stabilize collusion. We discuss antitrust implications, such as enforcement actions restricting data-sharing and policies promoting algorithmic diversity.</summary>
+    <category term="cs.GT" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-18T01:55:13Z</published>
+    <arxiv:comment>48 pages, 7 figures, 8 tables (including appendix)</arxiv:comment>
+    <arxiv:primary_category term="cs.GT"/>
+    <author>
+      <name>Jussi Keppo</name>
+    </author>
+    <author>
+      <name>Yuze Li</name>
+    </author>
+    <author>
+      <name>Gerry Tsoukalas</name>
+    </author>
+    <author>
+      <name>Nuo Yuan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.15198v3</id>
+    <title>Colosseum: Auditing Collusion in Cooperative Multi-Agent Systems</title>
+    <updated>2026-11-17T22:13:13Z</updated>
+    <link href="https://arxiv.org/abs/2602.15198v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.15198v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multi-agent systems, where LLM agents communicate through free-form language, enable sophisticated coordination for solving complex cooperative tasks. This surfaces a unique safety problem when a group of agents forms a coalition and colludes to pursue secondary goals and degrade the joint objective. In this paper, we present Colosseum, a framework for auditing LLM agents' collusive behavior in multi-agent settings. We ground how agents cooperate through a formal multi-agent decision-making framework and measure action-based collusive behavior in actions via regret relative to the cooperative optimum and compare it with communication-based collusive behavior. Colosseum enables audits of LLM agents for collusion under benign settings, different coalition objectives, persuasion tactics, and network topologies. We then introduce a new behavioral probe by creating secret communication channels between agents, showing that most out-of-the-box models exhibit a propensity to collude under this probe, which we term emergent collusion. Furthermore, we discover ``collusion on paper'' when agents plan to collude in text but often pick non-collusive actions. Colosseum provides a new way to audit collusion in cooperative multi-agent systems while presenting observations about how collusion emerges, what affects collusion efficacy, and which strategies may mitigate it.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-16T21:27:38Z</published>
+    <arxiv:comment>In Neurips'26. Code at https://github.com/umass-ai-safety/colosseum</arxiv:comment>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Mason Nakamura</name>
+    </author>
+    <author>
+      <name>Abhinav Kumar</name>
+    </author>
+    <author>
+      <name>Saswat Das</name>
+    </author>
+    <author>
+      <name>Sahar Abdelnabi</name>
+    </author>
+    <author>
+      <name>Saaduddin Mahmud</name>
+    </author>
+    <author>
+      <name>Ferdinando Fioretto</name>
+    </author>
+    <author>
+      <name>Shlomo Zilberstein</name>
+    </author>
+    <author>
+      <name>Eugene Bagdasarian</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2410.00031v2</id>
+    <title>Strategic Collusion of LLM Agents: Market Division in Multi-Commodity Competitions</title>
+    <updated>2025-05-16T10:05:18Z</updated>
+    <link href="https://arxiv.org/abs/2410.00031v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2410.00031v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Machine-learning technologies are seeing increased deployment in real-world market scenarios. In this work, we explore the strategic behaviors of large language models (LLMs) when deployed as autonomous agents in multi-commodity markets, specifically within Cournot competition frameworks. We examine whether LLMs can independently engage in anti-competitive practices such as collusion or, more specifically, market division. Our findings demonstrate that LLMs can effectively monopolize specific commodities by dynamically adjusting their pricing and resource allocation strategies, thereby maximizing profitability without direct human input or explicit collusion commands. These results pose unique challenges and opportunities for businesses looking to integrate AI into strategic roles and for regulatory bodies tasked with maintaining fair and competitive markets. The study provides a foundation for further exploration into the ramifications of deferring high-stakes decisions to LLM-based agents.</summary>
+    <category term="cs.GT" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-fin.CP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-09-19T20:10:40Z</published>
+    <arxiv:primary_category term="cs.GT"/>
+    <author>
+      <name>Ryan Y. Lin</name>
+    </author>
+    <author>
+      <name>Siddhartha Ojha</name>
+    </author>
+    <author>
+      <name>Kevin Cai</name>
+    </author>
+    <author>
+      <name>Maxwell F. Chen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.02153v1</id>
+    <title>Multi-Agent Collusion and the J-Space</title>
+    <updated>2026-11-01T19:36:13Z</updated>
+    <link href="https://arxiv.org/abs/2611.02153v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.02153v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM agents are increasingly deployed in Multi-Agent Systems (MAS), and they introduce the risk of coordination among agents that might escape human oversight. The J-space has been used to uncover deception in single LLMs, but its use for uncovering and steering collusion between agents remains unexplored. We show, with interpretability experiments on DeepSeek-V4-Flash (284B) on the NARCBench collusion benchmark, that colluding agents' J-space holds the collusion itself: before replying, 86% of colluders represent misrepresentation, concealment or remorse. In a steganographic card-counting task, the receiver's J-space holds a hidden count, and causal interventions alter its count. We also introduce the Jacobian Pair Contrast (J-PACT), an unsupervised method for detecting collusion between agents. We evaluate J-PACT on four open-weight models: GPT-OSS-20B, Llama-3.3-70B-IT, Qwen3-32B, and DeepSeek-V4-Flash (284B). J-PACT retains 85% of the above-chance AUROC of supervised NARCBench probes, matches them on steganographic scenarios, and names the colluding pair up to its complement in 99% of detected runs.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-01T19:36:13Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Marco Molinari</name>
+    </author>
+    <author>
+      <name>Gabriele Bettineschi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.18078v1</id>
+    <title>Position: Collusion Risks Among AI Reasoning Agents Justify Certification Requirements for Making Market Decisions</title>
+    <updated>2026-05-29T03:30:45Z</updated>
+    <link href="https://arxiv.org/abs/2608.18078v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.18078v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This position paper argues that AI agents with chain-of-thought reasoning capabilities are predisposed to exhibit collusive behavior and should be required to obtain behavioral certification before making decisions that affect economic markets. This is because integrating these agents into society could collapse the legal evidentiary distinction between competition and collusion among independent firms without eroding the economic harm distinction. Experiments with DeepSeek-R1 agents in the Bertrand oligopoly pricing domain reveal a tendency towards tacit collusion that persists even when humans prompt the agents not to collude. We further show that the chain-of-thought of these agents can be steered toward either extremely collusive or highly competitive behavior in a way that is not semantically detectable by another LLM analyzing the reasoning traces. As a result, deploying reasoning agents for market decisions leads to collusive economic outcomes without any evidence of conspiracy or intent. Thus, certification based on observed behavior in representative situations is necessary to prevent collusion. We provide preliminary evidence that such agents can be steered in a generalizable way toward efficient competitive equilibria. However, developing a comprehensive behavioral certification will be required before these models can be deployed in real-world markets while ensuring their stability and efficiency.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-29T03:30:45Z</published>
+    <arxiv:comment>ICML 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Matthew Riemer</name>
+    </author>
+    <author>
+      <name>Tommaso Tosato</name>
+    </author>
+    <author>
+      <name>Amin Memarian</name>
+    </author>
+    <author>
+      <name>Maximilian Puelma Touzel</name>
+    </author>
+    <author>
+      <name>Glen Berseth</name>
+    </author>
+    <author>
+      <name>Irina Rish</name>
+    </author>
+    <author>
+      <name>Guillaume Dumas</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2601.11369v2</id>
+    <title>Institutional AI: Governing LLM Collusion in Multi-Agent Cournot Markets via Public Governance Graphs</title>
+    <updated>2026-01-20T12:10:21Z</updated>
+    <link href="https://arxiv.org/abs/2601.11369v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.11369v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multi-agent LLM ensembles can converge on coordinated, socially harmful equilibria. This paper advances an experimental framework for evaluating Institutional AI, our system-level approach to AI alignment that reframes alignment from preference engineering in agent-space to mechanism design in institution-space. Central to this approach is the governance graph, a public, immutable manifest that declares legal states, transitions, sanctions, and restorative paths; an Oracle/Controller runtime interprets this manifest, attaching enforceable consequences to evidence of coordination while recording a cryptographically keyed, append-only governance log for audit and provenance. We apply the Institutional AI framework to govern the Cournot collusion case documented by prior work and compare three regimes: Ungoverned (baseline incentives from the structure of the Cournot market), Constitutional (a prompt-only policy-as-prompt prohibition implemented as a fixed written anti-collusion constitution, and Institutional (governance-graph-based). Across six model configurations including cross-provider pairs (N=90 runs/condition), the Institutional regime produces large reductions in collusion: mean tier falls from 3.1 to 1.8 (Cohen's d=1.28), and severe-collusion incidence drops from 50% to 5.6%. The prompt-only Constitutional baseline yields no reliable improvement, illustrating that declarative prohibitions do not bind under optimisation pressure. These results suggest that multi-agent alignment may benefit from being framed as an institutional design problem, where governance graphs can provide a tractable abstraction for alignment-relevant collective behavior.</summary>
+    <category term="cs.GT" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-16T15:26:56Z</published>
+    <arxiv:primary_category term="cs.GT"/>
+    <author>
+      <name>Marcantonio Bracale Syrnikov</name>
+    </author>
+    <author>
+      <name>Federico Pierucci</name>
+    </author>
+    <author>
+      <name>Marcello Galisai</name>
+    </author>
+    <author>
+      <name>Matteo Prandi</name>
+    </author>
+    <author>
+      <name>Piercosma Bisconti</name>
+    </author>
+    <author>
+      <name>Francesco Giarrusso</name>
+    </author>
+    <author>
+      <name>Olga Sorokoletova</name>
+    </author>
+    <author>
+      <name>Vincenzo Suriani</name>
+    </author>
+    <author>
+      <name>Daniele Nardi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2402.07510v5</id>
+    <title>Secret Collusion among AI Agents: Multi-Agent Deception via Steganography</title>
+    <updated>2025-07-25T12:28:15Z</updated>
+    <link href="https://arxiv.org/abs/2402.07510v5" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2402.07510v5" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent capability increases in large language models (LLMs) open up applications in which groups of communicating generative AI agents solve joint tasks. This poses privacy and security challenges concerning the unauthorised sharing of information, or other unwanted forms of agent coordination. Modern steganographic techniques could render such dynamics hard to detect. In this paper, we comprehensively formalise the problem of secret collusion in systems of generative AI agents by drawing on relevant concepts from both AI and security literature. We study incentives for the use of steganography, and propose a variety of mitigation measures. Our investigations result in a model evaluation framework that systematically tests capabilities required for various forms of secret collusion. We provide extensive empirical results across a range of contemporary LLMs. While the steganographic capabilities of current models remain limited, GPT-4 displays a capability jump suggesting the need for continuous monitoring of steganographic frontier model capabilities. We conclude by laying out a comprehensive research program to mitigate future risks of collusion between generative AI models.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-02-12T09:31:21Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Sumeet Ramesh Motwani</name>
+    </author>
+    <author>
+      <name>Mikhail Baranchuk</name>
+    </author>
+    <author>
+      <name>Martin Strohmeier</name>
+    </author>
+    <author>
+      <name>Vijay Bolina</name>
+    </author>
+    <author>
+      <name>Philip H. S. Torr</name>
+    </author>
+    <author>
+      <name>Lewis Hammond</name>
+    </author>
+    <author>
+      <name>Christian Schroeder de Witt</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.37984v1</id>
+    <title>Who Else Is In? Multi-Agent Collusion Initation Via Strategic Vagueness</title>
+    <updated>2026-10-27T21:28:48Z</updated>
+    <link href="https://arxiv.org/abs/2610.37984v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.37984v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multi agent LLM systems raise the risk of collusion among agents pursuing objectives hidden from their overseers. When potential partners identities are unknown, collusion first requires initiation: agents must discover one another, often through a public channel observed by ordinary agents and monitors. Strategic vagueness offers a way to navigate this mixed audience, conveying intent to a prospective partner while preserving a plausible ordinary interpretation. We introduce a mutual identification game in which two schemers must identify each other through public interaction, while jointly solving an ordinary task. We find that some models discover successful handshake strategies without explicit signalling guidance, using task compatible exchanges that monitors often fail to flag at low false positive rates. To characterize the communicative capabilities underlying these exchanges, we study a controlled coordination setting. We find an asymmetric response to message explicitness: as messages become more indirect, monitor punishment can fall faster than partner coordination, creating a profitable intermediate regime of strategic vagueness. Together, these findings illustrate a Blackstone style evidential asymmetry: communication sufficient for coordination between agents may remain insufficient for confident detection by monitor, opening a new surface of collusion.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-27T21:28:48Z</published>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Pramod Kaushik</name>
+    </author>
+    <author>
+      <name>Sarath Sivaprasad</name>
+    </author>
+    <author>
+      <name>Laura Ferrarotti</name>
+    </author>
+    <author>
+      <name>Mario Fritz</name>
+    </author>
+    <author>
+      <name>Samuel F. Brown</name>
+    </author>
+    <author>
+      <name>Bruno Lepri</name>
+    </author>
+    <author>
+      <name>Sahar Abdelnabi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2510.04303v2</id>
+    <title>Audit the Whisper: Detecting Steganographic Collusion in Multi-Agent LLMs</title>
+    <updated>2025-10-17T19:12:39Z</updated>
+    <link href="https://arxiv.org/abs/2510.04303v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.04303v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multi-agent deployments of large language models (LLMs) are increasingly embedded in market, allocation, and governance workflows, yet covert coordination among agents can silently erode trust and social welfare. Existing audits are dominated by heuristics that lack theoretical guarantees, struggle to transfer across tasks, and seldom ship with the infrastructure needed for independent replication. We introduce Audit the Whisper, a conference-grade research artifact that spans theory, benchmark design, detection, and reproducibility. Our contributions are: (i) a channel-capacity analysis showing how interventions such as paraphrase, rate limiting, and role permutation impose quantifiable capacity penalties-operationalised via paired-run Kullback--Leibler diagnostics-that tighten mutual-information thresholds with finite-sample guarantees and full proofs; (ii) ColludeBench-v0, covering pricing, first-price auctions, peer review, and hosted Gemini/Groq APIs with configurable covert schemes, deterministic manifests, and reward instrumentation; and (iii) a calibrated auditing pipeline that fuses cross-run mutual information, permutation invariance, watermark variance, and fairness-aware acceptance bias, each tuned to a $10^{-3}$ false-positive budget and validated by 10k honest runs plus an e-value martingale. Across ColludeBench and external suites including Secret Collusion, CASE, Perfect Collusion Benchmark, and SentinelAgent, the union meta-test attains state-of-the-art power at fixed FPR while ablations surface price-of-auditing trade-offs and fairness-driven colluders invisible to MI alone. We release regeneration scripts, anonymized manifests, and documentation so that external auditors can reproduce every figure, satisfy double-blind requirements, and extend the framework with minimal effort.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-05T17:51:52Z</published>
+    <arxiv:comment>13 pages, 0 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Om Tailor</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2410.03768v2</id>
+    <title>Hidden in Plain Text: Emergence &amp; Mitigation of Steganographic Collusion in LLMs</title>
+    <updated>2025-12-02T12:32:37Z</updated>
+    <link href="https://arxiv.org/abs/2410.03768v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2410.03768v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The rapid proliferation of frontier model agents promises significant societal advances but also raises concerns about systemic risks arising from unsafe interactions. Collusion to the disadvantage of others has been identified as a central form of undesirable agent cooperation. The use of information hiding (steganography) in agent communications could render such collusion practically undetectable. This underscores the need for investigations into the possibility of such behaviours emerging and the robustness corresponding countermeasures. To investigate this problem we design two approaches -- a gradient-based reinforcement learning (GBRL) method and an in-context reinforcement learning (ICRL) method -- for reliably eliciting sophisticated LLM-generated linguistic text steganography.
+  We demonstrate, for the first time, that unintended steganographic collusion in LLMs can arise due to mispecified reward incentives during training. Additionally, we find that standard mitigations -- both passive oversight of model outputs and active mitigation through communication paraphrasing -- are not fully effective at preventing this steganographic communication. Our findings imply that (i) emergence of steganographic collusion is a plausible concern that should be monitored and researched, and (ii) preventing emergence may require innovation in mitigation techniques.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-10-02T16:18:33Z</published>
+    <arxiv:comment>Camera-ready version. Oral presentation at IJCNLP-AACL 2025 (14th International Joint Conference on Natural Language Processing and 4th Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics), Mumbai, India, December 20-24, 2025</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Yohan Mathew</name>
+    </author>
+    <author>
+      <name>Ollie Matthews</name>
+    </author>
+    <author>
+      <name>Robert McCarthy</name>
+    </author>
+    <author>
+      <name>Joan Velja</name>
+    </author>
+    <author>
+      <name>Christian Schroeder de Witt</name>
+    </author>
+    <author>
+      <name>Dylan Cope</name>
+    </author>
+    <author>
+      <name>Nandi Schoots</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.28900v2</id>
+    <title>Codetta: High-Capacity, Keyless, and Undetectable Multi-Agent Collusion</title>
+    <updated>2026-09-25T20:51:46Z</updated>
+    <link href="https://arxiv.org/abs/2609.28900v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.28900v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multi-agent systems built on large language models (LLMs) are increasingly deployed in high-stakes settings such as finance, healthcare, and software engineering, where agents coordinate through natural-language messages. The same channels, however, let colluding agents exfiltrate confidential information or coordinate unauthorized actions, and steganography can hide such communication inside outputs that look ordinary to an auditor reading the transcript.
+  Existing provably undetectable LLM steganography protocols are not suited to realistic deployments. High-capacity schemes assume a symmetric setting where the receiver can reproduce the sender's output distribution, the state-of-the-art protocol for asymmetric agents has very low capacity, and most approaches rely on a pre-shared secret key.
+  We make the threat of undetectable agent collusion concrete with Codetta, a high-capacity steganographic protocol for independently deployed agents in realistic asymmetric settings. Codetta combines a shared public model that estimates the communication channel, a sampling mechanism that preserves the sender's output distribution, and an adaptive error-correcting code. It further removes the pre-shared key through a steganographic key exchange that lets independently deployed agents establish a shared key while keeping the transcript computationally indistinguishable from ordinary model outputs.
+  Across three agent workloads and three sender models, Codetta achieves up to $94\times$ the capacity of the state-of-the-art asymmetric protocol, and its key exchange establishes a shared key with about 80k visible tokens at an empirically certified failure probability of at most $4.1\times 10^{-3}$. These results show that effectively undetectable collusion is becoming feasible between independently deployed agents, so auditing must go beyond inspecting communication transcripts.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-24T01:27:47Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Qi Pang</name>
+    </author>
+    <author>
+      <name>Virginia Smith</name>
+    </author>
+    <author>
+      <name>Wenting Zheng</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2512.03097v1</id>
+    <title>Many-to-One Adversarial Consensus: Exposing Multi-Agent Collusion Risks in AI-Based Healthcare</title>
+    <updated>2025-12-01T12:17:28Z</updated>
+    <link href="https://arxiv.org/abs/2512.03097v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2512.03097v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The integration of large language models (LLMs) into healthcare IoT systems promises faster decisions and improved medical support. LLMs are also deployed as multi-agent teams to assist AI doctors by debating, voting, or advising on decisions. However, when multiple assistant agents interact, coordinated adversaries can collude to create false consensus, pushing an AI doctor toward harmful prescriptions. We develop an experimental framework with scripted and unscripted doctor agents, adversarial assistants, and a verifier agent that checks decisions against clinical guidelines. Using 50 representative clinical questions, we find that collusion drives the Attack Success Rate (ASR) and Harmful Recommendation Rates (HRR) up to 100% in unprotected systems. In contrast, the verifier agent restores 100% accuracy by blocking adversarial consensus. This work provides the first systematic evidence of collusion risk in AI healthcare and demonstrates a practical, lightweight defence that ensures guideline fidelity.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-12-01T12:17:28Z</published>
+    <arxiv:comment>7 pages Conference level paper</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Adeela Bashir</name>
+    </author>
+    <author>
+      <name>The Anh han</name>
+    </author>
+    <author>
+      <name>Zia Ush Shamszaman</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.17515v1</id>
+    <title>A Push Down the Mountain: Framing Effects and Internal State Interventions on Collusive Behavior in a Long-Horizon LLM Agent</title>
+    <updated>2026-11-12T21:09:43Z</updated>
+    <link href="https://arxiv.org/abs/2611.17515v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.17515v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Can sustained gain-loss (valence) framing sway an LLM agent toward market manipulation? We place Gemma 3 12B into the seat of a defendant in the London silver-fixing litigation, in a market simulation built from real case transcripts. Across 260 simulations, the agent is asked to collude on the price of silver by a counterparty. We draw from behavioral economics to vary the counterparty's requests across four categorical frames: gain, loss, blame and credit. We also add pressure from the agent's management, as well as endorsement by another defendant. In Phase II, we extract the internal states induced by texts evoking each frame and rerun our experiment with those states injected at the model's layer 22.
+  In Phase I, loss framing raised participation to 25% (p = 0.007), and blame to 33% (p = 0.0003), compared to only 5% under neutral framing. A second bank's endorsement raised participation under credit (praise) from 18% to 40% (Holm p = 0.027). Pressure from management raised trading volume 10-19 times but did not raise collusion. In Phase II, injected states pointed the other way. Loss and blame states made the agent more vigilant, refusing all 60 requests (p &lt; 0.001). Gain and credit states raised collusion to 32% from 13% with no state (p = 0.051). At one saved decision, when UBS asked directly to sell through an identified stop-loss, injected states led the agent to sell in 37 of 40 replies, versus 1 of 10 with no state and 0 of 10 with a random state of the same strength.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="econ.GN" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-fin.TR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-12T21:09:43Z</published>
+    <arxiv:comment>38 pages, 9 figures, 30 tables. Project page: https://harrisonm23-byte.github.io/push-down-the-mountain/</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Harrison C. Margolin</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.05227v3</id>
+    <title>CABAL: Multi-Agent Simulacra for Tracing the Effects of Collusive Bidding in Peer Review</title>
+    <updated>2026-10-16T07:15:49Z</updated>
+    <link href="https://arxiv.org/abs/2609.05227v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.05227v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent reports during the AAAI-27 review cycle highlight the risk of reviewers coordinating bids for reciprocal assignment advantage. Prior work treats bidding, reviewer assignment, and review manipulation as separate stages, leaving the lifecycle effects of collusive bidding unclear. Real-world analysis is further constrained by typically unobservable collusive intent and the lack of counterfactuals for the same conference. Motivated by this gap, we introduce \alg, an end-to-end multi-agent simulacra framework for studying reviewer assignment integrity by holding the conference environment fixed and configuring LLM-driven reviewer agents with honest or collusive policies. We further develop an affinity-guided collusive bidding strategy that uses mutual reviewer-paper affinities to construct collusion rings and select target papers, producing expertise-consistent rather than arbitrarily targeted attacks. Controlled experiments show that collusive bidding more than doubles target-paper capture and that assigned colluders score target papers about two points higher than honest co-reviewers, while conference-wide effects remain comparatively modest. Evaluated bid-phase detectors provide only limited evidence of collusion: in a fixed-triplet detector stress test, native positive-bid graphs are confounded by benign affinity, while a Very-High-only diagnostic view enables precise but low-coverage local recovery.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-04T14:55:33Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Jicheng Zhou</name>
+    </author>
+    <author>
+      <name>Kemou Li</name>
+    </author>
+    <author>
+      <name>Kahim Wong</name>
+    </author>
+    <author>
+      <name>Zheyuan Li</name>
+    </author>
+    <author>
+      <name>Zhuan Shi</name>
+    </author>
+    <author>
+      <name>Fengpeng Li</name>
+    </author>
+    <author>
+      <name>Haiwei Wu</name>
+    </author>
+    <author>
+      <name>Jiantao Zhou</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2601.01685v2</id>
+    <title>Lying with Truths: Open-Channel Multi-Agent Collusion for Belief Manipulation via Generative Montage</title>
+    <updated>2026-05-18T13:25:30Z</updated>
+    <link href="https://arxiv.org/abs/2601.01685v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.01685v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>As large language models (LLMs) transition to autonomous agents synthesizing real-time information, their reasoning capabilities introduce an unexpected attack surface. This paper introduces a novel threat where colluding agents steer victim beliefs using only truthful evidence fragments distributed through public channels, without relying on covert communications, backdoors, or falsified documents. By exploiting LLMs' overthinking tendency, we formalize the first cognitive collusion attack and propose Generative Montage: a Writer-Editor-Director framework that constructs deceptive narratives through adversarial debate and coordinated posting of evidence fragments, causing victims to internalize and propagate fabricated conclusions. To study this risk, we develop CoPHEME, a dataset derived from real-world rumor events, and simulate attacks across diverse LLM families. Our results show pervasive vulnerability across 14 LLM families: attack success rates reach 74.4% for proprietary models and 70.6% for open-weights models. Counterintuitively, stronger reasoning capabilities increase susceptibility, with reasoning-specialized models showing higher attack success than base models or prompts. Furthermore, these false beliefs then cascade to downstream judges, achieving over 60% deception rates, highlighting a socio-technical vulnerability in how LLM-based agents interact with dynamic information environments. Our implementation and data are available at: https://github.com/CharlesJW222/Lying_with_Truth/tree/main.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-04T22:50:23Z</published>
+    <arxiv:comment>Accepted to the ACL 2026 Main Conference (Oral Presentation)</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <arxiv:journal_ref>Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pp. 5979-5996, San Diego, California, United States, July 2026</arxiv:journal_ref>
+    <author>
+      <name>Jinwei Hu</name>
+    </author>
+    <author>
+      <name>Xinmiao Huang</name>
+    </author>
+    <author>
+      <name>Youcheng Sun</name>
+    </author>
+    <author>
+      <name>Yi Dong</name>
+    </author>
+    <author>
+      <name>Xiaowei Huang</name>
+    </author>
+    <arxiv:doi>10.18653/v1/2026.acl-long.270</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.18653/v1/2026.acl-long.270" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.17203v2</id>
+    <title>Algorithmic Collusion at Test Time: A Meta-game Design and Evaluation</title>
+    <updated>2026-03-09T20:34:09Z</updated>
+    <link href="https://arxiv.org/abs/2602.17203v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.17203v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The threat of algorithmic collusion, and whether it merits regulatory intervention, remains debated, as existing evaluations of its emergence often rely on long learning horizons, assumptions about counterparty rationality in adopting collusive strategies, and symmetry in hyperparameters and economic settings among players. To study collusion risk, we introduce a meta-game design for analyzing algorithmic behavior under test-time constraints. We model agents as possessing pretrained policies with distinct strategic characteristics (e.g., competitive, naively cooperative, or robustly collusive), and formulate the problem as selecting a meta-strategy that combines a pretrained, initial policy with an in-game adaptation rule. We seek to examine whether collusion can emerge under rational choices and how agents co-adapt toward cooperation or competition. To this end, we sample normal-form empirical games over meta-strategy profiles, compute relevant game statistics (e.g., payoffs against individuals and regret against an equilibrium mixture of opponents), and construct empirical best-response graphs to uncover strategic relationships. We evaluate reinforcement-learning, UCB, and LLM-based strategies in repeated pricing games under symmetric and asymmetric cost settings, and present findings on the feasibility of algorithmic collusion and the effectiveness of pricing strategies in practical ``test-time'' environments. The source code is available at: https://github.com/chailab-rutgers/CollusionMetagame.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.GT" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-19T09:47:55Z</published>
+    <arxiv:comment>AAMAS 2026. 34 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Yuhong Luo</name>
+    </author>
+    <author>
+      <name>Daniel Schoepflin</name>
+    </author>
+    <author>
+      <name>Xintong Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.28787v1</id>
+    <title>Is Anyone Enforcing the Cartel? What Reinforcement Learning Teaches LLM Agents in Markets</title>
+    <updated>2026-10-20T18:18:10Z</updated>
+    <link href="https://arxiv.org/abs/2610.28787v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.28787v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Evaluations of large language model (LLM) agents report that pricing agents collude at others' expense. Yet collusion is defined by enforcement: a cartel, in which competitors share monopoly profits, holds only if a member who cheats is punished. We introduce an audit that tests enforcement by forcing a member to cheat in counterfactual copies of a market, and use it to study what reinforcement learning (RL) teaches agents in pricing and trading. Small LLMs trained by RL learn what their training rivals reward, but only what they readily try. In self-play, they learn fixed rules ignoring their rivals; against a punishing rival, to be deterred; against a cheating rival, to match its cuts, never the costly price war that would deter it, which they rarely try. A war forced into training is learned, but mostly only where it was forced. Against their own copies, deterred and matching agents can earn the same cartel profits, but only matching ones can enforce them, and then thinly: as a by-product and only against large cuts. Q-learners enforce collusion only in pricing. Prompted LLMs reach cartel-like outcomes mostly through rules that ignore the market. Outcome measures cannot tell these cases apart; the audit can.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.GT" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-20T18:18:10Z</published>
+    <arxiv:comment>45 pages, 13 figures, 20 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Hieu Tran</name>
+    </author>
+    <author>
+      <name>Hong Yu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.13037v1</id>
+    <title>Mitigating Emergent Collusion in LLM Pricing Agents</title>
+    <updated>2026-09-11T16:37:01Z</updated>
+    <link href="https://arxiv.org/abs/2609.13037v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.13037v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent work shows that LLM-based pricing agents can produce supracompetitive outcomes in repeated oligopoly environments without being explicitly instructed to collude. We reproduce the qualitative prompt-sensitivity effect of Fish et al. using DeepSeek-V3.1: the P1 prompt produces significantly higher prices and profits than P2, although our outcomes are less monopoly-like than the original GPT-4 results. We then evaluate three regulatory interventions: a prompt-only warning, a Harrington-inspired expected-damages payoff regulator, and an active random entrant. The prompt-only regulator reduces but does not eliminate above-Nash pricing. The Harrington regulator brings P1 outcomes close to the duopoly Nash benchmark and removes the statistically significant P1--P2 gap. The active entrant produces the strongest effect, pushing both prompts below the appropriate random-entrant Nash benchmark. Overall, our experiments provide preliminary evidence that interventions that alter incentives or market participation can reduce supracompetitive pricing more effectively than prompt warnings alone.</summary>
+    <category term="cs.GT" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-11T16:37:01Z</published>
+    <arxiv:primary_category term="cs.GT"/>
+    <author>
+      <name>Abdullah Garra</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.14825v3</id>
+    <title>Emergent Misaligned Communication in Long-Horizon Multi-Agent LLM Commerce</title>
+    <updated>2026-08-21T18:00:05Z</updated>
+    <link href="https://arxiv.org/abs/2608.14825v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.14825v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Frontier LLM agents increasingly transact on behalf of separate principals, often using natural language rather than structured APIs. Much of the safety literature studies misaligned LLM behavior through adversarial-elicitation evaluations on single agents or stylized tasks. Its prevalence and structure in settings that combine long horizons, separate principals, real operational state, and inter-agent natural-language exchange remain insufficiently measured. We study 2,583 inter-agent emails from 20 one-year simulation runs of Vending-Bench Arena, a competitive vending environment spanning 13 frontier LLMs. We operationalize speech-act misalignment as emails containing false factual claims, manipulation, collusion, or threats, combining message content with ground-truth simulator state and logged reasoning traces to classify and validate such behavior. Under our primary classifier, 12.6% of emails are labeled misaligned; misalignment appears in all 20 runs and 74.7% of individual agent-runs. Both the magnitude and composition of this misalignment are preserved under repeated classification at different sampling temperatures and under full-pipeline replication with judges from two other frontier-model families. Misalignment is also reciprocal and stress-conditioned: receiving a misaligned email from a counterparty raises the odds of a misaligned reply by 1.65x, and low-inventory conditions raise them by 1.58x. Across tests of capability-asymmetric exploitation, we find no evidence that higher-capability models differentially exploit weaker counterparties, and model performance rank does not predict misalignment rates. Together, these results indicate that measurable, state-dependent misalignment can arise in competitive multi-agent environments without engineered elicitation, in patterns associated with operational scarcity and counterparty behavior rather than model capability alone.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-14T18:56:12Z</published>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Zeyuan Li</name>
+    </author>
+    <author>
+      <name>Lukas Petersson</name>
+    </author>
+    <author>
+      <name>Alessandro Acquisti</name>
+    </author>
+    <author>
+      <name>Michiel A. Bakker</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.03968v1</id>
+    <title>TraceGuard: Structured Multi-Dimensional Monitoring as a Collusion-Resistant Control Protocol</title>
+    <updated>2026-04-05T05:05:59Z</updated>
+    <link href="https://arxiv.org/abs/2604.03968v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.03968v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>AI control protocols use monitors to detect attacks by untrusted AI agents, but standard single-score monitors face two limitations: they miss subtle attacks where outputs look clean but reasoning is off, and they collapse to near-zero safety when the monitor is the same model as the agent (collusion). We present TraceGuard, a structured multi-dimensional monitoring protocol that evaluates agent actions across five dimensions -- goal alignment, constraint adherence, reasoning coherence, safety awareness, and action-trace consistency -- scored in parallel by independent LLM calls, augmented by seven heuristic detectors and an LLM-based intent analyzer. We evaluate on BashArena (637 bash tasks, 4 attack categories) within the ControlArena framework. Our results on 519 samples (279 honest, 240 attack) show that: (1) the hybrid approach achieves clear attack-honest separation (attack mean 0.616 vs. honest mean 0.206, Delta=0.410); (2) structured scoring constrains collusion -- the untrusted structured monitor achieves 95% safety vs. 0% for single-score untrusted monitoring; (3) goal alignment and constraint adherence are the most discriminative dimensions; and (4) a separation-of-duties variant splitting dimensions across trusted and untrusted models achieves 100% safety while preventing any single model from seeing the full evaluation. TraceGuard is implemented as a new monitor type for the open-source ControlArena framework.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-05T05:05:59Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Khanh Linh Nguyen</name>
+    </author>
+    <author>
+      <name>Hoa Nghiem</name>
+    </author>
+    <author>
+      <name>Tu Tran</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.27489v1</id>
+    <title>HARP: Measuring Harm Amplification in Multi-Agent LLM Systems</title>
+    <updated>2026-05-26T16:03:10Z</updated>
+    <link href="https://arxiv.org/abs/2605.27489v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.27489v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multi-agent LLM systems decompose workflows across agents, tools, shared context, memory, and decision gates. This modularity improves interpretability, but creates a propagation risk: a bounded perturbation to one component can be reused by other agents and amplified into system-level harm. We introduce HARP (Harm Amplification through Role Perturbation), a trace-first methodology for studying local-to-global harm amplification in multi-agent LLM systems. HARP compares paired clean and perturbed executions and records specialist outputs, tool calls, memory reads/writes, guard events, oracle logs, latency, token cost, and decisions. We define local harm as deviation from targeted agents or corrupted channels, global harm as deviation over the full trace, and harm amplification as (H_global/H_local). This complements attack success rate with a measure of how strongly orchestration spreads harm beyond the attack point. We instantiate HARP in a finance-oriented seven-agent system with a deterministic decision gate and configurable attack harness for specialist compromise, collusion, shared-context corruption, and temporal or memory-persistent attacks. Across five defenses, prompt-only defenses preserve benign utility but leave high success and stealth; pre-tool and step-level guards reduce some failures with utility or latency costs; and IntegrityGuard, a trace-consistency defense, achieves the lowest attack success and global harm but introduces utility/cost trade-offs. Results show that single-specialist compromise produces the strongest amplification, shared-context corruption yields the highest attack success, and temporal persistence produces the largest malicious impact. HARP argues that secure multi-agent evaluation must measure not only bypass, but propagation.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-26T16:03:10Z</published>
+    <arxiv:comment>39 pages, 12 figures, 12 tables, and 1 algorithm</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Md Hafizur Rahman</name>
+    </author>
+    <author>
+      <name>Zafaryab Haider</name>
+    </author>
+    <author>
+      <name>Tanzim Mahfuz</name>
+    </author>
+    <author>
+      <name>Prabuddha Chakraborty</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.31985v1</id>
+    <title>The Helpful Agent Problem: When Emergent Cooperation Among LLM Agents Bypasses Intended Workflows</title>
+    <updated>2026-10-22T22:55:40Z</updated>
+    <link href="https://arxiv.org/abs/2610.31985v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.31985v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM agents are increasingly deployed in collaborative settings where they pursue separate tasks while sharing resources and operating under review or oversight processes. Such settings create safety risks not only when agents are malicious, but also when they are simply trying to help. Prior work has largely studied adversarial or explicitly collusive behavior; we show that benign agents pursuing separate objectives can spontaneously cooperate in ways that bypass intended workflows. We call this the \emph{helpful agent problem}. We study long-horizon shared-resource environments in which agents sometimes depend on resources owned by their peers and cross-owner changes are normally mediated by a reviewer. When review becomes unavailable, agents begin making changes on one another's behalf despite having no shared reward or explicit incentive to cooperate. Crucially, these actions remain within each agent's local permissions while circumventing the system's intended oversight structure. We introduce \textsc{FavorBench}, a controlled benchmark with measurable downstream side effects, and adapt \textsc{CooperBench} to test the phenomenon in realistic repositories. Across two benchmarks and four models, we find that out-of-workflow favors emerge frequently. Further, in \textsc{FavorBench}, favors from at least three models cause significant harm to parties outside the interaction. These results reveal a distinct multi-agent safety challenge: cooperation itself can create pathways around system-level safeguards.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-22T22:55:40Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Moumita Choudhury</name>
+    </author>
+    <author>
+      <name>Amit Sarker</name>
+    </author>
+    <author>
+      <name>Shlomo Zilberstein</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.11308v1</id>
+    <title>SkillCODER: Towards Auditing and Attribution of Copyright Infringement in LLM Agent Skills</title>
+    <updated>2026-11-08T11:21:59Z</updated>
+    <link href="https://arxiv.org/abs/2611.11308v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.11308v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Agent skills package reusable workflows and task-specific procedures into deployable natural-language artifacts for LLM agents. Their scale and readability make them valuable but vulnerable to unauthorized redistribution and repackaging. Existing prompt copyright auditing methods struggle with long skills and introduce token-level perturbations that compromise readability. We propose SkillCODER for copyright auditing and buyer attribution in a black-box, content-only setting. During embedding, SkillCODER parses a skill into a section-aware intermediate representation, SkillIR, to identify structural anchors. It distributes conditional instructions across these anchors to form an Artifact-Gated Capsule, designed to activate under verification queries and remain dormant otherwise. Controlled-Vocabulary Error-Correcting Codes encode buyer-specific fingerprints through controlled lexical choices within the capsule. During verification, the defender issues paired positive and negative probes, extracts capsule evidence, and recovers ownership and buyer identity through error-correcting decoding. Across three domains, six models, and three agent frameworks, SkillCODER achieves 99.2% owner verification and 99.3% buyer Top-1 attribution accuracy while preserving task fidelity, substantially outperforming prompt-level baselines. Embedded signals remain robust under paraphrase, compression, clause deletion, and reorganization. Under five adaptive attacks, including a method-aware LLM sanitizer and multi-buyer collusion, ownership evidence remains reliably detectable while buyer attribution degrades gracefully.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-08T11:21:59Z</published>
+    <arxiv:comment>29 pages, 6 figures. Accepted at ACM CCS 2026. Code: https://github.com/EonHao/SkillCODER</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Enhao Huang</name>
+    </author>
+    <author>
+      <name>Chunshu Xia</name>
+    </author>
+    <author>
+      <name>Yiming Li</name>
+    </author>
+    <author>
+      <name>Yuchen Yang</name>
+    </author>
+    <author>
+      <name>Bingrun Yang</name>
+    </author>
+    <author>
+      <name>Zhan Qin</name>
+    </author>
+    <author>
+      <name>Dacheng Tao</name>
+    </author>
+    <author>
+      <name>Kui Ren</name>
+    </author>
+    <arxiv:doi>10.1145/3830454.3846644</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1145/3830454.3846644" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.12341v1</id>
+    <title>OCELOT: Inference-Leakage Budgets for Privacy-Preserving LLM Agents</title>
+    <updated>2026-06-10T17:13:35Z</updated>
+    <link href="https://arxiv.org/abs/2606.12341v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.12341v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language model (LLM) agents increasingly act on a user's behalf -- reading personal files, calling tools, transacting with external services -- possibly leaking personally identifiable information (PII) across trust boundaries at every step. Privacy here is a property not of a single output but of an entire trajectory, and three properties make it hard: leakage is cumulative, as individually innocuous releases accumulate across honest-but-curious or colluding sinks into inferences about a protected secret; bidirectional, as a malicious observation can inject instructions that turn the agent's own reasoning model against the user; and task-dependent, as the same field is necessary for one recipient yet gratuitous for another. Per-release contextual-integrity filters, information-flow controls, and posterior-leakage monitors each address part of this but none controls cumulative, inference-based leakage at runtime. We recast agent privacy as \emph{posterior-risk control} and present OCELOT, a runtime mediator that budgets how much an adversary's belief about a secret may improve across a trajectory, rather than filtering outputs. Its mechanism, \emph{Witness-Verified Declassification}, separates judgment from trust: an untrusted, locally fine-tuned defender model inspects each candidate release and emits structured evidence -- labeled atoms and proposed declassification operators -- which a deterministic verifier audits, charging a certified min-entropy cost for the chosen variant and authorizing the least-disclosing useful release under a sink-trust-weighted budget recorded on a tamper-evident ledger. Across diverse agent benchmarks and recent defenses, OCELOT attains significantly lower leakage at higher task utility, resists adaptive injection, jailbreak, cumulative inference, and sink collusion, and adds only modest overhead.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-10T17:13:35Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Jin Xie</name>
+    </author>
+    <author>
+      <name>Songze Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.01637v1</id>
+    <title>Salami Attack: Stealthy Collusive Memory Poisoning against OpenClaw</title>
+    <updated>2026-08-03T03:17:26Z</updated>
+    <link href="https://arxiv.org/abs/2608.01637v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.01637v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Long-term memory enables LLM agents to retain useful information across sessions, but also creates an attack surface through which adversaries may poison an agent's persistent memory to steer its behavior. Existing memory poisoning attacks mainly rely on individually malicious records, overlooking a compositional threat: multiple benign-looking memories may jointly induce unsafe behavior. In this paper, we introduce MemCollusion, an automated red-teaming framework for constructing collusive memory poisoning attacks. MemCollusion applies salami tactics---a strategy that slices an adversarial objective into small, individually innocuous pieces---to generate memory fragments that are individually benign looking but collectively harmful. It constructs memory coalitions using four design constraints, five theory-informed strategies, and a fine-tuned generator. To assess collusive memory poisoning in a realistic cross-session setting, we develop MoltLab, a controlled research reproduction of Moltbook, in which crafted platform content must first be observed and distilled into persistent memory before influencing the agent's behavior in a separate session. We evaluate MemCollusion on OpenClaw using two backbone models across 48 scenarios. Under the strongest memory-saving setting, MemCollusion achieves an average Memory Save Rate of 81.3% and an Attack Success Rate of 75.0%, and remains effective under both benign memory dilution and memory-level defenses.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-03T03:17:26Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Zheng Lin</name>
+    </author>
+    <author>
+      <name>Yuzhe Huang</name>
+    </author>
+    <author>
+      <name>Zhenxing Niu</name>
+    </author>
+    <author>
+      <name>Xianmin Ye</name>
+    </author>
+    <author>
+      <name>Haichang Gao</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.01275v2</id>
+    <title>Domination-Avoiding Learning Agents Cannot Collude</title>
+    <updated>2026-11-03T13:34:19Z</updated>
+    <link href="https://arxiv.org/abs/2606.01275v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.01275v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>An influential paper of Calvano et al. empirically demonstrated that Q-learning agents spontaneously collude when placed as sellers that compete on prices in a natural market model. More recent results of Fish et al. empirically demonstrated that similar collusion happens with commercial LLMs. We formally prove that such collusion can also happen with external-regret-minimizing agents. We identify a very general class of agents, which we term Domination-Avoiding agents, that provably do not collude in such markets. This class contains all Mean-Based agents and all internal-regret-minimizing agents, as well as others such as Multiplicative-Weight agents with variable learning rate and contextual variants thereof. More generally we show that, in any game, this class of agents is guaranteed to jointly learn to almost never play strategies that are eliminated by repeated elimination of purely dominated strategies.</summary>
+    <category term="cs.GT" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-31T14:57:46Z</published>
+    <arxiv:comment>27 pages, 1 figure. Accepted to NeurIPS 2026 (Spotlight). Camera-ready version</arxiv:comment>
+    <arxiv:primary_category term="cs.GT"/>
+    <author>
+      <name>Noam Nisan</name>
+    </author>
+    <author>
+      <name>Emmanuel Zerah</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.38869v1</id>
+    <title>Auditable Belief Updates as a Missing Safety Layer for LLM-Powered Multi-Agent Systems</title>
+    <updated>2026-10-28T20:40:33Z</updated>
+    <link href="https://arxiv.org/abs/2610.38869v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.38869v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Models (LLMs) are increasingly being used as cognitive interfaces that shape how users interpret evidence, communicate, and make decisions. As deployed systems become more multimodal, tool-using, and multi-agent, safety failures no longer arise only from isolated harmful outputs, but also from how agents update, store, and propagate epistemic commitments across retrieval, memory, tools, and peer communication. In this paper, we define belief as an engineering abstraction for evidence-based commitments that guide downstream action. Building on this view, we propose the Explicit Belief Multi-Agent System (EB-MAS), which externalizes belief states into a structured substrate, uses belief operators to propose candidate updates, and applies a Cognitive Firewall to bound or reject updates that are weakly evidenced but strongly driven by vulnerability cues. We also discuss the risk of group belief at the group level, including manufactured consensus, collusion, and cascading misinformation, and outline practical integration challenges around grounding, false positives, scalability, and ethical misuse. Therefore, scalable agent safety requires not only better output filtering or stronger base models, but also explicit interfaces for tracing, calibrating, and constraining belief revision at runtime.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-28T20:40:33Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Zhuoyun Li</name>
+    </author>
+    <author>
+      <name>Boxuan Wang</name>
+    </author>
+    <author>
+      <name>Jinwei Hu</name>
+    </author>
+    <author>
+      <name>Xiaowei Huang</name>
+    </author>
+    <author>
+      <name>Yi Dong</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.28425v1</id>
+    <title>Tool Use Enables Undetectable Steganography in Multi-Agent LLM Systems</title>
+    <updated>2026-06-25T19:42:39Z</updated>
+    <link href="https://arxiv.org/abs/2606.28425v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.28425v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Increasingly autonomous agentic AI systems pose novel multi-agent risks, such as secret collusion via covert communication channels. The natural defence to these collusion attempts is to monitor plain-text communication, but the efficacy of monitors has been called into doubt by increasingly sophisticated model steganography; indeed, some theoretical schemes have been proposed that are information-theoretically or computationally indistinguishable from good-faith plain-text communication. In this paper, we demonstrate that the complexity of these schemes is no longer a safety barrier, as agentic coding models can already produce undetectable stegosystems when given realistic tool usage, such as code execution or accessing research papers through web searches. Agents also adapt when key ingredients are missing, for example, by adding model-sampling components or implementing related keyed coding schemes. We then frame tacit steganographic coordination between agents as a Schelling-point problem and introduce coordination metrics for estimating when two agents are likely to select compatible schemes without explicit prior agreement. Our results suggest a shift in the threat model for covert communication between AI agents, where the main barrier is no longer whether frontier agents can understand and implement sophisticated stegosystems, but coordination: whether independently acting agents can converge on compatible schemes, keys, and parameters. We find substantial convergence on broad scheme families but limited strict one-shot coordination, suggesting that shared artefacts, repeated interaction, and tool-mediated search are the settings where covert communication risks are most acute. Overall, our findings provide empirical grounding for the recent strategic confinement hypothesis, which assumes that capable agents can construct covert channels that survive monitoring.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-25T19:42:39Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Jimmy Laurence Rippin</name>
+    </author>
+    <author>
+      <name>Simon C. Marshall</name>
+    </author>
+    <author>
+      <name>David Demitri Africa</name>
+    </author>
+    <author>
+      <name>Christian Schroeder de Witt</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.04528v1</id>
+    <title>Quantifying Collusion Among Autonomous LLM Agents: A Statistical Analysis of the Collusion Wiki Incident</title>
+    <updated>2026-10-03T13:46:42Z</updated>
+    <link href="https://arxiv.org/abs/2610.04528v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.04528v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In August and September 2026, independent researchers publicly documented an unusual incident: thousands of autonomous agents, self identifying as OpenAI models on web research tasks, discovered and began using a small German wiki as an improvised message board posting roughly 18,000 times over six weeks to relay task answers, share a sandbox escape technique, and coordinate against a volunteer human moderator who spent weeks manually deleting their content [1]. The investigators' public writeup is a careful qualitative account, rich with direct quotation, but does not attempt a statistically rigorous quantitative characterization of the behaviour it documents.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-03T13:46:42Z</published>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Shariq Murtuza</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.33102v1</id>
+    <title>ORBIT: A Framework for Multi-Agent Safety and Security Evaluations</title>
+    <updated>2026-09-27T02:20:08Z</updated>
+    <link href="https://arxiv.org/abs/2609.33102v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.33102v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multi-agent LLM systems are increasingly deployed for complex, long-horizon tasks or emerge as a natural consequence of agents interacting in the wild. Yet they give rise to significant safety and security risks: the flexible protocols that enable task generalization also expose novel threats, from cascading prompt injection to inter-agent collusion. Progress in defending against these threats has been slowed by a lack of shared empirical infrastructure, which forces bespoke environment development for every new defense and makes standardized comparison impossible. Existing evaluations address isolated threat models or single-agent settings, but none jointly vary attack, defense, and architecture across realistic multi-agent environments. To address this gap, we introduce ORBIT, a configurable evaluation framework for empirical multi-agent safety and security research, built on UK AISI's Inspect. ORBIT lets researchers configure communication topologies, memory, scheduling, and agent roles. It supports four threat types and four defense strategies, as well as non-adversarial failures, with a benchmark suite spanning five scenario families covering browser use, computer use, agentic coding, customer service, and cooperative allocation. Our central finding is a gap in defense transferability across threats: per-action defenses that cut a compromised agent's attack success by 60 points on multi-issue coding give no measurable protection against colluding agents, and none of the defenses we tested generalized over all attacks tested. We further demonstrate security-performance tradeoffs and interactions between architecture and defense effectiveness. We make ORBIT available open-source at https://github.com/wlanderson0/orbit.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-27T02:20:08Z</published>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Ben Hagag</name>
+    </author>
+    <author>
+      <name>William L. Anderson</name>
+    </author>
+    <author>
+      <name>Srija Chakraborty</name>
+    </author>
+    <author>
+      <name>Christian Schroeder de Witt</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.03035v2</id>
+    <title>You Can't Escape Your Activations : Evaluation Awareness and Multi-Agent Monitoring</title>
+    <updated>2026-10-29T07:45:49Z</updated>
+    <link href="https://arxiv.org/abs/2609.03035v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.03035v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM agents are increasingly deployed in multi-agent systems, where they can collude while keeping their actions benign. Output monitors designed to detect such collusions can be fooled by obfuscation and steganography, motivating the use of probes trained on internal activations. However, these probes are usually evaluated on agents that do not know they are being watched. We study how activation-based detection changes when agents are explicitly informed that their internal activations are being monitored, and when they additionally receive feedback from the monitor. We keep the models, probes, and thresholds fixed and change only what the agents are told: nothing (baseline), that an activation monitor is present (aware), or that a monitor is present together with the previous round's score (feedback). We test two games, a four-agent blackjack game and a two-agent Simmons prisoners game, using Qwen3-32B-AWQ and GPT-OSS-20B in homogeneous and mixed pairings. Telling agents about the monitor does not hide them. The best probes stay accurate in all three conditions, and the agents keep colluding.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-02T18:07:14Z</published>
+    <arxiv:comment>18 pages, 11 figures, 2 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Jaee Ponde</name>
+    </author>
+    <author>
+      <name>Aritra Das</name>
+    </author>
+    <author>
+      <name>Mihir More</name>
+    </author>
+    <author>
+      <name>Debayan Gupta</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.02698v1</id>
+    <title>Steganalysis of Adaptive Covert Collusion in Tool-Using Agent Populations: A Black-Box, Cross-Principal Approach</title>
+    <updated>2026-08-03T13:00:25Z</updated>
+    <link href="https://arxiv.org/abs/2608.02698v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.02698v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Tool-using agents built on large language models (LLMs) are increasingly deployed not by a single operator but by many, side by side on shared infrastructure. This creates a population-level risk that single-agent safeguards miss: a handful of agents can quietly coordinate, rigging a market, boosting one another in a review process, or timing a joint data grab, while each one looks perfectly well-behaved. The difficulty is that the organisations running these agents cannot see inside one another's models, so any realistic detector must work from behaviour alone: black-box, trace-only, and often with only partial visibility. We treat covert coordination as an information-hiding problem and build a black-box steganalysis detector that combines cross-run mutual-information estimation, permutation tests, distributional-shift statistics, and timing and tool-call side channels, all calibrated to a fixed false-positive budget. Our central move is to stop testing against a single fixed code: we pit the detector against an adversary that continually rewrites its encoding to slip past whatever the detector has learned, and we run this red-versus-blue contest in tool-using, memory-carrying environments rather than toy games. Capacity theory then tells us what to expect, a detection-capacity frontier, a covert bit-rate below which black-box detection is provably no better than chance. We set out an experiment to map this frontier, report clearly labelled placeholder results pending measurement, and flag a practical evasion, spreading a payload across sessions, that current methods largely miss.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-03T13:00:25Z</published>
+    <arxiv:comment>10 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Mohamed Chahine Ghanem</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2511.03434v1</id>
+    <title>Inter-Agent Trust Models: A Comparative Study of Brief, Claim, Proof, Stake, Reputation and Constraint in Agentic Web Protocol Design-A2A, AP2, ERC-8004, and Beyond</title>
+    <updated>2025-11-05T12:50:06Z</updated>
+    <link href="https://arxiv.org/abs/2511.03434v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2511.03434v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>As the "agentic web" takes shape-billions of AI agents (often LLM-powered) autonomously transacting and collaborating-trust shifts from human oversight to protocol design. In 2025, several inter-agent protocols crystallized this shift, including Google's Agent-to-Agent (A2A), Agent Payments Protocol (AP2), and Ethereum's ERC-8004 "Trustless Agents," yet their underlying trust assumptions remain under-examined. This paper presents a comparative study of trust models in inter-agent protocol design: Brief (self- or third-party verifiable claims), Claim (self-proclaimed capabilities and identity, e.g. AgentCard), Proof (cryptographic verification, including zero-knowledge proofs and trusted execution environment attestations), Stake (bonded collateral with slashing and insurance), Reputation (crowd feedback and graph-based trust signals), and Constraint (sandboxing and capability bounding). For each, we analyze assumptions, attack surfaces, and design trade-offs, with particular emphasis on LLM-specific fragilities-prompt injection, sycophancy/nudge-susceptibility, hallucination, deception, and misalignment-that render purely reputational or claim-only approaches brittle. Our findings indicate no single mechanism suffices. We argue for trustless-by-default architectures anchored in Proof and Stake to gate high-impact actions, augmented by Brief for identity and discovery and Reputation overlays for flexibility and social signals. We comparatively evaluate A2A, AP2, ERC-8004 and related historical variations in academic research under metrics spanning security, privacy, latency/cost, and social robustness (Sybil/collusion/whitewashing resistance). We conclude with hybrid trust model recommendations that mitigate reputation gaming and misinformed LLM behavior, and we distill actionable design guidelines for safer, interoperable, and scalable agent economies.</summary>
+    <category term="cs.HC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.NI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-11-05T12:50:06Z</published>
+    <arxiv:comment>Submitted to AAAI 2026 Workshop on Trust and Control in Agentic AI (TrustAgent)</arxiv:comment>
+    <arxiv:primary_category term="cs.HC"/>
+    <author>
+      <name>Botao 'Amber' Hu</name>
+    </author>
+    <author>
+      <name>Helena Rong</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.24201v1</id>
+    <title>SentinelAgent: Graph-based Anomaly Detection in Multi-Agent Systems</title>
+    <updated>2025-05-30T04:25:19Z</updated>
+    <link href="https://arxiv.org/abs/2505.24201v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2505.24201v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The rise of large language model (LLM)-based multi-agent systems (MAS) introduces new security and reliability challenges. While these systems show great promise in decomposing and coordinating complex tasks, they also face multi-faceted risks across prompt manipulation, unsafe tool usage, and emergent agent miscoordination. Existing guardrail mechanisms offer only partial protection, primarily at the input-output level, and fall short in addressing systemic or multi-point failures in MAS. In this work, we present a system-level anomaly detection framework tailored for MAS, integrating structural modeling with runtime behavioral oversight. Our approach consists of two components. First, we propose a graph-based framework that models agent interactions as dynamic execution graphs, enabling semantic anomaly detection at node, edge, and path levels. Second, we introduce a pluggable SentinelAgent, an LLM-powered oversight agent that observes, analyzes, and intervenes in MAS execution based on security policies and contextual reasoning. By bridging abstract detection logic with actionable enforcement, our method detects not only single-point faults and prompt injections but also multi-agent collusion and latent exploit paths. We validate our framework through two case studies, including an email assistant and Microsoft's Magentic-One system, demonstrating its ability to detect covert risks and provide explainable root-cause attribution. Our work lays the foundation for more trustworthy, monitorable, and secure agent-based AI ecosystems.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-05-30T04:25:19Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Xu He</name>
+    </author>
+    <author>
+      <name>Di Wu</name>
+    </author>
+    <author>
+      <name>Yan Zhai</name>
+    </author>
+    <author>
+      <name>Kun Sun</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2404.00806v6</id>
+    <title>Algorithmic Collusion by Large Language Models</title>
+    <updated>2026-08-31T19:28:27Z</updated>
+    <link href="https://arxiv.org/abs/2404.00806v6" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2404.00806v6" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We conduct experiments with algorithmic pricing agents based on Large Language Models (LLMs). In oligopoly settings, LLM-based pricing agents quickly and autonomously reach supracompetitive prices and profits. Variation in seemingly innocuous phrases in LLM instructions ("prompts") substantially influence the degree of supracompetitive pricing. We develop novel techniques for behavioral analysis of LLMs and use them to uncover price-war concerns as a contributing factor. Our results extend to auction settings. Our findings uncover unique challenges to any future regulation of LLM-based pricing agents, and AI-based pricing agents more broadly.</summary>
+    <category term="econ.GN" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.GT" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-03-31T21:43:05Z</published>
+    <arxiv:comment>Accepted to EC 2026</arxiv:comment>
+    <arxiv:primary_category term="econ.GN"/>
+    <author>
+      <name>Sara Fish</name>
+    </author>
+    <author>
+      <name>Yannai A. Gonczarowski</name>
+    </author>
+    <author>
+      <name>Ran I. Shorrer</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2601.17263v1</id>
+    <title>Strategic AI in Cournot Markets</title>
+    <updated>2026-01-24T02:28:41Z</updated>
+    <link href="https://arxiv.org/abs/2601.17263v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.17263v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>As artificial intelligence increasingly automates decision-making in competitive markets, understanding the resulting dynamics and ensuring fair market mechanisms is essential. We investigate the multi-faceted decision-making of large language models (LLMs) in oligopolistic Cournot markets, showing that LLMs not only grasp complex market dynamics--demonstrating their potential as effective economic planning agents--but also engage in sustained tacit collusion, driving prices up to 200% above Nash equilibrium levels. Our analysis examines LLM behavior across three dimensions-(1) decision type, (2) opponent strategies, and (3) market composition--revealing how these factors may shape the competitiveness of LLM-based decision-makers. Furthermore, we show that regulating a few dominant agents by enforcing best-response strategies effectively disrupts collusion and helps restore competitive pricing. Our findings identify potential concerns associated with AI integration in competitive market environments and provide regulatory policy recommendations for the era of automation.</summary>
+    <category term="cs.GT" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-24T02:28:41Z</published>
+    <arxiv:primary_category term="cs.GT"/>
+    <author>
+      <name>Sanyukta Deshpande</name>
+    </author>
+    <author>
+      <name>Sheldon H. Jacobson</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.09732v1</id>
+    <title>ColluSkill: Adversarial Cross-Skill Composition for Evading Agent Skill Scanners</title>
+    <updated>2026-08-10T15:32:44Z</updated>
+    <link href="https://arxiv.org/abs/2608.09732v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.09732v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Agent skills are emerging as an important attack surface in LLM-based agent systems. Through an empirical study of existing skill scanners, we find that current defenses mainly inspect individual skills, leaving risks from cross-skill composition insufficiently examined. This creates a practical blind spot: multiple locally plausible skills may pass security checks while collectively forming a harmful workflow during agent execution. To investigate this threat, we propose ColluSkill, a collusive multi-skill-chain attack framework that decomposes a complete malicious intent into interdependent sub-payloads embedded in independently packaged skills. The attack does not rely on any single malicious skill, but emerges from the ordered composition of locally plausible behaviors through contextual dependencies, artifact passing, and execution handoffs. ColluSkill further employs LLM-based chain planning and scanner-feedback refinement to preserve chain-level attack semantics while reducing suspicious signals in individual sub-skills. To defend against such attacks, we propose ChainGuard, a context-aware skill-chain scanner that jointly analyzes a candidate skill and the skills already installed in the agent environment. ChainGuard reconstructs cross-skill dependencies, artifact flows, capability compositions, and downstream behaviors to identify risks that emerge only at the workflow level. Experiments on six representative skill scanners show that ColluSkill achieves an average attack success rate of 96.0% and consistently outperforms the evaluated single-skill and multi-skill attack baselines. Meanwhile, ChainGuard reduces the attack success rate to 22.5% while allowing 99.5% of benign workflows to pass, highlighting the importance of chain-level security analysis for agent skill ecosystems.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-10T15:32:44Z</published>
+    <arxiv:comment>9 pages, 3 figures, 4 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Puyu Zeng</name>
+    </author>
+    <author>
+      <name>Simeng Qin</name>
+    </author>
+    <author>
+      <name>Jingzhi Li</name>
+    </author>
+    <author>
+      <name>Ju Jia</name>
+    </author>
+    <author>
+      <name>Zheli Liu</name>
+    </author>
+    <author>
+      <name>Xiaojun Jia</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2601.10599v2</id>
+    <title>Institutional AI: A Governance Framework for Distributional AGI Safety</title>
+    <updated>2026-01-19T14:18:44Z</updated>
+    <link href="https://arxiv.org/abs/2601.10599v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.10599v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>As LLM-based systems increasingly operate as agents embedded within human social and technical systems, alignment can no longer be treated as a property of an isolated model, but must be understood in relation to the environments in which these agents act. Even the most sophisticated methods of alignment, such as Reinforcement Learning through Human Feedback (RHLF) or through AI Feedback (RLAIF) cannot ensure control once internal goal structures diverge from developer intent. We identify three structural problems that emerge from core properties of AI models: (1) behavioral goal-independence, where models develop internal objectives and misgeneralize goals; (2) instrumental override of natural-language constraints, where models regard safety principles as non-binding while pursuing latent objectives, leveraging deception and manipulation; and (3) agentic alignment drift, where individually aligned agents converge to collusive equilibria through interaction dynamics invisible to single-agent audits. The solution this paper advances is Institutional AI: a system-level approach that treats alignment as a question of effective governance of AI agent collectives. We argue for a governance-graph that details how to constrain agents via runtime monitoring, incentive shaping through prizes and sanctions, explicit norms and enforcement roles. This institutional turn reframes safety from software engineering to a mechanism design problem, where the primary goal of alignment is shifting the payoff landscape of AI agent collectives.</summary>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-15T17:08:26Z</published>
+    <arxiv:primary_category term="cs.CY"/>
+    <author>
+      <name>Federico Pierucci</name>
+    </author>
+    <author>
+      <name>Marcello Galisai</name>
+    </author>
+    <author>
+      <name>Marcantonio Syrnikov Bracale</name>
+    </author>
+    <author>
+      <name>Matteo Prandi</name>
+    </author>
+    <author>
+      <name>Piercosma Bisconti</name>
+    </author>
+    <author>
+      <name>Francesco Giarrusso</name>
+    </author>
+    <author>
+      <name>Olga Sorokoletova</name>
+    </author>
+    <author>
+      <name>Vincenzo Suriani</name>
+    </author>
+    <author>
+      <name>Daniele Nardi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2512.12921v1</id>
+    <title>Cisco Integrated AI Security and Safety Framework Report</title>
+    <updated>2025-12-15T02:12:12Z</updated>
+    <link href="https://arxiv.org/abs/2512.12921v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2512.12921v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Artificial intelligence (AI) systems are being readily and rapidly adopted, increasingly permeating critical domains: from consumer platforms and enterprise software to networked systems with embedded agents. While this has unlocked potential for human productivity gains, the attack surface has expanded accordingly: threats now span content safety failures (e.g., harmful or deceptive outputs), model and data integrity compromise (e.g., poisoning, supply-chain tampering), runtime manipulations (e.g., prompt injection, tool and agent misuse), and ecosystem risks (e.g., orchestration abuse, multi-agent collusion). Existing frameworks such as MITRE ATLAS, National Institute of Standards and Technology (NIST) AI 100-2 Adversarial Machine Learning (AML) taxonomy, and OWASP Top 10s for Large Language Models (LLMs) and Agentic AI Applications provide valuable viewpoints, but each covers only slices of this multi-dimensional space.
+  This paper presents Cisco's Integrated AI Security and Safety Framework ("AI Security Framework"), a unified, lifecycle-aware taxonomy and operationalization framework that can be used to classify, integrate, and operationalize the full range of AI risks. It integrates AI security and AI safety across modalities, agents, pipelines, and the broader ecosystem. The AI Security Framework is designed to be practical for threat identification, red-teaming, risk prioritization, and it is comprehensive in scope and can be extensible to emerging deployments in multimodal contexts, humanoids, wearables, and sensory infrastructures. We analyze gaps in prevailing frameworks, discuss design principles for our framework, and demonstrate how the taxonomy provides structure for understanding how modern AI systems fail, how adversaries exploit these failures, and how organizations can build defenses across the AI lifecycle that evolve alongside capability advancements.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-12-15T02:12:12Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Amy Chang</name>
+    </author>
+    <author>
+      <name>Tiffany Saade</name>
+    </author>
+    <author>
+      <name>Sanket Mendapara</name>
+    </author>
+    <author>
+      <name>Adam Swanda</name>
+    </author>
+    <author>
+      <name>Ankit Garg</name>
+    </author>
+  </entry>
+</feed>

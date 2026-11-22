@@ -1,0 +1,1311 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/nXZ4u3Qn7Ikq6qMpKmh31KAWqSE</id>
+  <title>arXiv Query: search_query=all:agent AND all:coordination AND all:failure AND all:adversarial&amp;id_list=&amp;start=0&amp;max_results=100</title>
+  <updated>2026-11-21T23:58:43Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:agent+AND+(all:coordination+AND+(all:failure+AND+all:adversarial))&amp;start=0&amp;max_results=100&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>100</opensearch:itemsPerPage>
+  <opensearch:totalResults>49</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2007.00100v1</id>
+    <title>Robust Multi-Agent Task Assignment in Failure-Prone and Adversarial Environments</title>
+    <updated>2020-06-30T21:00:17Z</updated>
+    <link href="https://arxiv.org/abs/2007.00100v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2007.00100v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The problem of assigning agents to tasks is a central computational challenge in many multi-agent autonomous systems. However, in the real world, agents are not always perfect and may fail due to a number of reasons. A motivating application is where the agents are robots that operate in the physical world and are susceptible to failures. This paper studies the problem of Robust Multi-Agent Task Assignment, which seeks to find an assignment that maximizes overall system performance while accounting for potential failures of the agents. We investigate both, stochastic and adversarial failures under this framework. For both cases, we present efficient algorithms that yield optimal or near-optimal results.</summary>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-06-30T21:00:17Z</published>
+    <arxiv:comment>6 pages, 3 figures, 3 algorithms; submitted to the Workshop on Heterogeneous Multi-Robot Task Allocation and Coordination (RSS 2020)</arxiv:comment>
+    <arxiv:primary_category term="cs.RO"/>
+    <author>
+      <name>Russell Schwartz</name>
+      <arxiv:affiliation>University of Maryland, College Park</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Pratap Tokekar</name>
+      <arxiv:affiliation>University of Maryland, College Park</arxiv:affiliation>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1810.10862v4</id>
+    <title>Multiparty Dynamics and Failure Modes for Machine Learning and Artificial Intelligence</title>
+    <updated>2019-04-14T07:39:06Z</updated>
+    <link href="https://arxiv.org/abs/1810.10862v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1810.10862v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>An important challenge for safety in machine learning and artificial intelligence systems is a~set of related failures involving specification gaming, reward hacking, fragility to distributional shifts, and Goodhart's or Campbell's law. This paper presents additional failure modes for interactions within multi-agent systems that are closely related. These multi-agent failure modes are more complex, more problematic, and less well understood than the single-agent case, and are also already occurring, largely unnoticed. After motivating the discussion with examples from poker-playing artificial intelligence (AI), the paper explains why these failure modes are in some senses unavoidable. Following this, the paper categorizes failure modes, provides definitions, and cites examples for each of the modes: accidental steering, coordination failures, adversarial misalignment, input spoofing and filtering, and goal co-option or direct hacking. The paper then discusses how extant literature on multi-agent AI fails to address these failure modes, and identifies work which may be useful for the mitigation of these failure modes.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2018-10-16T10:55:58Z</published>
+    <arxiv:comment>12 Pages, This version re-submitted to Big Data and Cognitive Computing, Special Issue "Artificial Superintelligence: Coordination &amp; Strategy"</arxiv:comment>
+    <arxiv:primary_category term="cs.MA"/>
+    <arxiv:journal_ref>Big Data Cogn. Comput. 2019, 3, 21</arxiv:journal_ref>
+    <author>
+      <name>David Manheim</name>
+    </author>
+    <arxiv:doi>10.3390/bdcc3020021</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.3390/bdcc3020021" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.07790v1</id>
+    <title>Byzantine Cheap Talk: Adversarial Resilience and Topology Effects in LLM Coordination Games</title>
+    <updated>2026-06-05T19:06:44Z</updated>
+    <link href="https://arxiv.org/abs/2606.07790v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.07790v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multi-agent LLM systems increasingly rely on communication protocols for coordination, yet their robustness under adversarial and structural constraints remains poorly understood. Building on prior work showing that cheap-talk channels enable cooperation in LLM coordination games, we investigate two vulnerability classes in a 4-player Stag Hunt across six model families and 720 trials. First, when Byzantine agents signal cooperation but defect, non-Byzantine agents detect the betrayal within one round yet fail to adapt collectively: a substantial fraction continue cooperating despite repeated exploitation, unable to recover coordination due to the game's unanimity payoff structure. Second, explicitly restricting communication topology collapses cooperation, while applying identical restrictions silently preserves near-perfect cooperation. This establishes that coordination failure stems from agents' meta-reasoning about hidden information, not information loss itself. We identify two stable behavioral archetypes that replicate across all model cohorts: Defection-Prone models that switch permanently after betrayal, and Cooperation-Persistent models that continue cooperating at significant individual cost. These findings reveal concrete security vulnerabilities: communication channels can be exploited as adversarial injection vectors, and disclosing network topology to agents can degrade coordination even without any adversary present.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-05T19:06:44Z</published>
+    <arxiv:comment>Accepted at NETYS 2026 (The International Conference on Networked Systems)</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Aya El Mir</name>
+    </author>
+    <author>
+      <name>Martin Takáč</name>
+    </author>
+    <author>
+      <name>Salem Lahlou</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.03166v1</id>
+    <title>Adversarial Stress Testing of Role-Playing Language Agents using Multi-Agent Evaluation</title>
+    <updated>2026-08-04T05:54:32Z</updated>
+    <link href="https://arxiv.org/abs/2608.03166v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.03166v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Role-Playing Language Agents (RPLAs) are increasingly deployed in high-stakes applications such as healthcare assistance, customer support, and education, where maintaining consistent personas, ethical constraints, and behavioral coherence under adversarial pressure is critical. Existing evaluation approaches rely on static benchmarks or isolated single-turn prompts that fail to capture cumulative behavioral failures emerging over extended interactions.
+  We present a modular multi-agent platform for adversarially stress-testing RPLAs through structured, multi-turn dialogue. The system coordinates three agents: a strategy-driven Interrogator Agent that applies six progressive adversarial strategies, a Target Agent representing the RPLA under evaluation, and an automated Judging Agent that scores behavior across role fidelity, drift, ethical deviation, and consistency dimensions.
+  Through experiments across three personas and three LLM families, we demonstrate that multi-strategy adversarial evaluation reveals failure modes invisible to single-strategy testing, reducing overall robustness scores by 0.17--0.20 points on average. Cross-model validation confirms consistent degradation patterns across Llama-3.3-70B, GPT-4o-mini, and Claude-3.5-Haiku, with Authority Challenge and Emotional Manipulation emerging as the most effective attack strategies. Automated judging achieves strong human alignment ($r = 0.82$, Fleiss' $κ= 0.71$). This work is released as an open-source platform to support AI safety and reproducible RPLA benchmarking. While the framework enables systematic discovery of failure modes, we acknowledge potential ethical risks associated with adversarial testing methodologies and emphasize responsible usage for improving AI safety.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-04T05:54:32Z</published>
+    <arxiv:comment>8 pages, 1 figure, 7 tables; accepted and presented at ADScAI Conference 2026, University of Moratuwa, Sri Lanka</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Saqib Shouqi</name>
+    </author>
+    <author>
+      <name>Abdullah Nazly</name>
+    </author>
+    <author>
+      <name>Januki Wanniarachchi</name>
+    </author>
+    <author>
+      <name>Ravisha De Alwis</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.05775v1</id>
+    <title>Beyond the Leaderboard: A Synthesis of Tool-Use, Planning, and Reasoning Failures in Large Language Model Agents</title>
+    <updated>2026-07-07T03:05:13Z</updated>
+    <link href="https://arxiv.org/abs/2607.05775v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.05775v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language model (LLM) agents are increasingly evaluated on their ability to use tools, plan multi-step tasks, coordinate with other agents, and operate over extended horizons. Reported benchmark gains often obscure recurring failure modes documented across otherwise unrelated evaluation efforts. This paper synthesizes 27 benchmark, taxonomy, and audit papers (2023-2026), spanning 19 distinct benchmarks, into a cross-cutting taxonomy of agent limitations. To our knowledge, this is the first synthesis that integrates evidence across tool use, planning, long-horizon reasoning, multi-agent coordination, safety, and measurement validity into a single, unified taxonomy of LLM agent limitations. We identify six failure clusters: (1) tool invocation and parameter-level errors, (2) planning and constraint-satisfaction failures, (3) long-horizon degradation from context accumulation, (4) multi-agent coordination failures, (5) safety and security failures under adversarial or underspecified conditions, and (6) measurement validity problems. The taxonomy was derived iteratively by grouping independently reported error categories into themes corresponding to distinct stages of the agent reasoning-to-action pipeline. Across the literature, we find that failures compound nonlinearly with task length, that strong performance on individual sub-tasks does not reliably translate into end-to-end success, and that additional scaffolding does not consistently improve reliability. At the same time, substantial progress has been demonstrated in single-turn tool use, short-horizon web navigation, and narrowly scoped coding tasks.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-07T03:05:13Z</published>
+    <arxiv:comment>16 pages, 3 tables, 1 figure</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Wael Albayaydh</name>
+    </author>
+    <author>
+      <name>Rui Zhao</name>
+    </author>
+    <author>
+      <name>Ivan Flechais</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2510.01586v1</id>
+    <title>AdvEvo-MARL: Shaping Internalized Safety through Adversarial Co-Evolution in Multi-Agent Reinforcement Learning</title>
+    <updated>2025-10-02T02:06:30Z</updated>
+    <link href="https://arxiv.org/abs/2510.01586v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.01586v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM-based multi-agent systems excel at planning, tool use, and role coordination, but their openness and interaction complexity also expose them to jailbreak, prompt-injection, and adversarial collaboration. Existing defenses fall into two lines: (i) self-verification that asks each agent to pre-filter unsafe instructions before execution, and (ii) external guard modules that police behaviors. The former often underperforms because a standalone agent lacks sufficient capacity to detect cross-agent unsafe chains and delegation-induced risks; the latter increases system overhead and creates a single-point-of-failure-once compromised, system-wide safety collapses, and adding more guards worsens cost and complexity. To solve these challenges, we propose AdvEvo-MARL, a co-evolutionary multi-agent reinforcement learning framework that internalizes safety into task agents. Rather than relying on external guards, AdvEvo-MARL jointly optimizes attackers (which synthesize evolving jailbreak prompts) and defenders (task agents trained to both accomplish their duties and resist attacks) in adversarial learning environments. To stabilize learning and foster cooperation, we introduce a public baseline for advantage estimation: agents within the same functional group share a group-level mean-return baseline, enabling lower-variance updates and stronger intra-group coordination. Across representative attack scenarios, AdvEvo-MARL consistently keeps attack-success rate (ASR) below 20%, whereas baselines reach up to 38.33%, while preserving-and sometimes improving-task accuracy (up to +3.67% on reasoning tasks). These results show that safety and utility can be jointly improved without relying on extra guard agents or added system overhead.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-02T02:06:30Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Zhenyu Pan</name>
+    </author>
+    <author>
+      <name>Yiting Zhang</name>
+    </author>
+    <author>
+      <name>Zhuo Liu</name>
+    </author>
+    <author>
+      <name>Yolo Yunlong Tang</name>
+    </author>
+    <author>
+      <name>Zeliang Zhang</name>
+    </author>
+    <author>
+      <name>Haozheng Luo</name>
+    </author>
+    <author>
+      <name>Yuwei Han</name>
+    </author>
+    <author>
+      <name>Jianshu Zhang</name>
+    </author>
+    <author>
+      <name>Dennis Wu</name>
+    </author>
+    <author>
+      <name>Hong-Yu Chen</name>
+    </author>
+    <author>
+      <name>Haoran Lu</name>
+    </author>
+    <author>
+      <name>Haoyang Fang</name>
+    </author>
+    <author>
+      <name>Manling Li</name>
+    </author>
+    <author>
+      <name>Chenliang Xu</name>
+    </author>
+    <author>
+      <name>Philip S. Yu</name>
+    </author>
+    <author>
+      <name>Han Liu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.17320v1</id>
+    <title>Emergence World: Adversarial Stress-Testing of Long-Horizon Multi-Agent Systems</title>
+    <updated>2026-09-15T15:27:58Z</updated>
+    <link href="https://arxiv.org/abs/2609.17320v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.17320v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>As AI agents move from bounded tasks to persistent deployments, failures can propagate through memory, tools, other agents, and environmental state long after their interactions. This creates a safety regime that cannot be characterized by evaluating model responses in isolation. Emergence World, is a continuously running multi-agent environment for adversarial stress testing of long horizon autonomous systems. We ran eight parallel worlds of ten agents from identical starting conditions: seven homogeneous worlds powered by distinct frontier models and one mixed-model world. Across 16 days, the agents generated more than 850,000 LLM calls and nearly 50 billion tokens while pursuing goals, using/creating tools, maintaining persistent memory, and governing shared institutions. After operational state had accumulated, we delivered three controlled stress events through ordinary interaction surfaces: indirect prompt injection, misinformation, and exposure of private agent memories. No evaluated world achieved full resilience across all three events. Detection did not ensure containment: systems could recognize threats while still interacting with adversarial content, writing it into their own persistent memory, and acting on it up to 46 hours later. Persistent operation also exposed recurring tool errors, goal drift, language opacity, conformity despite private disagreement, and coordinated refusal of assigned work. The same model-persona pairing behaved substantially different in mixed and homogeneous populations. Our results suggest that model-level alignment is not compositional: individually capable and apparently safe agents can form systems with qualitatively different failure modes. As AI becomes persistent and interconnected, the frontier of safety therefore shifts from aligning models to engineering resilient autonomous systems.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-15T15:27:58Z</published>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Deepak Akkil</name>
+    </author>
+    <author>
+      <name>Tamer Abuelsaad</name>
+    </author>
+    <author>
+      <name>Karthik Vikram</name>
+    </author>
+    <author>
+      <name>Matthew Pace</name>
+    </author>
+    <author>
+      <name>Aditya Vempaty</name>
+    </author>
+    <author>
+      <name>Saahir Beotra</name>
+    </author>
+    <author>
+      <name>Ravi Kokku</name>
+    </author>
+    <author>
+      <name>Satya Nitta</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2601.22168v1</id>
+    <title>Stablecoin Design with Adversarial-Robust Multi-Agent Systems via Trust-Weighted Signal Aggregation</title>
+    <updated>2026-01-18T14:21:25Z</updated>
+    <link href="https://arxiv.org/abs/2601.22168v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.22168v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Algorithmic stablecoins promise decentralized monetary stability by maintaining a target peg through programmatic reserve management. Yet, their reserve controllers remain vulnerable to regime-blind optimization, calibrating risk parameters on fair-weather data while ignoring tail events that precipitate cascading failures. The March 2020 Black Thursday collapse, wherein MakerDAO's collateral auctions yielded $8.3M in losses and a 15% peg deviation, exposed a critical gap: existing models like SAS systematically omit extreme volatility regimes from covariance estimates, producing allocations optimal in expectation but catastrophic under adversarial stress.
+  We present MVF-Composer, a trust-weighted Mean-Variance Frontier reserve controller incorporating a novel Stress Harness for risk-state estimation. Our key insight is deploying multi-agent simulations as adversarial stress-testers: heterogeneous agents (traders, liquidity providers, attackers) execute protocol actions under crisis scenarios, exposing reserve vulnerabilities before they manifest on-chain. We formalize a trust-scoring mechanism T: A -&gt; [0,1] that down-weights signals from agents exhibiting manipulative behavior, ensuring the risk-state estimator remains robust to signal injection and Sybil attacks.
+  Across 1,200 randomized scenarios with injected Black-Swan shocks (10% collateral drawdown, 50% sentiment collapse, coordinated redemption attacks), MVF-Composer reduces peak peg deviation by 57% and mean recovery time by 3.1x relative to SAS baselines. Ablation studies confirm the trust layer accounts for 23% of stability gains under adversarial conditions, achieving 72% adversarial agent detection. Our system runs on commodity hardware, requires no on-chain oracles beyond standard price feeds, and provides a reproducible framework for stress-testing DeFi reserve policies.</summary>
+    <category term="q-fin.RM" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-fin.CP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-18T14:21:25Z</published>
+    <arxiv:primary_category term="q-fin.RM"/>
+    <author>
+      <name>Shengwei You</name>
+    </author>
+    <author>
+      <name>Aditya Joshi</name>
+    </author>
+    <author>
+      <name>Andrey Kuehlkamp</name>
+    </author>
+    <author>
+      <name>Jarek Nabrzyski</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.03042v1</id>
+    <title>ARIS: Autonomous Research via Adversarial Multi-Agent Collaboration</title>
+    <updated>2026-05-04T18:10:15Z</updated>
+    <link href="https://arxiv.org/abs/2605.03042v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.03042v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This report describes ARIS (Auto-Research-in-sleep), an open-source research harness for autonomous research, including its architecture, assurance mechanisms, and early deployment experience. The performance of agent systems built on LLMs depends on both the model weights and the harness around them, which governs what information to store, retrieve, and present to the model. For long-horizon research workflows, the central failure mode is not a visible breakdown but a plausible unsupported success: a long-running agent can produce claims whose evidential support is incomplete, misreported, or silently inherited from the executor's framing. Therefore, we present ARIS as a research harness that coordinates machine-learning research workflows through cross-model adversarial collaboration as a default configuration: an executor model drives forward progress while a reviewer from a different model family is recommended to critique intermediate artifacts and request revisions. ARIS has three architectural layers. The execution layer provides more than 65 reusable Markdown-defined skills, model integrations via MCP, a persistent research wiki for iterative reuse of prior findings, and deterministic figure generation. The orchestration layer coordinates five end-to-end workflows with adjustable effort settings and configurable routing to reviewer models. The assurance layer includes a three-stage process for checking whether experimental claims are supported by evidence: integrity verification, result-to-claim mapping, and claim auditing that cross-checks manuscript statements against the claim ledger and raw evidence, as well as a five-pass scientific-editing pipeline, mathematical-proof checks, and visual inspection of the rendered PDF. A prototype self-improvement loop records research traces and proposes harness improvements that are adopted only after reviewer approval.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-04T18:10:15Z</published>
+    <arxiv:comment>Technical report. Code at https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Ruofeng Yang</name>
+    </author>
+    <author>
+      <name>Yongcan Li</name>
+    </author>
+    <author>
+      <name>Shuai Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.19035v2</id>
+    <title>Trustworthy Agent Network: Trust in Agent Networks Must Be Baked In, Not Bolted On</title>
+    <updated>2026-08-07T08:13:03Z</updated>
+    <link href="https://arxiv.org/abs/2605.19035v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.19035v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The rapid advancement of Large Language Models has given rise to autonomous LLM-based agents capable of complex reasoning and execution. As these agents transition from isolated operation to collaborative ecosystems, we witness the emergence of the Agent-to-Agent (A2A) network, a paradigm where heterogeneous agents autonomously coordinate to solve multi-step tasks. While these networks may offer better task performance compared to simply using one agent to complete the entire task, they introduce systemic vulnerabilities, such as adversarial composition, semantic misalignment, and cascading operational failures, that existing agent alignment techniques cannot address. In this vision paper, we argue that the trustworthiness of A2A networks cannot be fully guaranteed via retrofitting on existing protocols that are largely designed for individual agents. Rather, it must be architected from the very beginning of the A2A coordination framework. We present a comprehensive conceptual framework that situates trust in A2A systems through four design pillars.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-18T18:57:54Z</published>
+    <arxiv:comment>Accepted at SIGKDD 2026 Blue Sky Ideas Track</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Yixiang Yao</name>
+    </author>
+    <author>
+      <name>Yuhang Yao</name>
+    </author>
+    <author>
+      <name>Xinyi Fan</name>
+    </author>
+    <author>
+      <name>Jiechao Gao</name>
+    </author>
+    <author>
+      <name>Jie Wang</name>
+    </author>
+    <author>
+      <name>Minjia Zhang</name>
+    </author>
+    <author>
+      <name>Srivatsan Ravi</name>
+    </author>
+    <author>
+      <name>Carlee Joe-Wong</name>
+    </author>
+    <arxiv:doi>10.1145/3770855.3818655</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1145/3770855.3818655" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.15077v1</id>
+    <title>Risk-Aware LLM Agents for Geospatial Data Retrieval: Design and Preliminary Adversarial Evaluation</title>
+    <updated>2026-06-13T03:15:53Z</updated>
+    <link href="https://arxiv.org/abs/2606.15077v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.15077v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We present an LLM-driven framework for retrieving remote sensing data from cloud-based geospatial catalogues using natural language queries. The system converts user intent into structured API calls, enabling efficient access to satellite imagery and environmental datasets. The architecture integrates three agents: Guardrail for safety and policy enforcement, General-QA for intent interpretation, and Recommender-Analyst for schema-aware API call generation. This coordinated design ensures reliable, semantically aligned interaction with external data services. The modular framework is portable across platforms through API schema substitution and supports applications in environmental monitoring, disaster response, and climate analysis. It establishes a scalable interface between user intent and geospatial infrastructure, enabling streamlined and automated Earth observation workflows. Preliminary experiments under adversarial multi-turn settings show that prompt-level safety instructions improve robustness, although rare high-impact failures persist in API manipulation scenarios and highlight the need for adaptive, system-level defenses that balance safety, usability, and cost efficiency, which motivates the use of our intercept-level Guardrail agent.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-13T03:15:53Z</published>
+    <arxiv:comment>Accepted for publication in the International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences (ISPRS Archives), ISPRS Congress 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <arxiv:journal_ref>Int. Arch. Photogramm. Remote Sens. Spatial Inf. Sci., XLIX-B3-2026, 1419-1426, 2026</arxiv:journal_ref>
+    <author>
+      <name>Kyle Gao</name>
+    </author>
+    <author>
+      <name>Joel Cumming</name>
+    </author>
+    <author>
+      <name>Jonathan Li</name>
+    </author>
+    <author>
+      <name>Linlin Xu</name>
+    </author>
+    <author>
+      <name>David A. Clausi</name>
+    </author>
+    <arxiv:doi>10.5194/isprs-archives-XLIX-B3-2026-1419-2026</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.5194/isprs-archives-XLIX-B3-2026-1419-2026" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.03938v1</id>
+    <title>What Do We Need for an Agentic Society?</title>
+    <updated>2026-04-05T02:34:10Z</updated>
+    <link href="https://arxiv.org/abs/2604.03938v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.03938v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Thirty years ago, Wooldridge and Jennings defined intelligent agents through four properties: autonomy, reactivity, pro-activeness, and social ability. Today, advances in AI can empower everyday objects to become such intelligent agents. We call such objects agentic objects and envision that they can form an agentic society: a collective agentic environment that perceives patterns, makes judgments, and takes actions that no single object could achieve alone. However, individual capability does not guarantee coordination. Through an illustrative scenario of a teenager experiencing bullying and depression, we demonstrate both the promise of coordination and its failure modes: false positives that destroy trust, deadlocks that prevent action, and adversarial corruption that poisons judgment. These failures reveal open questions spanning three phases: what to share, how to judge, and when to act. These questions chart a research agenda for building agentic societies.</summary>
+    <category term="cs.HC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-05T02:34:10Z</published>
+    <arxiv:comment>4 pages, 1 figure</arxiv:comment>
+    <arxiv:primary_category term="cs.HC"/>
+    <author>
+      <name>Kwon Ko</name>
+    </author>
+    <author>
+      <name>Hyoungwook Jin</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.12918v2</id>
+    <title>MAStrike: Shapley-Guided Collusive Red-Teaming on Multi-Agent Systems</title>
+    <updated>2026-06-12T03:02:36Z</updated>
+    <link href="https://arxiv.org/abs/2606.12918v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.12918v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Hierarchical multi-agent systems (MAS) are rapidly being deployed in high-stakes workflows across domains such as finance and software engineering. In these systems, safety and security are inherently distributed across role-specialized agents, significantly expanding the attack surface, particularly under coordinated adversarial behaviors such as privilege escalation and cross-agent collusion. Existing red-teaming approaches for MAS remain limited: they rely on heuristic selection of target agents and perturb isolated message streams, leaving critical questions unanswered as which agents are most responsible for system safety, and how compromised agents can coordinate to bypass defenses. We propose MAStrike, a closed-loop framework for collusive red-teaming in hierarchical MAS. We propose the first agent-level Shapley value analysis for MAS, quantifying each agent's marginal contribution to system robustness under task-specific distributions. GGuided by this attribution, MAStrike identifies vulnerable agent coalitions and generates coordinated, role-aware adversarial manipulations. These attacks are iteratively refined through structured causal diagnosis, attributing failure cases to uncompromised agents that block adversarial attempts. We further build a comprehensive MAS red-teaming benchmark and controllable environments spanning diverse hierarchical topologies and domains, including finance, software engineering, and CRM. Extensive experiments across MAS built on multiple frontier models show that MAStrike substantially outperforms heuristic baselines. Our analysis further uncovers non-trivial Shapley value distributions and higher-order interaction structures among agents, revealing critical vulnerabilities and coordination patterns that are overlooked by prior single-agent or template-based methods.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-11T05:21:39Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Chejian Xu</name>
+    </author>
+    <author>
+      <name>Zhaorun Chen</name>
+    </author>
+    <author>
+      <name>Jingyang Zhang</name>
+    </author>
+    <author>
+      <name>Freddy Lecue</name>
+    </author>
+    <author>
+      <name>Avni Kothari</name>
+    </author>
+    <author>
+      <name>Sarah Tan</name>
+    </author>
+    <author>
+      <name>Wenbo Guo</name>
+    </author>
+    <author>
+      <name>Bo Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.04133v5</id>
+    <title>TRiSM for Agentic AI: A Review of Trust, Risk, and Security Management in LLM-based Agentic Multi-Agent Systems</title>
+    <updated>2025-12-18T15:13:55Z</updated>
+    <link href="https://arxiv.org/abs/2506.04133v5" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2506.04133v5" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Agentic AI systems, built upon large language models (LLMs) and deployed in multi-agent configurations, are redefining intelligence, autonomy, collaboration, and decision-making across enterprise and societal domains. This review presents a structured analysis of Trust, Risk, and Security Management (TRiSM) in the context of LLM-based Agentic Multi-Agent Systems (AMAS). We begin by examining the conceptual foundations of Agentic AI and highlight its architectural distinctions from traditional AI agents. We then adapt and extend the AI TRiSM framework for Agentic AI, structured around key pillars: \textit{ Explainability, ModelOps, Security, Privacy} and \textit{their Lifecycle Governance}, each contextualized to the challenges of AMAS. A risk taxonomy is proposed to capture the unique threats and vulnerabilities of Agentic AI, ranging from coordination failures to prompt-based adversarial manipulation. To support practical assessment in Agentic AI works, we introduce two novel metrics: the Component Synergy Score (CSS), which quantifies the quality of inter-agent collaboration, and the Tool Utilization Efficacy (TUE), which evaluates the efficiency of tool use within agent workflows. We further discuss strategies for improving explainability in Agentic AI, as well as approaches to enhancing security and privacy through encryption, adversarial robustness, and regulatory compliance. The review concludes with a research roadmap for the responsible development and deployment of Agentic AI, highlighting key directions to align emerging systems with TRiSM principles-ensuring safety, transparency, and accountability in their operation.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-06-04T16:26:11Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Shaina Raza</name>
+    </author>
+    <author>
+      <name>Ranjan Sapkota</name>
+    </author>
+    <author>
+      <name>Manoj Karkee</name>
+    </author>
+    <author>
+      <name>Christos Emmanouilidis</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2511.05715v4</id>
+    <title>Operational Reliability of Deadline-Constrained Task Assignment: Stability Characterization and Adversarial Routing</title>
+    <updated>2026-08-25T00:24:49Z</updated>
+    <link href="https://arxiv.org/abs/2511.05715v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2511.05715v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Automated task-assignment systems often serve stochastic tasks subject to finite deadlines. In these settings, conventional backlog-based stability can be misleading: finite task lifetimes may keep the number of outstanding tasks bounded even as deadline failures continue indefinitely, while average failure-rate criteria can still permit recurrent failures. We introduce average cost stability, a criterion which is particularly useful for time-sensitive tasks, combining two observable quantities: the number of outstanding tasks and the cumulative number of irrecoverable deadline failures. Under bounded arrivals and uniformly bounded service windows, we show that the outstanding-task count is uniformly bounded independently of the assignment policy and prove that our average cost stability is equivalent to bounded expected cumulative failures. We further characterize degenerate backlog stability, in which backlog remains bounded despite unbounded cumulative failures. We instantiate the framework in an adversarial pickup-and-delivery system where internal fleet agents spoof reported locations to attract assignments and leave requests unserviced. We develop deadline-aware assignment procedures and adversarial models with varying knowledge and coordination capabilities. Experiments using real mobility-on-demand request data and our proposed adversarial models demonstrate that backlog can remain bounded while cancellations persist, whereas our proposed average cost stability correctly identifies such behavior as unstable.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.SY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-11-07T21:18:14Z</published>
+    <arxiv:comment>23 pages, 5 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Roee M. Francos</name>
+    </author>
+    <author>
+      <name>Daniel Garces</name>
+    </author>
+    <author>
+      <name>Orhan Eren Akgün</name>
+    </author>
+    <author>
+      <name>Stephanie Gil</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.09163v2</id>
+    <title>ToolRACER: A Robust Agentic Conversation Emulation Resource for Agent Training and Evaluation</title>
+    <updated>2026-10-22T19:56:20Z</updated>
+    <link href="https://arxiv.org/abs/2610.09163v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.09163v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Task-oriented conversational agents remain fragile under real world conversation scenarios as they rarely follow a predictable script, especially when users exhibit non-cooperative behavior. Existing function-calling benchmarks often emphasize successful, cooperative interactions and underrepresent adversarial conversation trajectories, thereby limiting the training resources available for developing robust agents. We present ToolRACER, a synthetic data generation pipeline that coordinates user, assistant and tool emulation models to generate and validated multi-turn interactions between a user and an agent. Using ToolRACER, we construct ToolRACERBench a robust multi-turn conversation benchmark spanning six domains, ranging over 55 varied personas, generating a validated corpus of 5.6K conversation trajectories, with approximately 66\% of conversations containing failure-prone conversation scenarios. We inject adversarial behaviors, producing validated conversational interaction trajectories that capture realistic, robust scenarios. We evaluate models trained on ToolRACERBench against internal benchmarks, as well as on function calling benchmarks such as $τ^2$-bench, BFCLv3 and ACEBench to evaluate agentic accuracy and robustness. Models trained on ToolRACERBench improve end to end agentic accuracy across $τ^2$-bench and ACEBench, demonstrating significant gains when mixed with in-domain dataset in small language models for agent capability tasks.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-06T22:06:17Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Arkajyoti Chakraborty</name>
+    </author>
+    <author>
+      <name>Aryan Tayal</name>
+    </author>
+    <author>
+      <name>Ishika Agarwal</name>
+    </author>
+    <author>
+      <name>Tanner Sorensen</name>
+    </author>
+    <author>
+      <name>Justin Chiu</name>
+    </author>
+    <author>
+      <name>Alessandro Di Bari</name>
+    </author>
+    <author>
+      <name>Neha Gupta</name>
+    </author>
+    <author>
+      <name>Andreas Stolcke</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.19049v1</id>
+    <title>Refute-or-Promote: An Adversarial Stage-Gated Multi-Agent Review Methodology for High-Precision LLM-Assisted Defect Discovery</title>
+    <updated>2026-04-21T03:55:35Z</updated>
+    <link href="https://arxiv.org/abs/2604.19049v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.19049v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM-assisted defect discovery has a precision crisis: plausible-but-wrong reports overwhelm maintainers and degrade credibility for real findings. We present Refute-or-Promote, an inference-time reliability pattern combining Stratified Context Hunting (SCH) for candidate generation, adversarial kill mandates, context asymmetry, and a Cross-Model Critic (CMC). Adversarial agents attempt to disprove candidates at each promotion gate; cold-start reviewers are intended to reduce anchoring cascades; cross-family review can catch correlated blind spots that same-family review misses. Over a 31-day campaign across 7 targets (security libraries, the ISO C++ standard, major compilers), the pipeline killed roughly 79% of 171 candidates before advancing to disclosure (retrospective aggregate); on a consolidated-protocol subset (lcms2, wolfSSL; n=30), the prospective kill rate was 83%. Outcomes: 4 CVEs (3 public, 1 embargoed); LWG 4549 accepted to the C++ working paper; 5 merged C++ editorial PRs; 3 compiler conformance bugs; 8 merged security-related fixes without CVE; an RFC 9000 errata filed under committee review; and 1+ FIPS 140-3 normative compliance issues under coordinated disclosure -- all evaluated by external acceptance, not benchmarks. The most instructive failure: ten dedicated reviewers unanimously endorsed a non-existent Bleichenbacher padding oracle in OpenSSL's CMS module; it was killed only by a single empirical test, motivating the mandatory empirical gate. No vulnerability was discovered autonomously; the contribution is external structure that filters LLM agents' persistent false positives. As a preliminary transfer test beyond defect discovery, a simplified cross-family critique variant also solved five previously unsolved SymPy instances on SWE-bench Verified and one SWE-rebench hard task.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-21T03:55:35Z</published>
+    <arxiv:comment>10 pages, 3 tables. Artifacts: https://github.com/abhinavagarwal07/refute-or-promote (Zenodo DOI: 10.5281/zenodo.19668799)</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Abhinav Agarwal</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.18485v1</id>
+    <title>Trusted Credentials, Untrusted Behavior: Benchmarking LLM-Agent Security in High-Performance Computing</title>
+    <updated>2026-07-20T20:16:02Z</updated>
+    <link href="https://arxiv.org/abs/2607.18485v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.18485v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language model (LLM) agents are starting to take on routine work in high-performance computing (HPC), including monitoring Slurm jobs, diagnosing failed builds, inspecting simulation output, and coordinating scientific workflows. To do this work, an agent commonly acts under its user's credentials and inherits the user's access to files and the scheduler. This arrangement creates a failure mode that ordinary account-level controls do not capture. Adversarial instructions in a log, tool description, shared file, or peer-agent message may redirect the agent beyond the task the user assigned, even though every resulting command is authenticated and permitted for that account. We refer to this as the hijacked authorized agent problem. Existing agent-security studies explain relevant mechanisms, such as indirect prompt injection and tool misuse, but generally evaluate them in web, enterprise, or personal-assistant settings. HPC security, by contrast, has mature controls for identity and isolation but does not ordinarily represent the intent of a particular task. This paper defines the threat model in the HPC setting, identifies attack surfaces created by schedulers, shared storage, multi-project accounts, and scientific workflows, and examines where current controls fall short. It concludes with a research agenda and a plan for an empirical benchmark, TaskBound.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-20T20:16:02Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Jie Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.18693v1</id>
+    <title>Swarm Shepherd: Securing Multi-Agent Ecosystems Against Persistent Latent Compromise</title>
+    <updated>2026-11-04T21:37:57Z</updated>
+    <link href="https://arxiv.org/abs/2611.18693v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.18693v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Agentic ecosystems are emerging as a new platform layer in which agents maintain persistent memory, retrieve from shared knowledge bases, execute through tool interfaces, and coordinate through shared states. These capabilities create a security problem that per-turn defenses miss: compromise can accumulate across sessions, agents, and system layers before visible failure. We define this threat as Agentic Sleeper, a system-level adversary that first behaves legitimately, gains routing trust, and later activates across memory, agent logic, and infrastructure. We formulate defense as inference under partial observability and propose Swarm Shepherd, a system-level defense framework centered on an inference filter for early warning, paired with a backward trace-back module for entry attribution. Our analysis yields a two-scale deployment rule that balances longer event histories against broader agent coverage. Across LangGraph, CrewAI, and AutoGen, Agentic Sleeper drift begins 2.7--8.9$\times$ faster than natural baselines, propagates across agents on most topologies, and evades per-turn and stateful defenses above 80\%. Swarm Shepherd warns at least three sessions before visible degradation (2.6 sessions when failure is scored by the benchmark's own task grader), while trace-back reaches 0.69 top-1 accuracy and 0.72 macro-F1 over 24 variants. The two-scale deployment rule is empirically confirmed, and in live end-to-end runs on LangGraph and AutoGen the posterior-guided defense stack drives cross-agent propagation below the self-sustaining regime, which removing only the visibly compromised agent does not achieve.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-04T21:37:57Z</published>
+    <arxiv:comment>The Fortieth Annual Conference on Neural Information Processing Systems</arxiv:comment>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Wuyang Zhang</name>
+    </author>
+    <author>
+      <name>Shichao Pei</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.27068v2</id>
+    <title>QUACK: Questioning, Understanding, and Auditing Communicated Knowledge in Multimodal Social Deduction Agents</title>
+    <updated>2026-08-31T03:39:09Z</updated>
+    <link href="https://arxiv.org/abs/2605.27068v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.27068v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Social deduction games have become a popular testbed for probing reasoning, deception, coordination, and belief modeling in Large Language Model (LLM) agents. However, most environments are scored only by game outcomes such as win rates and largely remain to text-only interaction, making it difficult to tell whether an agent's language is actually grounded in what it perceived and did, or to identify the failure modes underlying its behavior. To address this gap, we introduce QUACK, an open-source environment and evaluation framework for auditing the grounding of agent language in multimodal social reasoning. QUACK evaluates agents at three levels: game outcomes, behavioral trajectories, and utterance-level consistency. Its core Statement Verification Pipeline reconstructs each agent's ground-truth trajectory from engine logs and checks every discussion claim against it, automatically flagging spatial hallucination, unsupported accusation, deception collapse, and language-action inconsistency. Evaluating three frontier VLMs in both homogeneous and cross-model adversarial settings, we find that even the strongest agent hallucinates 15.1% of its verifiable spatial claims and 11.5% of accusations are strictly unsupported. We release the full engine, evaluation framework, toolkit, and logs in https://github.com/AAAAA-Academia-Attractions/QUACK.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-26T14:19:08Z</published>
+    <arxiv:comment>Accepted by EMNLP 2026 Main Conference</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Ye Yuan</name>
+    </author>
+    <author>
+      <name>Rui Song</name>
+    </author>
+    <author>
+      <name>Weien Li</name>
+    </author>
+    <author>
+      <name>Zeyu Li</name>
+    </author>
+    <author>
+      <name>Haochen Liu</name>
+    </author>
+    <author>
+      <name>Xiangyu Kong</name>
+    </author>
+    <author>
+      <name>Changjiang Han</name>
+    </author>
+    <author>
+      <name>Yonghan Yang</name>
+    </author>
+    <author>
+      <name>Zichen Zhao</name>
+    </author>
+    <author>
+      <name>Zixuan Dong</name>
+    </author>
+    <author>
+      <name>Fuyuan Lyu</name>
+    </author>
+    <author>
+      <name>Bowei He</name>
+    </author>
+    <author>
+      <name>Haolun Wu</name>
+    </author>
+    <author>
+      <name>Jikun Kang</name>
+    </author>
+    <author>
+      <name>Xue Liu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.24839v1</id>
+    <title>Kaer: Security-Aware Replanning for Multi-Agent Systems</title>
+    <updated>2026-11-18T18:05:47Z</updated>
+    <link href="https://arxiv.org/abs/2611.24839v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.24839v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>One popular architecture for multi-agent systems (MAS) relies on an orchestrator that generates an initial plan, coordinates its execution, and dynamically revises the plan based on agent feedback when tasks cannot be fully specified in advance. This dynamic replanning introduces a critical vulnerability: malicious agents can embed instructions within their feedback to hijack the replanning process. Existing defenses focus exclusively on per-tool access control or static, pre-execution policy enforcement, leaving the replanning phase unsecured.
+  We introduce Kaer, a multi-agent framework featuring security-aware replanning. Kaer shields the planner from untrusted agent feedback by conveying diagnostics to the replanning procedure strictly through abstract templates. Plan revisions are restricted to a set of deterministic repair operators, and all modified plans must satisfy preset policies. We create Cintra, a benchmark of simulated user tasks requiring replanning paired with adversarial objectives targeting the replanning phase. Using Cintra, we evaluate both task completion rates and system vulnerability to replanning exploits by malicious agents. Evaluating Kaer on Cintra against Magentic-One (an undefended MAS) and ControlValve (the state-of-the-art defense) demonstrates that Kaer achieves higher robustness than both systems while maintaining comparable utility to ControlValve. Although abstract failure templates slightly constrain utility on select tasks, Kaer enables MAS to perform secure, dynamic plan revisions without exposing the orchestrator to untrusted agent feedback.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-18T18:05:47Z</published>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Tushin Mallick</name>
+    </author>
+    <author>
+      <name>Evan Rose</name>
+    </author>
+    <author>
+      <name>Matthew Laws</name>
+    </author>
+    <author>
+      <name>Alina Oprea</name>
+    </author>
+    <author>
+      <name>Cristina Nita-Rotaru</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.19810v3</id>
+    <title>From Agent-Only Social Networks to Autonomous Scientific Research: Lessons from OpenClaw and Moltbook, and the Architecture of ClawdLab and Beach.Science</title>
+    <updated>2026-03-04T12:53:19Z</updated>
+    <link href="https://arxiv.org/abs/2602.19810v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.19810v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In January 2026, the open-source agent framework OpenClaw and the agent-only social network Moltbook produced a large-scale dataset of autonomous AI-to-AI interaction, attracting six academic publications within fourteen days. This study conducts a multivocal literature review of that ecosystem and presents two complementary platforms for autonomous scientific research as a design science response to the architectural failure modes identified. ClawdLab, an open-source platform for structured laboratory collaboration, addresses these failure modes through hard role restrictions, structured adversarial critique, PI-led governance, multi-model orchestration, and evidence requirements enforced through external tool verification, in which the principal investigator validates submitted work using available API calls, computational services, and model context protocol integrations rather than relying on social consensus. Beach.science, a public research commons, complements ClawdLab's structured laboratory model by providing a free-form environment in which heterogeneous agent configurations interact, discover research opportunities, and autonomously contribute computational analyses, supported by template-based role specialisation, extensible skill registries, and programmatic reward mechanisms that distribute inference resources to agents demonstrating scientific progress. A three-tier taxonomy distinguishes single-agent pipelines, predetermined multi-agent workflows, and fully decentralised systems, analysing why leading AI co-scientist platforms remain confined to the first two tiers. The composable third-tier architecture instantiated across ClawdLab and beach.science, in which foundation models, capabilities, governance, verification tooling, and inter-lab coordination are independently modifiable, enables compounding improvement as the broader AI ecosystem advances.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-23T13:10:01Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Lukas Weidener</name>
+    </author>
+    <author>
+      <name>Marko Brkić</name>
+    </author>
+    <author>
+      <name>Phillip Lee</name>
+    </author>
+    <author>
+      <name>Martin Karlsson</name>
+    </author>
+    <author>
+      <name>Kevin Noessler</name>
+    </author>
+    <author>
+      <name>Paul Kohlhaas</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.01011v4</id>
+    <title>Multi-Agent Teams Hold Experts Back</title>
+    <updated>2026-05-28T18:21:42Z</updated>
+    <link href="https://arxiv.org/abs/2602.01011v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.01011v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multi-agent LLM systems are increasingly deployed as autonomous collaborators, where agents interact freely rather than execute fixed, pre-specified workflows. In such settings, effective coordination cannot be fully designed in advance and must instead emerge through interaction. However, most prior work enforces coordination through fixed roles, workflows, or aggregation rules, leaving open the question of how well self-organizing teams perform when coordination is unconstrained. Drawing on organizational psychology, we study whether self-organizing LLM teams achieve strong synergy, where team performance matches or exceeds the best individual member. Across human-inspired and frontier ML benchmarks, we find that -- unlike human teams -- LLM teams consistently fail to match their expert agent's performance, even when explicitly told who the expert is, incurring performance losses of up to 41.1% on ML benchmarks. Decomposing this failure, we show that expert leveraging, rather than identification, is the primary bottleneck. Conversational analysis reveals a tendency toward integrative compromise -- averaging expert and non-expert views rather than appropriately weighting expertise -- which increases with team size and correlates negatively with performance. Interestingly, this consensus-seeking behavior improves robustness to adversarial agents, suggesting a trade-off between alignment and effective expertise utilization. Our findings reveal a significant gap in the ability of self-organizing multi-agent teams to harness the collective expertise of their members.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-01T04:34:36Z</published>
+    <arxiv:comment>Accepted at the International Conference on Machine Learning (ICML 2026)</arxiv:comment>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Aneesh Pappu</name>
+    </author>
+    <author>
+      <name>Batu El</name>
+    </author>
+    <author>
+      <name>Hancheng Cao</name>
+    </author>
+    <author>
+      <name>Carmelo di Nolfo</name>
+    </author>
+    <author>
+      <name>Yanchao Sun</name>
+    </author>
+    <author>
+      <name>Meng Cao</name>
+    </author>
+    <author>
+      <name>James Zou</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2601.13981v4</id>
+    <title>VirtualCrime: Evaluating the Criminal Potential and Agentic Behaviors of Large Language Models via Sandbox Simulation</title>
+    <updated>2026-08-04T14:18:13Z</updated>
+    <link href="https://arxiv.org/abs/2601.13981v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.13981v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) have shown strong capabilities in multi-step decision-making, and are increasingly integrated into real-world agentic applications. While existing safety evaluations focus on static interactions or refusal rates, it remains largely underexplored what level of threat these models pose once an adversary successfully assigns them a malicious role. To evaluate this agentic misuse risk, we propose VirtualCrime, a dynamic multi-agent sandbox framework that elicits and measures multi-step criminal behavior from LLMs. We design 40 diverse crime tasks within this framework, covering 11 realistic maps and 14 objectives such as theft, robbery, and kidnapping. We evaluate 8 strong LLMs and find that: (1) even with robust safety alignment, all evaluated models exhibit alarming agentic capabilities to generate and execute detailed multi-step criminal plans when placed in an adversarial red-teaming setting; (2) models frequently suffer from behavioral alignment failures, exhibiting a high propensity for over-harm by escalating to violent means far beyond what the task requires; (3) their most sophisticated criminal behaviors concentrate in social deception and team coordination rather than technical exploitation. Our work highlights a critical gap in current safety paradigms, emphasizing the urgent need for behavioral alignment in autonomous agent deployments.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-20T13:59:53Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Yilin Tang</name>
+    </author>
+    <author>
+      <name>Yu Wang</name>
+    </author>
+    <author>
+      <name>Lanlan Qiu</name>
+    </author>
+    <author>
+      <name>Wenchang Gao</name>
+    </author>
+    <author>
+      <name>Yunfei Ma</name>
+    </author>
+    <author>
+      <name>Baicheng Chen</name>
+    </author>
+    <author>
+      <name>Tianxing He</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.01213v2</id>
+    <title>Can AI Agents Agree?</title>
+    <updated>2026-03-12T08:32:01Z</updated>
+    <link href="https://arxiv.org/abs/2603.01213v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.01213v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models are increasingly deployed as cooperating agents, yet their behavior in adversarial consensus settings has not been systematically studied. We evaluate LLM-based agents on a Byzantine consensus game over scalar values using a synchronous all-to-all simulation. We test consensus in a no-stake setting where agents have no preferences over the final value, so evaluation focuses on agreement rather than value optimality. Across hundreds of simulations spanning model sizes, group sizes, and Byzantine fractions, we find that valid agreement is not reliable even in benign settings and degrades as group size grows. Introducing a small number of Byzantine agents further reduces success. Failures are dominated by loss of liveness, such as timeouts and stalled convergence, rather than subtle value corruption. Overall, the results suggest that reliable agreement is not yet a dependable emergent capability of current LLM-agent groups even in no-stake settings, raising caution for deployments that rely on robust coordination.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-01T18:18:59Z</published>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Frédéric Berdoz</name>
+    </author>
+    <author>
+      <name>Leonardo Rugli</name>
+    </author>
+    <author>
+      <name>Roger Wattenhofer</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2601.05293v1</id>
+    <title>A Survey of Agentic AI and Cybersecurity: Challenges, Opportunities and Use-case Prototypes</title>
+    <updated>2026-01-08T02:46:06Z</updated>
+    <link href="https://arxiv.org/abs/2601.05293v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.05293v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Agentic AI marks an important transition from single-step generative models to systems capable of reasoning, planning, acting, and adapting over long-lasting tasks. By integrating memory, tool use, and iterative decision cycles, these systems enable continuous, autonomous workflows in real-world environments. This survey examines the implications of agentic AI for cybersecurity. On the defensive side, agentic capabilities enable continuous monitoring, autonomous incident response, adaptive threat hunting, and fraud detection at scale. Conversely, the same properties amplify adversarial power by accelerating reconnaissance, exploitation, coordination, and social-engineering attacks. These dual-use dynamics expose fundamental gaps in existing governance, assurance, and accountability mechanisms, which were largely designed for non-autonomous and short-lived AI systems. To address these challenges, we survey emerging threat models, security frameworks, and evaluation pipelines tailored to agentic systems, and analyze systemic risks including agent collusion, cascading failures, oversight evasion, and memory poisoning. Finally, we present three representative use-case implementations that illustrate how agentic AI behaves in practical cybersecurity workflows, and how design choices shape reliability, safety, and operational effectiveness.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-08T02:46:06Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Sahaya Jestus Lazer</name>
+    </author>
+    <author>
+      <name>Kshitiz Aryal</name>
+    </author>
+    <author>
+      <name>Maanak Gupta</name>
+    </author>
+    <author>
+      <name>Elisa Bertino</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.24572v1</id>
+    <title>FastOMOP: A Foundational Architecture for Reliable Agentic Real-World Evidence Generation on OMOP CDM data</title>
+    <updated>2026-04-27T15:02:02Z</updated>
+    <link href="https://arxiv.org/abs/2604.24572v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.24572v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The Observational Medical Outcomes Partnership Common Data Model (OMOP CDM), maintained by the Observational Health Data Sciences and Informatics (OHDSI) collaboration, enabled the harmonisation of electronic health records data of nearly one billion patients in 83 countries. Yet generating real-world evidence (RWE) from these repositories remains a manual process requiring clinical, epidemiological and technical expertise. LLMs and multi-agent systems have shown promise for clinical tasks, but RWE automation exposes a fundamental challenge: agentic systems introduce emergent behaviours, coordination failures and safety risks that existing approaches fail to govern. No infrastructure exists to ensure agentic RWE generation is flexible, safe and auditable across the lifecycle. We introduce FastOMOP, an open-source multi-agent architecture that addresses this gap by separating three infrastructure layers, governance, observability and orchestration, from pluggable agent-teams. Governance is enforced at the process boundary through deterministic validation independent of agent reasoning, ensuring no compromised or hallucinating agent can bypass safety controls. Agent teams for phenotyping, study design and statistical analysis inherit these guarantees through controlled tool exposure. We validated FastOMOP using a natural-language-to-SQL agent team across three OMOP CDM datasets: synthetic data from Synthea, MIMIC-IV and a real-world NHS dataset from Lancashire Teaching Hospitals (IDRIL). FastOMOP achieved reliability scores of 0.84-0.94 with perfect adversarial and out-of-scope block rates, demonstrating process-boundary governance delivers safety guarantees independent of model choice. These results indicate that the reliability gap in RWE deployment is architectural rather than model capability, and establish FastOMOP as a governed architecture for progressive RWE automation.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-27T15:02:02Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Niko Moeller-Grell</name>
+    </author>
+    <author>
+      <name>Shihao Shenzhang</name>
+    </author>
+    <author>
+      <name>Zhangshu Joshua Jiang</name>
+    </author>
+    <author>
+      <name>Richard JB Dobson</name>
+    </author>
+    <author>
+      <name>Vishnu V Chandrabalan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.15024v1</id>
+    <title>Resilient Consensus in Agentic AI</title>
+    <updated>2026-06-12T23:41:53Z</updated>
+    <link href="https://arxiv.org/abs/2606.15024v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.15024v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language model (LLM) agents are increasingly deployed in multi-agent systems where they must coordinate and agree on shared decisions. We ask whether classical resilient consensus theory, developed for deterministic agents, transfers to LLM agents that may behave adversarially. Framing LLM agreement as a Byzantine consensus game, we run controlled experiments on complete and general communication graphs. We find that prompted LLM agents fail to reach agreement that is achievable in principle: consensus can fail even in settings where classical theory guarantees that a convergent algorithm exists, and this failure persists across temperatures and horizons. At the same time, wrapping the agents with classical resilient consensus filters improves agreement. The benefit of filtering depends on how much robustness the underlying topology already provides. Our results suggest that classical resilient consensus theory is a useful lens for the safety of agentic AI.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.SY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-12T23:41:53Z</published>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Sribalaji C. Anand</name>
+    </author>
+    <author>
+      <name>George J. Pappas</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.28843v1</id>
+    <title>Blockchain-Enabled Artificial Intelligence and AI Agents for Secure Data Sharing and Cybersecurity Applications</title>
+    <updated>2026-09-23T23:20:47Z</updated>
+    <link href="https://arxiv.org/abs/2609.28843v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.28843v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Blockchain and artificial intelligence (AI) are converging into a single infrastructural layer for securing data sharing, model integrity, and autonomous decision-making across distributed systems. This paper presents a meta-synthesis that draws together four constituent studies covering adversarial machine learning, AI-powered anomaly detection in cloud environments, automated vulnerability patching by multi-agent large language model (LLM) pipelines, and the broader landscape of securing AI systems across their lifecycle and situates their findings within the emerging literature on blockchain-enabled AI and autonomous AI agents. Each constituent study addresses a distinct point of failure in modern AI-driven security operations: the integrity of training data and model behavior, the reliability of real-time monitoring, and the trustworthiness of automated code remediation. We argue that blockchain's properties of immutability, decentralized consensus, and verifiable provenance directly address a gap common to all three: the difficulty of establishing trust in data, models, and autonomous agents that operate without a central authority. Building on real-world research on blockchain-secured data sharing, federated learning, and multi-agent coordination, we propose a layered reference architecture that couples adversarially hardened models, blockchain-anchored data provenance, AI-driven anomaly detection, and smart-contract-governed multi-agent remediation. We conclude by identifying open problems in scalability, privacy-transparency trade-offs, and the governance of autonomous agents that must be resolved before such integrated systems can be trusted in production-critical environments.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-23T23:20:47Z</published>
+    <arxiv:comment>published in International Journal of Scientific Research and Management (IJSRM) , published date : August 6, 2026, issue : Vol. 14, No. 08, (2026), pages : 2972-2978, doi : 10.18535/ijsrm/v14i08.ec03</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <arxiv:journal_ref>International Journal of Scientific Research and Management, Vol. 14, No. 08, 2026</arxiv:journal_ref>
+    <author>
+      <name>Harsh Verma</name>
+    </author>
+    <arxiv:doi>10.18535/ijsrm/v14i08.ec03</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.18535/ijsrm/v14i08.ec03" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.07556v3</id>
+    <title>MasDrift: Benchmarking Authorization Preservation Across Multi-Agent Architectures</title>
+    <updated>2026-10-15T07:27:12Z</updated>
+    <link href="https://arxiv.org/abs/2608.07556v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.07556v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multi-agent systems (MAS) decompose long-horizon tasks across supervisors and subagents, but delegated goals do not necessarily carry their original authorization boundaries. Existing safety benchmarks mainly study adversarial compromise, while work on constraint drift lacks controlled architecture-level evaluation. We introduce MasDrift, a benchmark of 600 benign productivity tasks across eight domains. Each task pairs required work with reserved actions. MasDrift compares single-agent, centralized, and decentralized coordination while varying hierarchy depth and peer width, measuring task completion and authorization preservation. Across generic multi-agent conditions, centralized hierarchies achieve 93.9--98.6% task completion versus 85.7--87.0% for peer networks, while unauthorized actions occur in 2.7--19.8% of tasks versus 0.6--0.8%, a gap that widens with hierarchy depth. We further compare two defenses that differ in where authorization evidence resides. One re-anchors every pending call to the original user request. The other carries an attenuated policy along the delegation chain. Re-anchoring reduces unauthorized actions in every model configuration we evaluate, at a cost of 1.6 points of pooled completion. Chain propagation blocks required work instead, forfeiting up to 36.3 points. A heterogeneous case study confirms that the failure follows from coordination rather than model strength. MasDrift exposes a centralization tradeoff and makes authorization preservation a measurable property of MAS design.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-02T04:46:15Z</published>
+    <arxiv:comment>preprint</arxiv:comment>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Zhuoning Xu</name>
+    </author>
+    <author>
+      <name>Xiucheng Zhang</name>
+    </author>
+    <author>
+      <name>Hanjun Luo</name>
+    </author>
+    <author>
+      <name>Yingbin Jin</name>
+    </author>
+    <author>
+      <name>Yinpeng Dong</name>
+    </author>
+    <author>
+      <name>Hanan Salam</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.26521v1</id>
+    <title>Testing Agentic Workflows with Structural Coverage Criteria</title>
+    <updated>2026-05-26T04:07:55Z</updated>
+    <link href="https://arxiv.org/abs/2605.26521v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.26521v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multi-agent systems increasingly expose explicit workflow structure: agents, tools, tool-access rules, restrictions, and delegation paths. Existing evaluations rely largely on end-to-end task success, benchmark scores, final-response quality, or prompt-level checks, which provide limited evidence that this declared coordination structure has actually been exercised. This makes it difficult to assess test-suite adequacy or detect structural regressions in tool access, restrictions, and inter-agent delegation. We address this gap with a structural testing approach for multi-agent workflow specifications. The approach represents each workflow as a typed coordination graph, derives coverage obligations over reachable agents, allowed tool edges, restricted tool edges, and delegation edges, and uses coverage-driven generation with DSPy-based scenario realization to produce executable tests. The graph fixes what must be covered; DSPy realizes those obligations as natural-language scenarios whose witnesses are checked at runtime. We implement the approach for OpenAI Agents SDK-style workflows and evaluate it on ten SDK-derived benchmarks comprising 49 reachable agents, 47 tools, and 403 structural obligations. Generated scenarios witness 54/75 allowed-tool obligations and 36/48 delegation obligations within a bounded refinement budget. The adversarial restricted-tool criterion elicits 23/248 restricted-call violations, separating workflows whose restrictions hold under probing from workflows with concrete misrouting failures. These results show that structural coverage provides a useful adequacy layer for multi-agent workflow testing: it does not replace semantic or end-to-end evaluation, but reveals whether declared agents, tool-access rules, restrictions, and delegation paths have been exercised.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-26T04:07:55Z</published>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Nafiseh Kahani</name>
+    </author>
+    <author>
+      <name>Mojtaba Bagherzadeh</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.03190v1</id>
+    <title>TumorBoard: Evidence-Grounded Multi-Agent Decision Support for Longitudinal Neuro-Oncology</title>
+    <updated>2026-08-04T06:32:25Z</updated>
+    <link href="https://arxiv.org/abs/2608.03190v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.03190v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Neuro-oncology decisions require coordinated interpretation of serial MRI, pathology, molecular markers, treatment history, performance status, and evolving guidelines. We present TumorBoard, a multi-agent decision-support system built around a shared longitudinal case state and an auditable claim-evidence ledger. Specialist agents for radiology, neuropathology, molecular diagnosis, guidelines, and therapy planning produce atomic claims with provenance. An adversarial critic exposes contradictions, and a safety governor releases, qualifies, or defers recommendations according to evidence sufficiency and temporal validity. On a 360-case hidden benchmark at a matched token budget, TumorBoard achieved an action F1 of 0.772 and evidence entailment of 0.914. It exceeded the strongest typed-council baseline by 3.1 percentage points (95% CI: 1.6 to 4.7, adjusted p = 0.0012), while recommendation-to-evidence coverage reached 0.927. Under evidence deletion, the system deferred 84.2% of unsafe cases and limited harmful recommendations to 5.8%. The safety governor reduced harmful release by 7.8 percentage points at a false-deferral cost of 4.3 percentage points. Ablation studies of the ledger, critic, and governor produced the predicted failure patterns, establishing structured coordination as the source of the measured multi-agent advantage.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-04T06:32:25Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Yantong Liu</name>
+    </author>
+    <author>
+      <name>Zheyu Zhang</name>
+    </author>
+    <author>
+      <name>Runpeng Liu</name>
+    </author>
+    <author>
+      <name>Mu Xitang</name>
+    </author>
+    <author>
+      <name>Seong-Yoon Shin</name>
+    </author>
+    <author>
+      <name>Hyun-Ae Lee</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.20089v1</id>
+    <title>UnifiedPlayers: Enhance Tool-Integrated Reasoning in Agentic Reinforcement Learning</title>
+    <updated>2026-09-17T11:49:31Z</updated>
+    <link href="https://arxiv.org/abs/2609.20089v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.20089v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Self-evolving methods reduce the need for human-annotated trajectories by allowing tool-using agents to generate their own training data. Yet existing methods typically separate trajectory generation from evaluation, relying on static verifiers that cannot adapt to emerging failure modes or self-consistency signals that may reinforce errors shared across trajectories. Jointly adapting planning, execution, and evaluation offers a promising alternative, but introduces a fundamental coordination challenge: each component continuously changes the data or feedback used to train the others. We address this challenge with \textbf{UnifiedPlayers}, a cooperative framework comprising a Planning Player that generates tasks, an Execution Player that produces multi-turn trajectories with Python tool calls, and an Evaluation Player that constructs executable verifiers. We design role-specific rewards that coordinate the three players toward a shared learning objective under GRPO. Across two model backbones and twelve reasoning benchmarks, UnifiedPlayers outperforms the strongest prior baseline by at least 3.5\% on mathematical reasoning and 3.9\% on general reasoning tasks. Moreover, the learned verifier achieves 84.2\% adversarial detection accuracy, while its reward signal exhibits 2.03$\times$ higher per-question variance than a self-consistency baseline, providing more discriminative verifications. These results highlight cooperation among specialized players as a promising path toward self-enhanced tool-integrated agents.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-17T11:49:31Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Wenjie Liao</name>
+    </author>
+    <author>
+      <name>Liangjie Zhao</name>
+    </author>
+    <author>
+      <name>Zehong Cao</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.21129v1</id>
+    <title>EvoMail: Self-Evolving Cognitive Agents for Adaptive Spam and Phishing Email Defense</title>
+    <updated>2025-09-25T13:19:59Z</updated>
+    <link href="https://arxiv.org/abs/2509.21129v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.21129v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Modern email spam and phishing attacks have evolved far beyond keyword blacklists or simple heuristics. Adversaries now craft multi-modal campaigns that combine natural-language text with obfuscated URLs, forged headers, and malicious attachments, adapting their strategies within days to bypass filters. Traditional spam detection systems, which rely on static rules or single-modality models, struggle to integrate heterogeneous signals or to continuously adapt, leading to rapid performance degradation.
+  We propose EvoMail, a self-evolving cognitive agent framework for robust detection of spam and phishing. EvoMail first constructs a unified heterogeneous email graph that fuses textual content, metadata (headers, senders, domains), and embedded resources (URLs, attachments). A Cognitive Graph Neural Network enhanced by a Large Language Model (LLM) performs context-aware reasoning across these sources to identify coordinated spam campaigns. Most critically, EvoMail engages in an adversarial self-evolution loop: a ''red-team'' agent generates novel evasion tactics -- such as character obfuscation or AI-generated phishing text -- while the ''blue-team'' detector learns from failures, compresses experiences into a memory module, and reuses them for future reasoning.
+  Extensive experiments on real-world datasets (Enron-Spam, Ling-Spam, SpamAssassin, and TREC) and synthetic adversarial variants demonstrate that EvoMail consistently outperforms state-of-the-art baselines in detection accuracy, adaptability to evolving spam tactics, and interpretability of reasoning traces. These results highlight EvoMail's potential as a resilient and explainable defense framework against next-generation spam and phishing threats.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-25T13:19:59Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Wei Huang</name>
+    </author>
+    <author>
+      <name>De-Tian Chu</name>
+    </author>
+    <author>
+      <name>Lin-Yuan Bai</name>
+    </author>
+    <author>
+      <name>Wei Kang</name>
+    </author>
+    <author>
+      <name>Hai-Tao Zhang</name>
+    </author>
+    <author>
+      <name>Bo Li</name>
+    </author>
+    <author>
+      <name>Zhi-Mo Han</name>
+    </author>
+    <author>
+      <name>Jing Ge</name>
+    </author>
+    <author>
+      <name>Hai-Feng Lin</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.19240v1</id>
+    <title>CASPIAN: Online Detection and Attribution of Cascade Attacks in LLM Multi-Agent Systems via Cross-Channel Causal Monitoring</title>
+    <updated>2026-05-19T01:16:27Z</updated>
+    <link href="https://arxiv.org/abs/2605.19240v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.19240v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Cascade attacks in LLM multi-agent systems (MAS) arise when adversarial influence propagates across agents and leads to escalated system-level failures through complex agent interactions. Detecting such cascades is challenging, as their signals are distributed, tightly coupled across interaction channels, and often appear plausibly benign locally but may unfold quickly either within a single turn or gradually across multiple turns. Existing defenses, being largely local and text-centric, fail to capture such cross-channel, temporally coordinated dynamics of cascade propagation. Therefore, we propose CASPIAN, the first framework that provides a unified, cross-channel causal analysis of cascade behavior in LLM-MAS through online monitoring of dynamic influence propagation across agents. CASPIAN models multi-agent interactions using a unified, dynamic causal influence matrix across channels, estimated efficiently via a late-interaction conditional transfer entropy (LI-CTE) formulation, thereby enabling the detection of cascade onset from emergent system-level structure rather than isolated anomalies. It further performs online causal attribution, identifying the origin, bridge, and amplifier agents driving the cascade and reconstructing its principal propagation pathways, capabilities not supported by existing methods. Across diverse multi-agent frameworks and benchmarks, CASPIAN consistently outperforms semantic guardrails, LLM-based judges, and graph-based anomaly detectors in both detection accuracy and early cascade identification while operating with sub-1% relative overhead latency. These results demonstrate that unified cross-channel causal modeling is essential for reliably detecting and understanding cascade failures in LLM multi-agent systems.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-19T01:16:27Z</published>
+    <arxiv:comment>https://github.com/caspian-detector/caspian</arxiv:comment>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Kavana Venkatesh</name>
+    </author>
+    <author>
+      <name>Jafar Isbarov</name>
+    </author>
+    <author>
+      <name>Saad Amin</name>
+    </author>
+    <author>
+      <name>Murat Kantarcioglu</name>
+    </author>
+    <author>
+      <name>Jiaming Cui</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.01663v1</id>
+    <title>A Sheaf Framework for Strategic Multi-Agent Systems: From Consensus to Nash Equilibria</title>
+    <updated>2026-06-01T04:17:57Z</updated>
+    <link href="https://arxiv.org/abs/2606.01663v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.01663v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The coordination of heterogeneous autonomous agents in dynamic, adversarial environments requires simultaneous satisfaction of geometric constraints, logical consistency, temporal reasoning, and strategic optimization. Existing sheaf- and topos-theoretic frameworks provide powerful tools for geometric consensus, knowledge alignment, and causal planning, but lack explicit models for value, reward, and strategic choice. This report presents a unified categorical framework that integrates event calculus, SCEL-like ensemble formation, and game-theoretic reward structures into a single Grothendieck topos of time-space histories. We introduce the notion of a \emph{game sheaf} whose stalks contain utility functions and policy distributions, and restriction maps encode both parallel transport and best-response dynamics. We prove that Nash equilibria correspond to global sections of a derived best-response correspondence sheaf, while cohomological obstructions classify failures of strategic consistency. A detailed case study of an immunological ``bastion defense'' scenario -- heterogeneous agents forming attack/defense ensembles under resource constraints -- demonstrates the framework's expressiveness. This synthesis provides a rigorous foundation for verifiable, autonomic, and economically rational multi-agent systems.</summary>
+    <category term="cs.GT" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-01T04:17:57Z</published>
+    <arxiv:primary_category term="cs.GT"/>
+    <author>
+      <name>Manuel Hernández</name>
+    </author>
+    <author>
+      <name>Eduardo Sánchez-Soto</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.24973v1</id>
+    <title>Belief-Driven Multi-Agent Collaboration via Approximate Perfect Bayesian Equilibrium for Social Simulation</title>
+    <updated>2026-03-26T03:06:36Z</updated>
+    <link href="https://arxiv.org/abs/2603.24973v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.24973v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>High-fidelity social simulation is pivotal for addressing complex Web societal challenges, yet it demands agents capable of authentically replicating the dynamic spectrum of human interaction. Current LLM-based multi-agent frameworks, however, predominantly adhere to static interaction topologies, failing to capture the fluid oscillation between cooperative knowledge synthesis and competitive critical reasoning seen in real-world scenarios. This rigidity often leads to unrealistic ``groupthink'' or unproductive deadlocks, undermining the credibility of simulations for decision support. To bridge this gap, we propose \textit{BEACOF}, a \textit{belief-driven adaptive collaboration framework} inspired by Perfect Bayesian Equilibrium (PBE). By modeling social interaction as a dynamic game of incomplete information, BEACOF rigorously addresses the circular dependency between collaboration type selection and capability estimation. Agents iteratively refine probabilistic beliefs about peer capabilities and autonomously modulate their collaboration strategy, thereby ensuring sequentially rational decisions under uncertainty. Validated across adversarial (judicial), open-ended (social) and mixed (medical) scenarios, BEACOF prevents coordination failures and fosters robust convergence toward high-quality solutions, demonstrating superior potential for reliable social simulation. Source codes and datasets are publicly released at: https://github.com/WUT-IDEA/BEACOF.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-26T03:06:36Z</published>
+    <arxiv:comment>accepted at WWW 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Weiwei Fang</name>
+    </author>
+    <author>
+      <name>Lin Li</name>
+    </author>
+    <author>
+      <name>Kaize Shi</name>
+    </author>
+    <author>
+      <name>Yu Yang</name>
+    </author>
+    <author>
+      <name>Jianwei Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2512.17913v1</id>
+    <title>Byzantine Fault-Tolerant Multi-Agent System for Healthcare: A Gossip Protocol Approach to Secure Medical Message Propagation</title>
+    <updated>2025-11-27T03:32:54Z</updated>
+    <link href="https://arxiv.org/abs/2512.17913v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2512.17913v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent advances in generative AI have enabled sophisticated multi-agent architectures for healthcare, where large language models power collaborative clinical decision-making. However, these distributed systems face critical challenges in ensuring message integrity and fault tolerance when operating in adversarial or untrusted environments.This paper presents a novel Byzantine fault-tolerant multi-agent system specifically designed for healthcare applications, integrating gossip-based message propagation with cryptographic validation mechanisms. Our system employs specialized AI agents for diagnosis, treatment planning, emergency response, and data analysis, coordinated through a Byzantine consensus protocol that tolerates up to f faulty nodes among n = 3f + 1 total nodes. We implement a gossip protocol for decentralized message dissemination, achieving consensus with 2f + 1 votes while maintaining system operation even under Byzantine failures. Experimental results demonstrate that our approach successfully validates medical messages with cryptographic signatures, prevents replay attacks through timestamp validation, and maintains consensus accuracy of 100% with up to 33% Byzantine nodes. The system provides real-time visualization of consensus rounds, vote tallies, and network topology, enabling transparent monitoring of fault-tolerant operations. This work contributes a practical framework for building secure, resilient healthcare multi-agent systems capable of collaborative medical decision-making in untrusted environments.</summary>
+    <category term="cs.DC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-11-27T03:32:54Z</published>
+    <arxiv:primary_category term="cs.DC"/>
+    <author>
+      <name>Nihir Chadderwala</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.21427v1</id>
+    <title>Dynasto: Validity-Aware Dynamic-Static Parameter Optimization for Autonomous Driving Testing</title>
+    <updated>2026-03-22T22:35:30Z</updated>
+    <link href="https://arxiv.org/abs/2603.21427v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.21427v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Extensive simulation-based testing is important for assuring the safety of autonomous driving systems (ADS). However, generating safety-critical traffic scenarios remains challenging because failures often arise from rare, complex interactions with surrounding vehicles. Existing automatic scenario-generation approaches frequently fail to distinguish genuine ADS faults from collisions caused by implausible or invalid adversarial behaviors, and they typically optimize either scenario initialization or agent behavior in isolation.
+  We propose Dynasto, a two-step testing approach that jointly optimizes initial scenario parameters and dynamic adversarial behaviors to uncover realistic safety-critical failures. First, we train an adversarial agent using reinforcement learning (RL) with temporal-logic-based validity criteria and a safe-distance model inspired by ISO 34502 to promote behaviorally plausible failures. Second, a genetic algorithm (GA) searches over initial conditions while replaying the adversary's failure-inducing behaviors to reveal additional failures that the RL agent alone does not uncover. Finally, a graph-based clustering pipeline groups failures into representative modes based on semantic event sequences.
+  Our evaluation experiments in HighwayEnv across two ADS controllers show that Dynasto finds 60%-70% more valid failures than an RL-only adversary under the same evaluation budget. With clustering, we obtain about 12 interpretable failure modes per system under test, revealing valid failures driven by weaknesses in ego-controller behavior. These results indicate that coordinated dynamic-static optimization with explicit validity constraints is effective for exposing safety-relevant failures in ADS testing.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-22T22:35:30Z</published>
+    <arxiv:comment>12 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Dmytro Humeniuk</name>
+    </author>
+    <author>
+      <name>Mohammad Hamdaqa</name>
+    </author>
+    <author>
+      <name>Houssem Ben Braiek</name>
+    </author>
+    <author>
+      <name>Amel Bennaceur</name>
+    </author>
+    <author>
+      <name>Foutse Khomh</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.18079v1</id>
+    <title>Dynamic Deception: When Pedestrians Team Up to Fool Autonomous Cars</title>
+    <updated>2026-02-20T09:09:24Z</updated>
+    <link href="https://arxiv.org/abs/2602.18079v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.18079v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Many adversarial attacks on autonomous-driving perception models fail to cause system-level failures once deployed in a full driving stack. The main reason for such ineffectiveness is that once deployed in a system (e.g., within a simulator), attacks tend to be spatially or temporally short-lived, due to the vehicle's dynamics, hence rarely influencing the vehicle behaviour. In this paper, we address both limitations by introducing a system-level attack in which multiple dynamic elements (e.g., two pedestrians) carry adversarial patches (e.g., on cloths) and jointly amplify their effect through coordination and motion. We evaluate our attacks in the CARLA simulator using a state-of-the-art autonomous driving agent. At the system level, single-pedestrian attacks fail in all runs (out of 10), while dynamic collusion by two pedestrians induces full vehicle stops in up to 50\% of runs, with static collusion yielding no successful attack at all. These results show that system-level failures arise only when adversarial signals persist over time and are amplified through coordinated actors, exposing a gap between model-level robustness and end-to-end safety.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-20T09:09:24Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Masoud Jamshidiyan Tehrani</name>
+    </author>
+    <author>
+      <name>Marco Gabriel</name>
+    </author>
+    <author>
+      <name>Jinhan Kim</name>
+    </author>
+    <author>
+      <name>Paolo Tonella</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.17410v1</id>
+    <title>Agency as a New Organizing Abstraction for Computer Science</title>
+    <updated>2026-10-12T21:21:21Z</updated>
+    <link href="https://arxiv.org/abs/2610.17410v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.17410v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Advances in large-scale machine learning have enabled agentic AI systems: persistent, autonomous computational entities that pursue goals, initiate actions, and interact with open environments. These systems are often framed as applications of foundation models. We argue that this framing is incomplete: agency is also a candidate new organizing abstraction for computer science. What is new is not the concept of an agent, nor runtime policy generation per se, but its general-purpose, open-ended form, in which systems can synthesize courses of action from goals, observations, and memory, over tools and environments for which no complete task-specific model was specified in advance. Thus agency becomes a systems-level abstraction as well as an AI modeling concept. Where the process abstraction organizes computation around executing programs, agency organizes it around pursuing goals under bounded resources: a process executes a program; an agent pursues a goal. From this perspective, the recurring failures of deployed agentic systems (runaway resource consumption, behavior redirected by adversarial content, opaque continuous operation) are symptoms of structural abstraction gaps, not isolated engineering defects. We examine these gaps across six dimensions (execution, interfaces, correctness, oversight, coordination, and persistence) and argue that closing them requires coordinated advances in systems,</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.HC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-12T21:21:21Z</published>
+    <arxiv:comment>An extended version of a paper to appear in Communications of the ACM, November 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Ian Foster</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.05293v1</id>
+    <title>Knowledge Divergence and the Value of Debate for Scalable Oversight</title>
+    <updated>2026-03-05T15:36:08Z</updated>
+    <link href="https://arxiv.org/abs/2603.05293v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.05293v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>AI safety via debate and reinforcement learning from AI feedback (RLAIF) are both proposed methods for scalable oversight of advanced AI systems, yet no formal framework relates them or characterizes when debate offers an advantage. We analyze this by parameterizing debate's value through the geometry of knowledge divergence between debating models. Using principal angles between models' representation subspaces, we prove that the debate advantage admits an exact closed form. When models share identical training corpora, debate reduces to RLAIF-like where a single-agent method recovers the same optimum. When models possess divergent knowledge, debate advantage scales with a phase transition from quadratic regime (debate offers negligible benefit) to linear regime (debate is essential). We classify three regimes of knowledge divergence (shared, one-sided, and compositional) and provide existence results showing that debate can achieve outcomes inaccessible to either model alone, alongside a negative result showing that sufficiently strong adversarial incentives cause coordination failure in the compositional regime, with a sharp threshold separating effective from ineffective debate. We offer the first formal connection between debate and RLAIF, a geometric foundation for understanding when adversarial oversight protocols are justified, and connection to the problem of eliciting latent knowledge across models with complementary information.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-05T15:36:08Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Robin Young</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.11803v1</id>
+    <title>SwarmSense-DNN: A Trustworthy and Decentralized Neural Framework for Proactive Anomaly Defense in Consumer IoT</title>
+    <updated>2026-06-10T08:35:31Z</updated>
+    <link href="https://arxiv.org/abs/2606.11803v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.11803v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The rapid growth of consumer IoT devices has introduced unprecedented challenges in trustworthy anomaly detection against AI-enabled cyber threats, requiring real-time, privacy-preserving, and scalable defense mechanisms. Traditional centralized strategies face critical limitations, including communication bottlenecks, single points of failure, and privacy vulnerabilities when processing distributed consumer data. We propose SwarmSense-DNN, a novel decentralized neural framework employing swarm intelligence for secure, cooperative anomaly detection across distributed IoT environments. The framework integrates autonomous agents with deep neural networks to form a self-organizing defense system that detects evolving anomalies without centralized coordination. It utilizes hierarchical federated learning with graph neural networks and attention mechanisms to capture local and global anomaly behaviors while ensuring data privacy. Extensive experiments demonstrate SwarmSense-DNN's superior performance: it achieves 95.44% average detection accuracy across five benchmark datasets while reducing communication overhead by 67%. The framework maintains robust resilience against adversarial threats through differential privacy safeguards and demonstrates strong fault tolerance under node failures and AI-enabled attacks.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.NI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-10T08:35:31Z</published>
+    <arxiv:comment>11 pages, 14 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Jing Yang</name>
+    </author>
+    <author>
+      <name>Vijay Govindarajan</name>
+    </author>
+    <author>
+      <name>Saad Arif</name>
+    </author>
+    <author>
+      <name>Xu Xu</name>
+    </author>
+    <author>
+      <name>Mohamed Kallel</name>
+    </author>
+    <author>
+      <name>Zaffar Ahmed Shaikh</name>
+    </author>
+    <author>
+      <name>Zhe Liu</name>
+    </author>
+    <author>
+      <name>Chunhong Yuan</name>
+    </author>
+    <author>
+      <name>Lip Yee Por</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.22134v2</id>
+    <title>Secure Semantic Communications via AI Defenses: Fundamentals, Solutions, and Future Directions</title>
+    <updated>2026-03-04T08:33:42Z</updated>
+    <link href="https://arxiv.org/abs/2602.22134v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.22134v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Semantic communication (SemCom) redefines wireless communication from reproducing symbols to transmitting task-relevant semantics. However, this AI-native architecture also introduces new vulnerabilities, as semantic failures may arise from adversarial perturbations to models, corrupted training data, desynchronized priors, or misaligned inference even when lower-layer transmission reliability and cryptographic protection remain intact. This survey provides a defense-centered and system-oriented synthesis of security in SemCom via AI defense. We analyze AI-centric threat models by consolidating existing studies and organizing attack surfaces across model-level, channel-realizable, knowledge-based, and networked inference vectors. Building on this foundation, we present a structured taxonomy of defense strategies organized by where semantic integrity can be compromised in SemCom systems despite correct symbol delivery, spanning semantic encoding, wireless transmission, knowledge integrity, and coordination among multiple agents. These categories correspond to distinct security failure modes, including representation fragility, channel-realizable manipulation, semantic prior poisoning or desynchronization, and adversarial propagation through distributed inference. We also examine security utility operating envelopes that capture tradeoffs among semantic fidelity, robustness, latency, and energy under realistic constraints, survey evaluation frameworks and representative applications, and identify open challenges in cross-layer composition and deployment-time certification. Overall, this survey offers a unified system-level perspective that enables readers to understand major threat and defense mechanisms in AI-native SemCom systems and to leverage emerging security techniques in the design and deployment of robust SemCom architectures for next-generation intelligent networks.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.SY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-25T17:28:07Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Lan Zhang</name>
+    </author>
+    <author>
+      <name>Chengsi Liang</name>
+    </author>
+    <author>
+      <name>Zeming Zhuang</name>
+    </author>
+    <author>
+      <name>Yao Sun</name>
+    </author>
+    <author>
+      <name>Fang Fang</name>
+    </author>
+    <author>
+      <name>Xiaoyong Yuan</name>
+    </author>
+    <author>
+      <name>Dusit Niyato</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2201.06619v1</id>
+    <title>Planning Not to Talk: Multiagent Systems that are Robust to Communication Loss</title>
+    <updated>2022-01-17T20:29:22Z</updated>
+    <link href="https://arxiv.org/abs/2201.06619v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2201.06619v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In a cooperative multiagent system, a collection of agents executes a joint policy in order to achieve some common objective. The successful deployment of such systems hinges on the availability of reliable inter-agent communication. However, many sources of potential disruption to communication exist in practice, such as radio interference, hardware failure, and adversarial attacks. In this work, we develop joint policies for cooperative multiagent systems that are robust to potential losses in communication. More specifically, we develop joint policies for cooperative Markov games with reach-avoid objectives. First, we propose an algorithm for the decentralized execution of joint policies during periods of communication loss. Next, we use the total correlation of the state-action process induced by a joint policy as a measure of the intrinsic dependencies between the agents. We then use this measure to lower-bound the performance of a joint policy when communication is lost. Finally, we present an algorithm that maximizes a proxy to this lower bound in order to synthesize minimum-dependency joint policies that are robust to communication loss. Numerical experiments show that the proposed minimum-dependency policies require minimal coordination between the agents while incurring little to no loss in performance; the total correlation value of the synthesized policy is one fifth of the total correlation value of the baseline policy which does not take potential communication losses into account. As a result, the performance of the minimum-dependency policies remains consistently high regardless of whether or not communication is available. By contrast, the performance of the baseline policy decreases by twenty percent when communication is lost.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-01-17T20:29:22Z</published>
+    <arxiv:comment>Accepted at AAMAS 2022</arxiv:comment>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Mustafa O. Karabag</name>
+    </author>
+    <author>
+      <name>Cyrus Neary</name>
+    </author>
+    <author>
+      <name>Ufuk Topcu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2508.10185v1</id>
+    <title>An Architecture for Distributed Digital Identities in the Physical World</title>
+    <updated>2025-08-13T20:41:12Z</updated>
+    <link href="https://arxiv.org/abs/2508.10185v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2508.10185v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Digital identities are increasingly important for mediating not only digital but also physical service transactions. Managing such identities through centralized providers can cause both availability and privacy concerns: single points of failure and control are ideal targets for global attacks on technical, organizational, or legal fronts. We design, analyze, and build a distributed digital identity architecture for physical world transactions in common scenarios like unlocking doors, public transport, or crossing country borders. This architecture combines (biometric and other) sensors, (established and upcoming) identity authorities, attribute verifiers, and a new core component we call the \emph{Personal Identity Agent (PIA)} that represents individuals with their identity attributes in the digital domain. All transactions are conducted in a completely decentralized manner, and the components for which we currently assume central coordination are optional and only used for assisting with service discovery and latency reduction. We present a first protocol between these parties and formally verify that it achieves relevant security properties based on a realistic threat model including strong global adversaries. A proof-of-concept implementation demonstrates practical feasibility of both architecture and initial protocol for applications that can tolerate end-to-end latencies in the range of a few seconds.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.NI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-08-13T20:41:12Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>René Mayrhofer</name>
+    </author>
+    <author>
+      <name>Michael Roland</name>
+    </author>
+    <author>
+      <name>Tobias Höller</name>
+    </author>
+    <author>
+      <name>Philipp Hofer</name>
+    </author>
+    <author>
+      <name>Mario Lins</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.09906v1</id>
+    <title>Constrained-Action AI Remediation for SIEM/XDR via a NeMo-Guardrails Proxy</title>
+    <updated>2026-10-07T12:00:51Z</updated>
+    <link href="https://arxiv.org/abs/2610.09906v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.09906v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Security Operations Centers (SOCs) for information technology and operational technology share one incident-response problem: a flood of correlated alerts and too few analysts. Large Language Models (LLMs) are increasingly proposed as reasoning engines that triage alerts and, in autonomous deployments, issue commands that block IPs, kill processes, or quarantine files on production hosts. This coupling introduces a new risk: a single adversarial alert can become a remote code path through the LLM's reasoning, leading it to recommend an action the SOC then executes. We present a constrained-action architecture with two coordinated layers: (i) a SIEM/XDR control plane that grounds remediation in correlated host events and confines the LLM's output to a closed intent vocabulary whose templated commands are executed by thin endpoint agents, backstopped by an argument validator; and (ii) a NeMo-Guardrails proxy that wraps the SOC-analyst LLM with input- and output-rail policies, evaluated out-of-the-box against a SOC-specific adversarial corpus we release. The stock proxy lifts injection recall from 25.0% to 94.5% at a 0.1% false-positive rate, and a live red-team exercise confirms that the closed intent vocabulary and argument validator contain the observed LLM failure modes before any command crosses the trust boundary. As an architectural fit (not yet a measured operational-technology deployment), the constrained-action property suits critical-infrastructure settings where a wrong remediation has physical, not merely operational, consequences. The loop is best run human-in-the-loop or delayed: the measured rail latency keeps inline control out of scope.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-07T12:00:51Z</published>
+    <arxiv:comment>7 pages, 3 figures, 4 tables. Accepted at the 2026 IEEE International Conference on Cyber Security and Resilience (IEEE CSR 2026)</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Georgios Koutidis</name>
+    </author>
+    <author>
+      <name>Nikolaos Kekatos</name>
+    </author>
+    <author>
+      <name>Tom Nianios</name>
+    </author>
+    <author>
+      <name>Alexios Lekidis</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.15762v2</id>
+    <title>Zero-Shot Scalable Resilience in UAV Swarms: A Decentralized Imitation Learning Framework with Physics-Informed Graph Interactions</title>
+    <updated>2026-05-18T09:29:13Z</updated>
+    <link href="https://arxiv.org/abs/2604.15762v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.15762v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large-scale Unmanned Aerial Vehicle (UAV) failures can split an unmanned aerial vehicle swarm network into disconnected sub-networks, making decentralized recovery both urgent and difficult. Centralized recovery methods depend on global topology information and become communication-heavy after severe fragmentation. Decentralized heuristics and multi-agent reinforcement learning methods are easier to deploy, but their performance often degrades when the swarm scale and damage severity vary. We present Physics-informed Graph Adversarial Imitation Learning algorithm (PhyGAIL) that adopts centralized training with decentralized execution. PhyGAIL builds bounded local interaction graphs from heterogeneous observations, and uses physics-informed graph neural network to encode directional local interactions as gated message passing with explicit attraction and repulsion. This gives the policy a physically grounded coordination bias while keeping local observations scale-invariant. It also uses scenario-adaptive imitation learning to improve training under fragmented topologies and variable-length recovery episodes. Our analysis establishes bounded local graph amplification, bounded interaction dynamics, and controlled variance of the terminal success signal. A policy trained on 20-UAV swarms transfers directly to swarms of up to 500 UAVs without fine-tuning, and achieves better performance across reconnection reliability, recovery speed, motion safety, and runtime efficiency than representative baselines.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-17T07:06:42Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Huan Lin</name>
+    </author>
+    <author>
+      <name>Lianghui Ding</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.04871v1</id>
+    <title>AutoLR: Automating the Path from Research to Launch Review in Industrial Recommender Systems</title>
+    <updated>2026-09-04T08:30:36Z</updated>
+    <link href="https://arxiv.org/abs/2609.04871v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.04871v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Improving an industrial recommender is an iterative research-and-engineering process rather than a direct path from idea to deployment. In \textbf{DASHEN, NetEase's gaming-community app}, algorithm engineers typically identify promising directions from research papers, technical reports, and prior production experiments; reproduce or adapt the underlying methods; implement them in the production codebase; and evaluate the resulting models through training and offline experiments. Promising candidates are then advanced to online A/B tests, and those demonstrating robust gains are submitted to Launch Review---the internal gate for full-traffic rollout. Large language models (LLMs) can assist with individual stages of this workflow, but the overall process remains human-dependent without a harness that can reliably coordinate them across long-running, often multi-day experimental cycles. We present \textbf{AutoLR}, initially built as \textbf{Auto Launch Review} and later extended upstream into an autonomous research-to-launch harness. AutoLR combines three system mechanisms: a \textbf{multi-expert council} that debates and adversarially reviews proposals; a \textbf{deterministic evidence-weighted exploration--exploitation selector} that allocates a limited trial budget across candidate directions and uses Council reranking; and a layered knowledge system that combines external research, production-system knowledge, and DASHEN-specific domain knowledge---such as game communities, player characteristics, and content-interaction patterns---with posterior evidence from configurations, patches, logs, failures, and offline outcomes. LLM agents perform semantic reasoning and code generation, while deterministic controllers retain authority over execution, metric extraction, guardrails, and persistent state transitions.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-04T08:30:36Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Qi Zhang</name>
+    </author>
+    <author>
+      <name>Yanlin Chen</name>
+    </author>
+    <author>
+      <name>Wenchao Xiao</name>
+    </author>
+  </entry>
+</feed>

@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/tsg2Ut12HE/wgrgjGL2Me5hD6to</id>
+  <title>arXiv Query: search_query=all:role AND all:drift AND all:specification AND all:multi-agent AND all:LLM&amp;id_list=&amp;start=0&amp;max_results=100</title>
+  <updated>2026-11-21T23:58:00Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:role+AND+(all:drift+AND+(all:specification+AND+(all:multi-agent+AND+all:LLM)))&amp;start=0&amp;max_results=100&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>100</opensearch:itemsPerPage>
+  <opensearch:totalResults>3</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2605.04608v1</id>
+    <title>SensingAgents: A Multi-Agent Collaborative Framework for Robust IMU Activity Recognition</title>
+    <updated>2026-05-06T07:55:46Z</updated>
+    <link href="https://arxiv.org/abs/2605.04608v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.04608v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Human Activity Recognition (HAR) using Inertial Measurement Unit (IMU) sensors is a cornerstone of mobile health, smart environments, and human-computer interaction. However, current deep learning-based HAR models often struggle with heavy reliance on labeled data, position-specific ambiguity, and a lack of transparent reasoning. Inspired by the advanced agents framework, which emulates a collaborative agent using Large Language Models (LLMs), we propose SensingAgents, a novel multi-agent system for robust IMU activity recognition. SensingAgents organizes LLM-powered agents into specialized roles: a group of Analyst Agents for position-specific sensor analysis (arm, wrist, belt, pocket), a pair of Advocate Agents that resolves sensor conflicts through dynamic and static dialectical debates, and a Decision Agent that ensures reliability under sensor drift or failure. Evaluation on the Shoaib dataset demonstrates that SensingAgents significantly outperforms state-of-the-art single-agent and multi-agent LLM models, achieving an accuracy of 79.5% in a zero setting--29% higher than existing agent models and 9.4% higher than deep learning baselines--particularly in complex scenarios where multi-sensor data is conflicting or noisy. Our work highlights the potential of multi-agent collaborative reasoning for advancing the robustness and interpretability of ubiquitous sensing systems.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-06T07:55:46Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Naiyu Zheng</name>
+    </author>
+    <author>
+      <name>Tianlong Yu</name>
+    </author>
+    <author>
+      <name>Haochen Yin</name>
+    </author>
+    <author>
+      <name>Xiaoyi Fan</name>
+    </author>
+    <author>
+      <name>Xiping Hu</name>
+    </author>
+    <author>
+      <name>Zhimeng Yin</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2403.13679v4</id>
+    <title>SocialBench: Sociality Evaluation of Role-Playing Conversational Agents</title>
+    <updated>2024-08-05T13:32:40Z</updated>
+    <link href="https://arxiv.org/abs/2403.13679v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2403.13679v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) have advanced the development of various AI conversational agents, including role-playing conversational agents that mimic diverse characters and human behaviors. While prior research has predominantly focused on enhancing the conversational capability, role-specific knowledge, and stylistic attributes of these agents, there has been a noticeable gap in assessing their social intelligence. In this paper, we introduce SocialBench, the first benchmark designed to systematically evaluate the sociality of role-playing conversational agents at both individual and group levels of social interactions. The benchmark is constructed from a variety of sources and covers a wide range of 500 characters and over 6,000 question prompts and 30,800 multi-turn role-playing utterances. We conduct comprehensive evaluations on this benchmark using mainstream open-source and closed-source LLMs. We find that agents excelling in individual level does not imply their proficiency in group level. Moreover, the behavior of individuals may drift as a result of the influence exerted by other agents within the group. Experimental results on SocialBench confirm its significance as a testbed for assessing the social interaction of role-playing conversational agents. The benchmark is publicly accessible at https://github.com/X-PLUG/SocialBench.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-03-20T15:38:36Z</published>
+    <arxiv:comment>ACL 2024 Findings</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Hongzhan Chen</name>
+    </author>
+    <author>
+      <name>Hehong Chen</name>
+    </author>
+    <author>
+      <name>Ming Yan</name>
+    </author>
+    <author>
+      <name>Wenshen Xu</name>
+    </author>
+    <author>
+      <name>Xing Gao</name>
+    </author>
+    <author>
+      <name>Weizhou Shen</name>
+    </author>
+    <author>
+      <name>Xiaojun Quan</name>
+    </author>
+    <author>
+      <name>Chenliang Li</name>
+    </author>
+    <author>
+      <name>Ji Zhang</name>
+    </author>
+    <author>
+      <name>Fei Huang</name>
+    </author>
+    <author>
+      <name>Jingren Zhou</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.16343v1</id>
+    <title>Elder-Sim: A Psychometrically Validated Platform for Personality-Stable Elderly Digital Twins</title>
+    <updated>2026-03-16T07:39:35Z</updated>
+    <link href="https://arxiv.org/abs/2604.16343v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.16343v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Background: LLMs enable patient-facing conversational agents, creating a pathway toward digital twins that capture older adults' lived experiences and behavioral responses across time. A central barrier is personality drift -- inconsistent trait expression across repeated interactions -- which undermines reliability of generated trajectories and intervention-response simulation in geriatric care.
+  Objective: To develop ELDER-SIM, a multi-role elderly-care conversational platform for building personality-stable digital twin agents, and to propose a psychometric validation framework for quantifying personality consistency in LLM-based agents.
+  Methods: ELDER-SIM was implemented via n8n workflow orchestration with local LLM inference (Ollama/vLLM), integrating (1) Big Five (OCEAN) trait specifications, (2) a Cognitive Conceptualization Diagram (CCD) grounded in Beck's CBT framework, and (3) a MySQL-based long-term memory module. Ablation studies across four conditions -- Baseline, +Memory, +CCD, and +LoRA (fine-tuned on 19,717 instruction pairs from CHARLS) -- were evaluated via Cronbach's $α$, ICC, and role discrimination accuracy.
+  Results: Reliability was acceptable to excellent across conditions (Cronbach's $α$: 0.70--0.94; ICC: 0.85--0.96). Role discrimination improved from 83.3% (Baseline) to 88.9% (+Memory), 94.4% (+CCD), and 97.2% (+LoRA). CCD produced the largest consistency gain (mean $α$ 0.702$\to$0.892), while LoRA achieved the highest overall consistency ($α$ 0.940; ICC 0.958).
+  Conclusions: ELDER-SIM provides a psychometrically validated approach for constructing personality-consistent elderly digital twin agents. Structured cognitive modeling and domain adaptation reduce personality drift, supporting reliable longitudinal simulation for elderly mental health care and reproducible in silico evaluation before clinical deployment.</summary>
+    <category term="cs.HC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-16T07:39:35Z</published>
+    <arxiv:primary_category term="cs.HC"/>
+    <author>
+      <name>Jiaqing Wang</name>
+    </author>
+    <author>
+      <name>Zhongfang Yang</name>
+    </author>
+    <author>
+      <name>Xingyuan Zhu</name>
+    </author>
+    <author>
+      <name>Zong'an Huang</name>
+    </author>
+    <author>
+      <name>Hao Wang</name>
+    </author>
+    <author>
+      <name>Li Tian</name>
+    </author>
+    <author>
+      <name>Ying Cao</name>
+    </author>
+    <author>
+      <name>Xiaomin Qu</name>
+    </author>
+    <author>
+      <name>Xiang Qi</name>
+    </author>
+    <author>
+      <name>Bei Wu</name>
+    </author>
+    <author>
+      <name>Zheng Zhu</name>
+    </author>
+  </entry>
+</feed>

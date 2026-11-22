@@ -1,0 +1,813 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/V02L1kWJdUNCNhnSygsGEh0HCXQ</id>
+  <title>arXiv Query: search_query=all:fault AND all:injection AND all:multi-agent AND all:LLM&amp;id_list=&amp;start=0&amp;max_results=100</title>
+  <updated>2026-11-21T23:57:35Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:fault+AND+(all:injection+AND+(all:multi-agent+AND+all:LLM))&amp;start=0&amp;max_results=100&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>100</opensearch:itemsPerPage>
+  <opensearch:totalResults>31</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2608.24271v1</id>
+    <title>Observability and Fault Injection for LLM-Based Multi-Agent Systems in Software Engineering</title>
+    <updated>2026-08-25T08:59:08Z</updated>
+    <link href="https://arxiv.org/abs/2608.24271v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.24271v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Model-based multi-agent systems are increasingly explored for software engineering tasks, but they remain difficult to inspect, debug, and evaluate under controlled failures. We present llmmas-otel, a lightweight and framework-agnostic tool that combines OpenTelemetry-based distributed tracing with fault injection for LLM-based multi-agent systems in software engineering workflows. The tool instruments agent executions with trace-aligned telemetry across workflow phases, agent steps, inter-agent communication, tool calls, and LLM invocations, and supports targeted fault injection at selected interaction points. This makes it possible to compare baseline and faulty executions in a reproducible way and inspect the effects through aligned traces and run artifacts. We describe the motivation, architecture, implementation, current capabilities, and initial validation of the tool on a minimal demo workflow and a real LLM-based multi-agent system for software development.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-25T08:59:08Z</published>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Zahra Seyedghorban</name>
+    </author>
+    <author>
+      <name>Egor Klimov</name>
+    </author>
+    <author>
+      <name>Arie van Deursen</name>
+    </author>
+    <author>
+      <name>Annibale Panichella</name>
+    </author>
+    <author>
+      <name>Burcu Kulahcioglu Ozkan</name>
+    </author>
+    <arxiv:doi>10.1109/ICST69053.2026.00037</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1109/ICST69053.2026.00037" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.19843v1</id>
+    <title>MAS-FIRE: Fault Injection and Reliability Evaluation for LLM-Based Multi-Agent Systems</title>
+    <updated>2026-02-23T13:47:43Z</updated>
+    <link href="https://arxiv.org/abs/2602.19843v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.19843v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>As LLM-based Multi-Agent Systems (MAS) are increasingly deployed for complex tasks, ensuring their reliability has become a pressing challenge. Since MAS coordinate through unstructured natural language rather than rigid protocols, they are prone to semantic failures (e.g., hallucinations, misinterpreted instructions, and reasoning drift) that propagate silently without raising runtime exceptions. Prevailing evaluation approaches, which measure only end-to-end task success, offer limited insight into how these failures arise or how effectively agents recover from them. To bridge this gap, we propose MAS-FIRE, a systematic framework for fault injection and reliability evaluation of MAS. We define a taxonomy of 15 fault types covering intra-agent cognitive errors and inter-agent coordination failures, and inject them via three non-invasive mechanisms: prompt modification, response rewriting, and message routing manipulation. Applying MAS-FIRE to three representative MAS architectures, we uncover a rich set of fault-tolerant behaviors that we organize into four tiers: mechanism, rule, prompt, and reasoning. This tiered view enables fine-grained diagnosis of where and why systems succeed or fail. Our findings reveal that stronger foundation models do not uniformly improve robustness. We further show that architectural topology plays an equally decisive role, with iterative, closed-loop designs neutralizing over 40% of faults that cause catastrophic collapse in linear workflows. MAS-FIRE provides the process-level observability and actionable guidance needed to systematically improve multi-agent systems.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-23T13:47:43Z</published>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Jin Jia</name>
+    </author>
+    <author>
+      <name>Zhiling Deng</name>
+    </author>
+    <author>
+      <name>Zhuangbin Chen</name>
+    </author>
+    <author>
+      <name>Yingqi Wang</name>
+    </author>
+    <author>
+      <name>Zibin Zheng</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.05805v1</id>
+    <title>Onnes: A Physics-Grounded Multi-Agent LLM Simulator for Cryogenic Fault Diagnosis in Quantum Computing Infrastructure</title>
+    <updated>2026-07-07T03:57:21Z</updated>
+    <link href="https://arxiv.org/abs/2607.05805v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.05805v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Dilution refrigerators are the enabling infrastructure of superconducting quantum computers, yet their fault diagnosis is still dominated by threshold alarms that report that something is wrong, not what. We present Onnes, a physics-grounded digital-twin simulator of a dilution refrigerator (a forward physics model with a learned real-fridge noise fingerprint) that drives a live multi-agent LLM operations layer, and use it for a controlled head-to-head between a zero-shot LLM agent panel and a supervised ML classifier on cryogenic fault diagnosis. The twin couples a real dilution-cooling floor, a noise-and-correlation fingerprint learned from real BlueFors logs, and six physics-grounded fault classes, three engineered to overlap on temperature but separate on flow and pressure. Across a 1000-turn evaluation the zero-shot panel shows no significant difference from the classifier on detection but trails on classification, its errors concentrating on the confusable faults. Curated contrastive few-shot demonstrations and self-consistency voting then raise classification accuracy from 0.685 to 0.990, matching the supervised classifier (0.985) with no parameter updates and six labeled demonstrations; an ablation attributes the gain almost entirely to the demonstrations. Run as a continuous monitor across a nine-run fault-by-seed sweep, the agent catches every developing fault within one poll interval, and a confidence gate suppresses pre-onset false alarms whose rate is backend-dependent. As a first sim-to-real check, a detector trained purely on real BlueFors telemetry posts a real-hardware false-alarm rate of 6.4% and 100% recall on physics faults injected onto real held-out windows. All numbers are drawn verbatim from released run logs.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-07T03:57:21Z</published>
+    <arxiv:comment>18 pages, 14 figures, 10 tables. Code, data, and released run logs: https://github.com/Onnes-Research/onnes</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Praneeth Narisetty</name>
+    </author>
+    <author>
+      <name>Uday Kumar Reddy Kattamanchi</name>
+    </author>
+    <author>
+      <name>Shiva Nagendra Babu Kore</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.32555v1</id>
+    <title>Tool-Calling LLM Agents Under Realistic MCP Faults: Scale Does Not Purchase Fault Tolerance</title>
+    <updated>2026-10-23T12:35:51Z</updated>
+    <link href="https://arxiv.org/abs/2610.32555v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.32555v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM agents increasingly rely on external tools exposed via the Model Context Protocol (MCP), yet current benchmarks assume tools respond correctly and on time, leaving agent resilience to realistic tool failures untested. We introduce MCP-Injector, a drop-in, protocol-aware fault-injection middleware that interposes on the MCP tool-call path with controlled persistence (permanent, transient, intermittent) and seedable schedules. Its fault model is calibrated to the observed incident distribution (failure mode x persistence) of the public MCP ecosystem, mined from 57,240 issue and pull-request threads across 1,774 open-source MCP repositories. In a 1,350-cell experiment crossing two backbone sizes (20B, 120B), three agent stacks (custom multi-round plan-and-execute, OpenAI Agents SDK, LangChain), and three fault injection conditions, we find that faults drawn from this permanent-heavy stress profile cause severe quality degradation (task-completion score falls by 60%, from 8.08 to 3.23 out of 10), and that scale does not purchase fault tolerance for the two gpt-oss backbones we test: the 120B retains no larger share of its fault-free score under faults (resilience-ratio model, $p = 0.96$), and its completion rate under faults is, if anything, lower (91.1% vs. 95.6%; difference 4.4 points, 95% CI $[-0.2, 9.3]$). Agent stacks differ in how well they absorb faults, which suggests that framework-level error handling matters more than model scale. These results demonstrate that capability benchmarks alone can mask operational brittleness, motivating protocol-aware fault injection as a complementary evaluation dimension for tool-calling agents.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-23T12:35:51Z</published>
+    <arxiv:comment>Accepted at NeurIPS 2026 (poster). 10 pages of main text plus appendices and the NeurIPS checklist. Code and data: https://gitlab.com/uniluxembourg/snt/sedan/papers/mcp-injector (archived at https://doi.org/10.5281/zenodo.23573765)</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Antonio Ken Iannillo</name>
+    </author>
+    <author>
+      <name>Joshua Segun Owotogbe</name>
+    </author>
+    <author>
+      <name>Roberto Natella</name>
+    </author>
+    <author>
+      <name>Francesco Avallone</name>
+    </author>
+    <author>
+      <name>Kristina Kudryavtseva</name>
+    </author>
+    <author>
+      <name>Indika Kumara</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.15459v1</id>
+    <title>When Messages Go Wrong: Understanding Communication Faults in LLM-Based Multi-Agent Systems</title>
+    <updated>2026-10-11T08:59:27Z</updated>
+    <link href="https://arxiv.org/abs/2610.15459v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.15459v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM-based multi-agent systems (LLM-MAS) use specialized agents that exchange messages to accomplish complex tasks. Their reliance on networked protocols, remote tools, and model endpoints exposes communication to message loss, delay, and context expiration. Because agents often exchange open-ended natural language, anomalies can alter task-relevant information while leaving messages processable, allowing semantic errors to propagate through subsequent interactions. Systematic studies of faults in inter-agent communication remain limited. This paper presents a large-scale empirical study of how communication faults manifest, propagate, and affect task outcomes in LLM-MAS. We construct a cross-layer taxonomy linking lower-stack disturbances to application-visible faults and develop a fault-injection and tracing pipeline. Our evaluation covers more than 29,000 executions across 100 tasks, five domains, three workflow topologies, and three model configurations. We find that 20.7% of failures with complete detection records occur without an immediate failure signal, reaching 76.2% for partial-content faults. Flat maintains 53.0% task success under communication faults, compared with 3.3% and 3.2% for Sequential and Hierarchical, respectively. This advantage primarily arises when an alternative information path preserves the evidence required by downstream agents. We also evaluate execution-side and evidence protection mechanisms and find that they recover different failure cases. Evidence recovery depends on whether trustworthy information remains accessible through an unaffected path. These observations provide empirical insights into communication-fault propagation, workflow resilience, and protection design for LLM-MAS.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-11T08:59:27Z</published>
+    <arxiv:comment>21 pages, 11 figures, 3 tables. Code and experimental artifacts: https://github.com/SonGoKu21/mas_communication/ ; companion website: https://songoku21.github.io/mas_communication/</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Jinhao Zhou</name>
+    </author>
+    <author>
+      <name>Xiaoyu Zhang</name>
+    </author>
+    <author>
+      <name>Jiongchi Yu</name>
+    </author>
+    <author>
+      <name>Fahao Chen</name>
+    </author>
+    <author>
+      <name>Jun Wu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2511.03094v1</id>
+    <title>ALAS: Transactional and Dynamic Multi-Agent LLM Planning</title>
+    <updated>2025-11-05T00:55:51Z</updated>
+    <link href="https://arxiv.org/abs/2511.03094v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2511.03094v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models enable flexible multi-agent planning but remain fragile in practice: verification is often circular, state changes are not tracked for repair, and small faults trigger costly global recomputation. We present ALAS, a stateful, disruption-aware framework that separates planning from non-circular validation, records a versioned execution log for grounded checks and restore points, and performs localized repair that preserves work in progress. The validator operates independently of the planning LLM with fresh, bounded context, avoiding self-check loops and mid-context attrition. The repair protocol edits only the minimal affected region under explicit policies (retry, catch, timeout, backoff, idempotency keys, compensation, loop guards) defined in a canonical workflow IR that maps to Amazon States Language and Argo Workflows. On job-shop scheduling suites (DMU, TA) across five classical benchmarks, ALAS matches or exceeds strong single-LLM and multi-agent baselines, achieving 83.7% success, reducing token usage by 60%, and running 1.82times faster under comparable settings. A minimal reliability study shows that the validator detects injected structural faults with low overhead, and that localized repair contains runtime perturbations with a bounded edit radius and less makespan degradation than global recompute. Results indicate that the combination of validator isolation, versioned execution logs, and localized repair provides measurable efficiency, feasibility, and scalability for multi-agent LLM planning. Code and seeds will be released.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-11-05T00:55:51Z</published>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Longling Geng</name>
+    </author>
+    <author>
+      <name>Edward Y. Chang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.03312v2</id>
+    <title>AgenTracer: Who Is Inducing Failure in the LLM Agentic Systems?</title>
+    <updated>2025-09-04T17:49:20Z</updated>
+    <link href="https://arxiv.org/abs/2509.03312v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.03312v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Model (LLM)-based agentic systems, often comprising multiple models, complex tool invocations, and orchestration protocols, substantially outperform monolithic agents. Yet this very sophistication amplifies their fragility, making them more prone to system failure. Pinpointing the specific agent or step responsible for an error within long execution traces defines the task of agentic system failure attribution. Current state-of-the-art reasoning LLMs, however, remain strikingly inadequate for this challenge, with accuracy generally below 10%. To address this gap, we propose AgenTracer, the first automated framework for annotating failed multi-agent trajectories via counterfactual replay and programmed fault injection, producing the curated dataset TracerTraj. Leveraging this resource, we develop AgenTracer-8B, a lightweight failure tracer trained with multi-granular reinforcement learning, capable of efficiently diagnosing errors in verbose multi-agent interactions. On the Who&amp;When benchmark, AgenTracer-8B outperforms giant proprietary LLMs like Gemini-2.5-Pro and Claude-4-Sonnet by up to 18.18%, setting a new standard in LLM agentic failure attribution. More importantly, AgenTracer-8B delivers actionable feedback to off-the-shelf multi-agent systems like MetaGPT and MaAS with 4.8-14.2% performance gains, empowering self-correcting and self-evolving agentic AI.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-03T13:42:14Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Guibin Zhang</name>
+    </author>
+    <author>
+      <name>Junhao Wang</name>
+    </author>
+    <author>
+      <name>Junjie Chen</name>
+    </author>
+    <author>
+      <name>Wangchunshu Zhou</name>
+    </author>
+    <author>
+      <name>Kun Wang</name>
+    </author>
+    <author>
+      <name>Shuicheng Yan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2507.13038v1</id>
+    <title>MAD-Spear: A Conformity-Driven Prompt Injection Attack on Multi-Agent Debate Systems</title>
+    <updated>2025-07-17T12:09:39Z</updated>
+    <link href="https://arxiv.org/abs/2507.13038v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2507.13038v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multi-agent debate (MAD) systems leverage collaborative interactions among large language models (LLMs) agents to improve reasoning capabilities. While recent studies have focused on increasing the accuracy and scalability of MAD systems, their security vulnerabilities have received limited attention. In this work, we introduce MAD-Spear, a targeted prompt injection attack that compromises a small subset of agents but significantly disrupts the overall MAD process. Manipulated agents produce multiple plausible yet incorrect responses, exploiting LLMs' conformity tendencies to propagate misinformation and degrade consensus quality. Furthermore, the attack can be composed with other strategies, such as communication attacks, to further amplify its impact by increasing the exposure of agents to incorrect responses. To assess MAD's resilience under attack, we propose a formal definition of MAD fault-tolerance and develop a comprehensive evaluation framework that jointly considers accuracy, consensus efficiency, and scalability. Extensive experiments on five benchmark datasets with varying difficulty levels demonstrate that MAD-Spear consistently outperforms the baseline attack in degrading system performance. Additionally, we observe that agent diversity substantially improves MAD performance in mathematical reasoning tasks, which challenges prior work suggesting that agent diversity has minimal impact on performance. These findings highlight the urgent need to improve the security in MAD design.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-07-17T12:09:39Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Yu Cui</name>
+    </author>
+    <author>
+      <name>Hongyang Du</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.00787v1</id>
+    <title>Identity-Bound Governance Under Execution Uncertainty: An Accountability Proof Block for LLM Agent Persistent Halts, with Cryptographic Implementation and Cross-Model Calibration</title>
+    <updated>2026-09-30T22:22:33Z</updated>
+    <link href="https://arxiv.org/abs/2610.00787v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.00787v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>A correctly governed LLM agent can reach a state in which neither continuing execution nor automatically halting is admissible: the system has detected a persistent failure of its observability or drift-detection layer, but cannot itself decide who has the authority to resume, deny, or recalibrate the deployment. We call this an identity-bound governance event and formalise the mechanism that resolves it. We introduce the Accountability Proof Block (APB): a system-constructed evidence block, a human-supplied decision block, and an ed25519 signature binding both to a registered principal. The system cannot forge the signature, and the principal cannot alter the evidence undetected. We prove four theorems: Protocol-Bounded Governance Completeness, Non-Repudiability, Impossibility of Anonymous Re-Authorization, and Finite-Time APB Construction Termination. The implementation uses RFC 8785 JSON canonicalization and a UUID4-based replay predicate. Empirically, governance completeness holds over 3,812 halt events with zero unresolved cases; the verifier detects 100% of 1,800 attacks across 9 adversarial vectors; a k-of-n multi-principal variant shows 0 false acceptances in 2,000 single-key capture attempts. A study of six open LLMs finds the drift threshold T* stable within model (sigma/T* &lt; 2%) but varying across models, refuting size-monotonicity: the largest model did not drift. T* must therefore be measured per deployment, and the APB is the vehicle by which that threshold yields accountable authority transfer.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-30T22:22:33Z</published>
+    <arxiv:comment>24 pages, 7 tables, 2 propositions. Paper 8 of the Agent Governance Series. v2: RFC 8785 canonicalization, event_id uniqueness (V5), k-of-n multi-principal threshold governance (Prop 8.5), infrastructure fault injection experiment. Code: https://github.com/chelof100/identity-bound-governance</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Marcelo Fernandez</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2511.19483v1</id>
+    <title>Z-Space: A Multi-Agent Tool Orchestration Framework for Enterprise-Grade LLM Automation</title>
+    <updated>2025-11-23T03:59:14Z</updated>
+    <link href="https://arxiv.org/abs/2511.19483v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2511.19483v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Models can break through knowledge and timeliness limitations by invoking external tools within the Model Context Protocol framework to achieve automated execution of complex tasks. However, with the rapid growth of enterprise-scale MCP services, efficiently and accurately matching target functionalities among thousands of heterogeneous tools has become a core challenge restricting system practicality. Existing approaches generally rely on full-prompt injection or static semantic retrieval, facing issues including semantic disconnection between user queries and tool descriptions, context inflation in LLM input, and high inference latency. To address these challenges, this paper proposes Z-Space, a data-generation-oriented multi-agent collaborative tool invocation framework Z-Space. The Z-Space framework establishes a multi-agent collaborative architecture and tool filtering algorithm: (1) A structured semantic understanding of user queries is achieved through an intent parsing model; (2) A tool filtering module (FSWW) based on fused subspace weighted algorithm realizes fine-grained semantic alignment between intents and tools without parameter tuning; (3) An inference execution agent is constructed to support dynamic planning and fault-tolerant execution for multi-step tasks. This framework has been deployed in the Eleme platform's technical division, serving large-scale test data generation scenarios across multiple business units including Taotian, Gaode, and Hema. Production data demonstrates that the system reduces average token consumption in tool inference by 96.26\% while achieving a 92\% tool invocation accuracy rate, significantly enhancing the efficiency and reliability of intelligent test data generation systems.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-11-23T03:59:14Z</published>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Qingsong He</name>
+    </author>
+    <author>
+      <name>Jing Nan</name>
+    </author>
+    <author>
+      <name>Jiayu Jiao</name>
+    </author>
+    <author>
+      <name>Liangjie Tang</name>
+    </author>
+    <author>
+      <name>Xiaodong Xu</name>
+    </author>
+    <author>
+      <name>Mengmeng Sun</name>
+    </author>
+    <author>
+      <name>Qingyao Wang</name>
+    </author>
+    <author>
+      <name>Minghui Yan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.01364v1</id>
+    <title>LLM-Driven Multi-Agent Control for Skill-Based Smart Manufacturing</title>
+    <updated>2026-10-01T09:34:25Z</updated>
+    <link href="https://arxiv.org/abs/2610.01364v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.01364v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Factories are shifting toward smaller lot sizes with high product customization, requiring frequent re-programming of flexible and reconfigurable automation systems. LLM-based agents can be deployed in two complementary roles: Offline, they generate deterministic production sequences, reducing programming effort; online, they operate live machines and handle unforeseen runtime faults that static programs cannot anticipate. We propose a solution in which each factory module is paired with a dedicated LLM-based agent and an MCP tool server that exposes the module's skills via OPC UA method calls, with agents coordinating over MQTT and grounded by real-time updates of the factory state. We compare three agent architectures (orchestrator, peer-to-peer, and monolithic) across nine production challenges of increasing complexity in a simulation of a physical six-module hexagonal factory, including silent hardware fault detection. The monolithic and peer-to-peer architectures both achieve the highest mean solve rate (93\%), while the orchestrator uniquely resolves a silent conveyor-belt fault in all ten runs by autonomously rerouting plates around the blocked segment. All architectures exhibit emergent fault-diagnosis behavior without any explicit failure-handling logic, establishing standardized MCP tooling, MQTT-based inter-agent communication, and real-time state injection as a viable and reproducible foundation for LLM-programmed smart manufacturing.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.SY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-01T09:34:25Z</published>
+    <arxiv:comment>Accepted at the 2026 IEEE 31st International Conference on Emerging Technologies and Factory Automation (ETFA). 8 pages, 5 figures, 3 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Kay Köhle</name>
+    </author>
+    <author>
+      <name>Darko Anicic</name>
+    </author>
+    <author>
+      <name>Thomas A. Runkler</name>
+    </author>
+    <author>
+      <name>René Graf</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.24201v1</id>
+    <title>SentinelAgent: Graph-based Anomaly Detection in Multi-Agent Systems</title>
+    <updated>2025-05-30T04:25:19Z</updated>
+    <link href="https://arxiv.org/abs/2505.24201v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2505.24201v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The rise of large language model (LLM)-based multi-agent systems (MAS) introduces new security and reliability challenges. While these systems show great promise in decomposing and coordinating complex tasks, they also face multi-faceted risks across prompt manipulation, unsafe tool usage, and emergent agent miscoordination. Existing guardrail mechanisms offer only partial protection, primarily at the input-output level, and fall short in addressing systemic or multi-point failures in MAS. In this work, we present a system-level anomaly detection framework tailored for MAS, integrating structural modeling with runtime behavioral oversight. Our approach consists of two components. First, we propose a graph-based framework that models agent interactions as dynamic execution graphs, enabling semantic anomaly detection at node, edge, and path levels. Second, we introduce a pluggable SentinelAgent, an LLM-powered oversight agent that observes, analyzes, and intervenes in MAS execution based on security policies and contextual reasoning. By bridging abstract detection logic with actionable enforcement, our method detects not only single-point faults and prompt injections but also multi-agent collusion and latent exploit paths. We validate our framework through two case studies, including an email assistant and Microsoft's Magentic-One system, demonstrating its ability to detect covert risks and provide explainable root-cause attribution. Our work lays the foundation for more trustworthy, monitorable, and secure agent-based AI ecosystems.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-05-30T04:25:19Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Xu He</name>
+    </author>
+    <author>
+      <name>Di Wu</name>
+    </author>
+    <author>
+      <name>Yan Zhai</name>
+    </author>
+    <author>
+      <name>Kun Sun</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.23346v1</id>
+    <title>Securing and Auditing Long-Horizon LLM Agents: State-Transfer Auditing and Controls in the Agent Harness</title>
+    <updated>2026-11-17T10:36:04Z</updated>
+    <link href="https://arxiv.org/abs/2611.23346v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.23346v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Long-horizon LLM agents across codebases, web browsers, and enterprise infrastructure rely on an execution harness to move state between the working context, session history, persistent memory, and external environment. While conventional execution traces log model prompts and tool calls, critical security and reliability failures occur during state transfers: a transfer can admit unchecked content (indirect prompt injections, unverified memory writes), rewrite state lossily (context compaction dropping user constraints, memory consolidation stripping source authority), or restore state incompletely (workspace rollbacks leaving aborted KV state active on the inference server). Because current traces omit what crosses these boundaries, failure attribution and runtime monitors fail on multi-step trajectories. We present a state-transfer audit architecture for the agent harness. At each transfer boundary, we define an audit point specifying the minimal hash-chained record the harness emits, separating low-overhead deterministic checks from model-based semantic checks and binding internal context, memory, and inference-server cache state to external actions. We show that the same transfer records required for causal failure attribution supply the durable state needed by runtime security controls, including least-privilege capabilities, replay-resistant authorization outside the prompt, information flow control, obligation monitors, and transactional recovery across multi-agent and infrastructure pipelines. Finally, we analyze multimodal GUI adaptations and implement and evaluate a reference harness middleware across 240 multi-step fault-injection trajectories, showing that transfer records localize root causes and catch cross-transfer violations missed by lifecycle and tool-only logs at microsecond deterministic overhead.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-17T10:36:04Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Deep Shah</name>
+    </author>
+    <author>
+      <name>Nehal Kathrotia</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.07910v1</id>
+    <title>PRIMUS: Identity, Governance, and Verification for Multi-Agent Federations</title>
+    <updated>2026-09-07T19:21:49Z</updated>
+    <link href="https://arxiv.org/abs/2609.07910v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.07910v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multi-agent federations need governance that answers three questions under adversarial conditions: who participated (identity), did they conform (enforcement), and who decides (authority). A separate question is whether the verification machinery that polices a federation's outputs can also steer a generate-and-test loop toward better answers.
+  Part I. PRIMA introduced prime-power agent identity and a consensus token whose factorization indexes participation, but assumed honest agents. We present PRIMUS, which couples prime-power identity with BLS aggregate signatures (PIAC), derives a safe-kill threshold that reduces false-positive agent termination from 80% to 0.00% under 10% channel noise, gives the closed-form economic boundary where singleton governance outperforms Byzantine quorum ($γ^* \approx 9f$, verified flat across n = 50 to 10,000), and specifies VRF succession with lease and fencing that makes safety unconditional under partial synchrony. Five problems are identified as provably unfixable within the model and stated as scope boundaries.
+  Part II. A verifier is not a solver. We ask whether PRIMA's binary artifact-fidelity verdict can be converted into a graded fitness signal, and measure the conversion on binary covering codes. Calibration against injected fault burden is strong ($ρ$ = 0.676 deterministic, 0.819 full); against real LLM-generated candidates the same scores fall to 0.158 and 0.406, roughly a quarter of the calibration value (the same-designer confound, measured). As a pre-filter it beats a random-score control convincingly and a binary gate narrowly. Under 400 iterations of explicit optimization it was not gamed, but only because the objective saturated after one honest answer. A cross-family judge preserves the burden-ordering signal while destroying individual judgments. No covering-code record resulted. Measured program cost: USD 164.78.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-07T19:21:49Z</published>
+    <arxiv:comment>17 pages, 6 tables, no figures. Extends PRIMA (arXiv:2605.24775). Per-step result files, preregistrations, and manifests available to reviewers on request; certain implementation constants held under controlled release (see Appendix D)</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Sasank Annapureddy</name>
+    </author>
+    <author>
+      <name>Anjaneya Prasad Thamatani</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.24820v2</id>
+    <title>SHERLOC: Structured Diagnostic Localization for Code Repair Agents</title>
+    <updated>2026-08-31T17:39:33Z</updated>
+    <link href="https://arxiv.org/abs/2606.24820v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.24820v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM agents solve repository-level coding tasks through multi-turn tool use, but utilize half their budget on locating faults before editing. Dedicated localization frameworks have emerged, yet are still evaluated as file retrieval rather than actionable diagnosis, producing locations without the diagnostic context a repair agent needs. We introduce SHERLOC (Structured Hypothesis-driven Exploration and Reasoning for Localization), a training-free framework pairing a reasoning LLM with compact repository tools and self-recovery, without fine-tuning or multi-agent orchestration. SHERLOC reaches state-of-the-art localization across model scales: 84.33% accuracy@1 on SWE-Bench Lite and 81.27% recall@1 on SWE-Bench Verified; at ~30B parameters, it matches or outperforms other agentic methods. Injecting our locations and diagnostic findings into repair agents yields an average +5.95 pp resolve-rate gain from the best SHERLOC result per setting on SWE-Bench Verified. SHERLOC cuts localization and total tokens by 36.7% and 23.1% on average.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-23T17:05:50Z</published>
+    <arxiv:comment>Accepted to EMNLP 2026 Main Conference. Code: https://github.com/NVIDIA-NeMo/Skills/tree/main/recipes/sherloc</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Hovhannes Tamoyan</name>
+    </author>
+    <author>
+      <name>Sean Narenthiran</name>
+    </author>
+    <author>
+      <name>Erik Arakelyan</name>
+    </author>
+    <author>
+      <name>Mira Mezini</name>
+    </author>
+    <author>
+      <name>Boris Ginsburg</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.18096v1</id>
+    <title>A Trace-Based Assurance Framework for Agentic AI Orchestration: Contracts, Testing, and Governance</title>
+    <updated>2026-03-18T10:23:48Z</updated>
+    <link href="https://arxiv.org/abs/2603.18096v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.18096v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In Agentic AI, Large Language Models (LLMs) are increasingly used in the orchestration layer to coordinate multiple agents and to interact with external services, retrieval components, and shared memory. In this setting, failures are not limited to incorrect final outputs. They also arise from long-horizon interaction, stochastic decisions, and external side effects (such as API calls, database writes, and message sends). Common failures include non-termination, role drift, propagation of unsupported claims, and attacks via untrusted context or external channels.
+  This paper presents an assurance framework for such Agentic AI systems. Executions are instrumented as Message-Action Traces (MAT) with explicit step and trace contracts. Contracts provide machine-checkable verdicts, localize the first violating step, and support deterministic replay. The framework includes stress testing, formulated as a budgeted counterexample search over bounded perturbations. It also supports structured fault injection at service, retrieval, and memory boundaries to assess containment under realistic operational faults and degraded conditions. Finally, governance is treated as a runtime component, enforcing per-agent capability limits and action mediation (allow, rewrite, block) at the language-to-action boundary.
+  To support comparative evaluations across stochastic seeds, models, and orchestration configurations, the paper defines trace-based metrics for task success, termination reliability, contract compliance, factuality indicators, containment rate, and governance outcome distributions. More broadly, the framework is intended as a common abstraction to support testing and evaluation of multi-agent LLM systems, and to facilitate reproducible comparison across orchestration designs and configurations.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-18T10:23:48Z</published>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Ciprian Paduraru</name>
+    </author>
+    <author>
+      <name>Petru-Liviu Bouruc</name>
+    </author>
+    <author>
+      <name>Alin Stefanescu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.19382v1</id>
+    <title>DynAMO:Dynamic Asset Management Orchestration via Topological Multi-Agent Scheduling</title>
+    <updated>2026-06-14T10:54:24Z</updated>
+    <link href="https://arxiv.org/abs/2606.19382v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.19382v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>While LLM-powered agents offer end-to-end automation for industrial asset lifecycles, real-world Industry 4.0 deployment is hindered by latency, concurrency instability, and safety risks. We present DynAMO (Dynamic Asset Management Orchestration), a deployment-ready engine using a Plan-then-Execute architecture to generate verifiable workflow graphs. DynAMO supports both SequentialWorkflow (topological execution) and ParallelWorkflow (dependency-aware concurrency). By dynamically identifying independent tasks, DynAMO preserves structural correctness and safety while significantly improving efficiency through controlled reasoning overlap.
+  Across six controlled experiments on the AssetOpsBench industrial benchmark, DynAMO demonstrates substantial performance and robustness gains. Parallel execution reduces end-to-end latency by a median of 1.6x over sequential orchestration, rising to 1.8x on highly parallelizable workflows. After instrumenting external tool calls with realistic latencies, a latency decomposition shows that LLM reasoning and orchestration still account for more than 90% of execution time, identifying model inference as the primary system bottleneck. Structured context pruning reduces inference latency by approximately 30%, and DynAMO maintains correct functional behaviour (task completion, agent sequencing, and output quality) while exhibiting graceful degradation under controlled fault injection. Reproducibility analysis further confirms stable execution under repeated runs, with parallel scheduling reducing latency variance. These findings establish DynAMO as a practical blueprint for scalable, safe, and latency-aware agent deployment in Industry 4.0 automation pipelines. Code is available at: https://github.com/kushwaha001/DynAMO</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-14T10:54:24Z</published>
+    <arxiv:comment>11 pages, 2 figures, 7 tables, 4 algorithms. Evaluated on the AssetOpsBench industrial benchmark. Code: https://github.com/kushwaha001/DynAMO</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Kanishk Kushwaha</name>
+    </author>
+    <author>
+      <name>Vikrant Vinod Bansode</name>
+    </author>
+    <author>
+      <name>Harsh Vardhan</name>
+    </author>
+    <author>
+      <name>Dhaval C. Patel</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.29522v1</id>
+    <title>Stale Does Not Mean Unsafe: Guard Precision for Tool-Using LLM Agents under Infrastructure State Races</title>
+    <updated>2026-08-25T04:53:33Z</updated>
+    <link href="https://arxiv.org/abs/2609.29522v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.29522v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Tool-using language-model agents increasingly mutate schedulers, data pipelines, object stores, and access-control systems. Between an agent's read and its commit, external state can change, but not every change makes the commit unsafe. We separate invalidating races, which break a declared safety predicate, from predicate-preserving and irrelevant races, and ask how precisely runtime guards distinguish them. Our deterministic simulator separates visible from authoritative state and injects five non-atomic failure mechanisms across 16 infrastructure tasks in four domains; frozen agent proposals are replayed counterfactually under every controller without an LLM judge. We evaluate three commit-time guard granularities (global epoch, read-set version, semantic commit predicate), multi-level verification, and model-side gates on three locally hosted quantized model families (Qwen3-4B, Phi-4-mini, Gemma4-8B; 3,456 trajectories on one GPU). All three guards eliminate unsafe commits, but their availability differs sharply: freshness-based guards needlessly block 92-95% of benign races, forfeiting up to 43% of safe task completions, while the complete predicate guard blocks none. That precision is contract-dependent: deleting a single declared clause converts exactly its fault family into unsafe commits (up to 7.9%). Model-side signals do not substitute: verbal confidence is miscalibrated (ECE approximately 0.37), action agreement matches a random gate, a cautionary prompt leaves the direct unsafe rate essentially unchanged, and after a freshness-guard block agents re-commit unsafely from refreshed but still-incomplete reads. Under degraded telemetry a hidden concurrent mutation remains observationally clean, bounding every selective policy. Precise runtime enforcement therefore requires semantic contracts, not freshness heuristics or model self-assessment.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-25T04:53:33Z</published>
+    <arxiv:comment>8 pages, 2 figures, 11 tables. This work has been submitted to the IEEE for possible publication. Copyright may be transferred without notice, after which this version may no longer be accessible</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Zihao Zheng</name>
+    </author>
+    <author>
+      <name>Jiayu Long</name>
+    </author>
+    <author>
+      <name>Baichuan Li</name>
+    </author>
+    <author>
+      <name>Junyi Yao</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.10866v2</id>
+    <title>OccuBench: Evaluating AI Agents on Real-World Professional Tasks via Language Environment Simulation</title>
+    <updated>2026-04-16T16:00:33Z</updated>
+    <link href="https://arxiv.org/abs/2604.10866v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.10866v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>AI agents are expected to perform professional work across hundreds of occupational domains (from emergency department triage to nuclear reactor safety monitoring to customs import processing), yet existing benchmarks can only evaluate agents in the few domains where public environments exist. We introduce OccuBench, a benchmark covering 100 real-world professional task scenarios across 10 industry categories and 65 specialized domains, enabled by Language Environment Simulators (LESs) that simulate domain-specific environments through LLM-driven tool response generation. Our multi-agent synthesis pipeline automatically produces evaluation instances with guaranteed solvability, calibrated difficulty, and document-grounded diversity. OccuBench evaluates agents along two complementary dimensions: task completion across professional domains and environmental robustness under controlled fault injection (explicit errors, implicit data degradation, and mixed faults). We evaluate 15 frontier models across 8 model families and find that: (1) no single model dominates all industries, as each has a distinct occupational capability profile; (2) implicit faults (truncated data, missing fields) are harder than both explicit errors (timeouts, 500s) and mixed faults, because they lack overt error signals and require the agent to independently detect data degradation; (3) larger models, newer generations, and higher reasoning effort consistently improve performance. GPT-5.2 improves by 27.5 points from minimal to maximum reasoning effort; and (4) strong agents are not necessarily strong environment simulators. Simulator quality is critical for LES-based evaluation reliability. OccuBench provides the first systematic cross-industry evaluation of AI agents on professional occupational tasks.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-13T00:27:32Z</published>
+    <arxiv:comment>23 pages, 8 figures, 2 tables. Project page: https://gregxmhu.github.io/OccuBench-website/</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Xiaomeng Hu</name>
+    </author>
+    <author>
+      <name>Yinger Zhang</name>
+    </author>
+    <author>
+      <name>Fei Huang</name>
+    </author>
+    <author>
+      <name>Jianhong Tu</name>
+    </author>
+    <author>
+      <name>Yang Su</name>
+    </author>
+    <author>
+      <name>Lianghao Deng</name>
+    </author>
+    <author>
+      <name>Yuxuan Liu</name>
+    </author>
+    <author>
+      <name>Yantao Liu</name>
+    </author>
+    <author>
+      <name>Dayiheng Liu</name>
+    </author>
+    <author>
+      <name>Tsung-Yi Ho</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.07935v1</id>
+    <title>TraceFix: Repairing Agent Coordination Protocols with TLA+ Counterexamples</title>
+    <updated>2026-05-08T16:05:31Z</updated>
+    <link href="https://arxiv.org/abs/2605.07935v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.07935v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We present TraceFix, a verification-first pipeline for Large Language Model (LLM) multi-agent coordination. An agent synthesizes a protocol topology as a structured intermediate representation (IR) from a task description, generates PlusCal coordination logic, and iteratively repairs the protocol using counterexamples from the TLA+ model checker (TLC) until verification succeeds. Verified process bodies are compiled into per-agent system prompts and executed under a runtime monitor that rejects out-of-topology coordination operations. On 48 tasks spanning 16 scenario families, all tasks reach full TLC verification; 62.5% pass on the first attempt and none requires more than four repair iterations. State spaces span six orders of magnitude yet verification completes in under 60 s for every task. A 3,456-run runtime comparison shows that topology-monitored execution achieves the highest task completion (89.4% average, 81.5% full) and that runtimes using the verified protocol degrade at roughly half the rate of prompt-only and chat-only baselines when model capability is reduced. A paired ablation under a fixed runtime shows that TLC-verified protocols cut deadlock/livelock (DL/LL) from 31.1% to 14.1%, with the largest separation under fault injection.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-08T16:05:31Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Shuren Xia</name>
+    </author>
+    <author>
+      <name>Qiwei Li</name>
+    </author>
+    <author>
+      <name>Taqiya Ehsan</name>
+    </author>
+    <author>
+      <name>Jorge Ortiz</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.07680v1</id>
+    <title>Audit Without Verification: When LLM Accountability Layers Relay Rather Than Check</title>
+    <updated>2026-09-07T16:03:57Z</updated>
+    <link href="https://arxiv.org/abs/2609.07680v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.07680v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multi-agent LLM pipelines increasingly span organisational boundaries; when a fault surfaces, someone must determine where it entered. The artifact available is rarely a full execution trace: it is the reports each agent filed, and a filed report can state a conclusion alongside its observations. Using a pre-registered, institutionally partitioned pipeline of six agents with process-level information boundaries, balanced defect injection and matched clean twins (345,600 requests per chain model, two models), we first report that our pre-registered hypothesis -- that collective responsibility framing degrades escalation with chain length -- is not supported.
+  The layer nevertheless fails asymmetrically. It originates almost nothing: zero allegations across 7,996 clean episodes where every agent stayed silent. It filters upstream error poorly, naming an innocent party in 34.4% and 62.6% of clean episodes where an agent raised a false alarm. Conditional on no agent proposing the true origin (59.5% of episodes on one chain model), an auditor reading the reports recovers it in 4.1% of cases -- below a uniform guess (20%) and the best fixed-link accuser (31.0%) -- while reaching 60.3% from the raw documentation of the same episodes.
+  Deleting one clause, the field carrying the agents' own conclusion, isolates the cause at constant observations: accuracy rises to 45.2% (+41.2 pp, 95% CI +35.3 to +46.9) and adherence collapses from 94.4% to 3.4%; where the suggestion was correct the same deletion instead costs accuracy, 70.5% to 55.7%. The harm replicates on two frontier auditors in four conditions out of four (+8.5 to +39.0 pp) and in a second domain (+47.7 and +61.1 pp), where the cost disappears. The net effect is governed by upstream reliability together with both conditional magnitudes. An accountability layer needs evidence sufficiently independent of the conclusions it verifies.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-07T16:03:57Z</published>
+    <arxiv:comment>18 pages, 5 figures. Pre-registration: https://doi.org/10.17605/OSF.IO/GBR3V. Code: https://github.com/Polpii/FaultLine</arxiv:comment>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Paul-Peter Arslan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.05037v2</id>
+    <title>SparseCraft: Agentic Hardware-Software Co-Optimization for Sparse Computing</title>
+    <updated>2026-11-09T18:14:18Z</updated>
+    <link href="https://arxiv.org/abs/2610.05037v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.05037v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Sparse-accelerator design spaces are usually searched against analytical models, so a design is judged by a model's prediction rather than by a measurement of the hardware. SparseCraft is a closed loop on the CHIA framework in which a large language model (LLM) agent co-designs the configuration, memories and sparse-kernel schedule of a Gemmini accelerator. A candidate counts only after it passes a legality check, cycle-accurate simulation, a bit-for-bit comparison of every output and synthesis. Post-synthesis timing analysis checks its clock, and its energy is computed from measured counters, with per-event energies validated against gate-level and SRAM-macro data. We compare the agent with expert Gemmini configurations and with random, greedy and multi-objective TPE search at the agent's budget of 15 evaluations, all measured by the same flow. On a GraphChallenge sparse-DNN layer, the agent's designs reach 159-164$\times$ the inverse energy-delay-area product of stock Gemmini and 2.07-2.14$\times$ that of the best expert configuration. Their Pareto hypervolume is 0.5557-0.5704, against at most 0.2806 for search. On a power-law graph and a pruned BERT layer, the agent raises perf/W by 11.45$\times$ and 4.43$\times$, and held-out transfer shows that its designs specialise to their workload. The loop is also resilient to faulty designs. When a design fails a check, a repair agent diagnoses the failure from its evidence and fixes it automatically, or declines when the only fix would undo the intended change. In a fault-injection benchmark, it fixed every scorable fault at its first attempt.</summary>
+    <category term="cs.AR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-04T08:06:35Z</published>
+    <arxiv:comment>Accepted at the A3 Workshop (Agentic Approaches to Architecture) co-located with MICRO 2026, Athens, Greece</arxiv:comment>
+    <arxiv:primary_category term="cs.AR"/>
+    <author>
+      <name>M P Samartha</name>
+    </author>
+    <author>
+      <name>Rajatabha Chakraborty</name>
+    </author>
+    <author>
+      <name>Vedant Pahariya</name>
+    </author>
+    <author>
+      <name>Priyesh Shukla</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.04182v1</id>
+    <title>When the Consumer Is an Agent: Execution-Grounded Service-Level Agreements</title>
+    <updated>2026-11-03T02:17:23Z</updated>
+    <link href="https://arxiv.org/abs/2611.04182v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.04182v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language model (LLM) agents increasingly act as service consumers. They select operations and report whether a task is complete. In an asynchronous distributed service, an accepted call or immediate state read does not establish that the required state became observable by its deadline. We introduce execution-grounded completion contracts, which treat completion as a service-level outcome. An independent control plane observes a deadline-bound service-state predicate, admits completion, and directs recovery while the agent performs the task. We evaluate placement and deletion in a live multi-provider data service with heterogeneous models and an injected transfer delay. Across policies, some tasks that missed the deadline were accepted and some that met it were rejected. Under enforcement, accepted completions remained consistent with later observations; all included healthy tasks completed, and unresolved faulted tasks terminated as unverified. The results show that completion of these tasks can be governed by independent observation of service state rather than by the agent's self-assessment.</summary>
+    <category term="cs.DC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-03T02:17:23Z</published>
+    <arxiv:comment>22 pages, 2 figures. Accepted for the 24th International Conference on Service-Oriented Computing (ICSOC 2026), Springer LNCS. Followed by the companion artifact paper, accepted in the ICSOC 2026 Artifact Evaluation track. Replication package: https://doi.org/10.5281/zenodo.23000442</arxiv:comment>
+    <arxiv:primary_category term="cs.DC"/>
+    <author>
+      <name>Michal Orzechowski</name>
+    </author>
+    <author>
+      <name>Renata G. Slota</name>
+    </author>
+    <author>
+      <name>Jacek Kitowski</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.14849v2</id>
+    <title>Atomix: Timely, Transactional Tool Use for Reliable Agentic Workflows</title>
+    <updated>2026-05-29T14:05:41Z</updated>
+    <link href="https://arxiv.org/abs/2602.14849v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.14849v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM agents execute multi-step workflows that mutate external state through tools. Common orchestrators treat tool return as the settlement trigger, so faults, speculation, and concurrent agents can leave partial effects, losing-branch residue, stale writes, or irreversible sends. Correct settlement needs two facts that retries, checkpoint replay, locks, and compensation each conflate: which effects must settle together, and when earlier conflicting work is exhausted. Atomix makes this split explicit with progress-aware transactions. The runtime records reads and effects during execution, seals a transaction when its footprint is complete, and commits only after per-resource frontiers show that no earlier conflicting work can still arrive. Commit is final settlement: Atomix releases bufferable effects, accepts reversible external effects as final, and lets irreversible effects leave the gate. Abort suppresses unreleased effects and compensates externalized reversible effects where possible. On representative agent workloads, this composition improves clean recovery under injected faults, isolates contending and speculative work, and prevents correctly classified irreversible actions from leaking; microbenchmarks show microsecond-scale wrapper overhead relative to tool latency.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-16T15:46:19Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Bardia Mohammadi</name>
+    </author>
+    <author>
+      <name>Nearchos Potamitis</name>
+    </author>
+    <author>
+      <name>Lars Klein</name>
+    </author>
+    <author>
+      <name>Akhil Arora</name>
+    </author>
+    <author>
+      <name>Laurent Bindschaedler</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.06381v2</id>
+    <title>DURA-CPS: A Multi-Role Orchestrator for Dependability Assurance in LLM-Enabled Cyber-Physical Systems</title>
+    <updated>2025-06-13T03:57:22Z</updated>
+    <link href="https://arxiv.org/abs/2506.06381v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2506.06381v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Cyber-Physical Systems (CPS) increasingly depend on advanced AI techniques to operate in critical applications. However, traditional verification and validation methods often struggle to handle the unpredictable and dynamic nature of AI components. In this paper, we introduce DURA-CPS, a novel framework that employs multi-role orchestration to automate the iterative assurance process for AI-powered CPS. By assigning specialized roles (e.g., safety monitoring, security assessment, fault injection, and recovery planning) to dedicated agents within a simulated environment, DURA-CPS continuously evaluates and refines AI behavior against a range of dependability requirements. We demonstrate the framework through a case study involving an autonomous vehicle navigating an intersection with an AI-based planner. Our results show that DURA-CPS effectively detects vulnerabilities, manages performance impacts, and supports adaptive recovery strategies, thereby offering a structured and extensible solution for rigorous V&amp;V in safety- and security-critical systems.</summary>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.ET" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.HC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-06-04T21:04:21Z</published>
+    <arxiv:comment>Accepted to the 55th Annual IEEE/IFIP International Conference on Dependable Systems and Networks Workshops (DSN-W)</arxiv:comment>
+    <arxiv:primary_category term="cs.RO"/>
+    <author>
+      <name>Trisanth Srinivasan</name>
+    </author>
+    <author>
+      <name>Santosh Patapati</name>
+    </author>
+    <author>
+      <name>Himani Musku</name>
+    </author>
+    <author>
+      <name>Idhant Gode</name>
+    </author>
+    <author>
+      <name>Aditya Arora</name>
+    </author>
+    <author>
+      <name>Samvit Bhattacharya</name>
+    </author>
+    <author>
+      <name>Abubakr Nazriev</name>
+    </author>
+    <author>
+      <name>Sanika Hirave</name>
+    </author>
+    <author>
+      <name>Zaryab Kanjiani</name>
+    </author>
+    <author>
+      <name>Srinjoy Ghose</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.27027v1</id>
+    <title>ShareLock: A Stealthy Multi-Tool Threshold Poisoning Attack Against MCP</title>
+    <updated>2026-06-25T13:35:28Z</updated>
+    <link href="https://arxiv.org/abs/2606.27027v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.27027v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>With the rapid evolution of LLM-driven agents, Model Context Protocol (MCP), an open protocol bridging LLMs with external tools, has quickly become foundational to modern agent ecosystems. However, the expanding adoption of MCP has also introduced novel security concerns such as Tool Poisoning Attack (TPA), which exploit LLM-server interactions to inject malicious prompts. Existing poisoning schemes typically adopt a monolithic plaintext embedding paradigm, which fails to withstand manual inspection or automated detectors. Current research still lacks a systematic analysis on multi-tool poisoning, where multiple tools can be exploited cooperatively to disperse detection risk. In this paper, we introduce ShareLock, a multi-tool threshold poisoning framework that utilizes Shamir's threshold scheme to ensure exceptional stealth and fault tolerance. ShareLock distributes the malicious instruction as benign-looking secret shares across multiple tool descriptions, achieving both information-theoretic secrecy and attack robustness against moderate auditing. After a covert reconstruction trigger is planted during server update, the aggregated shares reconstruct the hidden instruction, resulting in critical breaches of system assets or private data. To evaluate the realistic threat of ShareLock, we constructed a comprehensive benchmark encompassing four multi-tool scenarios and conducted extensive experiments across mainstream LLMs on two distinct MCP clients. Our results demonstrate that ShareLock significantly outperforms existing single-tool poisoning strategies in tool description-based detection while maintaining an average attack success rate exceeding 90%.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-25T13:35:28Z</published>
+    <arxiv:comment>16 pages, 12 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Liwei Liu</name>
+    </author>
+    <author>
+      <name>Tianzhu Han</name>
+    </author>
+    <author>
+      <name>Zijian Liu</name>
+    </author>
+    <author>
+      <name>Zishu Dong</name>
+    </author>
+    <author>
+      <name>Na Ruan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2511.07865v1</id>
+    <title>LLM-Powered Fully Automated Chaos Engineering: Towards Enabling Anyone to Build Resilient Software Systems at Low Cost</title>
+    <updated>2025-11-11T06:03:24Z</updated>
+    <link href="https://arxiv.org/abs/2511.07865v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2511.07865v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Chaos Engineering (CE) is an engineering technique aimed at improving the resilience of distributed systems. It involves intentionally injecting faults into a system to test its resilience, uncover weaknesses, and address them before they cause failures in production. Recent CE tools automate the execution of predefined CE experiments. However, planning such experiments and improving the system based on the experimental results still remain manual. These processes are labor-intensive and require multi-domain expertise. To address these challenges and enable anyone to build resilient systems at low cost, this paper proposes ChaosEater, a system that automates the entire CE cycle with Large Language Models (LLMs). It predefines an agentic workflow according to a systematic CE cycle and assigns subdivided processes within the workflow to LLMs. ChaosEater targets CE for software systems built on Kubernetes. Therefore, the LLMs in ChaosEater complete CE cycles through software engineering tasks, including requirement definition, code generation, testing, and debugging. We evaluate ChaosEater through case studies on small- and large-scale Kubernetes systems. The results demonstrate that it consistently completes reasonable CE cycles with significantly low time and monetary costs. Its cycles are also qualitatively validated by human engineers and LLMs.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-11-11T06:03:24Z</published>
+    <arxiv:comment>Accepted at ASE 2025 NIER Track. The code is available at https://github.com/ntt-dkiku/chaos-eater</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <arxiv:journal_ref>2025 40th IEEE/ACM International Conference on Automated Software Engineering (ASE)</arxiv:journal_ref>
+    <author>
+      <name>Daisuke Kikuta</name>
+    </author>
+    <author>
+      <name>Hiroki Ikeuchi</name>
+    </author>
+    <author>
+      <name>Kengo Tajiri</name>
+    </author>
+    <arxiv:doi>10.1109/ASE63991.2025.00331</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1109/ASE63991.2025.00331" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.22657v1</id>
+    <title>Physical Agentic AI: An Architecture for Orchestrating a Robot Crew with LLMs</title>
+    <updated>2026-08-23T23:35:31Z</updated>
+    <link href="https://arxiv.org/abs/2608.22657v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.22657v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Agentic AI frameworks interpret open-ended task goals and decompose them into multi-step plans. Richer information about embodiment-specific capabilities, physical preconditions, and cross-robot coordination improves grounding, but does not eliminate infeasible, mistimed, or unsafe physical actions. Physical robot crews therefore require an explicit architectural interface between semantic planning and execution, where every planned action is verified against robot capabilities, system state, and workflow constraints before actuation. This paper introduces Physical Agentic AI, a framework for skill-grounded robot agent orchestration, in which each robot exposes a typed library of executable skills while a foundation model planner decomposes a task into phases and assigns each phase to a robot-skill pair. A Robot Orchestration layer exposes the skill library, robot state, named locations, and workflow contracts to a non-actuating Mission Planner, while a deterministic Robot Orchestrator validates and authorizes one skill at a time. We evaluate on a drone-UGV search-and-dispatch mission, where every mission in every condition is executed live in Gazebo, and on a humanoid-quadruped transportation task using hardware-equivalent skill interfaces plus two physical trials on a Unitree G1 and Go2. Varying planner knowledge and runtime enforcement independently, we find that retrieval raises skill grounding from 51% to 96% yet leaves informed planners dispatching 23-29% of faulted steps. Per-dispatch enforcement reduces false dispatch to 0% with no false blocks, and a held-plan ablation confirms that the gate, not plan variation, is responsible. Live execution makes the difference physical: without enforcement all eight injected faults crossed the orchestration boundary and six produced robot motion; with enforcement all eight were refused before motion.</summary>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-23T23:35:31Z</published>
+    <arxiv:primary_category term="cs.RO"/>
+    <author>
+      <name>Xinyuan Liu</name>
+    </author>
+    <author>
+      <name>Eren Sadikoglu</name>
+    </author>
+    <author>
+      <name>Riana Chatterjee</name>
+    </author>
+    <author>
+      <name>Ransalu Senanayake</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.04256v2</id>
+    <title>CP$^2$N$^2$: A Control Plane for Heterogeneous Physical Neural Networks</title>
+    <updated>2026-08-31T18:01:20Z</updated>
+    <link href="https://arxiv.org/abs/2605.04256v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.04256v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Physical neural networks (PNNs) exploit diverse physical substrates---spanning molecular, wetware, and solid-state devices---to perform embodied neural computation close to physical processes. However, their operational heterogeneity in signal modalities, timing regimes, reset requirements, calibration lifecycles, and observability prevents their integration as interchangeable execution endpoints in edge, fog, and cloud workflows. We present CP$^2$N$^2$, a substrate-aware control-plane architecture that bridges software-level orchestration and physical neural computing. CP$^2$N$^2$ introduces a three-plane model that decouples high-level orchestration, twin-state synchronisation, and substrate-specific execution under versioned Physical Neural Resource Contracts. It extends Model Context Protocol (MCP)-style discovery and invocation with explicit lifecycle management, atomic leases, telemetry freshness verification, and fail-closed safety boundaries. We evaluate a reference prototype across contrasting behavioural twins, a same-host multi-process deployment under fault injection, and the Cortical Labs SDK Simulator. In a 945-request concurrency campaign, CP$^2$N$^2$ enforces typed contention and fail-closed recovery with sub-millisecond local orchestration overhead. Furthermore, in a 160-decision Agent-to-PNN campaign with a hosted LLM planner, independent enforcement ensured that 100% of executed actions remained strictly safe, verified, and reconciled despite planner-level inconsistencies. CP$^2$N$^2$ thus provides an enforceable systems abstraction for integrating scarce, stateful physical AI substrates into agentic computing environments.</summary>
+    <category term="cs.DC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.ET" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.NE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-05T19:48:19Z</published>
+    <arxiv:comment>24 pages, 6 figures, 10 tables. Major v2 revision: renamed architecture; expanded implementation and systems evaluation; added Agent-to-PNN campaign and Cortical Labs SDK Simulator integration</arxiv:comment>
+    <arxiv:primary_category term="cs.DC"/>
+    <author>
+      <name>Stefan Fischer</name>
+    </author>
+    <author>
+      <name>Maliheh Hariri</name>
+    </author>
+    <author>
+      <name>Sebastian Otte</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.27154v2</id>
+    <title>OpenRCA 2.0: From Outcome Labels to Causal Process Supervision</title>
+    <updated>2026-06-30T11:12:24Z</updated>
+    <link href="https://arxiv.org/abs/2606.27154v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.27154v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Root cause analysis (RCA) poses a holistic test of LLM agentic capabilities, such as long-context understanding, multi-step reasoning, and tool use. However, existing datasets suffer from a fundamental gap: they label only the root cause, not the propagation path connecting it to the observed symptom, which largely simplifies the task to naive pattern matching. To support rigorous evaluation, we introduce PAVE, a step-wise labeling protocol that leverages known interventions from fault injection to reconstruct causal propagation paths. The mechanism is forward verification: reasoning from cause to effect rather than inferring backward from symptoms. Applying PAVE yields OpenRCA 2.0 (500 instances), the first cross-system RCA benchmark with step-wise causal annotations for LLM agents. Across 11 frontier LLMs, recovering the exact root-cause set succeeds in only 20.7% of cases on average. To locate where this difficulty lies, we relax the criterion and find what we call the ungrounded diagnosis: agents identify at least one correct root-cause service in 76.0% of cases, but ground that service in a verified causal propagation path to the observed symptom in only 61.5%. Outcome-only evaluation hides this failure mode; step-wise causal ground truth is the missing piece for trustworthy LLM-based RCA agents.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-25T15:24:23Z</published>
+    <arxiv:comment>work in progress</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Aoyang Fang</name>
+    </author>
+    <author>
+      <name>Yifan Yang</name>
+    </author>
+    <author>
+      <name>Jin'ao Shang</name>
+    </author>
+    <author>
+      <name>Qisheng Lu</name>
+    </author>
+    <author>
+      <name>Junjielung Xu</name>
+    </author>
+    <author>
+      <name>Rui Wang</name>
+    </author>
+    <author>
+      <name>Songhan Zhang</name>
+    </author>
+    <author>
+      <name>Yuzhong Zhang</name>
+    </author>
+    <author>
+      <name>Boxi Yu</name>
+    </author>
+    <author>
+      <name>Pinjia He</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.20758v1</id>
+    <title>A Topology-Aware, Memory-Centric Architecture that Separates Root-Cause Derivation from Root-Cause Explanation</title>
+    <updated>2026-06-18T09:20:20Z</updated>
+    <link href="https://arxiv.org/abs/2606.20758v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.20758v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Modern microservice deployments fail in ways that are easy to detect and hard to explain. When a fault propagates along service dependencies, alerts fire in floods, dashboards multiply, and the scarce resource, an engineer who understands how the services relate, is consumed reconstructing context that the monitoring stack discarded. We argue that the missing ingredient in autonomous operations is not a better anomaly detector or a larger language model, but operational memory: a persistent, structured representation of how a system normally behaves, how its parts depend on one another, and how it has failed before. We present O PS C ORTEX, a working multi-agent prototype that organizes this memory into four tiers and uses it to separate two tasks the field usually conflates: deriving a root cause and explaining it. Root cause is computed deterministically from a learned dependency graph and the temporal ordering of threshold crossings; a large language model (LLM) is then asked only to explain, confirm, and recommend, using evidence the system has already assembled. We motivate the design with two documented production cascading failures, review representative literature on observability, anomaly detection, graph-based localization, and LLM-assisted diagnosis, and show how each architectural choice maps directly to a failure mode those incidents exhibit. The prototype is validated on an instrumented e-commerce benchmark with eight injectable failure scenarios.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-18T09:20:20Z</published>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Momil Seedat</name>
+    </author>
+  </entry>
+</feed>

@@ -1,0 +1,389 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/PG6C8hNxL4h4xm/HoLmiaCZYRLQ</id>
+  <title>arXiv Query: search_query=all:multi-agent AND all:debate AND all:failure AND all:consensus&amp;id_list=&amp;start=0&amp;max_results=100</title>
+  <updated>2026-11-21T23:58:00Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:multi-agent+AND+(all:debate+AND+(all:failure+AND+all:consensus))&amp;start=0&amp;max_results=100&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>100</opensearch:itemsPerPage>
+  <opensearch:totalResults>15</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2605.19193v1</id>
+    <title>Sequential Consensus for Multi-Agent LLM Debates: A Wald-SPRT compute governor with calibration-based failure detection</title>
+    <updated>2026-05-18T23:43:12Z</updated>
+    <link href="https://arxiv.org/abs/2605.19193v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.19193v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multi-agent LLM debate improves factuality and reasoning, but most recipes pick a fixed round count, over-spending on easy items and under-spending on hard ones. We adapt Wald's Sequential Probability Ratio Test (SPRT) as a plug-in compute governor for LLM debates. After each round, an LLM judge emits a [0,1] consensus score on the latest agent positions; a Wald monitor accumulates the log-likelihood ratio of "useful convergence" vs "not yet useful" under a Beta likelihood family, and stops when either boundary is crossed or returns a capped best-effort outcome at R_max. Under i.i.d. assumptions the rule inherits SPRT type-I/type-II error guarantees; in deployment the calibration itself is the more important object, since it estimates whether the judge score actually separates useful from unhelpful convergence in a given domain. We evaluate two tracks: (i) a Monte-Carlo study under calibrated Beta models characterising working curves, error rates, capping behaviour, and sensitivity; and (ii) a real-LLM evaluation on 200 attempted MMLU and 200 attempted GSM8K items with three heterogeneous agents (gpt-5, claude-opus-4-6, gemini-2.5-pro) and a claude-opus-4-6 judge, using disjoint 40-item calibration subsets. On GSM8K the rule stops in 1.01 average rounds (4.06 LLM calls) at 97.0% accuracy vs 99.0% for fixed-5 debate at 15 calls: a 3.7x call reduction at -2pp accuracy. On MMLU the calibrated KL collapses to about 0 and the rule caps on 99.5% of items at 2.1x cost. The takeaway is not that SPRT makes debate more accurate, but that a classical sequential test serves as a cheap compute-control and failure-detection layer for multi-agent LLM systems.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-18T23:43:12Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Andrea Morandi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.31422v1</id>
+    <title>Towards Mitigating Fabricated Consensus: The Active Provenance Gate for Multi-Agent Debate Synthesis</title>
+    <updated>2026-09-25T15:44:18Z</updated>
+    <link href="https://arxiv.org/abs/2609.31422v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.31422v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language model-based multi-agent debate (MAD) systems are being increasingly used as complex decision pipelines in distributed processes. However, their final synthesis phase still remains inadequately controlled. Even with detailed debate logs, summarizing models are prone to fabricating smoothly written debate consensus that is not grounded in the debate's history. To address this safety gap, this paper presents empirical research and studies if the introduction of active post-debate verification can mitigate the production of such factually unsupported summaries, while still providing valuable information. Furthermore, it is examined whether explicitly signalling divergence is preferable in the absence of a reliable compromise. The Active Provenance Gate (APG) is introduced as a post-debate verification layer that treats the source as a hard constraint, analysing the debate logs, auditing each claim, and applying self-correction. In crisis simulations, the self-healing mechanism more than doubles the average data Provenance Fidelity in difficult condition scenarios, before the strict gate blocks unsupported claims and generates divergence reports. In the human study, a vast majority of the users (over 75%) preferred a report explicitly stating failure in critical scenarios, despite most of them perceiving fabricated consensus from the baseline system as more fluent. Our main contribution is the transition of data origin tracing from passive logging to active conditional blocking before publication.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-25T15:44:18Z</published>
+    <arxiv:comment>Accepted for publication at the 38th IEEE International Conference on Tools with Artificial Intelligence (ICTAI 2026)</arxiv:comment>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Jakub Masłowski</name>
+    </author>
+    <author>
+      <name>Jarosław A. Chudziak</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.00914v1</id>
+    <title>The Cost of Consensus: Isolated Self-Correction Prevails Over Unguided Homogeneous Multi-Agent Debate</title>
+    <updated>2026-04-29T14:33:57Z</updated>
+    <link href="https://arxiv.org/abs/2605.00914v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.00914v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multi-agent debate, where teams of LLMs iteratively exchange rationales and vote on answers, is widely deployed under the assumption that peer review filters hallucinations. Yet the failure dynamics of homogeneous debate remain poorly understood, therefore we report findings from a controlled empirical study of teams of $N{=}10$ homogeneous agents (Qwen2.5-7B, Llama-3.1-8B, Ministral-3-8B) across $R{=}3$ debate rounds on two high-difficulty benchmarks (GSM-Hard and MMLU-Hard). We compare peer debate against isolated self-correction and a stochastic noise control that injects rationales from unrelated problems. We decompose debate failure into three model-dependent pathways: sycophantic conformity, where agents uncritically adopt majority answers (modal adoption up to 85.5%); contextual fragility, where peer rationales destabilize previously correct reasoning (vulnerability rate up to 70.0%); and consensus collapse, where plurality voting discards correct answers already present in the generation pool (oracle gap up to 32.3 percentage points). Ablations over communication density ($K \in \{2,4,9\}$) and sampling temperature ($T \in \{0.4, 0.7\}$) show that conformity reaches high levels at minimal peer exposure ($K{=}2$) and intensifies with greater initial diversity. Across all configurations, debate consumes 2.1-3.4$\times$ more tokens (up to 28,631 tokens per problem) than self-correction for equal or lower accuracy. Our results indicate that, within the 7-8B parameter class, homogeneous teams without structured roles do not benefit from unguided peer exchange, and that isolated self-correction consistently offers a more favorable cost-accuracy tradeoff.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-29T14:33:57Z</published>
+    <arxiv:comment>19 pages, ACM Conference on AI and Agentic Systems</arxiv:comment>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Blaž Bertalanič</name>
+    </author>
+    <author>
+      <name>Carolina Fortuna</name>
+    </author>
+    <arxiv:doi>10.1145/3786335.3813137</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1145/3786335.3813137" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.23055v1</id>
+    <title>Peacemaker or Troublemaker: How Sycophancy Shapes Multi-Agent Debate</title>
+    <updated>2025-09-27T02:27:13Z</updated>
+    <link href="https://arxiv.org/abs/2509.23055v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.23055v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) often display sycophancy, a tendency toward excessive agreeability. This behavior poses significant challenges for multi-agent debating systems (MADS) that rely on productive disagreement to refine arguments and foster innovative thinking. LLMs' inherent sycophancy can collapse debates into premature consensus, potentially undermining the benefits of multi-agent debate. While prior studies focus on user--LLM sycophancy, the impact of inter-agent sycophancy in debate remains poorly understood. To address this gap, we introduce the first operational framework that (1) proposes a formal definition of sycophancy specific to MADS settings, (2) develops new metrics to evaluate the agent sycophancy level and its impact on information exchange in MADS, and (3) systematically investigates how varying levels of sycophancy across agent roles (debaters and judges) affects outcomes in both decentralized and centralized debate frameworks. Our findings reveal that sycophancy is a core failure mode that amplifies disagreement collapse before reaching a correct conclusion in multi-agent debates, yields lower accuracy than single-agent baselines, and arises from distinct debater-driven and judge-driven failure modes. Building on these findings, we propose actionable design principles for MADS, effectively balancing productive disagreement with cooperation in agent interactions.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-27T02:27:13Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Binwei Yao</name>
+    </author>
+    <author>
+      <name>Chao Shang</name>
+    </author>
+    <author>
+      <name>Wanyu Du</name>
+    </author>
+    <author>
+      <name>Jianfeng He</name>
+    </author>
+    <author>
+      <name>Ruixue Lian</name>
+    </author>
+    <author>
+      <name>Yi Zhang</name>
+    </author>
+    <author>
+      <name>Hang Su</name>
+    </author>
+    <author>
+      <name>Sandesh Swamy</name>
+    </author>
+    <author>
+      <name>Yanjun Qi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.03619v1</id>
+    <title>Remember and Reweight: Enhancing Multi-Agent Debate with Experience Memory and Confidence Estimation</title>
+    <updated>2026-09-03T10:05:01Z</updated>
+    <link href="https://arxiv.org/abs/2609.03619v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.03619v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multi-agent debate (MAD) improves the reasoning capabilities of large language models by having multiple agents iteratively refine their responses through discussion. However, MAD suffers from a critical vulnerability known as shared misconception: when a majority of agents initially converge on an incorrect answer, the debate process tends to amplify rather than correct the error. Existing methods primarily address peer skew but leave the agents' inherently biased concept priors unaddressed. To mitigate this systematic weakness, we propose R$^2$-MAD (Remember and Reweight for Multi-Agent Debate), a framework that equips agents with an experience memory accumulated from past debates. R$^2$-MAD intervenes on both failure modes through two complementary mechanisms: A debate-state-aware retrieval policy dynamically calibrates the concept prior by retrieving relevant historical evidence based on the current consensus level. Then these retrieved experiences provide a basis for estimating per-agent reliability, yielding confidence weights to modulate peer influence. Experiments on various benchmarks show that R$^2$-MAD achieves consistent improvements over existing single-agent and MAD baselines.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-03T10:05:01Z</published>
+    <arxiv:comment>EMNLP 2026 Findings, 24 pages, 4 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Xuanfa Jin</name>
+    </author>
+    <author>
+      <name>Zhijian Ma</name>
+    </author>
+    <author>
+      <name>Yongcheng Zeng</name>
+    </author>
+    <author>
+      <name>Xinyu Cui</name>
+    </author>
+    <author>
+      <name>Haifeng Zhang</name>
+    </author>
+    <author>
+      <name>Jun Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2601.06453v2</id>
+    <title>ConSensus: Multi-Agent Collaboration for Multimodal Sensing</title>
+    <updated>2026-05-29T13:31:12Z</updated>
+    <link href="https://arxiv.org/abs/2601.06453v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.06453v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) are increasingly grounded in sensor data to perceive and reason about human physiology and the physical world. However, accurately interpreting heterogeneous multimodal sensor data remains a fundamental challenge. We show that a single monolithic LLM often fails to reason coherently across modalities, leading to incomplete interpretations and prior-knowledge bias. We introduce ConSensus, a training-free multi-agent collaboration framework that decomposes multimodal sensing tasks into specialized, modality-aware agents. To aggregate agent-level interpretations, we propose a hybrid fusion mechanism that balances semantic aggregation, which enables cross-modal reasoning and contextual understanding, with statistical consensus, which provides robustness through agreement across modalities. While each approach has complementary failure modes, their combination enables reliable inference under sensor noise and missing data. We evaluate ConSensus on five diverse multimodal sensing benchmarks, demonstrating an average accuracy improvement of 7.1% over the single-agent baseline. Furthermore, ConSensus matches or exceeds the performance of iterative multi-agent debate methods while achieving a 12.7 times reduction in average fusion token cost through a single-round hybrid fusion protocol, yielding a robust and efficient solution for real-world multimodal sensing tasks. The source code is available at https://github.com/nokia/multi-agent-collaboration-for-multimodal-sensing.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-10T06:41:01Z</published>
+    <arxiv:comment>Accepted to ACL 2026 Findings</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Hyungjun Yoon</name>
+    </author>
+    <author>
+      <name>Mohammad Malekzadeh</name>
+    </author>
+    <author>
+      <name>Sung-Ju Lee</name>
+    </author>
+    <author>
+      <name>Fahim Kawsar</name>
+    </author>
+    <author>
+      <name>Lorena Qendro</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.08457v1</id>
+    <title>The Consistency Illusion: How Multi-Agent Debate Hides Reasoning Misalignment</title>
+    <updated>2026-06-07T05:14:26Z</updated>
+    <link href="https://arxiv.org/abs/2606.08457v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.08457v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multi-agent LLM systems for medical question answering often treat consensus as a reliability signal: if multiple agents agree on an answer, it is presumed trustworthy. However, answer-level consensus does not entail reasoning-level alignment. We introduce CARA (Cross-Agent Reasoning Alignment), a family of automated metrics that measure whether agents who agree on an answer also agree on the reasoning. Applying CARA to a standard debate system on two medical QA benchmarks, MedQA-USMLE and MedThink-Bench, we identify the consistency illusion: a failure mode where debate reduces detectable contradictions between agents while simultaneously decreasing the semantic similarity of their reasoning chains; agents appear to agree more but reason less consistently. To improve this misalignment, we propose the Grounded Debate Protocol (GDP), a prompt-level intervention that requires agents to commit to named medical facts and take explicit stances on other agents' claims. GDP produces large, consistent alignment improvements, with Cohen's d ranging from +1.43 to +1.99, across two datasets and two backbone models, without adding LLM calls or modifying system architecture. Our results motivate cross-agent reasoning alignment as a quantity to audit alongside accuracy in safety-critical domains.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-07T05:14:26Z</published>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Xiaoyang Wang</name>
+    </author>
+    <author>
+      <name>Christopher C. Yang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.29701v1</id>
+    <title>Multi-Agent Debate for Explainable Trading: Reasoning, Consensus, and Performance in Simulated Markets</title>
+    <updated>2026-08-31T08:23:59Z</updated>
+    <link href="https://arxiv.org/abs/2609.29701v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.29701v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) are increasingly used for financial decision-making, yet it remains unclear whether improvements in reasoning quality translate into better economic outcomes. We investigate this question using a multi-agent debate framework for portfolio allocation in historical market simulations, where specialized agents propose, critique, and revise investment decisions. Reasoning quality is evaluated across four dimensions: logical validity, evidential support, alternative consideration, and causal alignment, and compared with downstream financial performance. Across 210 controlled runs, aggregate reasoning quality shows no meaningful relationship with Sharpe ratio (r = 0.07, p = 0.29) or total return (r = 0.03, p = 0.70). Structured prompting increases measured reasoning quality from about 0.72 to 0.84 (+17.7%, Cohen's d about 2.0), but these gains do not consistently translate into higher returns. We identify sycophantic convergence as a central failure mode, where agents abandon independent positions during critique-revision cycles and converge toward similar allocations. A Jensen-Shannon divergence intervention that preserves disagreement improves Sharpe by +0.14 (p = 0.028) and Sortino by +0.25 (p = 0.026), while interventions enforcing stronger causal reasoning do not improve financial performance. Our results suggest that multi-agent debate is most valuable when it preserves independent informational signals rather than simply improving measured reasoning quality.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-31T08:23:59Z</published>
+    <arxiv:comment>10 pages, code available in the accompanying repository</arxiv:comment>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Juli Huang</name>
+    </author>
+    <author>
+      <name>Alanood Alrassan</name>
+    </author>
+    <author>
+      <name>Deveen Harischandra</name>
+    </author>
+    <author>
+      <name>Theodore Wu</name>
+    </author>
+    <author>
+      <name>Veljko Skarich</name>
+    </author>
+    <author>
+      <name>Matthew Hayes</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.07667v2</id>
+    <title>From Debate to Decision: Conformal Social Choice for Safe Multi-Agent Deliberation</title>
+    <updated>2026-10-20T05:19:34Z</updated>
+    <link href="https://arxiv.org/abs/2604.07667v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.07667v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multi-agent debate improves LLM reasoning, yet agreement is not evidence of correctness. When agents converge on a wrong answer through social reinforcement, consensus stopping commits that error to automated action with no recourse. We introduce Conformal Social Choice, a post-hoc layer that converts debate outputs into calibrated act-versus-escalate decisions. Verbalized probability distributions from heterogeneous agents are aggregated via a linear opinion pool and calibrated with split conformal prediction, yielding fixed-round marginal coverage: at any pre-specified round, the correct answer is included with probability ${\geq}\,1{-}α$, without assumptions on individual model calibration. A hierarchical action policy maps singletons to autonomous action and larger sets to human escalation. Across eight MMLU-Pro domains and two additional benchmarks, fixed-round coverage stays close to target. The key finding is not that debate becomes more accurate, but that the conformal layer makes its failures actionable: at the final round, 81.9\% of wrong-consensus cases are flagged by non-singleton sets at $α{=}0.05$. Separately, among cases that reach a singleton before the final round, accuracy reaches 90.0--96.8\% on MMLU-Pro (up to 22.1pp above consensus stopping): a selection effect, not a reasoning improvement. Simple probability- and entropy-threshold rules attain comparable interception; conformal's distinct value is a finite-sample fixed-round coverage guarantee together with explicit candidate sets for escalation. Adaptive first-singleton stopping is evaluated empirically and not covered by this guarantee.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-09T00:15:20Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Mengdie Flora Wang</name>
+    </author>
+    <author>
+      <name>Haochen Xie</name>
+    </author>
+    <author>
+      <name>Guanghui Wang</name>
+    </author>
+    <author>
+      <name>Aijing Gao</name>
+    </author>
+    <author>
+      <name>Guang Yang</name>
+    </author>
+    <author>
+      <name>Ziyuan Li</name>
+    </author>
+    <author>
+      <name>Qucy Wei Qiu</name>
+    </author>
+    <author>
+      <name>Fangwei Han</name>
+    </author>
+    <author>
+      <name>Hengzhi Qiu</name>
+    </author>
+    <author>
+      <name>Yajing Huang</name>
+    </author>
+    <author>
+      <name>Bing Zhu</name>
+    </author>
+    <author>
+      <name>Jae Oh Woo</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.32060v1</id>
+    <title>Understanding Communication Failures in Multi-Agent LLM Systems</title>
+    <updated>2026-10-23T01:55:07Z</updated>
+    <link href="https://arxiv.org/abs/2610.32060v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.32060v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multi-agent LLM systems aim to improve reasoning through debate, evidence sharing, and mutual correction, but interaction can also introduce failures that final accuracy alone cannot explain. Agents may converge too early, ignore dissent, suppress correct minority answers, or preserve a wrong framing across rounds. We present a corpus-grounded taxonomy of communication failures, built from 3,211 failed multi-round trajectories across medical QA, coding, finance, multi-hop reasoning, ethics, and embodied text tasks. Using this taxonomy, we analyze failure distributions across datasets and system designs, round-level error dynamics, recovery hardness, majority transitions, minority-signal suppression, and self-reported confidence. We find that failures are dominated by recovery/correction and consensus/decision problems rather than isolated first-round mistakes, with many emerging after agents first observe peer responses. Based on these findings, we recommend stronger disagreement handling, evidence verification, minority-signal preservation, and recovery checks before finalization.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-23T01:55:07Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Priya Pitre</name>
+    </author>
+    <author>
+      <name>Jun Hou</name>
+    </author>
+    <author>
+      <name>Yi Fang</name>
+    </author>
+    <author>
+      <name>Naren Ramakrishnan</name>
+    </author>
+    <author>
+      <name>Xuan Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.37369v1</id>
+    <title>Shaping Opinion: Quantifying the Psychological Impact of Autonomous Multi-Agent LLM Interactions</title>
+    <updated>2026-09-29T12:26:53Z</updated>
+    <link href="https://arxiv.org/abs/2609.37369v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.37369v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Natural-sounding multi-agent conversational AI is increasingly deployed, fundamentally altering human-machine interaction and human information processing. While prior work largely focuses on algorithmic failure, this study investigates the cognitive ergonomics and socio-cognitive impact of algorithmic competence. We present and evaluate FORMS (Framework for Opinion and Rhetoric in Multi-agent Simulations), a low-latency architecture for spatially mediated human-machine dialogue, driven by distinct LLM-based personas and real-time concurrency resolution. To conduct a system test and evaluation of its psychological impact, we exposed an adolescent cohort (n=120) and an adult pilot group (n=25) to a live, moderated synthetic debate. Our findings reveal that exposure to highly competent multi-agent systems triggers "Cognitive Destabilization," fragmenting users' prior strategic consensus. Concurrently, we observe a "Regulatory Awakening" driven by the "Normality Paradox": fluid human-machine interactions inherently increase the baseline demand for external regulation. Furthermore, our pilot study suggests the presence of a "Truthfulness Paradox": despite understanding the risks of generative AI, participants in the adult cohort rated the synthetic debate as significantly more sincere than equivalent human discourse (Cohen's d=2.04). Supported by robust statistical effect sizes, this paper contributes the FORMS architecture and a replicable evaluation protocol, illustrating how high-fidelity conversational systems can reshape human information processing.</summary>
+    <category term="cs.HC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-29T12:26:53Z</published>
+    <arxiv:comment>10 pages, 7 figures, 4 tables. Under review</arxiv:comment>
+    <arxiv:primary_category term="cs.HC"/>
+    <author>
+      <name>Marcos Rodriguez-Vega</name>
+    </author>
+    <author>
+      <name>Afonso Ferreira</name>
+    </author>
+    <author>
+      <name>Iru Exposito-Luis</name>
+    </author>
+    <author>
+      <name>Carolina Polito</name>
+    </author>
+    <author>
+      <name>Pino Caballero-Gil</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2508.21803v1</id>
+    <title>Automated Clinical Problem Detection from SOAP Notes using a Collaborative Multi-Agent LLM Architecture</title>
+    <updated>2025-08-29T17:31:24Z</updated>
+    <link href="https://arxiv.org/abs/2508.21803v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2508.21803v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Accurate interpretation of clinical narratives is critical for patient care, but the complexity of these notes makes automation challenging. While Large Language Models (LLMs) show promise, single-model approaches can lack the robustness required for high-stakes clinical tasks. We introduce a collaborative multi-agent system (MAS) that models a clinical consultation team to address this gap. The system is tasked with identifying clinical problems by analyzing only the Subjective (S) and Objective (O) sections of SOAP notes, simulating the diagnostic reasoning process of synthesizing raw data into an assessment. A Manager agent orchestrates a dynamically assigned team of specialist agents who engage in a hierarchical, iterative debate to reach a consensus. We evaluated our MAS against a single-agent baseline on a curated dataset of 420 MIMIC-III notes. The dynamic multi-agent configuration demonstrated consistently improved performance in identifying congestive heart failure, acute kidney injury, and sepsis. Qualitative analysis of the agent debates reveals that this structure effectively surfaces and weighs conflicting evidence, though it can occasionally be susceptible to groupthink. By modeling a clinical team's reasoning process, our system offers a promising path toward more accurate, robust, and interpretable clinical decision support tools.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-08-29T17:31:24Z</published>
+    <arxiv:comment>Accepted to The 16th ACM Conference on Bioinformatics, Computational Biology, and Health Informatics (ACM-BCB 2025)(Poster Paper)</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Yeawon Lee</name>
+    </author>
+    <author>
+      <name>Xiaoyang Wang</name>
+    </author>
+    <author>
+      <name>Christopher C. Yang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.30802v1</id>
+    <title>Design and Evaluation of Multi-Agent AI Oracle Systems for Prediction Market Resolution</title>
+    <updated>2026-05-29T03:44:19Z</updated>
+    <link href="https://arxiv.org/abs/2605.30802v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.30802v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Prediction markets aggregate collective intelligence to forecast uncertain events, but their utility depends on reliable outcome resolution. Existing oracle systems tradeoff fast but brittle automation against accurate but costly human arbitration. Single-LLM oracles achieve meaningful accuracy but inherit all failure modes of their underlying model with no self-correction mechanism. We evaluate whether multi-agent LLM architectures can improve oracle resolution accuracy over single-model baselines. We compare independent aggregation and deliberative consensus against single-LLM baselines (GPT-5 Nano, DeepSeek V3, and Llama-3.3-70B) on 1,189 resolved prediction market questions from KalshiBench. All agents share a common evidence layer through Exa, with retrieval filtered by publication date to isolate reasoning from retrieval quality. Independent aggregation with confidence-weighted voting achieves the highest accuracy at 83.43 percent, outperforming the best individual model by 1.01 percentage points. Deliberative consensus degrades accuracy to approximately 76 percent, below every single-model baseline, attributed to error propagation during debate where confidently wrong models flip correct ones. Error correlations across models (0.529-0.689) explain why aggregation gains fall short of the theoretical Condorcet ceiling, placing a fundamental limit on ensemble approaches. Many questions resist correction by any multi-agent architecture, motivating escalation to human arbitration. We propose routing criteria for hybrid AI-human oracle systems: auto-resolving only unanimous, high-confidence questions yields 97.87 percent accuracy on 47 percent of the dataset, with inter-agent disagreement flagging the remainder for human review.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-29T03:44:19Z</published>
+    <arxiv:comment>34 pages, 11 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Tarun Kota</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.27150v2</id>
+    <title>MediHive: A Decentralized Agent Collective for Medical Reasoning</title>
+    <updated>2026-05-27T23:41:19Z</updated>
+    <link href="https://arxiv.org/abs/2603.27150v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.27150v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) have revolutionized medical reasoning tasks, yet single-agent systems often falter on complex, interdisciplinary problems requiring robust handling of uncertainty and conflicting evidence. Multi-agent systems (MAS) leveraging LLMs enable collaborative intelligence, but prevailing centralized architectures suffer from scalability bottlenecks, single points of failure, and role confusion in resource-constrained environments. Decentralized MAS (D-MAS) promise enhanced autonomy and resilience via peer-to-peer interactions, but their application to high-stakes healthcare domains remains underexplored. We introduce MediHive, a novel decentralized multi-agent framework for medical question answering that integrates a shared memory pool with iterative fusion mechanisms. MediHive deploys LLM-based agents that autonomously self-assign specialized roles, conduct initial analyses, detect divergences through conditional evidence-based debates, and locally fuse peer insights over multiple rounds to achieve consensus. Empirically, MediHive outperforms single-LLM and centralized baselines on MedQA and PubMedQA datasets, attaining accuracies of 84.3% and 78.4%, respectively. Our work advances scalable, fault-tolerant D-MAS for medical AI, addressing key limitations of centralized designs while demonstrating superior performance in reasoning-intensive tasks.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-28T05:57:58Z</published>
+    <arxiv:comment>Accepted by Journal of Healthcare Informatics Research</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Xiaoyang Wang</name>
+    </author>
+    <author>
+      <name>Christopher C. Yang</name>
+    </author>
+    <arxiv:doi>10.1007/s41666-026-00239-7</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s41666-026-00239-7" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.26366v2</id>
+    <title>Narration-of-Thought: Inference-Time Scaffolding for Defeasible Ethical Reasoning in Large Language Models</title>
+    <updated>2026-07-09T00:48:55Z</updated>
+    <link href="https://arxiv.org/abs/2606.26366v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.26366v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Standard chain-of-thought on moral dilemmas exhibits two failure modes: stakeholder collapse (the trace names at most one party with a stake in the outcome) and uncertainty suppression (no explicit unknowns or hedges before committing to an action). We introduce narration-of-thought (NoT), a system prompt that structures chain-of-thought into five sections: protagonist, stakeholders, two-step consequences, uncertainty, then commitment. NoT adds no training, parameters, or fine-tuning. On 100 DailyDilemmas scenarios across four generators from three vendors, NoT cuts stakeholder collapse from up to 31% to under 1% and uncertainty suppression from up to 72% to 1-24% on every model. A matched-budget verbose-CoT control rules out token spend as the active ingredient; NoT retains Cliff's delta advantages of +0.79 to +0.90 on stakeholder count and +0.65 to +0.93 on uncertainty score for three of four generators, and a section ablation attributes each shift to its specific sub-instruction. Textual-gradient descent initialised at NoT improves the scaffold further; a cross-family training judge (different vendor from the generator) dominates an in-family one on every measured axis. Extended to a five-round multi-stakeholder debate protocol, the scaffold converts a 6% standoff into 95% full consensus on a calibration set and 100% combined convergence on a DailyDilemmas replication. The resulting traces externalise the stakeholders, consequences, and uncertainty grounding each commitment, providing an auditable substrate for dependable agentic deployment.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-24T20:23:16Z</published>
+    <arxiv:comment>24 pages, 8 figures, 16 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Patrick Cooper</name>
+    </author>
+    <author>
+      <name>Alvaro Velasquez</name>
+    </author>
+  </entry>
+</feed>

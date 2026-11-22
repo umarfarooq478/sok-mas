@@ -1,0 +1,15 @@
+A-benign multi-agent LLM failure taxonomy 100
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=failure+attribution+multi-agent+LLM&limit=100&fiel
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=failure+attribution+multi-agent+LLM&limit=100&fiel
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=failure+attribution+multi-agent+LLM&limit=100&fiel
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=failure+attribution+multi-agent+LLM&limit=100&fiel
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=failure+attribution+multi-agent+LLM&limit=100&fiel
+A-benign failure attribution multi-agent LLM 100
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=fault+injection+multi-agent+LLM&limit=100&fields=t
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=fault+injection+multi-agent+LLM&limit=100&fields=t
+A-benign fault injection multi-agent LLM 200
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=error+propagation+multi-agent+LLM&limit=100&fields
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=error+propagation+multi-agent+LLM&limit=100&fields
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=error+propagation+multi-agent+LLM&limit=100&fields
+A-benign error propagation multi-agent LLM 300
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=hallucination+propagation+multi-agent+LLM&limit=10

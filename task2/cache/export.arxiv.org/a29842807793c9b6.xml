@@ -1,0 +1,1733 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/uwrk8VGWjKDs7ocn+Ls25lLA0Xk</id>
+  <title>arXiv Query: search_query=all:anomaly AND all:detection AND all:multi-agent AND all:LLM&amp;id_list=&amp;start=0&amp;max_results=100</title>
+  <updated>2026-11-21T23:59:18Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:anomaly+AND+(all:detection+AND+(all:multi-agent+AND+all:LLM))&amp;start=0&amp;max_results=100&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>100</opensearch:itemsPerPage>
+  <opensearch:totalResults>63</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2403.19735v1</id>
+    <title>Enhancing Anomaly Detection in Financial Markets with an LLM-based Multi-Agent Framework</title>
+    <updated>2024-03-28T14:43:49Z</updated>
+    <link href="https://arxiv.org/abs/2403.19735v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2403.19735v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This paper introduces a Large Language Model (LLM)-based multi-agent framework designed to enhance anomaly detection within financial market data, tackling the longstanding challenge of manually verifying system-generated anomaly alerts. The framework harnesses a collaborative network of AI agents, each specialised in distinct functions including data conversion, expert analysis via web research, institutional knowledge utilization or cross-checking and report consolidation and management roles. By coordinating these agents towards a common objective, the framework provides a comprehensive and automated approach for validating and interpreting financial data anomalies. I analyse the S&amp;P 500 index to demonstrate the framework's proficiency in enhancing the efficiency, accuracy and reduction of human intervention in financial market monitoring. The integration of AI's autonomous functionalities with established analytical methods not only underscores the framework's effectiveness in anomaly detection but also signals its broader applicability in supporting financial market monitoring.</summary>
+    <category term="q-fin.RM" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-03-28T14:43:49Z</published>
+    <arxiv:primary_category term="q-fin.RM"/>
+    <author>
+      <name>Taejin Park</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.36556v1</id>
+    <title>MAADBench: The Refreshable Paradigm for Anomaly Detection in Multi-Agent Systems</title>
+    <updated>2026-09-29T02:42:00Z</updated>
+    <link href="https://arxiv.org/abs/2609.36556v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.36556v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent studies report that LLM-based multi-agent systems (MAS) fail at rates of 41%-87%, yet to our knowledge, no benchmark to date supports systematic anomaly detection (AD) for them. Building MAS AD benchmarks is hard because they must remain fresh as LLM systems evolve: tasks may leak into training data and thus be memorized by LLMs, traces and anomaly patterns expire as backbones evolve, and labels must be provided reliably for each refresh. To address these challenges, we present MAADBench (MA: multi-agent; AD: anomaly detection), the first refreshable MAS AD benchmark designed for diverse, evolving LLM backbones underlying the agents. MAADBench combines (1) sampled-and-coupled generative tasks over an approximately 10^37-task space to mitigate task leakage, (2) refreshable trace generation under configurable LLM backbones, and (3) automated provision of cost-free, deterministic step-level labels for fine-grained AD evaluation. Beyond offering the paradigm itself, we run MAADBench with five state-of-the-art LLM backbones and release the MAADBench-Full dataset with 5,200 step-labeled traces. Benchmarking 25 AD methods on the MAADBench dataset reveals substantial limitations in current approaches: they rely heavily on supervision, struggle with subtle MAS-specific anomalies, and lack robustness across LLM backbones. These gaps point to a rich research agenda for MAS-specific anomaly detection, with MAADBench providing a systematic and refreshable testbed for method development and evaluation. We open-source MAADBench-Full at https://huggingface.co/datasets/hww123/MAADBench-full.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-29T02:42:00Z</published>
+    <arxiv:comment>pre-print</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Lei Ma</name>
+    </author>
+    <author>
+      <name>Dennis Hofmann</name>
+    </author>
+    <author>
+      <name>Haowen Xu</name>
+    </author>
+    <author>
+      <name>Joshua DeOliveira</name>
+    </author>
+    <author>
+      <name>Peter VanNostrand</name>
+    </author>
+    <author>
+      <name>Lei Cao</name>
+    </author>
+    <author>
+      <name>Elke Rundensteiner</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2512.18733v1</id>
+    <title>Explainable and Fine-Grained Safeguarding of LLM Multi-Agent Systems via Bi-Level Graph Anomaly Detection</title>
+    <updated>2025-12-21T13:46:36Z</updated>
+    <link href="https://arxiv.org/abs/2512.18733v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2512.18733v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language model (LLM)-based multi-agent systems (MAS) have shown strong capabilities in solving complex tasks. As MAS become increasingly autonomous in various safety-critical tasks, detecting malicious agents has become a critical security concern. Although existing graph anomaly detection (GAD)-based defenses can identify anomalous agents, they mainly rely on coarse sentence-level information and overlook fine-grained lexical cues, leading to suboptimal performance. Moreover, the lack of interpretability in these methods limits their reliability and real-world applicability. To address these limitations, we propose XG-Guard, an explainable and fine-grained safeguarding framework for detecting malicious agents in MAS. To incorporate both coarse and fine-grained textual information for anomalous agent identification, we utilize a bi-level agent encoder to jointly model the sentence- and token-level representations of each agent. A theme-based anomaly detector further captures the evolving discussion focus in MAS dialogues, while a bi-level score fusion mechanism quantifies token-level contributions for explanation. Extensive experiments across diverse MAS topologies and attack scenarios demonstrate robust detection performance and strong interpretability of XG-Guard.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-12-21T13:46:36Z</published>
+    <arxiv:comment>14 pages, 3 tables, 5 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Junjun Pan</name>
+    </author>
+    <author>
+      <name>Yixin Liu</name>
+    </author>
+    <author>
+      <name>Rui Miao</name>
+    </author>
+    <author>
+      <name>Kaize Ding</name>
+    </author>
+    <author>
+      <name>Yu Zheng</name>
+    </author>
+    <author>
+      <name>Quoc Viet Hung Nguyen</name>
+    </author>
+    <author>
+      <name>Alan Wee-Chung Liew</name>
+    </author>
+    <author>
+      <name>Shirui Pan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.24201v1</id>
+    <title>SentinelAgent: Graph-based Anomaly Detection in Multi-Agent Systems</title>
+    <updated>2025-05-30T04:25:19Z</updated>
+    <link href="https://arxiv.org/abs/2505.24201v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2505.24201v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The rise of large language model (LLM)-based multi-agent systems (MAS) introduces new security and reliability challenges. While these systems show great promise in decomposing and coordinating complex tasks, they also face multi-faceted risks across prompt manipulation, unsafe tool usage, and emergent agent miscoordination. Existing guardrail mechanisms offer only partial protection, primarily at the input-output level, and fall short in addressing systemic or multi-point failures in MAS. In this work, we present a system-level anomaly detection framework tailored for MAS, integrating structural modeling with runtime behavioral oversight. Our approach consists of two components. First, we propose a graph-based framework that models agent interactions as dynamic execution graphs, enabling semantic anomaly detection at node, edge, and path levels. Second, we introduce a pluggable SentinelAgent, an LLM-powered oversight agent that observes, analyzes, and intervenes in MAS execution based on security policies and contextual reasoning. By bridging abstract detection logic with actionable enforcement, our method detects not only single-point faults and prompt injections but also multi-agent collusion and latent exploit paths. We validate our framework through two case studies, including an email assistant and Microsoft's Magentic-One system, demonstrating its ability to detect covert risks and provide explainable root-cause attribution. Our work lays the foundation for more trustworthy, monitorable, and secure agent-based AI ecosystems.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-05-30T04:25:19Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Xu He</name>
+    </author>
+    <author>
+      <name>Di Wu</name>
+    </author>
+    <author>
+      <name>Yan Zhai</name>
+    </author>
+    <author>
+      <name>Kun Sun</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2508.05503v1</id>
+    <title>AutoIAD: Manager-Driven Multi-Agent Collaboration for Automated Industrial Anomaly Detection</title>
+    <updated>2025-08-07T15:36:38Z</updated>
+    <link href="https://arxiv.org/abs/2508.05503v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2508.05503v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Industrial anomaly detection (IAD) is critical for manufacturing quality control, but conventionally requires significant manual effort for various application scenarios. This paper introduces AutoIAD, a multi-agent collaboration framework, specifically designed for end-to-end automated development of industrial visual anomaly detection. AutoIAD leverages a Manager-Driven central agent to orchestrate specialized sub-agents (including Data Preparation, Data Loader, Model Designer, Trainer) and integrates a domain-specific knowledge base, which intelligently handles the entire pipeline using raw industrial image data to develop a trained anomaly detection model. We construct a comprehensive benchmark using MVTec AD datasets to evaluate AutoIAD across various LLM backends. Extensive experiments demonstrate that AutoIAD significantly outperforms existing general-purpose agentic collaboration frameworks and traditional AutoML frameworks in task completion rate and model performance (AUROC), while effectively mitigating issues like hallucination through iterative refinement. Ablation studies further confirm the crucial roles of the Manager central agent and the domain knowledge base module in producing robust and high-quality IAD solutions.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-08-07T15:36:38Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Dongwei Ji</name>
+    </author>
+    <author>
+      <name>Bingzhang Hu</name>
+    </author>
+    <author>
+      <name>Yi Zhou</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.14251v1</id>
+    <title>Multi-Agent Debate: A Unified Agentic Framework for Tabular Anomaly Detection</title>
+    <updated>2026-02-15T17:44:32Z</updated>
+    <link href="https://arxiv.org/abs/2602.14251v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.14251v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Tabular anomaly detection is often handled by single detectors or static ensembles, even though strong performance on tabular data typically comes from heterogeneous model families (e.g., tree ensembles, deep tabular networks, and tabular foundation models) that frequently disagree under distribution shift, missingness, and rare-anomaly regimes. We propose MAD, a Multi-Agent Debating framework that treats this disagreement as a first-class signal and resolves it through a mathematically grounded coordination layer. Each agent is a machine learning (ML)-based detector that produces a normalized anomaly score, confidence, and structured evidence, augmented by a large language model (LLM)-based critic. A coordinator converts these messages into bounded per-agent losses and updates agent influence via an exponentiated-gradient rule, yielding both a final debated anomaly score and an auditable debate trace. MAD is a unified agentic framework that can recover existing approaches, such as mixture-of-experts gating and learning-with-expert-advice aggregation, by restricting the message space and synthesis operator. We establish regret guarantees for the synthesized losses and show how conformal calibration can wrap the debated score to control false positives under exchangeability. Experiments on diverse tabular anomaly benchmarks show improved robustness over baselines and clearer traces of model disagreement</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-15T17:44:32Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Pinqiao Wang</name>
+    </author>
+    <author>
+      <name>Sheng Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.24477v1</id>
+    <title>GAMMAF: A Common Framework for Graph-Based Anomaly Monitoring Benchmarking in LLM Multi-Agent Systems</title>
+    <updated>2026-04-27T13:45:14Z</updated>
+    <link href="https://arxiv.org/abs/2604.24477v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.24477v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The rapid integration of Large Language Models (LLMs) into Multi-Agent Systems (MAS) has significantly enhanced their collaborative problem-solving capabilities, but it has also expanded their attack surfaces, exposing them to vulnerabilities such as prompt infection and compromised inter-agent communication. While emerging graph-based anomaly detection methods show promise in protecting these networks, the field currently lacks a standardized, reproducible environment to train these models and evaluate their efficacy. To address this gap, we introduce Gammaf (Graph-based Anomaly Monitoring for LLM Multi-Agent systems Framework), an open-source benchmarking platform. Gammaf is not a novel defense mechanism itself, but rather a comprehensive evaluation architecture designed to generate synthetic multi-agent interaction datasets and benchmark the performance of existing and future defense models. The proposed framework operates through two interdependent pipelines: a Training Data Generation stage, which simulates debates across varied network topologies to capture interactions as robust attributed graphs, and a Defense System Benchmarking stage, which actively evaluates defense models by dynamically isolating flagged adversarial nodes during live inference rounds. Through rigorous evaluation using established defense baselines (XG-Guard and BlindGuard) across multiple knowledge tasks (such as MMLU-Pro and GSM8K), we demonstrate Gammaf's high utility, topological scalability, and execution efficiency. Furthermore, our experimental results reveal that equipping an LLM-MAS with effective attack remediation not only recovers system integrity but also substantially reduces overall operational costs by facilitating early consensus and cutting off the extensive token generation typical of adversarial agents.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-27T13:45:14Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Pablo Mateo-Torrejón</name>
+    </author>
+    <author>
+      <name>Alfonso Sánchez-Macián</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.12594v1</id>
+    <title>AD-AGENT: A Multi-agent Framework for End-to-end Anomaly Detection</title>
+    <updated>2025-05-19T01:14:57Z</updated>
+    <link href="https://arxiv.org/abs/2505.12594v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2505.12594v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Anomaly detection (AD) is essential in areas such as fraud detection, network monitoring, and scientific research. However, the diversity of data modalities and the increasing number of specialized AD libraries pose challenges for non-expert users who lack in-depth library-specific knowledge and advanced programming skills. To tackle this, we present AD-AGENT, an LLM-driven multi-agent framework that turns natural-language instructions into fully executable AD pipelines. AD-AGENT coordinates specialized agents for intent parsing, data preparation, library and model selection, documentation mining, and iterative code generation and debugging. Using a shared short-term workspace and a long-term cache, the agents integrate popular AD libraries like PyOD, PyGOD, and TSLib into a unified workflow. Experiments demonstrate that AD-AGENT produces reliable scripts and recommends competitive models across libraries. The system is open-sourced to support further research and practical applications in AD.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-05-19T01:14:57Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Tiankai Yang</name>
+    </author>
+    <author>
+      <name>Junjun Liu</name>
+    </author>
+    <author>
+      <name>Wingchun Siu</name>
+    </author>
+    <author>
+      <name>Jiahang Wang</name>
+    </author>
+    <author>
+      <name>Zhuangzhuang Qian</name>
+    </author>
+    <author>
+      <name>Chanjuan Song</name>
+    </author>
+    <author>
+      <name>Cheng Cheng</name>
+    </author>
+    <author>
+      <name>Xiyang Hu</name>
+    </author>
+    <author>
+      <name>Yue Zhao</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.19240v1</id>
+    <title>CASPIAN: Online Detection and Attribution of Cascade Attacks in LLM Multi-Agent Systems via Cross-Channel Causal Monitoring</title>
+    <updated>2026-05-19T01:16:27Z</updated>
+    <link href="https://arxiv.org/abs/2605.19240v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.19240v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Cascade attacks in LLM multi-agent systems (MAS) arise when adversarial influence propagates across agents and leads to escalated system-level failures through complex agent interactions. Detecting such cascades is challenging, as their signals are distributed, tightly coupled across interaction channels, and often appear plausibly benign locally but may unfold quickly either within a single turn or gradually across multiple turns. Existing defenses, being largely local and text-centric, fail to capture such cross-channel, temporally coordinated dynamics of cascade propagation. Therefore, we propose CASPIAN, the first framework that provides a unified, cross-channel causal analysis of cascade behavior in LLM-MAS through online monitoring of dynamic influence propagation across agents. CASPIAN models multi-agent interactions using a unified, dynamic causal influence matrix across channels, estimated efficiently via a late-interaction conditional transfer entropy (LI-CTE) formulation, thereby enabling the detection of cascade onset from emergent system-level structure rather than isolated anomalies. It further performs online causal attribution, identifying the origin, bridge, and amplifier agents driving the cascade and reconstructing its principal propagation pathways, capabilities not supported by existing methods. Across diverse multi-agent frameworks and benchmarks, CASPIAN consistently outperforms semantic guardrails, LLM-based judges, and graph-based anomaly detectors in both detection accuracy and early cascade identification while operating with sub-1% relative overhead latency. These results demonstrate that unified cross-channel causal modeling is essential for reliably detecting and understanding cascade failures in LLM multi-agent systems.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-19T01:16:27Z</published>
+    <arxiv:comment>https://github.com/caspian-detector/caspian</arxiv:comment>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Kavana Venkatesh</name>
+    </author>
+    <author>
+      <name>Jafar Isbarov</name>
+    </author>
+    <author>
+      <name>Saad Amin</name>
+    </author>
+    <author>
+      <name>Murat Kantarcioglu</name>
+    </author>
+    <author>
+      <name>Jiaming Cui</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.05725v2</id>
+    <title>Detecting Time Series Anomalies Like an Expert: A Multi-Agent LLM Framework with Specialized Analyzers</title>
+    <updated>2026-09-25T11:54:45Z</updated>
+    <link href="https://arxiv.org/abs/2605.05725v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.05725v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Time-series anomaly detection often returns scores or intervals, while analysts need to understand the abnormal behavior and the evidence supporting it. We introduce SAGE (Specialized Analyzer Group for Expert-like Detection), a multi-agent framework for evidence-grounded diagnosis of univariate time series. Four specialized Analyzers examine point, structural, seasonal, and pattern anomalies using numerical tools and diagnostic visualizations. A Detector integrates their evidence into intervals, candidate types, and evidence-strength confidence scores; a Supervisor translates these records into analyst-facing reports. Synthetic in-context references are constructed from normal-reference training segments, reducing dependence on real anomalous demonstrations. Across Yahoo S5, KPI, and WSD, SAGE achieves an average Point-F1 of 66.26, the highest among the evaluated methods. Controlled synthetic evaluation examines localization and type diagnosis, while component ablations support the detection contribution of specialized evidence generation. In a method-blind human study, evaluators rate SAGE's diagnostic outputs as more useful than those of the compared methods.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-07T06:17:35Z</published>
+    <arxiv:comment>Preprint. 8 pages main text, 28 pages total, with appendix</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Hyeongwon Kang</name>
+    </author>
+    <author>
+      <name>Jeongseob Kim</name>
+    </author>
+    <author>
+      <name>Jinwoo Park</name>
+    </author>
+    <author>
+      <name>Pilsung Kang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2502.17812v2</id>
+    <title>Can Multimodal LLMs Perform Time Series Anomaly Detection?</title>
+    <updated>2026-02-17T17:04:01Z</updated>
+    <link href="https://arxiv.org/abs/2502.17812v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2502.17812v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Time series anomaly detection (TSAD) has been a long-standing pillar problem in Web-scale systems and online infrastructures, such as service reliability monitoring, system fault diagnosis, and performance optimization. Large language models (LLMs) have demonstrated unprecedented capabilities in time series analysis, the potential of multimodal LLMs (MLLMs), particularly vision-language models, in TSAD remains largely under-explored. One natural way for humans to detect time series anomalies is through visualization and textual description. It motivates our research question: Can multimodal LLMs perform time series anomaly detection? Existing studies often oversimplify the problem by treating point-wise anomalies as special cases of range-wise ones or by aggregating point anomalies to approximate range-wise scenarios. They limit our understanding for realistic scenarios such as multi-granular anomalies and irregular time series. To address the gap, we build a VisualTimeAnomaly benchmark to comprehensively investigate zero-shot capabilities of MLLMs for TSAD, progressively from point-, range-, to variate-wise anomalies, and extends to irregular sampling conditions. Our study reveals several key insights in multimodal MLLMs for TSAD. Built on these findings, we propose a MLLMs-based multi-agent framework TSAD-Agents to achieve automatic TSAD. Our framework comprises scanning, planning, detection, and checking agents that synergistically collaborate to reason, plan, and self-reflect to enable automatic TSAD. These agents adaptively invoke tools such as traditional methods and MLLMs and dynamically switch between text and image modalities to optimize detection performance.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-02-25T03:37:43Z</published>
+    <arxiv:comment>ACM Web Conference 2026 (WWW'26)</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Xiongxiao Xu</name>
+    </author>
+    <author>
+      <name>Haoran Wang</name>
+    </author>
+    <author>
+      <name>Yueqing Liang</name>
+    </author>
+    <author>
+      <name>Philip S. Yu</name>
+    </author>
+    <author>
+      <name>Yue Zhao</name>
+    </author>
+    <author>
+      <name>Kai Shu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2511.04032v1</id>
+    <title>Detecting Silent Failures in Multi-Agentic AI Trajectories</title>
+    <updated>2025-11-06T04:00:54Z</updated>
+    <link href="https://arxiv.org/abs/2511.04032v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2511.04032v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multi-Agentic AI systems, powered by large language models (LLMs), are inherently non-deterministic and prone to silent failures such as drift, cycles, and missing details in outputs, which are difficult to detect. We introduce the task of anomaly detection in agentic trajectories to identify these failures and present a dataset curation pipeline that captures user behavior, agent non-determinism, and LLM variation. Using this pipeline, we curate and label two benchmark datasets comprising \textbf{4,275 and 894} trajectories from Multi-Agentic AI systems. Benchmarking anomaly detection methods on these datasets, we show that supervised (XGBoost) and semi-supervised (SVDD) approaches perform comparably, achieving accuracies up to 98% and 96%, respectively. This work provides the first systematic study of anomaly detection in Multi-Agentic AI systems, offering datasets, benchmarks, and insights to guide future research.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-11-06T04:00:54Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Divya Pathak</name>
+    </author>
+    <author>
+      <name>Harshit Kumar</name>
+    </author>
+    <author>
+      <name>Anuska Roy</name>
+    </author>
+    <author>
+      <name>Felix George</name>
+    </author>
+    <author>
+      <name>Mudit Verma</name>
+    </author>
+    <author>
+      <name>Pratibha Moogi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.04599v1</id>
+    <title>Plan First, Judge Later, Run Better: A DMAIC-Inspired Agentic System for Industrial Anomaly Detection</title>
+    <updated>2026-06-03T08:38:14Z</updated>
+    <link href="https://arxiv.org/abs/2606.04599v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.04599v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language model (LLM) agents have shown promise in automating complex data-analysis workflows, but their reliable deployment remains challenging in high-stakes industrial scenarios. Industrial anomaly detection (IAD) is essential for manufacturing quality, safety, and efficiency, yet existing LLM-based IAD agents mainly focus on execution while under-exploiting strategy formulation. Consequently, they struggle to handle heterogeneous modalities in a unified and cost-effective manner. Inspired by the DMAIC quality-management framework, we propose DMAIC-IAD (DMAIC-inspired Agentic Industrial Anomaly Detection), a "Plan First, Judge Later" multi-agent system that aligns LLM agents with structured industrial problem-solving. DMAIC-IAD distills heterogeneous references into standardized operating procedures (SOPs) before strategy generation, and introduces a pre-trained execution-free judge model to rank candidate strategies without costly runtime trials. Extensive experiments across four modalities show that DMAIC-IAD improves average detection performance over applicable agentic baselines by 37.76%.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-03T08:38:14Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Yongzi Yu</name>
+    </author>
+    <author>
+      <name>Ao Li</name>
+    </author>
+    <author>
+      <name>Le Wang</name>
+    </author>
+    <author>
+      <name>Ziyue Li</name>
+    </author>
+    <author>
+      <name>Fugee Tsung</name>
+    </author>
+    <author>
+      <name>Yuxuan Liang</name>
+    </author>
+    <author>
+      <name>Man Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2601.00516v1</id>
+    <title>Trajectory Guard -- A Lightweight, Sequence-Aware Model for Real-Time Anomaly Detection in Agentic AI</title>
+    <updated>2026-01-02T00:27:11Z</updated>
+    <link href="https://arxiv.org/abs/2601.00516v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.00516v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Autonomous LLM agents generate multi-step action plans that can fail due to contextual misalignment or structural incoherence. Existing anomaly detection methods are ill-suited for this challenge: mean-pooling embeddings dilutes anomalous steps, while contrastive-only approaches ignore sequential structure. Standard unsupervised methods on pre-trained embeddings achieve F1-scores no higher than 0.69. We introduce Trajectory Guard, a Siamese Recurrent Autoencoder with a hybrid loss function that jointly learns task-trajectory alignment via contrastive learning and sequential validity via reconstruction. This dual objective enables unified detection of both "wrong plan for this task" and "malformed plan structure." On benchmarks spanning synthetic perturbations and real-world failures from security audits (RAS-Eval) and multi-agent systems (Who\&amp;When), we achieve F1-scores of 0.88-0.94 on balanced sets and recall of 0.86-0.92 on imbalanced external benchmarks. At 32 ms inference latency, our approach runs 17-27$\times$ faster than LLM Judge baselines, enabling real-time safety verification in production deployments.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-02T00:27:11Z</published>
+    <arxiv:comment>Accepted to AAAI Trustagent 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Laksh Advani</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.13807v3</id>
+    <title>AnomaMind: Coarse-to-Fine Agentic Diagnosis via Hybrid Inference for Time Series Anomaly Detection</title>
+    <updated>2026-11-08T03:25:52Z</updated>
+    <link href="https://arxiv.org/abs/2602.13807v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.13807v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Time series anomaly detection (TSAD) supports the analysis of web service key performance indicators (KPIs) by identifying anomalous intervals. Recent large language model (LLM)-based agentic approaches have achieved promising results through reasoning and tool use. Despite their effectiveness, precise anomaly localization remains challenging, as diverse anomaly patterns demand targeted numerical evidence and iterative refinement to accurately determine anomaly boundaries. In this work, we propose AnomaMind, a coarse-to-fine agentic diagnosis framework for TSAD. AnomaMind first identifies suspicious regions from time-series visualizations, then adaptively acquires targeted numerical evidence through multi-turn tool interactions, and finally refines anomaly decisions through self-reflection. This process is supported by a tool engine that integrates knowledge memory and numerical analysis. To coordinate this diagnostic process, we design a hybrid inference strategy that employs frozen general-purpose LLMs for initial localization, tool orchestration, and evaluation, alongside a specialized LLM detector for evidence-grounded interval prediction. We optimize only the specialized detector through supervised fine-tuning (SFT) on diagnostic trajectories and reinforcement learning (RL) with verifiable detection rewards. Experiments on four benchmarks spanning web traffic, service KPIs, and system-monitoring signals, under both in-domain and multi-domain training settings, demonstrate competitive performance and support the effectiveness of coarse-to-fine adaptive diagnosis through targeted evidence acquisition and self-reflective refinement.The code is available at https://github.com/Xiaoyu-Tao/AnomaMind-TS.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-14T14:35:34Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Xiaoyu Tao</name>
+    </author>
+    <author>
+      <name>Yuchong Wu</name>
+    </author>
+    <author>
+      <name>Mingyue Cheng</name>
+    </author>
+    <author>
+      <name>Ze Guo</name>
+    </author>
+    <author>
+      <name>Min Wu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.06261v2</id>
+    <title>DAST: A VLM-LLM Framework for Cross-Interface Anomaly Detection in O-RAN</title>
+    <updated>2026-11-19T09:13:35Z</updated>
+    <link href="https://arxiv.org/abs/2606.06261v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.06261v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>O-RAN enables a disaggregated baseband stack with programmable functions that communicate over standardized open interfaces. The same openness that enables multi-vendor composition also expands the attack surface across logically decoupled tiers that make up the compute continuum. Among these threats, Denial-of-Service and performance-degradation attacks, which account for the majority of catalogued O-RAN threats, are particularly difficult to detect. Traditional Time-Series Anomaly Detection (TSAD) methods fail in this new regime where labelled baselines are scarce, threats evolve faster than detectors can be retrained, and the high-dimensional multivariate telemetry overwhelms monolithic inference models. To address these challenges, we present DAST, a zero-shot multi-agent framework for cross-interface anomaly detection in O-RAN that chains a three-stage VLM $\rightarrow$ LLM $\rightarrow$ VLM pipeline. DAST converts multivariate KPI streams into visual representations, scores textual per-interface descriptions against O-RAN domain knowledge, and verifies suspects on high-resolution heatmaps to output the problematic interfaces, the anomalous time intervals, an indicative O-RAN WG11-aligned operational impact rating and the decision rationale. We evaluate DAST on real network traces collected from an O-RAN testbed under representative performance degradation scenarios, achieving 0.910 F1-Score and 0.843 Accuracy, outperforming state-of-the-art TSAD baselines.</summary>
+    <category term="cs.NI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.ET" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-04T15:05:04Z</published>
+    <arxiv:comment>7 pages, 5 figures. This work has been submitted to the IEEE for possible publication</arxiv:comment>
+    <arxiv:primary_category term="cs.NI"/>
+    <author>
+      <name>Francesco Spinelli</name>
+    </author>
+    <author>
+      <name>Esteban Municio</name>
+    </author>
+    <author>
+      <name>Pau Baguer</name>
+    </author>
+    <author>
+      <name>Gines Garcia-Aviles</name>
+    </author>
+    <author>
+      <name>Xavier Costa-Perez</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2510.20102v3</id>
+    <title>Human-Centered LLM-Agent System for Detecting Anomalous Digital Asset Transactions</title>
+    <updated>2026-03-07T06:28:32Z</updated>
+    <link href="https://arxiv.org/abs/2510.20102v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.20102v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We present HCLA, a human-centered multi-agent system for anomaly detection in digital-asset transactions. The system integrates three cognitively aligned roles: Rule Abstraction, Evidence Scoring, and Expert-Style Justification. These roles operate in a conversational workflow that enables non-experts to express analytical intent in natural language, inspect structured risk evidence, and obtain traceable, context-aware reasoning.
+  Implemented with an open-source, web-based interface, HCLA translates user intent into explicit analytical rules, applies classical anomaly detectors to quantify evidential risk, and reconstructs expert-style justifications grounded in observable transactional signals. Experiments on a cryptocurrency anomaly dataset show that, while the underlying detector achieves strong predictive accuracy, HCLA substantially improves interpretability, interaction, and decision transparency.
+  Importantly, HCLA is not designed to explain a black-box model in the conventional XAI sense. Instead, we reconstruct a traceable expert reasoning process that aligns algorithmic evidence with regulatory and investigative judgment. By explicitly separating evidence scoring from expert-style justification, the framework emphasizes accountability beyond explainability and addresses practical requirements for regulatory, audit, and compliance-driven financial forensics.
+  We describe the system architecture, closed-loop interaction design, datasets, evaluation protocol, and limitations. We argue that a human-in-the-loop reasoning reconstruction paradigm is essential for achieving transparency, accountability, and trust in high-stakes financial environments.
+  Keywords: Human-Centered AI; LLM-Agent System; Multi-Agent Architecture; Anomaly Detection; Digital Asset Transactions; Cryptocurrency Forensics; Blockchain Analytics; Human-in-the-Loop; Explainable AI (XAI); Interpretability</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-23T01:04:36Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Gyuyeon Na</name>
+    </author>
+    <author>
+      <name>Minjung Park</name>
+    </author>
+    <author>
+      <name>Hyeonjeong Cha</name>
+    </author>
+    <author>
+      <name>Sangmi Chai</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2502.11127v1</id>
+    <title>G-Safeguard: A Topology-Guided Security Lens and Treatment on LLM-based Multi-agent Systems</title>
+    <updated>2025-02-16T13:48:41Z</updated>
+    <link href="https://arxiv.org/abs/2502.11127v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2502.11127v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Model (LLM)-based Multi-agent Systems (MAS) have demonstrated remarkable capabilities in various complex tasks, ranging from collaborative problem-solving to autonomous decision-making. However, as these systems become increasingly integrated into critical applications, their vulnerability to adversarial attacks, misinformation propagation, and unintended behaviors have raised significant concerns. To address this challenge, we introduce G-Safeguard, a topology-guided security lens and treatment for robust LLM-MAS, which leverages graph neural networks to detect anomalies on the multi-agent utterance graph and employ topological intervention for attack remediation. Extensive experiments demonstrate that G-Safeguard: (I) exhibits significant effectiveness under various attack strategies, recovering over 40% of the performance for prompt injection; (II) is highly adaptable to diverse LLM backbones and large-scale MAS; (III) can seamlessly combine with mainstream MAS with security guarantees. The code is available at https://github.com/wslong20/G-safeguard.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-02-16T13:48:41Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Shilong Wang</name>
+    </author>
+    <author>
+      <name>Guibin Zhang</name>
+    </author>
+    <author>
+      <name>Miao Yu</name>
+    </author>
+    <author>
+      <name>Guancheng Wan</name>
+    </author>
+    <author>
+      <name>Fanci Meng</name>
+    </author>
+    <author>
+      <name>Chongye Guo</name>
+    </author>
+    <author>
+      <name>Kun Wang</name>
+    </author>
+    <author>
+      <name>Yang Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2601.13546v1</id>
+    <title>ChatAD: Reasoning-Enhanced Time-Series Anomaly Detection with Multi-Turn Instruction Evolution</title>
+    <updated>2026-01-20T03:12:37Z</updated>
+    <link href="https://arxiv.org/abs/2601.13546v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.13546v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM-driven Anomaly Detection (AD) helps enhance the understanding and explanatory abilities of anomalous behaviors in Time Series (TS). Existing methods face challenges of inadequate reasoning ability, deficient multi-turn dialogue capability, and narrow generalization. To this end, we 1) propose a multi-agent-based TS Evolution algorithm named TSEvol. On top of it, we 2) introduce the AD reasoning and multi-turn dialogue Dataset TSEData-20K and contribute the Chatbot family for AD, including ChatAD-Llama3-8B, Qwen2.5-7B, and Mistral-7B. Furthermore, 3) we propose the TS Kahneman-Tversky Optimization (TKTO) to enhance ChatAD's cross-task generalization capability. Lastly, 4) we propose a LLM-driven Learning-based AD Benchmark LLADBench to evaluate the performance of ChatAD and nine baselines across seven datasets and tasks. Our three ChatAD models achieve substantial gains, up to 34.50% in accuracy, 34.71% in F1, and a 37.42% reduction in false positives. Besides, via KTKO, our optimized ChatAD achieves competitive performance in reasoning and cross-task generalization on classification, forecasting, and imputation.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-20T03:12:37Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Hui Sun</name>
+    </author>
+    <author>
+      <name>Chang Xu</name>
+    </author>
+    <author>
+      <name>Haonan Xie</name>
+    </author>
+    <author>
+      <name>Hao Li</name>
+    </author>
+    <author>
+      <name>Yuhao Huang</name>
+    </author>
+    <author>
+      <name>Chuheng Zhang</name>
+    </author>
+    <author>
+      <name>Ming Jin</name>
+    </author>
+    <author>
+      <name>Xiaoguang Liu</name>
+    </author>
+    <author>
+      <name>Gang Wang</name>
+    </author>
+    <author>
+      <name>Jiang Bian</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.15459v1</id>
+    <title>When Messages Go Wrong: Understanding Communication Faults in LLM-Based Multi-Agent Systems</title>
+    <updated>2026-10-11T08:59:27Z</updated>
+    <link href="https://arxiv.org/abs/2610.15459v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.15459v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM-based multi-agent systems (LLM-MAS) use specialized agents that exchange messages to accomplish complex tasks. Their reliance on networked protocols, remote tools, and model endpoints exposes communication to message loss, delay, and context expiration. Because agents often exchange open-ended natural language, anomalies can alter task-relevant information while leaving messages processable, allowing semantic errors to propagate through subsequent interactions. Systematic studies of faults in inter-agent communication remain limited. This paper presents a large-scale empirical study of how communication faults manifest, propagate, and affect task outcomes in LLM-MAS. We construct a cross-layer taxonomy linking lower-stack disturbances to application-visible faults and develop a fault-injection and tracing pipeline. Our evaluation covers more than 29,000 executions across 100 tasks, five domains, three workflow topologies, and three model configurations. We find that 20.7% of failures with complete detection records occur without an immediate failure signal, reaching 76.2% for partial-content faults. Flat maintains 53.0% task success under communication faults, compared with 3.3% and 3.2% for Sequential and Hierarchical, respectively. This advantage primarily arises when an alternative information path preserves the evidence required by downstream agents. We also evaluate execution-side and evidence protection mechanisms and find that they recover different failure cases. Evidence recovery depends on whether trustworthy information remains accessible through an unaffected path. These observations provide empirical insights into communication-fault propagation, workflow resilience, and protection design for LLM-MAS.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-11T08:59:27Z</published>
+    <arxiv:comment>21 pages, 11 figures, 3 tables. Code and experimental artifacts: https://github.com/SonGoKu21/mas_communication/ ; companion website: https://songoku21.github.io/mas_communication/</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Jinhao Zhou</name>
+    </author>
+    <author>
+      <name>Xiaoyu Zhang</name>
+    </author>
+    <author>
+      <name>Jiongchi Yu</name>
+    </author>
+    <author>
+      <name>Fahao Chen</name>
+    </author>
+    <author>
+      <name>Jun Wu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.17182v1</id>
+    <title>Verified Detection and Prevention of Concurrency Anomalies in Multi-Agent Large Language Model Systems</title>
+    <updated>2026-06-15T18:19:34Z</updated>
+    <link href="https://arxiv.org/abs/2606.17182v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.17182v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multi-agent LLM systems share state through memory stores, vector indices, and tool registries. We model such sharing as long-running read-generate-write operations under deterministic-generation semantics -- the regime durable-execution engines enforce by deterministic replay -- and formalize four concurrency anomalies in TLA+: stale-generation, phantom-tool, causal-cascade, and tool-effect reordering, structural analogues of classical isolation anomalies, each with a TLC counter-example. The exclusion lattice over these anomalies is trivial; the contribution is the mechanically verified realizability and strict separation of one maximal chain within it, $L_0 \subsetneq \cdots \subsetneq L_4$, to our knowledge the first machine-checked consistency hierarchy for such runtimes. A development of 274 Verus obligations (zero assume, zero admit; trust base: two structural axioms and a mutex correspondence) proves the detectors sound and complete against the specifications and each runtime its avoidance set. Three deployed Rust runtimes realize L0-L1 (pessimistic locking, serializable snapshot isolation, default-SI), each verified against stale-generation and refined to its state machine; L2-L4 are exec-mode-verified with dependency-free prevention twins (A3, A6, A2: 0/1000 versus 1000/1000), and L2 is run live across three model families (A3 prevented in all 120 retracted sessions). We reproduce a silent lost update in ByteDance's deer-flow, formalizing its fix as a verified $L_0 \to L_1$ refinement, and exhibit tool-effect reordering in LangGraph's ToolNode on unmodified output, removed by an L3 commit-order sequencer. The verified detector, refinements, and realizability artifacts are the contribution; the phenomena and lattice are classical.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.PL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-15T18:19:34Z</published>
+    <arxiv:comment>32 pages, 2 figures, 6 tables. Verus/TLA+ verification artifact, reference Rust runtime, and Python harnesses, plus a supplementary appendix (Sections A-F, Tables S1-S6), included as ancillary files</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Sajjad Khan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.29646v2</id>
+    <title>Cascade Failure Attribution for Multi-Agent Systems</title>
+    <updated>2026-10-19T03:56:06Z</updated>
+    <link href="https://arxiv.org/abs/2608.29646v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.29646v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language model (LLM)-based agents have shown strong potential in solving complex tasks through multi-step reasoning, yet they remain vulnerable to execution failures. Accurate failure attribution is therefore critical for improving agent reliability. Existing topology- and spectrum-based methods exploit trajectory structures but often overlook fine-grained semantics, while LLM-based attribution methods capture semantic cues but suffer from long-context degradation over lengthy trajectories. To address these challenges, we propose DuoTrace, a plug-and-play detection filter for LLM-based failure attribution. DuoTrace follows a detect-before-attribute paradigm: it first detects anomalous executions and then supplies focused trajectory evidence to downstream LLM-based attribution methods. For effective VAE-based anomaly detection on agent trajectories, DuoTrace integrates dual-view semantic-structural node representations, a Tree-LSTM-based trajectory encoder, and data augmentation through outcome-verified LLM replay and root-to-node path extraction to handle heterogeneous nodes, hierarchical execution structures, and limited normal execution data. Experiments with six LLM-based attribution baselines show that DuoTrace improves agent-level and step-level attribution accuracy by 11.2% and 7.7%,respectively.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-30T08:17:42Z</published>
+    <arxiv:comment>17 pages, 5 figures, 13 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Jiayi Zhang</name>
+    </author>
+    <author>
+      <name>Zexin Wang</name>
+    </author>
+    <author>
+      <name>Degang Sun</name>
+    </author>
+    <author>
+      <name>Changhua Pei</name>
+    </author>
+    <author>
+      <name>Fei Sun</name>
+    </author>
+    <author>
+      <name>Gaogang Xie</name>
+    </author>
+    <author>
+      <name>Jingjing Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.18092v1</id>
+    <title>Position: Multi-Agent Systems Should Prioritize Concurrency Control</title>
+    <updated>2026-06-06T13:36:15Z</updated>
+    <link href="https://arxiv.org/abs/2608.18092v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.18092v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM-based multi-agent systems (MAS) promise scalable collaboration, yet adding agents often reduces reliability. This position paper argues that many MAS failures are fundamentally concurrency control problems: agents concurrently read and write shared state, and long LLM inference windows amplify the risk of stale reads, lost updates, and inconsistent outcomes. Failure modes commonly attributed to coordination or communication breakdowns can be mapped directly onto classical concurrency anomalies. We contend that MAS frameworks should address these failures through explicit concurrency control mechanisms: conflict detection, isolation guarantees, and structured access to shared resources. Concurrency control should be a first-class design concern, not an afterthought.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-06T13:36:15Z</published>
+    <arxiv:comment>16 pages, 1 figure</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Xin Yang</name>
+    </author>
+    <author>
+      <name>Letian Li</name>
+    </author>
+    <author>
+      <name>Zimo Ji</name>
+    </author>
+    <author>
+      <name>Terry Jingchen Zhang</name>
+    </author>
+    <author>
+      <name>Wenyuan Jiang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2508.12412v2</id>
+    <title>LumiMAS: A Comprehensive Framework for Real-Time Monitoring and Enhanced Observability in Multi-Agent Systems</title>
+    <updated>2026-02-27T13:51:56Z</updated>
+    <link href="https://arxiv.org/abs/2508.12412v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2508.12412v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The incorporation of LLMs in multi-agent systems (MASs) has the potential to significantly improve our ability to autonomously solve complex problems. However, such systems introduce unique challenges in monitoring, interpreting, and detecting system failures. Most existing MAS observability frameworks focus on analyzing each individual agent separately, overlooking failures associated with the entire MAS. To bridge this gap, we propose LumiMAS, a novel MAS observability framework that incorporates advanced analytics and monitoring techniques. The proposed framework consists of three key components: a monitoring and logging layer, anomaly detection layer, and anomaly explanation layer. LumiMAS's first layer monitors MAS executions, creating detailed logs of the agents' activity. These logs serve as input to the anomaly detection layer, which detects anomalies across the MAS workflow in real time. Then, the anomaly explanation layer performs classification and root cause analysis (RCA) of the detected anomalies. LumiMAS was evaluated on seven different MAS applications, implemented using two popular MAS platforms, and a diverse set of possible failures. The applications include two novel failure-tailored applications that illustrate the effects of a hallucination or bias on the MAS. The evaluation results demonstrate LumiMAS's effectiveness in failure detection, classification, and RCA.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-08-17T15:55:02Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Ron Solomon</name>
+    </author>
+    <author>
+      <name>Yarin Yerushalmi Levi</name>
+    </author>
+    <author>
+      <name>Lior Vaknin</name>
+    </author>
+    <author>
+      <name>Eran Aizikovich</name>
+    </author>
+    <author>
+      <name>Amit Baras</name>
+    </author>
+    <author>
+      <name>Etai Ohana</name>
+    </author>
+    <author>
+      <name>Amit Giloni</name>
+    </author>
+    <author>
+      <name>Shamik Bose</name>
+    </author>
+    <author>
+      <name>Chiara Picardi</name>
+    </author>
+    <author>
+      <name>Yuval Elovici</name>
+    </author>
+    <author>
+      <name>Asaf Shabtai</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.26201v1</id>
+    <title>(EC)2: Event-Centric Explainability for Cybersecurity Through Multi-Agent LLM Investigations</title>
+    <updated>2026-07-28T19:06:24Z</updated>
+    <link href="https://arxiv.org/abs/2607.26201v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.26201v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Security operations centers rely on anomaly detection systems to flag suspicious events. Feature-level explanations for anomaly detectors offer limited value for operational investigations. To effectively handle alerts, analysts need to know contextual relationships and need actionable understanding of the entities involved. This paper introduces an event-centric detector-agnostic approach for explaining cybersecurity alerts in small- to medium-sized enterprise networks. We present (EC)2, a multi-agent framework that performs structured, hypothesis-driven investigation to provide explanations grounded in verifiable evidence. Evaluation results show that the proposed framework improves post-detection analysis by generating operationally meaningful explanations, which also enhance event classification accuracy.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-28T19:06:24Z</published>
+    <arxiv:comment>21 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Neta Kirmayer</name>
+    </author>
+    <author>
+      <name>David Tayouri</name>
+    </author>
+    <author>
+      <name>Andrés Murillo</name>
+    </author>
+    <author>
+      <name>Motoyoshi Sekiya</name>
+    </author>
+    <author>
+      <name>Asaf Shabtai</name>
+    </author>
+    <author>
+      <name>Rami Puzis</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.16098v1</id>
+    <title>Universal Defenses for Tool-Integrated LLM Agents Against Adversarial Attacks</title>
+    <updated>2026-09-14T15:20:30Z</updated>
+    <link href="https://arxiv.org/abs/2609.16098v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.16098v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Model (LLM) agents have demonstrated impressive capabilities across a variety of domains, particularly when integrated with external tools for multi-step task completion. However, they are increasingly vulnerable to adversarial attacks, including direct prompt injection, indirect prompt injection, memory poisoning, and backdoor attacks, which exploit the model's openness to prompt injection and tool manipulation. In this work, we explore practical and generalizable defense strategies within a unified framework across these four attack types. We introduce two universal tool-based defenses: Attacker Tool Filtering, which uses anomaly detection (e.g., Isolation Forest) to identify and remove suspicious tools, and Normal Tool Recalling, a white-box method that restores the agent's original toolset prior to planning. Additionally, we incorporate prompt-based defenses: Chain-of-Thought prompting and self-reflection techniques to enhance reasoning and task paraphrasing to mitigate attacks. Experimental results across both four open-source LLMs (Gemma2-9B, Qwen2-7B, LLaMA3-8B, and LLaMA3.1-8B) and three proprietary LLMs (GPT-3.5, GPT-4, and GPT-5) show that our methods significantly reduce the Attack Success Rates (ASR), achieving 0% ASR in many settings, while preserving or even improving the original task success rate. These findings highlight the promise of simple, modular, multi-layered defenses for strengthening the security and robustness of tool-integrated LLM agents. The code is available at https://github.com/Xiaoyan-Lisa/Defenses-for-Tool-Integrated-LLM-Agents-Against-Adversarial-Attacks.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-14T15:20:30Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Xiaoyan Li</name>
+    </author>
+    <author>
+      <name>Yunli Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.16738v1</id>
+    <title>Self-Evolving Multi-Agent Network for Industrial IoT Predictive Maintenance</title>
+    <updated>2026-02-17T22:45:43Z</updated>
+    <link href="https://arxiv.org/abs/2602.16738v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.16738v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Industrial IoT predictive maintenance requires systems capable of real-time anomaly detection without sacrificing interpretability or demanding excessive computational resources. Traditional approaches rely on static, offline-trained models that cannot adapt to evolving operational conditions, while LLM-based monolithic systems demand prohibitive memory and latency, rendering them impractical for on-site edge deployment. We introduce SEMAS, a self-evolving hierarchical multi-agent system that distributes specialized agents across Edge, Fog, and Cloud computational tiers. Edge agents perform lightweight feature extraction and pre-filtering; Fog agents execute diversified ensemble detection with dynamic consensus voting; and Cloud agents continuously optimize system policies via Proximal Policy Optimization (PPO) while maintaining asynchronous, non-blocking inference. The framework incorporates LLM-based response generation for explainability and federated knowledge aggregation for adaptive policy distribution. This architecture enables resource-aware specialization without sacrificing real-time performance or model interpretability. Empirical evaluation on two industrial benchmarks (Boiler Emulator and Wind Turbine) demonstrates that SEMAS achieves superior anomaly detection performance with exceptional stability under adaptation, sustains prediction accuracy across evolving operational contexts, and delivers substantial latency improvements enabling genuine real-time deployment. Ablation studies confirm that PPO-driven policy evolution, consensus voting, and federated aggregation each contribute materially to system effectiveness. These findings indicate that resource-aware, self-evolving 1multi-agent coordination is essential for production-ready industrial IoT predictive maintenance under strict latency and explainability constraints.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-17T22:45:43Z</published>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Rebin Saleh</name>
+    </author>
+    <author>
+      <name>Khanh Pham Dinh</name>
+    </author>
+    <author>
+      <name>Balázs Villányi</name>
+    </author>
+    <author>
+      <name>Truong-Son Hy</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.23362v1</id>
+    <title>TRACE-MAS: Diagnosing and Repairing Collaboration Failures in Multi-Agent Systems</title>
+    <updated>2026-11-17T16:49:33Z</updated>
+    <link href="https://arxiv.org/abs/2611.23362v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.23362v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM-based multi-agent systems (MAS) rely on not only individual agent behaviors but also the interactions that connect agents, including message exchanges and task dependencies. Existing MAS safeguards mainly perform agent-level anomaly detection, which becomes insufficient when failures originate from agent interactions and detected anomalies do not necessarily reveal their true sources. To address this limitation, we propose \textbf{TRACE-MAS}, a finer-grained framework for diagnosing and repairing MAS failures. TRACE-MAS learns normal collaborative execution patterns from benign trajectories and detects deviations in agent state changes, message transitions, and task dependency evolutions. It further identifies responsible execution elements through source-aware attribution and selects minimal interventions to restore collaboration while preserving task-critical capabilities. Experiments on five MAS benchmarks demonstrate that TRACE-MAS significantly improves root-cause localization accuracy by \textbf{60.2}\% and achieves consistent gains in task recovery over strong MAS safeguards.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-17T16:49:33Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Zekai Chen</name>
+    </author>
+    <author>
+      <name>Yihan Sun</name>
+    </author>
+    <author>
+      <name>Xunkai Li</name>
+    </author>
+    <author>
+      <name>Xun Wu</name>
+    </author>
+    <author>
+      <name>Xinmo Jin</name>
+    </author>
+    <author>
+      <name>Yinlin Zhu</name>
+    </author>
+    <author>
+      <name>Haodong Lu</name>
+    </author>
+    <author>
+      <name>Xuaner Chen</name>
+    </author>
+    <author>
+      <name>Rong-Hua Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2507.01485v1</id>
+    <title>BioMARS: A Multi-Agent Robotic System for Autonomous Biological Experiments</title>
+    <updated>2025-07-02T08:47:02Z</updated>
+    <link href="https://arxiv.org/abs/2507.01485v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2507.01485v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) and vision-language models (VLMs) have the potential to transform biological research by enabling autonomous experimentation. Yet, their application remains constrained by rigid protocol design, limited adaptability to dynamic lab conditions, inadequate error handling, and high operational complexity. Here we introduce BioMARS (Biological Multi-Agent Robotic System), an intelligent platform that integrates LLMs, VLMs, and modular robotics to autonomously design, plan, and execute biological experiments. BioMARS uses a hierarchical architecture: the Biologist Agent synthesizes protocols via retrieval-augmented generation; the Technician Agent translates them into executable robotic pseudo-code; and the Inspector Agent ensures procedural integrity through multimodal perception and anomaly detection. The system autonomously conducts cell passaging and culture tasks, matching or exceeding manual performance in viability, consistency, and morphological integrity. It also supports context-aware optimization, outperforming conventional strategies in differentiating retinal pigment epithelial cells. A web interface enables real-time human-AI collaboration, while a modular backend allows scalable integration with laboratory hardware. These results highlight the feasibility of generalizable, AI-driven laboratory automation and the transformative role of language-based reasoning in biological research.</summary>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-bio.QM" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-07-02T08:47:02Z</published>
+    <arxiv:primary_category term="cs.RO"/>
+    <author>
+      <name>Yibo Qiu</name>
+    </author>
+    <author>
+      <name>Zan Huang</name>
+    </author>
+    <author>
+      <name>Zhiyu Wang</name>
+    </author>
+    <author>
+      <name>Handi Liu</name>
+    </author>
+    <author>
+      <name>Yiling Qiao</name>
+    </author>
+    <author>
+      <name>Yifeng Hu</name>
+    </author>
+    <author>
+      <name>Shu'ang Sun</name>
+    </author>
+    <author>
+      <name>Hangke Peng</name>
+    </author>
+    <author>
+      <name>Ronald X Xu</name>
+    </author>
+    <author>
+      <name>Mingzhai Sun</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.17658v1</id>
+    <title>Towards Self-Improving Error Diagnosis in Multi-Agent Systems</title>
+    <updated>2026-04-19T23:13:05Z</updated>
+    <link href="https://arxiv.org/abs/2604.17658v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.17658v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Model (LLM)-based Multi-Agent Systems (MAS) enable complex problem-solving but introduce significant debugging challenges, characterized by long interaction traces, inter-agent dependencies, and delayed error manifestation. Existing diagnostic approaches often rely on expensive expert annotation or ''LLM-as-a-judge'' paradigms, which struggle to pinpoint decisive error steps within extended contexts. In this paper, we introduce ErrorProbe, a self-improving framework for semantic failure attribution that identifies responsible agents and the originating error step. The framework operates via a three-stage pipeline: (1) operationalizing the MAS failure taxonomy to detect local anomalies, (2) performing symptom-driven backward tracing to prune irrelevant context, and (3) employing a specialized multi-agent team (Strategist, Investigator, Arbiter) to validate error hypotheses through tool-grounded execution. Crucially, ErrorProbe maintains a verified episodic memory that updates only when error patterns are confirmed by executable evidence, without the need for annotation. Experiments across the TracerTraj and Who&amp;When benchmarks demonstrate that ErrorProbe significantly outperforms baselines, particularly in step-level localization, while the verified memory enables robust cross-domain transfer without retraining.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-19T23:13:05Z</published>
+    <arxiv:comment>15 pages, 3 figures; accepted at ACL 2026 Findings</arxiv:comment>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Jiazheng Li</name>
+    </author>
+    <author>
+      <name>Emine Yilmaz</name>
+    </author>
+    <author>
+      <name>Bei Chen</name>
+    </author>
+    <author>
+      <name>Dieu-Thu Le</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.13267v1</id>
+    <title>Forgetting is Not Always Bad: A Neuro-Inspired Memory Repair Mechanism for Poisoned LLM Agents</title>
+    <updated>2026-10-09T09:17:00Z</updated>
+    <link href="https://arxiv.org/abs/2610.13267v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.13267v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language model (LLM) agents are highly vulnerable to memory-poisoning attacks. Existing defenses primarily rely on external modules for either static memory isolation or continuous online auditing, resulting in low memory efficiency and high computational overhead. To address these limitations, inspired by neuroscientific mechanisms that weak reactivation can destabilize memories and induce decay in the absence of reinforcement, we propose an agent-intrinsic training-free memory repair framework, DREAM (Dynamic Reactivation for Engram Attenuation in Memory), that enables selective functional forgetting of poisoned memories. Specifically, DREAM implements a three-stage pipeline: perturbation-induced implicit reactivation to reveal the structural fragility of malicious memories, adaptive anomaly diagnosis based on multi-dimensional activation patterns to detect topological anomalies, and a dynamic memory repair module that selectively suppresses harmful memories while reinforcing benign ones. Extensive experiments across diverse attackers and real-world tasks demonstrate that DREAM reduces attack success rates by over 95\% against backdoor poisoning while preserving strong benign utility. DREAM also achieves competitive robustness against injection attacks. In terms of runtime and token consumption, DREAM achieves up to a 2.13$\times$ speedup and a 37.7\% reduction in token consumption compared with A-MemGuard. Furthermore, DREAM also achieves a task success rate of 92.96\% on poisoned multi-agent systems.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-09T09:17:00Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Lei Liu</name>
+    </author>
+    <author>
+      <name>Yunji Liang</name>
+    </author>
+    <author>
+      <name>Xiaowen Zhang</name>
+    </author>
+    <author>
+      <name>Jingqi Liu</name>
+    </author>
+    <author>
+      <name>Qi Li</name>
+    </author>
+    <author>
+      <name>Bin Guo</name>
+    </author>
+    <author>
+      <name>Zhiwen Yu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.03628v1</id>
+    <title>Swarm-Driven Multi-Agent Reasoning for Smart City Security</title>
+    <updated>2026-07-03T23:04:48Z</updated>
+    <link href="https://arxiv.org/abs/2607.03628v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.03628v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Modern smart cities are interconnected cyber-physical ecosystems where heterogeneous devices exchange data and control commands. Coordinated attacks may appear as weak and distributed indicators, including low-rate scanning, abnormal credential use, protocol misuse, or delayed lateral movement, with each signal remaining below local alert thresholds. Therefore, smart-city security is not only an anomaly detection task but also a reasoning task under uncertainty, partial observability, and adversarial manipulation. This work presents TPSC-Sec, an LLM-based multi-agent approach for stable security reasoning in smart cities. TPSC-Sec decomposes analysis across specialized agents that inspect traffic behavior, protocol interactions, identity usage, and temporal attack progression. Their independent threat hypotheses are aggregated by the proposed Threat-Pheromone Swarm Consensus mechanism, which reinforces supported hypotheses, suppresses contradictions, and preserves temporal consistency, thereby driving competing interpretations toward a stable collective decision. We further introduce Adaptive Verified TPSC, which adds verification-aware calibration, context-sensitive weighting, and disagreement-adaptive control to reduce unsupported LLM outputs and reasoning inconsistency. Experiments over 500 runs show that TPSC-Sec achieves a high consensus acceptance rate of 0.97 plus or minus 0.02, hypothesis-support concentration above 0.99, a consensus margin of 2.08 plus or minus 0.21, low aggregate risk of 0.23 plus or minus 0.04, high inter-agent agreement of 0.82 plus or minus 0.06, and strong support-quality correlation of r equals 0.93. Adaptive agent selection reduces the number of active agents by 50 percent while improving system fitness by 11.6 percent. These results demonstrate robust, interpretable, and efficient security reasoning for adversary-resilient smart-city environments.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-03T23:04:48Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Saeid Jamshidi</name>
+    </author>
+    <author>
+      <name>Kawser Wazed Nafi</name>
+    </author>
+    <author>
+      <name>Carol Fung</name>
+    </author>
+    <author>
+      <name>Foutse Khomh</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2507.21471v2</id>
+    <title>LUMIR: an LLM-Driven Unified Agent Framework for Multi-task Infrared Spectroscopy Reasoning</title>
+    <updated>2025-08-31T04:55:01Z</updated>
+    <link href="https://arxiv.org/abs/2507.21471v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2507.21471v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Infrared spectroscopy enables rapid, non destructive analysis of chemical and material properties, yet high dimensional signals and overlapping bands hinder conventional chemometric methods. Large language models (LLMs), with strong generalization and reasoning capabilities, offer new opportunities for automated spectral interpretation, but their potential in this domain remains largely untapped. This study introduces LUMIR (LLM-driven Unified agent framework for Multi-task Infrared spectroscopy Reasoning), an agent based framework designed to achieve accurate infrared spectral analysis under low data conditions. LUMIR integrates a structured literature knowledge base, automated preprocessing, feature extraction, and predictive modeling into a unified pipeline. By mining peer reviewed spectroscopy studies, it identifies validated preprocessing and feature derivation strategies, transforms spectra into low dimensional representations, and applies few-shot prompts for classification, regression, and anomaly detection. The framework was validated on diverse datasets, including the publicly available Milk near-infrared dataset, Chinese medicinal herbs, Citri Reticulatae Pericarpium(CRP) with different storage durations, an industrial wastewater COD dataset, and two additional public benchmarks, Tecator and Corn. Across these tasks, LUMIR achieved performance comparable to or surpassing established machine learning and deep learning models, particularly in resource limited settings. This work demonstrates that combining structured literature guidance with few-shot learning enables robust, scalable, and automated spectral interpretation. LUMIR establishes a new paradigm for applying LLMs to infrared spectroscopy, offering high accuracy with minimal labeled data and broad applicability across scientific and industrial domains.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-07-29T03:20:51Z</published>
+    <arxiv:comment>19 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Zujie Xie</name>
+    </author>
+    <author>
+      <name>Zixuan Chen</name>
+    </author>
+    <author>
+      <name>Jiheng Liang</name>
+    </author>
+    <author>
+      <name>Xiangyang Yu</name>
+    </author>
+    <author>
+      <name>Ziru Yu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.15325v1</id>
+    <title>AgriWorld:A World Tools Protocol Framework for Verifiable Agricultural Reasoning with Code-Executing LLM Agents</title>
+    <updated>2026-02-17T03:12:57Z</updated>
+    <link href="https://arxiv.org/abs/2602.15325v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.15325v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Foundation models for agriculture are increasingly trained on massive spatiotemporal data (e.g., multi-spectral remote sensing, soil grids, and field-level management logs) and achieve strong performance on forecasting and monitoring. However, these models lack language-based reasoning and interactive capabilities, limiting their usefulness in real-world agronomic workflows. Meanwhile, large language models (LLMs) excel at interpreting and generating text, but cannot directly reason over high-dimensional, heterogeneous agricultural datasets. We bridge this gap with an agentic framework for agricultural science. It provides a Python execution environment, AgriWorld, exposing unified tools for geospatial queries over field parcels, remote-sensing time-series analytics, crop growth simulation, and task-specific predictors (e.g., yield, stress, and disease risk). On top of this environment, we design a multi-turn LLM agent, Agro-Reflective, that iteratively writes code, observes execution results, and refines its analysis via an execute-observe-refine loop. We introduce AgroBench, with scalable data generation for diverse agricultural QA spanning lookups, forecasting, anomaly detection, and counterfactual "what-if" analysis. Experiments outperform text-only and direct tool-use baselines, validating execution-driven reflection for reliable agricultural reasoning.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-17T03:12:57Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Zhixing Zhang</name>
+    </author>
+    <author>
+      <name>Jesen Zhang</name>
+    </author>
+    <author>
+      <name>Hao Liu</name>
+    </author>
+    <author>
+      <name>Qinhan Lv</name>
+    </author>
+    <author>
+      <name>Jing Yang</name>
+    </author>
+    <author>
+      <name>Kaitong Cai</name>
+    </author>
+    <author>
+      <name>Keze Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2510.07363v2</id>
+    <title>L2M-AID: Autonomous Cyber-Physical Defense by Fusing Semantic Reasoning of Large Language Models with Multi-Agent Reinforcement Learning (Preprint)</title>
+    <updated>2025-10-14T07:56:55Z</updated>
+    <link href="https://arxiv.org/abs/2510.07363v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.07363v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The increasing integration of Industrial IoT (IIoT) exposes critical cyber-physical systems to sophisticated, multi-stage attacks that elude traditional defenses lacking contextual awareness. This paper introduces L2M-AID, a novel framework for Autonomous Industrial Defense using LLM-empowered, Multi-agent reinforcement learning. L2M-AID orchestrates a team of collaborative agents, each driven by a Large Language Model (LLM), to achieve adaptive and resilient security. The core innovation lies in the deep fusion of two AI paradigms: we leverage an LLM as a semantic bridge to translate vast, unstructured telemetry into a rich, contextual state representation, enabling agents to reason about adversary intent rather than merely matching patterns. This semantically-aware state empowers a Multi-Agent Reinforcement Learning (MARL) algorithm, MAPPO, to learn complex cooperative strategies. The MARL reward function is uniquely engineered to balance security objectives (threat neutralization) with operational imperatives, explicitly penalizing actions that disrupt physical process stability. To validate our approach, we conduct extensive experiments on the benchmark SWaT dataset and a novel synthetic dataset generated based on the MITRE ATT&amp;CK for ICS framework. Results demonstrate that L2M-AID significantly outperforms traditional IDS, deep learning anomaly detectors, and single-agent RL baselines across key metrics, achieving a 97.2% detection rate while reducing false positives by over 80% and improving response times by a factor of four. Crucially, it demonstrates superior performance in maintaining physical process stability, presenting a robust new paradigm for securing critical national infrastructure.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-08T17:46:39Z</published>
+    <arxiv:comment>This preprint was submitted to IEEE TrustCom 2025. The accepted version will be published under copyright 2025 IEEE</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Tianxiang Xu</name>
+    </author>
+    <author>
+      <name>Zhichao Wen</name>
+    </author>
+    <author>
+      <name>Xinyu Zhao</name>
+    </author>
+    <author>
+      <name>Jun Wang</name>
+    </author>
+    <author>
+      <name>Yan Li</name>
+    </author>
+    <author>
+      <name>Chang Liu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.00334v1</id>
+    <title>Managed Autonomy at Runtime: Gear-Based Safety and Governance for Single- and Multi-Agent Cyber-Physical Systems</title>
+    <updated>2026-07-01T02:21:38Z</updated>
+    <link href="https://arxiv.org/abs/2607.00334v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.00334v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Autonomous agents, whether LLM-driven software agents or robotic physical agents, face a common class of failure modes when operating without continuous human oversight: safety violations from unverified actions, behavioral instability from unconstrained loops, and continuity loss from unhandled error states. We develop \system{}, a discrete-time control system that combines five execution gears (\Gobs{}, \Gsug{}, \Gplan{}, \Gexec{}, \Gint{}) with utility-gated dispatch and event-driven fallback. For the single-agent case, we prove monotonic stability, execution safety, eventual stabilization, fallback completeness, and equivalence to a gear-constrained Markov decision process. For multi-agent cyber-physical systems (CPS), we apply the established \smart{} managed-autonomy lifecycle and map runtime evidence into its four governance states (\Stable{}/\Meta{}/\Assisted{}/\Regulated{}). Consensus gating, swarm-level Lyapunov analysis, per-agent gear authority, and rendezvous control provide distributed safety and stability guarantees, including zero collision under the stated assumptions. We evaluate the resulting runtime on a three-agent UR5 robotic assembly cell using fault magnitudes calibrated from the NIST \emph{Degradation Measurement of Robot Arm Position Accuracy} dataset across 10,000 Monte Carlo episodes. It achieves a 99.6\% anomaly detection rate versus 2.1\% for the single-agent baseline, reduces detection latency by $3.5\times$, and supplies a formal physical-workspace safety certificate. The execution gears act as micro-level permissions beneath the \smart{} runtime governance states, separating action control from autonomy governance.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-01T02:21:38Z</published>
+    <arxiv:comment>to be submitted to a Journal, 18 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Srini Ramaswamy</name>
+    </author>
+    <author>
+      <name>Wang Miaosheng</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.22949v1</id>
+    <title>Beyond Single-Model Injection: A Threat Model and Defense Architecture for Prompt Injection in Multi-Agent Systems</title>
+    <updated>2026-09-19T11:06:14Z</updated>
+    <link href="https://arxiv.org/abs/2609.22949v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.22949v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Existing prompt injection research focuses on single-model chatbot scenarios, where an attacker manipulates one LLM through crafted input. Multi-agent systems amplify this threat through three mechanisms absent from single-model settings: inter-agent message passing creates injection channels invisible to perimeter defenses, shared tool access enables privilege escalation across agent boundaries, and trust propagation allows a compromised agent to influence upstream orchestrators. We construct a threat model enumerating 14 attack vectors across four categories: direct injection via user input (3 vectors), indirect injection via tool outputs (4 vectors), inter-agent injection via message passing (4 vectors), and cascading injection through orchestrator manipulation (3 vectors). Testing all 14 vectors against a 6-agent production-representative system, we find that 67% of agents are vulnerable to at least one scope violation even with system-prompt-level guardrails, and indirect injection via tool outputs succeeds in 43% of attempts. Four architectural defenses reduce overall injection success from 31.2% to 4.2%: message signing with provenance tracking (inter-agent injection down 91%), input/output sanitization at agent boundaries (indirect injection down 78%), privilege-scoped tool access per agent role (privilege escalation eliminated entirely), and anomaly detection on inter-agent communication patterns (84% of cascading attempts caught).</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-19T11:06:14Z</published>
+    <arxiv:comment>Accepted at the AIWILD Workshop, ICML 2026. Camera-ready version</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Rudrendu Kumar Paul</name>
+    </author>
+    <author>
+      <name>Sourav Nandy</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2601.18754v1</id>
+    <title>$α^3$-SecBench: A Large-Scale Evaluation Suite of Security, Resilience, and Trust for LLM-based UAV Agents over 6G Networks</title>
+    <updated>2026-01-26T18:25:07Z</updated>
+    <link href="https://arxiv.org/abs/2601.18754v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.18754v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Autonomous unmanned aerial vehicle (UAV) systems are increasingly deployed in safety-critical, networked environments where they must operate reliably in the presence of malicious adversaries. While recent benchmarks have evaluated large language model (LLM)-based UAV agents in reasoning, navigation, and efficiency, systematic assessment of security, resilience, and trust under adversarial conditions remains largely unexplored, particularly in emerging 6G-enabled settings.
+  We introduce $α^{3}$-SecBench, the first large-scale evaluation suite for assessing the security-aware autonomy of LLM-based UAV agents under realistic adversarial interference. Building on multi-turn conversational UAV missions from $α^{3}$-Bench, the framework augments benign episodes with 20,000 validated security overlay attack scenarios targeting seven autonomy layers, including sensing, perception, planning, control, communication, edge/cloud infrastructure, and LLM reasoning. $α^{3}$-SecBench evaluates agents across three orthogonal dimensions: security (attack detection and vulnerability attribution), resilience (safe degradation behavior), and trust (policy-compliant tool usage).
+  We evaluate 23 state-of-the-art LLMs from major industrial providers and leading AI labs using thousands of adversarially augmented UAV episodes sampled from a corpus of 113,475 missions spanning 175 threat types. While many models reliably detect anomalous behavior, effective mitigation, vulnerability attribution, and trustworthy control actions remain inconsistent. Normalized overall scores range from 12.9% to 57.1%, highlighting a significant gap between anomaly detection and security-aware autonomous decision-making. We release $α^{3}$-SecBench on GitHub: https://github.com/maferrag/AlphaSecBench</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-26T18:25:07Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Mohamed Amine Ferrag</name>
+    </author>
+    <author>
+      <name>Abderrahmane Lakas</name>
+    </author>
+    <author>
+      <name>Merouane Debbah</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.15546v1</id>
+    <title>Enforcing Cybersecurity Constraints for LLM-driven Robot Agents for Online Transactions</title>
+    <updated>2025-03-17T01:01:10Z</updated>
+    <link href="https://arxiv.org/abs/2503.15546v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2503.15546v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The integration of Large Language Models (LLMs) into autonomous robotic agents for conducting online transactions poses significant cybersecurity challenges. This study aims to enforce robust cybersecurity constraints to mitigate the risks associated with data breaches, transaction fraud, and system manipulation. The background focuses on the rise of LLM-driven robotic systems in e-commerce, finance, and service industries, alongside the vulnerabilities they introduce. A novel security architecture combining blockchain technology with multi-factor authentication (MFA) and real-time anomaly detection was implemented to safeguard transactions. Key performance metrics such as transaction integrity, response time, and breach detection accuracy were evaluated, showing improved security and system performance. The results highlight that the proposed architecture reduced fraudulent transactions by 90%, improved breach detection accuracy to 98%, and ensured secure transaction validation within a latency of 0.05 seconds. These findings emphasize the importance of cybersecurity in the deployment of LLM-driven robotic systems and suggest a framework adaptable to various online platforms.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-03-17T01:01:10Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Shraddha Pradipbhai Shah</name>
+    </author>
+    <author>
+      <name>Aditya Vilas Deshpande</name>
+    </author>
+    <arxiv:doi>10.1109/ICDSCNC62492.2024.10939862</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1109/ICDSCNC62492.2024.10939862" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.28843v1</id>
+    <title>Blockchain-Enabled Artificial Intelligence and AI Agents for Secure Data Sharing and Cybersecurity Applications</title>
+    <updated>2026-09-23T23:20:47Z</updated>
+    <link href="https://arxiv.org/abs/2609.28843v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.28843v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Blockchain and artificial intelligence (AI) are converging into a single infrastructural layer for securing data sharing, model integrity, and autonomous decision-making across distributed systems. This paper presents a meta-synthesis that draws together four constituent studies covering adversarial machine learning, AI-powered anomaly detection in cloud environments, automated vulnerability patching by multi-agent large language model (LLM) pipelines, and the broader landscape of securing AI systems across their lifecycle and situates their findings within the emerging literature on blockchain-enabled AI and autonomous AI agents. Each constituent study addresses a distinct point of failure in modern AI-driven security operations: the integrity of training data and model behavior, the reliability of real-time monitoring, and the trustworthiness of automated code remediation. We argue that blockchain's properties of immutability, decentralized consensus, and verifiable provenance directly address a gap common to all three: the difficulty of establishing trust in data, models, and autonomous agents that operate without a central authority. Building on real-world research on blockchain-secured data sharing, federated learning, and multi-agent coordination, we propose a layered reference architecture that couples adversarially hardened models, blockchain-anchored data provenance, AI-driven anomaly detection, and smart-contract-governed multi-agent remediation. We conclude by identifying open problems in scalability, privacy-transparency trade-offs, and the governance of autonomous agents that must be resolved before such integrated systems can be trusted in production-critical environments.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-23T23:20:47Z</published>
+    <arxiv:comment>published in International Journal of Scientific Research and Management (IJSRM) , published date : August 6, 2026, issue : Vol. 14, No. 08, (2026), pages : 2972-2978, doi : 10.18535/ijsrm/v14i08.ec03</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <arxiv:journal_ref>International Journal of Scientific Research and Management, Vol. 14, No. 08, 2026</arxiv:journal_ref>
+    <author>
+      <name>Harsh Verma</name>
+    </author>
+    <arxiv:doi>10.18535/ijsrm/v14i08.ec03</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.18535/ijsrm/v14i08.ec03" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.01498v1</id>
+    <title>TimeSage-MT: A Multi-Turn Benchmark for Evaluating Agentic Time Series Reasoning</title>
+    <updated>2026-05-31T23:34:35Z</updated>
+    <link href="https://arxiv.org/abs/2606.01498v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.01498v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Time series data inform critical decisions across many real-world domains. While large language model (LLM) agents can analyze data through natural language and tools, it remains unclear whether they can conduct reliable time series analysis across multi-turn conversations. Existing benchmarks focus on single-step tasks such as forecasting and anomaly detection, overlooking practical workflows where user goals evolve, agents must build on prior analyses, and conclusions emerge from accumulated evidence. In this work, we introduce TimeSage-MT, a multi-turn benchmark for agentic time series reasoning with 240 tasks and 2,680 dialogue turns across 8 real-world domains, spanning basic exploration to decision-oriented analysis. TimeSage-MT is built through a reproducible pipeline that converts real-world time series data into multi-turn conversations with verifiable answers. It provides a unified evaluation protocol and public leaderboard for comparing time series agentic systems. To demonstrate the benchmark's utility, we evaluate frontier LLMs alongside TimeSage, a novel structured agent equipped with a comprehensive time series skill library. The results show sharp performance drops on decision-oriented tasks, driven by failures in memory, uncertainty handling, and domain-based decision making. TimeSage-MT exposes critical gaps in current agentic reasoning and provides a rigorous foundation for future development.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-31T23:34:35Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Yaxuan Kong</name>
+    </author>
+    <author>
+      <name>Qingren Yao</name>
+    </author>
+    <author>
+      <name>Yuqi Nie</name>
+    </author>
+    <author>
+      <name>Yichen Li</name>
+    </author>
+    <author>
+      <name>Yilei Shao</name>
+    </author>
+    <author>
+      <name>Stefan Zohren</name>
+    </author>
+    <author>
+      <name>Anna Vettoruzzo</name>
+    </author>
+    <author>
+      <name>Joaquin Vanschoren</name>
+    </author>
+    <author>
+      <name>Ming Jin</name>
+    </author>
+    <author>
+      <name>Qingsong Wen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2601.14601v1</id>
+    <title>Holmes: An Evidence-Grounded LLM Agent for Auditable DDoS Investigation in Cloud Networks</title>
+    <updated>2026-01-21T02:39:46Z</updated>
+    <link href="https://arxiv.org/abs/2601.14601v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.14601v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Cloud environments face frequent DDoS threats due to centralized resources and broad attack surfaces. Modern cloud-native DDoS attacks further evolve rapidly and often blend multi-vector strategies, creating an operational dilemma: defenders need wire-speed monitoring while also requiring explainable, auditable attribution for response. Existing rule-based and supervised-learning approaches typically output black-box scores or labels, provide limited evidence chains, and generalize poorly to unseen attack variants; meanwhile, high-quality labeled data is often difficult to obtain in cloud settings.
+  We present Holmes (DDoS Detective), an LLM-based DDoS detection agent that reframes the model as a virtual SRE investigator rather than an end-to-end classifier. Holmes couples a funnel-like hierarchical workflow (counters/sFlow for continuous sensing and triage; PCAP evidence collection triggered only on anomaly windows) with an Evidence Pack abstraction that converts binary packets into compact, reproducible, high-signal structured evidence. On top of this evidence interface, Holmes enforces a structure-first investigation protocol and strict JSON/quotation constraints to produce machine-consumable reports with auditable evidence anchors.
+  We evaluate Holmes on CICDDoS2019 reflection/amplification attacks and script-triggered flooding scenarios. Results show that Holmes produces attribution decisions grounded in salient evidence anchors across diverse attack families, and when errors occur, its audit logs make the failure source easy to localize, demonstrating the practicality of an LLM agent for cost-controlled and traceable DDoS investigation in cloud operations.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.NI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-21T02:39:46Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Haodong Chen</name>
+    </author>
+    <author>
+      <name>Ziheng Zhang</name>
+    </author>
+    <author>
+      <name>Jinghui Jiang</name>
+    </author>
+    <author>
+      <name>Qiang Su</name>
+    </author>
+    <author>
+      <name>Qiao Xiang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.19266v2</id>
+    <title>Toward Auditable Fraud Detection: Combining Graph Features, Model Explanations, and Agentic Case Investigation</title>
+    <updated>2026-11-08T11:35:37Z</updated>
+    <link href="https://arxiv.org/abs/2607.19266v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.19266v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Fraud detection systems must scale with rising transaction volume while remaining explainable and reviewable. We study a layered pipeline on the PaySim dataset that combines a gradient-boosted classifier, graph-derived structural features, an autoencoder-based anomaly signal, TreeSHAP explanations, and a bounded LLM investigation agent applied to cases the classifier scores uncertainly. Before any model comparison, we identify and remove a simulator-specific balance shortcut that would otherwise inflate baseline performance. After this correction, neither the graph features nor the anomaly signal improves Average Precision on the full test set. Both, however, rank fraud better within the subset of cases receiving intermediate baseline scores. In a controlled experiment with injected multi-account fraud rings, engineered structural features recover all injected test transactions, while the tabular baseline misses roughly a quarter of them. The investigation agent underperforms direct thresholding of the classifier it relies on, reaching 65.0% accuracy against 71.7% on a balanced 60-case sample, despite having access to model explanations, graph context, and retrieved reference cases. Of the eight decisions the agent changed, six replaced correct classifier outputs with errors, and it produced a coherent written rationale in each case. An exploratory disagreement-based escalation rule flagged two of these agent errors for human review without flagging any correct decision. We conclude that each component of a layered fraud system contributes only under specific conditions, and that a plausible rationale from an investigation agent is not evidence of a better decision.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-21T16:37:41Z</published>
+    <arxiv:comment>15 pages, 3 figures, 3 tables. Accepted at the 2026 Pre-ICIS SIGDSA Symposium, Lisbon, December 2026. Code available at https://github.com/rahil1303/auditable-fraud-investigation</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Rahil Sharma</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2508.06189v2</id>
+    <title>MA-CBP: A Criminal Behavior Prediction Framework Based on Multi-Agent Asynchronous Collaboration</title>
+    <updated>2025-08-19T11:14:11Z</updated>
+    <link href="https://arxiv.org/abs/2508.06189v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2508.06189v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>With the acceleration of urbanization, criminal behavior in public scenes poses an increasingly serious threat to social security. Traditional anomaly detection methods based on feature recognition struggle to capture high-level behavioral semantics from historical information, while generative approaches based on Large Language Models (LLMs) often fail to meet real-time requirements. To address these challenges, we propose MA-CBP, a criminal behavior prediction framework based on multi-agent asynchronous collaboration. This framework transforms real-time video streams into frame-level semantic descriptions, constructs causally consistent historical summaries, and fuses adjacent image frames to perform joint reasoning over long- and short-term contexts. The resulting behavioral decisions include key elements such as event subjects, locations, and causes, enabling early warning of potential criminal activity. In addition, we construct a high-quality criminal behavior dataset that provides multi-scale language supervision, including frame-level, summary-level, and event-level semantic annotations. Experimental results demonstrate that our method achieves superior performance on multiple datasets and offers a promising solution for risk warning in urban public safety scenarios.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-08-08T10:12:00Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Cheng Liu</name>
+    </author>
+    <author>
+      <name>Daou Zhang</name>
+    </author>
+    <author>
+      <name>Tingxu Liu</name>
+    </author>
+    <author>
+      <name>Yuhan Wang</name>
+    </author>
+    <author>
+      <name>Jinyang Chen</name>
+    </author>
+    <author>
+      <name>Yuexuan Li</name>
+    </author>
+    <author>
+      <name>Xinying Xiao</name>
+    </author>
+    <author>
+      <name>Chenbo Xin</name>
+    </author>
+    <author>
+      <name>Ziru Wang</name>
+    </author>
+    <author>
+      <name>Weichao Wu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.13325v1</id>
+    <title>Auditing Cascading Risks in Multi-Agent Systems via Semantic-Geometric Co-evolution</title>
+    <updated>2026-03-04T16:45:26Z</updated>
+    <link href="https://arxiv.org/abs/2603.13325v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.13325v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language model (LLM)-based Multi-Agent Systems (MAS) are prone to cascading risks, where early-stage interactions remain semantically fluent and policy-compliant, yet the underlying interaction dynamics begin to distort in ways that amplify latent instability or misalignment. Traditional auditing methods that focus on per-message semantic content are inherently reactive and lagging, failing to capture these early structural precursors. In this paper, we propose a principled framework for cascading-risk detection grounded in semantic--geometric co-evolution. We model MAS interactions as dynamic graphs and introduce Ollivier--Ricci Curvature (ORC) -- a discrete geometric measure -- to characterize information redundancy and bottleneck formation in communication topologies. By coupling semantic flow signals with graph geometry, the framework learns the normal co-evolutionary dynamics of trusted collaboration and treats deviations from this coupled manifold as early-warning signals. Experiments on a suite of cascading-risk scenarios aligned with the risk category demonstrate that curvature anomalies systematically precede explicit semantic violations by several interaction turns, enabling proactive intervention. Furthermore, the local nature of Ricci curvature provides principled interpretability for root-cause attribution, identifying specific agents or links that precipitate the collapse of trustworthy collaboration.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-04T16:45:26Z</published>
+    <arxiv:comment>This work has been accepted to ICLR 2026 Workshop: Principled Design for Trustworthy AI</arxiv:comment>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Zixun Luo</name>
+    </author>
+    <author>
+      <name>Yuhang Fan</name>
+    </author>
+    <author>
+      <name>Hengyu Lin</name>
+    </author>
+    <author>
+      <name>Yufei Li</name>
+    </author>
+    <author>
+      <name>Youzhi Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2406.01364v1</id>
+    <title>BELLS: A Framework Towards Future Proof Benchmarks for the Evaluation of LLM Safeguards</title>
+    <updated>2024-06-03T14:32:30Z</updated>
+    <link href="https://arxiv.org/abs/2406.01364v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2406.01364v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Input-output safeguards are used to detect anomalies in the traces produced by Large Language Models (LLMs) systems. These detectors are at the core of diverse safety-critical applications such as real-time monitoring, offline evaluation of traces, and content moderation. However, there is no widely recognized methodology to evaluate them. To fill this gap, we introduce the Benchmarks for the Evaluation of LLM Safeguards (BELLS), a structured collection of tests, organized into three categories: (1) established failure tests, based on already-existing benchmarks for well-defined failure modes, aiming to compare the performance of current input-output safeguards; (2) emerging failure tests, to measure generalization to never-seen-before failure modes and encourage the development of more general safeguards; (3) next-gen architecture tests, for more complex scaffolding (such as LLM-agents and multi-agent systems), aiming to foster the development of safeguards that could adapt to future applications for which no safeguard currently exists. Furthermore, we implement and share the first next-gen architecture test, using the MACHIAVELLI environment, along with an interactive visualization of the dataset.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-06-03T14:32:30Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Diego Dorn</name>
+    </author>
+    <author>
+      <name>Alexandre Variengien</name>
+    </author>
+    <author>
+      <name>Charbel-Raphaël Segerie</name>
+    </author>
+    <author>
+      <name>Vincent Corruble</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2508.04714v2</id>
+    <title>Prescriptive Agents based on RAG for Automated Maintenance (PARAM)</title>
+    <updated>2025-08-20T19:08:28Z</updated>
+    <link href="https://arxiv.org/abs/2508.04714v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2508.04714v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Industrial machinery maintenance requires timely intervention to prevent catastrophic failures and optimize operational efficiency. This paper presents an integrated Large Language Model (LLM)-based intelligent system for prescriptive maintenance that extends beyond traditional anomaly detection to provide actionable maintenance recommendations. Building upon our prior LAMP framework for numerical data analysis, we develop a comprehensive solution that combines bearing vibration frequency analysis with multi agentic generation for intelligent maintenance planning. Our approach serializes bearing vibration data (BPFO, BPFI, BSF, FTF frequencies) into natural language for LLM processing, enabling few-shot anomaly detection with high accuracy. The system classifies fault types (inner race, outer race, ball/roller, cage faults) and assesses severity levels. A multi-agentic component processes maintenance manuals using vector embeddings and semantic search, while also conducting web searches to retrieve comprehensive procedural knowledge and access up-to-date maintenance practices for more accurate and in-depth recommendations. The Gemini model then generates structured maintenance recommendations includes immediate actions, inspection checklists, corrective measures, parts requirements, and timeline specifications. Experimental validation in bearing vibration datasets demonstrates effective anomaly detection and contextually relevant maintenance guidance. The system successfully bridges the gap between condition monitoring and actionable maintenance planning, providing industrial practitioners with intelligent decision support. This work advances the application of LLMs in industrial maintenance, offering a scalable framework for prescriptive maintenance across machinery components and industrial sectors.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-07-28T14:22:19Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Chitranshu Harbola</name>
+    </author>
+    <author>
+      <name>Anupam Purwar</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2504.13399v1</id>
+    <title>Towards a Multi-Agent Vision-Language System for Zero-Shot Novel Hazardous Object Detection for Autonomous Driving Safety</title>
+    <updated>2025-04-18T01:25:02Z</updated>
+    <link href="https://arxiv.org/abs/2504.13399v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2504.13399v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Detecting anomalous hazards in visual data, particularly in video streams, is a critical challenge in autonomous driving. Existing models often struggle with unpredictable, out-of-label hazards due to their reliance on predefined object categories. In this paper, we propose a multimodal approach that integrates vision-language reasoning with zero-shot object detection to improve hazard identification and explanation. Our pipeline consists of a Vision-Language Model (VLM), a Large Language Model (LLM), in order to detect hazardous objects within a traffic scene. We refine object detection by incorporating OpenAI's CLIP model to match predicted hazards with bounding box annotations, improving localization accuracy. To assess model performance, we create a ground truth dataset by denoising and extending the foundational COOOL (Challenge-of-Out-of-Label) anomaly detection benchmark dataset with complete natural language descriptions for hazard annotations. We define a means of hazard detection and labeling evaluation on the extended dataset using cosine similarity. This evaluation considers the semantic similarity between the predicted hazard description and the annotated ground truth for each video. Additionally, we release a set of tools for structuring and managing large-scale hazard detection datasets. Our findings highlight the strengths and limitations of current vision-language-based approaches, offering insights into future improvements in autonomous hazard detection systems. Our models, scripts, and data can be found at https://github.com/mi3labucm/COOOLER.git</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-04-18T01:25:02Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Shashank Shriram</name>
+    </author>
+    <author>
+      <name>Srinivasa Perisetla</name>
+    </author>
+    <author>
+      <name>Aryan Keskar</name>
+    </author>
+    <author>
+      <name>Harsha Krishnaswamy</name>
+    </author>
+    <author>
+      <name>Tonko Emil Westerhof Bossen</name>
+    </author>
+    <author>
+      <name>Andreas Møgelmose</name>
+    </author>
+    <author>
+      <name>Ross Greer</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.20364v1</id>
+    <title>An Approach to Checking Correctness for Agentic Systems</title>
+    <updated>2025-08-19T18:38:47Z</updated>
+    <link href="https://arxiv.org/abs/2509.20364v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.20364v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This paper presents a temporal expression language for monitoring AI agent behavior, enabling systematic error-detection of LLM-based agentic systems that exhibit variable outputs due to stochastic generation processes. Drawing from temporal logic techniques used in hardware verification, this approach monitors execution traces of agent tool calls and state transitions to detect deviations from expected behavioral patterns. Current error-detection approaches rely primarily on text matching of inputs and outputs, which proves fragile due to the natural language variability inherent in LLM responses. The proposed method instead focuses on the sequence of agent actions -- such as tool invocations and inter-agent communications -- allowing verification of system behavior independent of specific textual outputs. The temporal expression language provides assertions that capture correct behavioral patterns across multiple execution scenarios. These assertions serve dual purposes: validating prompt engineering and guardrail effectiveness during development, and providing regression testing when agents are updated with new LLMs or modified logic. The approach is demonstrated using a three-agent system, where agents coordinate to solve multi-step reasoning tasks. When powered by large, capable models, all temporal assertions were satisfied across many test runs. However, when smaller models were substituted in two of the three agents, executions violated behavioral assertions, primarily due to improper tool sequencing and failed coordination handoffs. The temporal expressions successfully flagged these anomalies, demonstrating the method's effectiveness for detecting behavioral regressions in production agentic systems. This approach provides a foundation for systematic monitoring of AI agent reliability as these systems become increasingly deployed in critical applications.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.ET" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-08-19T18:38:47Z</published>
+    <arxiv:comment>15 pages, 5 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Thomas J Sheffler</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.15635v1</id>
+    <title>MicroRCA-Agent: Microservice Root Cause Analysis Method Based on Large Language Model Agents</title>
+    <updated>2025-09-19T05:57:03Z</updated>
+    <link href="https://arxiv.org/abs/2509.15635v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.15635v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This paper presents MicroRCA-Agent, an innovative solution for microservice root cause analysis based on large language model agents, which constructs an intelligent fault root cause localization system with multimodal data fusion. The technical innovations are embodied in three key aspects: First, we combine the pre-trained Drain log parsing algorithm with multi-level data filtering mechanism to efficiently compress massive logs into high-quality fault features. Second, we employ a dual anomaly detection approach that integrates Isolation Forest unsupervised learning algorithms with status code validation to achieve comprehensive trace anomaly identification. Third, we design a statistical symmetry ratio filtering mechanism coupled with a two-stage LLM analysis strategy to enable full-stack phenomenon summarization across node-service-pod hierarchies. The multimodal root cause analysis module leverages carefully designed cross-modal prompts to deeply integrate multimodal anomaly information, fully exploiting the cross-modal understanding and logical reasoning capabilities of large language models to generate structured analysis results encompassing fault components, root cause descriptions, and reasoning trace. Comprehensive ablation studies validate the complementary value of each modal data and the effectiveness of the system architecture. The proposed solution demonstrates superior performance in complex microservice fault scenarios, achieving a final score of 50.71. The code has been released at: https://github.com/tangpan360/MicroRCA-Agent.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-19T05:57:03Z</published>
+    <arxiv:comment>18 pages, 22 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Pan Tang</name>
+    </author>
+    <author>
+      <name>Shixiang Tang</name>
+    </author>
+    <author>
+      <name>Huanqi Pu</name>
+    </author>
+    <author>
+      <name>Zhiqing Miao</name>
+    </author>
+    <author>
+      <name>Zhixing Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2504.04187v1</id>
+    <title>AttackLLM: LLM-based Attack Pattern Generation for an Industrial Control System</title>
+    <updated>2025-04-05T14:11:47Z</updated>
+    <link href="https://arxiv.org/abs/2504.04187v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2504.04187v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Malicious examples are crucial for evaluating the robustness of machine learning algorithms under attack, particularly in Industrial Control Systems (ICS). However, collecting normal and attack data in ICS environments is challenging due to the scarcity of testbeds and the high cost of human expertise. Existing datasets are often limited by the domain expertise of practitioners, making the process costly and inefficient. The lack of comprehensive attack pattern data poses a significant problem for developing robust anomaly detection methods. In this paper, we propose a novel approach that combines data-centric and design-centric methodologies to generate attack patterns using large language models (LLMs). Our results demonstrate that the attack patterns generated by LLMs not only surpass the quality and quantity of those created by human experts but also offer a scalable solution that does not rely on expensive testbeds or pre-existing attack examples. This multi-agent based approach presents a promising avenue for enhancing the security and resilience of ICS environments.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-04-05T14:11:47Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Chuadhry Mujeeb Ahmed</name>
+      <arxiv:affiliation>Newcastle University UK</arxiv:affiliation>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.16346v1</id>
+    <title>PropGuard: Safeguarding LLM-MAS via Propagation-Aware Exploration and Remediation</title>
+    <updated>2026-05-08T03:26:55Z</updated>
+    <link href="https://arxiv.org/abs/2605.16346v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.16346v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM-based multi-agent systems (LLM-MAS) have become a promising paradigm for solving complex tasks through role specialization, tool use, memory, and collaborative reasoning. However, these interactions create new security risks that malicious instructions injected through messages, tools, or memories can propagate across agents and rounds, causing system-level compromise. Existing defenses largely rely on local filtering or graph-based anomaly detection, but they often fail to trace fine-grained propagation paths or remediate contaminated states without disrupting benign collaboration. We propose PropGuard, a propagation-aware framework for safeguarding LLM-MAS. PropGuard constructs a dual-view spatio-temporal graph that combines response-centric risk estimation with full-state evidence preservation. Guided by these risk priors, a GE-GRPO trained inspector sequentially explores the full-state graph to recover compact suspicious propagation subgraphs. PropGuard then verifies harmful propagation through subgraph-aware diagnosis and applies source-guided remediation to correct upstream contamination and replay affected downstream interactions. Experiments across four communication architectures and five attack settings demonstrate that PropGuard consistently lowers attack success while maintaining high task-level defense success, achieving a favorable effectiveness--efficiency trade-off.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-08T03:26:55Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Bingyu Yan</name>
+    </author>
+    <author>
+      <name>Xiaoming Zhang</name>
+    </author>
+    <author>
+      <name>Jinyu Hou</name>
+    </author>
+    <author>
+      <name>Chaozhuo Li</name>
+    </author>
+    <author>
+      <name>Ziyi Zhou</name>
+    </author>
+    <author>
+      <name>Xiaozhe Zhang</name>
+    </author>
+    <author>
+      <name>Litian Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.21634v2</id>
+    <title>MobiLLM: An Agentic AI Framework for Closed-Loop Threat Mitigation in 6G Open RANs</title>
+    <updated>2025-10-03T17:43:57Z</updated>
+    <link href="https://arxiv.org/abs/2509.21634v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.21634v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The evolution toward 6G networks is being accelerated by the Open Radio Access Network (O-RAN) paradigm -- an open, interoperable architecture that enables intelligent, modular applications across public telecom and private enterprise domains. While this openness creates unprecedented opportunities for innovation, it also expands the attack surface, demanding resilient, low-cost, and autonomous security solutions. Legacy defenses remain largely reactive, labor-intensive, and inadequate for the scale and complexity of next-generation systems. Current O-RAN applications focus mainly on network optimization or passive threat detection, with limited capability for closed-loop, automated response.
+  To address this critical gap, we present an agentic AI framework for fully automated, end-to-end threat mitigation in 6G O-RAN environments. MobiLLM orchestrates security workflows through a modular multi-agent system powered by Large Language Models (LLMs). The framework features a Threat Analysis Agent for real-time data triage, a Threat Classification Agent that uses Retrieval-Augmented Generation (RAG) to map anomalies to specific countermeasures, and a Threat Response Agent that safely operationalizes mitigation actions via O-RAN control interfaces. Grounded in trusted knowledge bases such as the MITRE FiGHT framework and 3GPP specifications, and equipped with robust safety guardrails, MobiLLM provides a blueprint for trustworthy AI-driven network security. Initial evaluations demonstrate that MobiLLM can effectively identify and orchestrate complex mitigation strategies, significantly reducing response latency and showcasing the feasibility of autonomous security operations in 6G.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.NI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-25T21:49:43Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Prakhar Sharma</name>
+    </author>
+    <author>
+      <name>Haohuang Wen</name>
+    </author>
+    <author>
+      <name>Vinod Yegneswaran</name>
+    </author>
+    <author>
+      <name>Ashish Gehani</name>
+    </author>
+    <author>
+      <name>Phillip Porras</name>
+    </author>
+    <author>
+      <name>Zhiqiang Lin</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2512.03180v1</id>
+    <title>AGENTSAFE: A Unified Framework for Ethical Assurance and Governance in Agentic AI</title>
+    <updated>2025-12-02T19:28:23Z</updated>
+    <link href="https://arxiv.org/abs/2512.03180v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2512.03180v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The rapid deployment of large language model (LLM)-based agents introduces a new class of risks, driven by their capacity for autonomous planning, multi-step tool integration, and emergent interactions. It raises some risk factors for existing governance approaches as they remain fragmented: Existing frameworks are either static taxonomies driven; however, they lack an integrated end-to-end pipeline from risk identification to operational assurance, especially for an agentic platform. We propose AGENTSAFE, a practical governance framework for LLM-based agentic systems. The framework operationalises the AI Risk Repository into design, runtime, and audit controls, offering a governance framework for risk identification and assurance. The proposed framework, AGENTSAFE, profiles agentic loops (plan -&gt; act -&gt; observe -&gt; reflect) and toolchains, and maps risks onto structured taxonomies extended with agent-specific vulnerabilities. It introduces safeguards that constrain risky behaviours, escalates high-impact actions to human oversight, and evaluates systems through pre-deployment scenario banks spanning security, privacy, fairness, and systemic safety. During deployment, AGENTSAFE ensures continuous governance through semantic telemetry, dynamic authorization, anomaly detection, and interruptibility mechanisms. Provenance and accountability are reinforced through cryptographic tracing and organizational controls, enabling measurable, auditable assurance across the lifecycle of agentic AI systems. The key contributions of this paper are: (1) a unified governance framework that translates risk taxonomies into actionable design, runtime, and audit controls; (2) an Agent Safety Evaluation methodology that provides measurable pre-deployment assurance; and (3) a set of runtime governance and accountability mechanisms that institutionalise trust in agentic AI ecosystems.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.ET" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-12-02T19:28:23Z</published>
+    <arxiv:comment>12 pages, 1 figure</arxiv:comment>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Rafflesia Khan</name>
+    </author>
+    <author>
+      <name>Declan Joyce</name>
+    </author>
+    <author>
+      <name>Mansura Habiba</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2507.21696v4</id>
+    <title>Edge Agentic AI Framework for Autonomous Network Optimisation in O-RAN</title>
+    <updated>2025-08-27T09:28:59Z</updated>
+    <link href="https://arxiv.org/abs/2507.21696v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2507.21696v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The deployment of AI agents within legacy Radio Access Network (RAN) infrastructure poses significant safety and reliability challenges for future 6G networks. This paper presents a novel Edge AI framework for autonomous network optimisation in Open RAN environments, addressing these challenges through three core innovations: (1) a persona-based multi-tools architecture enabling distributed, context-aware decision-making; (2) proactive anomaly detection agent powered by traffic predictive tool; and (3) a safety, aligned reward mechanism that balances performance with operational stability. Integrated into the RAN Intelligent Controller (RIC), our framework leverages multimodal data fusion, including network KPIs, a traffic prediction model, and external information sources, to anticipate and respond to dynamic network conditions. Extensive evaluation using realistic 5G scenarios demonstrates that the edge framework achieves zero network outages under high-stress conditions, compared to 8.4% for traditional fixed-power networks and 3.3% for large language model (LLM) agent-based approaches, while maintaining near real-time responsiveness and consistent QoS. These results establish that, when equipped with the right tools and contextual awareness, AI agents can be safely and effectively deployed in critical network infrastructure, laying the framework for intelligent and autonomous 5G and beyond network operations.</summary>
+    <category term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-07-29T11:20:03Z</published>
+    <arxiv:primary_category term="eess.SP"/>
+    <arxiv:journal_ref>IEEE International Symposium on Personal, Indoor and Mobile Radio Communications (PIMRC), 2025</arxiv:journal_ref>
+    <author>
+      <name>Abdelaziz Salama</name>
+    </author>
+    <author>
+      <name>Zeinab Nezami</name>
+    </author>
+    <author>
+      <name>Mohammed M. H. Qazzaz</name>
+    </author>
+    <author>
+      <name>Maryam Hafeez</name>
+    </author>
+    <author>
+      <name>Syed Ali Raza Zaidi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.05440v1</id>
+    <title>LanG -- A Governance-Aware Agentic AI Platform for Unified Security Operations</title>
+    <updated>2026-04-07T05:22:25Z</updated>
+    <link href="https://arxiv.org/abs/2604.05440v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.05440v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Modern Security Operations Centers struggle with alert fatigue, fragmented tooling, and limited cross-source event correlation. Challenges that current Security Information Event Management and Extended Detection and Response systems only partially address through fragmented tools. This paper presents the LLM-assisted network Governance (LanG), an open-source, governance-aware agentic AI platform for unified security operations contributing: (i) a Unified Incident Context Record with a correlation engine (F1 = 87%), (ii) an Agentic AI Orchestrator on LangGraph with human-in-the-loop checkpoints, (iii) an LLM-based Rule Generator finetuned on four base models producing deployable Snort 2/3, Suricata, and YARA rules (average acceptance rate 96.2%), (iv) a Three-Phase Attack Reconstructor combining Louvain community detection, LLM-driven hypothesis generation, and Bayesian scoring (87.5% kill-chain accuracy), and (v) a layered Governance-MCP-Agentic AI-Security architecture where all tools are exposed via the Model Context Protocol, governed by an AI Governance Policy Engine with a two-layer guardrail pipeline (regex + Llama Prompt Guard 2 semantic classifier, achieving 98.1% F1 score with experimental zero false positives). Designed for Managed Security Service Providers, the platform supports multi-tenant isolation, role-based access, and fully local deployment. Finetuned anomaly and threat detectors achieve weighted F1 scores of 99.0% and 91.0%, respectively, in intrusion-detection benchmarks, running inferences in $\approx$21 ms with a machine-side mean time to detect of 1.58 s, and the rule generator exceeds 91% deployability on live IDS engines. A systematic comparison against eight SOC platforms confirms that LanG uniquely satisfies multiple industrial capabilities all in one open-source tool, while enforcing selected AI governance policies.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-07T05:22:25Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Anes Abdennebi</name>
+    </author>
+    <author>
+      <name>Nadjia Kara</name>
+    </author>
+    <author>
+      <name>Laaziz Lahlou</name>
+    </author>
+    <author>
+      <name>Hakima Ould-Slimane</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.01925v2</id>
+    <title>QoEReasoner: An Agentic Reasoning Framework for Automated and Explainable QoE Diagnosis in RANs</title>
+    <updated>2026-06-02T13:36:36Z</updated>
+    <link href="https://arxiv.org/abs/2606.01925v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.01925v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Diagnosing Quality-of-Experience (QoE) degradations in operational Radio Access Networks (RANs) is a critical but notoriously complex task, traditionally requiring labor-intensive expert analysis over high-dimensional, cross-layer telemetry. While Large Language Models (LLMs) offer unprecedented reasoning capabilities, they are fundamentally unsuited for raw RANs troubleshooting: they fail at numeric time-series analysis, hallucinate protocol-violating causal links, and lack the stateful rigor required for multi-step fault localization. To bridge this gap, we present QoEReasoner, an end-to-end, LLM-driven agentic system designed for automated and explainable QoE diagnosis. QoEReasoner tames the inherent unpredictability of LLMs by grounding their reasoning in the physical realities of the network. It employs deterministic tools to reliably translate raw numeric KPIs into structured evidence, enforces protocol-consistent fault propagation through a domain-specific Knowledge Base, and leverages a Historical Bank of expert-validated cases to guide hypothesis generation. A stateful central planner orchestrates this closed-loop process across anomaly detection, causal tracing, and root-cause localization. Evaluations on real-world operational RANs datasets demonstrate that QoEReasoner outperforms strong baselines by 18\%-40\% in accuracy across multiple diagnostic tasks. Furthermore, it reduces diagnostic time from approximately 30 minutes of manual expert analysis to just 3 minutes per session, delivering highly interpretable, expert-grade reports while remaining robust across diverse LLM backbones.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-01T08:58:07Z</published>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Qizhe Li</name>
+    </author>
+    <author>
+      <name>Haolong Chen</name>
+    </author>
+    <author>
+      <name>Shan Dai</name>
+    </author>
+    <author>
+      <name>Zhuo Li</name>
+    </author>
+    <author>
+      <name>Zhiwei Hu</name>
+    </author>
+    <author>
+      <name>Xuan Li</name>
+    </author>
+    <author>
+      <name>Guangxu Zhu</name>
+    </author>
+    <author>
+      <name>Qingjiang Shi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2507.22711v1</id>
+    <title>OFCnetLLM: Large Language Model for Network Monitoring and Alertness</title>
+    <updated>2025-07-30T14:22:42Z</updated>
+    <link href="https://arxiv.org/abs/2507.22711v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2507.22711v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The rapid evolution of network infrastructure is bringing new challenges and opportunities for efficient network management, optimization, and security. With very large monitoring databases becoming expensive to explore, the use of AI and Generative AI can help reduce costs of managing these datasets. This paper explores the use of Large Language Models (LLMs) to revolutionize network monitoring management by addressing the limitations of query finding and pattern analysis. We leverage LLMs to enhance anomaly detection, automate root-cause analysis, and automate incident analysis to build a well-monitored network management team using AI. Through a real-world example of developing our own OFCNetLLM, based on the open-source LLM model, we demonstrate practical applications of OFCnetLLM in the OFC conference network. Our model is developed as a multi-agent approach and is still evolving, and we present early results here.</summary>
+    <category term="cs.NI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-07-30T14:22:42Z</published>
+    <arxiv:primary_category term="cs.NI"/>
+    <author>
+      <name>Hong-Jun Yoon</name>
+    </author>
+    <author>
+      <name>Mariam Kiran</name>
+    </author>
+    <author>
+      <name>Danial Ebling</name>
+    </author>
+    <author>
+      <name>Joe Breen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.20758v1</id>
+    <title>A Topology-Aware, Memory-Centric Architecture that Separates Root-Cause Derivation from Root-Cause Explanation</title>
+    <updated>2026-06-18T09:20:20Z</updated>
+    <link href="https://arxiv.org/abs/2606.20758v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.20758v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Modern microservice deployments fail in ways that are easy to detect and hard to explain. When a fault propagates along service dependencies, alerts fire in floods, dashboards multiply, and the scarce resource, an engineer who understands how the services relate, is consumed reconstructing context that the monitoring stack discarded. We argue that the missing ingredient in autonomous operations is not a better anomaly detector or a larger language model, but operational memory: a persistent, structured representation of how a system normally behaves, how its parts depend on one another, and how it has failed before. We present O PS C ORTEX, a working multi-agent prototype that organizes this memory into four tiers and uses it to separate two tasks the field usually conflates: deriving a root cause and explaining it. Root cause is computed deterministically from a learned dependency graph and the temporal ordering of threshold crossings; a large language model (LLM) is then asked only to explain, confirm, and recommend, using evidence the system has already assembled. We motivate the design with two documented production cascading failures, review representative literature on observability, anomaly detection, graph-based localization, and LLM-assisted diagnosis, and show how each architectural choice maps directly to a failure mode those incidents exhibit. The prototype is validated on an instrumented e-commerce benchmark with eight injectable failure scenarios.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-18T09:20:20Z</published>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Momil Seedat</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.09372v1</id>
+    <title>Enabling Privacy-Preserving Natural Language Access to Industrial Smart Meter Data</title>
+    <updated>2026-11-06T12:11:34Z</updated>
+    <link href="https://arxiv.org/abs/2611.09372v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.09372v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Energy management officers and grid operators increasingly rely on smart meter data for anomaly detection, performance monitoring, and strategic decision-making. However, extracting actionable insights from large-scale, heterogeneous telemetry databases requires advanced SQL and data engineering expertise, creating a critical bottleneck for non-technical personnel. Furthermore, the strict data privacy regulations and security constraints inherent to critical energy infrastructure often prohibit the routing of sensitive consumer data through cloud-based Large Language Models (LLMs). To address these challenges, we present OpenMeter, a schema-agnostic Multi-Agent System (MAS) designed to translate natural language queries into executable code and human-readable insights. This architecture lowers the technical barrier for day-to-day utility operations by empowering non-expert personnel to interact with complex databases through intuitive natural language dialogue, transforming raw telemetry into a highly valuable tool for routine grid workflows and strategic decisions. Multi-scenario ablation studies over this environment demonstrate that full multi-agent orchestration shows its largest observed accuracy gains on resource-constrained local hardware (+6.1 pp EX-R over the strongest single-agent configuration); at frontier scale, individual components retain value but should be enabled selectively, indicating that the cost of full orchestration is justified specifically where privacy demands local execution.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DB" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-06T12:11:34Z</published>
+    <arxiv:comment>9 pages, 1 figure, 6 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Carlos Martín-Abellán</name>
+    </author>
+    <author>
+      <name>Mark Kröll</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.20637v1</id>
+    <title>AEGIS: From Clues to Verdicts -- Graph-Guided Deep Vulnerability Reasoning via Dialectics and Meta-Auditing</title>
+    <updated>2026-03-21T04:12:04Z</updated>
+    <link href="https://arxiv.org/abs/2603.20637v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.20637v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Models (LLMs) are increasingly adopted for vulnerability detection, yet their reasoning remains fundamentally unsound. We identify a root cause shared by both major mitigation paradigms (agent-based debate and retrieval augmentation): reasoning in an ungrounded deliberative space that lacks a bounded, hypothesis-specific evidence base. Without such grounding, agents fabricate cross-function dependencies, and retrieval heuristics supply generic knowledge decoupled from the repository's data-flow topology. Consequently, the resulting conclusions are driven by rhetorical persuasiveness rather than verifiable facts. To ground this deliberation, we present AEGIS, a novel multi-agent framework that shifts detection from ungrounded speculation to forensic verification over a closed factual substrate. Guided by a "From Clue to Verdict" philosophy, AEGIS first identifies suspicious code anomalies (clues), then dynamically reconstructs per-variable dependency chains for each clue via on-demand slicing over a repository-level Code Property Graph. Within this closed evidence boundary, a Verifier Agent constructs competing dialectical arguments for and against exploitability, while an independent Audit Agent scrutinizes every claim against the trace, exercising veto power to prevent hallucinated verdicts. Evaluation on the rigorous PrimeVul dataset demonstrates that AEGIS establishes a new state-of-the-art, achieving 122 Pair-wise Correct Predictions. To our knowledge, this is the first approach to surpass 100 on this benchmark. It reduces the false positive rate by up to 54.40% compared to leading baselines, at an average cost of $0.09 per sample without any task-specific training.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-21T04:12:04Z</published>
+    <arxiv:comment>29 pages, 6 figures, 3 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Sen Fang</name>
+    </author>
+    <author>
+      <name>Weiyuan Ding</name>
+    </author>
+    <author>
+      <name>Zhezhen Cao</name>
+    </author>
+    <author>
+      <name>Zhou Yang</name>
+    </author>
+    <author>
+      <name>Bowen Xu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.22489v1</id>
+    <title>Model Context Protocol Threat Modeling and Analyzing Vulnerabilities to Prompt Injection with Tool Poisoning</title>
+    <updated>2026-03-23T18:59:04Z</updated>
+    <link href="https://arxiv.org/abs/2603.22489v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.22489v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The Model Context Protocol (MCP) has rapidly emerged as a universal standard for connecting AI assistants to external tools and data sources. While MCP simplifies integration between AI applications and various services, it introduces significant security vulnerabilities, particularly on the client side. In this work we conduct threat modelings of MCP implementations using STRIDE (Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege) and DREAD (Damage, Reproducibility, Exploitability, Affected Users, Discoverability) frameworks across five key components: (1) MCP Host and Client, (2) LLM, (3) MCP Server, (4) External Data Stores, and (5) Authorization Server. This comprehensive analysis reveals tool poisoning-where malicious instructions are embedded in tool metadata-as the most prevalent and impactful client-side vulnerability. We therefore focus our empirical evaluation on this critical attack vector, providing a systematic comparison of how seven major MCP clients validate and defend against tool poisoning attacks. Our analysis reveals significant security issues with most tested clients due to insufficient static validation and parameter visibility. We propose a multi-layered defense strategy encompassing static metadata analysis, model decision path tracking, behavioral anomaly detection, and user transparency mechanisms. This research addresses a critical gap in MCP security, which has primarily focused on server-side vulnerabilities, and provides actionable recommendations and mitigation strategies for securing AI agent ecosystems.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-23T18:59:04Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Charoes Huang</name>
+    </author>
+    <author>
+      <name>Xin Huang</name>
+    </author>
+    <author>
+      <name>Ngoc Phu Tran</name>
+    </author>
+    <author>
+      <name>Amin Milani Fard</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2601.14912v1</id>
+    <title>AlertGuardian: Intelligent Alert Life-Cycle Management for Large-scale Cloud Systems</title>
+    <updated>2026-01-21T11:51:59Z</updated>
+    <link href="https://arxiv.org/abs/2601.14912v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.14912v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Alerts are critical for detecting anomalies in large-scale cloud systems, ensuring reliability and user experience. However, current systems generate overwhelming volumes of alerts, degrading operational efficiency due to ineffective alert life-cycle management. This paper details the efforts of Company-X to optimize alert life-cycle management, addressing alert fatigue in cloud systems. We propose AlertGuardian, a framework collaborating large language models (LLMs) and lightweight graph models to optimize the alert life-cycle through three phases: Alert Denoise uses graph learning model with virtual noise to filter noise, Alert Summary employs Retrieval Augmented Generation (RAG) with LLMs to create actionable summary, and Alert Rule Refinement leverages multi-agent iterative feedbacks to improve alert rule quality. Evaluated on four real-world datasets from Company-X's services, AlertGuardian significantly mitigates alert fatigue (94.8\% alert reduction ratios) and accelerates fault diagnosis (90.5\% diagnosis accuracy). Moreover, AlertGuardian improves 1,174 alert rules, with 375 accepted by SREs (32% acceptance rate). Finally, we share success stories and lessons learned about alert life-cycle management after the deployment of AlertGuardian in Company-X.</summary>
+    <category term="cs.DC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-21T11:51:59Z</published>
+    <arxiv:comment>Accepted by ASE 2025</arxiv:comment>
+    <arxiv:primary_category term="cs.DC"/>
+    <author>
+      <name>Guangba Yu</name>
+    </author>
+    <author>
+      <name>Genting Mai</name>
+    </author>
+    <author>
+      <name>Rui Wang</name>
+    </author>
+    <author>
+      <name>Ruipeng Li</name>
+    </author>
+    <author>
+      <name>Pengfei Chen</name>
+    </author>
+    <author>
+      <name>Long Pan</name>
+    </author>
+    <author>
+      <name>Ruijie Xu</name>
+    </author>
+  </entry>
+</feed>

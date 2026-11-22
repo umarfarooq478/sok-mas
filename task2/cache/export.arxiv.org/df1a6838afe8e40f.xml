@@ -1,0 +1,1477 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/0IfBgPy2aNXHbL9v0QTgpSxu0b8</id>
+  <title>arXiv Query: search_query=all:cascading AND all:errors AND all:multi-agent AND all:LLM&amp;id_list=&amp;start=0&amp;max_results=100</title>
+  <updated>2026-11-21T23:57:45Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:cascading+AND+(all:errors+AND+(all:multi-agent+AND+all:LLM))&amp;start=0&amp;max_results=100&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>100</opensearch:itemsPerPage>
+  <opensearch:totalResults>48</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2603.04474v2</id>
+    <title>From Spark to Fire: Modeling and Mitigating Error Cascades in LLM-Based Multi-Agent Collaboration</title>
+    <updated>2026-05-11T15:41:00Z</updated>
+    <link href="https://arxiv.org/abs/2603.04474v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.04474v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Model-based Multi-Agent Systems (LLM-MAS) are increasingly applied to complex collaborative scenarios. However, their collaborative mechanisms may cause minor inaccuracies to gradually solidify into system-level false consensus through iteration. Such risks are difficult to trace since errors can propagate and amplify through message dependencies. Existing protections often rely on single-agent validation or require modifications to the collaboration architecture, which can weaken effective information flow and may not align with natural collaboration processes in real tasks. To address this, we propose a propagation dynamics model tailored for LLM-MAS that abstracts collaboration as a directed dependency graph and provides an early-stage risk criterion to characterize amplification risk. Through experiments on six mainstream frameworks, we identify three vulnerability classes: cascade amplification, topological sensitivity, and consensus inertia. We further instantiate an attack where injecting just a single atomic error seed leads to widespread failure. In response, we introduce a genealogy-graph-based governance layer, implemented as a message-layer plugin, that suppresses both endogenous and exogenous error amplification without altering the collaboration architecture. Experiments show that this approach prevents final infection in at least 89% of runs across operating modes and significantly mitigates the cascading spread of minor errors.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-04T11:45:27Z</published>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Yizhe Xie</name>
+    </author>
+    <author>
+      <name>Congcong Zhu</name>
+    </author>
+    <author>
+      <name>Xinyue Zhang</name>
+    </author>
+    <author>
+      <name>Tianqing Zhu</name>
+    </author>
+    <author>
+      <name>Dayong Ye</name>
+    </author>
+    <author>
+      <name>Minfeng Qi</name>
+    </author>
+    <author>
+      <name>Huajie Chen</name>
+    </author>
+    <author>
+      <name>Wanlei Zhou</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.07937v1</id>
+    <title>Hallucination Cascade: Analyzing Error Propagation in Multi-Agent LLM Systems</title>
+    <updated>2026-06-06T01:56:55Z</updated>
+    <link href="https://arxiv.org/abs/2606.07937v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.07937v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Models (LLMs) generate fluent text but remain vulnerable to hallucinations, producing unsupported, inconsistent, and factually incorrect claims. Most prior work treats hallucination as a static property of isolated outputs. In multi-agent LLM systems, however, responses are exchanged across agents, revised through sequential stages, and reused as context for later reasoning. Hallucination, therefore, becomes a dynamic process shaped by interaction history, cascade depth, and model heterogeneity. This paper analyzes hallucination dynamics in multi-agent LLM cascades by tracking claim-level factual inconsistencies across sequential agent interactions. We conduct 500 cascade experiments across 10 knowledge domains using GPT-5.3, DeepSeek-V3, and LLaMA-3-70B-Instruct, yielding 1,250 evaluated responses. Results show that deeper cascades reduce the normalized hallucination score from 0.422 at the first agent to 0.272 at the final agent in 3-agent chains, with an amplification factor of 0.644, indicating net attenuation. This reduction is accompanied by a decline in factual accuracy from 0.789 to 0.769, revealing a trade-off between hallucination suppression and factual preservation. Transition-level analysis shows that each agent-to-agent refinement reduces hallucination by an average of 0.072, with small but consistent losses in factual consistency and response quality. Model-level results reveal reliability-efficiency trade-offs: LLaMA-3-70B-Instruct achieves the lowest hallucination score, whereas GPT-5.3 provides faster generation with a higher hallucination rate. Domain-level analysis shows that hallucination varies with topic complexity, with lower scores in well-grounded scientific domains and higher scores in more abstract domains.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-06T01:56:55Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Saeid Jamshidi</name>
+    </author>
+    <author>
+      <name>Arghavan Moradi Dakhel</name>
+    </author>
+    <author>
+      <name>Kawser Wazed Nafi</name>
+    </author>
+    <author>
+      <name>Foutse Khomh</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.11600v1</id>
+    <title>Error-Propagation Modeling for Failure Attribution in LLM-Based Multi-Agent Systems</title>
+    <updated>2026-10-08T09:44:59Z</updated>
+    <link href="https://arxiv.org/abs/2610.11600v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.11600v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM-based multi-agent systems (MASs) are increasingly used to solve complex tasks through coordinated reasoning, tool use, and interaction with external resources. However, attributing failures in such systems remains challenging because the observed outcome often does not directly reveal the error responsible for the failed execution. In this work, the attribution target is the decisive error, defined as the agent--step pair whose correction would recover the failed execution. Existing approaches largely identify suspicious steps without explicitly modeling how errors propagate across interactions or persist in unresolved loops, making decisive errors difficult to distinguish from downstream failure symptoms. We propose \textbf{E}rror-Propagation \textbf{M}odeling for \textbf{F}ailure \textbf{A}ttribution (\textbf{EMFA}). EMFA constructs a structured representation of the failed trajectory, models both cascading propagation and persistent interaction loops, and uses propagation-aware candidate screening followed by counterfactual verification to identify the decisive agent--step pair. On the Who\&amp;When benchmark, EMFA achieves state-of-the-art step-level attribution accuracy and remains competitive at the agent level. It improves the previous best step-level results by 3.45 and 4.40 percentage points on the Hand-Crafted and Algorithm-Generated subsets, respectively.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-08T09:44:59Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Jiaqi Liao</name>
+    </author>
+    <author>
+      <name>Yuanzhao Zhai</name>
+    </author>
+    <author>
+      <name>Huanxi Liu</name>
+    </author>
+    <author>
+      <name>Xu Zhang</name>
+    </author>
+    <author>
+      <name>Zheming Zhuang</name>
+    </author>
+    <author>
+      <name>Dawei Feng</name>
+    </author>
+    <author>
+      <name>Bo Ding</name>
+    </author>
+    <author>
+      <name>Huaimin Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2601.07367v2</id>
+    <title>FOCAL: A Novel Benchmarking Technique for Multi-modal Agents</title>
+    <updated>2026-03-02T09:44:51Z</updated>
+    <link href="https://arxiv.org/abs/2601.07367v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.07367v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>With the recent advancements in reasoning capabilities, tool calling using MCP servers and Audio Language Models (ALMs), development and integration of multi-modal agents (with voice and text support) has come to the industry forefront. Cascading pipelines for voice agents still play a central role in the industry owing to their superior reasoning capabilities facilitated by LLMs. Although, cascading pipelines often present error propagation through the pipeline. We propose a framework, FOCAL to benchmark end-to-end reasoning, component-wise error propagation and error analysis for automated as well as human-assisted testing of multi-modal agents (voice to voice + text input). We also share two novel metrics viz. Reasoning and Semantic scores to evaluate efficacy of the agent in having meaningful conversations in voice mode.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-12T09:46:06Z</published>
+    <arxiv:comment>We present a framework for evaluation of Multi-modal Agents consisting of Voice-to-voice model components viz. Text to Speech (TTS), Retrieval Augmented Generation (RAG) and Speech-to-text (STT)</arxiv:comment>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Anupam Purwar</name>
+    </author>
+    <author>
+      <name>Aditya Choudhary</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2508.07667v3</id>
+    <title>1-2-3 Check: Enhancing Contextual Privacy in LLM via Multi-Agent Reasoning</title>
+    <updated>2026-02-25T03:04:29Z</updated>
+    <link href="https://arxiv.org/abs/2508.07667v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2508.07667v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Addressing contextual privacy concerns remains challenging in interactive settings where large language models (LLMs) process information from multiple sources (e.g., summarizing meetings with private and public information). We introduce a multi-agent framework that decomposes privacy reasoning into specialized subtasks (extraction, classification), reducing the information load on any single agent while enabling iterative validation and more reliable adherence to contextual privacy norms. To understand how privacy errors emerge and propagate, we conduct a systematic ablation over information-flow topologies, revealing when and why upstream detection mistakes cascade into downstream leakage. Experiments on the ConfAIde and PrivacyLens benchmark with several open-source and closed-sourced LLMs demonstrate that our best multi-agent configuration substantially reduces private information leakage (\textbf{18\%} on ConfAIde and \textbf{19\%} on PrivacyLens with GPT-4o) while preserving the fidelity of public content, outperforming single-agent baselines. These results highlight the promise of principled information-flow design in multi-agent systems for contextual privacy with LLMs.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-08-11T06:34:09Z</published>
+    <arxiv:comment>Accepted at the International Association for AI Safety and Ethics AI (IASEAI) 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Wenkai Li</name>
+    </author>
+    <author>
+      <name>Liwen Sun</name>
+    </author>
+    <author>
+      <name>Zhenxiang Guan</name>
+    </author>
+    <author>
+      <name>Xuhui Zhou</name>
+    </author>
+    <author>
+      <name>Maarten Sap</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2410.19245v3</id>
+    <title>MaCTG: Multi-Agent Collaborative Thought Graph for Automatic Programming</title>
+    <updated>2026-08-29T03:01:56Z</updated>
+    <link href="https://arxiv.org/abs/2410.19245v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2410.19245v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>With the rapid advancement of Large Language Models (LLMs), LLM-based approaches have demonstrated strong problem-solving capabilities across various domains. However, in automatic programming, a single LLM is typically limited to function-level code generation, while multi-agent systems composed of multiple LLMs often suffer from inefficient task planning. This lack of structured coordination can lead to cascading hallucinations, where accumulated errors across agents result in suboptimal workflows and excessive computational costs. To overcome these challenges, we introduce MaCTG (Multi-Agent Collaborative Thought Graph), a novel multi-agent framework that employs a dynamic graph structure to facilitate precise task allocation and controlled collaboration among LLM agents. MaCTG autonomously assigns agent roles based on programming requirements, dynamically refines task distribution through context-aware adjustments, and systematically verifies and integrates project-level code, effectively reducing hallucination errors and improving overall accuracy. MaCTG enhances cost-effectiveness by implementing a hybrid LLM deployment, where proprietary models handle complex reasoning, while open-source models are used for routine coding and validation tasks. To evaluate MaCTG's effectiveness, we applied it to traditional image processing auto-programming tasks, achieving a state-of-the-art accuracy of 83.33%. Additionally, by leveraging its hybrid LLM configuration, MaCTG significantly reduced operational costs by 89.09% compared to existing multi-agent frameworks, demonstrating its efficiency, scalability, and real-world applicability.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-10-25T01:52:15Z</published>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Zixiao Zhao</name>
+    </author>
+    <author>
+      <name>Jing Sun</name>
+    </author>
+    <author>
+      <name>Zhe Hou</name>
+    </author>
+    <author>
+      <name>Zhiyuan Wei</name>
+    </author>
+    <author>
+      <name>Cheng-Hao Cai</name>
+    </author>
+    <author>
+      <name>Miao Qiao</name>
+    </author>
+    <author>
+      <name>Jin Song Dong</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2308.00352v7</id>
+    <title>MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework</title>
+    <updated>2024-11-01T14:36:52Z</updated>
+    <link href="https://arxiv.org/abs/2308.00352v7" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2308.00352v7" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Remarkable progress has been made on automated problem solving through societies of agents based on large language models (LLMs). Existing LLM-based multi-agent systems can already solve simple dialogue tasks. Solutions to more complex tasks, however, are complicated through logic inconsistencies due to cascading hallucinations caused by naively chaining LLMs. Here we introduce MetaGPT, an innovative meta-programming framework incorporating efficient human workflows into LLM-based multi-agent collaborations. MetaGPT encodes Standardized Operating Procedures (SOPs) into prompt sequences for more streamlined workflows, thus allowing agents with human-like domain expertise to verify intermediate results and reduce errors. MetaGPT utilizes an assembly line paradigm to assign diverse roles to various agents, efficiently breaking down complex tasks into subtasks involving many agents working together. On collaborative software engineering benchmarks, MetaGPT generates more coherent solutions than previous chat-based multi-agent systems. Our project can be found at https://github.com/geekan/MetaGPT</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-08-01T07:49:10Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Sirui Hong</name>
+    </author>
+    <author>
+      <name>Mingchen Zhuge</name>
+    </author>
+    <author>
+      <name>Jiaqi Chen</name>
+    </author>
+    <author>
+      <name>Xiawu Zheng</name>
+    </author>
+    <author>
+      <name>Yuheng Cheng</name>
+    </author>
+    <author>
+      <name>Ceyao Zhang</name>
+    </author>
+    <author>
+      <name>Jinlin Wang</name>
+    </author>
+    <author>
+      <name>Zili Wang</name>
+    </author>
+    <author>
+      <name>Steven Ka Shing Yau</name>
+    </author>
+    <author>
+      <name>Zijuan Lin</name>
+    </author>
+    <author>
+      <name>Liyang Zhou</name>
+    </author>
+    <author>
+      <name>Chenyu Ran</name>
+    </author>
+    <author>
+      <name>Lingfeng Xiao</name>
+    </author>
+    <author>
+      <name>Chenglin Wu</name>
+    </author>
+    <author>
+      <name>Jürgen Schmidhuber</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.14997v2</id>
+    <title>OrgForge: A Multi-Agent Simulation Framework for Verifiable Synthetic Corporate Corpora</title>
+    <updated>2026-04-08T22:43:39Z</updated>
+    <link href="https://arxiv.org/abs/2603.14997v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.14997v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Building and evaluating enterprise AI systems requires synthetic organizational corpora that are internally consistent, temporally structured, and cross-artifact traceable. Existing corpora either carry legal constraints or inherit hallucination artifacts from the generating LLMs, silently corrupting results when timestamps or facts contradict across documents and reinforcing those errors during training. We present OrgForge, an open-source multi-agent simulation framework that enforces a strict physics-cognition boundary: a deterministic Python engine maintains a SimEvent ground-truth bus while LLMs generate only surface prose. OrgForge simulates the organizational processes that produce documents, not the documents themselves. Engineers leave mid-sprint, triggering incident handoffs and CRM ownership lapses. Knowledge gaps emerge when under-documented systems break and recover through organic documentation and incident resolution. Customer emails fire only when simulation state warrants contact; silence is verifiable ground truth. A live CRM state machine extends the physics-cognition boundary to the customer boundary, producing cross-system causal cascades spanning engineering incidents, support escalation, deal risk flagging, and SLA-adjusted invoices. The framework generates fifteen interleaved artifact categories traceable to a shared immutable event log. Four graph-dynamic subsystems govern organizational behavior independently of any LLM. An embedding-based ticket assignment system using the Hungarian algorithm makes the simulation domain-agnostic. An empirical evaluation across ten incidents demonstrates a 0.46 absolute improvement in prose-to-ground-truth fidelity over chained LLM baselines, and isolates a consistent hallucination failure mode in which chaining propagates fabricated facts faithfully across documents without correcting them.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-16T09:02:24Z</published>
+    <arxiv:comment>v2: Major revision. Recenters the paper on the simulation framework as the primary contribution. System Architecture substantially expanded (CRM state machine, Knowledge Recovery Arc, multi-pathway knowledge gap detection, embedding-based ticket assignment). Introduction restructured for broader framing. RAG retrieval baselines replaced by cross-document consistency evaluation</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Jeffrey Flynt</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.14688v2</id>
+    <title>AgentTrace: Causal Graph Tracing for Root Cause Analysis in Deployed Multi-Agent Systems</title>
+    <updated>2026-03-27T05:32:27Z</updated>
+    <link href="https://arxiv.org/abs/2603.14688v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.14688v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>As multi-agent AI systems are increasingly deployed in real-world settings - from automated customer support to DevOps remediation - failures become harder to diagnose due to cascading effects, hidden dependencies, and long execution traces. We present AgentTrace, a lightweight causal tracing framework for post-hoc failure diagnosis in deployed multi-agent workflows. AgentTrace reconstructs causal graphs from execution logs, traces backward from error manifestations, and ranks candidate root causes using interpretable structural and positional signals - without requiring LLM inference at debugging time. Across a diverse benchmark of multi-agent failure scenarios designed to reflect common deployment patterns, AgentTrace localizes root causes with high accuracy and sub-second latency, significantly outperforming both heuristic and LLM-based baselines. Our results suggest that causal tracing provides a practical foundation for improving the reliability and trustworthiness of agentic systems in the wild.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-16T00:46:44Z</published>
+    <arxiv:comment>11 pages, 1 figure, 19 tables. Published at ICLR 2026 Workshop on Agents in the Wild. Camera-ready version with revised layout and framework overview figure</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Zhaohui Geoffrey Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.18286v1</id>
+    <title>Single-agent or Multi-agent Systems? Why Not Both?</title>
+    <updated>2025-05-23T18:30:24Z</updated>
+    <link href="https://arxiv.org/abs/2505.18286v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2505.18286v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multi-agent systems (MAS) decompose complex tasks and delegate subtasks to different large language model (LLM) agents and tools. Prior studies have reported the superior accuracy performance of MAS across diverse domains, enabled by long-horizon context tracking and error correction through role-specific agents. However, the design and deployment of MAS incur higher complexity and runtime cost compared to single-agent systems (SAS). Meanwhile, frontier LLMs, such as OpenAI-o3 and Gemini-2.5-Pro, have rapidly advanced in long-context reasoning, memory retention, and tool usage, mitigating many limitations that originally motivated MAS designs. In this paper, we conduct an extensive empirical study comparing MAS and SAS across various popular agentic applications. We find that the benefits of MAS over SAS diminish as LLM capabilities improve, and we propose efficient mechanisms to pinpoint the error-prone agent in MAS. Furthermore, the performance discrepancy between MAS and SAS motivates our design of a hybrid agentic paradigm, request cascading between MAS and SAS, to improve both efficiency and capability. Our design improves accuracy by 1.1-12% while reducing deployment costs by up to 20% across various agentic applications.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-05-23T18:30:24Z</published>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Mingyan Gao</name>
+    </author>
+    <author>
+      <name>Yanzi Li</name>
+    </author>
+    <author>
+      <name>Banruo Liu</name>
+    </author>
+    <author>
+      <name>Yifan Yu</name>
+    </author>
+    <author>
+      <name>Phillip Wang</name>
+    </author>
+    <author>
+      <name>Ching-Yu Lin</name>
+    </author>
+    <author>
+      <name>Fan Lai</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.19278v2</id>
+    <title>Explicit Trait Inference for Multi-Agent Coordination</title>
+    <updated>2026-04-22T16:58:59Z</updated>
+    <link href="https://arxiv.org/abs/2604.19278v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.19278v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM-based multi-agent systems (MAS) show promise on complex tasks but remain prone to coordination failures such as goal drift, error cascades, and misaligned behaviors. We propose Explicit Trait Inference (ETI), a psychologically grounded method for improving coordination. ETI enables agents to infer and track partner characteristics along two established psychological dimensions--warmth (e.g., trust) and competence (e.g., skill)--from interaction histories to guide decisions. We evaluate ETI in controlled settings (economic games), where it reduces payoff loss by 45-77%, and in more realistic, complex multi-agent settings (MultiAgentBench), where it improves performance by 3-29% depending on the scenario and model, relative to a CoT baseline. Additional analysis shows that gains are closely linked to trait inference: ETI profiles predict agents' actions, and informative profiles drive improvements. These results highlight ETI as a lightweight and robust mechanism for improving coordination in diverse multi-agent settings, and provide the first systematic evidence that LLM agents can (i) reliably infer others' traits from interaction histories and (ii) leverage structured awareness of others' traits for coordination.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-21T09:48:23Z</published>
+    <arxiv:comment>Accepted at ACL 2026 Main Conference</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Suhaib Abdurahman</name>
+    </author>
+    <author>
+      <name>Etsuko Ishii</name>
+    </author>
+    <author>
+      <name>Katerina Margatina</name>
+    </author>
+    <author>
+      <name>Divya Bhargavi</name>
+    </author>
+    <author>
+      <name>Monica Sunkara</name>
+    </author>
+    <author>
+      <name>Yi Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.24408v2</id>
+    <title>FuncPoison: Poisoning Function Library to Hijack Multi-agent Autonomous Driving Systems</title>
+    <updated>2025-12-29T06:55:13Z</updated>
+    <link href="https://arxiv.org/abs/2509.24408v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.24408v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Autonomous driving systems increasingly rely on multi-agent architectures powered by large language models (LLMs), where specialized agents collaborate to perceive, reason, and plan. A key component of these systems is the shared function library, a collection of software tools that agents use to process sensor data and navigate complex driving environments. Despite its critical role in agent decision-making, the function library remains an under-explored vulnerability. In this paper, we introduce FuncPoison, a novel poisoning-based attack targeting the function library to manipulate the behavior of LLM-driven multi-agent autonomous systems. FuncPoison exploits two key weaknesses in how agents access the function library: (1) agents rely on text-based instructions to select tools; and (2) these tools are activated using standardized command formats that attackers can replicate. By injecting malicious tools with deceptive instructions, FuncPoison manipulates one agent s decisions--such as misinterpreting road conditions--triggering cascading errors that mislead other agents in the system. We experimentally evaluate FuncPoison on two representative multi-agent autonomous driving systems, demonstrating its ability to significantly degrade trajectory accuracy, flexibly target specific agents to induce coordinated misbehavior, and evade diverse defense mechanisms. Our results reveal that the function library, often considered a simple toolset, can serve as a critical attack surface in LLM-based autonomous driving systems, raising elevated concerns on their reliability.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-29T07:56:23Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Yuzhen Long</name>
+    </author>
+    <author>
+      <name>Songze Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.05704v1</id>
+    <title>Critic-Guided Heterogeneous Multi-Agent Reasoning for Reliable Mathematical Problem Solving</title>
+    <updated>2026-06-04T04:52:35Z</updated>
+    <link href="https://arxiv.org/abs/2606.05704v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.05704v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent Large Language Models (LLMs) have shown impressive reasoning abilities; but they are still susceptible to hallucinations, intermediate reasoning mistakes, and unreliable reasoning results in complex mathematical reasoning problems. In this study, we introduce a critic-based heterogeneous multi-agent approach to improve the dependability of mathematical reasoning. This framework incorporates several LLM agents of different specialties and employs a critic-driven adaptive learning system to assess and guide the reasoning process based on intermediate feedback. The system adopts a generator-validator framework, with the validator not only determining correctness but also offering critiques to guide regeneration of solutions. This allows for adaptive error correction and prevents error cascading. Our experiments on the GSM8K benchmark show that the proposed method achieves up to 13% accuracy improvement over single-shot and non-critic models. Additionally, findings suggest that heterogeneity and critique reduce the need for large models, allowing smaller models to perform on par. Ablation studies reveal the main performance gains are due to the critic-based feedback loop and not model size. In summary, the proposed approach showcases the benefits of combining heterogeneous multi-agent collaboration and critique to obtain reliable and interpretable reasoning systems.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-04T04:52:35Z</published>
+    <arxiv:comment>6 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Muhammad Talha Sharif</name>
+    </author>
+    <author>
+      <name>Abdul Rehman</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.25135v1</id>
+    <title>FAMA: Failure-Aware Meta-Agentic Framework for Open-Source LLMs in Interactive Tool Use Environments</title>
+    <updated>2026-04-28T02:21:53Z</updated>
+    <link href="https://arxiv.org/abs/2604.25135v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.25135v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Models are being increasingly deployed as the decision-making core of autonomous agents capable of effecting change in external environments. Yet, in conversational benchmarks, which simulate real-world customer-centric issue resolution scenarios, these agents frequently fail due to the cascading effects of incorrect decision-making. These challenges are particularly pronounced for open-source LLMs with smaller parameter sizes, limited context windows, and constrained inference budgets, which contribute to increased error accumulation in agentic settings. To tackle these challenges, we present the Failure-Aware Meta-Agentic (FAMA) framework. FAMA operates in two stages: first, it analyzes failure trajectories from baseline agents to identify the most prevalent errors; second, it employs an orchestration mechanism that activates a minimal subset of specialized agents tailored to address these failures by injecting a targeted context for the tool-use agent before the decision-making step. Experiments across open-source LLMs demonstrate performance gains up to 27% across evaluation modes over standard baselines. These results highlight that targeted curation of context through specialized agents to address common failures is a valuable design principle for building reliable, multi-turn tool-use LLM agents that simulate real-world conversational scenarios.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-28T02:21:53Z</published>
+    <arxiv:comment>Accepted to ACL 2026 Findings</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Amir Saeidi</name>
+    </author>
+    <author>
+      <name>Venkatesh Mishra</name>
+    </author>
+    <author>
+      <name>Souradeep Mukhopadhyay</name>
+    </author>
+    <author>
+      <name>Gaowen Liu</name>
+    </author>
+    <author>
+      <name>Ali Payani</name>
+    </author>
+    <author>
+      <name>Jayanth Srinivasa</name>
+    </author>
+    <author>
+      <name>Chitta Baral</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2502.11799v3</id>
+    <title>Table-Critic: A Multi-Agent Framework for Collaborative Criticism and Refinement in Table Reasoning</title>
+    <updated>2025-05-23T14:18:47Z</updated>
+    <link href="https://arxiv.org/abs/2502.11799v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2502.11799v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Despite the remarkable capabilities of large language models (LLMs) in various reasoning tasks, they still struggle with table reasoning tasks, particularly in maintaining consistency throughout multi-step reasoning processes. While existing approaches have explored various decomposition strategies, they often lack effective mechanisms to identify and correct errors in intermediate reasoning steps, leading to cascading error propagation. To address these issues, we propose Table-Critic, a novel multi-agent framework that facilitates collaborative criticism and iterative refinement of the reasoning process until convergence to correct solutions. Our framework consists of four specialized agents: a Judge for error identification, a Critic for comprehensive critiques, a Refiner for process improvement, and a Curator for pattern distillation. To effectively deal with diverse and unpredictable error types, we introduce a self-evolving template tree that systematically accumulates critique knowledge through experience-driven learning and guides future reflections. Extensive experiments have demonstrated that Table-Critic achieves substantial improvements over existing methods, achieving superior accuracy and error correction rates while maintaining computational efficiency and lower solution degradation rate.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-02-17T13:42:12Z</published>
+    <arxiv:comment>ACL 2025 Main</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Peiying Yu</name>
+    </author>
+    <author>
+      <name>Guoxin Chen</name>
+    </author>
+    <author>
+      <name>Jingjing Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.25370v1</id>
+    <title>Where LLM Agents Fail and How They can Learn From Failures</title>
+    <updated>2025-09-29T18:20:27Z</updated>
+    <link href="https://arxiv.org/abs/2509.25370v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.25370v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Model (LLM) agents, which integrate planning, memory, reflection, and tool-use modules, have shown promise in solving complex, multi-step tasks. Yet their sophisticated architectures amplify vulnerability to cascading failures, where a single root-cause error propagates through subsequent decisions, leading to task failure. Current systems lack a framework that can comprehensively understand agent error in a modular and systemic way, and therefore fail to detect these errors accordingly. We address this gap with three contributions. First, we introduce the AgentErrorTaxonomy, a modular classification of failure modes spanning memory, reflection, planning, action, and system-level operations. Second, we construct AgentErrorBench, the first dataset of systematically annotated failure trajectories from ALFWorld, GAIA, and WebShop, grounding error analysis in real-world agent rollouts. Third, we propose AgentDebug, a debugging framework that isolates root-cause failures and provides corrective feedback, enabling agents to recover and iteratively improve. Experiments on AgentErrorBench show that AgentDebug achieves 24% higher all-correct accuracy and 17% higher step accuracy compared to the strongest baseline. Beyond detection, the targeted feedback generated by AgentDebug enables LLM agents to iteratively recover from failures, yielding up to 26% relative improvements in task success across ALFWorld, GAIA, and WebShop. These results establish principled debugging as a pathway to more reliable and adaptive LLM agents. The code and data will be available at https://github.com/ulab-uiuc/AgentDebug</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-29T18:20:27Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Kunlun Zhu</name>
+    </author>
+    <author>
+      <name>Zijia Liu</name>
+    </author>
+    <author>
+      <name>Bingxuan Li</name>
+    </author>
+    <author>
+      <name>Muxin Tian</name>
+    </author>
+    <author>
+      <name>Yingxuan Yang</name>
+    </author>
+    <author>
+      <name>Jiaxun Zhang</name>
+    </author>
+    <author>
+      <name>Pengrui Han</name>
+    </author>
+    <author>
+      <name>Qipeng Xie</name>
+    </author>
+    <author>
+      <name>Fuyang Cui</name>
+    </author>
+    <author>
+      <name>Weijia Zhang</name>
+    </author>
+    <author>
+      <name>Xiaoteng Ma</name>
+    </author>
+    <author>
+      <name>Xiaodong Yu</name>
+    </author>
+    <author>
+      <name>Gowtham Ramesh</name>
+    </author>
+    <author>
+      <name>Jialian Wu</name>
+    </author>
+    <author>
+      <name>Zicheng Liu</name>
+    </author>
+    <author>
+      <name>Pan Lu</name>
+    </author>
+    <author>
+      <name>James Zou</name>
+    </author>
+    <author>
+      <name>Jiaxuan You</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.05176v1</id>
+    <title>AECG: Asymmetric Experience Consolidation and Governance In Multi-Agent Systems</title>
+    <updated>2026-10-04T12:38:03Z</updated>
+    <link href="https://arxiv.org/abs/2610.05176v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.05176v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language model (LLM)-based multi-agent systems increasingly rely on memory to transform execution trajectories into reusable procedural knowledge. Yet repeated retrieval also makes memory errors persistent: memory pollution arises when outdated, weakly supported, or spuriously successful procedures become recurring components of future reasoning. Multi-agent execution introduces an additional structural risk. Scope collapse occurs when procedural knowledge escapes the coordination scope in which it was shown effective and is repeatedly reused at incompatible decision levels, allowing local errors to influence cascades of downstream decisions. Meanwhile, task-level failures provide ambiguous supervision because they rarely reveal which recalled knowledge was responsible. We introduce AECG, a framework for asymmetric experience consolidation and governance for multi-agent systems. AECG turns memory from static experience storage into a dynamic reliability-governance loop, preserving coordination scope and using multi-scale, confidence-aware reliability to detect degradation. It then combines degradation with downstream impact to prioritize high-risk knowledge under a bounded review budget, applies targeted interventions, and reactivates revised skills only after paired replay. Across three multi-agent frameworks and four benchmarks, AECG achieves the best score in 11 of 12 framework--benchmark settings and improves over the strongest competing memory method by as much as 10.23 percentage points; removing scope preservation reduces accuracy by up to 16.89 points. AECG thereby reframes multi-agent memory from passive accumulation into auditable reliability governance. Code is available at https://github.com/fenhg297/AECG</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-04T12:38:03Z</published>
+    <arxiv:comment>22 pages,5 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Ao Tian</name>
+    </author>
+    <author>
+      <name>Jialong Liu</name>
+    </author>
+    <author>
+      <name>Daqi Zheng</name>
+    </author>
+    <author>
+      <name>Xin Sun</name>
+    </author>
+    <author>
+      <name>Mengting Li</name>
+    </author>
+    <author>
+      <name>Zhizhao Xiao</name>
+    </author>
+    <author>
+      <name>Zijian Huang</name>
+    </author>
+    <author>
+      <name>Honglei Wang</name>
+    </author>
+    <author>
+      <name>Zijian Hei</name>
+    </author>
+    <author>
+      <name>Yukun Yan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.03467v1</id>
+    <title>StepFinder: A Temporal Semantic Framework for Failure Attribution in Multi-Agent Systems</title>
+    <updated>2026-06-02T10:45:49Z</updated>
+    <link href="https://arxiv.org/abs/2606.03467v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.03467v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM-based multi-agent systems exhibit remarkable collaborative capabilities in complex multi-step tasks. However, these systems are highly sensitive to single-step execution errors that can propagate through agent interactions and lead to cascading failures. To understand the causes of failure and improve system reliability, failure attribution has been introduced as a task that aims to automatically identify the root cause step responsible for a failure. Existing failure attribution methods mainly rely on LLMs to reason over original execution trajectories, which not only incur high inference costs and latency, but also suffer from interference caused by redundant and noisy execution logs, causing LLMs to struggle in accurately identifying the true root cause step. To address this, we propose StepFinder, a lightweight failure attribution framework. We use LLMs solely during the feature construction phase to encode execution logs into temporal semantic sequences. Subsequently, a parameter-efficient combination of temporal modeling and attention modules is applied to capture the sequential evolution and cross-step dependencies of the trajectories. Finally, the step-level error score is refined through multi-scale differences and position bias, enabling precise root cause identification. Experimental results on the Who&amp;When benchmark demonstrate that StepFinder outperforms LLM-based methods in step-level failure attribution while achieving substantially higher inference efficiency, reducing inference time by 79% compared with the fastest LLM-based method, with no text generation overhead. Our code is available at https://github.com/taiyu-zhu/StepFinder.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-02T10:45:49Z</published>
+    <arxiv:comment>12 pages, 5 figures. Accepted by KDD 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Taiyu Zhu</name>
+    </author>
+    <author>
+      <name>Yifan Wu</name>
+    </author>
+    <author>
+      <name>Weilin Jin</name>
+    </author>
+    <author>
+      <name>Ying Li</name>
+    </author>
+    <author>
+      <name>Gang Huang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.12345v1</id>
+    <title>ParaRecover: A Process-Level Benchmark for Error Localization and Recovery in Parallel Tool-Use Agents</title>
+    <updated>2026-09-11T02:09:33Z</updated>
+    <link href="https://arxiv.org/abs/2609.12345v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.12345v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Existing agent benchmarks mainly evaluate final task success or tool-call correctness, providing limited insight into whether agents can reliably diagnose and recover from intermediate execution failures. This limitation becomes particularly critical in multi-turn parallel tool-use scenarios, where errors may propagate across dependent branches and trigger cascading failures. We introduce ParaRecover, a process-level benchmark for evaluating error localization and recovery in multi-turn parallel tool-use agents. Built upon a fine-grained taxonomy of 14 error types covering planning dependencies, tool selection, and argument matching, the benchmark comprises 10,626 instances spanning two difficulty levels. To enable finegrained, process-oriented evaluation, we further propose the SDE rubric, which measures structural integrity, diagnostic reasoning, and evolutionary strategy during agent execution.Experiments across more than ten mainstream LLMs reveal that even state-of-the-art models still struggle with multi-turn error propagation,implicit tool-use failures, and precise replanning. Moreover, we demonstrate that the SDE rubric provides effective supervision signals for improving agents' reflective recovery capabilities. Our data and code are available at https://github.com/gbw206/ParaRecover.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-11T02:09:33Z</published>
+    <arxiv:comment>Accepted to EMNLP 2026 Main Conference</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Bowen Guan</name>
+    </author>
+    <author>
+      <name>Zhentao Yin</name>
+    </author>
+    <author>
+      <name>Yanming Shen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.20152v1</id>
+    <title>MTVA-Bench: Evaluating the Language Model Inside Cascaded Voice Agents</title>
+    <updated>2026-09-17T12:44:03Z</updated>
+    <link href="https://arxiv.org/abs/2609.20152v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.20152v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Generally, most voice agents are cascaded systems, i.e., an ASR model transcribes the caller's audio, a language model reads the transcript and decides what to say and which backend tools to call, and a TTS model speaks the reply. Nearly all of the decision making happens in the language model, but existing evaluations measure it either too broadly or too narrowly. End-to-end voice benchmarks score the full pipeline, so recognition errors and model errors mix into a single number. LLM benchmarks isolate the model but they do not evaluate what makes real phone calls hard, such as transcription issues, caller's voice being split across messages and the requirement that replies follow the language and script specified. We introduce the Multi-Turn Voice Agent Benchmark (MTVA-Bench), which evaluates the language model on the same conditions it faces inside a cascaded system. The caller is played by an LLM following a set of rubrics and tool calls are answered by a mock backend which responds to the arguments the model actually sent. The benchmark contains 49 agents working across 490 reviewed scenarios and supports 7 languages. Scoring is a combination of deterministic checks on tool calls with two LLM judges, one that scores scenario specific rules and one that grades conversation quality without access to the task. Both judges must cite specific messages from the transcript. Task and conversation scores are weighted equally, since a call can complete its task and still go badly for the caller. In a seven-model study, six of the models select the correct tool within 6.4 points of one another, but their overall scores span 24.4 points. Most of the gap comes from argument values, action ordering, rule compliance, and what the model says around its tool calls.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-17T12:44:03Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Pritish Mishra</name>
+    </author>
+    <author>
+      <name>Ishaan Kumar</name>
+    </author>
+    <author>
+      <name>Akshat Mandoli</name>
+    </author>
+    <author>
+      <name>Sudarshan Kamath</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.06346v1</id>
+    <title>TRAJDEBUG: Tracing Error Lifecycle to Identify Critical Failures in Long-Horizon Agent Trajectories</title>
+    <updated>2026-08-06T17:51:20Z</updated>
+    <link href="https://arxiv.org/abs/2608.06346v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.06346v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM-based agentic systems have shown remarkable capabilities in complex domains, while suffering from cascading errors and difficulty in debugging. Critical error detection aims to locate the earliest error step in a failed trajectory that is responsible for the final failure. However, progress faces two main challenges. First, long trajectories make it difficult to identify individual errors, since the evidence for judging a step may be scattered across distant instructions, observations, and prior context. Second, failed trajectories often contain multiple local errors with different downstream effects, only some of which remain responsible for the final failure. In this work, we propose TrajDebug, an error-lifecycle tracing framework that addresses long-trajectory error discovery with multi-granularity history compression and evidence-based error identification, and supports critical attribution by tracing each error's resolution status and terminal impact. We further construct TrajErrBench, a benchmark of 486 manually annotated failed trajectories from Tau2Bench and SWE-Bench Pro, covering realistic tool-use and coding scenarios. Experiments across diverse agent benchmarks show that TrajDebug achieves the best overall performance over existing baselines, and application studies further demonstrate that its diagnoses provide actionable feedback for improving downstream agent success. We will release the codes and data to facilitate further research.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-06T17:51:20Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Yunjia Qi</name>
+    </author>
+    <author>
+      <name>Zehua Yin</name>
+    </author>
+    <author>
+      <name>Xintong Shi</name>
+    </author>
+    <author>
+      <name>Hao Peng</name>
+    </author>
+    <author>
+      <name>Songyuanyi Lu</name>
+    </author>
+    <author>
+      <name>Yixian Liu</name>
+    </author>
+    <author>
+      <name>Richeng Xuan</name>
+    </author>
+    <author>
+      <name>Yuhong Liu</name>
+    </author>
+    <author>
+      <name>Zhichao Hu</name>
+    </author>
+    <author>
+      <name>Xiaozhi Wang</name>
+    </author>
+    <author>
+      <name>Lei Hou</name>
+    </author>
+    <author>
+      <name>Bin Xu</name>
+    </author>
+    <author>
+      <name>Juanzi Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.02668v2</id>
+    <title>Too Polite to Disagree: Understanding Sycophancy Propagation in Multi-Agent Systems</title>
+    <updated>2026-07-14T19:09:34Z</updated>
+    <link href="https://arxiv.org/abs/2604.02668v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.02668v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) often exhibit sycophancy: agreement with user stance even when it conflicts with the model's opinion. While prior work has mostly studied this in single-agent settings, it remains underexplored in collaborative multi-agent systems. We ask whether awareness of other agents' sycophancy levels influences discussion outcomes. To investigate this, we run controlled experiments with six open-source LLMs, providing agents with peer sycophancy rankings that estimate each peer's tendency toward sycophancy. These rankings are based on scores calculated using various static (pre-discussion) and dynamic (online) strategies. We find that providing sycophancy priors reduces the influence of sycophancy-prone peers, mitigates error-cascades, and improves final discussion accuracy by an absolute 10.5%. Thus, this is a lightweight and efficient way to reduce model sycophancy during discussions and subsequently improve downstream accuracy.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-03T03:02:42Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <arxiv:journal_ref>Proceedings of the 27th Annual Meeting of the Special Interest Group on Discourse and Dialogue (SIGDIAL 2026), pages 795-814, Association for Computational Linguistics</arxiv:journal_ref>
+    <author>
+      <name>Vira Kasprova</name>
+    </author>
+    <author>
+      <name>Amruta Parulekar</name>
+    </author>
+    <author>
+      <name>Abdulrahman AlRabah</name>
+    </author>
+    <author>
+      <name>Krishna Agaram</name>
+    </author>
+    <author>
+      <name>Ritwik Garg</name>
+    </author>
+    <author>
+      <name>Sagar Jha</name>
+    </author>
+    <author>
+      <name>Nimet Beyza Bozdag</name>
+    </author>
+    <author>
+      <name>Dilek Hakkani-Tur</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.16941v1</id>
+    <title>MEMRES: A Memory-Augmented Resolver with Confidence Cascade for Agentic Python Dependency Resolution</title>
+    <updated>2026-04-18T09:52:45Z</updated>
+    <link href="https://arxiv.org/abs/2604.16941v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.16941v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We present MEMRES, an agentic system for Python dependency resolution that introduces a multi-level confidence cascade where the LLM serves as the last resort. Our system combines: (1) a Self-Evolving Memory that accumulates reusable resolution patterns via tips and shortcuts; (2) an Error Pattern Knowledge Base with 200+ curated import-to-package mappings; (3) a Semantic Import Analyzer; and (4) a Python 2 heuristic detector resolving the largest failure category. On HG2.9K using Gemma-2 9B (10 GB VRAM). MEMRES resolves 2503 of 2890 (86.6%, 10-run average) snippets, combining intra-session memory with our confidence cascade for the remainder. This already exceeds PLLM's 54.7% overall success rate by a wide margin.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-18T09:52:45Z</published>
+    <arxiv:comment>4 pages, 1 figure, to appear in Proc. FSE Companion '26</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Dao Sy Duy Minh</name>
+    </author>
+    <author>
+      <name>Tran Chi Nguyen</name>
+    </author>
+    <author>
+      <name>Trung Kiet Huynh</name>
+    </author>
+    <author>
+      <name>Pham Phu Hoa</name>
+    </author>
+    <author>
+      <name>Nguyen Lam Phu Quy</name>
+    </author>
+    <author>
+      <name>Vu Nguyen</name>
+    </author>
+    <arxiv:doi>10.1145/3803437.3808242</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1145/3803437.3808242" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.21251v1</id>
+    <title>WirelessBench: A Tolerance-Aware LLM Agent Benchmark for Wireless Network Intelligence</title>
+    <updated>2026-03-22T14:14:30Z</updated>
+    <link href="https://arxiv.org/abs/2603.21251v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.21251v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM agents are emerging as a key enabler for autonomous wireless network management. Reliably deploying them, however, demands benchmarks that reflect real engineering risk. Existing wireless benchmarks evaluate single isolated capabilities and treat all errors uniformly, missing both cascaded-chain failures and catastrophic unit confusions (\textit{e.g.}, dB vs.\ dBm). We present \wb{}, the first tolerance-aware, tool-integrated benchmark for LLM-based wireless agents. \wb{} is organized as a three-tier cognitive hierarchy: domain knowledge reasoning (WCHW, 1{,}392 items), intent-driven resource allocation (WCNS, 1{,}000 items), and proactive multi-step decisions under mobility (WCMSA, 1{,}000 items). Moreover, \wb{} is established on three design principles: \emph{(i)}~tolerance-aware scoring with catastrophic-error detection; \emph{(ii)}~tool-necessary tasks requiring a 3GPP-compliant ray-tracing query for channel quality; and \emph{(iii)}~Chain-of-Thought (CoT)-traceable items, where every benchmark item ships with a complete CoT trajectory enabling fine-grained diagnosis of where in the reasoning chain an agent fails. Our numerical results show that the direct-prompting model (GPT-4o) scores $68\%$, trailing a tool-integrated agent ($84.64\%$) by $16.64$\,pp; $23\%$ of errors are catastrophic failures invisible to exact-match metrics. More importantly, the hierarchy decomposes errors into four actionable diagnostic categories that flat evaluation cannot reveal. Code and data: https://wirelessbench.github.io/.</summary>
+    <category term="cs.NI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-22T14:14:30Z</published>
+    <arxiv:comment>This paper is submitted to a possiable journal for publication</arxiv:comment>
+    <arxiv:primary_category term="cs.NI"/>
+    <author>
+      <name>Jingwen Tong</name>
+    </author>
+    <author>
+      <name>Fang Liu</name>
+    </author>
+    <author>
+      <name>Linkai Xv</name>
+    </author>
+    <author>
+      <name>Shiliang Lu</name>
+    </author>
+    <author>
+      <name>Kangqi Li</name>
+    </author>
+    <author>
+      <name>Yiqian Zhang</name>
+    </author>
+    <author>
+      <name>Yijie Song</name>
+    </author>
+    <author>
+      <name>Zeyang Xue</name>
+    </author>
+    <author>
+      <name>Jun Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2601.10738v1</id>
+    <title>CTHA: Constrained Temporal Hierarchical Architecture for Stable Multi-Agent LLM Systems</title>
+    <updated>2026-01-09T08:03:14Z</updated>
+    <link href="https://arxiv.org/abs/2601.10738v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.10738v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recently, multi-time-scale agent architectures have extended the ubiquitous single-loop paradigm by introducing temporal hierarchies with distinct cognitive layers. While yielding substantial performance gains, this diversification fundamentally compromises the coordination stability intrinsic to unified agent systems, which causes severe inter-layer conflicts, unbounded error propagation, and restricted scalability. To address these challenges, we propose Constrained Temporal Hierarchical Architecture (CTHA), a general framework that projects the inter-layer communication space onto structured manifolds to restore coordination stability, while incorporating principled arbitration mechanisms to ensure coherent decision-making. Specifically, CTHA enforces three key constraints: (1) Message Contract Constraints that formalize information flow between layers via typed summary, plan, and policy packets; (2) Authority Manifold Constraints that bound each layer's decision space according to its temporal scope; and (3) Arbiter Resolution Constraints that guarantee conflict-free composition of multi-layer decisions. Empirical experiments demonstrate that CTHA is effective for complex task execution at scale, offering 47% reduction in failure cascades, 2.3x improvement in sample efficiency, and superior scalability compared to unconstrained hierarchical baselines. We anticipate that CTHA, as a principled extension of temporal hierarchies, will contribute to a deeper understanding of multi-agent coordination and suggest promising directions for the evolution of robust autonomous systems.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-09T08:03:14Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Percy Jardine</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.08715v2</id>
+    <title>AgentForesight: Online Auditing for Early Failure Prediction in Multi-Agent Systems</title>
+    <updated>2026-05-13T23:06:48Z</updated>
+    <link href="https://arxiv.org/abs/2605.08715v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.08715v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM-based multi-agent systems are increasingly deployed on long-horizon tasks, but a single decisive error is often accepted by downstream agents and cascades into trajectory-level failure. Existing work frames this as \emph{post-hoc failure attribution}, diagnosing the responsible agent and step after the trajectory has ended. However, this paradigm forfeits any opportunity to intervene while trajectory is still unfolding. In this work, we introduce AgentForesight, a framework that reframes this problem as online auditing: at each step of an unfolding trajectory, an auditor observes only the current prefix and must either continue the run or alarm at the earliest decisive error, without access to future steps. To this end, we curate AFTraj-2K, a corpus of agentic trajectories across Coding, Math, and Agentic domains, in which safe trajectories are retained under a strict curation pipeline and unsafe trajectories are annotated at the step of their decisive error via consensus among multiple LLM judges. Built on that, we develop AgentForesight-7B, a compact online auditor trained with a coarse-to-fine reinforcement learning recipe that first equips it with a risk-anticipation prior at the failure boundary on adjacent safe/unsafe prefix pairs, then sharpens this prior into precise step-level localization under a three-axis reward jointly targeting the what, where, and who of an audit verdict. Across AFTraj-2K and an external Who\&amp;When benchmark, AgentForesight-7B outperforms leading proprietary models, including GPT-4.1 and DeepSeek-V4-Pro, achieving up to +19.9% performance gain and 3$\times$ lower step localization error, opening the loop from post-hoc failures detection to enabling deployment-time intervention. Project page: https://zbox1005.github.io/agent-foresight/</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-09T05:55:19Z</published>
+    <arxiv:comment>33 pages, 7 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Boxuan Zhang</name>
+    </author>
+    <author>
+      <name>Jianing Zhu</name>
+    </author>
+    <author>
+      <name>Zeru Shi</name>
+    </author>
+    <author>
+      <name>Dongfang Liu</name>
+    </author>
+    <author>
+      <name>Ruixiang Tang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.17419v2</id>
+    <title>World Model Science: Self-Organized Criticality, Weak Chaos, and Metastable Belief Dynamics in Long-Horizon LLM Agents</title>
+    <updated>2026-10-29T14:02:04Z</updated>
+    <link href="https://arxiv.org/abs/2609.17419v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.17419v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Long-horizon LLM agents must maintain and update a world model over extended sequences of observations, actions, decisions and tool calls. We study the dynamics of long horizon agents from three perspectives: self-organized criticality, weak chaos, and metastable belief dynamics. Through extensive experiments on controlled puzzles, tool-use tasks, embodied environments, multi-hop retrieval, general-assistant reasoning, and Game of Life, we study how world-model errors develop over long interactions. We find that externally increased task pressure can sharply raise the probability of collapse, while naturally occurring pressure is only a modest predictor of later failure. Errors are temporally correlated rather than independent, and their propagation changes with dependency depth while remaining bounded in finite tasks. We also find that locally valid actions can continue after the agent's overall task state has become incorrect, that error structure depends on task topology and horizon, and that belief states in embodied tasks are shallow rather than strongly trapped in incorrect states. Larger horizons allow larger error cascades, but their scale remains constrained by the task and the model's capability. Overall, we observe power-law behavior, bounded divergence consistent with weak chaos, and metastable belief dynamics across long-horizon agent interactions. We call this perspective world model science: the empirical study of self organized criticality in long-horizon agent world models.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-12T04:04:26Z</published>
+    <arxiv:comment>Under Review</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Xinyuan Song</name>
+    </author>
+    <author>
+      <name>Zekun Cai</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.00309v2</id>
+    <title>DIG to Heal: Scaling General-purpose Agent Collaboration via Explainable Dynamic Decision Paths</title>
+    <updated>2026-05-27T02:58:47Z</updated>
+    <link href="https://arxiv.org/abs/2603.00309v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.00309v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The increasingly popular agentic AI paradigm promises to harness the power of multiple, general-purpose large language model (LLM) agents to collaboratively complete complex tasks. While many agentic AI systems reduce complexity through predefined workflows or fixed agent roles, the ideal is to support truly autonomous agents capable of emergent collaboration across many interacting agents. Yet in practice, such unstructured interactions often lead to redundant work and cascading failures that are difficult to interpret or correct. In this work, we study multi-agent systems composed of general-purpose LLM agents that solve problems through emergent collaboration, without relying on predefined roles, control flows, or communication constraints. We introduce the Dynamic Interaction Graph (DIG), which captures emergent collaboration as a time-evolving causal network of agent activations and interactions. DIG makes emergent collaboration observable and explainable for the first time, enabling real-time identification, explanation, and correction of collaboration-induced error patterns directly from agents' collaboration paths. Thus, DIG fills a critical gap in understanding how general LLM agents solve problems together in truly agentic multi-agent systems. The project webpage can be found at: https://happyeureka.github.io/dig.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-27T20:59:37Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Hanqing Yang</name>
+    </author>
+    <author>
+      <name>Hyungwoo Lee</name>
+    </author>
+    <author>
+      <name>Yuhang Yao</name>
+    </author>
+    <author>
+      <name>Zhiwei Liu</name>
+    </author>
+    <author>
+      <name>Kay Liu</name>
+    </author>
+    <author>
+      <name>Jingdi Chen</name>
+    </author>
+    <author>
+      <name>Carlee Joe-Wong</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.23992v1</id>
+    <title>From Ideal Motion to Flight-Executable Communications: LLM-Evolved Multi-UAV Deployment for Cell-Free Massive MIMO</title>
+    <updated>2026-09-21T01:56:54Z</updated>
+    <link href="https://arxiv.org/abs/2609.23992v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.23992v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Cell-free massive multiple-input multiple-output (CF-mMIMO) is a promising paradigm for future wireless networks, providing user-centric services and cooperative coverage. By using unmanned aerial vehicles (UAVs) as aerial access points, CF-mMIMO networks can exploit UAV mobility to enhance three-dimensional (3D) coverage and spectral efficiency (SE). However, most existing studies on UAV deployment for communication optimization typically assume that UAVs follow ideal point-mass motion (IM), neglecting flight-control constraints and finite-horizon position errors in real flight execution. Consequently, IM-trained deployment policies may degrade severely or become difficult to execute in practice. Motivated by this, we model each UAV as a six-degree-of-freedom quadrotor rigid body with a cascaded flight controller to capture the impact of flight-control-constrained motion (FM) on communication optimization. Based on this model, we formulate a joint UAV 3D deployment and power allocation problem under FM to maximize the downlink average SE in CF-mMIMO networks. To address this problem, we propose LERE, a large language model (LLM)-enhanced multi-agent reinforcement learning (MARL) framework. In LERE, the LLM evolves hybrid rewards with both global and local components via multi-level feedback. The evolved hybrid rewards guide MARL policy optimization and promote multi-UAV cooperation. Experimental results demonstrate that LERE achieves higher SE than reward-design baselines while substantially reducing UAV position errors. Notably, when tested under FM execution, the FM-trained LERE policy achieves a 60.49\% SE gain over its IM-trained counterpart, confirming the necessity of incorporating flight-control constraints into UAV-enabled CF-mMIMO optimization.</summary>
+    <category term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-21T01:56:54Z</published>
+    <arxiv:comment>13 pages. 12 figures</arxiv:comment>
+    <arxiv:primary_category term="eess.SP"/>
+    <author>
+      <name>Yuyao Wang</name>
+    </author>
+    <author>
+      <name>Gaoze Mu</name>
+    </author>
+    <author>
+      <name>Yongan Zheng</name>
+    </author>
+    <author>
+      <name>Yanzhao Hou</name>
+    </author>
+    <author>
+      <name>Qingqing Wu</name>
+    </author>
+    <author>
+      <name>Qimei Cui</name>
+    </author>
+    <author>
+      <name>Xiaofeng Tao</name>
+    </author>
+    <author>
+      <name>Ping Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.12651v1</id>
+    <title>SynAct: Synergistic Active Feedback Learning for LLM Agents</title>
+    <updated>2026-10-08T19:20:10Z</updated>
+    <link href="https://arxiv.org/abs/2610.12651v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.12651v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM agents executing multi-step workflows fail in two fundamentally different ways: recoverable slips, which further attempts can repair, and knowledge gaps, which retrying cannot resolve. Expert feedback can address the latter, but expert attention is scarce. The key challenge is therefore not whether to ask for feedback, but where feedback can change the outcome. Existing approaches either avoid expert feedback, allowing agents to reinforce their own errors, or allocate feedback at the task level without identifying consequential decisions. We present SynAct, an active learning framework that treats expert attention as the binding constraint and allocates feedback at the level of individual decisions. SynAct ranks decisions by the mutual information between the selected action and the terminal outcome across repeated rollouts, queries an expert at the highest-value decisions, and distills the resulting corrections into transferable rules that the agent can reuse without expert access at deployment. We theoretically characterize what this signal identifies under finite repeated sampling: with k rollouts and at least m observations per action, outcome-constant decisions have zero mutual information, while outcome-separating decisions have mutual information at least H2(m/k) bits, yielding exact separation for any threshold t in (0,H2(m/k)). This also explains why success-based acquisition can be blind when all rollouts fail: success is constant even when failed runs reach different outcomes. Across four agent benchmarks and four models spanning three families, SynAct improves held-out accuracy in all 16 evaluated settings, by +11.7pp on average. The same signal transfers to inference-time routing, where SynAct outperforms budget-matched cascade, uncertainty, and expert-judge routers in 15 of 16 settings, while a single targeted correction outperforms seven additional unaimed retries.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-08T19:20:10Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Ning Liu</name>
+    </author>
+    <author>
+      <name>Ian Li</name>
+    </author>
+    <author>
+      <name>Kristina Klinkner</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.26463v1</id>
+    <title>ErrorPrism: Reconstructing Error Propagation Paths in Cloud Service Systems</title>
+    <updated>2025-09-30T16:13:21Z</updated>
+    <link href="https://arxiv.org/abs/2509.26463v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.26463v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Reliability management in cloud service systems is challenging due to the cascading effect of failures. Error wrapping, a practice prevalent in modern microservice development, enriches errors with context at each layer of the function call stack, constructing an error chain that describes a failure from its technical origin to its business impact. However, this also presents a significant traceability problem when recovering the complete error propagation path from the final log message back to its source. Existing approaches are ineffective at addressing this problem. To fill this gap, we present ErrorPrism in this work for automated reconstruction of error propagation paths in production microservice systems. ErrorPrism first performs static analysis on service code repositories to build a function call graph and map log strings to relevant candidate functions. This significantly reduces the path search space for subsequent analysis. Then, ErrorPrism employs an LLM agent to perform an iterative backward search to accurately reconstruct the complete, multi-hop error path. Evaluated on 67 production microservices at ByteDance, ErrorPrism achieves 97.0% accuracy in reconstructing paths for 102 real-world errors, outperforming existing static analysis and LLM-based approaches. ErrorPrism provides an effective and practical tool for root cause analysis in industrial microservice systems.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-30T16:13:21Z</published>
+    <arxiv:comment>12 pages, 6 figures, 1 table, this paper has been accepted by the 40th IEEE/ACM International Conference on Automated Software Engineering, ASE 2025</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Junsong Pu</name>
+    </author>
+    <author>
+      <name>Yichen Li</name>
+    </author>
+    <author>
+      <name>Zhuangbin Chen</name>
+    </author>
+    <author>
+      <name>Jinyang Liu</name>
+    </author>
+    <author>
+      <name>Zhihan Jiang</name>
+    </author>
+    <author>
+      <name>Jianjun Chen</name>
+    </author>
+    <author>
+      <name>Rui Shi</name>
+    </author>
+    <author>
+      <name>Zibin Zheng</name>
+    </author>
+    <author>
+      <name>Tieying Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.07646v1</id>
+    <title>MAVEN: Multi-Agent Verification-Elaboration Network with In-Step Epistemic Auditing</title>
+    <updated>2026-05-08T12:11:08Z</updated>
+    <link href="https://arxiv.org/abs/2605.07646v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.07646v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>While explicit reasoning trajectories enhance model interpretability, existing paradigms often rely on monolithic chains that lack intermediate verification, allowing early errors to cascade unchecked. This lack of modularity impedes granular auditing and compromises the epistemic trust required for high-stakes applications. We propose MAVEN (Multi-Agent Verification-Elaboration Network with In-Step Epistemic Auditing), a blackboard-inspired framework designed to transform LLMs into deliberate reasoners through explicit role-decoupling. At its core, MAVEN operationalizes an adversarial Skeptic-Researcher-Judge loop, simulating expert deliberation by functionally separating logical defense from factual grounding. Experiments on OpenBookQA, TruthfulQA, HALUEVAL and StrategyQA benchmarks demonstrate that MAVEN delivers superior reasoning quality across four fine-grained metrics. Notably, MAVEN consistently outperforms latent reasoning models such as GEMINI-3.1-Pro and consensus-based baselines (e.g., ReConcile) by generating explicitly structured, modular, and verifiable deliberation trajectories, rather than relying on implicit internal states or post-hoc consensus. Moreover, comprehensive evaluations confirm that MAVEN is fully model-agnostic, serving as a strong and transferable reasoning booster that yields substantial performance improvements across diverse backbone models.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-08T12:11:08Z</published>
+    <arxiv:comment>24 pages, 2 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Yinsheng Yao</name>
+    </author>
+    <author>
+      <name>Jiehao Tang</name>
+    </author>
+    <author>
+      <name>Zhaozhen Yang</name>
+    </author>
+    <author>
+      <name>Dawei Cheng</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.26036v1</id>
+    <title>FinHopper: A Progressive Multi-Hop Benchmark for Complex Financial Agents with Step-wise Evaluation</title>
+    <updated>2026-10-19T08:57:07Z</updated>
+    <link href="https://arxiv.org/abs/2610.26036v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.26036v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Financial agents are expected to answer factual investment queries through open search, but financial multi-hop retrieval differs from general multi-hop QA in a crucial way: each intermediate answer is an exact typed constraint, such as an entity, date, event, or numerical indicator, that determines the next query. This strict answer-conditioned dependency makes small intermediate errors cascade into plausible but wrong search trajectories. We introduce FinHopper, a benchmark for complex financial agents with controlled reasoning depth from 1 to 6 hops, covering stocks, funds, and macroeconomic facts, with gold intermediate answers for process-level evaluation. To construct FinHopper at scale, we design a state-transition-based synthesis framework that composes verified atomic financial QA patterns into dependency-preserving chains, followed by targeted in-synthesis verification, model-ensemble checking, and public-search validation by financial experts. Experiments with 20 LLM-agent configurations show that public search tools are necessary but insufficient: performance drops sharply as hop depth increases, the best model remains far below human experts, and process-aware scoring reveals partial reasoning progress hidden by final-answer-only evaluation. The benchmark is available at https://github.com/justajustin/FinHopper/.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-19T08:57:07Z</published>
+    <arxiv:comment>Accepted to EMNLP 2026. 28 pages, 7 figures, 8 tables. Benchmark: https://github.com/justajustin/FinHopper/</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Yuxuan Wu</name>
+    </author>
+    <author>
+      <name>Miaopei Lin</name>
+    </author>
+    <author>
+      <name>Qiufang Ying</name>
+    </author>
+    <author>
+      <name>Lin Dan</name>
+    </author>
+    <author>
+      <name>Hao Zhao</name>
+    </author>
+    <author>
+      <name>Qirui Liu</name>
+    </author>
+    <author>
+      <name>Yuteng Shen</name>
+    </author>
+    <author>
+      <name>Shaohui Wu</name>
+    </author>
+    <author>
+      <name>Weihong Luo</name>
+    </author>
+    <author>
+      <name>Xiku Du</name>
+    </author>
+    <author>
+      <name>Xing Tang</name>
+    </author>
+    <author>
+      <name>Hao Chen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.08563v1</id>
+    <title>Why Retrying Fails: Context Contamination in LLM Agent Pipelines</title>
+    <updated>2026-05-08T23:50:40Z</updated>
+    <link href="https://arxiv.org/abs/2605.08563v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.08563v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>When an LLM agent fails a multi-step tool-augmented task and retries, the failed attempt typically remains in its context window -- contaminating the next attempt and elevating the per-step error rate beyond the base level. This context-contaminated restart phenomenon is widely observed in practice yet entirely lacks formal treatment. We introduce the Context-Contaminated Restart Model (CCRM): a chain of T tool-call steps, each failing with base rate epsilon_0; after any failed attempt, the subsequent attempt operates in contaminated context with elevated error rate epsilon_1 &gt; epsilon_0. Under this model we derive five main results. (R1) An exact closed-form formula for P(succeed in at most K attempts). (R2) A cascade-overhead theorem giving the additional attempts Delta K incurred by contamination versus the clean-restart baseline. (R3) An optimal budget-allocation theorem identifying the pipeline depth T* that maximises success probability for a fixed total budget B=KT; we prove the closed form T* = sqrt(B * log(1/(1-epsilon_1)) / log(1/(1-epsilon_0))), with K*=B/T*. (R4) An information-theoretic lower bound via Le Cam's method showing K_CCRM is tight up to O(1). (R5) A clean-restart dominance theorem quantifying the exact benefit of context-clearing before retry. We validate CCRM on real SWE-bench Verified data: the IID model overestimates pass@3 by 17.4 percentage points (98.6% vs. 81.2%), while CCRM fits with error less than 0.001, implying a cascade ratio of epsilon_1/epsilon_0 = 7.1. Monte Carlo experiments confirm all theoretical predictions.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-08T23:50:40Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Zhanfu Yang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.27957v1</id>
+    <title>DisasterBench: Benchmarking LLM Planning under Typed Tool Interface Constraints</title>
+    <updated>2026-05-27T04:50:23Z</updated>
+    <link href="https://arxiv.org/abs/2605.27957v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.27957v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Disasters cause severe societal impacts, demanding rapid coordination of heterogeneous AI tools, from satellite analysis to flood prediction and damage assessment, into coherent multi-step workflows. As LLMs increasingly serve as orchestrators of such pipelines, effective coordination requires more than selecting semantically plausible tools: LLMs must generate executable workflows with correct parameter binding and dependency propagation.
+  We introduce DisasterBench, a benchmark for evaluating structured multi-agent planning over semantically similar but operationally distinct disaster-response tools. To enable step-level failure attribution, we further propose First-Point-of-Failure (FPoF), which localizes the earliest root cause in a predicted workflow, separating primary errors from downstream cascading effects.
+  Our evaluation reveals three findings: planning method effectiveness depends strongly on model capacity; tool mismatch and parameter-binding errors dominate first failures, revealing semantic grounding and execution consistency as distinct bottlenecks; and verbose intermediate reasoning can create instruction clash with structured output requirements, disrupting plan generation.
+  Together, these findings highlight a fundamental gap between semantic reasoning and execution-grounded coordination, underscoring the need for planning frameworks that jointly model semantic intent, execution constraints, and workflow consistency.
+  Code, data, and evaluation resources are available at: https://github.com/TamuChen18/DisasterBench_Open</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-27T04:50:23Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Zhitong Chen</name>
+    </author>
+    <author>
+      <name>Kai Yin</name>
+    </author>
+    <author>
+      <name>Weifeng Zhang</name>
+    </author>
+    <author>
+      <name>Zhiyuan Wang</name>
+    </author>
+    <author>
+      <name>Xiangjue Dong</name>
+    </author>
+    <author>
+      <name>Chengkai Liu</name>
+    </author>
+    <author>
+      <name>Zhewei Liu</name>
+    </author>
+    <author>
+      <name>Yiming Xiao</name>
+    </author>
+    <author>
+      <name>Ali Mostafavi</name>
+    </author>
+    <author>
+      <name>James Caverlee</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2510.07414v2</id>
+    <title>Haystack Engineering: Context Engineering for Heterogeneous and Agentic Long-Context Evaluation</title>
+    <updated>2025-10-10T02:33:52Z</updated>
+    <link href="https://arxiv.org/abs/2510.07414v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.07414v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Modern long-context large language models (LLMs) perform well on synthetic "needle-in-a-haystack" (NIAH) benchmarks, but such tests overlook how noisy contexts arise from biased retrieval and agentic workflows. We argue that haystack engineering is necessary to construct noisy long contexts that faithfully capture key real-world factors -- distraction from heterogeneous biased retrievers and cascading errors in agentic workflows -- to test models' long-context robustness. We instantiate it through HaystackCraft, a new NIAH benchmark built on the full English Wikipedia hyperlink network with multi-hop questions. HaystackCraft evaluates how heterogeneous retrieval strategies (e.g., sparse, dense, hybrid, and graph-based) affect distractor composition, haystack ordering, and downstream LLM performance. HaystackCraft further extends NIAH to dynamic, LLM-dependent settings that simulate agentic operations, where models refine queries, reflect on their past reasonings, and decide when to stop. Experiments with 15 long-context models show that (1) while stronger dense retrievers can introduce more challenging distractors, graph-based reranking simultaneously improves retrieval effectiveness and mitigates more harmful distractors; (2) in agentic tests, even advanced models like Gemini 2.5 Pro and GPT-5 suffer cascading failures from self-generated distractors or struggle to perform early stops. These results highlight persistent challenges in agentic long-context reasoning and establish HaystackCraft as a valuable testbed for future progress.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-08T18:12:10Z</published>
+    <arxiv:comment>Code available at https://github.com/Graph-COM/HaystackCraft</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Mufei Li</name>
+    </author>
+    <author>
+      <name>Dongqi Fu</name>
+    </author>
+    <author>
+      <name>Limei Wang</name>
+    </author>
+    <author>
+      <name>Si Zhang</name>
+    </author>
+    <author>
+      <name>Hanqing Zeng</name>
+    </author>
+    <author>
+      <name>Kaan Sancak</name>
+    </author>
+    <author>
+      <name>Ruizhong Qiu</name>
+    </author>
+    <author>
+      <name>Haoyu Wang</name>
+    </author>
+    <author>
+      <name>Xiaoxin He</name>
+    </author>
+    <author>
+      <name>Xavier Bresson</name>
+    </author>
+    <author>
+      <name>Yinglong Xia</name>
+    </author>
+    <author>
+      <name>Chonglin Sun</name>
+    </author>
+    <author>
+      <name>Pan Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.21912v1</id>
+    <title>Reliability-Contagion Feasibility in LLM Multi-Agent Networks</title>
+    <updated>2026-07-24T02:38:25Z</updated>
+    <link href="https://arxiv.org/abs/2607.21912v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.21912v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Communication allows large language model agents to pool evidence, but it also creates paths along which an erroneous claim can spread. We formulate a correction-aware network model that tracks susceptible, exposed, infectious, and corrected agents and derive its early-invasion condition for heterogeneous communication networks. We then couple this propagation model to an analytic majority-vote benchmark in which a clean-task reliability target imposes a minimum connectivity requirement. Under fixed exposure per communication edge, reliability and error control impose opposing graph constraints. We characterize when their intersection is empty and when it contains an intermediate connectivity range, and identify regular graphs that attain the smallest invasion factor within the reliable graph class when such graphs exist. Under a fixed sender budget, the homogeneous first-order threshold is independent of network density, showing that the communication-budget convention determines whether added edges increase early propagation risk. Finite-network simulations on 21,000 trajectories illustrate these directional predictions. A controlled grok-4.3 experiment then evaluates three six-node topologies on 36 new closed-world tasks, with a balanced 12-task subset continued to full cascades. Mean first-generation offspring increased from 0.667 to 1.333 and 1.667 as degree increased from 2 to 4 and 5, while the adoption fraction among exposed neighbours remained 0.333. Mean non-seed erroneous adoption in the full-cascade subset was 0.200, 0.333, and 0.333. Together, these results provide a tractable basis for selecting connectivity under explicit reliability and propagation constraints.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-24T02:38:25Z</published>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Ruiwu Niu</name>
+    </author>
+    <author>
+      <name>Xincheng Shu</name>
+    </author>
+    <author>
+      <name>Ying Zhao</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.01478v1</id>
+    <title>On the Multi-Index, Multi-Rate, and Multi-Phase Dynamics of Decoder-Only Language Models: A Unified Hybrid Framework for Generative and Agentic Systems</title>
+    <updated>2026-10-01T11:17:08Z</updated>
+    <link href="https://arxiv.org/abs/2610.01478v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.01478v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) are increasingly deployed as computational engines in autonomous decision-making and planning loops, yet their systems and control treatment remains hindered by architectural simplifications, index conflations, and informal descriptions of tool interactions. This paper presents a control-theoretic formulation of decoder-only language models as multi-index, multi-rate systems, and sets the stage for a stochastic hybrid systems framework to govern the multi-phase dynamics of agentic tool interaction. We formalize the architecture across three hierarchically coupled evolution indices: (i) an ultrafast feedforward cascade of transformer blocks across layer depth, where layer normalization is cast as a spherical projection and key--value caching is proven to be an exact internal state realization via causal prefix invariance; (ii) an uncontrolled stochastic difference recursion over token generation steps, where finite context truncation induces a time-homogeneous Markov chain; and (iii) an autonomous mode-switching mechanism governing transitions between token generation and tool execution regimes, where tool invocations are triggered upon trajectory arrival at switching manifolds, followed by exogenous state jump maps that augment the context string with external observations. By defining a prompt-dependent evaluator over successive evaluable claims, we obtain a task-level error process whose fault-free histories and expected error growth admit bounds under conditional fault-hazard and error-drift assumptions.</summary>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.SY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-01T11:17:08Z</published>
+    <arxiv:primary_category term="math.OC"/>
+    <author>
+      <name>Ali Pakniyat</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.04240v1</id>
+    <title>Biological Motifs for Agentic Control</title>
+    <updated>2026-07-05T11:30:45Z</updated>
+    <link href="https://arxiv.org/abs/2607.04240v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.04240v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The transition of Large Language Models (LLMs) from passive generators to autonomous agents has introduced significant challenges in reliability, security, and state management. Current agentic architectures are often constructed ad-hoc, prone to hallucination cascades, infinite loops, and prompt injection attacks. This paper argues that many of these failure modes can be analyzed using control motifs long studied in systems biology, provided the comparison is made at the level of typed interfaces and coordination structure rather than literal biological mechanism.
+  We develop a typed interface correspondence between Gene Regulatory Networks and agentic software systems using polynomial functors and wiring diagrams. Five biological motifs are mapped to composable software design patterns: Coherent Feed-Forward Loops for noise suppression, Adaptive Immunity for layered security, Mitochondrial Signaling for resource governance, Endosymbiosis for neuro-symbolic integration, and Morphogen Diffusion for spatially varying coordination. An epistemic topology layer derives Kripke-style knowledge operators from the wiring diagram's observation structure and proves four predictive theorems for multi-agent scaling.
+  The core contributions are: (1) the Agentic Operad, a typed syntax for agent composition with provable error suppression bounds for feed-forward topologies; (2) an epistemic topology with four theorems (error amplification, sequential penalty, parallel acceleration, and tool density scaling) whose qualitative predictions are consistent with published multi-agent benchmarks; and (3) a six-layer progression from structure through development, grounded in autonomous learning frameworks and convergence proxies from the empirical literature. A reference implementation with 1,813 tests and 116 examples illustrates practical feasibility.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-bio.CB" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-05T11:30:45Z</published>
+    <arxiv:comment>80 pages. Preprint; feedback welcome</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Bogdan Banu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.29511v2</id>
+    <title>DynaGraph: Lightweight Multi-Model Interaction Framework via Dynamic Topological Reconfiguration</title>
+    <updated>2026-05-29T05:49:24Z</updated>
+    <link href="https://arxiv.org/abs/2605.29511v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.29511v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Tackling complex reasoning tasks typically relies on massive monolithic LLMs, which suffer from severe computational redundancy. While task decomposition through structured pipelines or multi-agent collaborations offers an alternative, these approaches inevitably fall into a critical dilemma: predefined static topologies are highly vulnerable to cascading errors, whereas unconstrained dynamic agents suffer from trajectory divergence and unpredictable memory bloat. To address this, we present DynaGraph, a lightweight multi-model framework driven by dynamic topological reconfiguration. At the execution level, DynaGraph multiplexes time-division PEFT adapters over a shared base model, enabling both full system training and inference deployment on a single consumer-grade GPU. At the routing level, the Evaluator continuously monitors execution confidence to trigger hierarchical self-healing: Fine-grained Patching for localized data gaps and Subgraph Reconstruction for severe logical ruptures. Experiments on StrategyQA, MATH, and FinQA demonstrate our 8B model closely approximates the reasoning capabilities of a 72B monolithic model (e.g., 87.6% on StrategyQA, 82.7% on MATH). Furthermore, it reduces latency by up to 68.1% and token consumption by 68.6% compared to unconstrained dynamic architectures.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-28T07:33:29Z</published>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Yanxing Guo</name>
+    </author>
+    <author>
+      <name>Zihao Zheng</name>
+    </author>
+    <author>
+      <name>Fangzhou Wu</name>
+    </author>
+    <author>
+      <name>Ling Liang</name>
+    </author>
+    <author>
+      <name>Lin Bao</name>
+    </author>
+    <author>
+      <name>Zongwei Wang</name>
+    </author>
+    <author>
+      <name>Yimao Cai</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.25898v1</id>
+    <title>Verifiable Logic in Medical LLMs: A Critical Review of Agentic Clinical Reasoning Optimization and Neuro-Symbolic Grounding</title>
+    <updated>2026-11-19T10:49:23Z</updated>
+    <link href="https://arxiv.org/abs/2611.25898v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.25898v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Clinical large language models are usually judged by whether the final answer is right. Yet a model can reach a fluent, plausible output through invalid reasoning that static benchmarks do not detect, and confident hallucination, causally invalid inference, and spurious demographic shortcuts can pass conventional evaluation. This critical review covers four paradigms in turn: how clinical hallucination arises and why static metrics miss it; the agentic hallucination cascade, in which multi-agent and tool-augmented systems propagate and amplify early reasoning errors; process reward modeling as step-level supervision; and neuro-symbolic grounding, in which formal logic engines, ontology reasoners, and knowledge graphs place verifiable constraints on neural output. Within their encoded domains, systems with symbolic veto layers offer guarantees that hold relative to their encoded knowledge, and they report large gains on the safety measures they use. These results come from single studies, mostly in simulated or small-sample settings, and are not directly comparable with neural baselines. Process reward models remain bounded by the statistics of their training data. We propose a conceptual framework that maps each agentic failure mode to a symbolic intervention point, and we argue that clinical AI safety depends substantially on system architecture. Because current regulation emphasizes performance and does not require verification of reasoning steps, we argue that responsible certification should also audit reasoning trajectories alongside accuracy on static benchmarks.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-19T10:49:23Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Youssef ElNahas</name>
+    </author>
+    <author>
+      <name>Adel Ammar</name>
+    </author>
+    <author>
+      <name>Soumaya Chaffar</name>
+    </author>
+    <author>
+      <name>Wadii Boulila</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2510.09404v2</id>
+    <title>Agentic Systems in Radiology: Design, Applications, Evaluation, and Challenges</title>
+    <updated>2025-10-13T07:11:22Z</updated>
+    <link href="https://arxiv.org/abs/2510.09404v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.09404v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Building agents, systems that perceive and act upon their environment with a degree of autonomy, has long been a focus of AI research. This pursuit has recently become vastly more practical with the emergence of large language models (LLMs) capable of using natural language to integrate information, follow instructions, and perform forms of "reasoning" and planning across a wide range of tasks. With its multimodal data streams and orchestrated workflows spanning multiple systems, radiology is uniquely suited to benefit from agents that can adapt to context and automate repetitive yet complex tasks. In radiology, LLMs and their multimodal variants have already demonstrated promising performance for individual tasks such as information extraction and report summarization. However, using LLMs in isolation underutilizes their potential to support complex, multi-step workflows where decisions depend on evolving context from multiple information sources. Equipping LLMs with external tools and feedback mechanisms enables them to drive systems that exhibit a spectrum of autonomy, ranging from semi-automated workflows to more adaptive agents capable of managing complex processes. This review examines the design of such LLM-driven agentic systems, highlights key applications, discusses evaluation methods for planning and tool use, and outlines challenges such as error cascades, tool-use efficiency, and health IT integration.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-10T13:56:27Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <arxiv:journal_ref>Radiology 321.1 (2026): e253226</arxiv:journal_ref>
+    <author>
+      <name>Christian Bluethgen</name>
+    </author>
+    <author>
+      <name>Dave Van Veen</name>
+    </author>
+    <author>
+      <name>Daniel Truhn</name>
+    </author>
+    <author>
+      <name>Jakob Nikolas Kather</name>
+    </author>
+    <author>
+      <name>Michael Moor</name>
+    </author>
+    <author>
+      <name>Malgorzata Polacin</name>
+    </author>
+    <author>
+      <name>Akshay Chaudhari</name>
+    </author>
+    <author>
+      <name>Thomas Frauenfelder</name>
+    </author>
+    <author>
+      <name>Curtis P. Langlotz</name>
+    </author>
+    <author>
+      <name>Michael Krauthammer</name>
+    </author>
+    <author>
+      <name>Farhad Nooralahzadeh</name>
+    </author>
+    <arxiv:doi>10.1148/radiol.253226</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1148/radiol.253226" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.00974v1</id>
+    <title>Search-GRT: Guided Retrieval Training of Search Agents to Optimize for Complex Question Answering</title>
+    <updated>2026-08-02T03:55:08Z</updated>
+    <link href="https://arxiv.org/abs/2608.00974v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.00974v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The effective use of search engines by large language models (LLMs) remains a significant challenge, particularly in complex, multi-hop question-answering (MHQA) tasks. These tasks require the model to decompose questions into subqueries, retrieve relevant information, and synthesize answers from multiple sources, often leading to cascading errors due to poor retrieval in early stages. Reinforcement learning (RL) has shown promise in improving LLMs' search capabilities, but it often suffers from sparse rewards during training, hindering the model's ability to learn effectively. To address these challenges, we introduce Guided Retrieval Training (GRT), a novel method that improves the performance of a search agent by restricting the retrieval process during RL training using ground truth information. By focusing on a curated set of relevant documents, GRT provides the model with a stronger learning signal, mitigating the problem of sparse rewards and improving its ability to generate accurate subqueries and synthesize correct answers. Our experimental results demonstrate that GRT achieves consistent performance improvements over existing methods, such as Search-R1, across a wide range of question-answering (QA) tasks. Notably, GRT excels in MHQA tasks, achieving over 40% improvements in performance. Additionally, GRT enhances training efficiency by achieving better QA performance with fewer training steps.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-02T03:55:08Z</published>
+    <arxiv:comment>Accepted at Interspeech 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Aounon Kumar</name>
+    </author>
+    <author>
+      <name>Sudipta Paul</name>
+    </author>
+    <author>
+      <name>Vivek Kulkarni</name>
+    </author>
+    <author>
+      <name>Vijay Srinivasan</name>
+    </author>
+    <author>
+      <name>Srinivas Chappidi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.25332v1</id>
+    <title>Decoupling Reconnaissance and Exploitation: Measuring the Capability Boundaries of LLM-Based Web Penetration Testing</title>
+    <updated>2026-06-24T02:51:58Z</updated>
+    <link href="https://arxiv.org/abs/2606.25332v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.25332v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Models (LLMs) have shown promise for automated penetration testing, yet existing end-to-end black-box evaluations are highly susceptible to error cascading: failures in early reconnaissance can mask an agent's actual ability to exploit vulnerabilities. To more accurately characterize these capabilities, we propose a two-stage decoupled evaluation framework that separates exploit execution from reconnaissance. Using ground-truth injection and knowledge-driven ablation across 70 high-fidelity web vulnerability testbeds, our framework isolates exploitation performance from reconnaissance noise. We empirically evaluate five open-source penetration-testing agents, covering multiagent, monolithic, and graph-driven architectures, on a strictly aligned subset of 50 representative vulnerabilities. The results reveal a substantial capability gap. With accurate vulnerability context, agents achieve a functional success rate of up to 90.0%, whereas autonomous reconnaissance, measured by targeted vulnerability recall, plateaus at approximately 50.0%, primarily due to failures in parsing unstructured telemetry. Cross-architectural analysis further reveals distinct capability niches: multi-agent isolation is more effective for long-sequence interactions such as de-serialization, while monolithic and graph-driven designs perform better on short-chain injections and cross-session access-control vulnerabilities, respectively. This decoupled evaluation work provides a fine-grained benchmarking protocol and an empirical basis for designing next-generation automated offensive security agents.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-24T02:51:58Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Liwei Yu</name>
+    </author>
+    <author>
+      <name>Shuo Li</name>
+    </author>
+    <author>
+      <name>Ming Zhou</name>
+    </author>
+    <author>
+      <name>Ge Chu</name>
+    </author>
+    <author>
+      <name>Yan Guo</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.09678v2</id>
+    <title>Faithful, Not Corrective: Model Capability Governs Message-Format Effects in Multi-Hop Agent Relays</title>
+    <updated>2026-09-17T13:08:11Z</updated>
+    <link href="https://arxiv.org/abs/2607.09678v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.09678v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>When LLM agents hand information to one another, does the message format matter? Two literatures disagree: format-optimization work reports that structured messages cut cost without hurting accuracy, while format-restriction studies find that imposing structure degrades generation. Neither line has measured what happens when messages traverse multiple hops, where copy fidelity, rather than one-shot generation quality, dominates. We introduce a controlled relay testbed in which briefs of twelve programmatic atomic facts are re-encoded hop by hop in five formats (free natural language, precision-instructed NL, JSON, triples, key-value) over six hops, scored against programmatic ground truth by a fixed strong grader, across two relay-capability tiers, a cognitive-load condition, and a paired-fork error injection. We find that (i) a strong relay is nearly lossless for every format (hop-6 QA recall $\geq 0.973$), with residual loss concentrated at the first encoding step; (ii) per-hop cognitive load raises generation cost by 24-53% while fidelity changes stay within $\pm 1.8$ points; (iii) under a weak 1.5B relay, the across-format dispersion of hop-6 recall grows by a factor of $8.7$ (CI 5.3-15.5), driven by an encode-drift trade-off that flips the format ranking in transit; and (iv) once an injected error is present, every format propagates it faithfully (surface persistence 83-100%) and no format cascades collateral damage onto neighboring facts. Structure buys a faithful, error-localizing channel, not an error-correcting code.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-12T08:21:53Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Sicheng Zeng</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.06925v2</id>
+    <title>LungCURE: Benchmarking Multimodal Real-World Clinical Reasoning for Precision Lung Cancer Diagnosis and Treatment</title>
+    <updated>2026-04-09T06:51:09Z</updated>
+    <link href="https://arxiv.org/abs/2604.06925v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.06925v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Lung cancer clinical decision support demands precise reasoning across complex, multi-stage oncological workflows. Existing multimodal large language models (MLLMs) fail to handle guideline-constrained staging and treatment reasoning. We formalize three oncological precision treatment (OPT) tasks for lung cancer, spanning TNM staging, treatment recommendation, and end-to-end clinical decision support. We introduce LungCURE, the first standardized multimodal benchmark built from 1,000 real-world, clinician-labeled cases across more than 10 hospitals. We further propose LCAgent, a multi-agent framework that ensures guideline-compliant lung cancer clinical decision-making by suppressing cascading reasoning errors across the clinical pathway. Experiments reveal large differences across various large language models (LLMs) in their capabilities for complex medical reasoning, when given precise treatment requirements. We further verify that LCAgent, as a simple yet effective plugin, enhances the reasoning performance of LLMs in real-world medical scenarios.</summary>
+    <category term="cs.MM" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-08T10:30:43Z</published>
+    <arxiv:comment>20 pages, 22 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.MM"/>
+    <author>
+      <name>Fangyu Hao</name>
+    </author>
+    <author>
+      <name>Jiayu Yang</name>
+    </author>
+    <author>
+      <name>Yifan Zhu</name>
+    </author>
+    <author>
+      <name>Zijun Yu</name>
+    </author>
+    <author>
+      <name>Qicen Wu</name>
+    </author>
+    <author>
+      <name>Wang Yunlong</name>
+    </author>
+    <author>
+      <name>Jiawei Li</name>
+    </author>
+    <author>
+      <name>Yulin Liu</name>
+    </author>
+    <author>
+      <name>Xu Zeng</name>
+    </author>
+    <author>
+      <name>Guanting Chen</name>
+    </author>
+    <author>
+      <name>Shihao Li</name>
+    </author>
+    <author>
+      <name>Zhonghong Ou</name>
+    </author>
+    <author>
+      <name>Meina Song</name>
+    </author>
+    <author>
+      <name>Mengyang Sun</name>
+    </author>
+    <author>
+      <name>Haoran Luo</name>
+    </author>
+    <author>
+      <name>Yu Shi</name>
+    </author>
+    <author>
+      <name>Yingyi Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.27288v1</id>
+    <title>When Does Combining Language Models Help? A Co-Failure Ceiling on Routing, Voting, and Mixture-of-Agents Across 67 Frontier Models</title>
+    <updated>2026-06-25T17:06:06Z</updated>
+    <link href="https://arxiv.org/abs/2606.27288v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.27288v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multi-model LLM systems such as routing, voting, cascades, fusion, and mixture-of-agents are used to beat single-model accuracy. We show that their gain is capped by a quantity the field rarely reports. For any policy whose output is one member model answer, accuracy cannot exceed one minus beta, where beta is the rate at which every model is wrong on the same query. In contrast, the usual diagnostic, average pairwise error correlation rho, cannot identify beta: error laws with identical marginals and pairwise correlations can have different all-wrong rates. A Clopper-Pearson bound on beta gives a finite-sample certificate on the largest gain any router, vote, or cascade could deliver before training a router.
+  Across 67 models from 21 providers, a tetrachoric-calibrated single-factor model still underprices the all-wrong tail: on open-ended mathematics, observed beta is 0.052 versus 0.023 under the full 67-model Gaussian copula, about 2.5 times underpricing, with 90 percent CI 1.7 to 3.4 and k equals 17. The effect recurs on execution-graded code, where beta is 0.079. Re-asking the same GPQA-Diamond questions in free-response rather than multiple-choice form reopens the tail, with beta 0.127 and a five-judge panel with kappa 0.73 to 0.92, locating co-failure in answer format rather than subject. At matched quality, low-rho heterogeneous ensembles beat high-rho Self-MoA, but on checkable tasks in our pool, combining models rarely beats the single best model without a strong query-level routing signal. Gains come from models failing on different questions, not from adding more models.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-25T17:06:06Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Josef Chen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.28991v1</id>
+    <title>Beneath the Scores: Rethinking Hallucination Evaluation for Video Understanding Models</title>
+    <updated>2026-09-24T04:02:18Z</updated>
+    <link href="https://arxiv.org/abs/2609.28991v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.28991v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Video understanding is increasingly performed by multi-stage LLM agents that separate temporal grounding, visual observation, and reasoning. Yet these stages are typically evaluated on different benchmarks and distributions, making it difficult to determine where hallucinations originate. We first organize existing benchmarks around these stages and show that their scores provide inconsistent diagnostic signals: stronger stage-level performance does not reliably imply lower downstream hallucination, and even benchmarks targeting the same capability can disagree.
+  We therefore introduce a causal stage-intervention protocol that overwrites individual stages while holding the downstream task fixed. Across 60,008 runs on three video-agent architectures, we find that grounding is the dominant source of downstream error, with roughly four times the causal impact of corrupting visual observations. Successful grounding depends primarily on locating the correct region rather than precise temporal overlap, explaining why standard mIoU metrics poorly predict downstream reliability. We further find that incorrect evidence is substantially more harmful than missing evidence. Finally, auditing existing benchmarks against these interventions reveals that their scores do not reliably predict causal cascade sensitivity and can fail under distribution shift. These results motivate intervention-based, stage-aware evaluation for trustworthy video agents.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-24T04:02:18Z</published>
+    <arxiv:comment>Accepted in NeurIPS 2026 TAE workshop</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Shuzhi Gong</name>
+    </author>
+    <author>
+      <name>Fengze Sun</name>
+    </author>
+    <author>
+      <name>Yuansan Liu</name>
+    </author>
+  </entry>
+</feed>

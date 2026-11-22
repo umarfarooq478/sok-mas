@@ -1,0 +1,257 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/5yY3eOu+t9yKzlQ7dEdPEWjxOf8</id>
+  <title>arXiv Query: search_query=all:bugs AND all:LLM AND all:agent AND all:frameworks AND all:empirical AND all:study&amp;id_list=&amp;start=0&amp;max_results=100</title>
+  <updated>2026-11-21T23:57:49Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:bugs+AND+(all:LLM+AND+(all:agent+AND+(all:frameworks+AND+(all:empirical+AND+all:study))))&amp;start=0&amp;max_results=100&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>100</opensearch:itemsPerPage>
+  <opensearch:totalResults>9</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2607.15684v1</id>
+    <title>Understanding Agent-Reactive Bugs at the Model-Harness Boundary: An Empirical Study of LLM Agent Issue Reports</title>
+    <updated>2026-07-17T06:53:31Z</updated>
+    <link href="https://arxiv.org/abs/2607.15684v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.15684v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM agents span command-line interfaces (e.g., Codex) and agent frameworks (e.g., LangChain), integrating backend LLMs with harness code that parses model outputs, controls agent loops, and manages context. Both the harness and LLM-generated responses jointly shape an agent's execution. This architecture gives rise to bugs that cannot be readily understood by inspecting either component alone, because some bugs occur only when a particular LLM response elicits an abnormal reaction from the agent. Prior empirical studies of agent bugs have largely attributed failures either to limited model capabilities or to harness-side defects, such as outdated APIs and configuration misalignment, without characterizing these AR bugs. We conduct the first empirical study focused on agent-reactive (AR) bugs. Through manual analysis of 255 bug reports from Codex, Gemini-CLI, LangChain, and CrewAI, we construct a two-axis taxonomy covering observable symptoms and the LLM behaviors that trigger them. Our findings show that many AR bugs manifest as silent errors without well-defined test oracles, which makes detection difficult. The stochasticity of LLM responses further complicates bug reproduction. We additionally examine fixes proposed by users and implemented by developers. This analysis exposes a mismatch: users frequently advocate harness-side guardrails, whereas developers may attribute the issue to the LLM or respond slowly to user-proposed fixes. These findings point to the need for mechanisms that help users and developers understand the root causes and resolutions of AR bugs. Overall, the study highlights challenges specific to LLM agents and motivates the design of test oracles, reproduction support, and fault-localization techniques for AR bugs.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-17T06:53:31Z</published>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Jingyi Chen</name>
+    </author>
+    <author>
+      <name>Songqiang Chen</name>
+    </author>
+    <author>
+      <name>Hengcheng Zhu</name>
+    </author>
+    <author>
+      <name>Jialun Cao</name>
+    </author>
+    <author>
+      <name>Jiasi Shen</name>
+    </author>
+    <author>
+      <name>Shing-Chi Cheung</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.17699v1</id>
+    <title>SelfHeal: Empirical Fix Pattern Analysis and Bug Repair in LLM Agents</title>
+    <updated>2026-04-20T01:28:15Z</updated>
+    <link href="https://arxiv.org/abs/2604.17699v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.17699v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Models (LLMs) have transformed software development and AI applications. While LLMs are designed for text processing, LLM agents extend this capability by enabling autonomous actions, tool use, and multi-step task completion. As this field grows, developers face new challenges in debugging these complex systems. To address this challenge, we present the first empirical study on bug fix patterns in LLM agents. We study buggy posts and code snippets from three platforms: Stack Overflow, GitHub, and HuggingFace Forums. We examine their fix patterns, the components where fixes are applied, and the programming languages and frameworks involved. Furthermore, we introduce AgentDefect, the first benchmark dataset for bugs in LLM agents. The dataset contains 37 runtime buggy instances along with fixed code and test files. Finally, we present SelfHeal, a multi-agent system designed to fix bugs in LLM agents. The system leverages two independent ReAct agents: the fix agent and the critic agent. These agents use tools that provide both internal knowledge (fix rules) and external knowledge (web search) to propose and validate fixes. Our evaluation shows that SelfHeal with Gemini 3 Pro as the backbone LLM outperforms both baseline and state-of-the-art approaches by a significant margin.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-20T01:28:15Z</published>
+    <arxiv:comment>Accepted at EASE 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Niful Islam</name>
+    </author>
+    <author>
+      <name>Muhammad Anas Raza</name>
+    </author>
+    <author>
+      <name>Mohammad Wardat</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.08906v4</id>
+    <title>Understanding Bugs in Modern Agentic Frameworks: A Study of Symptoms, Root Causes, and Triggering Conditions</title>
+    <updated>2026-10-04T00:24:41Z</updated>
+    <link href="https://arxiv.org/abs/2604.08906v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.08906v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Modern agentic frameworks such as CrewAI and AutoGen have evolved into complex, autonomous multi-agent systems, introducing reliability challenges that go beyond earlier pipeline-based LLM libraries. However, existing empirical studies focus on earlier LLM libraries or task-level bugs, leaving the unique complexities of these agentic frameworks unexplored. We present a comprehensive study of 409 fixed bugs across five representative agentic frameworks, proposing a five-layer architectural abstraction. Our taxonomy identifies previously unreported symptom categories---Unexpected Execution Sequence, User Configuration Ignored, and Incomplete/Incorrect Trace---and isolates agent-specific root causes including Model-Related Fault, Cognitive Context Mismanagement, and Orchestration Fault. Notably, the model integration layer is the most bug-prone yet receives disproportionately low test inclusion rate during bug fixing (47%), revealing a critical validation gap. Despite varying design paradigms, bug symptoms, root causes, and bug-prone components show substantial cross-framework consistency (JS similarity 0.62--0.88). Finally, we present the first systematic study of bug-triggering conditions, identifying error-prone factor combinations across element configurations, input patterns, and operations, and demonstrate their transferability across frameworks, providing a foundation for test oracle design and cross-framework benchmark.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-10T03:13:24Z</published>
+    <arxiv:comment>12 pages, 2 figures. Accepted at ASE 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <arxiv:journal_ref>In Proceedings of the 41st IEEE/ACM International Conference on Automated Software Engineering (ASE '26), 2026, pages 601-612</arxiv:journal_ref>
+    <author>
+      <name>Xiaowen Zhang</name>
+    </author>
+    <author>
+      <name>Hannuo Zhang</name>
+    </author>
+    <author>
+      <name>Shin Hwei Tan</name>
+    </author>
+    <arxiv:doi>10.1145/3832783.3834378</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1145/3832783.3834378" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.21806v4</id>
+    <title>Where Agent Frameworks Fall Short: Examining Functional Challenges and Usability Concerns</title>
+    <updated>2026-08-06T07:48:13Z</updated>
+    <link href="https://arxiv.org/abs/2602.21806v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.21806v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language model (LLM) agents are increasingly built on agent frameworks that provide reusable abstractions for workflow orchestration, state management, tool integration, and execution control. However, the quality of this infrastructure layer remains insufficiently understood, particularly its functionality challenges and usability concerns, as existing studies have mainly examined traditional deep learning (DL) frameworks or model-level agent failures. Therefore, we conduct an empirical study of 5,669 bug reports and 809 feature requests from five mainstream agent frameworks: AutoGen, CrewAI, LangChain, LangGraph, and MetaGPT. We construct a four-dimensional taxonomy covering 22 root causes, seven symptoms, 11 motivations, and six requirements, and map them to the five-stage agent lifecycle. Across the four RQs, results show an execution centered quality pattern shaped by semantic interface boundaries. Reported bugs mainly manifest as Incorrect Functionality (76.00%) and involve more API, configuration, parsing, and serialization related causes than DL framework bugs, while their associations remain sparse and stage specific. Feature requests mainly target Feature Enhancement (49.07%) and reveal structured needs for Orchestration Expressiveness, Development Delivery, Model Adaptation, and Tool Ecosystem. These findings call for quality assurance beyond crash based and tensor level testing, with emphasis on API sequences, structured LLM outputs, serialization boundaries, execution traces, and execution centered maintenance, offering empirical guidance for reliable and usable agent framework infrastructure.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-25T11:34:17Z</published>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Xinxue Zhu</name>
+    </author>
+    <author>
+      <name>Yanzhou Mu</name>
+    </author>
+    <author>
+      <name>Xiaoyu Zhang</name>
+    </author>
+    <author>
+      <name>Tianlin Li</name>
+    </author>
+    <author>
+      <name>Chao Shen</name>
+    </author>
+    <author>
+      <name>Chunrong Fang</name>
+    </author>
+    <author>
+      <name>Yang Liu</name>
+    </author>
+    <author>
+      <name>Juan Zhai</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2601.07136v1</id>
+    <title>A Large-Scale Study on the Development and Issues of Multi-Agent AI Systems</title>
+    <updated>2026-01-12T02:07:15Z</updated>
+    <link href="https://arxiv.org/abs/2601.07136v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.07136v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The rapid emergence of multi-agent AI systems (MAS), including LangChain, CrewAI, and AutoGen, has shaped how large language model (LLM) applications are developed and orchestrated. However, little is known about how these systems evolve and are maintained in practice. This paper presents the first large-scale empirical study of open-source MAS, analyzing over 42K unique commits and over 4.7K resolved issues across eight leading systems. Our analysis identifies three distinct development profiles: sustained, steady, and burst-driven. These profiles reflect substantial variation in ecosystem maturity. Perfective commits constitute 40.8% of all changes, suggesting that feature enhancement is prioritized over corrective maintenance (27.4%) and adaptive updates (24.3%). Data about issues shows that the most frequent concerns involve bugs (22%), infrastructure (14%), and agent coordination challenges (10%). Issue reporting also increased sharply across all frameworks starting in 2023. Median resolution times range from under one day to about two weeks, with distributions skewed toward fast responses but a minority of issues requiring extended attention. These results highlight both the momentum and the fragility of the current ecosystem, emphasizing the need for improved testing infrastructure, documentation quality, and maintenance practices to ensure long-term reliability and sustainability.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-12T02:07:15Z</published>
+    <arxiv:comment>8 pages, 8 figures, IEEE BigData Workshop on Software Engineering for Agentic AI 2025</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Daniel Liu</name>
+    </author>
+    <author>
+      <name>Krishna Upadhyay</name>
+    </author>
+    <author>
+      <name>Vinaik Chhetri</name>
+    </author>
+    <author>
+      <name>A. B. Siddique</name>
+    </author>
+    <author>
+      <name>Umar Farooq</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.19489v2</id>
+    <title>Taming System Complexity: Demystifying Software Engineering Agents in Diagnosing Linux Kernel Faults</title>
+    <updated>2026-06-01T13:56:50Z</updated>
+    <link href="https://arxiv.org/abs/2505.19489v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2505.19489v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The Linux kernel is a critical system, serving as the foundation for numerous systems. Bugs in the Linux kernel can cause serious consequences, affecting billions of users. Fault localization (FL), which aims at identifying the buggy code elements in software, plays an essential role in software quality assurance. While recent LLM agents have achieved promising accuracy in FL on recent benchmarks like SWE-bench, it remains unclear how well these methods perform in the Linux kernel, where FL is much more challenging due to the large-scale code base, limited observability, and diverse impact factors. In this paper, we introduce LinuxFLBench, a FL benchmark constructed from real-world Linux kernel bugs. We conduct an empirical study to assess the performance of state-of-the-art LLM agents on the Linux kernel. Our initial results reveal that existing agents struggle with this task, achieving a best top-1 accuracy of only 41.6% at file level. To address this challenge, we propose LinuxFL$^+$, an enhancement framework designed to improve FL effectiveness of LLM agents for the Linux kernel. LinuxFL$^+$ substantially improves the FL accuracy of all studied agents (e.g., 7.2% - 11.2% accuracy increase) with minimal costs.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-05-26T04:15:48Z</published>
+    <arxiv:comment>Accepted to ACL 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Zhenhao Zhou</name>
+    </author>
+    <author>
+      <name>Zhuochen Huang</name>
+    </author>
+    <author>
+      <name>Yike He</name>
+    </author>
+    <author>
+      <name>Chong Wang</name>
+    </author>
+    <author>
+      <name>Jiajun Wang</name>
+    </author>
+    <author>
+      <name>Yijian Wu</name>
+    </author>
+    <author>
+      <name>Xin Peng</name>
+    </author>
+    <author>
+      <name>Yiling Lou</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.22526v1</id>
+    <title>"Refactoring Runaway": Understanding and Mitigating Tangled Refactorings in Coding Agents for Issue Resolution</title>
+    <updated>2026-05-21T14:18:29Z</updated>
+    <link href="https://arxiv.org/abs/2605.22526v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.22526v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent advances in coding agents have shown remarkable progress in software issue resolution. In practice, real-world issues are typically bug fixes or feature requests in which human developers naturally incorporate refactoring as part of the resolution process, resulting in tangled refactoring. Since LLMs are trained on large-scale open-source repositories, coding agents may inherit such behaviors. In this paper, we conduct an empirical study on Multi-SWE-bench, analyzing 3,691 valid patches generated by three agent frameworks with 12 LLMs. We find that coding agents introduce tangled refactorings less frequently (21.43% vs. 36.72%) and with lower intensity (0.66 vs. 1.75) than human developers, although they exhibit a broader diversity of refactoring types. Logistic regression analysis further shows that tangled refactorings are strongly associated with reduced compilability, while exhibiting no significant association with functional correctness. Based on these findings, we propose a refactoring-aware refinement approach that assesses the necessity and safety of tangled refactorings and selectively removes or repairs problematic operations. Our approach improves compilability from 19.34% to 38.33%, and additionally resolves 2.79% previously unresolved issues. Overall, this work presents the first step towards understanding tangled refactoring practices in agentic issue resolution and opens up avenues for future work.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-21T14:18:29Z</published>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Zhao Tian</name>
+    </author>
+    <author>
+      <name>Zifan Zhang</name>
+    </author>
+    <author>
+      <name>Tao Xiao</name>
+    </author>
+    <author>
+      <name>Dong Wang</name>
+    </author>
+    <author>
+      <name>Masanari Kondo</name>
+    </author>
+    <author>
+      <name>Junjie Chen</name>
+    </author>
+    <author>
+      <name>Yasutaka Kamei</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.35451v1</id>
+    <title>Then there is prompt injection, a malicious email, ...: The Wild Wide West of OpenClaw Agentic System Security</title>
+    <updated>2026-10-26T13:49:22Z</updated>
+    <link href="https://arxiv.org/abs/2610.35451v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.35451v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>AI-powered personal assistant frameworks such as OpenClaw combine LLM reasoning, persistent memory, tool invocation, local execution, and web-based workflows. These capabilities enable useful automation, but they also create security risks when untrusted inputs, model reasoning, tools, memory, and deployment configuration interact without explicit trust boundaries. This paper presents an empirical study of reported security concerns in OpenClaw using two complementary data sources: Reddit discussions and security-tagged GitHub issues. We analyze more than 25K Reddit posts from 13 OpenClaw-related subreddits and identify 162 security-relevant posts with 1,787 associated comments. We further collect 358 security-tagged GitHub issues and retain 180 issues describing concrete security concerns. Using qualitative analysis and evidence-grounded CWE mapping, we identify 521 CWE instances across 59 distinct weakness types, concentrated in access-control failures, sensitive-data exposure, injection, and unsafe execution. We also extract 543 practitioner mitigation suggestions and consolidate them into seven recurring strategies. To complement the empirical analysis, we present an evidence-grounded illustrative reconstruction of a representative sensitive-data exposure pathway using dummy secret values. Our findings show that OpenClaw security issues are not isolated implementation bugs; they reflect recurring trust-boundary failures across the agent execution pipeline. We discuss how these weaknesses map to both traditional software-security categories and agent-specific failure mechanisms, and derive implications for safer agentic systems, including explicit trust boundaries, least-privilege tool access, execution containment, runtime oversight, and defense-in-depth deployment.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-26T13:49:22Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Mostafijur Rahman Akhond</name>
+    </author>
+    <author>
+      <name>Mahmuda Khatun</name>
+    </author>
+    <author>
+      <name>Gias Uddin</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.25826v1</id>
+    <title>From Finding to Fixing: How Useful is Fault Localization for Agentic Program Repair?</title>
+    <updated>2026-10-19T05:43:24Z</updated>
+    <link href="https://arxiv.org/abs/2610.25826v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.25826v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Fault localization (FL) aims to identify code locations responsible for software failures and is commonly evaluated by how accurately it ranks known fault locations. Large language model (LLM) agents are changing program repair and are increasingly used to search and reason over repositories. Although recent LLM-based FL methods have improved localization accuracy, their impact on agentic repair remains unclear. To address this gap, we conduct a systematic empirical study of FL in agentic repair. We evaluate six recent FL methods on SWE-bench Verified and Defects4J with three LLMs under a common repair framework and analyze 16,248 repair trajectories. We also examine gold locations and bug-cause descriptions as forms of FL guidance across different repair contexts. The studied FL methods do not consistently improve repair success, and higher localization accuracy does not consistently lead to larger repair gains. Yet FL guides agents' early search and helps them reach relevant code sooner. Accurate locations can reduce repair token use by up to 39.2\%, but current FL methods often consume more tokens than they save during repair. Experiments with gold guidance suggest that FL has greater potential when bug inputs contain fewer location clues. Providing bug causes can further improve repair success beyond locations alone. We also find that ground truth from a single reference patch does not fully capture the locations used by successful repairs. These findings help clarify the value of FL in agentic repair and inform future work on its design and evaluation.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-19T05:43:24Z</published>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Xinyu Shi</name>
+    </author>
+    <author>
+      <name>Zhou Yang</name>
+    </author>
+    <author>
+      <name>An Ran Chen</name>
+    </author>
+  </entry>
+</feed>

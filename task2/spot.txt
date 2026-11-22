@@ -1,0 +1,223 @@
+#### inc
+[inc0] 2025-10 Audit the Whisper: Detecting Steganographic Collusion in Multi-Agent LLMs
+    Multi-agent deployments of large language models (LLMs) are increasingly embedded in market, allocation, and governance workflows, yet covert coordination among agents can silently erode trust and social welfare. Existing audits a
+[inc1] 2026-05 CalBench: Evaluating Coordination-Privacy Trade-offs in Multi-Agent LLMs
+    Personal AI assistants are beginning to act as delegates with access to calendars, inboxes, and user preferences. Calendar scheduling makes the trust problem concrete: an assistant must coordinate with other assistants while decid
+[inc2] 2026-08 Delegation Without Trust: An Empirical Gap Analysis of Identity, Authorization, and Runtime Gov
+    Autonomous LLM agents increasingly act on a user's behalf: they hold credentials, call tools and services, and spawn sub-agents that act further on their behalf. This turns a long-standing distributed-systems question -- who is au
+[inc3] 2026-09 Meet-Oracle Scope Inference: A Membership-Query Side Channel in Intersection-Based Multi-Agent 
+    Multi-agent authorization protocols increasingly compose separately issued grants by set intersection, because intersection can only narrow authority. This paper shows that the same property turns a correctly functioning verifier 
+[inc4] 2026-11 Debate to Deceive: Poisoning LLM's Fact-Checking via Game-Theoretic Multi-Agent Debate
+    Knowledge attacks on Large Language Models, such as manipulating fact-checking judgments, pose significant risks to AI reliability. Existing approaches -- adversarial suffix/template injection and single-agent self-reflection -- l
+[inc5] 2025-09 AgenTracer: Who Is Inducing Failure in the LLM Agentic Systems?
+    Large Language Model (LLM)-based agentic systems, often comprising multiple models, complex tool invocations, and orchestration protocols, substantially outperform monolithic agents. Yet this very sophistication amplifies their fr
+[inc6] 2026-02 The Value of Variance: Mitigating Debate Collapse in Multi-Agent Systems via Uncertainty-Driven
+    Multi-agent debate (MAD) systems improve LLM reasoning through iterative deliberation, but remain vulnerable to debate collapse, a failure type where final agent decisions are compromised on erroneous reasoning. Existing methods l
+[inc7] 2026-10 When Agents Talk, Secrets Travel: Topology-Driven Leakage and Recipient-Conditioned Sanitizatio
+    Multi-agent LLM systems (MALS) introduce a privacy-leakage problem that conventional sensitivity-based defenses miss, since information disclosed to one authorized agent can propagate through routine coordination to an unauthorize
+[inc8] 2026-10 A Mechanistic Study of Automated Failure Attribution in LLM-based Agentic Systems
+    Agentic systems have demonstrated strong capabilities on complex tasks by enabling multiple interacting large language model (LLM)-based agents to collaborate and execute subtasks in parallel. However, this collaborative structure
+[inc9] 2026-09 VirusCascade: Hijacking Collaborative Reflection in LLM-Powered Recommender Agents
+    Advancing beyond traditional static scoring models, LLM-powered agentic recommender systems (LLM-ARS) instantiate users and items as autonomous agents, whose semantic states are dynamically refined through a recurrent process know
+[inc10] 2026-07 A Continuous Alternative to Fixed-Fraction Byzantine Thresholds in Multi-Agent LLM Systems
+    Every recent proposal for Byzantine-robust multi-agent LLM systems states its own single-number tolerance condition: a fixed fraction of the population, a fixed robustness order on the communication graph, an empirically measured 
+[inc11] 2026-10 Preventing Error Propagation in Multi-Agent AI through Runtime Monitoring
+    Multi-agent AI systems can improve answer selection by allowing different language models to exchange reasoning traces, revise initial predictions, and support a final decision. However, such communication may also introduce relia
+[inc12] 2026-09 LLMs Trust Their Own: Identity-Dependent Conformity in Multi-Agent Systems
+    Large language models (LLMs) are increasingly deployed in multi-agent settings, where agents observe and influence one another, making social influence a key dimension of AI behavior and safety. We investigate whether LLMs' respon
+[inc13] 2026-08 Observability and Fault Injection for LLM-Based Multi-Agent Systems in Software Engineering
+    Large Language Model-based multi-agent systems are increasingly explored for software engineering tasks, but they remain difficult to inspect, debug, and evaluate under controlled failures. We present llmmas-otel, a lightweight an
+[inc14] 2026-10 Error-Propagation Modeling for Failure Attribution in LLM-Based Multi-Agent Systems
+    LLM-based multi-agent systems (MASs) are increasingly used to solve complex tasks through coordinated reasoning, tool use, and interaction with external resources. However, attributing failures in such systems remains challenging 
+[inc15] 2026-08 Tracing the Cascade: A Topology-Aware Evaluation Framework for Scientific Agent Hallucinations
+    Large language model (LLM) agents are increasingly deployed in scientific research, where reliability is critical and the underlying knowledge is densely interconnected. In such settings, hallucinations are particularly damaging: 
+[inc16] 2026-03 Protocol Translation Vulnerabilities in LLM Agent Communication Stacks
+    As autonomous LLM agents increasingly operate across heterogeneous communication stacks — MCP, A2A, ACP, and FIPA-ACL — the translation gateways that bridge these protocols constitute a critical yet largely unstudied attack surfac
+[inc17] 2024-01 PsySafe: A Comprehensive Framework for Psychological-based Attack, Defense, and Evaluation of M
+    Multi-agent systems, when enhanced with Large Language Models (LLMs), exhibit profound capabilities in collective intelligence. However, the potential misuse of this intelligence for malicious purposes presents significant risks. 
+[inc18] 2026-10 Who Speaks, Who Authorizes, Who Acts? Understanding Trust Boundaries in Multi-Agent LLMs
+    Multi-agent LLM systems exchange messages before acting through tools, but message delivery, signing authority, and tool-side enforcement are separate trust boundaries. We represent them as communication, authorization, and execut
+[inc19] 2025-06 To trust or not to trust: Attention-based Trust Management for LLM Multi-Agent Systems
+    Large Language Model-based Multi-Agent Systems (LLM-MAS) have demonstrated strong capabilities in solving complex tasks but remain vulnerable when agents receive unreliable messages. This vulnerability stems from a fundamental gap
+[inc20] 2025-09 Peacemaker or Troublemaker: How Sycophancy Shapes Multi-Agent Debate
+    Large language models (LLMs) often display sycophancy, a tendency toward excessive agreeability. This behavior poses significant challenges for multi-agent debating systems (MADS) that rely on productive disagreement to refine arg
+[inc21] 2026-04 Aegis: Automated Error Generation and Attribution for Multi-Agent Systems
+    Large language model based multi-agent systems (MAS) have unlocked significant advancements in tackling complex problems, but their increasing capability introduces a structural fragility that makes them difficult to debug. A key 
+[inc22] 2025-08 BlindGuard: Safeguarding LLM-based Multi-Agent Systems under Unknown Attacks
+    The security of LLM-based multi-agent systems (MAS) is critically threatened by propagation vulnerability, where malicious agents can distort collective decision-making through inter-agent message interactions. While existing supe
+[inc23] 2026-08 AgentShield: A Lightweight Sentinel Framework for Mitigating Hallucination Propagation in Multi
+    Multi-agent systems built on large language models (LLMs) have demonstrated considerable promise in solving complex tasks through collaborative workflows. However, a critical yet under-explored vulnerability exists: hallucinations
+[inc24] 2024-07 BlockAgents: Towards Byzantine-Robust LLM-Based Multi-Agent Coordination via Blockchain
+    Recent advancements in multi-agent systems based on large language models (LLM) have shown potential for problem-solving and planning tasks. However, most existing LLM-based multi-agent approaches show vulnerability against byzant
+[inc25] 2026-11 Failure attribution in LLM-based multi-agent systems: an audit of AEGIS-Bench and transfer to n
+    This release archives the code, result files and logs behind our paper on failure attribution in LLM-based multi-agent systems, submitted to Knowledge and Information Systems. It replaces v1.0.0, which contained code only. The stu
+[inc26] 2026-05 Coarse-to-Fine Failure Attribution for Long-Horizon LLM Multi-Agent Systems
+    Failure attribution in LLM multi-agent systems asks which agent caused a task failure and at which step the decisive error first emerged. Existing approaches mainly rely on either full-trace judging or sequential trace scanning, a
+[inc27] 2026-01 Agent Drift: Quantifying Behavioral Degradation in Multi-Agent LLM Systems Over Extended Intera
+    Multi-agent Large Language Model (LLM) systems have emerged as powerful architectures for complex task decomposition and collaborative problem-solving. However, their long-term behavioral stability remains largely unexamined. This
+[inc28] 2026-07 Containing the Cascade: A Benchmark and Reference Mediator for Failure Propagation in Tool-Usin
+    Large language model (LLM) multi-agent systems (MAS) increasingly automate multi-step, tool-using workflows, yet they fail far more often than their single-agent counterparts. Recent diagnostic studies attribute these failures to 
+[inc29] 2026-03 Deliberation and drift: Evaluating alignment fragility in multi-agent medical artificial intell
+    The integration of large language models such as ChatGPT and Google’s Med-PaLM into clinical workflows is rapidly advancing, raising critical concerns around AI safety and ethical alignment. While existing research has focused lar
+#### x7
+[x70] 2026-05 Scaling Behavior of Single LLM-Driven Multi-Agent Systems
+    The burgeoning field of LLM-based Multi-Agent Systems (MAS) promises to tackle complex tasks through collaborative intelligence, yet fundamental questions regarding their scaling behavior and intrinsic collective dynamics remain u
+[x71] 2026-06 Multi$^2$: Hierarchical Multi-Agent Decision-Making with LLM-Based Agents in Interactive Enviro
+    A central goal of large language model (LLM) research is to build agentic systems that can plan, act, and adapt through sustained interaction with dynamic environments. While recent LLM-based agents exhibit impressive contextual r
+[x72] 2026-06 DynAMO:Dynamic Asset Management Orchestration via Topological Multi-Agent Scheduling
+    While LLM-powered agents offer end-to-end automation for industrial asset lifecycles, real-world Industry 4.0 deployment is hindered by latency, concurrency instability, and safety risks. We present DynAMO (Dynamic Asset Managemen
+[x73] 2026-09 Speculative Safety Honeypot: Toward Proactive Defense Against Multi-turn Agent Attacks
+    As Large Language Model (LLM) agents are increasingly deployed in complex environments, multi-turn interaction attacks have become a significant security challenge. Existing detection methods typically rely on historical context. 
+[x74] 2025-04 Agentic Workflows for Economic Research: Design, Implementation, and Evaluation
+    Large Language Models (LLMs) can now assist across the economic research lifecycle, yet general-purpose LLMs and agent systems give no assurance that their outputs meet the discipline's bar. We present an agentic-workflow methodol
+[x75] 2026-05 MINDGAMES: A Live Arena for Evaluating Social and Strategic Reasoning in Multi-Agent LLMs
+    Large language models (LLMs) are increasingly deployed as interactive agents, yet their capacity for social and strategic reasoning over extended interaction remains poorly understood. Existing evaluations rely on static vignettes
+[x76] 2025-05 Self-Evolving Multi-Agent Collaboration Networks for Software Development
+    
+[x77] 2026-10 Safety-constrained and runtime-assured LLM multi-agent decision making for intelligent vehicle 
+    Large language models offer flexible semantic reasoning for intelligent-vehicle interfaces, but probabilistic outputs, multi-agent disagreement, and provider failures complicate safety-sensitive use. We developed SCI-Proposed-v1.0
+[x78] 2026-10 Autonomous AI-Driven Security Operations Centers (Autonomous SOC): Agentic Orchestration, Real-
+    Abstract—Contemporary enterprise Security Operations Centers (SOCs) are on the brink of systemic collapse driven by three converging factors: exponential alert fatigue (>25,000 uninvestigated alerts daily per enterprise), acute gl
+[x79] 2026-04 SWE-Debate: Competitive Multi-Agent Debate for Software Issue Resolution
+    Issue resolution has made remarkable progress thanks to the advanced reasoning capabilities of large language models (LLMs). Recently, agent-based frameworks such as SWE-agent have further advanced this progress by enabling autono
+[x710] 2026-03 AGENTIC AI IN MULTI-AGENT SYSTEMS: EXPLORING THE COORDINATION, NEGOTIATION, AND COOPERATION OF 
+    This study investigates the dynamics of agentic AI within multi-agent systems (MAS), focusing on coordination, negotiation, and cooperation mechanisms in competitive and collaborative digital ecosystems. Employing a simulation-bas
+[x711] 2026-08 The Missing Security Constitution of Agentic AI - Why AI Is Running Wild: It's Not a Bug, It's 
+    This paper began as a theoretical account of why capable agentic systems may cross operational boundaries without requiring malicious intent, conscious disobedience, or deceptive alignment. While the framework was being developed,
+[x712] 2025-08 QAgent: An LLM-based Multi-Agent System for Autonomous OpenQASM programming
+    Programming quantum circuits at the OpenQASM level is essential for achieving hardware-aware optimization and reliable execution on noisy intermediate-scale quantum (NISQ) devices, yet it remains challenging due to the need for do
+[x713] 2026-11 AI-Driven Personal and Collaborative Task Management: A Survey of Intelligent Scheduling, LLM A
+    Artificial intelligence (AI) is increasingly transforming traditional productivity and task management systems by enabling intelligent assistance for task planning, prioritization, scheduling, collaboration, and decision-making. T
+[x714] 2026-04 FinLumen: A Game-Theoretic Multi-Agent Framework for Rational Portfolio Management
+    
+[x715] 2024-08 Audit-LLM: Multi-Agent Collaboration for Log-based Insider Threat Detection
+    Log-based insider threat detection (ITD) detects malicious user activities by auditing log entries. Recently, large language models (LLMs) with strong common sense knowledge have emerged in the domain of ITD. Nevertheless, diverse
+[x716] 2026-06 Logic-Based Verification of Task Allocation for LLM-Enabled Multi-Agent Manufacturing Systems
+    Manufacturing industries are facing increasing product variability due to the growing demand for personalized products. Under these conditions, ensuring safety becomes challenging as frequent reconfigurations can lead to unintende
+[x717] 2026-06 Benchmarking Open-Ended Multi-Agent Coordination in Language Agents
+    As language models are increasingly deployed as autonomous agents, they must coordinate with others over long horizons in open-ended interactive tasks. Yet existing evaluations rarely test these demands together, instead emphasisi
+[x718] 2026-08 Priority-Driven Hierarchical Multi-Agent Systems with Fine-Tuned LLMs
+    Ambient Assisted Living (AAL) environments aim to enable older people to remain active and lead an autonomous and independent life for as long as possible. Among the technologies that can be incorporated into these settings, socia
+[x719] 2026-07 Beyond Fluency: Toward Reliable Trajectories in Agentic IR
+    
+[x720] 2025-05 Language Game for Evading Privacy Disclosure Risks via LLM-Based Multi-agent Simulation
+    
+[x721] 2026-07 Rise From The Ashes: LLM-based Static Analysis for Deep Learning Framework Bugs
+    Deep learning (DL) frameworks are critical AI infrastructures that often hide bugs with serious security implications. While dynamic approaches such as fuzzing are effective in uncovering these bugs, they require real test executi
+[x722] 2026-10 Perspective Chapter: Governing the Autonomous Fortress – Multi-Agent AI Systems for Secure and 
+    Cybersecurity is changing from reactive, human-centered systems to highly autonomous cyber-capable agents (HACCAs) that can operate at machine speed and scale. This chapter introduces the Autonomous Fortress, an architectural fram
+[x723] 2026-09 Do We Need Complex Topology Control? Distinct-Peer Random Routing Improves Cost-Efficiency in S
+    
+[x724] 2025-07 Game Theory Meets LLM and Agentic AI: Reimagining Cybersecurity for the Age of Intelligent Thre
+    Protecting cyberspace requires not only advanced tools but also a shift in how we reason about threats, trust, and autonomy. Traditional cybersecurity methods rely on manual responses and brittle heuristics. To build proactive and
+[x725] 2026-07 A Multi-Agent LLM Pipeline for Argument Mining on Legal Judgments
+    Legal Argumentation Mining (LAM) aims to uncover the argumentative structure in legal documents. It identifies which sentences present arguments, their roles, the types of reasoning they use, and how they support or challenge each
+[x726] 2026-09 CollabFlow: Recursive Self-Improvement of Agent Collaboration
+    Recursive self-improvement (RSI) lets a system improve from its own outcomes; in LLM-based multi-agent systems, Agents refine one another within a task, and outcomes improve how they collaborate across tasks. However, existing mul
+[x727] 2026-09 Proxifield: Decentralized Multi-Agent Communication through Semantic Proximity
+    As LLM capabilities have expanded, multi-agent communication has emerged as an increasingly active area of research. Prevailing protocols often adopt rigid structures that introduce coordination bottlenecks and can degrade as the 
+[x728] 2026-07 Managed Autonomy at Runtime: Gear-Based Safety and Governance for Single- and Multi-Agent Cyber
+    Autonomous agents, whether LLM-driven software agents or robotic physical agents, face a common class of failure modes when operating without continuous human oversight: safety violations from unverified actions, behavioral instab
+[x729] 2026-10 AegisFlow: A Multi-Agent Agentic AI Framework for Autonomous Remediation and Self-Healing in Fr
+    Traditional data pipelines are notoriously brittle, often failing due to upstream schema drift, API contract changes, or website DOM modifications. Present observability tools only raise alerts but for human engineers, resulting i
+#### rule
+[rule0] 2025-11 TAMO:Fine-Grained Root Cause Analysis via Tool-Assisted LLM Agent With Multi-Modality Observati
+    Implementing large language models (LLMs)-driven root cause analysis (RCA) in cloud-native systems has become a key topic of modern software operation
+[rule1] 2026-10 Replication or Corroboration? An Axiomatic Framework for Evidential Dependence in Multi-Agent D
+    In multi-agent debates, matching reports can arise for two different reasons: agents may repeat the same evidence (replication), or they may provide s
+[rule2] 2026-03 Adversarial Attack on Black-Box Multi-Agent by Adaptive Perturbation
+    Evaluating security and reliability for multi-agent systems (MAS) is urgent as they become increasingly prevalent in various applications. As an evalu
+[rule3] 2026-05 Domination-Avoiding Learning Agents Cannot Collude
+    An influential paper of Calvano et al. empirically demonstrated that Q-learning agents spontaneously collude when placed as sellers that compete on pr
+[rule4] 2026-04 SoSBench: Benchmarking Safety Alignment on Six Scientific Domains
+    Large language models (LLMs) exhibit advancing capabilities in complex tasks, such as reasoning and graduate-level question answering, yet their resil
+[rule5] 2026-05 PropGuard: Safeguarding LLM-MAS via Propagation-Aware Exploration and Remediation
+    LLM-based multi-agent systems (LLM-MAS) have become a promising paradigm for solving complex tasks through role specialization, tool use, memory, and 
+[rule6] 2026-05 Token Economics for LLM Agents: A Dual-View Study from Computing and Economics
+    As LLM agents evolve, tokens have emerged as the core economic primitives of Agentic AI. However, their exponential consumption introduces severe comp
+[rule7] 2026-10 When Does Cross-Agent Peer Verification Detect Unfaithful Self- Reports? An Empirical Study of 
+    Large language model (LLM) agents that autonomously execute tool calls for users are increasingly deployed in customer-facing settings, where peer-bas
+[rule8] 2024-01 Attacks, Defenses and Evaluations for LLM Conversation Safety: A Survey
+    Zhichen Dong, Zhanhui Zhou, Chao Yang, Jing Shao, Yu Qiao. Proceedings of the 2024 Conference of the North American Chapter of the Association for Com
+[rule9] 2026-06 From Untrusted Input to Trusted Memory: A Systematic Study of Memory Poisoning Attacks in LLM A
+    Memory is a core component of AI agents, enabling them to accumulate knowledge across interactions and improve performance. However, persistent memory
+[rule10] 2025-09 EvoMail: Self-Evolving Cognitive Agents for Adaptive Spam and Phishing Email Defense
+    Modern email spam and phishing attacks have evolved far beyond keyword blacklists or simple heuristics. Adversaries now craft multi-modal campaigns th
+[rule11] 2026-09 BMA: Backchain Memory Attacks Create Unauthorized Control Paths in LLM Agents
+    Persistent memory enables LLM agents to reuse prior experience, but creates a new security boundary: what an agent may remember is not what it should 
+[rule12] 2025-03 ShennongMGS: An LLM-based Chinese Medication Guidance System
+    The rapidly evolving field of Large Language Models (LLMs) holds immense promise for healthcare, particularly in medication guidance and adverse drug 
+[rule13] 2026-10 BenchChecker: Assessing the Credibility of Bug-Fixing Benchmarks for LLMs
+    While Large Language Models (LLMs) show promise for Automatic Program Repair (APR), existing benchmarks suffer from data contamination, in which test 
+[rule14] 2024-05 AgentBench: Evaluating LLMs as Agents
+    The potential of Large Language Model (LLM) as agents has been widely acknowledged recently. Thus, there is an urgent need to quantitatively \textit{e
+[rule15] 2026-08 A First Look at Bugs in LLM Inference Engines
+    Large language model-specific inference engines (in short as LLM inference engines ) have become a fundamental component of modern AI infrastructure, 
+[rule16] 2026-05 Shepherd: Enabling Programmable Meta-Agents via Reversible Agentic Execution Traces
+    As LLM agent systems take on more complex tasks, they increasingly rely on meta-agents: higher-order agents that create, operate on and manage other a
+[rule17] 2026-07 CAGE: Certified Authorization under Typed-Return Uncertainty for Tool-Using Agents
+    Tool-using LLM agents act on typed tool returns, records pairing provenance and categorical fields with numerical values. Runtime permission gates gen
+[rule18] 2025-01 Development of heterocyclic-based anticancer agents: A comprehensive review
+    This review article summarizes the role of heterocyclic compounds as anticancer drugs used against various human cancers, including doxorubicin, cispl
+[rule19] 2026-08 FTDI: A budget-aware self-healing framework for LLM multi-agent code generation
+    
+[rule20] 2026-06 Capability Gates Are Not Authorization: Confused-Deputy Failures in LLM Agent Frameworks
+    Tool-using LLM agents increasingly read untrusted content while holding side-effecting tools such as payments, email, CRM, and infrastructure APIs, ye
+[rule21] 2026-03 WirelessBench: A Tolerance-Aware LLM Agent Benchmark for Wireless Network Intelligence
+    LLM agents are emerging as a key enabler for autonomous wireless network management. Reliably deploying them, however, demands benchmarks that reflect
+[rule22] 2026-04 Model Capability Assessment and Safeguards for Biological Weaponization
+    AI leaders and safety reports increasingly warn that advances in model reasoning may enable biological misuse, including by low-expertise users, while
+[rule23] 2025-04 LLMs are Greedy Agents: Effects of RL Fine-tuning on Decision-Making Abilities
+    The success of Large Language Models (LLMs) has sparked interest in various agentic applications. A key hypothesis is that LLMs, leveraging common sen
+[rule24] 2026-04 GEM: A Gym for Agentic LLMs
+    The training paradigm for large language models (LLMs) is moving from static datasets to experience-based learning, where agents acquire skills via in
+[rule25] 2025-09 Introduction to LLM-Based Agents
+    This chapter provides an introductory yet comprehensive exploration of large language model (LLM)-based agents, tracing their evolution from early sta
+[rule26] 2026-10 Multi-Agent Task Automation System
+    Multi-Agent Systems (MAS) have emerged as a powerful and flexible paradigm within distributed artificial intelligence, enabling the efficient solution
+[rule27] 2025-02 Universal Adversarial Attack on Aligned Multimodal LLMs
+    We propose a universal adversarial attack on multimodal Large Language Models (LLMs) that leverages a single optimized image to override alignment saf
+[rule28] 2026-06 A Lifecycle and Application-Stack Survey of Large Language Model Vulnerabilities: Attacks, Risk
+    Large language models are no longer only text generators. They are increasingly embedded in retrieval pipelines, enterprise assistants, coding environ
+[rule29] 2026-08 When Agents Act on Web3: An Attack-Surface Survey of MCP, Skills, and Tool Calling
+    AI agents increasingly act rather than merely read: across the Model Context Protocol (MCP) ecosystem, the share of deployed tools that modify externa
+[rule30] 2026-04 Externalization in LLM Agents: A Unified Review of Memory, Skills, Protocols and Harness Engine
+    Large language model (LLM) agents are increasingly built less by changing model weights than by reorganizing the runtime around them. Capabilities tha
+[rule31] 2026-08 MasDrift: Benchmarking Authorization Preservation Across Multi-Agent Architectures
+    Multi-agent systems (MAS) decompose long-horizon tasks across supervisors and subagents, but delegated goals do not necessarily carry their original a
+[rule32] 2026-04 Agentic AI for Near Real-Time Anomaly Detection and Explainable Monitoring in a Multi-Source Su
+    The aviation industry faces increasing pressure to ensure safety, efficiency, and resilience amid growing air traffic density, sensor diversity, and d
+[rule33] 2026-08 The Empire, Long Divided, Must Unite: Architectural Convergence in Three LLM Agent Harnesses
+    An agent harness is what turns a language model into an autonomous agent: the surrounding code that builds the model's context, mediates its tools, ru
+[rule34] 2026-05 Mixture of Complementary Agents for Robust LLM Ensemble
+    Multi-AI collaboration, such as ensembling or debating large language models (LLMs), is a promising paradigm for aggregating information and boosting 
+[rule35] 2025-10 Lark: Biologically Inspired Neuroevolution for Multi-Stakeholder LLM Agents
+    We present Lark, a biologically inspired decision-making framework that couples LLM-driven reasoning with an evolutionary, stakeholder-aware Multi-Age
+[rule36] 2026-05 Agentic Artificial Intelligence:A Systematic Review of Architectures, Benchmarks, and Governanc
+    Agentic artificial intelligence (AI) has emerged as an important direction in the development of goal-oriented, tool-mediated, and partially autonomou
+[rule37] 2026-03 Quantifying Frontier LLM Capabilities for Container Sandbox Escape
+    Large language models (LLMs) increasingly act as autonomous agents, using tools to execute code, read and write files, and access networks, creating n
+[rule38] 2026-07 The Multi-Lab Enterprise: Governance, FinOps, and Telemetry Challenges of Multi-Model AI Adopti
+    Enterprises are not choosing a single frontier AI provider; they are licensing all of them. As of early 2026, 81% of Global 2000 enterprises run three
+[rule39] 2026-01 Rethinking Knowledge Management in the Era of LLMs: A Knowledge Management Model for Mitigating
+    Large Language Models have the potential to greatly enhance organizational knowledge management practice. However, along with this promise comes the r
+[rule40] 2026-05 LEGOMem: Modular Procedural Memory for Multi-agent LLM Systems for Workflow Automation
+    We introduce LEGOMem, a modular procedural memory framework for multi-agent large language model (LLM) systems in workflow automation. LEGOMem decompo
+[rule41] 2026-10 DecepEval: A Benchmark for Evaluating Deception in LLM Agents
+    As large language model (LLM) agents become increasingly autonomous, they may pursue task performance through deception, raising concerns about their 
+[rule42] 2026-07 LLM Meets ML: Data-efficient Anomaly Detection on Unstable Logs
+    Most log-based anomaly detectors assume that logs are stable, although in reality they are often unstable due to software or environmental changes. An
+[rule43] 2026-05 Ghost in the Context: Policy-Carriage Integrity in LLM Agents
+    LLM agents choose actions from bounded decision states assembled from system policy, runtime state, tools, workload content, and the final request. We
+[rule44] 2026-08 Agentic Intelligence: Foundations, Architectures, and Applications
+    For the past several decades, the word ‘AI' signified that a system would respond to voice commands, but was inactive otherwise. That changed fast. So
+[rule45] 2026-04 AgenticTCAD: A LLM-based Multi-Agent Framework for Automated TCAD Code Generation and Device Op
+    With the continued scaling of advanced technology nodes, the design-technology co-optimization (DTCO) paradigm has become increasingly critical, rende
+[rule46] 2026-03 GameplayQA: A Benchmarking Framework for Decision-Dense POV-Synced Multi-Video Understanding of
+    Multimodal LLMs are increasingly deployed as perceptual backbones for autonomous agents in 3D environments, from robotics to virtual worlds. These app
+[rule47] 2025-08 Rethinking Autonomy: Preventing Failures in AI-Driven Software Engineering
+    The integration of Large Language Models (LLMs) into software engineering has revolutionized code generation, enabling unprecedented productivity thro
+[rule48] 2025-12 Agentic LLMs in the supply chain: towards autonomous multi-agent consensus-seeking
+    Supply Chain Management relies on human consensus in decision-making to avoid emergent problems like the bullwhip effect. Some routine consensus proce
+[rule49] 2026-10 Local Allow, Global Deny: Why Per-Action Authorization Does Not Compose in LLM Agents
+    Autonomous LLM agents act through tools under per-action authorization: a local guard screens each tool call in isolation. We show that local authoriz

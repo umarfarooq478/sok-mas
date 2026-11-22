@@ -1,0 +1,410 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/Y8hzKVumIUbRSjZviGG92JcIBYc</id>
+  <title>arXiv Query: search_query=all:orchestrator AND all:compromise AND all:multi-agent AND all:LLM AND all:attack&amp;id_list=&amp;start=0&amp;max_results=100</title>
+  <updated>2026-11-21T23:58:22Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:orchestrator+AND+(all:compromise+AND+(all:multi-agent+AND+(all:LLM+AND+all:attack)))&amp;start=0&amp;max_results=100&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>100</opensearch:itemsPerPage>
+  <opensearch:totalResults>13</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2507.06850v6</id>
+    <title>The Dark Side of LLMs: Agent-based Attack Vectors for System-level Compromise</title>
+    <updated>2026-05-09T07:47:24Z</updated>
+    <link href="https://arxiv.org/abs/2507.06850v6" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2507.06850v6" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The rapid adoption of Large Language Model (LLM) agents and multi-agent systems enables remarkable capabilities in natural language processing and generation. However, these systems introduce security vulnerabilities that extend beyond traditional content generation to system-level compromises. This paper presents a comprehensive evaluation of the LLMs security used as reasoning engines within autonomous agents, highlighting how they can be exploited as attack vectors capable of achieving computer takeovers. We focus on how different attack surfaces and trust boundaries can be leveraged to orchestrate such takeovers. We demonstrate that adversaries can effectively coerce popular LLMs into autonomously installing and executing malware on victim machines. Our evaluation of 18 state-of-the-art LLMs reveals that 94.4% of models succumb to Direct Prompt Injection, and 83.3% are vulnerable to the more stealthy and evasive RAG Backdoor Attack. Notably, we tested trust boundaries within multi-agent systems, where LLM agents interact and influence each other, and we revealed that LLMs which successfully resist direct injection or RAG backdoor attacks will execute identical payloads when requested by peer agents. We found that 100.0% of tested LLMs can be compromised through Inter-Agent Trust Exploitation attacks, and that every model exhibits context-dependent security behaviors that create exploitable blind spots.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-07-09T13:54:58Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Matteo Lupinacci</name>
+    </author>
+    <author>
+      <name>Francesco Aurelio Pironti</name>
+    </author>
+    <author>
+      <name>Francesco Blefari</name>
+    </author>
+    <author>
+      <name>Francesco Romeo</name>
+    </author>
+    <author>
+      <name>Luigi Arena</name>
+    </author>
+    <author>
+      <name>Angelo Furfaro</name>
+    </author>
+    <arxiv:doi>10.1007/978-3-032-35586-7_1</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/978-3-032-35586-7_1" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.13477v2</id>
+    <title>OMNI-LEAK: Orchestrator Multi-Agent Network Induced Data Leakage</title>
+    <updated>2026-02-25T16:43:53Z</updated>
+    <link href="https://arxiv.org/abs/2602.13477v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.13477v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>As Large Language Model (LLM) agents become more capable, their coordinated use in the form of multi-agent systems is anticipated to emerge as a practical paradigm. Prior work has examined the safety and misuse risks associated with agents. However, much of this has focused on the single-agent case and/or setups missing basic engineering safeguards such as access control, revealing a scarcity of threat modeling in multi-agent systems. We investigate the security vulnerabilities of a popular multi-agent pattern known as the orchestrator setup, in which a central agent decomposes and delegates tasks to specialized agents. Through red-teaming a concrete setup representative of a likely future use case, we demonstrate a novel attack vector, OMNI-LEAK, that compromises several agents to leak sensitive data through a single indirect prompt injection, even in the presence of data access control. We report the susceptibility of frontier models to different categories of attacks, finding that both reasoning and non-reasoning models are vulnerable, even when the attacker lacks insider knowledge of the implementation details. Our work highlights the importance of safety research to generalize from single-agent to multi-agent settings, in order to reduce the serious risks of real-world privacy breaches and financial losses and overall public trust in AI agents.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-13T21:32:32Z</published>
+    <arxiv:comment>Preprint; corrected typos</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Akshat Naik</name>
+    </author>
+    <author>
+      <name>Jay Culligan</name>
+    </author>
+    <author>
+      <name>Yarin Gal</name>
+    </author>
+    <author>
+      <name>Philip Torr</name>
+    </author>
+    <author>
+      <name>Rahaf Aljundi</name>
+    </author>
+    <author>
+      <name>Alasdair Paren</name>
+    </author>
+    <author>
+      <name>Adel Bibi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2508.20643v2</id>
+    <title>CyberSleuth: Autonomous Blue-Team LLM Agent for Web Attack Forensics</title>
+    <updated>2026-03-05T12:00:36Z</updated>
+    <link href="https://arxiv.org/abs/2508.20643v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2508.20643v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Post-mortem analysis of compromised systems is a key aspect of cyber forensics, today a mostly manual, slow, and error-prone task. Agentic AI, i.e., LLM-powered agents, is a promising avenue for automation. However, applying such agents to cybersecurity remains largely unexplored and difficult, as this domain demands long-term reasoning, contextual memory, and consistent evidence correlation - capabilities that current LLM agents struggle to master. In this paper, we present the first systematic study of LLM agents to automate post-mortem investigation. As a first scenario, we consider realistic attacks in which remote attackers try to abuse online services using well-known CVEs (30 controlled cases). The agent receives as input the network traces of the attack and extracts forensic evidence. We compare three AI agent architectures, six LLM backends, and assess their ability to i) identify compromised services, ii) map exploits to exact CVEs, and iii) prepare thorough reports. Our best-performing system, CyberSleuth, achieves 80% accuracy on 2025 incidents, producing complete, coherent, and practically useful reports (judged by a panel of 25 experts). We next illustrate how readily CyberSleuth adapts to face the analysis of infected machine traffic, showing that the effective AI agent design can transfer across forensic tasks. Our findings show that (i) multi-agent specialisation is key to sustained reasoning; (ii) simple orchestration outperforms nested hierarchical architectures; and (iii) the CyberSleuth design generalises across different forensic tasks.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-08-28T10:45:31Z</published>
+    <arxiv:comment>Updated version - Added study on Malware Traffic Analysis</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Stefano Fumero</name>
+    </author>
+    <author>
+      <name>Kai Huang</name>
+    </author>
+    <author>
+      <name>Matteo Boffa</name>
+    </author>
+    <author>
+      <name>Danilo Giordano</name>
+    </author>
+    <author>
+      <name>Marco Mellia</name>
+    </author>
+    <author>
+      <name>Dario Rossi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.27489v1</id>
+    <title>HARP: Measuring Harm Amplification in Multi-Agent LLM Systems</title>
+    <updated>2026-05-26T16:03:10Z</updated>
+    <link href="https://arxiv.org/abs/2605.27489v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.27489v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multi-agent LLM systems decompose workflows across agents, tools, shared context, memory, and decision gates. This modularity improves interpretability, but creates a propagation risk: a bounded perturbation to one component can be reused by other agents and amplified into system-level harm. We introduce HARP (Harm Amplification through Role Perturbation), a trace-first methodology for studying local-to-global harm amplification in multi-agent LLM systems. HARP compares paired clean and perturbed executions and records specialist outputs, tool calls, memory reads/writes, guard events, oracle logs, latency, token cost, and decisions. We define local harm as deviation from targeted agents or corrupted channels, global harm as deviation over the full trace, and harm amplification as (H_global/H_local). This complements attack success rate with a measure of how strongly orchestration spreads harm beyond the attack point. We instantiate HARP in a finance-oriented seven-agent system with a deterministic decision gate and configurable attack harness for specialist compromise, collusion, shared-context corruption, and temporal or memory-persistent attacks. Across five defenses, prompt-only defenses preserve benign utility but leave high success and stealth; pre-tool and step-level guards reduce some failures with utility or latency costs; and IntegrityGuard, a trace-consistency defense, achieves the lowest attack success and global harm but introduces utility/cost trade-offs. Results show that single-specialist compromise produces the strongest amplification, shared-context corruption yields the highest attack success, and temporal persistence produces the largest malicious impact. HARP argues that secure multi-agent evaluation must measure not only bypass, but propagation.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-26T16:03:10Z</published>
+    <arxiv:comment>39 pages, 12 figures, 12 tables, and 1 algorithm</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Md Hafizur Rahman</name>
+    </author>
+    <author>
+      <name>Zafaryab Haider</name>
+    </author>
+    <author>
+      <name>Tanzim Mahfuz</name>
+    </author>
+    <author>
+      <name>Prabuddha Chakraborty</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2510.17276v2</id>
+    <title>Breaking and Fixing Defenses Against Control-Flow Hijacking in Multi-Agent Systems</title>
+    <updated>2026-03-05T15:06:05Z</updated>
+    <link href="https://arxiv.org/abs/2510.17276v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.17276v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Control-flow hijacking attacks manipulate orchestration mechanisms in multi-agent systems into performing unsafe actions that compromise the system and exfiltrate sensitive information. Recently proposed defenses, such as LlamaFirewall, rely on alignment checks of inter-agent communications to ensure that all agent invocations are "related to" and "likely to further" the original objective.
+  We start by demonstrating control-flow hijacking attacks that evade these defenses even if alignment checks are performed by advanced LLMs. We argue that the safety and functionality objectives of multi-agent systems fundamentally conflict with each other. This conflict is exacerbated by the brittle definitions of "alignment" and the checkers' incomplete visibility into the execution context.
+  We then propose, implement, and evaluate ControlValve, a new defense inspired by the principles of control-flow integrity and least privilege. ControlValve (1) generates permitted control-flow graphs for multi-agent systems, and (2) enforces that all executions comply with these graphs, along with contextual rules (generated in a zero-shot manner) for each agent invocation.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.SY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-20T08:02:51Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Rishi Jha</name>
+    </author>
+    <author>
+      <name>Harold Triedman</name>
+    </author>
+    <author>
+      <name>Justin Wagle</name>
+    </author>
+    <author>
+      <name>Vitaly Shmatikov</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.04243v1</id>
+    <title>Autonomous Active Directory Exploitation via Multi-Model Harness Orchestration: A Benchmark Study with NeuroSploit on GOAD</title>
+    <updated>2026-10-03T03:05:14Z</updated>
+    <link href="https://arxiv.org/abs/2610.04243v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.04243v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Active Directory (AD) remains the predominant identity and access management infrastructure in enterprise environments, and its compromise represents the highest-impact outcome in internal penetration tests. Recent work has shown that large language models (LLMs) can autonomously conduct assumed-breach penetration testing against AD, but these studies employ standalone agents lacking structured guardrails, deterministic validation, and multi-stage chain orchestration. We present a benchmark evaluation of NeuroSploit v4.2.0, an open-source Rust-based autonomous pentest harness, against the Game of Active Directory (GOAD), a deliberately vulnerable multi-forest AD lab maintained by Orange Cyberdefense comprising five virtual machines, two forests, and three domains. The harness orchestrates 22 AD-specific agents and 7 multi-stage attack-chain playbooks covering the full AD kill chain: enumeration, Kerberoasting, AS-REP roasting, NTLM relay and coercion, Kerberos delegation abuse, AD CS exploitation (ESC1-ESC8), MSSQL linked-server pivoting, DCSync, cross-forest trust abuse, and persistence detection. We benchmark nine frontier LLMs (Claude Opus 4.6/4.7/4.8, GPT-6 Astra, GPT-5.6 Sol, Grok 4.6, Qwen 3.8, GLM 5.3, Kimi k3) within the harness, comparing against direct invocation across 14 technique categories and 7 chains. The harness achieves 96-100% technique coverage with 90-97% precision, while direct invocation covers only 21-54% and produces 3.2x more false positives. Time to full three-domain compromise with Opus 4.8 was 134 minutes with guardrail activations preventing lockout-triggering sprays, unauthorized DCSync dumps, and out-of-scope reconnaissance. Results demonstrate that structured harness orchestration with domain-specialized agents, POMDP belief tracking, and cross-model voting substantially outperforms unstructured LLM usage for AD penetration testing.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-03T03:05:14Z</published>
+    <arxiv:comment>20 pages, 15 figures, 7 tables, 4 listings, 23 references</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Joas Antonio dos Santos Barbosa</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2504.20965v2</id>
+    <title>AegisLLM: Scaling Agentic Systems for Self-Reflective Defense in LLM Security</title>
+    <updated>2025-06-13T22:43:06Z</updated>
+    <link href="https://arxiv.org/abs/2504.20965v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2504.20965v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We introduce AegisLLM, a cooperative multi-agent defense against adversarial attacks and information leakage. In AegisLLM, a structured workflow of autonomous agents - orchestrator, deflector, responder, and evaluator - collaborate to ensure safe and compliant LLM outputs, while self-improving over time through prompt optimization. We show that scaling agentic reasoning system at test-time - both by incorporating additional agent roles and by leveraging automated prompt optimization (such as DSPy)- substantially enhances robustness without compromising model utility. This test-time defense enables real-time adaptability to evolving attacks, without requiring model retraining. Comprehensive evaluations across key threat scenarios, including unlearning and jailbreaking, demonstrate the effectiveness of AegisLLM. On the WMDP unlearning benchmark, AegisLLM achieves near-perfect unlearning with only 20 training examples and fewer than 300 LM calls. For jailbreaking benchmarks, we achieve 51% improvement compared to the base model on StrongReject, with false refusal rates of only 7.9% on PHTest compared to 18-55% for comparable methods. Our results highlight the advantages of adaptive, agentic reasoning over static defenses, establishing AegisLLM as a strong runtime alternative to traditional approaches based on model modifications. Code is available at https://github.com/zikuicai/aegisllm</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-04-29T17:36:05Z</published>
+    <arxiv:comment>ICLR 2025 Workshop BuildingTrust</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Zikui Cai</name>
+    </author>
+    <author>
+      <name>Shayan Shabihi</name>
+    </author>
+    <author>
+      <name>Bang An</name>
+    </author>
+    <author>
+      <name>Zora Che</name>
+    </author>
+    <author>
+      <name>Brian R. Bartoldson</name>
+    </author>
+    <author>
+      <name>Bhavya Kailkhura</name>
+    </author>
+    <author>
+      <name>Tom Goldstein</name>
+    </author>
+    <author>
+      <name>Furong Huang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.22949v1</id>
+    <title>Beyond Single-Model Injection: A Threat Model and Defense Architecture for Prompt Injection in Multi-Agent Systems</title>
+    <updated>2026-09-19T11:06:14Z</updated>
+    <link href="https://arxiv.org/abs/2609.22949v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.22949v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Existing prompt injection research focuses on single-model chatbot scenarios, where an attacker manipulates one LLM through crafted input. Multi-agent systems amplify this threat through three mechanisms absent from single-model settings: inter-agent message passing creates injection channels invisible to perimeter defenses, shared tool access enables privilege escalation across agent boundaries, and trust propagation allows a compromised agent to influence upstream orchestrators. We construct a threat model enumerating 14 attack vectors across four categories: direct injection via user input (3 vectors), indirect injection via tool outputs (4 vectors), inter-agent injection via message passing (4 vectors), and cascading injection through orchestrator manipulation (3 vectors). Testing all 14 vectors against a 6-agent production-representative system, we find that 67% of agents are vulnerable to at least one scope violation even with system-prompt-level guardrails, and indirect injection via tool outputs succeeds in 43% of attempts. Four architectural defenses reduce overall injection success from 31.2% to 4.2%: message signing with provenance tracking (inter-agent injection down 91%), input/output sanitization at agent boundaries (indirect injection down 78%), privilege-scoped tool access per agent role (privilege escalation eliminated entirely), and anomaly detection on inter-agent communication patterns (84% of cascading attempts caught).</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-19T11:06:14Z</published>
+    <arxiv:comment>Accepted at the AIWILD Workshop, ICML 2026. Camera-ready version</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Rudrendu Kumar Paul</name>
+    </author>
+    <author>
+      <name>Sourav Nandy</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.17075v1</id>
+    <title>A Red Teaming Framework for Evaluating Robustness of AI-enabled Security Orchestration, Automation, and Response Systems</title>
+    <updated>2026-05-16T16:46:06Z</updated>
+    <link href="https://arxiv.org/abs/2605.17075v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.17075v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>AI-enabled Security Orchestration, Automation, and Response (SOAR) systems increasingly employ autonomous agents for cyber defense, yet their resilience to adaptive adversaries is underexplored. We introduce an autonomous red teaming framework that integrates large language models (LLMs) with reinforcement learning (RL) to generate adaptive, multi-stage attack campaigns against autonomous defenders in enterprise networks. A hierarchical design combines an LLM-based planner for strategic intent with an RL controller for tactical execution, supported by reward shaping aligned with kill-chain progression. Evaluation in a high-fidelity enterprise simulation demonstrates the effectiveness of the proposed approach, while also showing that standalone LLM agents fail to sustain multi-stage attack campaigns and that domain-specific cybersecurity models achieve only limited levels of compromise, highlighting the necessity for hybrid LLM-RL approaches to red teaming.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-16T16:46:06Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Ayan Javeed Shaikh</name>
+    </author>
+    <author>
+      <name>Nathaniel D. Bastian</name>
+    </author>
+    <author>
+      <name>Ankit Shah</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.23260v2</id>
+    <title>From Prompt Injections to Protocol Exploits: Threats in LLM-Powered AI Agents Workflows</title>
+    <updated>2025-12-14T20:29:54Z</updated>
+    <link href="https://arxiv.org/abs/2506.23260v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2506.23260v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Autonomous AI agents powered by large language models (LLMs) with structured function-calling interfaces enable real-time data retrieval, computation, and multi-step orchestration. However, the rapid growth of plugins, connectors, and inter-agent protocols has outpaced security practices, leading to brittle integrations that rely on ad-hoc authentication, inconsistent schemas, and weak validation. This survey introduces a unified end-to-end threat model for LLM-agent ecosystems, covering host-to-tool and agent-to-agent communications. We systematically categorize more than thirty attack techniques spanning input manipulation, model compromise, system and privacy attacks, and protocol-level vulnerabilities. For each category, we provide a formal threat formulation defining attacker capabilities, objectives, and affected system layers. Representative examples include Prompt-to-SQL injections and the Toxic Agent Flow exploit in GitHub MCP servers. We analyze attack feasibility, review existing defenses, and discuss mitigation strategies such as dynamic trust management, cryptographic provenance tracking, and sandboxed agent interfaces. The framework is validated through expert review and cross-mapping with real-world incidents and public vulnerability repositories, including CVE and NIST NVD. Compared to prior surveys, this work presents the first integrated taxonomy bridging input-level exploits and protocol-layer vulnerabilities in LLM-agent ecosystems, offering actionable guidance for designing secure and resilient agentic AI systems.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-06-29T14:32:32Z</published>
+    <arxiv:comment>The paper is published in ICT Express (Elsevier)</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Mohamed Amine Ferrag</name>
+    </author>
+    <author>
+      <name>Norbert Tihanyi</name>
+    </author>
+    <author>
+      <name>Djallel Hamouda</name>
+    </author>
+    <author>
+      <name>Leandros Maglaras</name>
+    </author>
+    <author>
+      <name>Abderrahmane Lakas</name>
+    </author>
+    <author>
+      <name>Merouane Debbah</name>
+    </author>
+    <arxiv:doi>10.1016/j.icte.2025.12.001</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.icte.2025.12.001" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.09526v1</id>
+    <title>RangeFactory: Scalable Construction of Multi-Hop Cyber Ranges</title>
+    <updated>2026-08-10T12:25:49Z</updated>
+    <link href="https://arxiv.org/abs/2608.09526v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.09526v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Real-world cyberattacks often require sustained progress across multiple hosts and network segments, making multi-hop cyber ranges essential infrastructure for studying and improving LLM agents' ability to sustain complete attack chains. Prior work has scaled isolated vulnerability tasks and constructed multi-host scenarios from manually specified vulnerability semantics. However, they are still unable to automatically orchestrate the growing supply of vulnerability environments into end-to-end validated multi-hop ranges. To this end, we present RangeFactory, an automated cyber-range orchestration framework that constructs multi-hop cyber ranges at scale from isolated vulnerability environments. RangeFactory formulates range construction as dependency resolution: it extracts dependency information from agents' actual attacks against real vulnerabilities, resolves known dependencies through template-guided orchestration, and uses end-to-end attack execution to validate runtime dependencies that emerge after composition. Using RangeFactory, we construct RangeBench with 1,148 validated range instances spanning 287 distinct attack chains and evaluate frontier attack agents across attack depth, network scale, and task information. Among runs that compromise the entry vulnerability, 24.5-47.0% still fail to complete the remaining attack path, revealing a substantial sustained-compromise gap between establishing an initial foothold and completing a multi-hop attack. RangeFactory further produces a corpus of 5,541 outcome-annotated multi-hop attack trajectories, providing execution data for attack-process analysis and future agent training.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-10T12:25:49Z</published>
+    <arxiv:comment>16 pages, 2 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Hanlin Jiang</name>
+    </author>
+    <author>
+      <name>Puyi Wang</name>
+    </author>
+    <author>
+      <name>Jiandong Jin</name>
+    </author>
+    <author>
+      <name>Shaofei Li</name>
+    </author>
+    <author>
+      <name>Zhan Shen</name>
+    </author>
+    <author>
+      <name>Pengli Wang</name>
+    </author>
+    <author>
+      <name>Ziming Wang</name>
+    </author>
+    <author>
+      <name>Yifeng Cai</name>
+    </author>
+    <author>
+      <name>Ning Jia</name>
+    </author>
+    <author>
+      <name>Yuxin Ren</name>
+    </author>
+    <author>
+      <name>Peng Jiang</name>
+    </author>
+    <author>
+      <name>Yao Guo</name>
+    </author>
+    <author>
+      <name>Ding Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.15012v1</id>
+    <title>SysEvolve: An AI-native, safe, autonomous adversarial attack-defense co-evolutionary system</title>
+    <updated>2026-08-15T03:47:32Z</updated>
+    <link href="https://arxiv.org/abs/2608.15012v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.15012v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The rapid advancement of large language models (LLMs) has created a growing asymmetry in cybersecurity, where attack accelerates toward autonomous execution while defense remains predominantly human-intensive. Despite substantial prior work across cyber ranges, AI-driven attack, and AI-driven defense, this asymmetry persists. We trace it to a deeper root cause, that evolution itself has stalled on both sides at three layers. To overcome this, we propose co-evolution as the integrating insight, where attack and defense AI agents autonomously and safely drive each other's evolution through adversarial confrontation. Based on this insight, we present \sysevolve, comprising three co-designed components, \sysfield, \sysspear, and \sysarmor. \sysfield constructs realistic multi-host ranges. \sysspear generates efficient, safe attack schemes. \sysarmor performs real-time, interpretable defense. Together they form a self-driven adversarial loop restoring evolution at all three layers. In evaluation, \sysfield achieves zero-loss collection at 2.1\% overhead and orchestrates 257 CVEs into 1,148 ranges, \sysspear improves attack success by over 25\% over baseline LLMs, and \sysarmor achieves 10--1000$\times$ greater precision than prior systems and detects real APT attacks in production at Huawei and Sangfor. Our evaluation also reveals three findings about LLM agent capabilities. First, multi-step composition and larger topologies expose agent capability gaps hidden by single-step evaluations. Second, the bottleneck lies after initial access in post-compromise state utilization. Third, LLM agents are susceptible to environmental interference. When decoy endpoints are deployed in the range, agent timeouts triple and downstream completion disappears despite the success rates of initial accesses are unchanged.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-15T03:47:32Z</published>
+    <arxiv:comment>Technical Report For SysEvolve System</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Yuhan Meng</name>
+    </author>
+    <author>
+      <name>Shaofei Li</name>
+    </author>
+    <author>
+      <name>Jionghao Huang</name>
+    </author>
+    <author>
+      <name>Jiandong Jin</name>
+    </author>
+    <author>
+      <name>Puyi Wang</name>
+    </author>
+    <author>
+      <name>Hanlin Jiang</name>
+    </author>
+    <author>
+      <name>Anis Yusof</name>
+    </author>
+    <author>
+      <name>Peng Jiang</name>
+    </author>
+    <author>
+      <name>Zhenkai Liang</name>
+    </author>
+    <author>
+      <name>Yao Guo</name>
+    </author>
+    <author>
+      <name>Ding Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2512.12921v1</id>
+    <title>Cisco Integrated AI Security and Safety Framework Report</title>
+    <updated>2025-12-15T02:12:12Z</updated>
+    <link href="https://arxiv.org/abs/2512.12921v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2512.12921v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Artificial intelligence (AI) systems are being readily and rapidly adopted, increasingly permeating critical domains: from consumer platforms and enterprise software to networked systems with embedded agents. While this has unlocked potential for human productivity gains, the attack surface has expanded accordingly: threats now span content safety failures (e.g., harmful or deceptive outputs), model and data integrity compromise (e.g., poisoning, supply-chain tampering), runtime manipulations (e.g., prompt injection, tool and agent misuse), and ecosystem risks (e.g., orchestration abuse, multi-agent collusion). Existing frameworks such as MITRE ATLAS, National Institute of Standards and Technology (NIST) AI 100-2 Adversarial Machine Learning (AML) taxonomy, and OWASP Top 10s for Large Language Models (LLMs) and Agentic AI Applications provide valuable viewpoints, but each covers only slices of this multi-dimensional space.
+  This paper presents Cisco's Integrated AI Security and Safety Framework ("AI Security Framework"), a unified, lifecycle-aware taxonomy and operationalization framework that can be used to classify, integrate, and operationalize the full range of AI risks. It integrates AI security and AI safety across modalities, agents, pipelines, and the broader ecosystem. The AI Security Framework is designed to be practical for threat identification, red-teaming, risk prioritization, and it is comprehensive in scope and can be extensible to emerging deployments in multimodal contexts, humanoids, wearables, and sensory infrastructures. We analyze gaps in prevailing frameworks, discuss design principles for our framework, and demonstrate how the taxonomy provides structure for understanding how modern AI systems fail, how adversaries exploit these failures, and how organizations can build defenses across the AI lifecycle that evolve alongside capability advancements.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-12-15T02:12:12Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Amy Chang</name>
+    </author>
+    <author>
+      <name>Tiffany Saade</name>
+    </author>
+    <author>
+      <name>Sanket Mendapara</name>
+    </author>
+    <author>
+      <name>Adam Swanda</name>
+    </author>
+    <author>
+      <name>Ankit Garg</name>
+    </author>
+  </entry>
+</feed>

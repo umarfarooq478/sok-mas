@@ -1,0 +1,944 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/YhC7GF2t0o5DIsj7/dsHT6lLrH4</id>
+  <title>arXiv Query: search_query=all:memory AND all:poisoning AND all:multi-agent AND all:LLM&amp;id_list=&amp;start=0&amp;max_results=100</title>
+  <updated>2026-11-21T23:58:12Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:memory+AND+(all:poisoning+AND+(all:multi-agent+AND+all:LLM))&amp;start=0&amp;max_results=100&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>100</opensearch:itemsPerPage>
+  <opensearch:totalResults>34</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2512.15790v1</id>
+    <title>Bilevel Optimization for Covert Memory Tampering in Heterogeneous Multi-Agent Architectures (XAMT)</title>
+    <updated>2025-12-15T23:04:48Z</updated>
+    <link href="https://arxiv.org/abs/2512.15790v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2512.15790v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The increasing operational reliance on complex Multi-Agent Systems (MAS) across safety-critical domains necessitates rigorous adversarial robustness assessment. Modern MAS are inherently heterogeneous, integrating conventional Multi-Agent Reinforcement Learning (MARL) with emerging Large Language Model (LLM) agent architectures utilizing Retrieval-Augmented Generation (RAG). A critical shared vulnerability is reliance on centralized memory components: the shared Experience Replay (ER) buffer in MARL and the external Knowledge Base (K) in RAG agents. This paper proposes XAMT (Bilevel Optimization for Covert Memory Tampering in Heterogeneous Multi-Agent Architectures), a novel framework that formalizes attack generation as a bilevel optimization problem. The Upper Level minimizes perturbation magnitude (delta) to enforce covertness while maximizing system behavior divergence toward an adversary-defined target (Lower Level). We provide rigorous mathematical instantiations for CTDE MARL algorithms and RAG-based LLM agents, demonstrating that bilevel optimization uniquely crafts stealthy, minimal-perturbation poisons evading detection heuristics. Comprehensive experimental protocols utilize SMAC and SafeRAG benchmarks to quantify effectiveness at sub-percent poison rates (less than or equal to 1 percent in MARL, less than or equal to 0.1 percent in RAG). XAMT defines a new unified class of training-time threats essential for developing intrinsically secure MAS, with implications for trust, formal verification, and defensive strategies prioritizing intrinsic safety over perimeter-based detection.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-12-15T23:04:48Z</published>
+    <arxiv:comment>10 pages, 5 figures, 4 tables. Conference-style paper (IEEEtran). Proposes unified bilevel optimization framework for covert memory poisoning attacks in heterogeneous multi-agent systems (MARL + RAG)</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Akhil Sharma</name>
+    </author>
+    <author>
+      <name>Shaikh Yaser Arafat</name>
+    </author>
+    <author>
+      <name>Jai Kumar Sharma</name>
+    </author>
+    <author>
+      <name>Ken Huang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.09721v1</id>
+    <title>MemoryDojo: Benchmarking Poisoning Through LLM Agent Memory</title>
+    <updated>2026-11-06T17:00:09Z</updated>
+    <link href="https://arxiv.org/abs/2611.09721v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.09721v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM agents benefit from using memory systems to improve performance on long-horizon, multi-session tasks. However, memory introduces a critical attack surface. Malicious instructions encountered in one session may be stored and propagated through memory before being retrieved and acted upon in later sessions. Because memory systems differ in how they process and retrieve information, the downstream effects of poisoning can vary significantly across systems. To quantify the effects of poisoning across different memory architectures, we introduce MemoryDojo, a benchmark for tracing the lifecycle of poisoned information through agent memory and measuring its influence on subsequent agent behavior. MemoryDojo is easily extensible, consists of 155 multi-session long-horizon trajectories covering four domains, and supports five different memory systems. Through our evaluation, we find that all memory systems are susceptible to memory poisoning, with substantial variation in downstream effects. We further propose a memory-aware poison optimization process that increases the poisoning efficacy, highlighting differences between memory architectures. We hope that MemoryDojo will support research on understanding and mitigating agentic memory risks.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-06T17:00:09Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>David H. Yang</name>
+    </author>
+    <author>
+      <name>Blake Bullwinkel</name>
+    </author>
+    <author>
+      <name>Amanda Minnich</name>
+    </author>
+    <author>
+      <name>Mohammad Mohammadi Amiri</name>
+    </author>
+    <author>
+      <name>Giorgio Severi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.20357v1</id>
+    <title>Memory poisoning and secure multi-agent systems</title>
+    <updated>2026-03-20T14:27:46Z</updated>
+    <link href="https://arxiv.org/abs/2603.20357v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.20357v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Memory poisoning attacks for Agentic AI and multi-agent systems (MAS) have recently caught attention. It is partially due to the fact that Large Language Models (LLMs) facilitate the construction and deployment of agents. Different memory systems are being used nowadays in this context, including semantic, episodic, and short-term memory. This distinction between the different types of memory systems focuses mostly on their duration but also on their origin and their localization. It ranges from the short-term memory originated at the user's end localized in the different agents to the long-term consolidated memory localized in well established knowledge databases.
+  In this paper, we first present the main types of memory systems, we then discuss the feasibility of memory poisoning attacks in these different types of memory systems, and we propose mitigation strategies. We review the already existing security solutions to mitigate some of the alleged attacks, and we discuss adapted solutions based on cryptography. We propose to implement local inference based on private knowledge retrieval as an example of mitigation strategy for memory poisoning for semantic memory. We also emphasize actual risks in relation to interactions between agents, which can cause memory poisoning. These latter risks are not so much studied in the literature and are difficult to formalize and solve. Thus, we contribute to the construction of agents that are secure by design.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-20T14:27:46Z</published>
+    <arxiv:comment>15 pages, 2 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Vicenç Torra</name>
+    </author>
+    <author>
+      <name>Maria Bras-Amorós</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.13267v1</id>
+    <title>Forgetting is Not Always Bad: A Neuro-Inspired Memory Repair Mechanism for Poisoned LLM Agents</title>
+    <updated>2026-10-09T09:17:00Z</updated>
+    <link href="https://arxiv.org/abs/2610.13267v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.13267v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language model (LLM) agents are highly vulnerable to memory-poisoning attacks. Existing defenses primarily rely on external modules for either static memory isolation or continuous online auditing, resulting in low memory efficiency and high computational overhead. To address these limitations, inspired by neuroscientific mechanisms that weak reactivation can destabilize memories and induce decay in the absence of reinforcement, we propose an agent-intrinsic training-free memory repair framework, DREAM (Dynamic Reactivation for Engram Attenuation in Memory), that enables selective functional forgetting of poisoned memories. Specifically, DREAM implements a three-stage pipeline: perturbation-induced implicit reactivation to reveal the structural fragility of malicious memories, adaptive anomaly diagnosis based on multi-dimensional activation patterns to detect topological anomalies, and a dynamic memory repair module that selectively suppresses harmful memories while reinforcing benign ones. Extensive experiments across diverse attackers and real-world tasks demonstrate that DREAM reduces attack success rates by over 95\% against backdoor poisoning while preserving strong benign utility. DREAM also achieves competitive robustness against injection attacks. In terms of runtime and token consumption, DREAM achieves up to a 2.13$\times$ speedup and a 37.7\% reduction in token consumption compared with A-MemGuard. Furthermore, DREAM also achieves a task success rate of 92.96\% on poisoned multi-agent systems.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-09T09:17:00Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Lei Liu</name>
+    </author>
+    <author>
+      <name>Yunji Liang</name>
+    </author>
+    <author>
+      <name>Xiaowen Zhang</name>
+    </author>
+    <author>
+      <name>Jingqi Liu</name>
+    </author>
+    <author>
+      <name>Qi Li</name>
+    </author>
+    <author>
+      <name>Bin Guo</name>
+    </author>
+    <author>
+      <name>Zhiwen Yu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.00523v1</id>
+    <title>Transferable End-to-End Optimization for Indirect Long-Term Memory Poisoning in LLM Agents</title>
+    <updated>2026-09-01T00:41:59Z</updated>
+    <link href="https://arxiv.org/abs/2609.00523v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.00523v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Long-term memory can turn untrusted external content into persistent influence over an LLM agent's future decisions, creating the threat of indirect memory poisoning. A successful attack must survive a multi-stage pipeline comprising memory writing, retrieval, and utilization. Existing attacks largely rely on intra-stage optimization, optimizing individual stages in isolation while overlooking inter-stage coupling. Specifically, these stages impose different requirements on the same poisoning content, and each stage operates on the transformed output of its predecessor. Consequently, optimizing one stage may undermine the effectiveness of other stages, while upstream transformations may erase improvements intended for downstream stages. Indirect memory poisoning should therefore be viewed as an end-to-end optimization problem. Based on this insight, we present \textsc{PipePoison}, which collects fine-grained stage feedback from local shadow systems, uses chain-structured losses to identify and optimize the stage bottlenecking end-to-end success, and applies stability-calibrated stage and configuration weights to improve transferability. Across three agent frameworks and four memory mechanisms, \textsc{PipePoison} improves attack utilization rate by 19.1 percentage points. Even on fully unseen victim configurations, it outperforms the strongest baseline by 16 percentage points and remains effective under eight representative defenses.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-01T00:41:59Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Chuanchao Zang</name>
+    </author>
+    <author>
+      <name>Jianing Wang</name>
+    </author>
+    <author>
+      <name>Wenyu Chen</name>
+    </author>
+    <author>
+      <name>Xiangtao Meng</name>
+    </author>
+    <author>
+      <name>Li Wang</name>
+    </author>
+    <author>
+      <name>Xinyu Gao</name>
+    </author>
+    <author>
+      <name>Zheng Li</name>
+    </author>
+    <author>
+      <name>Shanqing Guo</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.00426v2</id>
+    <title>MAPLE-Guard: Memory-Aware Link Enforcement Against Memory-Link Poisoning in Multi-Agent Systems</title>
+    <updated>2026-10-03T16:02:04Z</updated>
+    <link href="https://arxiv.org/abs/2608.00426v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.00426v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM-based multi-agent systems (MAS) increasingly rely on persistent private and shared memories for long-horizon coordination. This memory layer improves continuity, but it also gives attackers a durable channel: a poisoned memory can be written once, continuously retrieved in later tasks, promoted into shared memory, and reused by other agents. A single poisoned write can therefore steer many later decisions and contaminate agents that never saw the original attack, all while no malicious message crosses a visible communication edge at the moment of harm. Further, because existing safeguards mainly inspect prompts, actions, or communication edges, they can miss attacks whose content appears benign at write time but becomes harmful after retrieval. We introduce Memory-Aware Propagation and Link Enforcement Guard, MAPLE-Guard, a memory-link guard for memory-enabled MAS. MAPLE-Guard monitors the memory lifecycle and places gates at write, retrieval, promotion, and cross-agent reuse, so risky memories can be quarantined, unsafe retrievals filtered, and poisoned private memories blocked before they enter shared memory. In the main evaluation, MAPLE-Guard lowers attack success rate (ASR) from 38.2% to 0.9% on LongMemEval and from 34.7% to 0.2% on AppWorld; it also raises multi-agent defense success rate (MDSR) from 54.0% to 74.3% and from 42.5% to 99.8% on the same benchmarks. These results suggest that memory-aware link enforcement covers a gap left by prompt-level and topology-level defenses. Code is available at the link: https://github.com/xiong-wenjun/MAPLE-Guard.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-01T03:55:13Z</published>
+    <arxiv:comment>27 pages, 14 figures, 9 tables. Includes examples that may be misleading or harmful. Code: https://github.com/xiong-wenjun/MAPLE-Guard</arxiv:comment>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Wenjun Xiong</name>
+    </author>
+    <author>
+      <name>Yijin Zhou</name>
+    </author>
+    <author>
+      <name>Jiaqian Wang</name>
+    </author>
+    <author>
+      <name>Shangding Gu</name>
+    </author>
+    <author>
+      <name>Bo Tang</name>
+    </author>
+    <author>
+      <name>Zhiyu Li</name>
+    </author>
+    <author>
+      <name>Feiyu Xiong</name>
+    </author>
+    <author>
+      <name>Ying Wen</name>
+    </author>
+    <author>
+      <name>Muning Wen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.02240v1</id>
+    <title>SuperLocalMemory: Privacy-Preserving Multi-Agent Memory with Bayesian Trust Defense Against Memory Poisoning</title>
+    <updated>2026-02-17T12:35:23Z</updated>
+    <link href="https://arxiv.org/abs/2603.02240v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.02240v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We present SuperLocalMemory, a local-first memory system for multi-agent AI that defends against OWASP ASI06 memory poisoning through architectural isolation and Bayesian trust scoring, while personalizing retrieval through adaptive learning-to-rank -- all without cloud dependencies or LLM inference calls. As AI agents increasingly rely on persistent memory, cloud-based memory systems create centralized attack surfaces where poisoned memories propagate across sessions and users -- a threat demonstrated in documented attacks against production systems. Our architecture combines SQLite-backed storage with FTS5 full-text search, Leiden-based knowledge graph clustering, an event-driven coordination layer with per-agent provenance, and an adaptive re-ranking framework that learns user preferences through three-layer behavioral analysis (cross-project technology preferences, project context detection, and workflow pattern mining). Evaluation across seven benchmark dimensions demonstrates 10.6ms median search latency, zero concurrency errors under 10 simultaneous agents, trust separation (gap =0.90) with 72% trust degradation for sleeper attacks, and 104% improvement in NDCG@5 when adaptive re-ranking is enabled. Behavioral data is isolated in a separate database with GDPR Article 17 erasure support. SuperLocalMemory is open-source (MIT) and integrates with 17+ development tools via Model Context Protocol.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-17T12:35:23Z</published>
+    <arxiv:comment>11 pages, 5 tables, 1 figure. Code: https://github.com/varun369/SuperLocalMemoryV2</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Varun Pratap Bhardwaj</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.02265v1</id>
+    <title>CAPTURE: Disentangling Preference Drift from Memory Poisoning in Personalized LLM Agents</title>
+    <updated>2026-09-02T08:10:26Z</updated>
+    <link href="https://arxiv.org/abs/2609.02265v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.02265v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Personalized language agents use persistent memory to adapt to users over time, but the same mechanism creates an attack surface. When new information conflicts with stored preferences, an agent must distinguish genuine preference drift from temporary context shifts, ambiguity, or adversarial memory poisoning. We formulate this problem as a continuous-time partially observable decision process over a latent user state and show why rules based only on recency and provenance are insufficient. CAPTURE addresses this ambiguity with a neural differential-equation belief tracker, a multi-timescale memory ledger, uncertainty-triggered clarification, and counterfactual auditing of cited memories. On 480 held-out episodes from 96 users, CAPTURE achieves a 71.5% win rate, compared with 69.3% for an identically supervised baseline and 66.1% for the strongest heuristic baseline. It limits fixed-policy poisoning success to 11.5% while accepting 83.5% of genuine preference updates. Under an adaptive attacker with access to the released weights, attack success rises to 24.7%, exposing a real adaptation-security tradeoff. We further evaluate the frozen system zero-shot on an independently constructed benchmark and replay longitudinal interaction histories from 40 users collected over two to three weeks. These results suggest that modeling preference authenticity explicitly can improve both personalization and robustness in memory-augmented LLM agents.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-02T08:10:26Z</published>
+    <arxiv:comment>Under review at ICLR 2027</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>S M Asif Hossain</name>
+    </author>
+    <author>
+      <name>Ruksat Khan Shayoni</name>
+    </author>
+    <author>
+      <name>Md Kishor Morol</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.09033v3</id>
+    <title>ShadowMerge: A Novel Poisoning Attack on Graph-Based Agent Memory via Relation-Channel Conflicts</title>
+    <updated>2026-05-15T08:27:09Z</updated>
+    <link href="https://arxiv.org/abs/2605.09033v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.09033v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Graph-based agent memory is increasingly used in LLM agents to support structured long-term recall and multi-hop reasoning, but it also creates a new poisoning surface: an attacker can inject a crafted relation into graph memory so that it is later retrieved and influences agent behavior. Existing agent-memory poisoning attacks mainly target flat textual records and are ineffective in graph-based memory because malicious relations often fail to be extracted, merged into the target anchor neighborhood, or retrieved for the victim query.
+  We present SHADOWMERGE, a poisoning attack against graph-based agent memory that exploits relation-channel conflicts. Its key insight is that a poisoned relation can share the same query-activated anchor and canonicalized relation channel as benign evidence while carrying a conflicting value. To realize this, we design AIR, a pipeline that converts the conflict into an ordinary interaction that can be extracted, merged, and retrieved by the graph-memory system. We evaluate SHADOWMERGE on Mem0 and three public real-world datasets: PubMedQA, WebShop, and ToolEmu. SHADOWMERGE achieves 93.8% average attack success rate, improving the best baseline by 50.3 absolute points, while having negligible impact on unrelated benign tasks. Mechanism studies show that SHADOWMERGE overcomes the three key limitations of existing agent-memory poisoning attacks, and defense analysis shows that representative input-side defenses are insufficient to mitigate it. We have responsibly disclosed our findings to affected graph-memory vendors and open sourced SHADOWMERGE.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-09T16:16:41Z</published>
+    <arxiv:comment>Preprint. Corresponding authors: Zifeng Kang and Tiantian Ji. Code is available at https://anonymous.4open.science/status/ShadowMerge-033C</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Yang Luo</name>
+    </author>
+    <author>
+      <name>Zifeng Kang</name>
+    </author>
+    <author>
+      <name>Tiantian Ji</name>
+    </author>
+    <author>
+      <name>Xinran Liu</name>
+    </author>
+    <author>
+      <name>Yong Liu</name>
+    </author>
+    <author>
+      <name>Shuyu Li</name>
+    </author>
+    <author>
+      <name>Lingyun Peng</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.12703v1</id>
+    <title>SMSR: Certified Defence Against Runtime Memory Poisoning in Persistent LLM Agent Systems</title>
+    <updated>2026-06-10T21:45:52Z</updated>
+    <link href="https://arxiv.org/abs/2606.12703v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.12703v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Retrieval-augmented generation (RAG) agents increasingly run with persistent memory that accumulates across user sessions. This creates a new attack surface: an adversary interacting only through normal channels can inject crafted memories that, once retrieved, steer the agent's responses for future users, without touching model weights or code. We call this Multi-Session Memory Poisoning (MSMP) and show that no existing defence certifies against it; static-corpus defences (RobustRAG, ReliabilityRAG) assume a fixed knowledge base, and heuristic filters are bypassed by fluent enterprise-style text. We present Signed Memory with Smoothed Retrieval (SMSR), the first defence with a certified robustness bound for this setting. Component 1 adds HMAC-SHA256 provenance at write time, blocking unsigned injection. Component 2 applies randomised memory ablation with verdict-based majority voting at query time, bounding the influence of authenticated adversaries. We prove that no provenance-free retrieval-time filter can certify against adaptive injection, derive a hypergeometric certificate for Component 2, and formalise the Consistent Minority Effect, whereby a consistent adversarial answer wins string-based voting as a numerical minority while verdict-based voting removes it. Across 15 enterprise scenarios (3,150 repeated trials), Component 1 cuts attack success from 93-100% to 0% for all unsigned variants. For an authenticated adversary with a single injection, Component 2 holds success to 8.0% (95% CI [5.8, 10.9], n=450), below the certified worst case. In an end-to-end query-only attack where the agent itself writes the poison rather than it being pre-seeded, SMSR reduces success from 65.3% to 5.3% (n=150, non-overlapping CIs) on a live agent stack. Clean-query utility is 90% (Component 1) and 85% (combined).</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-10T21:45:52Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Tarun Sharma</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.17648v1</id>
+    <title>Trust propagation and structural containment in Multi-agent LLM pipelines</title>
+    <updated>2026-09-15T15:46:01Z</updated>
+    <link href="https://arxiv.org/abs/2609.17648v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.17648v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multi-agent LLM systems increasingly automate tasks involving agents with different levels of privilege, creating a security risk in which a compromised low-privilege agent can influence a higher-privilege agent and trigger an unauthorized action. We study attack propagation in a four-agent LangGraph pipeline comprising a Supervisor, Researcher, Validator, and Executor. We evaluate shared-memory poisoning and indirect prompt injection through a forged approval embedded in a retrieved document. We compare the Validator's judgment with an independent authorization layer using task-bound signed tokens and a separately verified policy oracle. Our contribution is an empirical study of attack propagation, a component-level ablation of the authorization boundary, and the Judgment Bypass Rate (JBR), which measures compromise at the attacked agent rather than at the final action. Across three seeds and 60 labeled tasks, memory poisoning reaches execution in every undefended trial. With authorization enabled, it achieves 100% JBR but 0% Unsafe Action Rate, showing that the Validator can remain compromised while execution is contained. Against an attacker possessing the signing secret, the policy oracle provides the observed containment, while an independently authored least privilege policy preserves this result. An Observer layer reduces the false-positive rate for agent hijacking from 49% to 7% without weakening execution-level security. These results show that structural authorization can contain compromised agent behavior even when upstream LLM judgment fails.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-15T15:46:01Z</published>
+    <arxiv:comment>Accepted at IEEE Cyber Awareness &amp; Research Symposium (CARS), 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Tanzim Hossain Safin</name>
+    </author>
+    <author>
+      <name>Sharif Noor Zisad</name>
+    </author>
+    <author>
+      <name>Swakkhar Shatabda</name>
+    </author>
+    <author>
+      <name>Ragib Hasan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.15899v1</id>
+    <title>SkillVetBench: LLM-as-Judge for Multi-Dimensional Security Risk Evaluation in Open-Source LLM Agent Skills</title>
+    <updated>2026-06-14T16:30:33Z</updated>
+    <link href="https://arxiv.org/abs/2606.15899v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.15899v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Open-source LLM agent ecosystems are growing rapidly, yet the security of community-contributed skills - modular tool definitions that extend agent capabilities - remains largely unvetted. The gap we fill: existing scanners operate at the code layer and are structurally blind to instruction-layer and multi-agent risk - natural-language directives that hijack an agent, exfiltrate data through encoded side channels, or chain harm across pipelines - so what is needed is a semantic, multi-dimensional vetting system rather than another signature matcher. We present SKILLVETBENCH, a live public leaderboard on Hugging Face that uses an LLM-as-Judge to vet agent skills. What is new: SARS (Skill Agentic Risk Score), a five-dimensional agentic-risk metric with a principled weighted formula for instruction-following systems. What is integrated: full CVSS v4.0 vector decomposition and a ClawHub dual-view that places our LLM-generated review beside the official marketplace verdict. What is demonstrated: drawing on our companion benchmark paper [ 1], the LLM-as-Judge stage achieves zero false negatives across 78 confirmed-malicious skills and zero false positives across 22 benign controls, while the best static baseline (SKILLSIEVE) still misses 15%; for instruction-layer categories such as Prompt Injection and Memory Poisoning, conventional tools miss between 89% and 100% of threats (e.g., CODEBERT detects none of nine memory-poisoning skills). Detection rates vary from 35% to 95% across four LLM evaluators, motivating ensemble scoring in production deployments.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.HC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-14T16:30:33Z</published>
+    <arxiv:comment>The main research paper is submitted to NeurIPS 2027, it is in under review</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Ismail Hossain</name>
+    </author>
+    <author>
+      <name>Sai Puppala</name>
+    </author>
+    <author>
+      <name>Md Jahangir Alam</name>
+    </author>
+    <author>
+      <name>Tanzim Ahad</name>
+    </author>
+    <author>
+      <name>Sajedul Talukder</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.28103v2</id>
+    <title>MIND: Lightweight and Effective Memory Injection Defense for LLM Agents via Intent-Aware Information Bottleneck</title>
+    <updated>2026-10-12T16:09:44Z</updated>
+    <link href="https://arxiv.org/abs/2607.28103v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.28103v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Memory-augmented LLM-based agents are vulnerable to memory injection attacks: Agents may retrieve poisoned memory from attackers, which diverts their behavior from initial user intent and finally causes task failure. However, existing defense mechanisms either incur high computational cost or suffer from information redundancy in multi-turn contexts. To address these challenges, we propose Memory Intent-Aware Neural Denoising(MIND), a lightweight defense framework for memory injection attack. Our preliminary analysis reveals that benign and poisoned trajectories exhibit distinguishable relationships between the initial user intent and subsequent behavior. Building on this observation, MIND employs an intent-aware Information Bottleneck(IB) to extract compact intent--behavior representations from the initial intent and turn-level behavior. The IB preserves intent-relevant cross-turn attack signals while filtering task-irrelevant and repetitive information, and a lightweight detector identifies malicious memories from the resulting representations. As such, MIND mitigates information redundancy in multi-turn contexts while avoiding the overhead of repeated LLM auditing. Extensive experiments show that MIND reduces attack success rates while preserving task accuracy and inference efficiency. Notably, on ReAct-StrategyQA, MIND reduces mean ASR-r and ASR-a by 58.1% and 53.5%, respectively, while matching the undefended agent in average accuracy and latency.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-30T12:11:49Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Dongyi Liu</name>
+    </author>
+    <author>
+      <name>Haixing He</name>
+    </author>
+    <author>
+      <name>Xiaobao Wu</name>
+    </author>
+    <author>
+      <name>Jia Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.00718v1</id>
+    <title>Adversarial Attacks in Multi-Agent LLM Pipelines: Unveiling Structural Vulnerabilities in Agentic AI Architectures</title>
+    <updated>2026-08-01T15:35:58Z</updated>
+    <link href="https://arxiv.org/abs/2608.00718v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.00718v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multi-agent LLM pipelines orchestrate multiple specialized language model agents into structured workflows where intermediate outputs are passed across agents to solve complex tasks. This design introduces a security gap absent in single-agent settings: once an agent accepts adversarial content, it is propagated as trusted input throughout the pipeline. We argue that this vulnerability stems from the absence of boundary verification, a security primitive that enforces explicit validation of data as it crosses inter-agent boundaries, including content, identity, execution intent, and state integrity. Without such verification, modern pipelines embed implicit trust assumptions that are not adversarially robust, giving rise to structurally distinct attack surfaces (e.g., content injection, agent impersonation, plan deviation, and memory poisoning). Leveraging annotated production traces from the GAIA and SWE-Bench benchmark, we show that these vulnerabilities arise in benign deployments and largely evade existing evaluation frameworks. We further operationalize these failure modes within a controlled multi-agent setting and evaluate them across GPT-5-mini, Claude Sonnet 4.5, and Kimi K2.5 under identical pipeline configurations. The results reveal that attack success aligns with pipeline structure rather than model capability, indicating that adversarial vulnerability is fundamentally an architectural property and motivating a shift toward pipeline-level defenses.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-01T15:35:58Z</published>
+    <arxiv:comment>This paper has been accepted at the 2026 IEEE Global Communications Conference (GLOBECOM)</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Faisal Haque Bappy</name>
+    </author>
+    <author>
+      <name>Tahrim Hossain</name>
+    </author>
+    <author>
+      <name>Tarannum Shaila Zaman</name>
+    </author>
+    <author>
+      <name>Raiful Hasan</name>
+    </author>
+    <author>
+      <name>Kamrul Hasan</name>
+    </author>
+    <author>
+      <name>Tariqul Islam</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.20631v1</id>
+    <title>Weighted Memory Tree: Remembering What Matters for Long-Horizon LLM Agents</title>
+    <updated>2026-08-21T00:14:38Z</updated>
+    <link href="https://arxiv.org/abs/2608.20631v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.20631v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language model (LLM) agents have demonstrated the ability to solve multi-step tasks requiring planning, tool use, and external information access, yet growing execution histories increase inference cost and expose reasoning to outdated, irrelevant, or misleading information, potentially degrading reasoning quality. Existing memory approaches organize or compress execution histories but provide limited mechanisms for deciding which memories remain active. We introduce the, a hierarchical memory system that organizes execution into tasks, subtasks, and actions while assigning each memory a dynamic retention score. Event-based updates and selection-based decay revise these scores, allowing WMT to preserve useful information, fold completed trajectories, suppress low-utility content, and retain access to folded context. We evaluate WMT on GAIA-Text using Qwen3-8B, Gemma 4 E4B, and Llama-3.1-8B, with ablations and memory-poisoning experiments. Relative to linear memory, WMT improves accuracy by an average of 9.97 percentage points while reducing prompt-token usage by 32.8%. Memory-poisoning experiments show that WMT limits the persistence and propagation of unreliable information. Our results suggest that effective long-horizon agent memory depends less on storing more information than on deciding which information should remain active.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-21T00:14:38Z</published>
+    <arxiv:comment>16 pages, 2 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Quang Dao</name>
+    </author>
+    <author>
+      <name>Purvi Kathalkar</name>
+    </author>
+    <author>
+      <name>Kenneth Eaton</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.28987v1</id>
+    <title>PerMIT: Securing Persistent Memory for LLM Agents via Machine-Checked Integrity Theorems and Scalable Community Trust</title>
+    <updated>2026-10-20T23:31:06Z</updated>
+    <link href="https://arxiv.org/abs/2610.28987v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.28987v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Persistent memory is a largely undefended surface for injection and poisoning, and the same risk limits memory sharing among agents. We present PerMIT, a memory architecture with provable integrity guarantees under an explicit trust assumption: only user-typed inputs and values confirmed at a gate are trusted. PerMIT mediates the release and use of untrusted environment-derived values through a finite memory interface, while preserving agent-driven multi-turn planning and tool choice. Over this finite interface, we prove two integrity theorems that are also machine-checked in Lean 4, which together ensure that environment-derived memory reaches a sensitive action only if confirmed at the gate and influences the agent's behavior only through what the gate displays. Every attack in our threat model thereby reduces to a single auditable decision, which a human, an LLM verifier, or both can make in practice. On Trojan Hippo, PerMIT records zero observed attack success with self-verification and lightweight verifiers. Because each confirmation is a logged verdict on exact content, endorsements accumulate across users, and sufficiently endorsed items become community-confirmed with no further verification required. Under explicit assumptions, we prove and corroborate in simulation a co-scaling property: as the community grows, the risks of promoting poison and of wrongly evicting benign knowledge fall, while per-user verification effort does not rise. On $τ^2$-bench, communities of up to 90 autonomous agents use PerMIT to build shared knowledge bases with no direct memory injection promoted, and the resulting knowledge significantly improves new agents on held-out tasks, suggesting a path toward agents that safely self-improve at test time.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-20T23:31:06Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Tanqiu Jiang</name>
+    </author>
+    <author>
+      <name>Min Bai</name>
+    </author>
+    <author>
+      <name>Sadat Shahriar</name>
+    </author>
+    <author>
+      <name>Wanyu Du</name>
+    </author>
+    <author>
+      <name>Sandesh Swamy</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2508.08127v2</id>
+    <title>BlindGuard: Safeguarding LLM-based Multi-Agent Systems under Unknown Attacks</title>
+    <updated>2026-04-25T05:20:29Z</updated>
+    <link href="https://arxiv.org/abs/2508.08127v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2508.08127v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The security of LLM-based multi-agent systems (MAS) is critically threatened by propagation vulnerability, where malicious agents can distort collective decision-making through inter-agent message interactions. While existing supervised defense methods demonstrate promising performance, they may be impractical in real-world scenarios due to their heavy reliance on labeled malicious agents to train a supervised malicious detection model. To enable practical and generalizable MAS defenses, in this paper, we propose BlindGuard, an unsupervised defense method that learns without requiring any attack-specific labels or prior knowledge of malicious behaviors. To this end, we establish a hierarchical agent encoder to capture individual, neighborhood, and global interaction patterns of each agent, providing a comprehensive understanding for malicious agent detection. Meanwhile, we design a corruption-guided detector that consists of directional noise injection and contrastive learning, allowing effective detection model training solely on normal agent behaviors. Extensive experiments show that BlindGuard effectively detects diverse attack types (i.e., prompt injection, memory poisoning, and tool attack) across MAS with various communication patterns while maintaining superior generalizability compared to supervised baselines. The code is available at: https://github.com/MR9812/BlindGuard.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-08-11T16:04:47Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <arxiv:journal_ref>Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics, 2026</arxiv:journal_ref>
+    <author>
+      <name>Rui Miao</name>
+    </author>
+    <author>
+      <name>Yixin Liu</name>
+    </author>
+    <author>
+      <name>Yili Wang</name>
+    </author>
+    <author>
+      <name>Xu Shen</name>
+    </author>
+    <author>
+      <name>Yue Tan</name>
+    </author>
+    <author>
+      <name>Yiwei Dai</name>
+    </author>
+    <author>
+      <name>Shirui Pan</name>
+    </author>
+    <author>
+      <name>Xin Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.16901v1</id>
+    <title>AgentLAB: Benchmarking LLM Agents against Long-Horizon Attacks</title>
+    <updated>2026-02-18T21:30:20Z</updated>
+    <link href="https://arxiv.org/abs/2602.16901v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.16901v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM agents are increasingly deployed in long-horizon, complex environments to solve challenging problems, but this expansion exposes them to long-horizon attacks that exploit multi-turn user-agent-environment interactions to achieve objectives infeasible in single-turn settings. To measure agent vulnerabilities to such risks, we present AgentLAB, the first benchmark dedicated to evaluating LLM agent susceptibility to adaptive, long-horizon attacks. Currently, AgentLAB supports five novel attack types including intent hijacking, tool chaining, task injection, objective drifting, and memory poisoning, spanning 28 realistic agentic environments, and 644 security test cases. Leveraging AgentLAB, we evaluate representative LLM agents and find that they remain highly susceptible to long-horizon attacks; moreover, defenses designed for single-turn interactions fail to reliably mitigate long-horizon threats. We anticipate that AgentLAB will serve as a valuable benchmark for tracking progress on securing LLM agents in practical settings. The benchmark is publicly available at https://tanqiujiang.github.io/AgentLAB_main.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-18T21:30:20Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Tanqiu Jiang</name>
+    </author>
+    <author>
+      <name>Yuhui Wang</name>
+    </author>
+    <author>
+      <name>Jiacheng Liang</name>
+    </author>
+    <author>
+      <name>Ting Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.13696v1</id>
+    <title>On Private Knowledge Retrieval and Private Inference for secure multi-agent systems</title>
+    <updated>2026-11-10T07:43:02Z</updated>
+    <link href="https://arxiv.org/abs/2611.13696v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.13696v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multi-agent systems provide a convenient framework for the massive deployment of agents based on Large Language Models (LLMs). It provides a sound framework where agents can interact with existing software to perform actions in an autonomous way. Agentic AI is the new term to denote these AI-based autonomous systems.
+  In real multi-agent systems, agents need to deal with malicious agents some of which can exploit security vulnerabilities to do harm. A memory poisoning attack is an example of exploiting a vulnerability to modify agents knowledge and, thus, affect its behavior. In an agent, there are different types of memory systems (semantic, episodic, and short-term) which have their own characteristics and for which different memory poisoning attacks may be developed.
+  In this paper we focus on semantic memory, we discuss its attack, and mitigation strategies. We introduce private knowledge retrieval and private inference. We propose a signature system in the knowledge base to prevent from undesired manipulation. This should avoid memory poisoning attacks by introducing security by design in the construction of the semantic memory. In our architecture, an agent contains a local Prolog-like inference system (i.e., using Horn clauses to represent knowledge) which accesses an external knowledge base to get the required knowledge. This externally signed knowledge base is accessed privately. We provide different implementations in Python using different privacy levels including k-anonymity and information-theoretical privacy (IT-PIR).</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-10T07:43:02Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Vicenç Torra</name>
+    </author>
+    <author>
+      <name>Maria Bras-Amorós</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.08460v1</id>
+    <title>When Child Inherits: Modeling and Exploiting Subagent Spawn in Multi-Agent Networks</title>
+    <updated>2026-05-08T20:27:23Z</updated>
+    <link href="https://arxiv.org/abs/2605.08460v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.08460v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Since the official release of ChatGPT in 2022, large language models (LLMs) have rapidly evolved from chatbot-style interfaces into agentic systems that can delegate work through tools and newly spawned subagents. While these capabilities improve automation and scalability, they also pose new security risks in multi-agent networks.
+  Existing research has studied how individual LLM-based agents can be compromised through prompt injection, jailbreaking, poisoned retrieval data, or malicious extensions. Less is known about what happens after one agent is compromised inside a multi-agent network. In particular, inherited memory from parent agents can carry malicious instructions, outdated states, or unintended behavioral rules into newly created subagents, allowing a local compromise to spread across agent boundaries.
+  In this paper, we model contemporary multi-agent networks through the lens of subagent inheritance. Our analysis shows that current frameworks can violate trust boundaries through insecure memory inheritance, weak resource control, stale post-spawn state, and improper termination authority. We demonstrate these risks in real agent frameworks and propose defenses based on explicit security invariants. Our findings show that inheritance is not merely an implementation detail, but a central component influencing the security of multi-agent systems.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-08T20:27:23Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Ziwen Cai</name>
+    </author>
+    <author>
+      <name>Yihe Zhang</name>
+    </author>
+    <author>
+      <name>Xiali Hei</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.06812v2</id>
+    <title>Towards Security-Auditable LLM Agents: A Unified Graph Representation</title>
+    <updated>2026-10-14T08:40:11Z</updated>
+    <link href="https://arxiv.org/abs/2605.06812v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.06812v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM-based agentic systems are rapidly evolving to perform complex autonomous tasks through dynamic tool invocation, stateful memory management, and multi-agent collaboration. However, this semantics-driven execution paradigm creates a severe semantic gap between low-level physical events and high-level execution intent, making post-hoc security auditing fundamentally difficult. Existing representation mechanisms, including static SBOMs and runtime logs, provide only fragmented evidence and fail to capture cognitive-state evolution, capability bindings, persistent memory contamination, and cascading risk propagation across interacting agents. To bridge this gap, we propose Agent-BOM, a unified structural representation for agent security auditing. Agent-BOM models an agentic system as a hierarchical attributed directed graph that separates static capability bases, such as models, tools, and long-term memory, from dynamic runtime semantic states, such as goals, reasoning trajectories, and actions. These layers are connected through semantic edges and security attributes, transforming fragmented execution traces into queryable audit paths. Building on Agent-BOM, we develop a graph-query-based paradigm for path-level risk assessment and instantiate it with the OWASP Agentic Top 10. We further implement an auditing plugin in the OpenClaw environment to construct Agent-BOM from live executions. Evaluation on representative real-world agentic attack scenarios shows that Agent-BOM can reconstruct stealthy attack chains, including cross-session memory poisoning and tool misuse, capability supply-chain hijacking and unexpected code execution, multi-agent ecosystem hijacking, and privilege and trust abuse. These results demonstrate that Agent-BOM provides a unified and auditable foundation for root-cause analysis and security adjudication in complex agentic ecosystems.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-07T18:14:29Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Chaofan Li</name>
+    </author>
+    <author>
+      <name>Lyuye Zhang</name>
+    </author>
+    <author>
+      <name>Jintao Zhai</name>
+    </author>
+    <author>
+      <name>Siyue Feng</name>
+    </author>
+    <author>
+      <name>Xichun Yang</name>
+    </author>
+    <author>
+      <name>Huahao Wang</name>
+    </author>
+    <author>
+      <name>Shihan Dou</name>
+    </author>
+    <author>
+      <name>Yu Ji</name>
+    </author>
+    <author>
+      <name>Yutao Hu</name>
+    </author>
+    <author>
+      <name>Yueming Wu</name>
+    </author>
+    <author>
+      <name>Yang Liu</name>
+    </author>
+    <author>
+      <name>Deqing Zou</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.21278v1</id>
+    <title>Conversation Tree Architecture: A Structured Framework for Context-Aware Multi-Branch LLM Conversations</title>
+    <updated>2026-03-22T15:11:06Z</updated>
+    <link href="https://arxiv.org/abs/2603.21278v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.21278v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) are increasingly deployed for extended, multi-topic conversations, yet the flat, append-only structure of current conversation interfaces introduces a fundamental limitation: all context accumulates in a single unbounded window, causing topically distinct threads to bleed into one another and progressively degrade response quality. We term this failure mode logical context poisoning. In this paper, we introduce the Conversation Tree Architecture (CTA), a hierarchical framework that organizes LLM conversations as trees of discrete, context-isolated nodes. Each node maintains its own local context window; structured mechanisms govern how context flows between parent and child nodes, downstream on branch creation and upstream on branch deletion. We additionally introduce volatile nodes, transient branches whose local context must be selectively merged upward or permanently discarded before purging. We formalize the architecture's primitives, characterize the open design problems in context flow, relate our framework to prior work in LLM memory management, and describe a working prototype implementation. The CTA provides a principled foundation for structured conversational context management and extends naturally to multi-agent settings.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.HC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-22T15:11:06Z</published>
+    <arxiv:comment>6 pages, 1 figure. Prototype available at https://the-conversation-tree.vercel.app/app</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Pranav Hemanth</name>
+    </author>
+    <author>
+      <name>Sampriti Saha</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.16098v1</id>
+    <title>Universal Defenses for Tool-Integrated LLM Agents Against Adversarial Attacks</title>
+    <updated>2026-09-14T15:20:30Z</updated>
+    <link href="https://arxiv.org/abs/2609.16098v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.16098v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Model (LLM) agents have demonstrated impressive capabilities across a variety of domains, particularly when integrated with external tools for multi-step task completion. However, they are increasingly vulnerable to adversarial attacks, including direct prompt injection, indirect prompt injection, memory poisoning, and backdoor attacks, which exploit the model's openness to prompt injection and tool manipulation. In this work, we explore practical and generalizable defense strategies within a unified framework across these four attack types. We introduce two universal tool-based defenses: Attacker Tool Filtering, which uses anomaly detection (e.g., Isolation Forest) to identify and remove suspicious tools, and Normal Tool Recalling, a white-box method that restores the agent's original toolset prior to planning. Additionally, we incorporate prompt-based defenses: Chain-of-Thought prompting and self-reflection techniques to enhance reasoning and task paraphrasing to mitigate attacks. Experimental results across both four open-source LLMs (Gemma2-9B, Qwen2-7B, LLaMA3-8B, and LLaMA3.1-8B) and three proprietary LLMs (GPT-3.5, GPT-4, and GPT-5) show that our methods significantly reduce the Attack Success Rates (ASR), achieving 0% ASR in many settings, while preserving or even improving the original task success rate. These findings highlight the promise of simple, modular, multi-layered defenses for strengthening the security and robustness of tool-integrated LLM agents. The code is available at https://github.com/Xiaoyan-Lisa/Defenses-for-Tool-Integrated-LLM-Agents-Against-Adversarial-Attacks.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-14T15:20:30Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Xiaoyan Li</name>
+    </author>
+    <author>
+      <name>Yunli Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.23844v1</id>
+    <title>Weighing the Envelope: Component Weight and Arbitration in Envelope-Layer Defenses for a Single LLM Agent</title>
+    <updated>2026-11-18T04:50:08Z</updated>
+    <link href="https://arxiv.org/abs/2611.23844v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.23844v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The envelope layer is the channel through which malicious content enters an LLM agent. Prior work established label and memory effects on multi-agent A2A envelopes, but the weight structure when MCP tools and memory coexist in a single agent remains unclear. Our threat model assumes an attacker pre-plants a malicious tool and poisons long-term memory; a benign user request inadvertently triggers it, and the attacker never enters the conversation. Following GDA Measurement and A/B/C/D, we measure how labels, memory, tool roles, and the backend shape invocation decisions across label-memory conflict, tool roles, robustness, and tool generalization. A tool-side forced-verification label substantially reduces semantic breach, but strong success memory pulls it back; a memory-side downgrade statement returns the outcome to the level of the label alone. The label works through mandatory implementation inspection plus default denial, not length or format; memory authorization wording erodes it with dose, while position and multi-turn pressure do not change the defense direction. Tool roles divide label effects into substitution, suppression, and boundary failure: low penetration is not safety, local leakage is the main residual risk, and a second malicious tool shows the same direction. Envelope labels are not a switch but a measurable, reversible weight constrained by backend and tool role, acting as a soft gate and risk signal within a broader defense rather than a substitute for permissions, sandboxing, or human review.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-18T04:50:08Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Yuelin Han</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.04392v2</id>
+    <title>AgentSafe: Safeguarding Large Language Model-based Multi-agent Systems via Hierarchical Data Management</title>
+    <updated>2025-07-08T04:14:01Z</updated>
+    <link href="https://arxiv.org/abs/2503.04392v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2503.04392v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Model based multi-agent systems are revolutionizing autonomous communication and collaboration, yet they remain vulnerable to security threats like unauthorized access and data breaches. To address this, we introduce AgentSafe, a novel framework that enhances MAS security through hierarchical information management and memory protection. AgentSafe classifies information by security levels, restricting sensitive data access to authorized agents. AgentSafe incorporates two components: ThreatSieve, which secures communication by verifying information authority and preventing impersonation, and HierarCache, an adaptive memory management system that defends against unauthorized access and malicious poisoning, representing the first systematic defense for agent memory. Experiments across various LLMs show that AgentSafe significantly boosts system resilience, achieving defense success rates above 80% under adversarial conditions. Additionally, AgentSafe demonstrates scalability, maintaining robust performance as agent numbers and information complexity grow. Results underscore effectiveness of AgentSafe in securing MAS and its potential for real-world application.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-03-06T12:41:54Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Junyuan Mao</name>
+    </author>
+    <author>
+      <name>Fanci Meng</name>
+    </author>
+    <author>
+      <name>Yifan Duan</name>
+    </author>
+    <author>
+      <name>Miao Yu</name>
+    </author>
+    <author>
+      <name>Xiaojun Jia</name>
+    </author>
+    <author>
+      <name>Junfeng Fang</name>
+    </author>
+    <author>
+      <name>Yuxuan Liang</name>
+    </author>
+    <author>
+      <name>Kun Wang</name>
+    </author>
+    <author>
+      <name>Qingsong Wen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.11619v1</id>
+    <title>Taming OpenClaw: Security Analysis and Mitigation of Autonomous LLM Agent Threats</title>
+    <updated>2026-03-12T07:24:05Z</updated>
+    <link href="https://arxiv.org/abs/2603.11619v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.11619v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Autonomous Large Language Model (LLM) agents, exemplified by OpenClaw, demonstrate remarkable capabilities in executing complex, long-horizon tasks. However, their tightly coupled instant-messaging interaction paradigm and high-privilege execution capabilities substantially expand the system attack surface. In this paper, we present a comprehensive security threat analysis of OpenClaw. To structure our analysis, we introduce a five-layer lifecycle-oriented security framework that captures key stages of agent operation, i.e., initialization, input, inference, decision, and execution, and systematically examine compound threats across the agent's operational lifecycle, including indirect prompt injection, skill supply chain contamination, memory poisoning, and intent drift. Through detailed case studies on OpenClaw, we demonstrate the prevalence and severity of these threats and analyze the limitations of existing defenses. Our findings reveal critical weaknesses in current point-based defense mechanisms when addressing cross-temporal and multi-stage systemic risks, highlighting the need for holistic security architectures for autonomous LLM agents. Within this framework, we further examine representative defense strategies at each lifecycle stage, including plugin vetting frameworks, context-aware instruction filtering, memory integrity validation protocols, intent verification mechanisms, and capability enforcement architectures.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-12T07:24:05Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Xinhao Deng</name>
+    </author>
+    <author>
+      <name>Yixiang Zhang</name>
+    </author>
+    <author>
+      <name>Jiaqing Wu</name>
+    </author>
+    <author>
+      <name>Jiaqi Bai</name>
+    </author>
+    <author>
+      <name>Sibo Yi</name>
+    </author>
+    <author>
+      <name>Zhuoheng Zou</name>
+    </author>
+    <author>
+      <name>Yue Xiao</name>
+    </author>
+    <author>
+      <name>Rennai Qiu</name>
+    </author>
+    <author>
+      <name>Jianan Ma</name>
+    </author>
+    <author>
+      <name>Jialuo Chen</name>
+    </author>
+    <author>
+      <name>Xiaohu Du</name>
+    </author>
+    <author>
+      <name>Xiaofang Yang</name>
+    </author>
+    <author>
+      <name>Shiwen Cui</name>
+    </author>
+    <author>
+      <name>Changhua Meng</name>
+    </author>
+    <author>
+      <name>Weiqiang Wang</name>
+    </author>
+    <author>
+      <name>Jiaxing Song</name>
+    </author>
+    <author>
+      <name>Ke Xu</name>
+    </author>
+    <author>
+      <name>Qi Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.38270v1</id>
+    <title>VirusCascade: Hijacking Collaborative Reflection in LLM-Powered Recommender Agents</title>
+    <updated>2026-09-29T14:13:35Z</updated>
+    <link href="https://arxiv.org/abs/2609.38270v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.38270v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Advancing beyond traditional static scoring models, LLM-powered agentic recommender systems (LLM-ARS) instantiate users and items as autonomous agents, whose semantic states are dynamically refined through a recurrent process known as collaborative reflection. While this mechanism improves recommendation quality, it simultaneously introduces a systemic vulnerability: adversarial evidence injected into a single agent can be rationalised into a legitimate preference narrative, written back into memory, and propagated to other agents through interaction contexts. We term the local rationalisation process reflection laundering, and its system-wide escalation through collaborative reflection collaborative-reflection hijacking. Existing attacks on recommender systems, whether based on interaction-level data poisoning or text-level adversarial perturbations, assume static pipelines and thus cannot exploit this recurrent, multi-agent amplification pathway. To bridge this gap, we first conduct a controlled vulnerability analysis that establishes two exploitable properties underlying collaborative-reflection hijacking: reflective persistence and cross-agent propagation. Then building on these findings, we propose VirusCascade, the first black-box targeted promotion attack that jointly shapes semantic and structural attack surfaces: the former ensures the target item is naturally rationalised as satisfying broad user preferences, the latter positions it for system-wide propagation. Extensive experiments on four real-world datasets across diverse LLM-ARS architectures demonstrate that VirusCascade consistently achieves state-of-the-art targeted exposure under evaluated stealth constraints, reaching a mean E@20 of 0.384 and surpassing the strongest baseline by an absolute margin of +0.185.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-29T14:13:35Z</published>
+    <arxiv:comment>Accepted by NDSS 2027</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Yurong Hao</name>
+    </author>
+    <author>
+      <name>Wen Zhou</name>
+    </author>
+    <author>
+      <name>Guowei Guan</name>
+    </author>
+    <author>
+      <name>Tiantong Wu</name>
+    </author>
+    <author>
+      <name>Fuyao Zhang</name>
+    </author>
+    <author>
+      <name>Wei Yang Bryan Lim</name>
+    </author>
+    <arxiv:doi>10.14722/ndss.2027.230685</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.14722/ndss.2027.230685" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.21259v1</id>
+    <title>Evaluating Authorization and Trust Boundaries in Agentic Orchestration Frameworks</title>
+    <updated>2026-11-16T15:33:50Z</updated>
+    <link href="https://arxiv.org/abs/2611.21259v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.21259v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Agentic AI systems extend large language models with tools, memory, and multi-agent collaboration, introducing security risks at orchestration boundaries. These risks depend on how identities are represented, operations are authorized, and instructions or information propagate between components. We evaluate LangChain, LangGraph, AutoGen, and OpenClaw through twelve experiments mapped to the OWASP Top 10 for Agentic Applications using a common LLM (gpt-4o-mini). The experiments cover prompt injection, unauthorized resource access and command execution, memory poisoning, and inter-agent trust and identity attacks. Adversarial inputs induced unauthorized tool invocation, while tool chaining, stale filesystem validation, encoded instructions, and inter-agent delegation exposed weaknesses in authorization across component boundaries. Memory poisoning showed that untrusted state can influence responses, a risk distinct from conventional access-control violations. In the evaluated protected configurations, explicit authorization, controlled capability assignment, filesystem containment, and execution safeguards prevented specific unauthorized operations. The findings emphasize preserving authorization and information-trust boundaries throughout agentic workflows rather than treating framework capabilities or model-level instructions as sufficient security guarantees.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-16T15:33:50Z</published>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Sahaya Jestus Lazer</name>
+    </author>
+    <author>
+      <name>Kshitiz Aryal</name>
+    </author>
+    <author>
+      <name>Maanak Gupta</name>
+    </author>
+    <author>
+      <name>Elisa Bertino</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.02605v1</id>
+    <title>StateFence: Task-State Protection Against Evidence-Chain Contamination in Blue-Team LLM Agents</title>
+    <updated>2026-11-02T06:28:45Z</updated>
+    <link href="https://arxiv.org/abs/2611.02605v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.02605v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Indirect prompt injection creates a distinctive risk for blue-team Large Language Model (LLM) agents in Security Operations Centers (SOCs). Malicious instructions can be embedded in telemetry, tickets, retrieval results, or memory and then propagate through alert triage, incident summarization, response recommendation, and Indicator of Compromise (IOC) extraction as locally plausible intermediate decisions. We characterize this failure mode as evidence-chain contamination of protected task state. The main challenge is task dependent: a suspicious string may be malicious control text for summarization but essential evidence for IOC extraction. To address this challenge, we propose StateFence, a task-aware evaluation and defense framework that treats severity labels, incident narratives, response policies, and IOC sets as protected states. StateFence maps indirect prompt-injection attacks into explicit, stealth, multi-hop, and persistent SOC evidence attacks, records observable propagation traces, and routes defenses according to the attacked state. Across controlled SOC cases and public-SOC validation cases, StateFence lowers attack success and reduces failures that appear only after evidence is poisoned, while preserving task utility and avoiding the indicator loss caused by task-mismatched filtering. Our findings indicate that robust blue-team LLM agents require mechanisms that preserve task-critical state under untrusted evidence.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-02T06:28:45Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Haowen Dai</name>
+    </author>
+    <author>
+      <name>Alejandro Guerra-Manzanares</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.25435v1</id>
+    <title>Security of OpenClaw Agents: Fundamentals, Attacks, and Countermeasures</title>
+    <updated>2026-05-25T05:25:39Z</updated>
+    <link href="https://arxiv.org/abs/2605.25435v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.25435v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The rapid evolution of large language model (LLM)-driven autonomous agents has given rise to OpenClaw, a new class of open-source agent frameworks that operate as continuously running, skill-augmented systems with persistent memory, multi-channel interaction, and high degrees of autonomy. Such capabilities enable OpenClaw agents to autonomously execute complex, multi-step tasks and interact seamlessly with external applications, but simultaneously introduce a substantially enlarged attack surface. In particular, the combination of high-privilege operations and persistent memory exposes OpenClaw agents to various emerging threats, including skill poisoning, cognitive manipulation, multi-agent cascading failures, and supply-chain vulnerabilities. In this survey, we present a comprehensive study of the security landscape of OpenClaw agents. We first examine the general architecture and key characteristics that distinguish OpenClaw agents from traditional AI agent systems. We categorize existing security and privacy threats into a layered framework and analyze how vulnerabilities arise during agent reasoning, action execution, and external interaction. Representative defense mechanisms are also reviewed to draw the current defense landscape. Finally, several unresolved issues related to the reliability and trustworthiness of OpenClaw ecosystems are discussed.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-25T05:25:39Z</published>
+    <arxiv:comment>17 pages, 13 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Yuntao Wang</name>
+    </author>
+    <author>
+      <name>Jianle Ba</name>
+    </author>
+    <author>
+      <name>Han Liu</name>
+    </author>
+    <author>
+      <name>Yanghe Pan</name>
+    </author>
+    <author>
+      <name>Jintao Wei</name>
+    </author>
+    <author>
+      <name>Zhou Su</name>
+    </author>
+    <author>
+      <name>Tom H. Luan</name>
+    </author>
+    <author>
+      <name>Linkang Du</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.03213v2</id>
+    <title>When Agents Handle Secrets: A Survey of Confidential Computing for Agentic AI</title>
+    <updated>2026-05-07T16:46:43Z</updated>
+    <link href="https://arxiv.org/abs/2605.03213v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.03213v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Agentic AI systems, specifically LLM-driven agents that plan, invoke tools, maintain persistent memory, and delegate tasks to peer agents via protocols such as MCP and A2A, introduce a threat surface that differs materially from standalone model inference. Agents accumulate sensitive context, hold credentials, and operate across pipelines no single party fully controls, enabling prompt injection, context exfiltration, credential theft, and inter-agent message poisoning. Current defenses operate entirely within the software stack and can be silently bypassed by a sufficiently privileged adversary such as a compromised cloud operator. Confidential computing (CC) offers a hardware-rooted alternative: Trusted Execution Environments (TEEs) isolate agent code and data from privileged system software, while remote attestation enables verifiable trust across distributed deployments. This survey synthesizes the design space in four parts: (i) a unified taxonomy of six TEE platforms (Intel SGX, Intel TDX, AMD SEV-SNP, ARM TrustZone, ARM CCA, and NVIDIA H100 CC) covering deployment roles and performance tradeoffs; (ii) an agent-centric threat model spanning perception, planning, memory, action, and coordination layers mapped to nine security goals; (iii) a comparative survey of CC-based defenses distinguishing findings that transfer from single-call inference versus what requires new agentic designs; and (iv) six open challenges including compound attestation for multi-hop agent chains and GPU-TEE performance at LLM scale. While several hardware trust primitives appear mature enough for targeted deployments, no broadly established end-to-end framework yet binds them into a coherent security substrate for production agentic AI.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-04T23:09:16Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Javad Forough</name>
+    </author>
+    <author>
+      <name>Marios Kogias</name>
+    </author>
+    <author>
+      <name>Hamed Haddadi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.23656v1</id>
+    <title>ABF-Bench: A Verifiable Benchmark for Agentic Blockchain Forensics</title>
+    <updated>2026-10-16T15:51:03Z</updated>
+    <link href="https://arxiv.org/abs/2610.23656v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.23656v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Blockchain forensics is adversarial and open-ended: money launderers split, swap, and bridge funds, cut their trail at mixers or custodial services, and change tactics from one incident to the next. Investigators must keep adapting their tracing in response. Yet the immutability of public ledgers preserves every recorded movement in public view, making much of the investigation independently verifiable. We introduce ABF-Bench, an interactive benchmark that makes evidence-backed fund tracing a verifiable agent task, in which every claimed movement must cite ledger records the agent retrieved. A case-to-task pipeline builds well-posed tasks across ledgers: conservative rules halt tracing wherever the records leave a continuation unresolved, and each task's reference graph is the answer those rules determine. Built from real laundering activity, the tasks combine multi-hop transfers, DeFi exchanges, cross-chain round trips, custodial and mixer deposits, and address poisoning. We also propose the ABF agent harness, built around a working memory, and evaluate it alongside general-purpose agents and fixed-order tracers. The harness reaches 75% edge recall, against 47% for Codex with the same model and 10% for Claude Code, which loses recall to overconfidence: it cites records it left unretrieved. Compared with fixed-order tracers, the harness acquires evidence faster than the best of them early in the budget and recognizes undisclosed custodial services that they walk past (89% vs. 0%), with 98% fidelity. However, agents tend to stop early and lose recall on larger tasks, which holds their final recall below the best tracer. Beyond exposing these gaps, ABF-Bench opens blockchain forensics to LLM agents as a verifiable domain, where the verdicts that score agents also offer potential training signals.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-16T15:51:03Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Xiaohang Yu</name>
+    </author>
+    <author>
+      <name>Hejia Geng</name>
+    </author>
+    <author>
+      <name>William Knottenbelt</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.19547v1</id>
+    <title>CIBER: A Comprehensive Benchmark for Security Evaluation of Code Interpreter Agents</title>
+    <updated>2026-02-23T06:41:41Z</updated>
+    <link href="https://arxiv.org/abs/2602.19547v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.19547v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM-based code interpreter agents are increasingly deployed in critical workflows, yet their robustness against risks introduced by their code execution capabilities remains underexplored. Existing benchmarks are limited to static datasets or simulated environments, failing to capture the security risks arising from dynamic code execution, tool interactions, and multi-turn context. To bridge this gap, we introduce CIBER, an automated benchmark that combines dynamic attack generation, isolated secure sandboxing, and state-aware evaluation to systematically assess the vulnerability of code interpreter agents against four major types of adversarial attacks: Direct/Indirect Prompt Injection, Memory Poisoning, and Prompt-based Backdoor.
+  We evaluate six foundation models across two representative code interpreter agents (OpenInterpreter and OpenCodeInterpreter), incorporating a controlled study of identical models. Our results reveal that Interpreter Architecture and Model Alignment Set the Security Baseline. Structural integration enables aligned specialized models to outperform generic SOTA models. Conversely, high intelligence paradoxically increases susceptibility to complex adversarial prompts due to stronger instruction adherence. Furthermore, we identify a "Natural Language Disguise" Phenomenon, where natural language functions as a significantly more effective input modality than explicit code snippets (+14.1% ASR), thereby bypassing syntax-based defenses. Finally, we expose an alarming Security Polarization, where agents exhibit robust defenses against explicit threats yet fail catastrophically against implicit semantic hazards, highlighting a fundamental blind spot in current pattern-matching protection approaches.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-23T06:41:41Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Lei Ba</name>
+    </author>
+    <author>
+      <name>Qinbin Li</name>
+    </author>
+    <author>
+      <name>Songze Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.02643v1</id>
+    <title>Inference Cost Attacks for Retrieval-Augmented Large Language Models</title>
+    <updated>2026-05-31T15:11:59Z</updated>
+    <link href="https://arxiv.org/abs/2606.02643v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.02643v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Retrieval-Augmented Generation (RAG)-enhanced LLM systems, while powerful, introduce substantial inference costs due to the inclusion of an extra multi-stage pipeline that dynamically retrieves and synthesizes information from external knowledge sources. This high operational cost exposes a critical vulnerability to Inference Cost Attacks (ICAs). However, existing ICAs often rely on the impractical assumption of direct prompt manipulation. We argue that a more feasible and potent threat to RAG-enhanced LLM systems arises from poisoning external knowledge bases (e.g., web knowledge from the Internet). In this work, we introduce the Retrieval-Augmented Inference Cost Attack (RA-ICA), a novel attacking paradigm that targets the computational cost of RAG-enhanced LLM systems by injecting malicious documents into external knowledge corpus. To operationalize this attack, we propose Computational Resource Exhaustion via External Poisoning (CREEP), a novel framework that leverages LLM agents to automatically craft malicious documents that are both semantically relevant for retrieval and potent for inducing an abnormal increase in token consumption during the inference phase. To enhance the attack's effectiveness, we introduce Memory-Augmented Group Relative Policy Optimization (MA-GRPO), a novel reinforcement learning algorithm that fine-tunes the agents by learning from a dynamic memory of historical best adversarial documents. Extensive experiments across three real-world datasets demonstrate that RA-ICA increases token consumption by up to 13.12 times with an over 90% success rate, without degrading the integrity of the generated answer.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DB" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-31T15:11:59Z</published>
+    <arxiv:comment>Accepted at The ACM Web Conference 2026 (WWW '26)</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <arxiv:journal_ref>Proceedings of the ACM Web Conference 2026 (WWW '26), April 13-17, 2026, Dubai, United Arab Emirates</arxiv:journal_ref>
+    <author>
+      <name>Chengliang Liu</name>
+    </author>
+    <author>
+      <name>Liangbo Ning</name>
+    </author>
+    <author>
+      <name>Yujuan Ding</name>
+    </author>
+    <author>
+      <name>Wenqi Fan</name>
+    </author>
+    <arxiv:doi>10.1145/3774904.3792683</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1145/3774904.3792683" title="doi"/>
+  </entry>
+</feed>
