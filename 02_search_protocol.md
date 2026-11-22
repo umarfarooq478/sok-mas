@@ -143,15 +143,11 @@ Seeds: the 20 included papers with the most OpenAlex citations (list in `task2/s
 7. **Several Tier 2 records came from one author's series** of single-author syntheses ("Silent Entropy…", "Failure Propagation and Coordination Collapse…", and similar). They were excluded as syntheses with no new evidence. If you disagree, they are easy to add.
 8. **Two arXiv records mention withdrawn sources** (CONCAT, arXiv 2605.29612). They were excluded.
 
-## 8. Decision needed: corpus size
+## 8. Corpus size (decided Nov 22, 2026)
 
-The plan's "done when" is 120 to 180 included papers. The rules produce 350 (plus 32 maybe). Options:
+The plan's "done when" is 120 to 180 included papers. The rules produce 350 (plus 32 maybe).
 
-1. **Cap by tier.** Code Tier 1 only: 215 papers. Report Tier 2 (135) as an emerging-work table. Still above 180 and about 45 hours of coding at the plan's pace.
-2. **Cap by relevance.** Keep every paper whose failure content is a mechanism study or evaluated defense (drop pure benchmarks and single-method papers). Needs a second pass.
-3. **Keep all 350** and treat Task 3 as pre-coding from abstracts (I draft, you check), as the plan allows.
-
-I recommend option 1, with the fallback "cap at about 120" from the risk table if coding runs late. The final choice is yours.
+**Decision: keep all 350.** No cap by tier or relevance. Task 3 pre-codes every paper from its abstract (Claude drafts, you check), as the plan allows. Tier stays a column in `02_corpus.csv`, so findings in Task 6 can still be reported for Tier 1 alone, and the "cap at about 120" fallback in the risk table remains available if coding runs late. The 32 maybe papers are settled at coding time.
 
 ## 9. Saved downloads
 
