@@ -96,3 +96,94 @@ HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=multi-agent
 HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=multi-agent+LLM+security+survey&limit=100&fields=t
 HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=multi-agent+LLM+security+survey&limit=100&fields=t
 HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=multi-agent+LLM+security+survey&limit=100&fields=t
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=multi-agent+LLM+security+survey&limit=100&fields=t
+B-adversarial multi-agent LLM security survey 400
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=agent+protocol+vulnerability+MCP+A2A&limit=100&fie
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=agent+protocol+vulnerability+MCP+A2A&limit=100&fie
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=agent+protocol+vulnerability+MCP+A2A&limit=100&fie
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=agent+protocol+vulnerability+MCP+A2A&limit=100&fie
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=agent+protocol+vulnerability+MCP+A2A&limit=100&fie
+B-adversarial agent protocol vulnerability MCP A2A 400
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=cascading+errors+multi-agent+LLM+adversarial&limit
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=cascading+errors+multi-agent+LLM+adversarial&limit
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=cascading+errors+multi-agent+LLM+adversarial&limit
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=cascading+errors+multi-agent+LLM+adversarial&limit
+C-bridge cascading errors multi-agent LLM adversarial 500
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=agent+coordination+failure+adversarial&limit=100&f
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=agent+coordination+failure+adversarial&limit=100&f
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=agent+coordination+failure+adversarial&limit=100&f
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=agent+coordination+failure+adversarial&limit=100&f
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=agent+coordination+failure+adversarial&limit=100&f
+C-bridge agent coordination failure adversarial 500
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=MAST+failure+modes+attack+multi-agent&limit=100&fi
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=MAST+failure+modes+attack+multi-agent&limit=100&fi
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=MAST+failure+modes+attack+multi-agent&limit=100&fi
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=MAST+failure+modes+attack+multi-agent&limit=100&fi
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=MAST+failure+modes+attack+multi-agent&limit=100&fi
+C-bridge MAST failure modes attack multi-agent 500
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=benign+and+adversarial+failures+multi-agent+LLM&li
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=benign+and+adversarial+failures+multi-agent+LLM&li
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=benign+and+adversarial+failures+multi-agent+LLM&li
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=benign+and+adversarial+failures+multi-agent+LLM&li
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=benign+and+adversarial+failures+multi-agent+LLM&li
+C-bridge benign and adversarial failures multi-agent LLM 500
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=unified+taxonomy+faults+attacks+LLM+multi-agent+sy
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=unified+taxonomy+faults+attacks+LLM+multi-agent+sy
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=unified+taxonomy+faults+attacks+LLM+multi-agent+sy
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=unified+taxonomy+faults+attacks+LLM+multi-agent+sy
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=unified+taxonomy+faults+attacks+LLM+multi-agent+sy
+C-bridge unified taxonomy faults attacks LLM multi-agent systems 500
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=accidental+versus+malicious+failures+agentic+syste
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=accidental+versus+malicious+failures+agentic+syste
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=accidental+versus+malicious+failures+agentic+syste
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=accidental+versus+malicious+failures+agentic+syste
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=accidental+versus+malicious+failures+agentic+syste
+C-bridge accidental versus malicious failures agentic systems 500
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=faulty+and+malicious+agents+robustness+multi-agent
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=faulty+and+malicious+agents+robustness+multi-agent
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=faulty+and+malicious+agents+robustness+multi-agent
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=faulty+and+malicious+agents+robustness+multi-agent
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=faulty+and+malicious+agents+robustness+multi-agent
+C-bridge faulty and malicious agents robustness multi-agent LLM 500
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=systematization+of+knowledge+multi-agent+LLM&limit
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=systematization+of+knowledge+multi-agent+LLM&limit
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=systematization+of+knowledge+multi-agent+LLM&limit
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=systematization+of+knowledge+multi-agent+LLM&limit
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=systematization+of+knowledge+multi-agent+LLM&limit
+C-bridge systematization of knowledge multi-agent LLM 500
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=AutoGen+CrewAI+LangGraph+failures+vulnerabilities&
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=AutoGen+CrewAI+LangGraph+failures+vulnerabilities&
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=AutoGen+CrewAI+LangGraph+failures+vulnerabilities&
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=AutoGen+CrewAI+LangGraph+failures+vulnerabilities&
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=AutoGen+CrewAI+LangGraph+failures+vulnerabilities&
+C-bridge AutoGen CrewAI LangGraph failures vulnerabilities 500
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=reliability+and+security+LLM+multi-agent+systems+s
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=reliability+and+security+LLM+multi-agent+systems+s
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=reliability+and+security+LLM+multi-agent+systems+s
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=reliability+and+security+LLM+multi-agent+systems+s
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=reliability+and+security+LLM+multi-agent+systems+s
+C-bridge reliability and security LLM multi-agent systems survey 500
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=defense+multi-agent+LLM+robustness&limit=100&field
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=defense+multi-agent+LLM+robustness&limit=100&field
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=defense+multi-agent+LLM+robustness&limit=100&field
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=defense+multi-agent+LLM+robustness&limit=100&field
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=defense+multi-agent+LLM+robustness&limit=100&field
+D-defense defense multi-agent LLM robustness 500
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=anomaly+detection+multi-agent+LLM&limit=100&fields
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=anomaly+detection+multi-agent+LLM&limit=100&fields
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=anomaly+detection+multi-agent+LLM&limit=100&fields
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=anomaly+detection+multi-agent+LLM&limit=100&fields
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=anomaly+detection+multi-agent+LLM&limit=100&fields
+D-defense anomaly detection multi-agent LLM 500
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=verification+agent+multi-agent+LLM&limit=100&field
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=verification+agent+multi-agent+LLM&limit=100&field
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=verification+agent+multi-agent+LLM&limit=100&field
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=verification+agent+multi-agent+LLM&limit=100&field
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=verification+agent+multi-agent+LLM&limit=100&field
+D-defense verification agent multi-agent LLM 500
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=provenance+authorization+LLM+agents&limit=100&fiel
+D-defense provenance authorization LLM agents 600
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=Byzantine+fault+tolerance+LLM+agents&limit=100&fie
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=Byzantine+fault+tolerance+LLM+agents&limit=100&fie
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=Byzantine+fault+tolerance+LLM+agents&limit=100&fie
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=Byzantine+fault+tolerance+LLM+agents&limit=100&fie
