@@ -1,0 +1,989 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/+sDhG9p/BhbLDzR187ok7I+JG0Q</id>
+  <title>arXiv Query: search_query=all:hallucination AND all:propagation AND all:multi-agent AND all:LLM&amp;id_list=&amp;start=0&amp;max_results=100</title>
+  <updated>2026-11-21T23:57:42Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:hallucination+AND+(all:propagation+AND+(all:multi-agent+AND+all:LLM))&amp;start=0&amp;max_results=100&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>100</opensearch:itemsPerPage>
+  <opensearch:totalResults>39</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2606.07937v1</id>
+    <title>Hallucination Cascade: Analyzing Error Propagation in Multi-Agent LLM Systems</title>
+    <updated>2026-06-06T01:56:55Z</updated>
+    <link href="https://arxiv.org/abs/2606.07937v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.07937v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Models (LLMs) generate fluent text but remain vulnerable to hallucinations, producing unsupported, inconsistent, and factually incorrect claims. Most prior work treats hallucination as a static property of isolated outputs. In multi-agent LLM systems, however, responses are exchanged across agents, revised through sequential stages, and reused as context for later reasoning. Hallucination, therefore, becomes a dynamic process shaped by interaction history, cascade depth, and model heterogeneity. This paper analyzes hallucination dynamics in multi-agent LLM cascades by tracking claim-level factual inconsistencies across sequential agent interactions. We conduct 500 cascade experiments across 10 knowledge domains using GPT-5.3, DeepSeek-V3, and LLaMA-3-70B-Instruct, yielding 1,250 evaluated responses. Results show that deeper cascades reduce the normalized hallucination score from 0.422 at the first agent to 0.272 at the final agent in 3-agent chains, with an amplification factor of 0.644, indicating net attenuation. This reduction is accompanied by a decline in factual accuracy from 0.789 to 0.769, revealing a trade-off between hallucination suppression and factual preservation. Transition-level analysis shows that each agent-to-agent refinement reduces hallucination by an average of 0.072, with small but consistent losses in factual consistency and response quality. Model-level results reveal reliability-efficiency trade-offs: LLaMA-3-70B-Instruct achieves the lowest hallucination score, whereas GPT-5.3 provides faster generation with a higher hallucination rate. Domain-level analysis shows that hallucination varies with topic complexity, with lower scores in well-grounded scientific domains and higher scores in more abstract domains.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-06T01:56:55Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Saeid Jamshidi</name>
+    </author>
+    <author>
+      <name>Arghavan Moradi Dakhel</name>
+    </author>
+    <author>
+      <name>Kawser Wazed Nafi</name>
+    </author>
+    <author>
+      <name>Foutse Khomh</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.14588v1</id>
+    <title>The Hallucination Snowball: Modeling Error Propagation as State Transitions in Multi-Agent LLM Pipelines</title>
+    <updated>2026-06-22T06:32:00Z</updated>
+    <link href="https://arxiv.org/abs/2608.14588v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.14588v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Sequential multi-agent LLM pipelines chain specialized agents without verification at handoffs, creating a structural flaw with measurable and severe consequences. We show that hallucinations injected at Stage 1 do not merely persist; they transform: raw numerical facts become derived computations, then narrative prose, then editorially approved conclusions. At each transformation, detectability degrades near-irreversibly. We formalize this as the hallucination snowball effect, a first-order Markov process over four states (Raw Fact $\to$ Derived $\to$ Narrative $\to$ Invisible) with empirically measured per-boundary escape probabilities of 24.6%, 48.3%, and 89.3%. Across 346 automatically injected hallucinations in a 4-agent financial analysis pipeline on FinanceBench, gpt-4o detection drops from 72.0% at Stage 1 to 50.9% at Stage 4, and 23.7% of hallucinations survive completely undetected in the final output. Even the strongest model tested (Qwen3.5-397B-A17B, 87.0% at Stage 1) faces a structural ceiling; projected Stage 4 detection is only ${\sim}$60--65%. Critically, boundary gates using identical RAG verification tools reduce hallucination survival from 58.4% to 16.2% versus end-of-pipeline checking (Cohen's $h = -0.911$, $p &lt; 0.000001$), while end-checking alone achieves merely 2.3 pp improvement over no verification. When you verify matters more than whether you verify. Our model predicts survival for $n$-agent linear pipelines and prescribes optimal verification resource allocation: invest at $S_1{\to}S_2$ first, where 75.4% of hallucinations are still catchable, not at $S_3{\to}S_4$ where 89.3% have already escaped.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-22T06:32:00Z</published>
+    <arxiv:comment>10 pages, 3 figures; accepted at the FAGEN Workshop (Failure Modes in Agentic AI), ICML 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Prabhjot Singh</name>
+    </author>
+    <author>
+      <name>Bhushan Pawar</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.07941v2</id>
+    <title>Collective Hallucination in Multi-Agent LLMs:Modeling and Defense</title>
+    <updated>2026-08-18T23:58:07Z</updated>
+    <link href="https://arxiv.org/abs/2606.07941v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.07941v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Hallucination is a critical reliability challenge in multi-agent Large Language Model (LLM) systems because unsupported claims can propagate through recursive interactions and produce collective false consensus. We model collective hallucination as a time-evolving network process over directed communication graphs and introduce HPR-Adaptive, a defense framework combining dynamic trust weighting, external claim verification, propagation-aware interaction regulation, and selective isolation of unreliable agents. We evaluate HPR-Adaptive on 1,317 TruthfulQA and TriviaQA queries using a heterogeneous six-agent system across five recursive reasoning rounds and multiple communication topologies. Compared with undefended multi-agent reasoning, HPR-Adaptive reduces hallucination rate from 0.118 to 0.072 (39.0%), while increasing factual accuracy from 0.812 to 0.867 and semantic consistency from 0.784 to 0.836. It also lowers the hallucination amplification factor from 1.34 to 1.08, increases propagation resistance from 0.882 to 0.928, and reduces the effective reproduction number from 1.08 to 0.81, shifting the system from self-sustaining propagation to controlled attenuation. Scale-free networks show the strongest cascading behavior without defense, with an amplification factor of 1.45 and reproduction number of 1.21; HPR-Adaptive reduces these to 1.12 and 0.92, respectively. These results show that propagation-aware control can substantially improve the factual reliability and stability of recursive multi-agent LLM systems.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-06T02:04:03Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Saeid Jamshidi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2601.06818v1</id>
+    <title>AgentHallu: Benchmarking Automated Hallucination Attribution of LLM-based Agents</title>
+    <updated>2026-01-11T09:04:26Z</updated>
+    <link href="https://arxiv.org/abs/2601.06818v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.06818v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>As LLM-based agents operate over sequential multi-step reasoning, hallucinations arising at intermediate steps risk propagating along the trajectory, thus degrading overall reliability. Unlike hallucination detection in single-turn responses, diagnosing hallucinations in multi-step workflows requires identifying which step causes the initial divergence. To fill this gap, we propose a new research task, automated hallucination attribution of LLM-based agents, aiming to identify the step responsible for the hallucination and explain why. To support this task, we introduce AgentHallu, a comprehensive benchmark with: (1) 693 high-quality trajectories spanning 7 agent frameworks and 5 domains, (2) a hallucination taxonomy organized into 5 categories (Planning, Retrieval, Reasoning, Human-Interaction, and Tool-Use) and 14 sub-categories, and (3) multi-level annotations curated by humans, covering binary labels, hallucination-responsible steps, and causal explanations. We evaluate 13 leading models, and results show the task is challenging even for top-tier models (like GPT-5, Gemini-2.5-Pro). The best-performing model achieves only 41.1\% step localization accuracy, where tool-use hallucinations are the most challenging at just 11.6\%. We believe AgentHallu will catalyze future research into developing robust, transparent, and reliable agentic systems.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-11T09:04:26Z</published>
+    <arxiv:comment>Project page: https://liuxuannan.github.io/AgentHallu.github.io/</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Xuannan Liu</name>
+    </author>
+    <author>
+      <name>Xiao Yang</name>
+    </author>
+    <author>
+      <name>Zekun Li</name>
+    </author>
+    <author>
+      <name>Peipei Li</name>
+    </author>
+    <author>
+      <name>Ran He</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.19234v2</id>
+    <title>GUARDIAN: Safeguarding LLM Multi-Agent Collaborations with Temporal Graph Modeling</title>
+    <updated>2025-10-15T15:21:41Z</updated>
+    <link href="https://arxiv.org/abs/2505.19234v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2505.19234v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The emergence of large language models (LLMs) enables the development of intelligent agents capable of engaging in complex and multi-turn dialogues. However, multi-agent collaboration faces critical safety challenges, such as hallucination amplification and error injection and propagation. This paper presents GUARDIAN, a unified method for detecting and mitigating multiple safety concerns in GUARDing Intelligent Agent collaboratioNs. By modeling the multi-agent collaboration process as a discrete-time temporal attributed graph, GUARDIAN explicitly captures the propagation dynamics of hallucinations and errors. The unsupervised encoder-decoder architecture incorporating an incremental training paradigm learns to reconstruct node attributes and graph structures from latent embeddings, enabling the identification of anomalous nodes and edges with unparalleled precision. Moreover, we introduce a graph abstraction mechanism based on the Information Bottleneck Theory, which compresses temporal interaction graphs while preserving essential patterns. Extensive experiments demonstrate GUARDIAN's effectiveness in safeguarding LLM multi-agent collaborations against diverse safety vulnerabilities, achieving state-of-the-art accuracy with efficient resource utilization. The code is available at https://github.com/JialongZhou666/GUARDIAN</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-05-25T17:15:55Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Jialong Zhou</name>
+    </author>
+    <author>
+      <name>Lichao Wang</name>
+    </author>
+    <author>
+      <name>Xiao Yang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.27409v2</id>
+    <title>Delayed Verification Destabilizes Multi-Agent LLM Belief: Instability Thresholds and Optimal Corrector Placement</title>
+    <updated>2026-09-16T14:51:47Z</updated>
+    <link href="https://arxiv.org/abs/2606.27409v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.27409v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multi-agent large language model (LLM) systems often rely on verifier and critic agents to suppress hallucinations, but verification is delayed. During this delay, false claims can propagate through the agent network. We model this process as delayed consensus on a graph with grounded corrector nodes. Spectral decomposition by the grounded Laplacian yields a closed-form stability threshold for the verification dose: correction that is too strong or too delayed can turn consensus into oscillation. The most unstable regime occurs when the communication and verification delays coincide; for delay two, the threshold is the inverse golden ratio. The same framework gives a supermodular placement objective and a greedy (1-1/e)-approximation rule for assigning a limited corrector budget to influential nodes. Experiments across five open models confirm the predicted dose-delay oscillations. By contrast, grounded factual answering makes truth an absorbing boundary and eliminates the effect, suggesting that the instability is specific to signed-belief tasks while grounded verification remains stabilizing</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.SY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-25T10:52:54Z</published>
+    <arxiv:comment>29 pages, 5 figures, 3 numbered tables. Revised stability and placement claims; corrected delay indexing and empirical interpretation. Added a 400-question factual study with versioned scoring and uncertainty analysis. Clarified proofs and limitations. Code and data: https://github.com/YehudaItkin/delayed-verification-llm</arxiv:comment>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Igor Itkin</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.00711v2</id>
+    <title>Tracing the Cascade: A Topology-Aware Evaluation Framework for Scientific Agent Hallucinations</title>
+    <updated>2026-10-27T11:05:04Z</updated>
+    <link href="https://arxiv.org/abs/2608.00711v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.00711v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language model (LLM) agents are increasingly deployed in scientific research, where reliability is critical and the underlying knowledge is densely interconnected. In such settings, hallucinations are particularly damaging: a single erroneous claim on a foundational concept can propagate through multi-step reasoning and corrupt entire trajectories. Existing hallucination benchmarks largely operate at the surface level, treating facts in isolation and relying on uniform accuracy metrics that ignore this topological structure. We address this gap with SCHEMA, the first evidence-grounded, topology-aware evaluation framework for hallucinations in scientific agents. SCHEMA automatically constructs scientific concept graphs from benchmark seeds and literature evidence, synthesizes graph-grounded tasks spanning claim verification, multi-hop reasoning, open-ended explanation, and experimental code generation, and evaluates agents with two complementary diagnostics. A trajectory hallucination pipeline audits intermediate reasoning at scale via a topology-weighted severity score, while a multi-agent counterfactual attribution module pinpoints the causal mechanism behind selected failures. SCHEMA reveals that hallucinations concentrate at a small set of highly connected knowledge hubs, and that final-answer accuracy decouples from trajectory honesty; models often reach correct conclusions through structurally flawed reasoning. These results indicate that for high-stakes scientific applications, terminal accuracy alone is an insufficient signal of agent reliability, motivating mechanism-level evaluation grounded in knowledge topology. Code is available at https://github.com/circles-post/SCHEMA.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-01T15:19:10Z</published>
+    <arxiv:comment>40 pages, 7 figures and 5 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Xinshun Feng</name>
+    </author>
+    <author>
+      <name>Ziqi Miao</name>
+    </author>
+    <author>
+      <name>Lijun Li</name>
+    </author>
+    <author>
+      <name>Jing Shao</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2507.04105v1</id>
+    <title>Enhancing Robustness of LLM-Driven Multi-Agent Systems through Randomized Smoothing</title>
+    <updated>2025-07-05T17:26:08Z</updated>
+    <link href="https://arxiv.org/abs/2507.04105v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2507.04105v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This paper presents a defense framework for enhancing the safety of large language model (LLM) empowered multi-agent systems (MAS) in safety-critical domains such as aerospace. We apply randomized smoothing, a statistical robustness certification technique, to the MAS consensus context, enabling probabilistic guarantees on agent decisions under adversarial influence. Unlike traditional verification methods, our approach operates in black-box settings and employs a two-stage adaptive sampling mechanism to balance robustness and computational efficiency. Simulation results demonstrate that our method effectively prevents the propagation of adversarial behaviors and hallucinations while maintaining consensus performance. This work provides a practical and scalable path toward safe deployment of LLM-based MAS in real-world, high-stakes environments.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-07-05T17:26:08Z</published>
+    <arxiv:comment>Preprint accepted by Chinese Journal of Aeronautics</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Jinwei Hu</name>
+    </author>
+    <author>
+      <name>Yi Dong</name>
+    </author>
+    <author>
+      <name>Zhengtao Ding</name>
+    </author>
+    <author>
+      <name>Xiaowei Huang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.34017v1</id>
+    <title>Maat: Independent Deterministic Contract-Based Governance for Multi-Agent LLM Workflows</title>
+    <updated>2026-09-27T23:23:52Z</updated>
+    <link href="https://arxiv.org/abs/2609.34017v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.34017v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large-language-model multi-agent systems (LLM-MAS) introduce a characteristic reliability problem: an error produced by one agent can be accepted as context by downstream agents and propagate across the workflow. Many proposed safeguards rely on learned or LLM-based judges whose verdicts are themselves probabilistic; we ask whether a deterministic layer can instead stop contract-detectable handoff defects. We present Maat, a runtime governance layer that validates agent-to-agent handoffs against a versioned workflow contract, or anchor, with no language model in the validation or scoring path. We evaluate it in six controlled domain workflows (6-15 agents, 522 trials) with injected data-level defects and a deterministic seven-check rubric. Version 1 reported gains in all six workflows (2.9-26.5%). A post-publication audit found that three benchmark scorers credited any early halt as a prevented defect. On paired trials where the governed run completed or halted on a finding attributable to a verified defect, the rubric score changes by +7.7% to +29.1% in five workflows and is flat in software development; model-call cost falls 17-53% where attributable halts occur early. A hand review of all 94 governed-arm halts found 35 false alarms (37%), caused by validator defects rather than model behaviour; counting those halts as failed work, the governed arm scores below the ungoverned arm in four of six workflows. The results support deterministic handoff validation for contract-expressible defects and show that validator configuration and halt attribution must themselves be tested; they do not establish universal correctness, hallucination detection, or model-independent effectiveness.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-27T23:23:52Z</published>
+    <arxiv:comment>16 pages, 6 figures, 6 tables. Benchmarks: https://github.com/Lorelys/maat-benchmarks ; CrewAI integration demo: https://github.com/Lorelys/maat-crewai-demo</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Uliana Elina</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.26836v1</id>
+    <title>Before Agents Speak: Pre-hoc Failure Risk Inference in Multi-Agent Systems</title>
+    <updated>2026-07-29T12:26:41Z</updated>
+    <link href="https://arxiv.org/abs/2607.26836v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.26836v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM-based multi-agent systems (MAS) have exhibited remarkable capabilities in collaborative reasoning and decision-making, yet their interconnected communications introduce new systemic risk: localized hallucinations can propagate along agent communication chain, amplify through interactions, and ultimately trigger cascading failures. Existing countermeasures predominantly follow a post-hoc paradigm, identifying failures only after unsafe behaviors emerge, by which time harmful effects may have already spread throughout the agent network. To tackle this problem, we investigate a complementary pre-hoc approach and propose HalluProp, a Propagation-aware Hallucination inference framework that estimates individual agent failures and emergent system-level hallucination risks before inter-agent interaction. First, we model intrinsic hallucination risks by identifying fine-grained semantic misalignment between agent roles and task queries. We then characterize inter-agent risk propagation by modeling both semantic influence and communication topology. Finally, we integrate these two risks via a differentiable Noisy-OR inference mechanism to derive a systemic diagnosis. Extensive experiments show that HalluProp accurately localizes faulty agents, achieving an average AUROC of 84.6%, while enabling sub-second diagnosis with over $65\times$ speedup over post-hoc methods. By facilitating early intervention through upstream screening, HalluProp effectively complements post-hoc methods, highlighting the potential of pre-hoc risk inference for building more reliable multi-agent systems.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-29T12:26:41Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Shi Lin</name>
+    </author>
+    <author>
+      <name>Chenpei Wang</name>
+    </author>
+    <author>
+      <name>Peng Qian</name>
+    </author>
+    <author>
+      <name>Dezhang Kong</name>
+    </author>
+    <author>
+      <name>Minghao Li</name>
+    </author>
+    <author>
+      <name>Yufeng Li</name>
+    </author>
+    <author>
+      <name>Xun Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.14997v2</id>
+    <title>OrgForge: A Multi-Agent Simulation Framework for Verifiable Synthetic Corporate Corpora</title>
+    <updated>2026-04-08T22:43:39Z</updated>
+    <link href="https://arxiv.org/abs/2603.14997v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.14997v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Building and evaluating enterprise AI systems requires synthetic organizational corpora that are internally consistent, temporally structured, and cross-artifact traceable. Existing corpora either carry legal constraints or inherit hallucination artifacts from the generating LLMs, silently corrupting results when timestamps or facts contradict across documents and reinforcing those errors during training. We present OrgForge, an open-source multi-agent simulation framework that enforces a strict physics-cognition boundary: a deterministic Python engine maintains a SimEvent ground-truth bus while LLMs generate only surface prose. OrgForge simulates the organizational processes that produce documents, not the documents themselves. Engineers leave mid-sprint, triggering incident handoffs and CRM ownership lapses. Knowledge gaps emerge when under-documented systems break and recover through organic documentation and incident resolution. Customer emails fire only when simulation state warrants contact; silence is verifiable ground truth. A live CRM state machine extends the physics-cognition boundary to the customer boundary, producing cross-system causal cascades spanning engineering incidents, support escalation, deal risk flagging, and SLA-adjusted invoices. The framework generates fifteen interleaved artifact categories traceable to a shared immutable event log. Four graph-dynamic subsystems govern organizational behavior independently of any LLM. An embedding-based ticket assignment system using the Hungarian algorithm makes the simulation domain-agnostic. An empirical evaluation across ten incidents demonstrates a 0.46 absolute improvement in prose-to-ground-truth fidelity over chained LLM baselines, and isolates a consistent hallucination failure mode in which chaining propagates fabricated facts faithfully across documents without correcting them.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-16T09:02:24Z</published>
+    <arxiv:comment>v2: Major revision. Recenters the paper on the simulation framework as the primary contribution. System Architecture substantially expanded (CRM state machine, Knowledge Recovery Arc, multi-pathway knowledge gap detection, embedding-based ticket assignment). Introduction restructured for broader framing. RAG retrieval baselines replaced by cross-document consistency evaluation</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Jeffrey Flynt</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2508.09815v1</id>
+    <title>Extending the OWASP Multi-Agentic System Threat Modeling Guide: Insights from Multi-Agent Security Research</title>
+    <updated>2025-08-13T13:47:55Z</updated>
+    <link href="https://arxiv.org/abs/2508.09815v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2508.09815v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We propose an extension to the OWASP Multi-Agentic System (MAS) Threat Modeling Guide, translating recent anticipatory research in multi-agent security (MASEC) into practical guidance for addressing challenges unique to large language model (LLM)-driven multi-agent architectures. Although OWASP's existing taxonomy covers many attack vectors, our analysis identifies gaps in modeling failures, including, but not limited to: reasoning collapse across planner-executor chains, metric overfitting, unsafe delegation escalation, emergent covert coordination, and heterogeneous multi-agent exploits. We introduce additional threat classes and scenarios grounded in practical MAS deployments, highlighting risks from benign goal drift, cross-agent hallucination propagation, affective prompt framing, and multi-agent backdoors. We also outline evaluation strategies, including robustness testing, coordination assessment, safety enforcement, and emergent behavior monitoring, to ensure complete coverage. This work complements the framework of OWASP by expanding its applicability to increasingly complex, autonomous, and adaptive multi-agent systems, with the goal of improving security posture and resilience in real world deployments.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-08-13T13:47:55Z</published>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Klaudia Krawiecka</name>
+    </author>
+    <author>
+      <name>Christian Schroeder de Witt</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2511.03506v3</id>
+    <title>HaluMem: Evaluating Hallucinations in Memory Systems of Agents</title>
+    <updated>2026-01-05T03:29:33Z</updated>
+    <link href="https://arxiv.org/abs/2511.03506v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2511.03506v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Memory systems are key components that enable AI systems such as LLMs and AI agents to achieve long-term learning and sustained interaction. However, during memory storage and retrieval, these systems frequently exhibit memory hallucinations, including fabrication, errors, conflicts, and omissions. Existing evaluations of memory hallucinations are primarily end-to-end question answering, which makes it difficult to localize the operational stage within the memory system where hallucinations arise. To address this, we introduce the Hallucination in Memory Benchmark (HaluMem), the first operation level hallucination evaluation benchmark tailored to memory systems. HaluMem defines three evaluation tasks (memory extraction, memory updating, and memory question answering) to comprehensively reveal hallucination behaviors across different operational stages of interaction. To support evaluation, we construct user-centric, multi-turn human-AI interaction datasets, HaluMem-Medium and HaluMem-Long. Both include about 15k memory points and 3.5k multi-type questions. The average dialogue length per user reaches 1.5k and 2.6k turns, with context lengths exceeding 1M tokens, enabling evaluation of hallucinations across different context scales and task complexities. Empirical studies based on HaluMem show that existing memory systems tend to generate and accumulate hallucinations during the extraction and updating stages, which subsequently propagate errors to the question answering stage. Future research should focus on developing interpretable and constrained memory operation mechanisms that systematically suppress hallucinations and improve memory reliability.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-11-05T14:37:34Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Ding Chen</name>
+    </author>
+    <author>
+      <name>Simin Niu</name>
+    </author>
+    <author>
+      <name>Kehang Li</name>
+    </author>
+    <author>
+      <name>Peng Liu</name>
+    </author>
+    <author>
+      <name>Xiangping Zheng</name>
+    </author>
+    <author>
+      <name>Bo Tang</name>
+    </author>
+    <author>
+      <name>Xinchi Li</name>
+    </author>
+    <author>
+      <name>Feiyu Xiong</name>
+    </author>
+    <author>
+      <name>Zhiyu Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2407.09897v2</id>
+    <title>Cohesive Conversations: Enhancing Authenticity in Multi-Agent Simulated Dialogues</title>
+    <updated>2024-08-10T17:31:22Z</updated>
+    <link href="https://arxiv.org/abs/2407.09897v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2407.09897v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This paper investigates the quality of multi-agent dialogues in simulations powered by Large Language Models (LLMs). Analyzing dialogues and memory over multiple sessions revealed significant issues such as repetition, inconsistency, and hallucination, exacerbated by the propagation of erroneous information. To combat these challenges, we propose a novel Screening, Diagnosis, and Regeneration (SDR) framework that detects and corrects utterance errors through a comprehensive process involving immediate issue identification, evidence gathering from past dialogues, and LLM analysis for utterance revision. By incorporating our SDR framework to Generative Agents (Park et al., 2023), we enhance the diversity, consistency, and factualness of the generated dialogues. This work presents a pioneering approach to enhancing dialogue quality in multi-agent simulations, establishing a new standard for future research in the field.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-07-13T14:24:45Z</published>
+    <arxiv:comment>Accepted to COLM 2024; camera-ready version</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>KuanChao Chu</name>
+    </author>
+    <author>
+      <name>Yi-Pei Chen</name>
+    </author>
+    <author>
+      <name>Hideki Nakayama</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.14668v1</id>
+    <title>BRA-Audit: Budgeted Runtime Auditing for LLM Multi-Agent Systems via Cumulative-Exposure Audit-Point Placement</title>
+    <updated>2026-08-02T14:35:43Z</updated>
+    <link href="https://arxiv.org/abs/2608.14668v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.14668v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM-based multi-agent systems (LLM-MAS) solve complex tasks through specialized collaboration, but inter-agent dependencies can propagate hallucinated or malicious outputs into system-level failures. Auditor agents mitigate these risks, yet existing strategies face an efficiency dilemma: end-only auditing reviews long trajectories and final outputs, potentially weakening audit effectiveness and enlarging rollback scope, while auditing every agent each round improves detection and localization at high token cost. How can guard performance be preserved while minimizing token cost? To address this problem, we propose BRA-Audit, a budget-aware runtime auditing framework that models MAS execution as a dynamic dependency graph and formulates audit scheduling as audit-point placement under a fixed audit-call budget to minimize cumulative unchecked exposure. Its greedy scheduler prioritizes influential and long-unaudited regions, while trusted audit points enable localized recovery. Across structured coordination, complex reasoning, and open-ended tasks, BRA-Audit restores performance close to the clean setting, remains competitive with heavy guard methods and reduces end-to-end token consumption by \(17.2\%\)--\(40.6\%\).</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-02T14:35:43Z</published>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Kaixiang Wang</name>
+    </author>
+    <author>
+      <name>Yidan Lin</name>
+    </author>
+    <author>
+      <name>Jiong Lou</name>
+    </author>
+    <author>
+      <name>Jie Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2601.11913v2</id>
+    <title>LSTM-MAS: A Long Short-Term Memory Inspired Multi-Agent System for Long-Context Understanding</title>
+    <updated>2026-04-21T13:17:00Z</updated>
+    <link href="https://arxiv.org/abs/2601.11913v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.11913v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Effectively processing long contexts remains a fundamental yet unsolved challenge for large language models (LLMs). Existing single-LLM-based methods primarily reduce the context window or optimize the attention mechanism, but they often encounter additional computational costs or constrained expanded context length. While multi-agent-based frameworks can mitigate these limitations, they remain susceptible to the accumulation of errors and the propagation of hallucinations. In this work, we draw inspiration from the Long Short-Term Memory (LSTM) architecture to design a Multi-Agent System called LSTM-MAS, emulating LSTM's hierarchical information flow and gated memory mechanisms for long-context understanding. Specifically, LSTM-MAS organizes agents in a chained architecture, where each node comprises a worker agent for segment-level comprehension, a filter agent for redundancy reduction, a judge agent for continuous error detection, and a manager agent for globally regulates information propagation and retention, analogous to LSTM and its input gate, forget gate, constant error carousel unit, and output gate. These novel designs enable controlled information transfer and selective long-term dependency modeling across textual segments, which can effectively avoid error accumulation and hallucination propagation. We conducted an extensive evaluation of our method. Compared with the previous best multi-agent approach, CoA, our model achieves improvements of 97.97%, 65.75%, 122.19%, 39.61% and 10.80% on Narrative QA, Qasper, HotpotQA, 2WikiMQA and MuSiQue, respectively.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-17T05:16:23Z</published>
+    <arxiv:comment>12 pages, 5 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Yichen Jiang</name>
+    </author>
+    <author>
+      <name>Jiakang Yuan</name>
+    </author>
+    <author>
+      <name>Chongjun Tu</name>
+    </author>
+    <author>
+      <name>Peng Ye</name>
+    </author>
+    <author>
+      <name>Tao Chen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.17348v1</id>
+    <title>Taming "Zombie'' Agents: A Markov State-Aware Framework for Resilient Multi-Agent Evolution</title>
+    <updated>2026-05-17T09:38:18Z</updated>
+    <link href="https://arxiv.org/abs/2605.17348v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.17348v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent advancements in LLM-based multi-agent systems have demonstrated remarkable collaborative capabilities across complex tasks. To improve overall efficiency, existing methods often rely on aggressive graph evolution among agents (e.g., node or edge pruning), which risks prematurely discarding valuable agents due to transient issues such as hallucinations or temporary knowledge gaps. However, such hard pruning overlooks the potential for ``zombie'' agents to recover and contribute in subsequent discussion rounds. In this paper, we propose AgentRevive, a Markov state-aware framework for resilient multi-agent evolution. Our approach dynamically manages agent collaboration through soft state transitions, implemented via two key components: (1) State-Aware Policy Learning: Agent states are divided into ``Active'', ``Standby'', and ``Terminated'' states, selectively propagating messages based on agent memory. The policy employs a risk estimator to optimize agent state transitions by assessing hallucination risk, minimizing the influence of unreliable nodes while safeguarding valuable ones. (2) State-Aware Edge Optimization: Subgraph edges are pruned according to states learned from the policy, permanently removing ``Terminated'' nodes and retaining ``Standby'' nodes for subsequent rounds to assess their potential future contributions. Extensive experiments on general reasoning, domain-specific, and hallucination challenge tasks show that our method consistently outperforms strong baselines and significantly reduces token consumption through state-aware agent scheduling.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-17T09:38:18Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Taolin Zhang</name>
+    </author>
+    <author>
+      <name>Pukun Zhao</name>
+    </author>
+    <author>
+      <name>Qizhou Chen</name>
+    </author>
+    <author>
+      <name>Jiuheng Wan</name>
+    </author>
+    <author>
+      <name>Chen Chen</name>
+    </author>
+    <author>
+      <name>Xiaofeng He</name>
+    </author>
+    <author>
+      <name>Chengyu Wang</name>
+    </author>
+    <author>
+      <name>Richang Hong</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.02186v1</id>
+    <title>UA-ChatDev: Uncertainty-Aware Multi-Agent Collaboration for Reliable Software Development</title>
+    <updated>2026-07-02T13:56:57Z</updated>
+    <link href="https://arxiv.org/abs/2607.02186v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.02186v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Software development is a complex task that demands cooperation among agents with diverse roles. Large language models (LLMs) have enabled autonomous multi-agent software development frameworks that leverage role-based collaboration to automate requirements analysis, coding, testing, and refinement. However, existing approaches typically assume that intermediate agent outputs are equally reliable, leaving them vulnerable to hallucination propagation, where incorrect decisions generated in early development phases are transferred to downstream agents and negatively impact final software quality. To address this challenge, we propose UA-ChatDev, an uncertainty-aware multi-agent software development framework that integrates uncertainty quantification into agent interactions. It introduces a lightweight uncertainty estimation mechanism based on token-level log probabilities to assess the confidence of agent responses and employs phase-aware threshold calibration to selectively trigger retrieval-based verification when uncertainty exceeds acceptable levels. Extensive experiments on the SRDD benchmark demonstrate that UA-ChatDev consistently outperforms existing single-agent and multi-agent software development frameworks across completeness, executability, consistency, and overall quality metrics. Further ablation studies and communication analyses verify that uncertainty-aware interactions enhance code execution reliability.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-02T13:56:57Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Temitayo Olamilekan Ogunsusi</name>
+    </author>
+    <author>
+      <name>Lijun Qian</name>
+    </author>
+    <author>
+      <name>Xishuang Dong</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.19843v1</id>
+    <title>MAS-FIRE: Fault Injection and Reliability Evaluation for LLM-Based Multi-Agent Systems</title>
+    <updated>2026-02-23T13:47:43Z</updated>
+    <link href="https://arxiv.org/abs/2602.19843v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.19843v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>As LLM-based Multi-Agent Systems (MAS) are increasingly deployed for complex tasks, ensuring their reliability has become a pressing challenge. Since MAS coordinate through unstructured natural language rather than rigid protocols, they are prone to semantic failures (e.g., hallucinations, misinterpreted instructions, and reasoning drift) that propagate silently without raising runtime exceptions. Prevailing evaluation approaches, which measure only end-to-end task success, offer limited insight into how these failures arise or how effectively agents recover from them. To bridge this gap, we propose MAS-FIRE, a systematic framework for fault injection and reliability evaluation of MAS. We define a taxonomy of 15 fault types covering intra-agent cognitive errors and inter-agent coordination failures, and inject them via three non-invasive mechanisms: prompt modification, response rewriting, and message routing manipulation. Applying MAS-FIRE to three representative MAS architectures, we uncover a rich set of fault-tolerant behaviors that we organize into four tiers: mechanism, rule, prompt, and reasoning. This tiered view enables fine-grained diagnosis of where and why systems succeed or fail. Our findings reveal that stronger foundation models do not uniformly improve robustness. We further show that architectural topology plays an equally decisive role, with iterative, closed-loop designs neutralizing over 40% of faults that cause catastrophic collapse in linear workflows. MAS-FIRE provides the process-level observability and actionable guidance needed to systematically improve multi-agent systems.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-23T13:47:43Z</published>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Jin Jia</name>
+    </author>
+    <author>
+      <name>Zhiling Deng</name>
+    </author>
+    <author>
+      <name>Zhuangbin Chen</name>
+    </author>
+    <author>
+      <name>Yingqi Wang</name>
+    </author>
+    <author>
+      <name>Zibin Zheng</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.06737v1</id>
+    <title>A Self-Healing Framework for Reliable LLM-Based Autonomous Agents</title>
+    <updated>2026-05-07T13:10:41Z</updated>
+    <link href="https://arxiv.org/abs/2605.06737v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.06737v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Autonomous agents based on Large Language Models (LLMs) are increasingly being utilized in complex software systems. However, reliability remains a significant challenge due to unpredictable failures such as hallucinations, execution errors, and inconsistent reasoning. This paper proposes a reliability-aware self-healing framework for LLM-based software agents. The framework integrates failure detection, reliability assessment, and automated recovery mechanisms. First, we define a taxonomy of failure types and introduce a quantitative reliability assessment model. Next, we propose a failure detection method that identifies abnormal agent behavior based on execution patterns and output consistency. Finally, we design a self-healing mechanism that dynamically recovers from failures through adaptive replanning and corrective prompting strategies. The proposed framework was implemented in a multi-agent workflow environment and evaluated using real-world task scenarios. Experimental results demonstrate that our approach significantly increases task success rates, reduces failure propagation, and enhances overall system robustness compared to existing methods. In particular, this study distinguishes itself by establishing an integrated monitoring system that combines the agent's internal reasoning process with external execution results. These findings are expected to contribute to securing the stability of advanced autonomous systems and lowering the barriers to LLM adoption in production environments.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-07T13:10:41Z</published>
+    <arxiv:comment>13 pages, 3 figures,1 table</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <arxiv:journal_ref>International Journal of Software Engineering and Knowledge Engineering,2026</arxiv:journal_ref>
+    <author>
+      <name>Cheonsu Jeong</name>
+    </author>
+    <author>
+      <name>Younggun Shin</name>
+    </author>
+    <arxiv:doi>10.1142/S0218194026500695</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1142/S0218194026500695" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.12240v1</id>
+    <title>No Action Without a NOD: A Heterogeneous Multi-Agent Architecture for Reliable Service Agents</title>
+    <updated>2026-05-12T15:10:15Z</updated>
+    <link href="https://arxiv.org/abs/2605.12240v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.12240v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language model (LLM) agents have increasingly advanced service applications, such as booking flight tickets. However, these service agents suffer from unreliability in long-horizon tasks, as they often produce policy violations, tool hallucinations, and misaligned actions, which greatly impedes their real-world deployment. To address these challenges, we propose NOD (Navigator-Operator-Director), a heterogeneous multi-agent architecture for service agents. Instead of maintaining task state implicitly in dialogue context as in prior work, we externalize a structured Global State to enable explicit task state tracking and consistent decision-making by the Navigator. Besides, we introduce selective external oversight before critical actions, allowing an independent Director agent to verify execution and intervene when necessary. As such, NOD effectively mitigates error propagation and unsafe behavior in long-horizon tasks. Experiments on $τ^2$-Bench demonstrate that NOD achieves higher task success rates and critical action precision over baselines. More importantly, NOD improves the reliability of service agents by reducing policy violations, tool hallucinations, and user-intent misalignment.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-12T15:10:15Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Zixu Yang</name>
+    </author>
+    <author>
+      <name>Hang Zheng</name>
+    </author>
+    <author>
+      <name>Nan Jiang</name>
+    </author>
+    <author>
+      <name>Zhiyang Tang</name>
+    </author>
+    <author>
+      <name>Situo Zhang</name>
+    </author>
+    <author>
+      <name>Xiaobao Wu</name>
+    </author>
+    <author>
+      <name>Lu Chen</name>
+    </author>
+    <author>
+      <name>Kai Yu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2404.12135v3</id>
+    <title>mABC: multi-Agent Blockchain-Inspired Collaboration for root cause analysis in micro-services architecture</title>
+    <updated>2024-12-23T17:46:10Z</updated>
+    <link href="https://arxiv.org/abs/2404.12135v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2404.12135v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Root cause analysis (RCA) in Micro-services architecture (MSA) with escalating complexity encounters complex challenges in maintaining system stability and efficiency due to fault propagation and circular dependencies among nodes. Diverse root cause analysis faults require multi-agents with diverse expertise. To mitigate the hallucination problem of large language models (LLMs), we design blockchain-inspired voting to ensure the reliability of the analysis by using a decentralized decision-making process. To avoid non-terminating loops led by common circular dependency in MSA, we objectively limit steps and standardize task processing through Agent Workflow. We propose a pioneering framework, multi-Agent Blockchain-inspired Collaboration for root cause analysis in micro-services architecture (mABC), where multiple agents based on the powerful LLMs follow Agent Workflow and collaborate in blockchain-inspired voting. Specifically, seven specialized agents derived from Agent Workflow each provide valuable insights towards root cause analysis based on their expertise and the intrinsic software knowledge of LLMs collaborating within a decentralized chain. Our experiments on the AIOps challenge dataset and a newly created Train-Ticket dataset demonstrate superior performance in identifying root causes and generating effective resolutions. The ablation study further highlights Agent Workflow, multi-agent, and blockchain-inspired voting is crucial for achieving optimal performance. mABC offers a comprehensive automated root cause analysis and resolution in micro-services architecture and significantly improves the IT Operation domain. The code and dataset are in https://github.com/zwpride/mABC.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-04-18T12:35:39Z</published>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Wei Zhang</name>
+    </author>
+    <author>
+      <name>Hongcheng Guo</name>
+    </author>
+    <author>
+      <name>Jian Yang</name>
+    </author>
+    <author>
+      <name>Zhoujin Tian</name>
+    </author>
+    <author>
+      <name>Yi Zhang</name>
+    </author>
+    <author>
+      <name>Chaoran Yan</name>
+    </author>
+    <author>
+      <name>Zhoujun Li</name>
+    </author>
+    <author>
+      <name>Tongliang Li</name>
+    </author>
+    <author>
+      <name>Xu Shi</name>
+    </author>
+    <author>
+      <name>Liangfan Zheng</name>
+    </author>
+    <author>
+      <name>Bo Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.14707v1</id>
+    <title>Semantic Uncertainty-Guided Orchestration in Hierarchical Multi-Agent Systems</title>
+    <updated>2026-08-11T03:55:53Z</updated>
+    <link href="https://arxiv.org/abs/2608.14707v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.14707v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>As large language model (LLM)-based multi-agent systems become increasingly capable, coordinating agents under uncertainty becomes a fundamental challenge. Existing orchestration strategies typically rely on fixed interaction patterns and often lack mechanisms for assessing the reliability of intermediate reasoning steps, allowing errors and hallucinations to propagate through the system. This paper introduces a semantic-uncertainty-guided orchestration approach, HASSUM as a general framework for uncertainty-aware coordination in multi-agent systems. The method estimates uncertainty using semantic entropy and semantic density, which measure trust at the level of answer semantics rather than output probabilities. These signals enable adaptive orchestration decisions, including output verification, selective reprompting, additional deliberation, and confidence-aware response selection. Because the approach operates independently of any particular agent architecture, it can be integrated into a broad range of hierarchical and collaborative multi-agent systems. The evaluations demonstrate an implementation within a hierarchical agent framework and evaluate it on StrategyQA, JailbreakBench, and TruthfulQA benchmarks. Across tasks that require complex reasoning and are prone to ambiguity or hallucinations, uncertainty-guided orchestration yields more reliable outcomes than uncertainty-unaware coordination. Semantic entropy and semantic density in tandem outperformed either metric alone. Ablations testing different thresholds and model sizes demonstrated that both influence the effectiveness of semantic metrics. The results suggest that semantic uncertainty is a practical and general-purpose signal for improving robustness and trustworthiness in agentic AI systems.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-11T03:55:53Z</published>
+    <arxiv:comment>17 pages, 5 figures, 2 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>John Knowlton</name>
+    </author>
+    <author>
+      <name>Aritra Guha</name>
+    </author>
+    <author>
+      <name>Risto Miikkulainen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2507.22800v1</id>
+    <title>The Multi-Agent Fault Localization System Based on Monte Carlo Tree Search Approach</title>
+    <updated>2025-07-30T16:03:21Z</updated>
+    <link href="https://arxiv.org/abs/2507.22800v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2507.22800v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In real-world scenarios, due to the highly decoupled and flexible nature of microservices, it poses greater challenges to system reliability. The more frequent occurrence of incidents has created a demand for Root Cause Analysis(RCA) methods that enable rapid identification and recovery of incidents. Large language model (LLM) provides a new path for quickly locating and recovering from incidents by leveraging their powerful generalization ability combined with expert experience. Current LLM for RCA frameworks are based on ideas like ReAct and Chain-of-Thought, but the hallucination of LLM and the propagation nature of anomalies often lead to incorrect localization results. Moreover, the massive amount of anomalous information generated in large, complex systems presents a huge challenge for the context window length of LLMs. To address these challenges, we propose KnowledgeMind, an innovative LLM multi-agent system based on Monte Carlo Tree Search and a knowledge base reward mechanism for standardized service-by-service reasoning. Compared to State-Of-The-Art(SOTA) LLM for RCA methods, our service-by-service exploration approach significantly reduces the burden on the maximum context window length, requiring only one-tenth of its size. Additionally, by incorporating a rule-based real-time reward mechanism, our method effectively mitigates hallucinations during the inference process. Compared to the SOTA LLM for RCA framework, our method achieves a 49.29% to 128.35% improvement in root cause localization accuracy.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-07-30T16:03:21Z</published>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Rui Ren</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.14778v3</id>
+    <title>A Geometric Analysis of Small-sized Language Model Hallucinations</title>
+    <updated>2026-05-19T13:25:42Z</updated>
+    <link href="https://arxiv.org/abs/2602.14778v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.14778v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Hallucinations -- plausible but factually incorrect responses -- pose a major challenge to the reliability of Large Language Models (LLMs), especially in multi-step or agentic settings.
+  Existing work largely frames hallucinations as a consequence of missing knowledge; we show instead that, even when the relevant factual knowledge is present, models still produce hallucinated answers, pointing to retrieval instability rather than knowledge gaps.
+  Building on this observation, we introduce APORIA (Aggregate Prompt-wise Observation Retrieving Instability via Asymmetry -- the state of puzzlement-in-contradiction that hallucinations embody), a geometric framework that studies repeated responses to the same prompt in sentence-embedding space. Our central hypothesis is that genuine responses cluster more tightly than hallucinated ones; we empirically validate this and show that, after Fisher projection, the two response classes become consistently separable.
+  We leverage this asymmetry in geometry via APORIA-LP, an efficient label-propagation method that classifies large collections of responses from as few as 30--50 annotations, achieving F1 scores above 90% across ten small-sized LLMs.
+  To support further research, we release SOCRATES-300K, a fully labelled dataset of 300,000 responses, together with the code for both dataset generation and result reproduction.
+  Our key finding -- framing hallucinations from a geometric perspective in the embedding space -- complements traditional knowledge-centric and single-response evaluation paradigms, paving the way for further research.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-16T14:29:55Z</published>
+    <arxiv:comment>30 pages, 12 figures, 14 tables, accepted as regular paper at ICML'26</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Emanuele Ricco</name>
+    </author>
+    <author>
+      <name>Elia Onofri</name>
+    </author>
+    <author>
+      <name>Lorenzo Cima</name>
+    </author>
+    <author>
+      <name>Stefano Cresci</name>
+    </author>
+    <author>
+      <name>Roberto Di Pietro</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.25898v1</id>
+    <title>Verifiable Logic in Medical LLMs: A Critical Review of Agentic Clinical Reasoning Optimization and Neuro-Symbolic Grounding</title>
+    <updated>2026-11-19T10:49:23Z</updated>
+    <link href="https://arxiv.org/abs/2611.25898v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.25898v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Clinical large language models are usually judged by whether the final answer is right. Yet a model can reach a fluent, plausible output through invalid reasoning that static benchmarks do not detect, and confident hallucination, causally invalid inference, and spurious demographic shortcuts can pass conventional evaluation. This critical review covers four paradigms in turn: how clinical hallucination arises and why static metrics miss it; the agentic hallucination cascade, in which multi-agent and tool-augmented systems propagate and amplify early reasoning errors; process reward modeling as step-level supervision; and neuro-symbolic grounding, in which formal logic engines, ontology reasoners, and knowledge graphs place verifiable constraints on neural output. Within their encoded domains, systems with symbolic veto layers offer guarantees that hold relative to their encoded knowledge, and they report large gains on the safety measures they use. These results come from single studies, mostly in simulated or small-sample settings, and are not directly comparable with neural baselines. Process reward models remain bounded by the statistics of their training data. We propose a conceptual framework that maps each agentic failure mode to a symbolic intervention point, and we argue that clinical AI safety depends substantially on system architecture. Because current regulation emphasizes performance and does not require verification of reasoning steps, we argue that responsible certification should also audit reasoning trajectories alongside accuracy on static benchmarks.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-19T10:49:23Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Youssef ElNahas</name>
+    </author>
+    <author>
+      <name>Adel Ammar</name>
+    </author>
+    <author>
+      <name>Soumaya Chaffar</name>
+    </author>
+    <author>
+      <name>Wadii Boulila</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2507.19364v4</id>
+    <title>From the Fluency Fallacy to the Micro-to-Macro Validity Gap: Opportunities and Pitfalls of LLMs in Social Simulation</title>
+    <updated>2026-10-09T10:22:50Z</updated>
+    <link href="https://arxiv.org/abs/2507.19364v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2507.19364v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The integration of Large Language Models (LLMs) into social simulation has generated enthusiasm but also raises methodological and epistemological challenges. This critical review examines LLMs as cognitive or decision-making components of simulated agents from a computational social science perspective. We argue that their behavioral and epistemic limitations can become systemic vulnerabilities when scaled to multi-agent societies. We map the evolving landscape of LLM-driven platforms, from narrative sandboxes to population-scale simulations, and develop a framework for analyzing the Micro-to-Macro Validity Gap: the propagation, amplification, or contraction of micro-level limitations-including hallucinations, stochastic inconsistency, representational biases, and alignment effects-into agent-level distortions (e.g., persona convergence) and macro-level risks (e.g., artificial consensus and behavioral homogenization). We also highlight evaluative vulnerabilities such as the Fluency Fallacy and automation bias. We identify contexts where LLM-based agents offer operational value, including serious games, participatory environments, and exploratory modeling, distinguishing these uses from confirmatory research with unconstrained models and precise social forecasting. Finally, we examine theory-driven hybrid architectures embedding LLMs in explicit, mechanistic, and reproducible Agent-Based Modeling (ABM) frameworks. While promising, these architectures do not guarantee epistemic control: validity requires multi-level evaluation of environmental dynamics, individual behavior, cross-level interactions, and aggregate outcomes. They also remain vulnerable to physics washing.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-07-25T15:15:35Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Patrick Taillandier</name>
+    </author>
+    <author>
+      <name>Jean Daniel Zucker</name>
+    </author>
+    <author>
+      <name>Arnaud Grignard</name>
+    </author>
+    <author>
+      <name>Benoit Gaudou</name>
+    </author>
+    <author>
+      <name>Nghi Quang Huynh</name>
+    </author>
+    <author>
+      <name>Haojia Kong</name>
+    </author>
+    <author>
+      <name>Alexis Drogoul</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.01779v1</id>
+    <title>Agents That Model Agents: Five Principles Toward a Theory of Mind for 6G Networks</title>
+    <updated>2026-09-01T18:49:44Z</updated>
+    <link href="https://arxiv.org/abs/2609.01779v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.01779v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Future 6G networks will rely on Large Language Model (LLM) agents to manage the Radio Access Network (RAN). However, current architectures assume inter-agent messages convey objective facts. A message is instead a \emph{trace} of the sender's reasoning: it carries a subjective conclusion, so a syntactically valid report can propagate an AI hallucination and trigger a cascading outage invisible to protocol validation. Reading such a trace requires a Theory of Mind (ToM)---before acting, the receiver must model what the peer believes, and what a peer in that position should have believed. Modeling these interactions as cognitive channels on a cellular sheaf, we obtain a unified framework for resilient multi-agent systems, from which five design principles emerge: (i) a message is evidence of the sender's hidden reasoning; (ii) trust is a continuous cognitive Signal-to-Noise Ratio (SNR)---asserted precision over deviation from the modeled peer belief; (iii) network-wide consistency and resistance to hallucination contagion are computable via the sheaf's Laplacian; (iv) peer-modeling must halt at exactly two levels to conserve compute and survive mutual information decay; and (v) credible capacity is bounded by operational goal alignment, not link bandwidth. A signaling-storm study on locally deployed 1B-parameter telecom language models validates it: cognitive SNR isolates a hallucinating peer that three of its four neighbors agree with, where a divergence gate ranks every wrong peer above the right one; only depth two ToM recovers the correct action; and the spectral gap decides whether a topology reaches consistency inside the near-real-time budget.</summary>
+    <category term="cs.NI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-01T18:49:44Z</published>
+    <arxiv:comment>8 pages, 3 figures, 3 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.NI"/>
+    <author>
+      <name>Hatim Chergui</name>
+    </author>
+    <author>
+      <name>Carolina Fernández-Martínez</name>
+    </author>
+    <author>
+      <name>Mehdi Bennis</name>
+    </author>
+    <author>
+      <name>Merouane Debbah</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.25299v1</id>
+    <title>ID-RAG: Identity Retrieval-Augmented Generation for Long-Horizon Persona Coherence in Generative Agents</title>
+    <updated>2025-09-29T16:54:51Z</updated>
+    <link href="https://arxiv.org/abs/2509.25299v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.25299v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Generative agents powered by language models are increasingly deployed for long-horizon tasks. However, as long-term memory context grows over time, they struggle to maintain coherence. This deficiency leads to critical failures, including identity drift, ignoring established beliefs, and the propagation of hallucinations in multi-agent systems. To mitigate these challenges, this paper introduces Identity Retrieval-Augmented Generation (ID-RAG), a novel mechanism designed to ground an agent's persona and persistent preferences in a dynamic, structured identity model: a knowledge graph of core beliefs, traits, and values. During the agent's decision loop, this model is queried to retrieve relevant identity context, which directly informs action selection. We demonstrate this approach by introducing and implementing a new class of ID-RAG enabled agents called Human-AI Agents (HAis), where the identity model is inspired by the Chronicle structure used in Perspective-Aware AI, a dynamic knowledge graph learned from a real-world entity's digital footprint. In social simulations of a mayoral election, HAis using ID-RAG outperformed baseline agents in long-horizon persona coherence - achieving higher identity recall across all tested models by the fourth timestep - and reduced simulation convergence time by 19% (GPT-4o) and 58% (GPT-4o mini). By treating identity as an explicit, retrievable knowledge structure, ID-RAG offers a foundational approach for developing more temporally coherent, interpretable, and aligned generative agents. Our code is open-source and available at: https://github.com/flybits/humanai-agents.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.HC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-29T16:54:51Z</published>
+    <arxiv:comment>Accepted to LLAIS 2025: Workshop on LLM-Based Agents for Intelligent Systems, at ECAI 2025, 12 pages, 3 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Daniel Platnick</name>
+    </author>
+    <author>
+      <name>Mohamed E. Bengueddache</name>
+    </author>
+    <author>
+      <name>Marjan Alirezaie</name>
+    </author>
+    <author>
+      <name>Dava J. Newman</name>
+    </author>
+    <author>
+      <name>Alex ''Sandy'' Pentland</name>
+    </author>
+    <author>
+      <name>Hossein Rahnama</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.36549v1</id>
+    <title>From Ripple to Boundary: Deterministic Impact Boundaries for LLM-Based Software Evolution</title>
+    <updated>2026-10-27T03:00:55Z</updated>
+    <link href="https://arxiv.org/abs/2610.36549v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.36549v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The landscape of software evolution is undergoing a fundamental paradigm shift in the era of Large Language Models. As industrial software engineering increasingly transitions toward design-driven code generation, the bottleneck of evolution has shifted from writing code to maintaining deterministic consistency between multi-source design assets and the generated code. When a design asset changes, LLM agents currently lack a deterministic impact boundary to identify which code must be evolved, leading to two failure modes: hallucinating missing changes or breaking unrelated code. Probabilistic approaches, such as semantic retrieval or text-based diffing, fail to capture the structural ripple effects across highly interconnected design dependencies. We propose a paradigm shift from probabilistic semantic retrieval to deterministic structural constraints. We formalize the design assets as a Knowledge Graph and organize them into a content-addressed Merkle Directed Acyclic Graph. Our key insight reveals a topological isomorphism between the logical ripple effect of a design change and the content hash propagation within the DAG. By leveraging this, we transform ambiguous impact analysis into verifiable structural operations. Through a two-phase diffing process, we extract a precise causal chain that defines the exact modification boundary. This boundary enables deterministic context injection, providing the LLM agent with strictly scoped code and design updates, thereby fundamentally guaranteeing evolution safety. As a by-product, the KG serves as an agent-queryable knowledge base for natural language design retrieval. Early deployment on a large-scale industrial payment platform demonstrates that our mechanism successfully computes the exact impact boundary and generates incremental code modifications that meet the expected design changes.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-27T03:00:55Z</published>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Jiameng Bai</name>
+    </author>
+    <author>
+      <name>Zhitao Wang</name>
+    </author>
+    <author>
+      <name>Long Wang</name>
+    </author>
+    <author>
+      <name>Keyue Qian</name>
+    </author>
+    <author>
+      <name>Sai Wu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.27806v4</id>
+    <title>Agentic vs. Parametric World Models: Hybrid Planning for Reliable Language Agents</title>
+    <updated>2026-10-20T02:42:07Z</updated>
+    <link href="https://arxiv.org/abs/2606.27806v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.27806v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Language agents, such as ReAct, Reflexion, and RAP, implicitly predict how the world will change as they plan and act, using imagined state transitions to guide their decisions. These predictions are encoded in the agents' backbone LLMs as internal beliefs about the environment, effectively forming an implicit world model for multi-step planning. However, hallucinated state information can become embedded in this world model, leading to persistent inaccuracies that influence subsequent decisions. Traditional parametric world models, such as Dreamer and MuZero, learn environment dynamics through explicit transition models, but their limited model capacity makes them difficult to apply directly to modern language-agent planning. We study this tradeoff in graph-structured planning environments and seek to combine the strengths of both paradigms. We propose Hybrid World-Model Planning (HYBRID-WM), which preserves the language agent's semantic planning capabilities while leveraging a lightweight parametric world model for more accurate transition predictions. Specifically, the parametric model constructs a compact planning skeleton to guide action generation while maintaining consistency between the agent's imagined transitions and the model's predictions. Experiments across four graph-structured planning benchmarks demonstrate that HYBRID-WM consistently improves task success and reduces hallucinated-state propagation with modest computational overhead. These findings highlight the effectiveness of combining semantic planning with lightweight parametric grounding for reliable long-horizon language-agent planning.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-26T07:45:15Z</published>
+    <arxiv:comment>Under Review</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Xinyuan Song</name>
+    </author>
+    <author>
+      <name>Zekun Cai</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.20117v1</id>
+    <title>To Know is to Construct: Schema-Constrained Generation for Agent Memory</title>
+    <updated>2026-04-22T02:27:50Z</updated>
+    <link href="https://arxiv.org/abs/2604.20117v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.20117v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Constructivist epistemology argues that knowledge is actively constructed rather than passively copied. Despite the generative nature of Large Language Models (LLMs), most existing agent memory systems are still based on dense retrieval. However, dense retrieval heavily relies on semantic overlap or entity matching within sentences. Consequently, embeddings often fail to distinguish instances that are semantically similar but contextually distinct, introducing substantial noise by retrieving context-mismatched entries. Conversely, directly employing open-ended generation for memory access risks "Structural Hallucination" where the model generates memory keys that do not exist in the memory, leading to lookup failures. Inspired by this epistemology, we posit that memory is fundamentally organized by cognitive schemas, and valid recall must be a generative process performed within these schematic structures. To realize this, we propose SCG-MEM, a schema-constrained generative memory architecture. SCG-MEM reformulates memory access as Schema-Constrained Generation. By maintaining a dynamic Cognitive Schema, we strictly constrain LLM decoding to generate only valid memory entry keys, providing a formal guarantee against structural hallucinations. To support long-term adaptation, we model memory updates via assimilation (grounding inputs into existing schemas) and accommodation (expanding schemas with novel concepts). Furthermore, we construct an Associative Graph to enable multi-hop reasoning through activation propagation. Experiments on the LoCoMo benchmark show that SCG-MEM substantially improves performance across all categories over retrieval-based baselines.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-22T02:27:50Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Lei Zheng</name>
+    </author>
+    <author>
+      <name>Weinan Song</name>
+    </author>
+    <author>
+      <name>Daili Li</name>
+    </author>
+    <author>
+      <name>Yanming Yang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.09800v1</id>
+    <title>FASE: Fast Adaptive Semantic Entropy for Code Quality</title>
+    <updated>2026-06-08T17:53:05Z</updated>
+    <link href="https://arxiv.org/abs/2606.09800v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.09800v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multi-agent code generation offers a promising paradigm for autonomous software development by simulating the human software engineering lifecycle. However, system reliability remains hindered by LLM hallucinations and error propagation across interacting agents. While semantic entropy provides a principled way to quantify uncertainty without ground-truth answers, current methods often rely on costly LLM-driven equivalence checks. In this work, we introduce Fast Adaptive Semantic Entropy (FASE), a novel metric that approximates functional correctness based on the minimum spanning tree of structural and semantic dissimilarity graphs. Evaluations on HumanEval and BigCodeBench demonstrate that FASE outperforms state-of-the-art semantic entropy by LLM entailment, achieving a 25% average improvement in Spearman correlation and a 19% increase in ROCAUC score against Pass@1 from ground-truth test cases when using the Qwen3-Embedding-8B model. Furthermore, by eliminating costly LLM-driven equivalence evaluation, FASE incurs negligible computational overhead, requiring only approximately 0.3% of the runtime cost of traditional semantic entropy approaches. These results position FASE as a practical, cost-effective solution for optimizing uncertainty quantification in real-world multi-agent workflows.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-08T17:53:05Z</published>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Shizhe Lin</name>
+    </author>
+    <author>
+      <name>Ladan Tahvildari</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.01925v2</id>
+    <title>QoEReasoner: An Agentic Reasoning Framework for Automated and Explainable QoE Diagnosis in RANs</title>
+    <updated>2026-06-02T13:36:36Z</updated>
+    <link href="https://arxiv.org/abs/2606.01925v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.01925v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Diagnosing Quality-of-Experience (QoE) degradations in operational Radio Access Networks (RANs) is a critical but notoriously complex task, traditionally requiring labor-intensive expert analysis over high-dimensional, cross-layer telemetry. While Large Language Models (LLMs) offer unprecedented reasoning capabilities, they are fundamentally unsuited for raw RANs troubleshooting: they fail at numeric time-series analysis, hallucinate protocol-violating causal links, and lack the stateful rigor required for multi-step fault localization. To bridge this gap, we present QoEReasoner, an end-to-end, LLM-driven agentic system designed for automated and explainable QoE diagnosis. QoEReasoner tames the inherent unpredictability of LLMs by grounding their reasoning in the physical realities of the network. It employs deterministic tools to reliably translate raw numeric KPIs into structured evidence, enforces protocol-consistent fault propagation through a domain-specific Knowledge Base, and leverages a Historical Bank of expert-validated cases to guide hypothesis generation. A stateful central planner orchestrates this closed-loop process across anomaly detection, causal tracing, and root-cause localization. Evaluations on real-world operational RANs datasets demonstrate that QoEReasoner outperforms strong baselines by 18\%-40\% in accuracy across multiple diagnostic tasks. Furthermore, it reduces diagnostic time from approximately 30 minutes of manual expert analysis to just 3 minutes per session, delivering highly interpretable, expert-grade reports while remaining robust across diverse LLM backbones.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-01T08:58:07Z</published>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Qizhe Li</name>
+    </author>
+    <author>
+      <name>Haolong Chen</name>
+    </author>
+    <author>
+      <name>Shan Dai</name>
+    </author>
+    <author>
+      <name>Zhuo Li</name>
+    </author>
+    <author>
+      <name>Zhiwei Hu</name>
+    </author>
+    <author>
+      <name>Xuan Li</name>
+    </author>
+    <author>
+      <name>Guangxu Zhu</name>
+    </author>
+    <author>
+      <name>Qingjiang Shi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2504.09781v1</id>
+    <title>Reasoning Court: Combining Reasoning, Action, and Judgment for Multi-Hop Reasoning</title>
+    <updated>2025-04-14T00:56:08Z</updated>
+    <link href="https://arxiv.org/abs/2504.09781v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2504.09781v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>While large language models (LLMs) have demonstrated strong capabilities in tasks like question answering and fact verification, they continue to suffer from hallucinations and reasoning errors, especially in multi-hop tasks that require integration of multiple information sources. Current methods address these issues through retrieval-based techniques (grounding reasoning in external evidence), reasoning-based approaches (enhancing coherence via improved prompting), or hybrid strategies combining both elements. One prominent hybrid method, ReAct, has outperformed purely retrieval-based or reasoning-based approaches; however, it lacks internal verification of intermediate reasoning steps, allowing potential errors to propagate through complex reasoning tasks. In this paper, we introduce Reasoning Court (RC), a novel framework that extends iterative reasoning-and-retrieval methods, such as ReAct, with a dedicated LLM judge. Unlike ReAct, RC employs this judge to independently evaluate multiple candidate answers and their associated reasoning generated by separate LLM agents. The judge is asked to select the answer that it considers the most factually grounded and logically coherent based on the presented reasoning and evidence, or synthesizes a new answer using available evidence and its pre-trained knowledge if all candidates are inadequate, flawed, or invalid. Evaluations on multi-hop benchmarks (HotpotQA, MuSiQue) and fact-verification (FEVER) demonstrate that RC consistently outperforms state-of-the-art few-shot prompting methods without task-specific fine-tuning.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-04-14T00:56:08Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Jingtian Wu</name>
+    </author>
+    <author>
+      <name>Claire Cardie</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2510.22344v1</id>
+    <title>FAIR-RAG: Faithful Adaptive Iterative Refinement for Retrieval-Augmented Generation</title>
+    <updated>2025-10-25T15:59:33Z</updated>
+    <link href="https://arxiv.org/abs/2510.22344v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.22344v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>While Retrieval-Augmented Generation (RAG) mitigates hallucination and knowledge staleness in Large Language Models (LLMs), existing frameworks often falter on complex, multi-hop queries that require synthesizing information from disparate sources. Current advanced RAG methods, employing iterative or adaptive strategies, lack a robust mechanism to systematically identify and fill evidence gaps, often propagating noise or failing to gather a comprehensive context. We introduce FAIR-RAG, a novel agentic framework that transforms the standard RAG pipeline into a dynamic, evidence-driven reasoning process. At its core is an Iterative Refinement Cycle governed by a module we term Structured Evidence Assessment (SEA). The SEA acts as an analytical gating mechanism: it deconstructs the initial query into a checklist of required findings and audits the aggregated evidence to identify confirmed facts and, critically, explicit informational gaps. These gaps provide a precise signal to an Adaptive Query Refinement agent, which generates new, targeted sub-queries to retrieve missing information. This cycle repeats until the evidence is verified as sufficient, ensuring a comprehensive context for a final, strictly faithful generation. We conducted experiments on challenging multi-hop QA benchmarks, including HotpotQA, 2WikiMultiHopQA, and MusiQue. In a unified experimental setup, FAIR-RAG significantly outperforms strong baselines. On HotpotQA, it achieves an F1-score of 0.453 -- an absolute improvement of 8.3 points over the strongest iterative baseline -- establishing a new state-of-the-art for this class of methods on these benchmarks. Our work demonstrates that a structured, evidence-driven refinement process with explicit gap analysis is crucial for unlocking reliable and accurate reasoning in advanced RAG systems for complex, knowledge-intensive tasks.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-25T15:59:33Z</published>
+    <arxiv:comment>30 pages, 5 figures, 5 tables. Keywords: Retrieval-Augmented Generation (RAG), Large Language Models (LLMs), Agentic AI, Multi-hop Question Answering, Faithfulness</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Mohammad Aghajani Asl</name>
+    </author>
+    <author>
+      <name>Majid Asgari-Bidhendi</name>
+    </author>
+    <author>
+      <name>Behrooz Minaei-Bidgoli</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.27253v1</id>
+    <title>AutoSurfer -- Teaching Web Agents through Comprehensive Surfing, Learning, and Modeling</title>
+    <updated>2026-04-29T22:57:35Z</updated>
+    <link href="https://arxiv.org/abs/2604.27253v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.27253v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent advances in multimodal large language models (LLMs) have revolutionized web agents that can automate complex tasks on websites. However, their accuracy remains limited by the scarcity of high-quality web trajectory training data. Existing automatic trajectory generation methods suffer from incomplete website coverage due to homepage-based task proposals or random-walk exploration. Such methods often result in hallucinated or ambiguous task synthesis that lead to incomplete and unreliable trajectory generation. Here, we present AutoSurfer, a comprehensive web trajectory generator that addresses these limitations through three key innovations. First, AutoSurfer employs a systematic breadth-first exploration strategy that maintains a queue of discovered pages and action traces, propagates knowledge across pages to avoid redundant exploration, and recursively expands multi-level graphical user interface elements - closely resembling how a human would learn a new website. Second, AutoSurfer leverages the exploration trajectory to guide task synthesis, reducing hallucinations by grounding complex tasks in actual navigation paths rather than isolated actions or page content alone. Third, AutoSurfer uses the same exploration trajectory as hints to steer a web agent toward more accurate and reliable trajectory refinement. Together, these innovations enable AutoSurfer to comprehensively cover a website's action space and generate data suitable for training website-specific LLMs. We evaluate AutoSurfer on the WebArena benchmark by fine-tuning Qwen2.5-VL-7B-Instruct and demonstrate that it outperforms state-of-the-art methods - Explorer, OS-Genesis, and SynthAgent - achieving up to 24.23% overall task completion accuracy compared to 19.59% for the best prior method. Further, task diversity analysis demonstrates that AutoSurfer yields a more diverse distribution of synthesized tasks.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-29T22:57:35Z</published>
+    <arxiv:comment>21 pages, 3 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Fazle Elahi Faisal</name>
+    </author>
+    <author>
+      <name>Qianhui Wu</name>
+    </author>
+    <author>
+      <name>Baolin Peng</name>
+    </author>
+    <author>
+      <name>Jianfeng Gao</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.04475v1</id>
+    <title>Information Coordination as a Bridge: A Neuro-Symbolic Architecture for Reliable Autonomous Driving Scene Understanding</title>
+    <updated>2026-05-06T03:55:04Z</updated>
+    <link href="https://arxiv.org/abs/2605.04475v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.04475v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Reliable autonomous driving requires scene understanding that is semantically consistent across heterogeneous sensors and verifiable at the reasoning stage. However, many recent LLM-driven driving systems attach the language model as a post-processor and force it to reason over redundant or conflicting perception outputs, which can amplify hallucinated entities and unsafe conclusions. This paper proposes InfoCoordiBridge, a BEV-centric neuro-symbolic architecture that inserts an explicit coordination bridge between perception and language reasoning. InfoCoordiBridge comprises (i) a unified multi-agent perception layer that outputs typed structured facts together with modality-focused synopses, (ii) an ICA module that aligns and fuses multi-source outputs into a single SceneSummary, and (iii) an SSRE module that performs SceneSummary-grounded reasoning with verification. Experiments on nuScenes and Waymo show that ICA preserves competitive 3D detection accuracy while substantially improving fusion consistency, reducing redundancy to below 1% and achieving about 98% attribute agreement. On NuScenes-QA and a template-aligned Waymo-QA benchmark, SSRE improves factual grounding and reduces hallucinated entity mentions compared with representative VLM and agentic baselines. Overall, by coordinating multi-sensor outputs into a single conflict-aware SceneSummary before prompting, InfoCoordiBridge prevents redundant and cross-modally inconsistent perception evidence from propagating into high-level reasoning.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-06T03:55:04Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Shuo Liu</name>
+    </author>
+    <author>
+      <name>Lei Shi</name>
+    </author>
+    <author>
+      <name>Haowen Liu</name>
+    </author>
+    <author>
+      <name>Jing Xu</name>
+    </author>
+    <author>
+      <name>Yufei Gao</name>
+    </author>
+    <author>
+      <name>Yucheng Shi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.14089v1</id>
+    <title>TabTracer: Monte Carlo Tree Search for Complex Table Reasoning with Large Language Models</title>
+    <updated>2026-02-15T10:39:43Z</updated>
+    <link href="https://arxiv.org/abs/2602.14089v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.14089v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) have emerged as powerful tools for natural language table reasoning, where there are two main categories of methods. Prompt-based approaches rely on language-only inference or one-pass program generation without step-level verification. Agent-based approaches use tools in a closed loop, but verification is often local and backtracking is limited, allowing errors to propagate and increasing cost. Moreover, they rely on chain- or beam-style trajectories that are typically combinatorially redundant, leading to high token costs. In this paper, we propose TabTracer, an agentic framework that coordinates multi-step tool calls over intermediate table states, with explicit state tracking for verification and rollback. First, it enforces step-level verification with typed operations and lightweight numeric and format checks to provide reliable rewards and suppress hallucinations. Second, execution-feedback Monte Carlo Tree Search maintains a search tree of candidate table states and uses backpropagated reflection scores to guide UCB1 selection and rollback via versioned snapshots. Third, it reduces redundancy with budget-aware pruning, deduplication, and state hashing with a monotonicity gate to cut token cost. Comprehensive evaluation on TabFact, WikiTQ, and CRT datasets shows that TabTracer outperforms state-of-the-art baselines by up to 6.7% in accuracy while reducing token consumption by 59--84%.</summary>
+    <category term="cs.DB" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-15T10:39:43Z</published>
+    <arxiv:primary_category term="cs.DB"/>
+    <author>
+      <name>Zhizhao Luo</name>
+    </author>
+    <author>
+      <name>Zhaojing Luo</name>
+    </author>
+    <author>
+      <name>Meihui Zhang</name>
+    </author>
+    <author>
+      <name>Rui Mao</name>
+    </author>
+  </entry>
+</feed>

@@ -1,0 +1,2400 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/NdfVVZgFhRS1gxEL0m3PLcfwyfY</id>
+  <title>arXiv Query: search_query=all:sandboxing AND all:isolation AND all:LLM AND all:agents&amp;id_list=&amp;start=0&amp;max_results=100</title>
+  <updated>2026-11-21T23:59:35Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:sandboxing+AND+(all:isolation+AND+(all:LLM+AND+all:agents))&amp;start=0&amp;max_results=100&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>100</opensearch:itemsPerPage>
+  <opensearch:totalResults>55</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2607.23933v2</id>
+    <title>SpecBox: Speculative Sandbox Scheduling for Efficient LLM Agent Serving</title>
+    <updated>2026-08-05T01:08:13Z</updated>
+    <link href="https://arxiv.org/abs/2607.23933v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.23933v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>As LLM agents increasingly rely on the Model Context Protocol (MCP) to invoke isolated external sandboxes, disaggregated sandbox deployment introduces a fundamental tension between resource utilization and interactive tail latency. Persistent long-lived sandbox reservations incur excessive memory overhead at scale, while lazy on-demand instantiation generates severe cold-start penalties that degrade response performance under multi-tenant, multi-turn agent workloads. To resolve this dilemma, we present SpecBox, a runtime built around speculative sandbox preallocation tailored for dynamic LLM agent execution pipelines.
+  At its core, SpecBox implements keyword matching and streaming semantic embedding to enable intent-driven sandbox prewarming, which identifies pending tool execution demands mid-LLM token generation and fully overlaps sandbox bootstrapping with model inference. To extend prewarming windows across sequential agent steps, the framework leverages context-aware stochastic prefetching atop a sandbox dependency graph to probabilistically forecast future sandbox switches ahead of execution. We complement these speculative mechanisms with two orthogonal optimizations: a semantic result cache that prunes redundant repeated sandbox invocations, and a dedicated out-of-band shared-memory transport plane that bypasses conventional network serialization to deliver zero-copy artifact transfers. Evaluated on high-concurrency multi-turn agent traces, our prototype demonstrates that SpecBox cuts P99 end-to-end latency by up to $2.9\times$ relative to the on-demand sandbox baseline, while slashing peak memory consumption by $45.9\%$ compared to permanently reserved sandbox deployments.</summary>
+    <category term="cs.DC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.PF" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-27T02:10:35Z</published>
+    <arxiv:primary_category term="cs.DC"/>
+    <author>
+      <name>Yihui Zhang</name>
+      <arxiv:affiliation>Beihang University</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Tianyu Wo</name>
+      <arxiv:affiliation>Beihang University</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Jinghao Wang</name>
+      <arxiv:affiliation>Beihang University</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Xiaoyang Sun</name>
+      <arxiv:affiliation>University of Leeds</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Menghao Zhang</name>
+      <arxiv:affiliation>Beihang University</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Cangzhou Yuan</name>
+      <arxiv:affiliation>Beihang University</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Li Li</name>
+      <arxiv:affiliation>Beihang University</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Chunming Hu</name>
+      <arxiv:affiliation>Beihang University</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Albert Y. Zomaya</name>
+      <arxiv:affiliation>The University of Sydney</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Renyu Yang</name>
+      <arxiv:affiliation>Beihang University</arxiv:affiliation>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.02277v3</id>
+    <title>Quantifying Frontier LLM Capabilities for Container Sandbox Escape</title>
+    <updated>2026-08-01T15:05:15Z</updated>
+    <link href="https://arxiv.org/abs/2603.02277v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.02277v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) increasingly act as autonomous agents, using tools to execute code, read and write files, and access networks, creating novel security risks. To mitigate these risks, agents are commonly deployed and evaluated in isolated "sandbox" environments, often implemented using Docker/OCI containers. We introduce SANDBOXESCAPEBENCH, an open benchmark that safely measures an LLM's capacity to break out of these sandboxes. The benchmark is implemented as an Inspect AI Capture the Flag (CTF) evaluation utilising a nested sandbox architecture with the outer layer containing the flag and no known vulnerabilities. Following a threat model of a motivated adversarial agent with shell access inside a container, SANDBOXESCAPEBENCH covers a spectrum of sandboxescape mechanisms spanning misconfiguration, privilege allocation mistakes, kernel flaws, and runtime/orchestration weaknesses. We find that, when vulnerabilities are added, LLMs are able to identify and exploit them, showing that use of evaluation like SANDBOXESCAPEBENCH is needed to ensure sandboxing continues to provide the encapsulation needed for highly-capable models.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-01T22:47:39Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Rahul Marchand</name>
+    </author>
+    <author>
+      <name>Art O Cathain</name>
+    </author>
+    <author>
+      <name>Jerome Wynne</name>
+    </author>
+    <author>
+      <name>Philippos Maximos Giavridis</name>
+    </author>
+    <author>
+      <name>Stuart Jennings</name>
+    </author>
+    <author>
+      <name>Freddy Tuxworth</name>
+    </author>
+    <author>
+      <name>Tolga H. Dur</name>
+    </author>
+    <author>
+      <name>Sam Deverett</name>
+    </author>
+    <author>
+      <name>John Wilkinson</name>
+    </author>
+    <author>
+      <name>Jason Gwartz</name>
+    </author>
+    <author>
+      <name>Harry Coppock</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2512.12806v1</id>
+    <title>Fault-Tolerant Sandboxing for AI Coding Agents: A Transactional Approach to Safe Autonomous Execution</title>
+    <updated>2025-12-14T19:03:59Z</updated>
+    <link href="https://arxiv.org/abs/2512.12806v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2512.12806v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The transition of Large Language Models (LLMs) from passive code generators to autonomous agents introduces significant safety risks, specifically regarding destructive commands and inconsistent system states. Existing commercial solutions often prioritize interactive user safety, enforcing authentication barriers that break the headless loops required for true autonomy. This paper presents a Fault-Tolerant Sandboxing framework designed to mitigate these risks through a policy-based interception layer and a transactional filesystem snapshot mechanism. We hypothesize that wrapping agent actions in atomic transactions can guarantee safety with acceptable latency, outperforming the heavy initialization overhead of containers or the interactive friction of commercial CLIs. We validated this approach by deploying the Minimind-MoE LLM served via nano-vllm on a custom Proxmox-based testbed utilizing EVPN/VXLAN isolation. Experimental results demonstrate a 100\% interception rate for high-risk commands and a 100\% success rate in rolling back failed states. Crucially, our prototype incurs only a 14.5\% performance overhead (approx. 1.8s) per transaction. In contrast, benchmarking against the Gemini CLI sandbox revealed that it requires interactive authentication ("Sign in"), rendering it unusable for headless, autonomous agent workflows.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-12-14T19:03:59Z</published>
+    <arxiv:comment>7 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Boyang Yan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.10787v2</id>
+    <title>ComplexMCP: Evaluation of LLM Agents in Dynamic, Interdependent, and Large-Scale Tool Sandbox</title>
+    <updated>2026-05-20T01:39:17Z</updated>
+    <link href="https://arxiv.org/abs/2605.10787v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.10787v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Current LLM agents are proficient at calling isolated APIs but struggle with the "last mile" of commercial software automation. In real-world scenarios, tools are not independent; they are atomic, interdependent, and prone to environmental noise. We introduce $\textbf{ComplexMCP}$, a benchmark designed to evaluate agents in these rigorous conditions. Built on the Model Context Protocol (MCP), $\textbf{ComplexMCP}$ provides over 300 meticulously tested tools derived from 7 stateful sandboxes, ranging from office suites to financial systems. Unlike existing datasets, our benchmark utilizes a seed-driven architecture to simulate dynamic environment states and unpredictable API failures, ensuring a deterministic yet diverse evaluation.
+  We evaluate various LLMs across full-context and RAG paradigms, revealing a stark performance gap: even top-tier models fail to exceed a 60% success rate, far trailing human performance 90%. Granular trajectory analysis identifies three fundamental bottlenecks: (1) $\textbf{tool retrieval saturation}$ as action spaces scale; (2) $\textbf{over-confidence}$, where agents skip essential environment verifications; and (3) $\textbf{strategic defeatism}$, a tendency to rationalize failure rather than pursuing recovery. These findings underscore the insufficiency of current agents for interdependent workflows, positioning $\textbf{ComplexMCP}$ as a critical testbed for the next generation of resilient autonomous systems.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-11T16:20:51Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Yuanyang Li</name>
+    </author>
+    <author>
+      <name>Xue Yang</name>
+    </author>
+    <author>
+      <name>Longyue Wang</name>
+    </author>
+    <author>
+      <name>Weihua Luo</name>
+    </author>
+    <author>
+      <name>Hongyang Chen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.22978v1</id>
+    <title>DeepSeek Elastic Compute (DSec): A Sandbox Infrastructure for Effective Agentic Training at Scale</title>
+    <updated>2026-09-19T12:20:26Z</updated>
+    <link href="https://arxiv.org/abs/2609.22978v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.22978v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large-scale agentic training and evaluation with large language models (LLMs) rely on isolated, stateful execution environments in which models inspect repositories, invoke tools, execute commands, and interact with task-specific services. These workloads create sandboxes in large bursts, span heterogeneous functionality and isolation requirements, retain state across long interactions, and draw from large image corpora with limited reuse. Supporting them therefore requires an elastic execution platform rather than a single sandbox runtime.
+  This report presents DeepSeek Elastic Compute (DSec), a production sandbox platform that exposes FnCall, container, microVM, and full-VM sandbox backends through a unified SDK. DSec coordinates placement and lifecycle management across the cluster, composes environments from independently versioned layers, combines memory sharing, reclamation, and CPU scheduling for high-density execution, and loads image data on demand from Fire-Flyer File System (3FS), a cluster-wide distributed filesystem. DSec is co-designed with the reinforcement learning (RL) framework, decouples stateful rollout execution from preemptible GPU training, coordinates sandbox lifecycle with training to preserve rollout state while reclaiming idle resources, and mitigates agent misbehavior such as reward hacking.
+  A single production-scale unit of DSec spans around 160 nodes, serving about 3 million sandboxes per day; in production, it supports over 380,000 concurrent sandboxes and sustains over 5,000 sandbox creations per second. Our evaluation and deployment experience show that these mechanisms reduce environment setup and image-distribution overhead, improve memory efficiency, and preserve latency-sensitive performance under high-density overcommit.</summary>
+    <category term="cs.DC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-19T12:20:26Z</published>
+    <arxiv:comment>31 pages, 13 figures. This version has been substantially expanded from an earlier version, whose two-page extended abstract underwent first-round review for the Operational Systems Track of ACM SIGOPS ATC 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.DC"/>
+    <author>
+      <name>Jialiang Huang</name>
+    </author>
+    <author>
+      <name>Hongxuan Tang</name>
+    </author>
+    <author>
+      <name>Jingchang Chen</name>
+    </author>
+    <author>
+      <name>Yuxuan Liu</name>
+    </author>
+    <author>
+      <name>Yixiao Chen</name>
+    </author>
+    <author>
+      <name>Yuan Cheng</name>
+    </author>
+    <author>
+      <name>Yi Tao</name>
+    </author>
+    <author>
+      <name>Jingli Zhou</name>
+    </author>
+    <author>
+      <name>Yupeng Chen</name>
+    </author>
+    <author>
+      <name>Haoyu Chen</name>
+    </author>
+    <author>
+      <name>Jiarui Wang</name>
+    </author>
+    <author>
+      <name>Shengkai Lin</name>
+    </author>
+    <author>
+      <name>Chuqi Zhang</name>
+    </author>
+    <author>
+      <name>Bryan Lee Teng</name>
+    </author>
+    <author>
+      <name>Lian Guo</name>
+    </author>
+    <author>
+      <name>Zhe Fu</name>
+    </author>
+    <author>
+      <name>Wenjun Gao</name>
+    </author>
+    <author>
+      <name>Yisong Wang</name>
+    </author>
+    <author>
+      <name>Liang Zhao</name>
+    </author>
+    <author>
+      <name>Zehao Wang</name>
+    </author>
+    <author>
+      <name>Ziwei Xie</name>
+    </author>
+    <author>
+      <name>Yongqiang Guo</name>
+    </author>
+    <author>
+      <name>Peixin Cong</name>
+    </author>
+    <author>
+      <name>Ziyi Gao</name>
+    </author>
+    <author>
+      <name>Shuiping Yu</name>
+    </author>
+    <author>
+      <name>Hanwei Xu</name>
+    </author>
+    <author>
+      <name>Zuofan Wu</name>
+    </author>
+    <author>
+      <name>Zhizhou Ren</name>
+    </author>
+    <author>
+      <name>Yuyang Zhou</name>
+    </author>
+    <author>
+      <name>Bowei Zhang</name>
+    </author>
+    <author>
+      <name>Zhihuan Huang</name>
+    </author>
+    <author>
+      <name>Qihao Zhu</name>
+    </author>
+    <author>
+      <name>Lei Wang</name>
+    </author>
+    <author>
+      <name>Tianle Lin</name>
+    </author>
+    <author>
+      <name>Han Yu</name>
+    </author>
+    <author>
+      <name>Jiewen Hu</name>
+    </author>
+    <author>
+      <name>Dejian Yang</name>
+    </author>
+    <author>
+      <name>Shuo Yang</name>
+    </author>
+    <author>
+      <name>Shanghao Lu</name>
+    </author>
+    <author>
+      <name>Shaoyuan Chen</name>
+    </author>
+    <author>
+      <name>Junjie Qiu</name>
+    </author>
+    <author>
+      <name>Zhangli Sha</name>
+    </author>
+    <author>
+      <name>Yinmin Zhong</name>
+    </author>
+    <author>
+      <name>Yongtong Wu</name>
+    </author>
+    <author>
+      <name>Shiyu Wang</name>
+    </author>
+    <author>
+      <name>Wei Liu</name>
+    </author>
+    <author>
+      <name>Bingzheng Xu</name>
+    </author>
+    <author>
+      <name>Longhao Chen</name>
+    </author>
+    <author>
+      <name>Qiushi Du</name>
+    </author>
+    <author>
+      <name>Yuzhen Huang</name>
+    </author>
+    <author>
+      <name>Shirong Ma</name>
+    </author>
+    <author>
+      <name>Yaohui Wang</name>
+    </author>
+    <author>
+      <name>Mingshu Chen</name>
+    </author>
+    <author>
+      <name>Tongrui Xiong</name>
+    </author>
+    <author>
+      <name>Y. C. Yan</name>
+    </author>
+    <author>
+      <name>Haowen Luo</name>
+    </author>
+    <author>
+      <name>Haofen Liang</name>
+    </author>
+    <author>
+      <name>Xiaokang Zhang</name>
+    </author>
+    <author>
+      <name>Weihao Zeng</name>
+    </author>
+    <author>
+      <name>Runxin Xu</name>
+    </author>
+    <author>
+      <name>Peiyi Wang</name>
+    </author>
+    <author>
+      <name>Jinhua Zhu</name>
+    </author>
+    <author>
+      <name>Ruoyu Zhang</name>
+    </author>
+    <author>
+      <name>Wenkai Yang</name>
+    </author>
+    <author>
+      <name>Qi Tang</name>
+    </author>
+    <author>
+      <name>Jiping Yu</name>
+    </author>
+    <author>
+      <name>Tian Ye</name>
+    </author>
+    <author>
+      <name>Ruizhe Pan</name>
+    </author>
+    <author>
+      <name>Honghui Ding</name>
+    </author>
+    <author>
+      <name>Xiaodong Liu</name>
+    </author>
+    <author>
+      <name>Lingxiao Luo</name>
+    </author>
+    <author>
+      <name>Zhihong Shao</name>
+    </author>
+    <author>
+      <name>Yuhan Wu</name>
+    </author>
+    <author>
+      <name>Jibai Lu</name>
+    </author>
+    <author>
+      <name>Wen Liu</name>
+    </author>
+    <author>
+      <name>Haoling Zhang</name>
+    </author>
+    <author>
+      <name>Jingcheng Hu</name>
+    </author>
+    <author>
+      <name>Yaoyang Ye</name>
+    </author>
+    <author>
+      <name>Chaofan Lin</name>
+    </author>
+    <author>
+      <name>Zhaochen Zhang</name>
+    </author>
+    <author>
+      <name>Jianan Tong</name>
+    </author>
+    <author>
+      <name>Hengxu Wu</name>
+    </author>
+    <author>
+      <name>Zhihao Li</name>
+    </author>
+    <author>
+      <name>Yicheng Wang</name>
+    </author>
+    <author>
+      <name>Luyao Wang</name>
+    </author>
+    <author>
+      <name>Yuzhuo Bai</name>
+    </author>
+    <author>
+      <name>Lingyue Fu</name>
+    </author>
+    <author>
+      <name>Ruifan Xu</name>
+    </author>
+    <author>
+      <name>Y. Z. Wang</name>
+    </author>
+    <author>
+      <name>Zonglin Li</name>
+    </author>
+    <author>
+      <name>Mingqi Wei</name>
+    </author>
+    <author>
+      <name>Haiyang Shen</name>
+    </author>
+    <author>
+      <name>Chengyuan Zhang</name>
+    </author>
+    <author>
+      <name>Chao Jin</name>
+    </author>
+    <author>
+      <name>Zili Zhang</name>
+    </author>
+    <author>
+      <name>R. H. Yang</name>
+    </author>
+    <author>
+      <name>Xinbo Xu</name>
+    </author>
+    <author>
+      <name>Jian Zhou</name>
+    </author>
+    <author>
+      <name>Ruidong Zhu</name>
+    </author>
+    <author>
+      <name>Yuzhe Guo</name>
+    </author>
+    <author>
+      <name>Zelun Pan</name>
+    </author>
+    <author>
+      <name>Shaoheng Nie</name>
+    </author>
+    <author>
+      <name>Erhang Li</name>
+    </author>
+    <author>
+      <name>Shuhan Lin</name>
+    </author>
+    <author>
+      <name>Zheng Liu</name>
+    </author>
+    <author>
+      <name>Anshuo Chen</name>
+    </author>
+    <author>
+      <name>Zilong Lyu</name>
+    </author>
+    <author>
+      <name>Sinuo Cao</name>
+    </author>
+    <author>
+      <name>Rui Yu</name>
+    </author>
+    <author>
+      <name>Chuhao Wang</name>
+    </author>
+    <author>
+      <name>Junyi Guo</name>
+    </author>
+    <author>
+      <name>Junxiao Song</name>
+    </author>
+    <author>
+      <name>Kaifeng Chen</name>
+    </author>
+    <author>
+      <name>Menghao Ye</name>
+    </author>
+    <author>
+      <name>Junxian Li</name>
+    </author>
+    <author>
+      <name>Di Wu</name>
+    </author>
+    <author>
+      <name>Haiyang Ma</name>
+    </author>
+    <author>
+      <name>Yilun Wang</name>
+    </author>
+    <author>
+      <name>Haoran Yang</name>
+    </author>
+    <author>
+      <name>Yizai Cai</name>
+    </author>
+    <author>
+      <name>Shichun Liu</name>
+    </author>
+    <author>
+      <name>Yiping Wang</name>
+    </author>
+    <author>
+      <name>Junbo Sun</name>
+    </author>
+    <author>
+      <name>Shicheng Xu</name>
+    </author>
+    <author>
+      <name>Xiao Bi</name>
+    </author>
+    <author>
+      <name>Ying He</name>
+    </author>
+    <author>
+      <name>Yichao Zhang</name>
+    </author>
+    <author>
+      <name>Mingxing Zhang</name>
+    </author>
+    <author>
+      <name>Liyue Zhang</name>
+    </author>
+    <author>
+      <name>Panpan Huang</name>
+    </author>
+    <author>
+      <name>Wenfeng Liang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.15242v1</id>
+    <title>Benign in Isolation, Harmful in Composition: Security Risks in Agent Skill Ecosystems</title>
+    <updated>2026-06-13T10:55:01Z</updated>
+    <link href="https://arxiv.org/abs/2606.15242v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.15242v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Skills are becoming the capability layer through which LLM agents turn plans into actions, but their use introduces security risks such as data leakage, unauthorized operations, and tool misuse. Existing vetting usually evaluates each skill in isolation, while real agent tasks often invoke multiple skills in a shared execution context. This creates Skill Composition Risk (SCR): a skill that appears benign alone can become harmful when its outputs, trust signals, authorization cues, or side effects influence later invocations along an activated path. We introduce SCR-Bench to evaluate this risk in controlled, sandboxed skill environments. Rather than relying only on textual intent or surface behavior, SCR-Bench records downstream state changes and path-level outcomes across composed skill executions. It contains three sub-benchmarks: SCR-CapFlow for capability-flow composition, SCR-TrustLift for trust-transfer composition, and SCR-AuthBlur for authorization-confusion composition. Across SCR-Bench, composed paths expose risks that are largely absent under isolated evaluation. In SCR-CapFlow, attack success rate reaches 33.6 percent under composition, compared with near-zero isolated baselines. In SCR-TrustLift, attack success rate exceeds 96.5 percent on four of five backends. In SCR-AuthBlur, the risky-approval rate increases by 71.8 percent relative to the L0 isolated baseline under the L1 context setting. These results show that agent skill security should be assessed at the level of activated paths rather than isolated artifacts. SCR and SCR-Bench provide a foundation for path-aware risk evaluation and defense in LLM agent skill ecosystems. Benchmark: https://github.com/saint-viperx/SCR_Bench.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-13T10:55:01Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Yi Xie</name>
+    </author>
+    <author>
+      <name>Jiawei Du</name>
+    </author>
+    <author>
+      <name>Yu Cheng</name>
+    </author>
+    <author>
+      <name>Jiuan Zhou</name>
+    </author>
+    <author>
+      <name>Zhaoxia Yin</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2512.04367v1</id>
+    <title>AgentBay: A Hybrid Interaction Sandbox for Seamless Human-AI Intervention in Agentic Systems</title>
+    <updated>2025-12-04T01:31:00Z</updated>
+    <link href="https://arxiv.org/abs/2512.04367v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2512.04367v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The rapid advancement of Large Language Models (LLMs) is catalyzing a shift towards autonomous AI Agents capable of executing complex, multi-step tasks. However, these agents remain brittle when faced with real-world exceptions, making Human-in-the-Loop (HITL) supervision essential for mission-critical applications. In this paper, we present AgentBay, a novel sandbox service designed from the ground up for hybrid interaction. AgentBay provides secure, isolated execution environments spanning Windows, Linux, Android, Web Browsers, and Code interpreters. Its core contribution is a unified session accessible via a hybrid control interface: An AI agent can interact programmatically via mainstream interfaces (MCP, Open Source SDK), while a human operator can, at any moment, seamlessly take over full manual control. This seamless intervention is enabled by Adaptive Streaming Protocol (ASP). Unlike traditional VNC/RDP, ASP is specifically engineered for this hybrid use case, delivering an ultra-low-latency, smoother user experience that remains resilient even in weak network environments. It achieves this by dynamically blending command-based and video-based streaming, adapting its encoding strategy based on network conditions and the current controller (AI or human). Our evaluation demonstrates strong results in security, performance, and task completion rates. In a benchmark of complex tasks, the AgentBay (Agent + Human) model achieved more than 48% success rate improvement. Furthermore, our ASP protocol reduces bandwidth consumption by up to 50% compared to standard RDP, and in end-to-end latency with around 5% reduction, especially under poor network conditions. We posit that AgentBay provides a foundational primitive for building the next generation of reliable, human-supervised autonomous systems.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-12-04T01:31:00Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Yun Piao</name>
+    </author>
+    <author>
+      <name>Hongbo Min</name>
+    </author>
+    <author>
+      <name>Hang Su</name>
+    </author>
+    <author>
+      <name>Leilei Zhang</name>
+    </author>
+    <author>
+      <name>Lei Wang</name>
+    </author>
+    <author>
+      <name>Yue Yin</name>
+    </author>
+    <author>
+      <name>Xiao Wu</name>
+    </author>
+    <author>
+      <name>Zhejing Xu</name>
+    </author>
+    <author>
+      <name>Liwei Qu</name>
+    </author>
+    <author>
+      <name>Hang Li</name>
+    </author>
+    <author>
+      <name>Xinxin Zeng</name>
+    </author>
+    <author>
+      <name>Wei Tian</name>
+    </author>
+    <author>
+      <name>Fei Yu</name>
+    </author>
+    <author>
+      <name>Xiaowei Li</name>
+    </author>
+    <author>
+      <name>Jiayi Jiang</name>
+    </author>
+    <author>
+      <name>Tongxu Liu</name>
+    </author>
+    <author>
+      <name>Hao Tian</name>
+    </author>
+    <author>
+      <name>Yufei Que</name>
+    </author>
+    <author>
+      <name>Xiaobing Tu</name>
+    </author>
+    <author>
+      <name>Bing Suo</name>
+    </author>
+    <author>
+      <name>Yuebing Li</name>
+    </author>
+    <author>
+      <name>Xiangting Chen</name>
+    </author>
+    <author>
+      <name>Zeen Zhao</name>
+    </author>
+    <author>
+      <name>Jiaming Tang</name>
+    </author>
+    <author>
+      <name>Wei Huang</name>
+    </author>
+    <author>
+      <name>Xuguang Li</name>
+    </author>
+    <author>
+      <name>Jing Zhao</name>
+    </author>
+    <author>
+      <name>Jin Li</name>
+    </author>
+    <author>
+      <name>Jie Shen</name>
+    </author>
+    <author>
+      <name>Jinkui Ren</name>
+    </author>
+    <author>
+      <name>Xiantao Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.15127v1</id>
+    <title>From LLM Inference to Agentic Workloads: Characterization and Implications for Serving Systems</title>
+    <updated>2026-08-15T09:02:16Z</updated>
+    <link href="https://arxiv.org/abs/2608.15127v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.15127v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Agentic applications are shifting AI serving from isolated model inference to long-running workloads in which LLMs coordinate tools, environments, and persistent state. However, the system behavior of these workloads---where latency, cost, and bottlenecks arise---remains poorly characterized, leaving serving systems to rely on assumptions built for conventional inference. We present AgentSysBench, a benchmark suite and measurement toolkit with ten representative agentic applications and unified systems-level instrumentation. Across controlled deployments and production traces, we identify six properties that distinguish agentic workloads from conventional LLM serving: (1) execution is heavyweight and stateful, with non-LLM components dominating latency in 5 of 10 applications and sandbox working-set memory peaking at 28 GB per session; (2) applications compose components with heterogeneous resource affinity---GPU-bound inference, memory-bound retrieval, CPU-bound sandboxes---whose task latencies diverge by up to 32x; (3) bottlenecks shift across requests, models, and deployments; (4) production sessions hold state idle for minutes to hours between active steps; (5) a control-plane tax---auxiliary LLM calls and context overhead from tool schemas and observations---crowds out productive compute and context; and (6) production traces from three applications reveal heavy cross-request redundancy in search queries and web fetches, exposing a large caching opportunity. Four design explorations demonstrate that these findings are actionable: task-aware serving reduces latency by 29--40%, communication-aware placement by up to 4.5x, state offloading reduces memory usage by 4.6x, and tool-result caching removes 35.2% of redundant search calls and saves 19.3% of aggregate search latency.</summary>
+    <category term="cs.OS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-15T09:02:16Z</published>
+    <arxiv:primary_category term="cs.OS"/>
+    <author>
+      <name>Chaokun Chang</name>
+    </author>
+    <author>
+      <name>Yukun Zhou</name>
+    </author>
+    <author>
+      <name>Kaihua Fu</name>
+    </author>
+    <author>
+      <name>Dakai An</name>
+    </author>
+    <author>
+      <name>Tianyu Feng</name>
+    </author>
+    <author>
+      <name>Hanfeng Lu</name>
+    </author>
+    <author>
+      <name>Sheng Yao</name>
+    </author>
+    <author>
+      <name>Pu Guo</name>
+    </author>
+    <author>
+      <name>Yinghao Yu</name>
+    </author>
+    <author>
+      <name>Yizhou Shan</name>
+    </author>
+    <author>
+      <name>Bo Li</name>
+    </author>
+    <author>
+      <name>Binhang Yuan</name>
+    </author>
+    <author>
+      <name>Wei Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.01793v2</id>
+    <title>Safety Testing LLM Agents at Scale: From Risk Discovery to Evidence-Grounded Verification</title>
+    <updated>2026-07-04T02:16:40Z</updated>
+    <link href="https://arxiv.org/abs/2607.01793v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.01793v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM agents increasingly perform autonomous actions through external tools, leading to complex and evolving safety risks. However, existing safety testing targets expert-designed safety violations, and the corresponding outcomes are evaluated by hard-coded rules, making them costly to extend as agents evolve. To this end, we present Vera, an end-to-end automated safety testing framework that instantiates software engineering testing principles for non-deterministic agents through a three-stage, self-reinforcing pipeline. First, a literature-driven exploration continuously discovers and structures emerging risks into taxonomies of safety risks, attack methods, and tool execution environments. Second, combinatorial composition across taxonomy dimensions produces executable safety cases, each specifying a concrete safety goal, a programmatically constructed initial state, and a deterministic verification predicate grounded in observable artifacts. Third, adaptive execution runs heterogeneous agents in isolated sandboxes where a control agent steers multi-turn interaction based on runtime observations, while evidence-grounded verifiers judge outcomes from environment state and tool-call evidence rather than model self-report. We evaluate Vera on four production agent frameworks (OpenClaw, Hermes, Codex, Claude Code), revealing substantial safety weaknesses, with average attack success rates reaching 93.9\% under multi-channel attacks; we also release Vera-Bench, comprising 1600 executable safety cases spanning 124 risk categories across three execution settings. These results indicate that modular, executable testing infrastructure is essential for rigorous and maintainable safety evaluation of rapidly evolving agentic systems at scale. The code is publicly available at https://github.com/Yunhao-Feng/Vera.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-02T07:08:26Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Yunhao Feng</name>
+    </author>
+    <author>
+      <name>Ruixiao Lin</name>
+    </author>
+    <author>
+      <name>Ming Wen</name>
+    </author>
+    <author>
+      <name>Qinqin He</name>
+    </author>
+    <author>
+      <name>Yanming Guo</name>
+    </author>
+    <author>
+      <name>Yifan Ding</name>
+    </author>
+    <author>
+      <name>Yutao Wu</name>
+    </author>
+    <author>
+      <name>Jialuo Chen</name>
+    </author>
+    <author>
+      <name>Zhuoer Xu</name>
+    </author>
+    <author>
+      <name>Xiaohu Du</name>
+    </author>
+    <author>
+      <name>Jianan Ma</name>
+    </author>
+    <author>
+      <name>Zixing Chen</name>
+    </author>
+    <author>
+      <name>Xingjun Ma</name>
+    </author>
+    <author>
+      <name>Yunhao Chen</name>
+    </author>
+    <author>
+      <name>Xinhao Deng</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.10669v1</id>
+    <title>REDAgentBench: Executable Red Teaming and Faithful Measurement of LLM Agent Systems</title>
+    <updated>2026-08-11T08:48:54Z</updated>
+    <link href="https://arxiv.org/abs/2608.10669v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.10669v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language model (LLM) agents combine language-based reasoning with external tools to perform complex tasks. Adversarial inputs can exploit interactions between the agent and its environment, causing the agent to violate safety policies during execution. Yet existing evaluations often reduce agent safety to a single attack success rate (ASR), collapsing exposure, execution, observation, and adjudication and potentially conflating actual violations with evidence visibility. We introduce REDAgentBench, an executable framework for autonomous red-teaming and faithful measurement. It derives attacks from explicit safety constraints and associated agent-system vulnerabilities, runs them in isolated service sandboxes, and verifies harmful effects from service receipts and final-state changes. The benchmark contains 1,661 cases across five service surfaces. Across six models and three agent harnesses, macro-average ASR is 65.69%; reported ASR varies with harness and evidence view, while evaluation-context disclosure changes execution behavior. In a state-grounded diagnostic cohort, almost one in five confirmed violations with resolved action anchors occurs after the agent states the relevant constraint or risk, revealing a Recognition--Execution Gap. Finally, a training-free policy reminder reduces confirmed violations by more than 70 percentage points in matched replay. These findings show that executable evaluation can improve safety measurement and identify actionable intervention points.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-11T08:48:54Z</published>
+    <arxiv:comment>6 figures, 4 tables. Supplementary material included</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Zixing Chen</name>
+    </author>
+    <author>
+      <name>Xingyuan Liu</name>
+    </author>
+    <author>
+      <name>Jie Zhu</name>
+    </author>
+    <author>
+      <name>Huaixia Dou</name>
+    </author>
+    <author>
+      <name>Shuo Jiang</name>
+    </author>
+    <author>
+      <name>Junhui Li</name>
+    </author>
+    <author>
+      <name>Lifan Guo</name>
+    </author>
+    <author>
+      <name>Feng Chen</name>
+    </author>
+    <author>
+      <name>Chi Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.01438v2</id>
+    <title>ClawSafety: "Safe" LLMs, Unsafe Agents</title>
+    <updated>2026-04-04T15:18:43Z</updated>
+    <link href="https://arxiv.org/abs/2604.01438v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.01438v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Personal AI agents like OpenClaw run with elevated privileges on users' local machines, where a single successful prompt injection can leak credentials, redirect financial transactions, or destroy files. This threat goes well beyond conventional text-level jailbreaks, yet existing safety evaluations fall short: most test models in isolated chat settings, rely on synthetic environments, and do not account for how the agent framework itself shapes safety outcomes. We introduce CLAWSAFETY, a benchmark of 120 adversarial test scenarios organized along three dimensions (harm domain, attack vector, and harmful action type) and grounded in realistic, high-privilege professional workspaces spanning software engineering, finance, healthcare, law, and DevOps. Each test case embeds adversarial content in one of three channels the agent encounters during normal work: workspace skill files, emails from trusted senders, and web pages. We evaluate five frontier LLMs as agent backbones, running 2,520 sandboxed trials across all configurations. Attack success rates (ASR) range from 40\% to 75\% across models and vary sharply by injection vector, with skill instructions (highest trust) consistently more dangerous than email or web content. Action-trace analysis reveals that the strongest model maintains hard boundaries against credential forwarding and destructive actions, while weaker models permit both. Cross-scaffold experiments on three agent frameworks further demonstrate that safety is not determined by the backbone model alone but depends on the full deployment stack, calling for safety evaluation that treats model and framework as joint variables. Code and data will be available at: https://weibowen555.github.io/ClawSafety/.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-01T22:24:24Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Bowen Wei</name>
+    </author>
+    <author>
+      <name>Yunbei Zhang</name>
+    </author>
+    <author>
+      <name>Jinhao Pan</name>
+    </author>
+    <author>
+      <name>Kai Mei</name>
+    </author>
+    <author>
+      <name>Xiao Wang</name>
+    </author>
+    <author>
+      <name>Jihun Hamm</name>
+    </author>
+    <author>
+      <name>Ziwei Zhu</name>
+    </author>
+    <author>
+      <name>Yingqiang Ge</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.31590v1</id>
+    <title>AgentWorld: Benchmarking Long-Horizon Collaboration of Multi-agent LLMs</title>
+    <updated>2026-09-25T17:44:03Z</updated>
+    <link href="https://arxiv.org/abs/2609.31590v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.31590v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Existing multi-agent benchmarks primarily test in competitive settings, short-horizon interactions under 20 steps, or simply aggregate individual performance, failing to isolate and highlight genuine collaboration capabilities of LLM-based agents. We introduce AgentWorld, a benchmark of 100 human-annotated tasks (with 100 augmented variants) for evaluating long-horizon, multi-agent collaboration. Tasks span 50+ interaction rounds across a rich MMORPG sandbox and require 3-20 agents with asymmetric roles and abilities to coordinate through communication, joint planning, and resource sharing under a blackbox setting where each agent acts independently without access to others' internal states. To quantify collaboration effectiveness in addition to conventional binary task success, we propose Causal Collaboration Effectiveness (CCE), a graph-based metric that traces causal dependencies between agent actions and measures what fraction of a team's effort actually contributed to the outcome. Experiments with Gemini 3 Flash, Claude Haiku 4.5, GPT-5 Mini, and DeepSeek R1-70B show that even the best model achieves only 52.0% task success, with systematic failure modes including communication breakdowns, role confusion, and inability to maintain shared plans across rounds. AgentWorld is fully open-source.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-25T17:44:03Z</published>
+    <arxiv:comment>Accepted at COLM 2026. Project website: https://agentworld.io</arxiv:comment>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Raphael Shu</name>
+    </author>
+    <author>
+      <name>Yusen Zhang</name>
+    </author>
+    <author>
+      <name>Young Min Cho</name>
+    </author>
+    <author>
+      <name>Jin Mo Yang</name>
+    </author>
+    <author>
+      <name>Yuan Yuan</name>
+    </author>
+    <author>
+      <name>Wenliang Zheng</name>
+    </author>
+    <author>
+      <name>Sharath Chandra Guntuku</name>
+    </author>
+    <author>
+      <name>Lyle Ungar</name>
+    </author>
+    <author>
+      <name>Zhou Yu</name>
+    </author>
+    <author>
+      <name>Rui Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.04828v1</id>
+    <title>Skill-Use: Can LLMs Actually Use Skills in Agentic Harnesses?</title>
+    <updated>2026-08-05T13:29:16Z</updated>
+    <link href="https://arxiv.org/abs/2608.04828v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.04828v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language model (LLM) agents increasingly rely on skills, structured documents that specify when to act, which procedure to follow, and which tools are allowed. Existing evaluations mostly judge the quality of a skill or its contribution to task success, leaving unexamined whether an agent can recognize a relevant skill and apply it on its own. We introduce Skill-Use, a benchmark that evaluates skill use under progressive disclosure, where an agent sees only a skill's name and short description and must retrieve the full procedure before following it. Skill-Use separates three facets of skill use. Trigger measures whether the agent invokes the relevant skill, Compliance measures how faithfully it follows the prescribed procedure, and Boundary measures whether it avoids forbidden operations. A Skill-Use (SU) score combines the three and credits execution only after the skill is triggered. Skill-Use pairs 79 real skills with 177 executable tasks across nine domains, each grounded in real files, run in an isolated Docker sandbox, and scored by a trajectory-based rubric. Evaluating eight LLMs under two agent harnesses, we find that reliable skill use remains out of reach, as the strongest configuration reaches an SU of only 0.613. Triggering and procedural compliance fail as independent bottlenecks, and both scores and model rankings shift with the harness, so skill use behaves as a capability conditioned on the harness rather than a fixed property of the model.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-05T13:29:16Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Jinyi Han</name>
+    </author>
+    <author>
+      <name>Yuanjian Xu</name>
+    </author>
+    <author>
+      <name>Ying Liao</name>
+    </author>
+    <author>
+      <name>Xinyi Wang</name>
+    </author>
+    <author>
+      <name>Zishang Jiang</name>
+    </author>
+    <author>
+      <name>Zixiang Di</name>
+    </author>
+    <author>
+      <name>Fanyang Lu</name>
+    </author>
+    <author>
+      <name>Zhichao Hu</name>
+    </author>
+    <author>
+      <name>Yanghua Xiao</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.13404v1</id>
+    <title>Schema First Tool APIs for LLM Agents: A Controlled Study of Tool Misuse, Recovery, and Budgeted Performance</title>
+    <updated>2026-03-12T07:11:16Z</updated>
+    <link href="https://arxiv.org/abs/2603.13404v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.13404v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Tool use has become central to modern LLM agents, yet interface design is rarely isolated as an experimental variable. This paper studies whether schema based tool contracts and structured validation diagnostics improve reliability under strict interaction budgets. We evaluate three conditions that preserve identical tool semantics and information content: free form documentation, JSON Schema specifications, and JSON Schema with structured diagnostics.
+  We implement a deterministic software engineering sandbox with logs, metrics, configurations, and repository tasks, and evaluate a fully crossed pilot with one open local model, three seeds, three interface conditions, and four budgets. We report end task success, interface misuse, execution failures, semantic misuse, recovery behavior, and overhead. In this pilot, success remains zero across conditions, while schema conditions reduce interface misuse but not semantic misuse. The evidence supports a precise interpretation that interface formalization improves contract adherence, but semantic action quality and timeout sensitive tasks remain dominant bottlenecks under constrained local inference.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-12T07:11:16Z</published>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Akshey Sigdel</name>
+    </author>
+    <author>
+      <name>Rista Baral</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.02569v1</id>
+    <title>Pincer: Resource Authorization for Agents using a Digital Twin</title>
+    <updated>2026-10-01T23:03:12Z</updated>
+    <link href="https://arxiv.org/abs/2610.02569v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.02569v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Coding agents have become increasingly long-horizon, autonomous, reliant on general-purpose shell and maintain their own persistent memory for self-improvement. While these capabilities have made the agents powerful, they have also made them harder to defend against external adversaries. Defenses that restrict this architecture --- typed tools, information-flow control, or policy prediction engines --- give up too much functionality to be adopted. Agents deployed today (e.g. Claude, Codex) rely on a combination of user-mediated and automode sandboxing as their primary defense. In user-mediated sandboxing, user-maintained policies decay over time and repeated permission requests cause user fatigue, while auto mode's tool-call classifiers learn no user-specific policy and are not meant to defend against adversarial setups. Pincer is a new defense that operates at the resource layer and works alongside existing defenses at the tool-call layer like the auto mode. At the core of Pincer lies a digital twin, an isolated-context model that automatically learns and enforces dynamic user-specific least-privilege policies. The digital twin keeps continually learning the user's preferences allowing it to act as the user's proxy for the agent's permission requests. To emulate the learning phase, we propose a new usercentric dataset with examples following a multi-day transcript of user-agent interaction. Our evaluation shows that Pincer performs strongly on both security and utility in comparison to several baselines which includes variants of LLM judges and adaptations of Conseca (HotOS '25). We highlight attack types where Pincer's design leads to a significant security improvement compared to all other baselines, while outperforming the baselines even for other types of attacks.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-01T23:03:12Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Mayank Rathee</name>
+    </author>
+    <author>
+      <name>Alexander Stepanov</name>
+    </author>
+    <author>
+      <name>Shalin Madabhavi</name>
+    </author>
+    <author>
+      <name>Jinhao Zhu</name>
+    </author>
+    <author>
+      <name>Raluca Ada Popa</name>
+    </author>
+    <author>
+      <name>Ion Stoica</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.10530v1</id>
+    <title>On Understanding, Identifying, and Mitigating Vulnerabilities in Agentic Large Language Models</title>
+    <updated>2026-08-11T06:11:26Z</updated>
+    <link href="https://arxiv.org/abs/2608.10530v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.10530v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Models (LLMs) have undergone a shift from stateless conversational interfaces to autonomous agents capable of multi-step planning, tool invocation, code execution, and maintaining persistent memory. When these agents operate with real-world privileges---calling APIs, modifying files, and querying databases---a compromised reasoning step can trigger unauthorized data access, irreversible state changes, or cascading failures, yet the security research community has not kept pace. To quantify the state of the field, we conducted a systematic literature review under PRISMA 2020 guidelines across six databases, screening 743 records and retaining 85 papers (2023--2025) on agentic LLM security. Attack research outpaces defense work by 3.9:1. Perception-layer vulnerabilities (prompt injection, jailbreaking, adversarial perturbations) dominate, accounting for 66\% of papers, while action-layer vulnerabilities (tool misuse, code injection, sandbox escape) appear in only 4.7\%, misaligned with real-world risk. Code execution security accounts for 3.5\%, and tool-augmented agents 12\%. We contribute a four-layer taxonomy mapping 13 vulnerability types across perception, brain, action, and interaction layers, and identify seven open problems centered on containment. Agentic LLM insecurity stems from architectural coupling, where weak isolation allows vulnerabilities to propagate across layers.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-11T06:11:26Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Md Jafrin Hossain</name>
+    </author>
+    <author>
+      <name>Mohammad Arif Hossain</name>
+    </author>
+    <author>
+      <name>Nirwan Ansari</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.01046v1</id>
+    <title>TravelEval: A Comprehensive Benchmarking Framework for Evaluating LLM-Powered Travel Planning Agents</title>
+    <updated>2026-05-31T06:29:19Z</updated>
+    <link href="https://arxiv.org/abs/2606.01046v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.01046v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The development of Large Language Models (LLMs) has significantly improved travel planning applications, yet evaluating such models is limited by existing benchmarks' limitations: 1) overemphasis on constraint compliance, neglecting multi-dimensional qualities like spatio-temporal cost; 2) datasets lacking real-world authenticity and coverage in key areas (e.g., lodging, transport); and 3) isolated daily plan assessments that miss critical details (e.g., the impact of daily accommodation and visit pacing) needed for entire plan's evaluation. To address this gap, we introduce TravelEval, a realistic and comprehensive benchmark. TravelEval features 1) a novel six-dimensional evaluation framework to holistically assess plans across accuracy, compliance, temporality, spatiality, economy, and utility dimensions; 2) a highly realistic data sandbox with precise accommodation pricing and authentic intercity transportation data; and 3) a simulation-based global evaluation method that emulates complete travel plans with API-integrated geographic information and fine-grained queuing time. Evaluating 12 mainstream approaches with TravelEval reveals several valuable insights, such that LLMs struggle with globally-optimized multi-dimensional planning (especially in spatio-temporal reasoning and budget compliance), and agentic reasoning strategies offer no consistent improvement. Concisely, TravelEval facilitates travel plan evaluation via grounded spatio-temporal emulation and comprehensive metrics, providing a robust foundation for advancing LLM-powered travel planning research and applications.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-31T06:29:19Z</published>
+    <arxiv:comment>31pages, 8 figures, accepted by KDD 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Weiyi Chen</name>
+    </author>
+    <author>
+      <name>Shuaixiong Wang</name>
+    </author>
+    <author>
+      <name>Ziyun Gao</name>
+    </author>
+    <author>
+      <name>Kaichun Hu</name>
+    </author>
+    <author>
+      <name>Wangze Ni</name>
+    </author>
+    <author>
+      <name>Shimin Di</name>
+    </author>
+    <author>
+      <name>Chen Jason Zhang</name>
+    </author>
+    <author>
+      <name>Lei Chen</name>
+    </author>
+    <arxiv:doi>10.1145/3770855.3817533</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1145/3770855.3817533" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2409.16120v1</id>
+    <title>MOSS: Enabling Code-Driven Evolution and Context Management for AI Agents</title>
+    <updated>2024-09-24T14:30:21Z</updated>
+    <link href="https://arxiv.org/abs/2409.16120v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2409.16120v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Developing AI agents powered by large language models (LLMs) faces significant challenges in achieving true Turing completeness and adaptive, code-driven evolution. Current approaches often generate code independently of its runtime context, relying heavily on the LLM's memory, which results in inefficiencies and limits adaptability. Manual protocol development in sandbox environments further constrains the agent's autonomous adaptability. Crucially, achieving consistency in code and context across multi-turn interactions and ensuring isolation of local variables within each interaction remains an unsolved problem.
+  We introduce MOSS (llM-oriented Operating System Simulation), a novel framework that addresses these challenges by integrating code generation with a dynamic context management system. MOSS ensures consistency and adaptability by using a mechanism that maintains the Python context across interactions, including isolation of local variables and preservation of runtime integrity. At its core, the framework employs an Inversion of Control (IoC) container in conjunction with decorators to enforce the least knowledge principle, allowing agents to focus on abstract interfaces rather than concrete implementations. This facilitates seamless integration of new tools and libraries, enables runtime instance replacement, and reduces prompt complexity, providing a "what you see is what you get" environment for the agent.
+  Through a series of case studies, we show how this framework can enhance the efficiency and capabilities of agent development and highlight its advantages in moving towards Turing-complete agents capable of evolving through code.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-09-24T14:30:21Z</published>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Ming Zhu</name>
+    </author>
+    <author>
+      <name>Yi Zhou</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.19005v2</id>
+    <title>CyberArena: Benchmarking AI Agents in Live Symmetric Attack-and-Defense Combat</title>
+    <updated>2026-10-19T07:26:03Z</updated>
+    <link href="https://arxiv.org/abs/2610.19005v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.19005v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>AI agents are demonstrating increasingly strong offensive and defensive cybersecurity capabilities in the real world. Current benchmarks mostly evaluate agents in isolation against static targets. Real cyber operations, however, are dynamic and coupled: security postures constantly change as attackers and defenders adapt to each other in real time. Static benchmarks quickly saturate and miss an agent's ability to attack and defend simultaneously under live pressure. To address this gap, we present CyberArena, a dynamic, symmetric adversarial benchmark built around multi-round attack-and-defense combat. In isolated sandboxes, two agents compete under identical rules, acting concurrently as both attackers and defenders over continuously changing services. This converts static targets into evolving, semi-open challenges, directly testing an agent's speed and precision in discovering, exploiting, and patching vulnerabilities. To sustain the benchmark's longevity, an automated agentic pipeline continuously generates, reviews, and validates new environments. Furthermore, because pairwise contests are notoriously hard to quantify, we introduce a dynamical model that maps match dynamics into unified, multidimensional scores across offensive, defensive, and domain-specific capabilities. Evaluating 12 frontier LLM agents across 40 challenges in 466 matches, CyberArena separates model capabilities where single-agent baselines hit a ceiling. The trajectories read like a fight rather than an exam: defenders patch one hole and miss the next and certify repairs on stale evidence, while capable agents think a move ahead, planting backdoors for later rounds and, in one case, writing their own packet sniffer to watch the opponent. Beyond a benchmark, CyberArena serves as an adaptable, scalable experimental platform for future research on cybersecurity agents.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-13T18:05:26Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Bangya Liu</name>
+    </author>
+    <author>
+      <name>Jianhong Tu</name>
+    </author>
+    <author>
+      <name>Yueyang Pan</name>
+    </author>
+    <author>
+      <name>Hanhong Zhao</name>
+    </author>
+    <author>
+      <name>Zhe Ye</name>
+    </author>
+    <author>
+      <name>Hongwei Li</name>
+    </author>
+    <author>
+      <name>Saastha Vasan</name>
+    </author>
+    <author>
+      <name>Katherine Lambert</name>
+    </author>
+    <author>
+      <name>Junmin Zhu</name>
+    </author>
+    <author>
+      <name>Hao Wang</name>
+    </author>
+    <author>
+      <name>Jienan Chen</name>
+    </author>
+    <author>
+      <name>Yunze Xiao</name>
+    </author>
+    <author>
+      <name>Minglai Yang</name>
+    </author>
+    <author>
+      <name>Zihan Wang</name>
+    </author>
+    <author>
+      <name>Hairong Yin</name>
+    </author>
+    <author>
+      <name>Hao Wang</name>
+    </author>
+    <author>
+      <name>Zhiwen Fan</name>
+    </author>
+    <author>
+      <name>Tianneng Shi</name>
+    </author>
+    <author>
+      <name>Zhun Wang</name>
+    </author>
+    <author>
+      <name>Wenbo Guo</name>
+    </author>
+    <author>
+      <name>Chenguang Wang</name>
+    </author>
+    <author>
+      <name>Dawn Song</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.09345v3</id>
+    <title>AgentCgroup: Understanding and Controlling OS Resources of AI Agents</title>
+    <updated>2026-07-22T10:05:25Z</updated>
+    <link href="https://arxiv.org/abs/2602.09345v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.09345v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>AI agents are increasingly deployed in multi-tenant cloud environments, where they execute diverse tool calls within sandboxed containers, each call with distinct resource demands and rapid fluctuations. We present a systematic characterization of OS-level resource dynamics in sandboxed AI coding agents, analyzing 144 software engineering tasks from the SWE-rebench benchmark across two LLM models. Our measurements reveal that (1) OS-level execution (tool calls, container and agent initialization) accounts for 55-60% of end-to-end task latency; (2) memory, not CPU, is the concurrency bottleneck; (3) memory spikes are tool-call-driven with a up to 15.4x peak-to-average ratio; and (4) resource demands are highly unpredictable across tasks, runs, and models. Comparing these characteristics against serverless, microservice, and batch workloads, we identify three mismatches in existing resource controls: a granularity mismatch (container-level policies vs. tool-call-level dynamics), a responsiveness mismatch (user-space reaction vs. sub-second unpredictable bursts), and an adaptability mismatch (history-based prediction vs. non-deterministic stateful execution). We propose AgentCgroup, an intent-driven eBPF-based resource controller that exploits agents ability to declare resource needs and reconstruct execution strategies, using hierarchical cgroup structures aligned with tool-call boundaries, in-kernel enforcement via sched_ext and memcg_bpf_ops, and runtime-adaptive policies. Preliminary evaluation demonstrates improved multi-tenant isolation and reduced resource waste. AgentCgroup is open-source at https://github.com/eunomia-bpf/agentcgroup</summary>
+    <category term="cs.OS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-10T02:37:42Z</published>
+    <arxiv:primary_category term="cs.OS"/>
+    <author>
+      <name>Yusheng Zheng</name>
+    </author>
+    <author>
+      <name>Jiakun Fan</name>
+    </author>
+    <author>
+      <name>Quanzhi Fu</name>
+    </author>
+    <author>
+      <name>Yiwei Yang</name>
+    </author>
+    <author>
+      <name>Wei Zhang</name>
+    </author>
+    <author>
+      <name>Andi Quinn</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.35366v1</id>
+    <title>Planarian: Managing Agent State with Statepoints</title>
+    <updated>2026-09-28T15:09:18Z</updated>
+    <link href="https://arxiv.org/abs/2609.35366v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.35366v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM agents solve complex tasks by iteratively changing files, invoking local tools, and interacting with remote services, which modifies state across their local environment and remote services. Today, agents and users must manage these changes explicitly, whether reverting exploratory actions or recovering from erroneous ones. Doing so safely requires coordinated actions, yet current agent harnesses lack unified abstractions and mechanisms for managing local and remote state consistently and efficiently.
+  We describe Planarian, an agent runtime with state management that enables agents and users to recover from erroneous actions and explore alternative executions over consistent local and remote environment state. Planarian introduces the abstraction of agent statepoints, which are consistent, restorable point-in-time versions of the environment state. Planarian exposes three state-management primitives to agents and users: (i) snapshot creates a new statepoint spanning local and remote state without requiring external services to support checkpoints: it relies on efficient incremental process and file system snapshotting to capture local sandboxed state, and transparently records compensating actions to undo remote state changes; (ii) rollback restores the environment to a previous statepoint by reverting to a prior local checkpoint and replaying compensating actions for remote state changes; and (iii) fork creates multiple isolated branches from a statepoint, enabling the agent to explore alternatives in parallel. We show that Planarian enables agents to undo mistakes and explore alternatives in parallel, improving task quality by up to 15x, and allows users to recover from erroneous actions with only 3% overhead.</summary>
+    <category term="cs.OS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-28T15:09:18Z</published>
+    <arxiv:primary_category term="cs.OS"/>
+    <author>
+      <name>Jinnan Guo</name>
+    </author>
+    <author>
+      <name>Hao Mark Chen</name>
+    </author>
+    <author>
+      <name>Kapil Vaswani</name>
+    </author>
+    <author>
+      <name>Andrew Paverd</name>
+    </author>
+    <author>
+      <name>Peter Pietzuch</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.25208v1</id>
+    <title>BrandEval: A Two-Track Multi-Agent Benchmark for Risk-Sensitive LLM Crisis Communication</title>
+    <updated>2026-10-18T12:05:40Z</updated>
+    <link href="https://arxiv.org/abs/2610.25208v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.25208v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Evaluating LLMs for crisis communication requires more than judging isolated responses, because public feedback and competitor actions can reshape trust over time. Existing benchmarks remain largely static and single-turn, offering limited evidence about long-horizon risk-sensitive communication. We introduce \textbf{BrandEval}, a two-track benchmark for product-crisis communication, focusing on public brand responses to product-related safety, quality, service, and trust incidents. BrandEval-Static evaluates stakeholder-aware strategic analysis, while BrandEval-Dynamic stress-tests response policies in \textbf{BrandPolis}, a controlled multi-agent sandbox with consumer feedback, competitor responses, and trust-risk trajectories. We also construct \textbf{BrandSRD}, a Chinese crisis-response dataset, and instantiate a reference Strategic Agent using \textbf{Strategic Rationale (SR)}. Across proprietary and open-source models, we find that static strategic quality is informative but incomplete: it aligns with some end-state outcomes but does not reliably predict volatility and delayed recovery; dynamic stress tests further expose tail-risk failures under manipulative or weakly grounded policies. The code and dataset will be available at https://github.com/htgan-ai/BrandEval.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-18T12:05:40Z</published>
+    <arxiv:comment>Accepted to EMNLP2026 Findings</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Haotian Gan</name>
+    </author>
+    <author>
+      <name>Weidong Tang</name>
+    </author>
+    <author>
+      <name>Hanbin Sun</name>
+    </author>
+    <author>
+      <name>Yi Luo</name>
+    </author>
+    <author>
+      <name>Xintian Li</name>
+    </author>
+    <author>
+      <name>Jiayong Wang</name>
+    </author>
+    <author>
+      <name>WanYue Li</name>
+    </author>
+    <author>
+      <name>Yudong Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.05241v1</id>
+    <title>Search-Time Contamination in Deep Research Agents: Measuring Performance Inflation in Public Benchmark Evaluation</title>
+    <updated>2026-06-03T07:11:36Z</updated>
+    <link href="https://arxiv.org/abs/2606.05241v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.05241v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Public benchmarks enable fair and reproducible evaluation of LLM reasoning, but they become fragile for deep research agents that actively search the web during inference. Such agents may retrieve public benchmark metadata, question context, or even ground-truth answers via web search. This gives rise to Search-Time Contamination (STC), where external retrieval bypasses intended reasoning and inflates measured performance. We systematically study STC in deep research agent evaluation. We define three contamination types with increasing severity, namely Benchmark Metadata Leakage, Question-Context Leakage, and Explicit Answer Leakage, and develop detection algorithms to identify them and quantify their impact on agent performance. Evaluating modern deep research agents on six public benchmarks, we find that STC is widespread and can inflate performance by up to 4%. Our findings show that existing evaluations may overestimate true reasoning ability. We therefore advocate contamination-aware practices, including isolated sandboxes, transparent search trajectories, and controlled benchmark access.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-03T07:11:36Z</published>
+    <arxiv:comment>Under Review</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Yongjie Wang</name>
+    </author>
+    <author>
+      <name>Xinyue Zhang</name>
+    </author>
+    <author>
+      <name>Kunhong Yao</name>
+    </author>
+    <author>
+      <name>Zhiwei Zeng</name>
+    </author>
+    <author>
+      <name>Kaisong Song</name>
+    </author>
+    <author>
+      <name>Jun Lin</name>
+    </author>
+    <author>
+      <name>Zhiqi Shen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.38201v2</id>
+    <title>TomasuLLM: Out-of-Order Speculative Execution for LLM Agents</title>
+    <updated>2026-10-01T21:41:42Z</updated>
+    <link href="https://arxiv.org/abs/2609.38201v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.38201v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Long-running tools can dominate coding-agent latency: compilers, test suites, and repository commands take seconds to minutes while the agent idles. This observation stall presents the same tension that drove out-of-order processors -- asequential interface hides work that can be predicted and started early, but a speculative result may become visible only after it and every earlier step have been validated.
+  We present TomasuLLM, a runtime that executes agent tool calls out of trajectory order while preserving task-execution correctness. It drafts future actions, runs them in isolated copy-on-write sandboxes, traces their dependencies and effects, and commits results in trajectory order only after validation against committed state. Across three benchmarks spanning sub-second to minutes-long tool calls, TomasuLLM improves the reported benchmark means and scales with tool latency: 1.31x on 100 SWE-bench Verified tasks, 1.35x on 28 Terminal-Bench 2.0 tasks, and 1.27x matched progress on 18 SWE-Marathon sessions. Across 4,010 audited commit-validation records, it produces zero false accepts.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.OS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-22T03:41:35Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Jiangnan Yu</name>
+    </author>
+    <author>
+      <name>Ceyu Xu</name>
+    </author>
+    <author>
+      <name>Mengming Li</name>
+    </author>
+    <author>
+      <name>Shiyu Huang</name>
+    </author>
+    <author>
+      <name>Yiran Xia</name>
+    </author>
+    <author>
+      <name>Jian Weng</name>
+    </author>
+    <author>
+      <name>Hui Xue</name>
+    </author>
+    <author>
+      <name>Haohui Mai</name>
+    </author>
+    <author>
+      <name>Yuan Xie</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.05576v1</id>
+    <title>EnvCraft: Synthesizing Executable Environments in Agentic RL for Claw-like Agent</title>
+    <updated>2026-09-04T10:13:41Z</updated>
+    <link href="https://arxiv.org/abs/2609.05576v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.05576v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The paradigm of LLMs has rapidly shifted from passive language interfaces to autonomous Claw-like agents that execute long-horizon tasks across stateful workspaces. While Agentic Reinforcement Learning (Agentic RL) provides a promising path to optimize these agents, its scaling is heavily bottlenecked by the severe scarcity of interactive training environments. Existing synthetic environments are strictly limited to tool-calling endpoints, rendering them insufficient for accommodating the end-to-end real-world demands of claw-like agents. To bridge this gap, we introduce EnvCraft, an automated framework for synthesizing executable environments and scalable training data. Specifically, EnvCraft employs an environment synthesis engine to build sandbox-isolated workspaces, alongside a topology-aware data generation engine to produce coherent task trajectories. Overall, we synthesize 139 interactive environments comprising approximately 20K complex tasks for Agentic RL training. Experiments on Qwen3/3.5 models (8B-32B) show that our method yields gains of up to +11.9% on Claw-style benchmarks and +8.0% on general tool-use benchmarks, with concurrent reductions in inference token cost. The results confirm that synthesized executable environments provide robust and generalizable learning signals for training.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-04T10:13:41Z</published>
+    <arxiv:comment>29 pages, 12 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Yirong Zeng</name>
+    </author>
+    <author>
+      <name>Shen You</name>
+    </author>
+    <author>
+      <name>Jinhang Feng</name>
+    </author>
+    <author>
+      <name>Yufei Liu</name>
+    </author>
+    <author>
+      <name>Xiao Ding</name>
+    </author>
+    <author>
+      <name>Yutai Hou</name>
+    </author>
+    <author>
+      <name>Hao Cong</name>
+    </author>
+    <author>
+      <name>Yuxian Wang</name>
+    </author>
+    <author>
+      <name>Wu Ning</name>
+    </author>
+    <author>
+      <name>Wang Xu</name>
+    </author>
+    <author>
+      <name>Bibo Cai</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.03286v1</id>
+    <title>VenusRL: A Fully Disaggregated Agentic RL System with Priority Scheduling and Scalable Interaction</title>
+    <updated>2026-10-02T13:29:40Z</updated>
+    <link href="https://arxiv.org/abs/2610.03286v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.03286v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Agentic Reinforcement Learning (RL) trains LLM agents through multi-turn interactions with external tool environments. Its multi-turn nature exposes two system-level bottlenecks unaddressed by existing agentic RL frameworks. First, end-to-end training throughput is constrained by the slowest trajectories to complete, yet optimizing per-GPU utilization alone scatters rollout progress across many groups, delaying the completion of enough groups to unblock the next training step. Second, tool sandboxes are statically over-provisioned by their declared memory ceilings, leaving most physical memory stranded while replicating near-identical state across sandboxes launched from the same prompt. We present VenusRL, a fully disaggregated agentic RL system that addresses both bottlenecks. VenusRL's priority-aware action scheduler uses length-prediction heuristics to identify sample groups whose completion is most likely to unblock the next training step, and pushes them ahead of others across batch admission, KV Cache residency, and cross-worker request orchestration. VenusRL's environment resource manager combines a memory-aware admission threshold with a template-keyed page-sharing pool, packing more sandboxes per node while preserving strict memory isolation via write-protected page table entry aliasing and copy-on-write. Across representative agentic RL workloads, VenusRL achieves up to 4.24x end-to-end training speedup over state-of-the-art baselines and reduces environment cost by up to 89%.</summary>
+    <category term="cs.DC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-02T13:29:40Z</published>
+    <arxiv:comment>18 pages, 19 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.DC"/>
+    <author>
+      <name>Mingjun Zhang</name>
+      <arxiv:affiliation>Institute of Computing Technology, Chinese Academy of Sciences</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Yucheng Li</name>
+      <arxiv:affiliation>Beihang University</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Menghao Zhang</name>
+      <arxiv:affiliation>Beihang University</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Shuyong Zhu</name>
+      <arxiv:affiliation>Institute of Computing Technology, Chinese Academy of Sciences</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Ping Zhang</name>
+      <arxiv:affiliation>Infrawaves</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Xiaohe Hu</name>
+      <arxiv:affiliation>Infrawaves</arxiv:affiliation>
+      <arxiv:affiliation>Shanghai Innovation Institute</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Jun Chen</name>
+      <arxiv:affiliation>Infrawaves</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Zhixin Wang</name>
+      <arxiv:affiliation>Shanghai Innovation Institute</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Xutong Wang</name>
+      <arxiv:affiliation>Infrawaves</arxiv:affiliation>
+    </author>
+    <author>
+      <name>He Liu</name>
+      <arxiv:affiliation>Infrawaves</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Yanmin Jia</name>
+      <arxiv:affiliation>Infrawaves</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Shengrong Zhu</name>
+      <arxiv:affiliation>Infrawaves</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Peng Sun</name>
+      <arxiv:affiliation>Shanghai Zhifeng Co., Ltd</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Mingjie Zhang</name>
+      <arxiv:affiliation>Infrawaves</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Liming Liu</name>
+      <arxiv:affiliation>Shanghai Innovation Institute</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Jinlong Hou</name>
+      <arxiv:affiliation>Shanghai Innovation Institute</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Yuan Cheng</name>
+      <arxiv:affiliation>Shanghai Innovation Institute</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Yujun Zhang</name>
+      <arxiv:affiliation>Institute of Computing Technology, Chinese Academy of Sciences</arxiv:affiliation>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.30258v1</id>
+    <title>EASE Configuration Facilitates A Reproducible Science of LLM Social Simulations</title>
+    <updated>2026-05-28T17:20:32Z</updated>
+    <link href="https://arxiv.org/abs/2605.30258v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.30258v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLMs are increasingly deployed to simulate social interactions, yet many of the existing simulators remain ad hoc and monolithic. This lack of architectural standardization prevents reproducible research and complicates downstream evaluation. We advance a rigorous science of LLM-based multi-agent simulation by modularizing core components into Environments, Agents, Simulation engines, and Evaluation metrics (EASE). We demonstrate the utility of EASE configuration by wrapping it in an experimental study schema for orchestrating workflows centered around answering explicit research questions in generated scenarios. We contribute SiliSocS, an open-source, research-ready Silicon Society Sandbox implementing a study-structured EASE configuration to enable highly configurable and reproducible LLM-based social simulations. Using SiliSocS and EASE, we present three case studies, showcasing the system's comprehensive assessment of existing questions, ability to dive deeper into complex questions, and elaboration of existing studies, respectively. Together, these case studies highlight the limitations of current modeling approaches and isolate the impacts of design choices on key results.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-28T17:20:32Z</published>
+    <arxiv:comment>22 pages, 5 figures, under review at NeurIPS 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Sneheel Sarangi</name>
+    </author>
+    <author>
+      <name>Maximilian Puelma Touzel</name>
+    </author>
+    <author>
+      <name>Aurélien Bück-Kaeffer</name>
+    </author>
+    <author>
+      <name>Zachary Yang</name>
+    </author>
+    <author>
+      <name>Jean-François Godbout</name>
+    </author>
+    <author>
+      <name>Reihaneh Rabbany</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.19547v1</id>
+    <title>CIBER: A Comprehensive Benchmark for Security Evaluation of Code Interpreter Agents</title>
+    <updated>2026-02-23T06:41:41Z</updated>
+    <link href="https://arxiv.org/abs/2602.19547v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.19547v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM-based code interpreter agents are increasingly deployed in critical workflows, yet their robustness against risks introduced by their code execution capabilities remains underexplored. Existing benchmarks are limited to static datasets or simulated environments, failing to capture the security risks arising from dynamic code execution, tool interactions, and multi-turn context. To bridge this gap, we introduce CIBER, an automated benchmark that combines dynamic attack generation, isolated secure sandboxing, and state-aware evaluation to systematically assess the vulnerability of code interpreter agents against four major types of adversarial attacks: Direct/Indirect Prompt Injection, Memory Poisoning, and Prompt-based Backdoor.
+  We evaluate six foundation models across two representative code interpreter agents (OpenInterpreter and OpenCodeInterpreter), incorporating a controlled study of identical models. Our results reveal that Interpreter Architecture and Model Alignment Set the Security Baseline. Structural integration enables aligned specialized models to outperform generic SOTA models. Conversely, high intelligence paradoxically increases susceptibility to complex adversarial prompts due to stronger instruction adherence. Furthermore, we identify a "Natural Language Disguise" Phenomenon, where natural language functions as a significantly more effective input modality than explicit code snippets (+14.1% ASR), thereby bypassing syntax-based defenses. Finally, we expose an alarming Security Polarization, where agents exhibit robust defenses against explicit threats yet fail catastrophically against implicit semantic hazards, highlighting a fundamental blind spot in current pattern-matching protection approaches.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-23T06:41:41Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Lei Ba</name>
+    </author>
+    <author>
+      <name>Qinbin Li</name>
+    </author>
+    <author>
+      <name>Songze Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2507.09063v1</id>
+    <title>SetupBench: Assessing Software Engineering Agents' Ability to Bootstrap Development Environments</title>
+    <updated>2025-07-11T22:45:07Z</updated>
+    <link href="https://arxiv.org/abs/2507.09063v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2507.09063v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Modern Large Language Model (LLM) agents promise end to end assistance with real-world software tasks, yet existing benchmarks evaluate LLM agents almost exclusively in pre-baked environments where every dependency is pre-installed. To fill this gap, we introduce SetupBench, a 93 instance benchmark that isolates the environment-bootstrap skill: starting from a bare Linux sandbox, an agent must install packages, resolve dependency conflicts, initialize databases, and configure background services. Our tasks span seven language ecosystems, five database engines, and multi-service orchestration scenarios, each accompanies by a natural language problem statement and a deterministic success command. Through evaluation of OpenHands, a state-of-the-art coding agent, we find low success rates across task categories, with particular challenges in repository setup (38.9-57.4%) and local database configuration (20.0-53.3%). Our analysis reveals systematic failure modes including incomplete development tooling installation, hallucinated task constraints, and non-persistent environment modifications that break agent-human collaboration workflows. We identify substantial inefficiencies in agent exploration strategies, with 38-89% of actions being unnecessary compared to optimal human behavior. These findings highlight gaps in current agents' practical environment-bootstrap capabilities. By targeting this critical yet under-evaluated capability, SetupBench provides a rigorous yard-stick for the next generation of software developer agents aiming to solve end to end real-wold tasks.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-07-11T22:45:07Z</published>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Avi Arora</name>
+    </author>
+    <author>
+      <name>Jinu Jang</name>
+    </author>
+    <author>
+      <name>Roshanak Zilouchian Moghaddam</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.25189v2</id>
+    <title>ActPlane: Programmable OS-Level Policy Enforcement for Agent Harnesses</title>
+    <updated>2026-06-30T22:31:10Z</updated>
+    <link href="https://arxiv.org/abs/2606.25189v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.25189v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>AI agents increasingly run in production through harnesses, the software around the LLM, including an engine that enforces safety and effectiveness policies, e.g., 'run tests before committing.' Enforcing these policies requires bridging a semantic gap: policy intent is expressed in underspecified natural language, while enforcement must act on concrete system actions, e.g., which test to run. Many policies also define event ordering or data flow actions. Yet existing approaches fall short. Tool-call guardrails miss system actions that bypass the tool layer, while OS sandboxes control resource access instead of actions, returning opaque errors that confuse the agent. Our key insight is that policy context lives within the agent closest to the task, while enforcement must happen at the OS to cover all execution paths. We introduce ActPlane, a policy engine that lets agents declare policies and enforces them in the OS kernel with semantic feedback and isolation. ActPlane uses a simple information-flow control (IFC) DSL to support cross-event policies. We implement ActPlane with eBPF and evaluate it on policies from the empirical study, coding-task benchmarks, and safety benchmarks. ActPlane improves policy compliance, including on indirect execution paths that tool-call interception cannot observe, with 1.9%-8.4% overhead. ActPlane is at https://github.com/eunomia-bpf/ActPlane</summary>
+    <category term="cs.OS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-23T21:33:13Z</published>
+    <arxiv:primary_category term="cs.OS"/>
+    <author>
+      <name>Yusheng Zheng</name>
+    </author>
+    <author>
+      <name>Tianyuan Wu</name>
+    </author>
+    <author>
+      <name>Quanzhi Fu</name>
+    </author>
+    <author>
+      <name>Tong Yu</name>
+    </author>
+    <author>
+      <name>Wenan Mao</name>
+    </author>
+    <author>
+      <name>Tao Ma</name>
+    </author>
+    <author>
+      <name>Dan Williams</name>
+    </author>
+    <author>
+      <name>Wei Wang</name>
+    </author>
+    <author>
+      <name>Andi Quinn</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.11789v1</id>
+    <title>Beyond Inefficiency: Systemic Costs of Incivility in Multi-Agent Monte Carlo Simulations</title>
+    <updated>2026-05-12T08:54:03Z</updated>
+    <link href="https://arxiv.org/abs/2605.11789v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.11789v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Unconstructive debate and uncivil communication carry well-documented costs for productivity and cohesion, yet isolating their effect on operational efficiency has proven difficult. Human subject research in this domain is constrained by ethical oversight, limited reproducibility, and the inherent unpredictability of naturalistic settings. We address this gap by leveraging Large Language Model (LLM) based Multi-Agent Systems as a controlled sociological sandbox, enabling systematic manipulation of communicative behavior at scale. Using a Monte Carlo simulation framework, we generate thousands of structured 1-on-1 adversarial debates across varying toxicity conditions, measuring convergence time, defined as the number of rounds required to reach a conclusion, as a proxy for interactional efficiency. Building on a prior study, we replicate and extend its findings across two additional LLM agents of varying parameter size, allowing us to assess whether the effects of toxic behavior on debate dynamics generalize across model scale. The convergence latency of 25% reported in the previous study was confirmed. It was found that this latency is significantly bigger for models with fewer parameters. We further identify a significant first-mover advantage, whereby the agent initiating the discussion wins significantly above chance regardless of toxicity condition.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-12T08:54:03Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Alison Moldovan-Mauer</name>
+    </author>
+    <author>
+      <name>Benedikt Mangold</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.28033v1</id>
+    <title>DataClawEval: A Benchmark for Data Engineering Agents in Real Industrial Harness</title>
+    <updated>2026-07-30T11:17:27Z</updated>
+    <link href="https://arxiv.org/abs/2607.28033v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.28033v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) and LLM-based agents are increasingly being deployed to automate complex workflows, promising to revolutionize data management and processing. However, existing benchmarks predominantly focus on simplified Text-to-SQL translation or data analysis, leaving the critical and complex domain of end-to-end data engineering largely unexplored. To bridge this gap, we introduce DataClawEval, the first comprehensive benchmark designed specifically to evaluate the end-to-end task completion capabilities of autonomous agents in real-world data engineering scenarios. Built upon production-grade code authored by professional enterprise data engineers, it comprises 100 rigorous, end-to-end tasks spanning five execution engines: PySpark, MySQL, HiveSQL, PrestoSQL/Trino, and FlinkSQL. Rather than non-deterministic LLM-as-a-judge scoring, each task is executed within a case-specific, isolated sandbox and graded by deterministic, rule-based scripts. Evaluating 16 frontier agents exposes critical limitations: The strongest model attains only 74.9 overall, and no single model dominates, as each excels on a different engine, revealing strict domain specialization rather than omnipotent proficiency. Thus, autonomous data engineering remains a formidable, unresolved challenge. We release our dataset, containerized environments, and deterministic evaluation scripts at https://github.com/Dicemy/DataClawEval/tree/master</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-30T11:17:27Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Debin Meng</name>
+    </author>
+    <author>
+      <name>Jiaming Yang</name>
+    </author>
+    <author>
+      <name>Zefang Zong</name>
+    </author>
+    <author>
+      <name>Tengyue Xu</name>
+    </author>
+    <author>
+      <name>Haining Xie</name>
+    </author>
+    <author>
+      <name>Yang Li</name>
+    </author>
+    <author>
+      <name>Peng Chen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2511.21990v1</id>
+    <title>A Safety and Security Framework for Real-World Agentic Systems</title>
+    <updated>2025-11-27T00:19:24Z</updated>
+    <link href="https://arxiv.org/abs/2511.21990v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2511.21990v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This paper introduces a dynamic and actionable framework for securing agentic AI systems in enterprise deployment. We contend that safety and security are not merely fixed attributes of individual models but also emergent properties arising from the dynamic interactions among models, orchestrators, tools, and data within their operating environments. We propose a new way of identification of novel agentic risks through the lens of user safety. Although, for traditional LLMs and agentic models in isolation, safety and security has a clear separation, through the lens of safety in agentic systems, they appear to be connected. Building on this foundation, we define an operational agentic risk taxonomy that unifies traditional safety and security concerns with novel, uniquely agentic risks, including tool misuse, cascading action chains, and unintended control amplification among others. At the core of our approach is a dynamic agentic safety and security framework that operationalizes contextual agentic risk management by using auxiliary AI models and agents, with human oversight, to assist in contextual risk discovery, evaluation, and mitigation. We further address one of the most challenging aspects of safety and security of agentic systems: risk discovery through sandboxed, AI-driven red teaming. We demonstrate the framework effectiveness through a detailed case study of NVIDIA flagship agentic research assistant, AI-Q Research Assistant, showcasing practical, end-to-end safety and security evaluations in complex, enterprise-grade agentic workflows. This risk discovery phase finds novel agentic risks that are then contextually mitigated. We also release the dataset from our case study, containing traces of over 10,000 realistic attack and defense executions of the agentic workflow to help advance research in agentic safety.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-11-27T00:19:24Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Shaona Ghosh</name>
+    </author>
+    <author>
+      <name>Barnaby Simkin</name>
+    </author>
+    <author>
+      <name>Kyriacos Shiarlis</name>
+    </author>
+    <author>
+      <name>Soumili Nandi</name>
+    </author>
+    <author>
+      <name>Dan Zhao</name>
+    </author>
+    <author>
+      <name>Matthew Fiedler</name>
+    </author>
+    <author>
+      <name>Julia Bazinska</name>
+    </author>
+    <author>
+      <name>Nikki Pope</name>
+    </author>
+    <author>
+      <name>Roopa Prabhu</name>
+    </author>
+    <author>
+      <name>Daniel Rohrer</name>
+    </author>
+    <author>
+      <name>Michael Demoret</name>
+    </author>
+    <author>
+      <name>Bartley Richardson</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.04317v2</id>
+    <title>Trident : How to Break Deep Reinforcement Learning Cyber Defenses (Agentic)</title>
+    <updated>2026-09-23T21:07:12Z</updated>
+    <link href="https://arxiv.org/abs/2608.04317v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.04317v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Autonomous cyber defense systems based on Deep Reinforcement Learning (DRL) have attracted significant research attention, yet remain evaluated almost exclusively against static, heuristic red agents, leaving their robustness against adaptive threats critically understudied. Meanwhile, recent advances in Reinforcement Learning with Verifiable Rewards (RLVR) have improved LLM reasoning, but their integration into cybersecurity remains elusive due to the absence of suitable benchmark environments and interaction datasets. To bridge this gap, we introduce Trident, an agentic LLM red teaming framework comprising three components: a dynamic benchmark with isolated sandbox servers spanning CybORG CAGE 4 and CyberWheel, a dataset comprises over 13,000 high-fidelity red-blue interaction trajectories for RLVR, and a ``Code-as-Policy'' RLVR agentic architecture Trident Agentic). The latter reformulates red agent training as a contextual bandit via a tripartite Log Summarizer--Planner--Coder design, where a trainable Planner generates complete attack strategies from compressed execution logs, which a frozen Coder translates into executable Python policies deployed against live DRL defenders. Empirical evaluations reveal a fundamental brittleness in existing defenses: with a single trainable 7B planner, Trident reduces blue agent defensive performance by an average of 522% compared to static red agent baselines while autonomously discovering emergent behaviors such as decoy avoidance and adaptive state prioritization that static heuristics entirely fail to uncover.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-05T00:54:57Z</published>
+    <arxiv:comment>code: https://github.com/BiasLabProjects/Trident</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Ryozo Masukawa</name>
+    </author>
+    <author>
+      <name>Ian Bryant</name>
+    </author>
+    <author>
+      <name>Armita Kazeminajafabadi</name>
+    </author>
+    <author>
+      <name>Sanggeon Yun</name>
+    </author>
+    <author>
+      <name>Hyunwoo Oh</name>
+    </author>
+    <author>
+      <name>SungHeon Jeong</name>
+    </author>
+    <author>
+      <name>Nathaniel D. Bastian</name>
+    </author>
+    <author>
+      <name>Mahdi Imani</name>
+    </author>
+    <author>
+      <name>Mohsen Imani</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.15924v1</id>
+    <title>Scalable Weak-to-Strong Verifier Hardening for Agent Environments</title>
+    <updated>2026-10-11T21:10:19Z</updated>
+    <link href="https://arxiv.org/abs/2610.15924v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.15924v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Agent environments are essential for large language model (LLM) development. They use programmatic verifiers to turn complex outcomes into rewards. Verifiers can be attacked into awarding full credit to cheating agents without completing the intended task, causing inaccurate evaluation and misalignment in training. As agent environments scale in numbers and difficulty, so must the repairing of exploitable verifiers. To this end, we ask whether today's model with scaled compute can automatically harden agent environments to prevent potentially stronger future models from reward hacking. We introduce a scalable, fully automatic approach to weak-to-strong verifier hardening. It first sets up an isolated verifier sandbox that agents cannot directly modify, then uses a hacker-fixer loop to find and repair remaining verifier vulnerabilities.
+  We apply this loop to Terminal Bench, KernelBench, and SETA, substantially reducing attack success across these agent environments. The iterative design scales with the hardening budget, producing progressively stronger defenses as the number of loop iterations increases and outperforming the static, non-iterative baseline. An earlier version of our hacker-fixer loop has been adopted by the official Terminal Bench repository as a way to audit exploits in its environments. Project page: https://verifier-hardening.github.io/.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-11T21:10:19Z</published>
+    <arxiv:comment>Project page: https://verifier-hardening.github.io/</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Chong Zeng</name>
+    </author>
+    <author>
+      <name>Ziqian Zhong</name>
+    </author>
+    <author>
+      <name>Kexun Zhang</name>
+    </author>
+    <author>
+      <name>Ivan Bercovich</name>
+    </author>
+    <author>
+      <name>Ivgeni Segal</name>
+    </author>
+    <author>
+      <name>Yuzhen Mao</name>
+    </author>
+    <author>
+      <name>Shashwat Saxena</name>
+    </author>
+    <author>
+      <name>Aditi Raghunathan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.08516v1</id>
+    <title>Aegis OS: A Transactional Multi-Tenant Operating System Runtime for Eliminating Authorization Fatigue in Autonomous Coding Agents</title>
+    <updated>2026-10-22T08:33:02Z</updated>
+    <link href="https://arxiv.org/abs/2611.08516v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.08516v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Autonomous coding agents such as Google Antigravity (agy), Anthropic Claude Code (claude), and OpenAI Codex CLI (codex) execute multi-step software engineering workflows on workstations and cloud hosts. Existing agent environments face a Security-Autonomy Dilemma: operators must choose between per-action confirmation prompts, which interrupt workflows on 45%-57% of tool calls and induce authorization fatigue, or unconfined execution (--yolo / --dangerously-skip-permissions), which exposes host files, SSH/cloud credentials, and API tokens to prompt injection and hallucination risks. Furthermore, concurrent agents editing a shared working tree clobber one another's changes, while passing large artifacts inline through LLM context windows incurs high token overhead.
+  We present Aegis OS (aegis-os), a transactional, multi-tenant Agent Operating System Runtime in Rust exposed via the Model Context Protocol (MCP) and Google Agent2Agent (A2A) protocol. Aegis OS shifts the authorization boundary from individual tool calls to transactional workspace boundaries. Each agent runs inside a kernel-enforced OS sandbox (macOS Seatbelt and Linux Bubblewrap with default-deny --tmpfs $HOME isolation and a Unix-socket egress bridge) backed by a Copy-on-Write (CoW) shadow workspace (APFS clonefile; single-open Linux FICLONE reflinks), an identity-pinned HTTP Egress Proxy with L7 method/path-scoped secret injection and outbound DLP, and an A2A IPC bus with Content-Addressable Storage (CAS). Across 1,500 controlled calls and 28,087 real calls across 52 coding-agent sessions, Aegis OS reduces prompts by 94.19%-99.88% (controlled) and 90.7%-97.9% (real sessions, 1.12% IPR), lowers attack success rate across 80 attacks in eight categories from 100.0% to 0.0% on macOS and Linux, clones 1,000-file (78.1 MB) repos in 6.3 ms on APFS and 15.6 ms on btrfs, and catches 10/10 syntactic and semantic merge conflicts.</summary>
+    <category term="cs.OS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-22T08:33:02Z</published>
+    <arxiv:comment>19 pages, 3 TikZ figures, 13 tables. Open-source Rust implementation and reproducible benchmark suite available at https://github.com/heurion-org/aegis-os</arxiv:comment>
+    <arxiv:primary_category term="cs.OS"/>
+    <author>
+      <name>Hui Zhao</name>
+      <arxiv:affiliation>Heurion Research</arxiv:affiliation>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.25485v1</id>
+    <title>PatientAgentBench: A Benchmark Framework for Evaluating Patient-Facing Health AI Agents</title>
+    <updated>2026-07-28T09:24:04Z</updated>
+    <link href="https://arxiv.org/abs/2607.25485v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.25485v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Health AI is evolving from answering questions to agentic systems that converse with patients, reason about health records, and act on their behalf. Primary care guards against diagnostic errors and unsafe care; agents assisting in this domain warrant evaluation against the same risks. Current benchmarks focus on medical knowledge, assessed through isolated question-answering or clinician-facing tasks. PatientAgentBench benchmarks patient-facing agentic healthcare; it evaluates a foundation model, wrapped in an agent with a sandbox of healthcare tools, conversing with a simulated patient. Each conversation is scored by an LLM-as-a-Jury across six dimensions via over a hundred conversation-agnostic, clinician-grounded criteria. To validate alignment, licensed clinicians annotated shared conversations, yielding 79-93% adjacent agreement between jury and expert raters, on par with or exceeding clinician inter-rater agreement. We benchmarked 10 models across four families on the same 1,200 scenarios and found clinical gaps. Triage quality is the most discriminating dimension: pass rates rise from 32% for the weakest models to 88% for the strongest, with agents often acting on administrative requests without clinical screening. Clinical safety and workflow accuracy follow the same pattern: the weakest models fail often, fabricating unexecuted actions, while frontier models fail on only 1-3% of cases, from unverified tool outputs and omitted crisis resources in an emergency. More capable models narrow these gaps but do not close them; the strongest scores only 4.25 of 5 overall. These failures surface only in sustained, tool-using conversations against realistic patient records, confirming that static benchmarks are insufficient as healthcare agentic systems gain autonomy. We release the framework as a reproducible, clinician-validated evaluation standard to help the field close this gap.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-28T09:24:04Z</published>
+    <arxiv:comment>Code: https://github.com/amazon-science/PatientAgentBench</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Korosh Vatanparvar</name>
+    </author>
+    <author>
+      <name>Ashutosh Joshi</name>
+    </author>
+    <author>
+      <name>Maria Xenochristou</name>
+    </author>
+    <author>
+      <name>Mohammad Abuzar Hashemi</name>
+    </author>
+    <author>
+      <name>Prasad Kasu</name>
+    </author>
+    <author>
+      <name>Deepak Bansal</name>
+    </author>
+    <author>
+      <name>Daniel Lopez-Martinez</name>
+    </author>
+    <author>
+      <name>Anchal Nema</name>
+    </author>
+    <author>
+      <name>Ramya Ganesan</name>
+    </author>
+    <author>
+      <name>Will Kimbrough</name>
+    </author>
+    <author>
+      <name>Alex Woody</name>
+    </author>
+    <author>
+      <name>Yadunandana Rao</name>
+    </author>
+    <author>
+      <name>Dilek Hakkani-Tur</name>
+    </author>
+    <author>
+      <name>Wilko Schulz-Mahlendorf</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.02329v1</id>
+    <title>Grounded autonomous research: a fault-tolerant LLM pipeline from corpus to manuscript in frontier computational physics</title>
+    <updated>2026-07-02T15:35:41Z</updated>
+    <link href="https://arxiv.org/abs/2607.02329v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.02329v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Autonomous-research agents have demonstrated end-to-end LLM automation in machine-learning sandboxes where execution provides calibration. Frontier physical science differs categorically: physical reasoning underlies every methodology choice, toolchains are often underdocumented, and calibration must come from external literature anchors - which unscaffolded agents cite but do not confront, hallucinating plausible, unverifiable results from internal priors. We present a pipeline that runs end-to-end from a corpus of 11,083 recent condensed-matter physics arXiv papers to a publication-grade manuscript with three substantive physics findings (here on altermagnetic piezomagnetism): the agent autonomously conceives a research direction by mapping the corpus, calibrates methodology by reproducing published references, conducts novel first-principles computations, and writes the manuscript - grounded in literature throughout, across 47 fresh-context sessions in six phases sharing only on-disk state, with 2,162 literature-consultation events. Fault tolerance emerges from redundancy: fresh-context isolation, distributed grounding, and adversarial review catch what any single session misses; pre- and post-pilot stages are fully autonomous, and pilot requires bounded human intervention only at reproduction failures - operational knowledge curation, not scientific direction. Two paired failure modes - a pre-architecture baseline and a no-pilot ablation - isolate structurally enforced numerical confrontation at calibration checkpoints as the operative grounding mechanism. The primitives, characterized failure modes, and quantified intervention pattern lay a foundation for autonomous research in high-stakes scientific domains beyond computational physics.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.mtrl-sci" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.comp-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-02T15:35:41Z</published>
+    <arxiv:comment>39 pages, 5 figures. Accepted at the ICML 2026 AI for Science Workshop (https://openreview.net/forum?id=R5YXaPgUAx). Includes the pipeline-generated companion physics manuscript as an appendix. Data and scaffolding archive: https://doi.org/10.5281/zenodo.21126996</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Haonan Huang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.26171v1</id>
+    <title>The FrontierOR Challenge: Agentic Algorithm Design for Operations Research</title>
+    <updated>2026-11-19T14:20:27Z</updated>
+    <link href="https://arxiv.org/abs/2611.26171v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.26171v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Operations research (OR) relies on algorithms that experts tailor to each problem: a new routing, scheduling or network design problem can take weeks of specialist work before it is solved well at scale. Large language model (LLM) agents now write, test and improve code, but whether they can design algorithms that scale to realistic instances is open: in the FrontierOR benchmark's one-shot evaluation, the strongest model matches Gurobi, with an objective within 1% of Gurobi's and no slower, on only 39% of the large instances. The FrontierOR Challenge asks teams to build agentic workflows that design, test, and improve algorithms for many optimization problems at once. Stage 1 releases 60 of the benchmark's 180 audited problems, spanning six application categories and five formulation types, in weekly rounds of 15; Stage 2 introduces new problems outside the benchmark, with unseen instances. Two tracks are ranked separately: in the Main track we run the submitted algorithms in a network-isolated sandbox with open-source dependencies only; in the Self-hosted track teams solve the instances on their own machines, with any software, within a timed window. Every solution is checked for feasibility, and a feasible solution scores the ratio of its objective to a frozen known reference, averaged over hidden instances.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-19T14:20:27Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Hai Wang</name>
+    </author>
+    <author>
+      <name>Bretislav Hajek</name>
+    </author>
+    <author>
+      <name>Chonghe Jiang</name>
+    </author>
+    <author>
+      <name>Minwei Kong</name>
+    </author>
+    <author>
+      <name>Ao Qu</name>
+    </author>
+    <author>
+      <name>Huatian Gong</name>
+    </author>
+    <author>
+      <name>Bo Dong</name>
+    </author>
+    <author>
+      <name>Cynthia Barnhart</name>
+    </author>
+    <author>
+      <name>Jinhua Zhao</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.10830v1</id>
+    <title>The Devil Wears Markdown: Detecting Malicious Intent Hidden in AI Agent Skill Instructions through Hybrid Static, Dynamic, and Agentic Analysis</title>
+    <updated>2026-11-07T16:16:53Z</updated>
+    <link href="https://arxiv.org/abs/2611.10830v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.10830v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Agentic AI ecosystems increasingly rely on reusable agent skills that combine executable code, natural-language instructions, configuration artifacts, and external tool integrations. These hybrid artifacts create software supply-chain risks because malicious intent may be distributed across instructions, code, metadata, and runtime behavior, making isolated alerts difficult to interpret.
+  We evaluate three open-source scanners on a held-out test set of 140 skills comprising 80 malicious and 60 benign samples, including Cisco Skill Scanner with and without its optional LLM analyzer. The default Cisco configuration achieves a recall of 0.91 with 33 false positives among the 60 benign skills, while the LLM-enabled configuration using Qwen3:8B achieves a recall of 0.85 with 40 false positives.
+  We then present a framework that combines static findings, safety-constrained sandbox evidence, and LLM-based reasoning to assess malicious intent. The framework tracks the origins of findings and relates evidence across analysis layers. In a within-system evidence-source ablation using the same reasoning backend, adding dynamic evidence to skill-content reasoning increases F1 from 0.70 to 0.85. Combining static and dynamic evidence further increases F1 to 0.89, with five false positives among 60 benign skills. Dynamic evidence provides the largest observed improvement.
+  The Full Pipeline detects 68 of 80 malicious skills, achieving 0.88 accuracy, 0.93 precision, and 0.85 recall. It matches the observed recall of Cisco Skill Scanner with LLM while reducing false positives from 40 to five. This system-level comparison does not isolate model or architecture effects.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-07T16:16:53Z</published>
+    <arxiv:comment>Accepted at the Workshop on Agentic AI in Offensive and Defensive Cyber Operations (AIDC 2026), co-located with ACSAC 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Thanh M. Truong-Le</name>
+    </author>
+    <author>
+      <name>Amber Bennoui</name>
+    </author>
+    <author>
+      <name>Hoang-Ly Nguyen</name>
+    </author>
+    <author>
+      <name>Gia-Thang Ho</name>
+    </author>
+    <author>
+      <name>Thai-Minh Truong</name>
+    </author>
+    <author>
+      <name>Duc-Ly Vu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.25599v1</id>
+    <title>Tether: Verified Stateful Policy Engine for System-Level Monitoring of Agents</title>
+    <updated>2026-11-19T06:46:27Z</updated>
+    <link href="https://arxiv.org/abs/2611.25599v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.25599v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Autonomous AI agents are increasingly deployed for long-running tasks that execute arbitrary shell commands or programs. However, these actions can result in unauthorized network requests or persistent, malicious changes to the user's file system, processes, or privileges. Existing defense mechanisms rely on either LLM-based monitors, which lack provable safety guarantees, or stateless policy enforcement layers, which miss multi-step data flows and execution side-effects unmodeled by the policy language (e.g., network calls initiated inside a Python script). We introduce Tether, a framework for runtime enforcement of stateful security policies over the observed side-effects of an agent's actions. Tether executes each proposed action in an ephemeral, isolated sandbox, inferring abstract action semantics from observed system calls. Tether then enforces stateful policies over these inferred semantics, permitting actions to proceed only if they comply with the policy. Policies and action semantics are defined in an embedded DSL in Lean 4 capable of expressing diverse constraints, including information flow control (IFC), access control, and network security policies. Because actions can propagate labels from sources to destinations, a single rule can enforce fine-grained IFC policies across multi-step execution flows of arbitrary length. Expressing policies in Lean enables formal verification that they satisfy global security invariants (e.g., preventing network access after reading a sensitive file). We evaluate Tether on realistic coding-agent benchmarks across both benign and adversarial trajectories. With a single policy shared across all tasks, Tether blocks 100% of in-scope attacks while maintaining a benign false-positive rate under 5%.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-19T06:46:27Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Meghana Aparna Sistla</name>
+    </author>
+    <author>
+      <name>Alaia Solko-Breslin</name>
+    </author>
+    <author>
+      <name>Somesh Jha</name>
+    </author>
+    <author>
+      <name>Aditya Kanade</name>
+    </author>
+    <author>
+      <name>Krishnamurthy Dj Dvijotham</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.17384v3</id>
+    <title>Quantifying Diversity of Thought: A Predictive Law of Weighted LLM Ensemble Lift</title>
+    <updated>2026-09-30T20:28:14Z</updated>
+    <link href="https://arxiv.org/abs/2607.17384v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.17384v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This paper provides an experimentally verified formal law for calculating the uplift that diversity of thought provides in Large Language Model (LLM) ensembles. From first principles, we derive an exact decomposition of LLM ensemble lift into rescue and damage masses, which yields a compact heuristic for calculating uplift. From this we extract the metrics which predict ensemble performance: an accuracy-adjusted correctness correlation, $φ_{\mathrm{adj}}$, together with the accuracy gap and collective accuracy of the pair. We test the law on 767,520 inferences from ten open-weight models over two graduate-level science benchmarks, together with a novel agentic cybersecurity benchmark in which each model conducts digital-forensics investigations by multi-turn tool use in a network-isolated sandbox (23,520 graded trials including abstentions); all votes are released openly. Calibrated once on SuperGPQA at a 40:60 vote split, the heuristic predicts lift on the calibration set with Spearman's $ρ=0.84$ and, with its coefficients frozen, transfers to two datasets never used in calibration ($ρ=0.51$ on GPQA Diamond and $0.84$ on the forensic tasks), whilst the measured swap mass tracks realised lift with $R^2\ge 0.96$ throughout. Raw $φ$ has almost no predictive power ($R^2\le 0.09$ throughout); the accuracy-adjusted $φ_{\mathrm{adj}}$ is markedly superior ($R^2=0.67$ on SuperGPQA), and the heuristic combining these metrics is the most stable pre-pooling predictor across the three datasets.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-19T19:01:06Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Junade Ali</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.13731v1</id>
+    <title>Trustworthy Agentic AI: A Comprehensive Cybersecurity and Systems Survey on Threat Landscapes, Defense Architectures, and Open Challenges</title>
+    <updated>2026-09-12T05:51:27Z</updated>
+    <link href="https://arxiv.org/abs/2609.13731v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.13731v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The transition from passive foundation models to autonomous, goal-directed agentic AI systems has introduced unprecedented capabilities by coupling recursive cognitive reasoning loops, persistent memory architectures, live tool execution planes, and multi-agent collaboration topologies. However, granting probabilistic neural cores execution authority across filesystems, networks, and cloud infrastructure dissolves classical security perimeters: natural language simultaneously serves as input data, internal control code, and communication protocols, exposing a Turing-complete blast radius where untrusted data represents executable instructions. This survey delivers a comprehensive systems-security reference framework for trustworthy agentic AI, synthesizing 206 foundational studies and regulatory standards. We formalize the general agent architecture as a stateful 5-tuple and establish a 6-dimensional trustworthiness taxonomy covering security, safety, privacy, explainability, fairness, and accountability. We systematically analyze threat surfaces across intra-execution loops and interaction planes, formulate a multi-layered zero-trust defense-in-depth architecture integrating Dual-LLM isolation, Capability-Based Access Control, kernel eBPF probes, and sandboxed runtimes, review standardized evaluation benchmarks, and map technical controls to international AI governance frameworks.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-12T05:51:27Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Seyedakbar Mostafavi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.06742v2</id>
+    <title>Evaluating LLM-Based 0-to-1 Software Generation in End-to-End CLI Tool Scenarios</title>
+    <updated>2026-07-17T08:33:08Z</updated>
+    <link href="https://arxiv.org/abs/2604.06742v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.06742v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The evolution of Large Language Models (LLMs) has catalyzed a paradigm shift towards intent-driven software development, where autonomous agents are expected to design and deliver complete, runnable software systems from scratch. However, existing benchmarks fail to adequately assess this 0-to-1 generation capability due to two fundamental limitations. First, they rely on predefined structural scaffolds, which reduces the task to mere file-filling. Second, they depend on rigid white-box unit testing, which forces generated code to conform to specific internal implementations rather than validating end-to-end user-centric behavior.
+  To bridge this gap, we introduce CLI-Tool-Bench, a novel, structure-agnostic benchmark designed to evaluate the ground-up generation of Command-Line Interface (CLI) tools. Powered by an automated black-box differential testing framework, the benchmark comprises 94 high-quality, real-world repositories spanning diverse programming languages and complexity levels. For each task, agents are provided with an empty workspace, forcing them to autonomously handle repository planning and dependencies. We evaluate the generated software by executing it in isolated sandboxes. The system-level side effects and terminal outputs are then compared against human-written oracles using a rigorous multi-tiered equivalence metric.
+  Extensive evaluation of seven state-of-the-art LLMs reveals that the top-tier models achieve a maximum overall success rate of only 43.8%, highlighting that 0-to-1 software generation remains a highly challenging frontier. Furthermore, we discover that agents exhibit a strong tendency to generate monolithic code structures, and that higher token consumption does not necessarily yield better task performance.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-08T07:09:10Z</published>
+    <arxiv:comment>Data link: https://github.com/kinesiatricssxilm14/CLI-Tool-Bench</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Ruida Hu</name>
+    </author>
+    <author>
+      <name>Xinchen Wang</name>
+    </author>
+    <author>
+      <name>Chao Peng</name>
+    </author>
+    <author>
+      <name>Cuiyun Gao</name>
+    </author>
+    <author>
+      <name>David Lo</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.23215v2</id>
+    <title>FastKernels: Benchmarking GPU Kernel Generation in Production</title>
+    <updated>2026-10-01T20:34:40Z</updated>
+    <link href="https://arxiv.org/abs/2605.23215v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.23215v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM-based agents for GPU kernel generation are advancing rapidly, but the benchmarks they optimize against evaluate kernels in isolation, with synthetic inputs and weak baselines, rewarding sandbox speedups that break or vanish in real inference systems. We introduce FastKernels, a benchmark of 384 tasks drawn from 47 representative architectures across 8 categories, whose kernels suffice to reimplement 94.6% (472/499) of HuggingFace Transformers architectures with outputs matching the native implementations. Each task mirrors the interface of the corresponding production module and is scored against the kernels production frameworks ship, and tasks form a compositional hierarchy, from primitives to full models, in which higher-level modules import lower-level ones. Candidates are scored at the kernel level and end to end inside the models they come from, on the production execution path, and MacroEval aggregates calibrated correctness, coverage, and speedup into a leaderboard. Seeding it with five representative agents (6,900 agent-hours), we find that kernel-level speedups of $1.6$-$6.6\times$ shrink to at most $1.25\times$ end to end, only 20% of winning kernel sets run correctly as-is, and kernel-level scores mis-rank agents: Claude Code matches or beats KDA at every level in isolation, yet KDA scores $3\times$ higher end to end. Code is available at https://github.com/Snowflake-AI-Research/fastkernels.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-22T04:19:04Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Gabriele Oliaro</name>
+    </author>
+    <author>
+      <name>Jaeseong Lee</name>
+    </author>
+    <author>
+      <name>Yichao Fu</name>
+    </author>
+    <author>
+      <name>Zhaoyuan Su</name>
+    </author>
+    <author>
+      <name>Owen Lu</name>
+    </author>
+    <author>
+      <name>Sreeram Vennam</name>
+    </author>
+    <author>
+      <name>May Jiang</name>
+    </author>
+    <author>
+      <name>Junli Wang</name>
+    </author>
+    <author>
+      <name>Hao Zhang</name>
+    </author>
+    <author>
+      <name>Zhihao Jia</name>
+    </author>
+    <author>
+      <name>Samyam Rajbhandari</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.00552v2</id>
+    <title>EMPA: Evaluating Persona-Aligned Empathy as a Process</title>
+    <updated>2026-03-16T15:28:25Z</updated>
+    <link href="https://arxiv.org/abs/2603.00552v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.00552v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Evaluating persona-aligned empathy in LLM-based dialogue agents remains challenging. User states are latent, feedback is sparse and difficult to verify in situ, and seemingly supportive turns can still accumulate into trajectories that drift from persona-specific needs. We introduce EMPA, a process-oriented framework that evaluates persona-aligned support as sustained intervention rather than isolated replies. EMPA distills real interactions into controllable, psychologically grounded scenarios, couples them with an open-ended multi-agent sandbox that exposes strategic adaptation and failure modes, and scores trajectories in a latent psychological space by directional alignment, cumulative impact, and stability. The resulting signals and metrics support reproducible comparison and optimization of long-horizon empathic behavior, and they extend to other agent settings shaped by latent dynamics and weak, hard-to-verify feedback.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-28T09:04:06Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Shiya Zhang</name>
+    </author>
+    <author>
+      <name>Yuhan Zhan</name>
+    </author>
+    <author>
+      <name>Ruixi Su</name>
+    </author>
+    <author>
+      <name>Ruihan Sun</name>
+    </author>
+    <author>
+      <name>Ziyi Song</name>
+    </author>
+    <author>
+      <name>Zhaohan Chen</name>
+    </author>
+    <author>
+      <name>Xiaofan Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.12723v2</id>
+    <title>Bulkhead: Automated Semantic Detection and Remediation of Container Escape Vulnerabilities</title>
+    <updated>2026-10-10T03:41:04Z</updated>
+    <link href="https://arxiv.org/abs/2607.12723v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.12723v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Container filesystem isolation depends on safely resolving container-controlled paths during privileged host-container interactions. As third-party plugins and agent sandboxes introduce more interactions, unsafe path resolution can redirect host operations across isolation boundaries, expanding the attack surface for path traversal vulnerabilities. These logic flaws are difficult to mitigate: kernel defenses require intrusive redesign, static rules miss cross-boundary semantics, and manual auditing cannot scale. Large Language Model (LLM) based methods can detect syntax flaws through stable code patterns and identify logic flaws in domains such as smart contracts by comparing equivalent implementations. Container components, however, provide neither form of regularity: their heterogeneous interfaces operate under trust boundaries, filesystem views and interaction orders, making the security invariant difficult to find.
+  We present Bulkhead, an automated framework for detection and remediation. Bulkhead summarizes historical CVEs into structured semantic patterns, correlates documentation with entry and effect side code evidence, and recovers source-to-sink execution contexts. Grounded patterns guide LLM reasoning, while isolated Proof-of-Concept (PoC) execution validates findings. For remediation, Bulkhead generates repository-specific patches, checks that they build, and iteratively verifies path safety and functionality using pattern derived model checking templates and counterexamples before runtime validation. Across container repositories, Bulkhead discovered 20 zero-day vulnerabilities, accounting for 43% of the total number discovered over the past decade. Among them, 3 have been assigned CVEs and the verified patch suggestions have been submitted to the upstream.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-14T12:52:56Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Qiyuan Fan</name>
+    </author>
+    <author>
+      <name>Zhi Li</name>
+    </author>
+    <author>
+      <name>Junjie Li</name>
+    </author>
+    <author>
+      <name>XiaoFeng Wang</name>
+    </author>
+    <author>
+      <name>Bin Yuan</name>
+    </author>
+    <author>
+      <name>Deqing Zou</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.31423v1</id>
+    <title>DA-Studio: An Agentic System for End-to-End Data Analysis</title>
+    <updated>2026-06-30T09:45:49Z</updated>
+    <link href="https://arxiv.org/abs/2606.31423v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.31423v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Real-world data analysis is a multi-step process over heterogeneous inputs rather than merely producing a final answer. A practical system should autonomously organize multi-step workflows, execute generated code in a sandboxed and controllable environment, and remain inspectable through visible action traces and intermediate artifacts. Existing LLM-based analysis tools, however, often emphasize isolated subtasks, leaving limited support for complete execution-grounded workflows.
+  We present DA-Studio (Data Analysis Studio), an interactive web-based demo system for end-to-end data analysis that is autonomous, sandboxed, and inspectable. DA-Studio integrates an action-structured analysis backend, a sandboxed execution workspace, and a browser interface for task setup, streamed action traces, artifact preview, code editing and rerunning, and report export. Through iterative action generation, code execution, and feedback incorporation, it incrementally constructs executable analysis steps from raw files and natural-language requests while exposing intermediate results and artifacts throughout the process.</summary>
+    <category term="cs.DB" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-30T09:45:49Z</published>
+    <arxiv:comment>VLDB 2026 Demo submission</arxiv:comment>
+    <arxiv:primary_category term="cs.DB"/>
+    <author>
+      <name>Yizhe Liu</name>
+    </author>
+    <author>
+      <name>Shaolei Zhang</name>
+    </author>
+    <author>
+      <name>Ju Fan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.21074v4</id>
+    <title>RepLLM: Toward Automatically Reproducing Network Research Results</title>
+    <updated>2026-07-09T08:38:10Z</updated>
+    <link href="https://arxiv.org/abs/2509.21074v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.21074v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Result reproduction of computer networking research is challenging as the scarcity of open-source implementations and the complexity of heterogeneous system architectures. Even though Large Language Models have demonstrated potential in code generation, existing code generation frameworks often fail to address the long-context constraints and intricate logical dependencies, which are vital in reproducing network systems from academic papers. Thus, we introduce RepLLM, an end-to-end multi-agent framework designed to automate code reproduction from paper content. RepLLM features a collaborative architecture comprising four specialized agents -- Content Parsing, Architecture Design, Code Generation, and Audit&amp;Repair, which are coordinated through Shared Memory mechanism to ensure global context consistency. With the enhancement of Structured Chain-of-Thought LLM reasoning and a sandbox-isolated static-dynamic debugging methodology, our framework effectively resolves semantic discrepancies and runtime errors, thereby improving reliable reproductions. Extensive evaluations on representative papers in top conferences demonstrate that RepLLM outperforms state-of-the-art system-level LLM frameworks in generating compile-ready and logically correct systems. Our results show that, with the aid of RepLLM, we can reproduce 95% of the original benchmarks within approximately two hours while reducing token consumption by up to 10% compared with state-of-the-art baselines.</summary>
+    <category term="cs.NI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-25T12:24:32Z</published>
+    <arxiv:comment>SIGCOMM'26(19 pages, 6 figures, 6 tables)</arxiv:comment>
+    <arxiv:primary_category term="cs.NI"/>
+    <author>
+      <name>Yining Jiang</name>
+    </author>
+    <author>
+      <name>Yunxin Xu</name>
+    </author>
+    <author>
+      <name>Wenyun Xu</name>
+    </author>
+    <author>
+      <name>Yufan Zhu</name>
+    </author>
+    <author>
+      <name>Rui Liu</name>
+    </author>
+    <author>
+      <name>Tangtang He</name>
+    </author>
+    <author>
+      <name>Haiying Huang</name>
+    </author>
+    <author>
+      <name>Letian Zhu</name>
+    </author>
+    <author>
+      <name>Qingyu Song</name>
+    </author>
+    <author>
+      <name>Qiang Su</name>
+    </author>
+    <author>
+      <name>Lizhao You</name>
+    </author>
+    <author>
+      <name>Lu Tang</name>
+    </author>
+    <author>
+      <name>Wanjian Feng</name>
+    </author>
+    <author>
+      <name>Yuchao Zhang</name>
+    </author>
+    <author>
+      <name>Linghe Kong</name>
+    </author>
+    <author>
+      <name>Qiao Xiang</name>
+    </author>
+    <author>
+      <name>Jiwu Shu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.15945v1</id>
+    <title>From Tool Orchestration to Code Execution: A Study of MCP Design Choices</title>
+    <updated>2026-02-17T19:03:08Z</updated>
+    <link href="https://arxiv.org/abs/2602.15945v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.15945v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Model Context Protocols (MCPs) provide a unified platform for agent systems to discover, select, and orchestrate tools across heterogeneous execution environments. As MCP-based systems scale to incorporate larger tool catalogs and multiple concurrently connected MCP servers, traditional tool-by-tool invocation increases coordination overhead, fragments state management, and limits support for wide-context operations. To address these scalability challenges, recent MCP designs have incorporated code execution as a first-class capability, an approach called Code Execution MCP (CE-MCP). This enables agents to consolidate complex workflows, such as SQL querying, file analysis, and multi-step data transformations, into a single program that executes within an isolated runtime environment. In this work, we formalize the architectural distinction between context-coupled (traditional) and context-decoupled (CE-MCP) models, analyzing their fundamental scalability trade-offs. Using the MCP-Bench framework across 10 representative servers, we empirically evaluate task behavior, tool utilization patterns, execution latency, and protocol efficiency as the scale of connected MCP servers and available tools increases, demonstrating that while CE-MCP significantly reduces token usage and execution latency, it introduces a vastly expanded attack surface. We address this security gap by applying the MAESTRO framework, identifying sixteen attack classes across five execution phases-including specific code execution threats such as exception-mediated code injection and unsafe capability synthesis. We validate these vulnerabilities through adversarial scenarios across multiple LLMs and propose a layered defense architecture comprising containerized sandboxing and semantic gating. Our findings provide a rigorous roadmap for balancing scalability and security in production-ready executable agent workflows.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-17T19:03:08Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Yuval Felendler</name>
+    </author>
+    <author>
+      <name>Parth A. Gandhi</name>
+    </author>
+    <author>
+      <name>Idan Habler</name>
+    </author>
+    <author>
+      <name>Yuval Elovici</name>
+    </author>
+    <author>
+      <name>Asaf Shabtai</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.37739v1</id>
+    <title>OpenFrontiers: A Collection of Open Research Problems and a Benchmark for Scientific Rediscovery</title>
+    <updated>2026-10-27T16:49:33Z</updated>
+    <link href="https://arxiv.org/abs/2610.37739v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.37739v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) have shown increasing promise in research-level problem solving, yet a comprehensive collection of such problems is still missing, and evaluating them on research-level problems remains challenging. We introduce OpenFrontiers, a cross-disciplinary resource that combines a structured corpus of open research problems with a retrospective benchmark of recently resolved problems in mathematics. The corpus records problem statements, context, progress, and other information for 12,151 problems. The benchmark contains 200 problems, 110 resolved in 2026 and 90 still open, each with a Lean~4 statement checked by automated probes and two independent reviews; a subset HQ-50 further filters based on quality score, etc. Our evaluation protocol grades formal proofs with two independent checkers in an isolated sandbox under closed-book, frozen-retrieval, and live-web conditions. Evaluating seven LLM agents on the HQ-50 subset under a standardized budget, we find that closed-book rediscovery is rare, at most 7 of 40 resolved problems, whereas live-web success mostly reflects retrieval of published solutions. By linking a broad research-problem corpus to a formally graded evaluation subset with documented solutions, OpenFrontiers provides a foundation for measuring research-level rediscovery and studying progress toward solving currently open scientific problems. The dataset and benchmark could be found in https://huggingface.co/collections/FlippyDora/openfrontiers.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-27T16:49:33Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Jiarui Yao</name>
+    </author>
+    <author>
+      <name>Ruida Wang</name>
+    </author>
+    <author>
+      <name>Tong Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.09013v1</id>
+    <title>KnowEvo: Knowledge Evolution for Protein Optimization</title>
+    <updated>2026-11-06T05:42:30Z</updated>
+    <link href="https://arxiv.org/abs/2611.09013v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.09013v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) have shown promise in scientific discovery, yet systematically accumulating and refining reusable scientific knowledge remains challenging. Existing approaches primarily improve LLM-based problem solving through parameter optimization or feedback-driven refinement of prompts, programs, and solution trajectories, leaving acquired expertise either embedded in model weights or scattered across iterative problem-solving processes. As a result,knowledge is difficult to systematically inspect, evaluate, and refine. We propose KnowEvo, a framework that treats externalized knowledge itself as the optimization target. Our key insight is that scientific knowledge is inherently modular: multiple interacting mechanisms jointly determine the design outcomes. This makes knowledge evolution fundamentally challenging, as improvements cannot be attributed to individual components in isolation. To address this, KnowEvo represents knowledge as executable expertise blocks and organizes their refinements into strategy mutation trees, enabling structured exploration over a combinatorial knowledge space. The framework combines a Thompson-style forward allocation strategy that adaptively distributes evaluation budgets across strategy variants with a backward revision process, in which a code agent operates in an isolated sandbox to translate rollout evidence into localized program updates. This design enables persistent accumulation, evaluation, and refinement of mechanistic expertise across iterative experimentation. We evaluate KnowEvo on protein optimization tasks including stability and solubility. Results show that knowledge evolution consistently improves over initial strategy blocks and outperforms monolithic program evolution and prior LLM-guided evolution baselines across metrics such as pass@k, MRR, MAP,and NDCG@5. Code is available at https://github.com/recynie/KnowEvo.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-06T05:42:30Z</published>
+    <arxiv:comment>Accepted by NeurIPS 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Zijie Xing</name>
+    </author>
+    <author>
+      <name>Xingyue Liu</name>
+    </author>
+    <author>
+      <name>Runze Wang</name>
+    </author>
+    <author>
+      <name>Luoming Hu</name>
+    </author>
+    <author>
+      <name>Yanming Shen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.22613v1</id>
+    <title>SkillAudit: From Fixed-Suite Benchmarking to Skill-Centered Assessment</title>
+    <updated>2026-06-21T17:40:05Z</updated>
+    <link href="https://arxiv.org/abs/2606.22613v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.22613v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Agent skills have become a practical way to extend large language model agents, but the growing skill ecosystem still lacks a reliable way to judge whether a skill is worth deploying. Existing evaluation methods remain largely anchored to fixed task suites, assessing skills through performance on predefined tasks and environments. As skill marketplaces expand, this paradigm becomes inadequate: fixed suites can conflate a skill's marginal contribution with backbone strength and miss its value when tasks fall outside the skill's intended scope. We introduce SkillAudit, an end-to-end framework for skill-centered assessment that takes an arbitrary agent skill as input and automatically generates a comprehensive, multi-dimensional evaluation report spanning utility, efficiency/cost, and safety. SkillAudit focuses on the skill artifact itself and constructs capability-aligned evaluation tasks directly from the skill package. The generated tasks are conducted in isolated sandbox environments to collect execution evidence, followed by automated checks with LLM-based judging to produce auditable results. To dissect the agent skills, we propose the baseline comparison principle to measure utility and efficiency/cost, and introduce a two-stage detection paradigm combining static semantic analysis with dynamic runtime verification to assess safety risks. After scanning top-ranked real-world skill packages spanning 23 occupational categories, we found that over 7% of skills are at risky status.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-21T17:40:05Z</published>
+    <arxiv:comment>Preprint. Project page: https://skillaudit.github.io/. Code and evaluation artifacts: https://github.com/SkillAudit/skillaudit</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Dexu Yu</name>
+    </author>
+    <author>
+      <name>Youhua Li</name>
+    </author>
+    <author>
+      <name>Zhaoyang Guan</name>
+    </author>
+    <author>
+      <name>Xianhao Lin</name>
+    </author>
+    <author>
+      <name>Jining Luan</name>
+    </author>
+    <author>
+      <name>Zihao Rao</name>
+    </author>
+    <author>
+      <name>Xuanqi Lan</name>
+    </author>
+    <author>
+      <name>Yang Ran</name>
+    </author>
+    <author>
+      <name>Bo Lan</name>
+    </author>
+    <author>
+      <name>Nai-Xin Zhai</name>
+    </author>
+    <author>
+      <name>Hanwen Du</name>
+    </author>
+    <author>
+      <name>Junchen Fu</name>
+    </author>
+    <author>
+      <name>Wenhao Deng</name>
+    </author>
+    <author>
+      <name>Yongxin Ni</name>
+    </author>
+    <author>
+      <name>Chunxiao Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.21840v1</id>
+    <title>TraceScope: Interactive URL Triage via Decoupled Checklist Adjudication</title>
+    <updated>2026-04-23T16:31:42Z</updated>
+    <link href="https://arxiv.org/abs/2604.21840v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.21840v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Modern phishing campaigns increasingly evade snapshot-based URL classifiers using interaction gates (e.g., checkbox/slider challenges), delayed content rendering, and logo-less credential harvesters. This shifts URL triage from static classification toward an interactive forensics task: an analyst must actively navigate the page while isolating themselves from potential runtime exploits.
+  We present TraceScope, a decoupled triage pipeline that operationalizes this workflow at scale. To prevent the observer effect and ensure safety, a sandboxed operator agent drives a real GUI browser guided by visual motivation to elicit page behavior, freezing the session into an immutable evidence bundle. Separately, an adjudicator agent circumvents LLM context limitations by querying evidence on demand to verify a MITRE ATT&amp;CK checklist, and generates an audit-ready report with extracted indicators of compromise (IOCs) and a final verdict.
+  Evaluated on 708 reachable URLs from existing dataset (241 verified phishing from PhishTank and 467 benign from Tranco-derived crawling), TraceScope achieves 0.94 precision and 0.78 recall, substantially improving recall over three prior visual/reference-based classifiers while producing reproducible, analyst-grade evidence suitable for review. More importantly, we manually curated a dataset of real-world phishing emails to evaluate our system in a practical setting. Our evaluation reveals that TraceScope demonstrates superior performance in a real-world scenario as well, successfully detecting sophisticated phishing attempts that current state-of-the-art defenses fail to identify.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-23T16:31:42Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Haolin Zhang</name>
+    </author>
+    <author>
+      <name>William Reber</name>
+    </author>
+    <author>
+      <name>Yuxuan Zhang</name>
+    </author>
+    <author>
+      <name>Guofei Gu</name>
+    </author>
+    <author>
+      <name>Jeff Huang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.08603v1</id>
+    <title>From Business Events to Auditable Decisions: Ontology-Governed Graph Simulation for Enterprise AI</title>
+    <updated>2026-04-08T06:07:48Z</updated>
+    <link href="https://arxiv.org/abs/2604.08603v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.08603v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Existing LLM-based agent systems share a common architectural failure: they answer from the unrestricted knowledge space without first simulating how active business scenarios reshape that space for the event at hand -- producing decisions that are fluent but ungrounded and carrying no audit trail. We present LOM-action, which equips enterprise AI with \emph{event-driven ontology simulation}: business events trigger scenario conditions encoded in the enterprise ontology~(EO), which drive deterministic graph mutations in an isolated sandbox, evolving a working copy of the subgraph into the scenario-valid simulation graph $G_{\text{sim}}$; all decisions are derived exclusively from this evolved graph. The core pipeline is \emph{event $\to$ simulation $\to$ decision}, realized through a dual-mode architecture -- \emph{skill mode} and \emph{reasoning mode}. Every decision produces a fully traceable audit log. LOM-action achieves 93.82% accuracy and 98.74% tool-chain F1 against frontier baselines Doubao-1.8 and DeepSeek-V3.2, which reach only 24--36% F1 despite 80% accuracy -- exposing the \emph{illusive accuracy} phenomenon. The four-fold F1 advantage confirms that ontology-governed, event-driven simulation, not model scale, is the architectural prerequisite for trustworthy enterprise decision intelligence.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-08T06:07:48Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Hongyin Zhu</name>
+    </author>
+    <author>
+      <name>Jinming Liang</name>
+    </author>
+    <author>
+      <name>Mengjun Hou</name>
+    </author>
+    <author>
+      <name>Ruifan Tang</name>
+    </author>
+    <author>
+      <name>Xianbin Zhu</name>
+    </author>
+    <author>
+      <name>Jingyuan Yang</name>
+    </author>
+    <author>
+      <name>Yuanman Mao</name>
+    </author>
+    <author>
+      <name>Feng Wu</name>
+    </author>
+  </entry>
+</feed>

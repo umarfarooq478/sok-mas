@@ -5,6 +5,8 @@ from net import get
 from queries import QUERIES
 NS = {"a": "http://www.w3.org/2005/Atom"}
 N = 100
+import os
+SOURCES = set(os.environ.get('SOURCES','arxiv,s2,openalex').split(','))
 USE_DBLP = False  # dblp.org serves a bot-check page to scripts; not bypassed. See protocol, limitations.
 hits = []
 
@@ -23,7 +25,7 @@ for fam, qs in QUERIES.items():
         terms = " AND ".join(f"all:{w}" for w in q.split() if len(w) > 2)
         url = "https://export.arxiv.org/api/query?" + urllib.parse.urlencode(
             {"search_query": terms, "max_results": N, "sortBy": "relevance"})
-        raw = get(url, ".xml")
+        raw = get(url, ".xml") if 'arxiv' in SOURCES else None
         if raw:
             for r, e in enumerate(ET.fromstring(raw).findall("a:entry", NS)):
                 aid = e.find("a:id", NS).text.rsplit("/", 1)[-1]
@@ -34,7 +36,7 @@ for fam, qs in QUERIES.items():
                     abstract=" ".join(e.find("a:summary", NS).text.split()))
         url = "https://api.semanticscholar.org/graph/v1/paper/search?" + urllib.parse.urlencode(
             {"query": q, "limit": N, "fields": "title,authors,year,venue,externalIds,citationCount,abstract,publicationDate,publicationTypes"})
-        raw = get(url)
+        raw = get(url, tries=2) if 's2' in SOURCES else None
         if raw:
             for r, p in enumerate(json.loads(raw).get("data", [])):
                 x = p.get("externalIds") or {}
@@ -56,7 +58,7 @@ for fam, qs in QUERIES.items():
         url = "https://api.openalex.org/works?" + urllib.parse.urlencode(
             {"search": q, "per-page": N, "filter": "from_publication_date:2023-01-01",
              "select": "id,doi,title,publication_date,primary_location,cited_by_count,abstract_inverted_index,authorships,ids"})
-        raw = get(url)
+        raw = get(url, tries=2) if 'openalex' in SOURCES else None
         if raw:
             for r, w in enumerate(json.loads(raw).get("results", [])):
                 loc = (w.get("primary_location") or {}).get("source") or {}
@@ -67,6 +69,6 @@ for fam, qs in QUERIES.items():
                     authors=[a["author"]["display_name"] for a in w.get("authorships", [])][:8],
                     abstract=oa_abs(w.get("abstract_inverted_index")))
         print(fam, q, len(hits), file=sys.stderr, flush=True)
-json.dump(hits, open("raw_hits.json", "w"), ensure_ascii=False, indent=0)
+json.dump(hits, open(os.environ.get("OUT","raw_hits.json"), "w"), ensure_ascii=False, indent=0)
 from collections import Counter
 print(len(hits), Counter(h["source"] for h in hits))

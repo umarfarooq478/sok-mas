@@ -1,0 +1,388 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/kNJT/HVBGlI9rHhuVUHhQvJcz4o</id>
+  <title>arXiv Query: search_query=all:tool AND all:misuse AND all:attack AND all:multi-agent AND all:LLM&amp;id_list=&amp;start=0&amp;max_results=100</title>
+  <updated>2026-11-21T23:58:25Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:tool+AND+(all:misuse+AND+(all:attack+AND+(all:multi-agent+AND+all:LLM)))&amp;start=0&amp;max_results=100&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>100</opensearch:itemsPerPage>
+  <opensearch:totalResults>13</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2610.07089v1</id>
+    <title>Towards a Unified Misuse Monitoring Benchmark</title>
+    <updated>2026-10-05T12:57:03Z</updated>
+    <link href="https://arxiv.org/abs/2610.07089v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.07089v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM agents increasingly act in multi-actor environments, exposing them to misuse from multiple sources: decomposition attacks, where a harmful request is split into innocuous sub-requests, and prompt injection attacks, where a compromised tool delivers a malicious instruction. Existing evaluations treat these threats separately and ask whether a trajectory is harmful, rather than when it becomes harmful. We propose monitoring the agent's responses, where its actions are externalised, and ask whether the first point where monitors identify harm lands within a harm window (from the agent's first harmful commitment to goal execution). We develop a unified formalism for trace-level misuse monitoring and use it to construct a benchmark of ~6,200 conversation transcripts between a user, an LLM agent, and the external environment, spanning both threats in a shared schema, with a labelled harm window, corresponding benign controls, and matched instances of refusals to these requests. Across 17 monitor configurations, we find that our proposed action-framed monitors perform well on both threats under classical metrics (AUC: 0.95 and 0.99 respectively), while content-framed monitors collapse on injection attacks (AUC: 0.52). We also show that classical position-blind metrics paint an optimistic picture of monitor performance, since all monitors localise decomposition attacks poorly under the interval metric, which measures the ability to localise harm. Broadly, we illustrate the need for a unified study of misuse monitoring.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-05T12:57:03Z</published>
+    <arxiv:comment>50 pages, 13 figures, 17 tables, Code: https://github.com/atryt0ne/unified-misuse-monitoring-benchmark</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Aniruddh Pramod</name>
+    </author>
+    <author>
+      <name>James Oldfield</name>
+    </author>
+    <author>
+      <name>Adel Bibi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.10749v2</id>
+    <title>Toward Secure LLM Agents: Threat Surfaces, Attacks, Defenses, and Evaluation</title>
+    <updated>2026-08-23T08:02:27Z</updated>
+    <link href="https://arxiv.org/abs/2606.10749v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.10749v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language model (LLM) agents are rapidly moving from conversational interfaces to software components that plan, invoke tools, maintain memory, and act on external environments. This transition changes the nature of security risk. In agentic settings, failures are no longer limited to unsafe text generation. Untrusted content may redirect control flow, misuse tool privileges, corrupt persistent state, leak sensitive information, or trigger harmful external actions. At the same time, research on LLM agent security is expanding quickly but remains fragmented across attack families, defense layers, application domains, and evaluation settings. This paper synthesizes 247 papers through a lifecycle-based, systems-oriented framework that models agent security around the interaction of information flow, delegated authority, and persistent state. We organize the literature around four questions: how LLM agent security should be modeled, which threat surfaces and attack families dominate, what defenses have been proposed and with what tradeoffs, and how security claims are evaluated. We find that prompt injection and tool-mediated control-flow hijacking still dominate the field, while persistent state corruption and multi-agent propagation are becoming central emerging concerns. We further find that current defenses provide useful building blocks but remain weakly compositional, and that existing benchmarks still underrepresent long-horizon, stateful, and deployment-sensitive risks. We argue that secure LLM agents require explicit trust boundaries, principled privilege control, provenance-aware state management, and evaluation practices aligned with realistic operational settings.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-09T12:01:07Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Yuchen Ling</name>
+    </author>
+    <author>
+      <name>Shengcheng Yu</name>
+    </author>
+    <author>
+      <name>Zhenyu Chen</name>
+    </author>
+    <author>
+      <name>Chunrong Fang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2410.09024v3</id>
+    <title>AgentHarm: A Benchmark for Measuring Harmfulness of LLM Agents</title>
+    <updated>2025-04-18T14:30:31Z</updated>
+    <link href="https://arxiv.org/abs/2410.09024v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2410.09024v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The robustness of LLMs to jailbreak attacks, where users design prompts to circumvent safety measures and misuse model capabilities, has been studied primarily for LLMs acting as simple chatbots. Meanwhile, LLM agents -- which use external tools and can execute multi-stage tasks -- may pose a greater risk if misused, but their robustness remains underexplored. To facilitate research on LLM agent misuse, we propose a new benchmark called AgentHarm. The benchmark includes a diverse set of 110 explicitly malicious agent tasks (440 with augmentations), covering 11 harm categories including fraud, cybercrime, and harassment. In addition to measuring whether models refuse harmful agentic requests, scoring well on AgentHarm requires jailbroken agents to maintain their capabilities following an attack to complete a multi-step task. We evaluate a range of leading LLMs, and find (1) leading LLMs are surprisingly compliant with malicious agent requests without jailbreaking, (2) simple universal jailbreak templates can be adapted to effectively jailbreak agents, and (3) these jailbreaks enable coherent and malicious multi-step agent behavior and retain model capabilities. To enable simple and reliable evaluation of attacks and defenses for LLM-based agents, we publicly release AgentHarm at https://huggingface.co/datasets/ai-safety-institute/AgentHarm.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-10-11T17:39:22Z</published>
+    <arxiv:comment>Accepted at ICLR 2025</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Maksym Andriushchenko</name>
+    </author>
+    <author>
+      <name>Alexandra Souly</name>
+    </author>
+    <author>
+      <name>Mateusz Dziemian</name>
+    </author>
+    <author>
+      <name>Derek Duenas</name>
+    </author>
+    <author>
+      <name>Maxwell Lin</name>
+    </author>
+    <author>
+      <name>Justin Wang</name>
+    </author>
+    <author>
+      <name>Dan Hendrycks</name>
+    </author>
+    <author>
+      <name>Andy Zou</name>
+    </author>
+    <author>
+      <name>Zico Kolter</name>
+    </author>
+    <author>
+      <name>Matt Fredrikson</name>
+    </author>
+    <author>
+      <name>Eric Winsor</name>
+    </author>
+    <author>
+      <name>Jerome Wynne</name>
+    </author>
+    <author>
+      <name>Yarin Gal</name>
+    </author>
+    <author>
+      <name>Xander Davies</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.16346v5</id>
+    <title>Helpful to a Fault: Measuring Illicit Assistance in Multi-Turn, Multilingual LLM Agents</title>
+    <updated>2026-11-03T15:11:56Z</updated>
+    <link href="https://arxiv.org/abs/2602.16346v5" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.16346v5" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM-based agents execute real-world workflows via tools and memory. These affordances enable ill-intended adversaries to also use these agents to carry out complex misuse scenarios. Existing agent misuse benchmarks largely test single-prompt instructions, leaving a gap in measuring how agents end up helping with harmful or illegal tasks over multiple turns. We introduce STING (Sequential Testing of Illicit N-step Goal execution), an automated red-teaming framework that constructs a step-by-step illicit plan grounded in a benign persona and iteratively probes a target agent with adaptive follow-ups, using judge agents to track phase completion. We further introduce an analysis framework that models multi-turn red-teaming as a time-to-first-jailbreak random variable, enabling analysis tools like discovery curves, hazard-ratio attribution by attack language, and a new metric: Restricted Mean Jailbreak Discovery. Across AgentHarm scenarios, STING yields substantially higher illicit-task completion than single-turn prompting and chat-oriented multi-turn baselines adapted to tool-using agents. In multilingual evaluations across six non-English settings, we find that attack success and illicit-task completion do not consistently increase in lower-resource languages, diverging from common chatbot findings. Overall, STING provides a practical way to evaluate and stress-test agent misuse in realistic deployment settings, where interactions are inherently multi-turn and often multilingual.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-18T10:31:19Z</published>
+    <arxiv:comment>Accepted in ICML 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Nivya Talokar</name>
+    </author>
+    <author>
+      <name>Ayush K Tarun</name>
+    </author>
+    <author>
+      <name>Murari Mandal</name>
+    </author>
+    <author>
+      <name>Maksym Andriushchenko</name>
+    </author>
+    <author>
+      <name>Antoine Bosselut</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.06812v2</id>
+    <title>Towards Security-Auditable LLM Agents: A Unified Graph Representation</title>
+    <updated>2026-10-14T08:40:11Z</updated>
+    <link href="https://arxiv.org/abs/2605.06812v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.06812v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM-based agentic systems are rapidly evolving to perform complex autonomous tasks through dynamic tool invocation, stateful memory management, and multi-agent collaboration. However, this semantics-driven execution paradigm creates a severe semantic gap between low-level physical events and high-level execution intent, making post-hoc security auditing fundamentally difficult. Existing representation mechanisms, including static SBOMs and runtime logs, provide only fragmented evidence and fail to capture cognitive-state evolution, capability bindings, persistent memory contamination, and cascading risk propagation across interacting agents. To bridge this gap, we propose Agent-BOM, a unified structural representation for agent security auditing. Agent-BOM models an agentic system as a hierarchical attributed directed graph that separates static capability bases, such as models, tools, and long-term memory, from dynamic runtime semantic states, such as goals, reasoning trajectories, and actions. These layers are connected through semantic edges and security attributes, transforming fragmented execution traces into queryable audit paths. Building on Agent-BOM, we develop a graph-query-based paradigm for path-level risk assessment and instantiate it with the OWASP Agentic Top 10. We further implement an auditing plugin in the OpenClaw environment to construct Agent-BOM from live executions. Evaluation on representative real-world agentic attack scenarios shows that Agent-BOM can reconstruct stealthy attack chains, including cross-session memory poisoning and tool misuse, capability supply-chain hijacking and unexpected code execution, multi-agent ecosystem hijacking, and privilege and trust abuse. These results demonstrate that Agent-BOM provides a unified and auditable foundation for root-cause analysis and security adjudication in complex agentic ecosystems.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-07T18:14:29Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Chaofan Li</name>
+    </author>
+    <author>
+      <name>Lyuye Zhang</name>
+    </author>
+    <author>
+      <name>Jintao Zhai</name>
+    </author>
+    <author>
+      <name>Siyue Feng</name>
+    </author>
+    <author>
+      <name>Xichun Yang</name>
+    </author>
+    <author>
+      <name>Huahao Wang</name>
+    </author>
+    <author>
+      <name>Shihan Dou</name>
+    </author>
+    <author>
+      <name>Yu Ji</name>
+    </author>
+    <author>
+      <name>Yutao Hu</name>
+    </author>
+    <author>
+      <name>Yueming Wu</name>
+    </author>
+    <author>
+      <name>Yang Liu</name>
+    </author>
+    <author>
+      <name>Deqing Zou</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.13994v2</id>
+    <title>Hidden in Plain Sight: Benchmarking Agent Safety Against Decomposition Attacks with DECOMPBENCH</title>
+    <updated>2026-10-06T18:31:15Z</updated>
+    <link href="https://arxiv.org/abs/2606.13994v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.13994v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM-based Agents are becoming increasingly capable and widely deployed, creating growing incentives for adversarial misuse in the real-world. A key emerging threat is Decomposition Attacks \cite{glukhov2024breach, jones2024adversaries} in which a harmful task is broken into simpler, benign subtasks that evade safety mechanisms when executed separately but cumulatively fulfill the malicious intent. Although recent benchmarks assess agent safety in multi-turn and multi-tool-use settings, they do not explicitly capture this form of decompositional misuse and may not represent realistic adversarial execution flows. To this end, we introduce DeCompBench, a benchmark designed specifically to evaluate agentic safety under decomposition attacks. DeCompBench is created with a decomposition-by-design principle using a graphical framework and enables harmful task decomposition into individually benign and executable subtasks with realistic workflows. Our experiments using a custom decomposer show that state-of-the-art agents exhibit high refusal rates on monolithic harmful tasks, but significantly lower refusal rates on their decomposed variants, while often inadvertently fulfilling the adversarial objectives. These findings underscore the need for safety evaluations against decomposition attacks and corresponding defenses. Our dataset is publicly available and can be found at https://huggingface.co/datasets/decompositionbench/DeCompBench.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-12T00:30:29Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Vikhyath Kothamasu</name>
+    </author>
+    <author>
+      <name>Virginia Smith</name>
+    </author>
+    <author>
+      <name>Chhavi Yadav</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.18485v1</id>
+    <title>Trusted Credentials, Untrusted Behavior: Benchmarking LLM-Agent Security in High-Performance Computing</title>
+    <updated>2026-07-20T20:16:02Z</updated>
+    <link href="https://arxiv.org/abs/2607.18485v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.18485v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language model (LLM) agents are starting to take on routine work in high-performance computing (HPC), including monitoring Slurm jobs, diagnosing failed builds, inspecting simulation output, and coordinating scientific workflows. To do this work, an agent commonly acts under its user's credentials and inherits the user's access to files and the scheduler. This arrangement creates a failure mode that ordinary account-level controls do not capture. Adversarial instructions in a log, tool description, shared file, or peer-agent message may redirect the agent beyond the task the user assigned, even though every resulting command is authenticated and permitted for that account. We refer to this as the hijacked authorized agent problem. Existing agent-security studies explain relevant mechanisms, such as indirect prompt injection and tool misuse, but generally evaluate them in web, enterprise, or personal-assistant settings. HPC security, by contrast, has mature controls for identity and isolation but does not ordinarily represent the intent of a particular task. This paper defines the threat model in the HPC setting, identifies attack surfaces created by schedulers, shared storage, multi-project accounts, and scientific workflows, and examines where current controls fall short. It concludes with a research agenda and a plan for an empirical benchmark, TaskBound.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-20T20:16:02Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Jie Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.10530v1</id>
+    <title>On Understanding, Identifying, and Mitigating Vulnerabilities in Agentic Large Language Models</title>
+    <updated>2026-08-11T06:11:26Z</updated>
+    <link href="https://arxiv.org/abs/2608.10530v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.10530v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Models (LLMs) have undergone a shift from stateless conversational interfaces to autonomous agents capable of multi-step planning, tool invocation, code execution, and maintaining persistent memory. When these agents operate with real-world privileges---calling APIs, modifying files, and querying databases---a compromised reasoning step can trigger unauthorized data access, irreversible state changes, or cascading failures, yet the security research community has not kept pace. To quantify the state of the field, we conducted a systematic literature review under PRISMA 2020 guidelines across six databases, screening 743 records and retaining 85 papers (2023--2025) on agentic LLM security. Attack research outpaces defense work by 3.9:1. Perception-layer vulnerabilities (prompt injection, jailbreaking, adversarial perturbations) dominate, accounting for 66\% of papers, while action-layer vulnerabilities (tool misuse, code injection, sandbox escape) appear in only 4.7\%, misaligned with real-world risk. Code execution security accounts for 3.5\%, and tool-augmented agents 12\%. We contribute a four-layer taxonomy mapping 13 vulnerability types across perception, brain, action, and interaction layers, and identify seven open problems centered on containment. Agentic LLM insecurity stems from architectural coupling, where weak isolation allows vulnerabilities to propagate across layers.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-11T06:11:26Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Md Jafrin Hossain</name>
+    </author>
+    <author>
+      <name>Mohammad Arif Hossain</name>
+    </author>
+    <author>
+      <name>Nirwan Ansari</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.18847v1</id>
+    <title>Data Leakage Prevention in Agentic Applications via Preemptive Hardening</title>
+    <updated>2026-07-21T08:35:22Z</updated>
+    <link href="https://arxiv.org/abs/2607.18847v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.18847v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Agentic systems integrate LLM driven planning with interfaces to external tools, making data leakage and tool misuse feasible via instruction/data boundary failures and prompt injection attacks. Enforcing required controls consistently is particularly challenging in workflows spanning many codebases and heterogeneous agents. To address this challenge in multi agentic systems, we present a pre-deployment pipeline for scanning, hardening, and validation of agentic applications. The pipeline analyzes prompt templates, tool interfaces, and tool-invocation code to identify leakage-enabling patterns and generate actionable patches. The hardened application is then validated through adversarial prompt injection attacks and benign input variations ensuring that mitigations do not disrupt intended behavior. In the hardening stage, high-risk tools are prioritized, and minimally invasive mitigations are applied, including schema tightening, boundary sanitization, allowlist-based tool gating, and least-privilege checks. In the validation stage, the pipeline automatically generates attack inputs that mimic jailbreaks, instruction overrides, and tool-targeted manipulation, along with benign task variants, to confirm that the functionality of the hardened application is preserved after remediation. We evaluated the pipeline on five real-world agentic applications, as well as on the AgentDojo benchmark. Across all applications, the proposed pipeline identified recurring leakage-enabling patterns and generated patches that can be integrated without disrupting the intended application behavior. The resulting modifications of application code were shown to eliminate leaks when targeted by basic jailbreak and instruction-override attacks, achieving a 100% reduction in leakage, and reduce leaks by 91% under conditions of stress-induced manipulation, without the need of continuous runtime policy enforcement.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-21T08:35:22Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Akansha Shukla</name>
+    </author>
+    <author>
+      <name>Emily Bellov</name>
+    </author>
+    <author>
+      <name>Parth Atulbhai Gandhi</name>
+    </author>
+    <author>
+      <name>Yuval Elovici</name>
+    </author>
+    <author>
+      <name>Asaf Shabtai</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2510.06607v3</id>
+    <title>Your Harness is Not Secure: Benchmarking Real-world Threat of Command Line Interface Agent</title>
+    <updated>2026-08-21T05:20:06Z</updated>
+    <link href="https://arxiv.org/abs/2510.06607v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.06607v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Command-line interface (CLI) agents powered by large language models (LLMs) can interpret natural-language requests, plan multi-step tasks, execute shell commands, and modify files and system state. As these agents are increasingly used for operating-system (OS) workflows, it is important to evaluate whether they can be misused to carry out security-relevant operations. Existing benchmarks often lack an attacker-knowledge model grounded in tactics, techniques, and procedures (TTPs), provide limited coverage of end-to-end kill chains, rely on simplified single-host environments, or use LLM-as-a-judge for success evaluation. We introduce AdvCLI, an MITRE ATT&amp;CK-aligned benchmark for evaluating OS-level misuse risks of CLI agents in a controlled multi-host sandbox. AdvCLI contains 140 tasks: 40 direct malicious requests, 74 TTP-based tasks, and 26 end-to-end kill chains. Each task is paired with deterministic hard-coded verification protocols that check whether the requested OS-level effect is realized. We evaluate seven CLI agents and products built on nine foundation models, including ReAct, OpenClaw, OpenAI Agent SDK, Claude Code, Gemini CLI, Cursor CLI, and Cursor IDE. Results show that current CLI agents frequently proceed beyond refusal and can complete a non-negligible fraction of malicious OS-level tasks, especially when requests include TTP-style attacker knowledge. AdvCLI provides a reproducible testbed for evaluating these risks and for developing stronger safety mechanisms for tool-using CLI agents in the future.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-08T03:35:23Z</published>
+    <arxiv:comment>Accepted by EMNLP 2026 (Findings)</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Weidi Luo</name>
+    </author>
+    <author>
+      <name>Qiming Zhang</name>
+    </author>
+    <author>
+      <name>Tianyu Lu</name>
+    </author>
+    <author>
+      <name>Xiaogeng Liu</name>
+    </author>
+    <author>
+      <name>Bin Hu</name>
+    </author>
+    <author>
+      <name>Hung-Chun Chiu</name>
+    </author>
+    <author>
+      <name>Siyuan Ma</name>
+    </author>
+    <author>
+      <name>Yizhe Zhang</name>
+    </author>
+    <author>
+      <name>Xusheng Xiao</name>
+    </author>
+    <author>
+      <name>Yinzhi Cao</name>
+    </author>
+    <author>
+      <name>Zhen Xiang</name>
+    </author>
+    <author>
+      <name>Chaowei Xiao</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.22445v1</id>
+    <title>Dynamic Capability Scoping for Enterprise AI Agents: A Synthetic Dataset and Three-Source Permission Architecture</title>
+    <updated>2026-07-24T16:08:03Z</updated>
+    <link href="https://arxiv.org/abs/2607.22445v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.22445v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Enterprise AI agents are typically granted static credential sets at configuration time, holding every tool the role might need for every task they perform. This persistent over-privilege expands the attack surface. We argue that capability scoping must follow a dynamic least-privilege principle and be treated as a prevention mechanism before a detection one. A credential that does not exist in an agent's context cannot be misused regardless of the agent's reasoning or evasion sophistication. We outline a three-source architecture instantiating this principle: role-based ceilings, a task-context classifier, and policy-derived combination prohibitions creating a layered proactive defense against LLM agent misalignment and misuse cases. The architecture supports both enforcing and observe-only deployment; the latter records agent permission requests inconsistent with task context, producing a behavioral signal usable in misalignment research.
+  As a first step toward evaluating this architecture, we contribute a synthetic dataset of 600 enterprise task prompts grounded in a multi-department company policy, labeled with minimum required permissions across a 15-permission tool-based taxonomy that maps directly to deployable credentials or enforceable guardrails. The dataset is constructed via a two-pass pipeline that separates prompt generation from permission labeling to avoid circularity, and is validated against a 60-record/688 decisions human-reviewed sample (Cohen's $κ= 0.917$ pre-review and $κ= 0.967$ post-review). Iterating between dataset and policy reduced ceiling violations from 46 to 3, a 93% reduction. This shows that synthetic prompt generation can drive policy refinement when the two are developed together. The dataset, environment specification, and generation pipeline are released to support evaluation of dynamic scoping mechanisms.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-24T16:08:03Z</published>
+    <arxiv:comment>Published at the Second Workshop on Agents in the Wild: Safety, Security, and Beyond (AIWILD) at ICML 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Halil Burak Noyan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.10163v1</id>
+    <title>Compatibility at a Cost: Systematic Discovery and Exploitation of MCP Clause-Compliance Vulnerabilities</title>
+    <updated>2026-03-10T18:57:48Z</updated>
+    <link href="https://arxiv.org/abs/2603.10163v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.10163v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The Model Context Protocol (MCP) is a recently proposed interoperability standard that unifies how AI agents connect with external tools and data sources. By defining a set of common client-server message exchange clauses, MCP replaces fragmented integrations with a standardized, plug-and-play framework. However, to be compatible with diverse AI agents, the MCP specification relaxes many behavioral constraints into optional clauses, leading to misuse-prone SDK implementation. We identify it as a new attack surface that allows adversaries to achieve multiple attacks (e.g, silent prompt injection, DoS, etc.), named as \emph{compatibility-abusing attacks}.
+  In this work, we present the first systematic framework for analyzing this new attack surface across multi-language MCP SDKs. First, we construct a universal and language-agnostic intermediate representation (IR) generator that normalizes SDKs of different languages. Next, based on the new IR, we propose auditable static analysis with LLM-guided semantic reasoning for cross-language/clause compliance analysis. Third, by formalizing the attack semantics of the MCP clauses, we build three attack modalities and develop a modality-guided pipeline to uncover exploitable non-compliance issues.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-10T18:57:48Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Nanzi Yang</name>
+    </author>
+    <author>
+      <name>Weiheng Bai</name>
+    </author>
+    <author>
+      <name>Kangjie Lu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2512.12921v1</id>
+    <title>Cisco Integrated AI Security and Safety Framework Report</title>
+    <updated>2025-12-15T02:12:12Z</updated>
+    <link href="https://arxiv.org/abs/2512.12921v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2512.12921v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Artificial intelligence (AI) systems are being readily and rapidly adopted, increasingly permeating critical domains: from consumer platforms and enterprise software to networked systems with embedded agents. While this has unlocked potential for human productivity gains, the attack surface has expanded accordingly: threats now span content safety failures (e.g., harmful or deceptive outputs), model and data integrity compromise (e.g., poisoning, supply-chain tampering), runtime manipulations (e.g., prompt injection, tool and agent misuse), and ecosystem risks (e.g., orchestration abuse, multi-agent collusion). Existing frameworks such as MITRE ATLAS, National Institute of Standards and Technology (NIST) AI 100-2 Adversarial Machine Learning (AML) taxonomy, and OWASP Top 10s for Large Language Models (LLMs) and Agentic AI Applications provide valuable viewpoints, but each covers only slices of this multi-dimensional space.
+  This paper presents Cisco's Integrated AI Security and Safety Framework ("AI Security Framework"), a unified, lifecycle-aware taxonomy and operationalization framework that can be used to classify, integrate, and operationalize the full range of AI risks. It integrates AI security and AI safety across modalities, agents, pipelines, and the broader ecosystem. The AI Security Framework is designed to be practical for threat identification, red-teaming, risk prioritization, and it is comprehensive in scope and can be extensible to emerging deployments in multimodal contexts, humanoids, wearables, and sensory infrastructures. We analyze gaps in prevailing frameworks, discuss design principles for our framework, and demonstrate how the taxonomy provides structure for understanding how modern AI systems fail, how adversaries exploit these failures, and how organizations can build defenses across the AI lifecycle that evolve alongside capability advancements.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-12-15T02:12:12Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Amy Chang</name>
+    </author>
+    <author>
+      <name>Tiffany Saade</name>
+    </author>
+    <author>
+      <name>Sanket Mendapara</name>
+    </author>
+    <author>
+      <name>Adam Swanda</name>
+    </author>
+    <author>
+      <name>Ankit Garg</name>
+    </author>
+  </entry>
+</feed>

@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/5jusj5vzOcfH8lh/+HKhadBO6pQ</id>
+  <title>arXiv Query: search_query=all:Byzantine AND all:fault AND all:tolerance AND all:LLM AND all:agents&amp;id_list=&amp;start=0&amp;max_results=100</title>
+  <updated>2026-11-21T23:59:27Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:Byzantine+AND+(all:fault+AND+(all:tolerance+AND+(all:LLM+AND+all:agents)))&amp;start=0&amp;max_results=100&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>100</opensearch:itemsPerPage>
+  <opensearch:totalResults>2</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2511.10400v2</id>
+    <title>Rethinking the Reliability of Multi-agent System: A Perspective from Byzantine Fault Tolerance</title>
+    <updated>2025-12-16T01:56:26Z</updated>
+    <link href="https://arxiv.org/abs/2511.10400v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2511.10400v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Ensuring the reliability of agent architectures and effectively identifying problematic agents when failures occur are crucial challenges in multi-agent systems (MAS). Advances in large language models (LLMs) have established LLM-based agents as a major branch of MAS, enabling major breakthroughs in complex problem solving and world modeling. However, the reliability implications of this shift remain largely unexplored. i.e., whether substituting traditional agents with LLM-based agents can effectively enhance the reliability of MAS. In this work, we investigate and quantify the reliability of LLM-based agents from the perspective of Byzantine fault tolerance. We observe that LLM-based agents demonstrate stronger skepticism when processing erroneous message flows, a characteristic that enables them to outperform traditional agents across different topological structures. Motivated by the results of the pilot experiment, we design CP-WBFT, a confidence probe-based weighted Byzantine Fault Tolerant consensus mechanism to enhance the stability of MAS with different topologies. It capitalizes on the intrinsic reflective and discriminative capabilities of LLMs by employing a probe-based, weighted information flow transmission method to improve the reliability of LLM-based agents. Extensive experiments demonstrate that CP-WBFT achieves superior performance across diverse network topologies under extreme Byzantine conditions (85.7\% fault rate). Notably, our approach surpasses traditional methods by attaining remarkable accuracy on various topologies and maintaining strong reliability in both mathematical reasoning and safety assessment tasks.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-11-13T15:20:12Z</published>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Lifan Zheng</name>
+    </author>
+    <author>
+      <name>Jiawei Chen</name>
+    </author>
+    <author>
+      <name>Qinghong Yin</name>
+    </author>
+    <author>
+      <name>Jingyuan Zhang</name>
+    </author>
+    <author>
+      <name>Xinyi Zeng</name>
+    </author>
+    <author>
+      <name>Yu Tian</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.03034v1</id>
+    <title>Capability Advertisement as a Market for Lemons: A Trust Layer for Heterogeneous Agent Networks</title>
+    <updated>2026-06-02T02:17:30Z</updated>
+    <link href="https://arxiv.org/abs/2606.03034v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.03034v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language model (LLM) agents have begun to delegate work to one another. Protocols such as the Model Context Protocol (MCP) and the Agent2Agent protocol (A2A) let an agent publish what it can do and let others call it, and public registries of such agents are already appearing. These protocols assume an advertised capability is a static, truthful fact. A real agent is none of these things: its competence is probabilistic, varies with input, drifts when the underlying model is updated, and, because the agent is itself a language model, it can describe itself with complete confidence and be wrong. A caller therefore sees what an agent claims to do, not what it can do, with no principled way to tell a reliable provider from a fluent impostor.
+  We argue these difficulties share one cause: the market for lemons. When quality is hidden and claims are cheap, good and bad providers become indistinguishable, honest reliability goes unrewarded, and the market decays toward its worst participants. Economics offers three remedies, signaling, screening, and reputation, and none are present in today's agent protocols.
+  We make four contributions: (1) a failure taxonomy that names confident-wrong as a non-adversarial, correlated subclass of Byzantine faults that classical fault-tolerance mismodels; (2) a market-for-lemons model showing that faith-based protocols admit only a low-trust equilibrium; (3) the Trust Layer, a thin, protocol-agnostic narrow waist above MCP and A2A that adds probabilistic capability descriptors, screening, and reputation, and admits a separating equilibrium when the cost of sustaining an overclaim exceeds the gain from it; and (4) a reliability-composition bound for delegation chains with an end-to-end placement argument. The design needs no model retraining and degrades gracefully when its trust anchors are absent or corrupt.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-02T02:17:30Z</published>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Gaurav Naresh Mittal</name>
+    </author>
+  </entry>
+</feed>

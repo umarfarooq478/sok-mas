@@ -1,0 +1,215 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/q7I8amyynGIbwIPyo3PeAcD/v0Q</id>
+  <title>arXiv Query: search_query=all:voting AND all:consensus AND all:robustness AND all:multi-agent AND all:LLM&amp;id_list=&amp;start=0&amp;max_results=100</title>
+  <updated>2026-11-21T23:59:38Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:voting+AND+(all:consensus+AND+(all:robustness+AND+(all:multi-agent+AND+all:LLM)))&amp;start=0&amp;max_results=100&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>100</opensearch:itemsPerPage>
+  <opensearch:totalResults>8</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2604.03809v1</id>
+    <title>Representational Collapse in Multi-Agent LLM Committees: Measurement and Diversity-Aware Consensus</title>
+    <updated>2026-04-04T17:30:23Z</updated>
+    <link href="https://arxiv.org/abs/2604.03809v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.03809v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multi-agent LLM committees replicate the same model under different role prompts and aggregate outputs by majority vote, implicitly assuming that agents contribute complementary evidence. We embed each agent's chain-of-thought rationale and measure pairwise similarity: across 100 GSM8K questions with three Qwen2.5-14B agents, mean cosine similarity is 0.888 and effective rank is 2.17 out of 3.0, a failure mode we term representational collapse. DALC, a training-free consensus protocol that computes diversity weights from embedding geometry, reaches 87% on GSM8K versus 84% for self-consistency at 26% lower token cost. Ablation experiments reveal 1-3 point per-protocol run-to-run variance, confirm that hint sharing contributes more than diversity weighting alone, and show that encoder choice strongly modulates collapse severity (cosine 0.908 with mxbai versus 0.888 with nomic) and downstream accuracy. The more robust finding is that collapse is measurable, worsens on harder tasks, and that the choice of embedding proxy is a first-order design decision for any latent communication protocol.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-04T17:30:23Z</published>
+    <arxiv:comment>11 pages, 2 figures, 7 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Dipkumar Patel</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2507.14928v1</id>
+    <title>Byzantine-Robust Decentralized Coordination of LLM Agents</title>
+    <updated>2025-07-20T11:55:26Z</updated>
+    <link href="https://arxiv.org/abs/2507.14928v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2507.14928v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Collaboration among multiple large language model (LLM) agents is a promising approach to overcome inherent limitations of single-agent systems, such as hallucinations and single points of failure. As LLM agents are increasingly deployed on open blockchain platforms, multi-agent systems capable of tolerating malicious (Byzantine) agents have become essential.
+  Recent Byzantine-robust multi-agent systems typically rely on leader-driven coordination, which suffers from two major drawbacks. First, they are inherently vulnerable to targeted attacks against the leader. If consecutive leaders behave maliciously, the system repeatedly fails to achieve consensus, forcing new consensus rounds, which is particularly costly given the high latency of LLM invocations. Second, an underperforming proposal from the leader can be accepted as the final answer even when higher-quality alternatives are available, as existing methods finalize the leader's proposal once it receives a quorum of votes.
+  To address these issues, we propose DecentLLMs, a novel decentralized consensus approach for multi-agent LLM systems, where worker agents generate answers concurrently and evaluator agents independently score and rank these answers to select the best available one. This decentralized architecture enables faster consensus despite the presence of Byzantine agents and consistently selects higher-quality answers through Byzantine-robust aggregation techniques.
+  Experimental results demonstrate that DecentLLMs effectively tolerates Byzantine agents and significantly improves the quality of selected answers.</summary>
+    <category term="cs.DC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-07-20T11:55:26Z</published>
+    <arxiv:primary_category term="cs.DC"/>
+    <author>
+      <name>Yongrae Jo</name>
+    </author>
+    <author>
+      <name>Chanik Park</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.11035v1</id>
+    <title>Free-MAD: Consensus-Free Multi-Agent Debate</title>
+    <updated>2025-09-14T01:55:01Z</updated>
+    <link href="https://arxiv.org/abs/2509.11035v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.11035v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multi-agent debate (MAD) is an emerging approach to improving the reasoning capabilities of large language models (LLMs). Existing MAD methods rely on multiple rounds of interaction among agents to reach consensus, and the final output is selected by majority voting in the last round. However, this consensus-based design faces several limitations. First, multiple rounds of communication increases token overhead and limits scalability. Second, due to the inherent conformity of LLMs, agents that initially produce correct responses may be influenced by incorrect ones during the debate process, causing error propagation. Third, majority voting introduces randomness and unfairness in the decision-making phase, and can degrade the reasoning performance.
+  To address these issues, we propose \textsc{Free-MAD}, a novel MAD framework that eliminates the need for consensus among agents. \textsc{Free-MAD} introduces a novel score-based decision mechanism that evaluates the entire debate trajectory rather than relying on the last round only. This mechanism tracks how each agent's reasoning evolves, enabling more accurate and fair outcomes. In addition, \textsc{Free-MAD} reconstructs the debate phase by introducing anti-conformity, a mechanism that enables agents to mitigate excessive influence from the majority. Experiments on eight benchmark datasets demonstrate that \textsc{Free-MAD} significantly improves reasoning performance while requiring only a single-round debate and thus reducing token costs. We also show that compared to existing MAD approaches, \textsc{Free-MAD} exhibits improved robustness in real-world attack scenarios.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-14T01:55:01Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Yu Cui</name>
+    </author>
+    <author>
+      <name>Hang Fu</name>
+    </author>
+    <author>
+      <name>Haibin Zhang</name>
+    </author>
+    <author>
+      <name>Licheng Wang</name>
+    </author>
+    <author>
+      <name>Cong Zuo</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2502.16565v2</id>
+    <title>The Hidden Strength of Disagreement: Unraveling the Consensus-Diversity Tradeoff in Adaptive Multi-Agent Systems</title>
+    <updated>2025-05-19T15:45:13Z</updated>
+    <link href="https://arxiv.org/abs/2502.16565v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2502.16565v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Consensus formation is pivotal in multi-agent systems (MAS), balancing collective coherence with individual diversity. Conventional LLM-based MAS primarily rely on explicit coordination, e.g., prompts or voting, risking premature homogenization. We argue that implicit consensus, where agents exchange information yet independently form decisions via in-context learning, can be more effective in dynamic environments that require long-horizon adaptability. By retaining partial diversity, systems can better explore novel strategies and cope with external shocks. We formalize a consensus-diversity tradeoff, showing conditions where implicit methods outperform explicit ones. Experiments on three scenarios -- Dynamic Disaster Response, Information Spread and Manipulation, and Dynamic Public-Goods Provision -- confirm partial deviation from group norms boosts exploration, robustness, and performance. We highlight emergent coordination via in-context learning, underscoring the value of preserving diversity for resilient decision-making.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-02-23T13:12:53Z</published>
+    <arxiv:comment>Source codes are available at https://github.com/wuzengqing001225/ConsensusDiversityTradeoffMAS</arxiv:comment>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Zengqing Wu</name>
+    </author>
+    <author>
+      <name>Takayuki Ito</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.16710v2</id>
+    <title>Misinformation Propagation in Benign Multi-Agent Systems</title>
+    <updated>2026-10-14T09:21:50Z</updated>
+    <link href="https://arxiv.org/abs/2606.16710v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.16710v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multi-agent systems (MAS) are credited with solving complex problems, yet their agents routinely act on context that may be false. Prior work shows single LLMs are swayed by false context, and MAS can be compromised by adversarial agents persuading peers. We study the benign case: agents follow one protocol, none intends to deceive, but some read a misleading passage. We study it with MINT, 10,278 LLM-written misinformation passages in eight styles, testing three open-weight models on commonsense reasoning, knowledge QA, and moral judgment. A relevant false passage costs a single agent 0.12-0.43 accuracy; irrelevant or content-free passages typically cost at most 0.06. Debate looks robust because uninformed agents outnumber misinformed ones. With one of three misinformed, it is no better than choosing the majority over equally exposed independent samples. Interaction helps only with a misinformed majority, recovering up to 0.24 accuracy over voting (0.29 under consensus). A one-sentence unreliability warning recovers up to 0.18 accuracy under voting (0.28 under consensus), at no significant cost under voting when context is true. Robustness should be judged against exposure-matched baselines, with prompt-level skepticism as cheap first defense.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-15T13:40:01Z</published>
+    <arxiv:comment>64 pages, 12 figures, 31 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Jonas Becker</name>
+    </author>
+    <author>
+      <name>Jan Philip Wahle</name>
+    </author>
+    <author>
+      <name>Terry Ruas</name>
+    </author>
+    <author>
+      <name>Bela Gipp</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2510.04886v2</id>
+    <title>Where Did It All Go Wrong? A Hierarchical Look into Multi-Agent Error Attribution</title>
+    <updated>2025-10-16T18:25:19Z</updated>
+    <link href="https://arxiv.org/abs/2510.04886v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.04886v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Error attribution in Large Language Model (LLM) multi-agent systems presents a significant challenge in debugging and improving collaborative AI systems. Current approaches to pinpointing agent and step level failures in interaction traces - whether using all-at-once evaluation, step-by-step analysis, or binary search - fall short when analyzing complex patterns, struggling with both accuracy and consistency. We present ECHO (Error attribution through Contextual Hierarchy and Objective consensus analysis), a novel algorithm that combines hierarchical context representation, objective analysis-based evaluation, and consensus voting to improve error attribution accuracy. Our approach leverages a positional-based leveling of contextual understanding while maintaining objective evaluation criteria, ultimately reaching conclusions through a consensus mechanism. Experimental results demonstrate that ECHO outperforms existing methods across various multi-agent interaction scenarios, showing particular strength in cases involving subtle reasoning errors and complex interdependencies. Our findings suggest that leveraging these concepts of structured, hierarchical context representation combined with consensus-based objective decision-making, provides a more robust framework for error attribution in multi-agent systems.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-06T15:07:13Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Adi Banerjee</name>
+    </author>
+    <author>
+      <name>Anirudh Nair</name>
+    </author>
+    <author>
+      <name>Tarik Borogovac</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.24755v1</id>
+    <title>Automated Detection and Classification of Delusion-related Content in Naturalistic Audio Diaries Using Multi-Agent Language Models</title>
+    <updated>2026-05-23T22:18:40Z</updated>
+    <link href="https://arxiv.org/abs/2605.24755v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.24755v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Speech monologues recorded in naturalistic settings provide opportunities to characterize mental illness phenomenology and detect symptom exacerbation. Large language models (LLMs) offer new possibilities for automating this process, as they require annotated data primarily for evaluation rather than training. In this paper, we present a novel automated, multi-agent LLM pipeline for the fine-grained, multi-label extraction of language suggestive of delusional beliefs, associated affective responses, and behavioral responses from transcripts of naturalistic audio diaries collected from people with moderate persecutory ideation. Evaluating an ensemble of three foundation models, we demonstrate that detailed diagnostic prompt instructions successfully reduce false positives for delusional theme classification, but also constrain the interpretation of affective or behavioral responses. Furthermore, comparing multi-agent adjudication frameworks shows that complex conversational debate between agents diminishes accuracy on clinically ambiguous text by inducing premature consensus. Instead, majority voting establishes robust performance (Micro F1 of 0.872 and 0.779 for delusion detection and classification respectively). This work provides a validated and scalable pipeline for the automated detection and characterization of content suggesting delusional beliefs in naturalistic speech.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-23T22:18:40Z</published>
+    <arxiv:comment>Accepted by CLPych 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Feng Chen</name>
+    </author>
+    <author>
+      <name>Justin Tauscher</name>
+    </author>
+    <author>
+      <name>Changye Li</name>
+    </author>
+    <author>
+      <name>Meliha Yetisgen</name>
+    </author>
+    <author>
+      <name>Alex Cohen</name>
+    </author>
+    <author>
+      <name>Adam Kuczynski</name>
+    </author>
+    <author>
+      <name>Angelina Pei-Tzu Tsai</name>
+    </author>
+    <author>
+      <name>Benjamin Buck</name>
+    </author>
+    <author>
+      <name>Dror Ben-Zeev</name>
+    </author>
+    <author>
+      <name>Trevor Cohen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.27132v1</id>
+    <title>TRUST: A Framework for Decentralized AI Service v.0.1</title>
+    <updated>2026-04-29T19:32:58Z</updated>
+    <link href="https://arxiv.org/abs/2604.27132v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.27132v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Reasoning Models (LRMs) and Multi-Agent Systems (MAS) in high-stakes domains demand reliable verification, yet centralized approaches suffer four limitations: (1) Robustness, with single points of failure vulnerable to attacks and bias; (2) Scalability, as reasoning complexity creates bottlenecks; (3) Opacity, as hidden auditing erodes trust; and (4) Privacy, as exposed reasoning traces risk model theft. We introduce TRUST (Transparent, Robust, and Unified Services for Trustworthy AI), a decentralized framework with three innovations: (i) Hierarchical Directed Acyclic Graphs (HDAGs) that decompose Chain-of-Thought reasoning into five abstraction levels for parallel distributed auditing; (ii) the DAAN protocol, which projects multi-agent interactions into Causal Interaction Graphs (CIGs) for deterministic root-cause attribution; and (iii) a multi-tier consensus mechanism among computational checkers, LLM evaluators, and human experts with stake-weighted voting that guarantees correctness under 30% adversarial participation. We prove a Safety-Profitability Theorem ensuring honest auditors profit while malicious actors incur losses. All decisions are recorded on-chain, while privacy-by-design segmentation prevents reconstruction of proprietary logic. Across multiple LLMs and benchmarks, TRUST attains 72.4% accuracy (4-18% above baselines) and remains resilient against 20% corruption. DAAN reaches 70% root-cause attribution (vs. 54-63% for standard methods) with 60% token savings. Human studies validate the design (F1 = 0.89, Brier = 0.074). The framework supports (A1) decentralized auditing, (A2) tamper-proof leaderboards, (A3) trustless data annotation, and (A4) governed autonomous agents, pioneering decentralized AI auditing for safe, accountable deployment of reasoning-capable systems.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-29T19:32:58Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Yu-Chao Huang</name>
+    </author>
+    <author>
+      <name>Zhen Tan</name>
+    </author>
+    <author>
+      <name>Mohan Zhang</name>
+    </author>
+    <author>
+      <name>Pingzhi Li</name>
+    </author>
+    <author>
+      <name>Zhuo Zhang</name>
+    </author>
+    <author>
+      <name>Tianlong Chen</name>
+    </author>
+  </entry>
+</feed>

@@ -1,0 +1,38 @@
+A-benign multi-agent LLM failure taxonomy 100
+A-benign failure attribution multi-agent LLM 200
+A-benign fault injection multi-agent LLM 300
+A-benign error propagation multi-agent LLM 400
+A-benign hallucination propagation multi-agent LLM 500
+A-benign cascading errors multi-agent LLM 600
+A-benign bugs in LLM agent frameworks empirical study 700
+A-benign multi-agent LLM communication failure 800
+A-benign role drift specification multi-agent LLM 900
+A-benign multi-agent debate failure consensus 1000
+B-adversarial prompt injection multi-agent LLM 1100
+B-adversarial attack on LLM multi-agent communication 1200
+B-adversarial memory poisoning multi-agent LLM 1300
+B-adversarial malicious agent multi-agent LLM defense 1400
+B-adversarial infectious jailbreak multi-agent propagation 1470
+B-adversarial orchestrator compromise multi-agent LLM attack 1570
+B-adversarial tool misuse attack multi-agent LLM 1670
+B-adversarial collusion LLM agents 1770
+B-adversarial multi-agent LLM security survey 1870
+B-adversarial agent protocol vulnerability MCP A2A 1970
+C-bridge cascading errors multi-agent LLM adversarial 2070
+C-bridge agent coordination failure adversarial 2170
+C-bridge MAST failure modes attack multi-agent 2270
+C-bridge benign and adversarial failures multi-agent LLM 2370
+C-bridge unified taxonomy faults attacks LLM multi-agent systems 2470
+C-bridge accidental versus malicious failures agentic systems 2570
+C-bridge faulty and malicious agents robustness multi-agent LLM 2670
+C-bridge systematization of knowledge multi-agent LLM 2770
+C-bridge AutoGen CrewAI LangGraph failures vulnerabilities 2870
+C-bridge reliability and security LLM multi-agent systems survey 2970
+D-defense defense multi-agent LLM robustness 3070
+D-defense anomaly detection multi-agent LLM 3170
+D-defense verification agent multi-agent LLM 3270
+D-defense provenance authorization LLM agents 3370
+D-defense Byzantine fault tolerance LLM agents 3470
+D-defense monitoring multi-agent LLM runtime 3570
+D-defense sandboxing isolation LLM agents 3670
+D-defense voting consensus robustness multi-agent LLM 3770

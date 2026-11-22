@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/oXOpVUbQkP8FtZ+lofC8qw+Vnxg</id>
+  <title>arXiv Query: search_query=all:cascading AND all:errors AND all:multi-agent AND all:LLM AND all:adversarial&amp;id_list=&amp;start=0&amp;max_results=100</title>
+  <updated>2026-11-21T23:58:39Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:cascading+AND+(all:errors+AND+(all:multi-agent+AND+(all:LLM+AND+all:adversarial)))&amp;start=0&amp;max_results=100&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>100</opensearch:itemsPerPage>
+  <opensearch:totalResults>1</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2605.07646v1</id>
+    <title>MAVEN: Multi-Agent Verification-Elaboration Network with In-Step Epistemic Auditing</title>
+    <updated>2026-05-08T12:11:08Z</updated>
+    <link href="https://arxiv.org/abs/2605.07646v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.07646v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>While explicit reasoning trajectories enhance model interpretability, existing paradigms often rely on monolithic chains that lack intermediate verification, allowing early errors to cascade unchecked. This lack of modularity impedes granular auditing and compromises the epistemic trust required for high-stakes applications. We propose MAVEN (Multi-Agent Verification-Elaboration Network with In-Step Epistemic Auditing), a blackboard-inspired framework designed to transform LLMs into deliberate reasoners through explicit role-decoupling. At its core, MAVEN operationalizes an adversarial Skeptic-Researcher-Judge loop, simulating expert deliberation by functionally separating logical defense from factual grounding. Experiments on OpenBookQA, TruthfulQA, HALUEVAL and StrategyQA benchmarks demonstrate that MAVEN delivers superior reasoning quality across four fine-grained metrics. Notably, MAVEN consistently outperforms latent reasoning models such as GEMINI-3.1-Pro and consensus-based baselines (e.g., ReConcile) by generating explicitly structured, modular, and verifiable deliberation trajectories, rather than relying on implicit internal states or post-hoc consensus. Moreover, comprehensive evaluations confirm that MAVEN is fully model-agnostic, serving as a strong and transferable reasoning booster that yields substantial performance improvements across diverse backbone models.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-08T12:11:08Z</published>
+    <arxiv:comment>24 pages, 2 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Yinsheng Yao</name>
+    </author>
+    <author>
+      <name>Jiehao Tang</name>
+    </author>
+    <author>
+      <name>Zhaozhen Yang</name>
+    </author>
+    <author>
+      <name>Dawei Cheng</name>
+    </author>
+  </entry>
+</feed>

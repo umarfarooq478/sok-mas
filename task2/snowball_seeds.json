@@ -1,0 +1,102 @@
+[
+ {
+  "title": "Why Do Multi-Agent LLM Systems Fail?",
+  "arxiv": "2503.13657",
+  "citations": 803
+ },
+ {
+  "title": "Prompt Infection: LLM-to-LLM Prompt Injection within Multi-Agent Systems",
+  "arxiv": "2410.07283",
+  "citations": 271
+ },
+ {
+  "title": "Secret Collusion among AI Agents: Multi-Agent Deception via Steganography",
+  "arxiv": "2402.07510",
+  "citations": 249
+ },
+ {
+  "title": "Agent Smith: A Single Image Can Jailbreak One Million Multimodal LLM Agents Exponentially Fast",
+  "arxiv": "",
+  "citations": 204
+ },
+ {
+  "title": "Which Agent Causes Task Failures and When? On Automated Failure Attribution of LLM Multi-Agent Systems",
+  "arxiv": "2505.00212",
+  "citations": 203
+ },
+ {
+  "title": "Red-Teaming LLM Multi-Agent Systems via Communication Attacks",
+  "arxiv": "2502.14847",
+  "citations": 192
+ },
+ {
+  "title": "G-Safeguard: A Topology-Guided Security Lens and Treatment on LLM-based Multi-agent Systems",
+  "arxiv": "2502.11127",
+  "citations": 138
+ },
+ {
+  "title": "AgenTracer: Who Is Inducing Failure in the LLM Agentic Systems?",
+  "arxiv": "2509.03312",
+  "citations": 127
+ },
+ {
+  "title": "PsySafe: A Comprehensive Framework for Psychological-based Attack, Defense, and Evaluation of Multi-agent System Safety",
+  "arxiv": "2401.11880",
+  "citations": 123
+ },
+ {
+  "title": "On the Resilience of LLM-Based Multi-Agent Collaboration with Faulty Agents",
+  "arxiv": "2408.00989",
+  "citations": 112
+ },
+ {
+  "title": "Flooding Spread of Manipulated Knowledge in LLM-Based Multi-Agent Communities",
+  "arxiv": "2407.07791",
+  "citations": 111
+ },
+ {
+  "title": "AgentLeak: A Benchmark for Internal-Channel Privacy Leakage in Multi-Agent LLM Systems",
+  "arxiv": "",
+  "citations": 109
+ },
+ {
+  "title": "Understanding the Information Propagation Effects of Communication Topologies in LLM-based Multi-Agent Systems",
+  "arxiv": "2505.23352",
+  "citations": 106
+ },
+ {
+  "title": "CONSENSAGENT: Towards Efficient and Effective Consensus in Multi-Agent LLM Interactions Through Sycophancy Mitigation",
+  "arxiv": "",
+  "citations": 81
+ },
+ {
+  "title": "Multi-Agent Systems Execute Arbitrary Malicious Code",
+  "arxiv": "2503.12188",
+  "citations": 70
+ },
+ {
+  "title": "AgentSafe: Safeguarding Large Language Model-based Multi-agent Systems via Hierarchical Data Management",
+  "arxiv": "2503.04392",
+  "citations": 62
+ },
+ {
+  "title": "Seeing the Whole Elephant: A Benchmark for Failure Attribution in LLM-based Multi-Agent Systems",
+  "arxiv": "2604.22708",
+  "citations": 59
+ },
+ {
+  "title": "Spectrum-Based Failure Attribution for Multi-agent Systems",
+  "arxiv": "",
+  "citations": 58
+ },
+ {
+  "title": "BlockAgents: Towards Byzantine-Robust LLM-Based Multi-Agent Coordination via Blockchain",
+  "arxiv": "",
+  "citations": 58
+ },
+ {
+  "title": "GUARDIAN: Safeguarding LLM Multi-Agent Collaborations with Temporal Graph Modeling",
+  "arxiv": "2505.19234",
+  "citations": 57
+ }
+]
