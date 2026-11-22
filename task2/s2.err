@@ -22,3 +22,11 @@ HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=cascading+e
 A-benign cascading errors multi-agent LLM 400
 HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=bugs+in+LLM+agent+frameworks+empirical+study&limit
 HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=bugs+in+LLM+agent+frameworks+empirical+study&limit
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=bugs+in+LLM+agent+frameworks+empirical+study&limit
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=bugs+in+LLM+agent+frameworks+empirical+study&limit
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=bugs+in+LLM+agent+frameworks+empirical+study&limit
+A-benign bugs in LLM agent frameworks empirical study 400
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=multi-agent+LLM+communication+failure&limit=100&fi
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=multi-agent+LLM+communication+failure&limit=100&fi
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=multi-agent+LLM+communication+failure&limit=100&fi
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=multi-agent+LLM+communication+failure&limit=100&fi
