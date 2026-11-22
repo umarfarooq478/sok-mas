@@ -73,3 +73,11 @@ HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=infectious+
 HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=infectious+jailbreak+multi-agent+propagation&limit
 HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=infectious+jailbreak+multi-agent+propagation&limit
 HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=infectious+jailbreak+multi-agent+propagation&limit
+B-adversarial infectious jailbreak multi-agent propagation 400
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=orchestrator+compromise+multi-agent+LLM+attack&lim
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=orchestrator+compromise+multi-agent+LLM+attack&lim
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=orchestrator+compromise+multi-agent+LLM+attack&lim
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=orchestrator+compromise+multi-agent+LLM+attack&lim
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=orchestrator+compromise+multi-agent+LLM+attack&lim
+B-adversarial orchestrator compromise multi-agent LLM attack 400
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=tool+misuse+attack+multi-agent+LLM&limit=100&field
