@@ -4,7 +4,7 @@ import hashlib, json, os, sys, time, urllib.parse, urllib.request, urllib.error
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "cache")
 UA = "sok-corpus-builder/0.1"
-MIN_GAP = {"export.arxiv.org": 3.5, "api.semanticscholar.org": 1.2, "dblp.org": 1.5,
+MIN_GAP = {"export.arxiv.org": 3.5, "api.semanticscholar.org": 4.0, "dblp.org": 1.5,
            "api.crossref.org": 0.3, "api.openalex.org": 0.3, "arxiv.org": 3.5}
 _last = {}
 

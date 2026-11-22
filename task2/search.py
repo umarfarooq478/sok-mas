@@ -36,7 +36,7 @@ for fam, qs in QUERIES.items():
                     abstract=" ".join(e.find("a:summary", NS).text.split()))
         url = "https://api.semanticscholar.org/graph/v1/paper/search?" + urllib.parse.urlencode(
             {"query": q, "limit": N, "fields": "title,authors,year,venue,externalIds,citationCount,abstract,publicationDate,publicationTypes"})
-        raw = get(url, tries=2) if 's2' in SOURCES else None
+        raw = get(url, tries=5) if 's2' in SOURCES else None
         if raw:
             for r, p in enumerate(json.loads(raw).get("data", [])):
                 x = p.get("externalIds") or {}

@@ -1,0 +1,362 @@
+0|2023-02|T1-cit|Attacking Cooperative Multi-Agent Reinforcement Learning by Adversarial Minority Influence
+1|2024-04|T1-cit|LLM as a Mastermind: A Survey of Strategic Reasoning with Large Language Models
+2|2024-08|T1-cit|Agentic LLM Workflows for Generating Patient-Friendly Medical Reports
+3|2024-08|T1-cit|The Drama Machine: Simulating Character Development with LLM Agents
+4|2024-11|T1-cit|LLM-based Multi-Agent Systems: Techniques and Business Perspectives
+5|2024-12|T1-cit|MALT: Improving Reasoning with Multi-Agent LLM Training
+6|2024-12|T1-cit|SafeAgentBench: A Benchmark for Safe Task Planning of Embodied LLM Agents
+7|2025-01|T1-cit|Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG
+8|2025-02|T1-cit|Multi-Agent Risks from Advanced AI
+9|2025-04|T1-cit|A Survey on Model Context Protocol: Architecture, State-of-the-art, Challenges and Future Directio
+10|2025-04|T1-cit|LLM-Powered GUI Agents in Phone Automation: Surveying Progress and Prospects
+11|2025-05|T1-cit|Open Challenges in Multi-Agent Security: Towards Secure Systems of Interacting AI Agents
+12|2025-05|T1-cit|From Glue-Code to Protocols: A Critical Analysis of A2A and MCP Integration for Scalable Agent Sys
+13|2025-05|T1-cit|Enhancing Cooperative Multi-Agent Reinforcement Learning with State Modelling and Adversarial Expl
+14|2025-05|T1-cit|Vibe Coding vs. Agentic Coding: Fundamentals and Practical Implications of Agentic AI
+15|2025-07|T1-cit|A Survey on Code Generation with LLM-based Agents
+16|2025-08|T1-cit|A Taxonomy of Hierarchical Multi-Agent Systems: Design Patterns, Coordination Mechanisms, and Indu
+17|2025-09|T1-cit|LangChain vs. LangGraph vs. LangSmith: Taxonomies of Agentic AI Toolchains for End-to-End Orchestr
+18|2025-09|T1-cit|Talk Isn't Always Cheap: Understanding Failure Modes in Multi-Agent Debate
+19|2025-09|T1-cit|Automatic Failure Attribution and Critical Step Prediction Method for Multi-Agent Systems Based on
+20|2025-10|T1-cit|Beyond Majority Voting: LLM Aggregation by Leveraging Higher-Order Information
+21|2025-10|T1-cit|A Survey of LLM-based Multi-agent Systems in Medicine
+22|2025-11|T1-cit|Formalizing Heterogeneous Interaction Modeling for Multi-Agent Debate in Visual Geo-Localization
+23|2025-11|T1-cit|Hiding in the AI Traffic: Abusing MCP for LLM-Powered Agentic Red Teaming
+24|2025-11|T1-cit|Toward a Safe Internet of Agents
+25|2025-12|T1-cit|A Survey on LLM-based Multi-Agent AI Hospital
+26|2026-01|T1-cit|Taming Various Privilege Escalation in LLM-Based Agent Systems: A Mandatory Access Control Framewo
+27|2026-01|T1-cit|Agentic Artificial Intelligence (AI): Architectures, Taxonomies, and Evaluation of Large Language 
+28|2026-01|T1-cit|Faramesh: A Protocol-Agnostic Execution Control Plane for Autonomous Agent Systems
+29|2026-01|T1-cit|Cross-Modal Memory Compression for Efficient Multi-Agent Debate
+30|2026-02|T1-cit|SoK: Agentic Skills -- Beyond Tool Use in LLM Agents
+31|2026-03|T1-cit|Mozi: Governed Autonomy for Drug Discovery LLM Agents
+32|2026-03|T1-cit|AgentRFC: Security Design Principles and Conformance Testing for Agent Protocols
+33|2026-05|T1-cit|TeamBench: Evaluating Agent Coordination under Enforced Role Separation
+34|2026-05|T1-cit|Shepherd: Enabling Programmable Meta-Agents via Reversible Agentic Execution Traces
+35|2026-05|T1-cit|State Contamination in Memory-Augmented LLM Agents
+36|2026-05|T1-cit|Agentic Trading: When LLM Agents Meet Financial Markets
+37|2026-06|T1-cit|LLM-as-Code: Agentic Programming for Agent Harness
+38|2026-06|T1-cit|CoffeeBench: Benchmarking Long-Horizon LLM Agents in Heterogeneous Multi-Agent Economies
+39|2026-07|T1-cit|APPA: Recoverable Information-Flow Control for Real-World LLM Agents
+40|2026-07|T1-cit|Model or Harness? An Interaction-Centric Taxonomy for Localizing Agent Failures
+41|2026-09|T1-cit|Quantifying Overclaiming Propensity in Frontier LLM Agents
+42|2023-03|T1-ven|Resilient Consensus Control for Multi-Agent Systems: A Comparative Survey
+43|2023-07|T1-ven|Event-Triggered Reference Governors for Collisions-Free Leader–Following Coordination Under Unreli
+44|2023-11|T1-ven|Can Competition Outperform Collaboration? The Role of Misbehaving Agents
+45|2024-01|T1-ven|MDAgents: An Adaptive Collaboration of LLMs for Medical Decision-Making
+46|2024-04|T1-ven|Cooperate or Collapse: Emergence of Sustainable Cooperation in a Society of LLM Agents
+47|2024-12|T1-ven|SUB-PLAY: Adversarial Policies against Partially Observed Multi-Agent Reinforcement Learning Syste
+48|2025-01|T1-ven|MADAWSD: Multi-Agent Debate Framework for Adversarial Word Sense Disambiguation
+49|2025-01|T1-ven|A Layered Debating Multi-Agent System for Similar Disease Diagnosis
+50|2025-01|T1-ven|A Survey on LLM-powered Agents for Recommender Systems
+51|2025-01|T1-ven|Breaking Agents: Compromising Autonomous LLM Agents Through Malfunction Amplification
+52|2025-01|T1-ven|KARMA: Leveraging Multi-Agent LLMs for Automated Knowledge Graph Enrichment
+53|2025-01|T1-ven|From blockchain trust models to native security protocols : enhancements of the A2A communication 
+54|2025-01|T1-ven|Privacy in Action: Towards Realistic Privacy Mitigation and Evaluation for LLM-Powered Agents
+55|2025-01|T1-ven|Distributed optimization for multi-agent systems with communication delays and failures in energy 
+56|2025-01|T1-ven|MegaAgent: A Large-Scale Autonomous LLM-based Multi-Agent System Without Predefined SOPs
+57|2025-01|T1-ven|A Comparative Analysis of LLM-Based Multi-Agent Frameworks
+58|2025-01|T1-ven|LLM-AIDSim: LLM-Enhanced Agent-Based Influence Diffusion Simulation in Social Networks
+59|2025-01|T1-ven|Adversarial Machine Learning Attacks and Defences in Multi-Agent Reinforcement Learning
+60|2025-02|T1-ven|AI Agents Meet Blockchain: A Survey on Secure and Scalable Collaboration for Multi-Agents
+61|2025-03|T1-ven|MAP: Multi-user Personalization with Collaborative LLM-powered Agents
+62|2025-03|T1-ven|Agentic Large Language Models, a survey
+63|2025-04|T1-ven|Multi-Agent Security Tax: Trading Off Security and Collaboration Capabilities in Multi-Agent Syste
+64|2025-04|T1-ven|From LLM Reasoning to Autonomous AI Agents: A Comprehensive Review
+65|2025-05|T1-ven|AI Agents vs. Agentic AI: A Conceptual Taxonomy, Applications and Challenges
+66|2025-06|T1-ven|DURA-CPS: A Multi-Role Orchestrator for Dependability Assurance in LLM-Enabled Cyber-Physical Syst
+67|2025-07|T1-ven|An organizational theory for multi-agent interactions integrating human agents, LLMs, and speciali
+68|2025-07|T1-ven|Multi-Agentic LLMs for Personalizing STEM Texts
+69|2025-08|T1-ven|Multi-Layered Framework for LLM Hallucination Mitigation in High-Stakes Applications: A Tutorial
+70|2025-08|T1-ven|Agentic LLM-based robotic systems for real-world applications: a review on their agenticness and e
+71|2025-08|T1-ven|PentestAgent: Incorporating LLM Agents to Automated Penetration Testing
+72|2025-08|T1-ven|MALLM: Multi-Agent Decision-Making with LLMs for Multi-User Edge-Sensor Environments
+73|2025-09|T1-ven|The Rise of Agentic AI: A Review of Definitions, Frameworks, Architectures, Applications, Evaluati
+74|2025-09|T1-ven|MALM-CLIP: A generative multi-agent framework for multimodal fusion in few-shot industrial anomaly
+75|2025-10|T1-ven|Advancing Agentic AI through Communication Protocols
+76|2025-10|T1-ven|Integrating knowledge graphs with ancient Chinese medicine classics: challenges and future prospec
+77|2025-10|T1-ven|Robust Coordination Under Misaligned Communication via Power Regularization
+78|2025-10|T1-ven|Toward Autonomous LLM-Based AI Agents for Predictive Maintenance: State of the Art, Challenges, an
+79|2025-11|T1-ven|On Verifiable Legal Reasoning: A Multi-Agent Framework with Formalized Knowledge Representations
+80|2025-11|T1-ven|Trust-Aware Task Allocation With Quantum Optimization in Adversarial Multi-Agent Systems
+81|2025-11|T1-ven|Agentic AI: a comprehensive survey of architectures, applications, and future directions
+82|2025-11|T1-ven|Research on a virtual teacher personalized interaction model integrating affective computing and m
+83|2025-11|T1-ven|Robustness of Automated AI Agents Against Adversarial Context Injection in MCP
+84|2025-11|T1-ven|ARAC: Adaptive Regularized Multi-Agent Soft Actor-Critic in Graph-Structured Adversarial Games
+85|2025-11|T1-ven|Self-Optimizing Factories: The Role of Agentic Automation in Industry 4.0
+86|2026-01|T1-ven|A Survey on Evaluation of LLM-based Agents
+87|2026-01|T1-ven|Power-Q: A Hybrid Screener-Analyst Framework Using LLM Agents for Real-Time Grid Monitoring and Di
+88|2026-01|T1-ven|Stay Focused: Problem Drift in Multi-Agent Debate
+89|2026-01|T1-ven|Creative Generation via Multi-Agent Debate: Does Debate Suppress Diversity?
+90|2026-01|T1-ven|Spatiotemporal Resource Orchestration for LLM Inference in Vehicular-Edge Networks
+91|2026-01|T1-ven|Design and Gradient-Free Adaptation of Compound LLM Agents in a Partially Observable Adversarial N
+92|2026-01|T1-ven|Hierarchical Switched Control Network With Impulsive Attention for Reconnaissance Game With Agent 
+93|2026-01|T1-ven|Agent System Operations: Categorization, Challenges, and Future Directions
+94|2026-01|T1-ven|Guard: A Governance-Anchored Framework for Runtime Monitoring and Incident Response in Enterprise 
+95|2026-01|T1-ven|MACRO: A Benchmark for Clarification-Aware Multi-Agent Orchestration
+96|2026-01|T1-ven|RIFT-Bench: Dynamic Red-teaming For Agentic AI Systems
+97|2026-01|T1-ven|Agentic AI in Healthcare and Medicine: A Seven-Dimensional Taxonomy for Empirical Evaluation of LL
+98|2026-01|T1-ven|LLM-Based Multi-agent Collaborative Spectrum Cognition Method
+99|2026-01|T1-ven|An Enterprise Agentic Architecture Framework for Agentic AI Governance and Scalable Autonomy
+100|2026-01|T1-ven|ForgetAgent: Verifiable Deletion in Multi-Layer Memory Architectures for LLM Agents
+101|2026-02|T1-ven|Robust and efficient communication in multi-agent reinforcement learning
+102|2026-02|T1-ven|Agent Capability Negotiation and Binding Protocol (ACNBP)
+103|2026-02|T1-ven|Auditing Multi-Agent LLM Reasoning Trees Outperforms Majority Vote and LLM-as-Judge
+104|2026-02|T1-ven|Addressing vulnerability in customer experience with AI-agents
+105|2026-02|T1-ven|Agent Name Service (ANS): A Universal Directory for Secure AI Agent Discovery and Interoperability
+106|2026-02|T1-ven|Cross-Server Interoperability in Multi-MCP Automated AI Agent Networks
+107|2026-02|T1-ven|Agents4PLC: Automating Closed-Loop PLC Code Generation and Verification in Industrial Control Syst
+108|2026-03|T1-ven|Cross-protocol Attack Surface Analysis in Multi-agent AI Systems: Formal Verification and Categori
+109|2026-03|T1-ven|Adversarial Attack on Black-Box Multi-Agent by Adaptive Perturbation
+110|2026-03|T1-ven|Frequency-Domain Characterization of Memory Poisoning Propagation in Multi-Agent Collaborative Sys
+111|2026-03|T1-ven|A Trace-Based Assurance Framework for Agentic AI Orchestration: Contracts, Testing, and Governance
+112|2026-03|T1-ven|LLM-based multi-agent system for dam structural health monitoring
+113|2026-03|T1-ven|Temporal Traceability and Source Attribution of Memory Poisoning in Distributed Multi-Agent System
+114|2026-04|T1-ven|Causal Inference–Driven Repair of Memory Poisoning in Multi-Agent Collaborative Systems
+115|2026-04|T1-ven|Game-Theoretic Analysis of Memory Poisoning Dynamics in Competitive Multi-Agent Collaboration
+116|2026-04|T1-ven|Energy-Based Stability Control for Suppressing Memory Poisoning in Multi-Agent Collaborative Syste
+117|2026-04|T1-ven|Insect Inspired Behavioral Strategies for Improving Multi-Agent System Resilience in the Presence 
+118|2026-04|T1-ven|Benchmarking Prompt Injection Detection for Web Agents
+119|2026-04|T1-ven|Characterizing Unintended Consequences of GUI Agents For Web Browsing
+120|2026-04|T1-ven|Architectural Comparison of LLM Tool Integration Paradigms
+121|2026-04|T1-ven|Mapping human anti-collusion mechanisms to multi-agent AI systems
+122|2026-04|T1-ven|Trust Evolution in Agent and Multi-agent Systems: A Computational Modeling Perspective
+123|2026-05|T1-ven|Memory-Efficient Multi-Agent Debate with Compressed Contexts for Long-Form Reasoning
+124|2026-05|T1-ven|Resilient Distributed Control of Multi-Agent Systems in Adversarial Environments
+125|2026-05|T1-ven|Explainable autonomous cyber defense using adversarial multi-agent reinforcement learning
+126|2026-05|T1-ven|Multi-Agent Collaboration with Adversarial Filtering for Reliable Medical Diagnosis Support
+127|2026-05|T1-ven|Model Context Protocol (MCP) Server for Multi-Agent AI Assistants with Persistent Memory: An Integ
+128|2026-05|T1-ven|Context, Reasoning, and Hierarchy: A Cost-Performance Study of Compound LLM Agent Design in an Adv
+129|2026-06|T1-ven|Digital Autonomation of Residential Construction Project Lifecycle Management via Agentic-AI-Drive
+130|2026-06|T1-ven|Hugrún : Runtime-Governed Therapeutic Interaction for LLM-Based CBT Systems
+131|2026-06|T1-ven|QBugLM: An Agentic Benchmarking Framework for LLM-based Quantum Software Debugging
+132|2026-06|T1-ven|Agentic AI: A Perspective on Architecture, Frameworks and Applications
+133|2026-06|T1-ven|TERA-RAG: Temporal and Epistemic Reliability for Multi-Agent Debate
+134|2026-06|T1-ven|KubeIntellect: A Modular LLM-Orchestrated Agent Framework for End-to-End Kubernetes Management
+135|2026-07|T1-ven|Multi-Agent Systems for Anomaly Detection and Quality Control in Industrial Environments: A Compre
+136|2026-07|T1-ven|Agent-initiated socio-technical reconfiguration: a three-level taxonomy of autonomous AI governanc
+137|2026-07|T1-ven|KlaskTron: An Open-Source Platform for Physical Adversarial Multi-Agent RL
+138|2026-07|T1-ven|A Survey on Model Context Protocol (MCP) in System Calls
+139|2026-07|T1-ven|Robust Multi Agent Coordination: Integrating Causal Inference and Evolutionary Strategies in Adver
+140|2026-07|T1-ven|Communication-Efficient Networking for Distributed Agentic AI: A Systematic Review of Protocols, C
+141|2026-08|T1-ven|Runtime Dependability Certificates for Modular Multi-Agent Production Systems
+142|2026-08|T1-ven|The Multi-Agent Enterprise: From Silos to Autonomy
+143|2026-08|T1-ven|Adversarial Vulnerabilities in Cooperative Multi-Agent Reinforcement Learning for Distributed 5G S
+144|2026-08|T1-ven|From Language Models to Agentic AI: A Survey of Autonomous, Action-Enabled, and Collaborative LLM 
+145|2026-08|T1-ven|FTDI: A budget-aware self-healing framework for LLM multi-agent code generation
+146|2026-09|T1-ven|LLM ‐Powered Multi‐Agent RL Framework for Real‐Time Power Grid Dispatching
+147|2026-09|T1-ven|Decentralized Multi-agent Reinforcement Learning for Resilient Critical Infrastructures
+148|2026-09|T1-ven|Temporal coordination aware reinforcement learning for multi-agent UAV navigation in dynamic envir
+149|2026-09|T1-ven|Security threat modeling for emerging AI-agent protocols: A comparative analysis of MCP, A2A, agor
+150|2026-09|T1-ven|A systematic mapping study of AI agent–Tool communication: protocols, security, and orchestration
+151|2026-10|T1-ven|Tangent: An Empirical Study of Testing Practices for LLM-Based Agent Applications
+152|2026-10|T1-ven|A Survey of Code-to-Code Translation: From Statistical Rule-Based Systems to LLM Agents
+153|2026-10|T1-ven|Model Context Protocol (MCP) for AI Systems: A Survey of Architectures and Applications
+154|2026-10|T1-ven|Detecting Multi-Agent Collusion Through Multi-Agent Interpretability
+155|2026-10|T1-ven|Multi-Agent Task Automation System
+156|2026-11|T1-ven|A Survey of Agentic Reasoning for Large Language Models: Towards Recursively Self-Improving and Co
+157|2026-11|T1-ven|Conformity Dynamics in LLM Multi-agent Systems: The Roles of Topology and Self–social Weighting
+158|2026-11|T1-ven|Improving Google A2A Protocol: Protecting Sensitive Data and Mitigating Unintended Harms in Multi-
+159|2026-05|T2|LLM-as-a-Judge in Healthcare: A Scoping Analysis of Applications, Methods, and Human Alignment
+160|2026-05|T2|Algorithmic Fragility and Persona Bias in LLM-Generated Autistic Communication
+161|2026-05|T2|DisasterBench: Benchmarking LLM Planning under Typed Tool Interface Constraints
+162|2026-05|T2|DeltaMCP: Incremental Regeneration via Spec-Aware Transformation for MCP servers
+163|2026-05|T2|Evolutionary Dynamics of Cooperation in Next-Generation LLM Agent Systems: A Cross-Provider Empiri
+164|2026-05|T2|DynaGraph: Lightweight Multi-Model Interaction Framework via Dynamic Topological Reconfiguration
+165|2026-05|T2|AgentSchool: An LLM-Powered Multi-Agent Simulation for Education
+166|2026-05|T2|Agentic Artificial Intelligence:A Systematic Review of Architectures, Benchmarks, and Governance F
+167|2026-05|T2|From Talking Words to Sharing Thoughts: Scalable Multi-LLM Aggregation via Structured Message Pass
+168|2026-05|T2|ROGUE: Evaluating Corrigibility Failures in Frontier Computer-Use Agents
+169|2026-05|T2|TimeSage-MT: A Multi-Turn Benchmark for Evaluating Agentic Time Series Reasoning
+170|2026-05|T2|DrugClaw and DrugAudit: A Primary-Source-Grounded Agent and Authority-Aware Benchmark for Drug-Inf
+171|2026-06|T2|QoEReasoner: An Agentic Reasoning Framework for Automated and Explainable QoE Diagnosis in RANs
+172|2026-06|T2|A Sheaf Framework for Strategic Multi-Agent Systems: From Consensus to Nash Equilibria
+173|2026-06|T2|When Helping Hurts and How to Fix It: Multi-Agent Debate for Data Cleaning
+174|2026-06|T2|Token Budgets: An Empirical Catalog of 63 LLM-Agent Budget-Overrun Incidents, with an Affine-Typed
+175|2026-06|T2|Channel Fracture: Three Instances of Cross-Boundary Silent Delivery Reliability Failures in Multi-
+176|2026-06|T2|Characterizing Opinion Evolution of Networked LLMs
+177|2026-06|T2|Voting Protocols as Coordination Mechanisms for Role-Constrained Multi-Agent Tutoring Systems
+178|2026-06|T2|Emergence World: A Platform for Evaluating Long-Horizon Multi-Agent Autonomy
+179|2026-06|T2|How to Dogfood Your AI Chat Agent: A Three-Layer Evaluation Framework with Goal-Directed NPC Simul
+180|2026-06|T2|FASE: Fast Adaptive Semantic Entropy for Code Quality
+181|2026-06|T2|Collaborative Human-Agent Protocol (CHAP)
+182|2026-06|T2|Observability for Delegated Execution in Agentic AI Systems
+183|2026-06|T2|Agents All the Way Down; A Methodology for Building Custom AI Agents from Substrate to Production
+184|2026-06|T2|MAStrike: Shapley-Guided Collusive Red-Teaming on Multi-Agent Systems
+185|2026-06|T2|Intelligence Entropy Principle and the ADE Stability Engineering Framework
+186|2026-06|T2|Can LLMs Be CEOs? Benchmarking Strategic Resource Reallocation with Multi-Role Agent Simulation
+187|2026-06|T2|LegalHalluLens: Typed Hallucination Auditing and Calibrated Multi-Agent Debate for Trustworthy Leg
+188|2026-06|T2|SAGE-OPD: Selective Agent-Guided Intervention for Multi-Turn On-Policy Distillation
+189|2026-06|T2|Human-on-the-Loop Orchestration for AI-Assisted Legal Discovery
+190|2026-06|T2|NRT-Bench: Benchmarking Multi-Turn Red-Teaming of LLM Operator Agents in Safety-Critical Control R
+191|2026-06|T2|A Topology-Aware, Memory-Centric Architecture that Separates Root-Cause Derivation from Root-Cause
+192|2026-06|T2|CodeTeam: An LLM-Powered Multi-Agent Framework for Repository-Level Code Generation
+193|2026-06|T2|SHERLOC: Structured Diagnostic Localization for Code Repair Agents
+194|2026-06|T2|Is Lying an Emergent Behaviour in LLMs? Evidence from Gaslighting AI agents in a Sustainability Ga
+195|2026-06|T2|A Tutorial on Autonomous Fault-Tolerant Control Using Knowledge-Grounded LLM Agents
+196|2026-07|T2|When Agents Do Not Stop: Uncovering Infinite Agentic Loops in LLM Agents
+197|2026-07|T2|Biological Motifs for Agentic Control
+198|2026-07|T2|Grading the Narrators: An Isnad-Rijal Framework for Claim-Level Provenance in Multi-Agent Knowledg
+199|2026-07|T2|Do LLM Agents Negotiate Rationally? A Mechanism-Design Framework for Verifiable Multi-Agent Intera
+200|2026-07|T2|L-MAD: A Systematic Evaluation of Multi-Agent Debate Structures in Legal Reasoning
+201|2026-07|T2|Multi-Swarm Agency Protocol: Emergent Coordination in Heterogeneous Agent Networks. (50 pages)
+202|2026-07|T2|World Model Science: Self-Organized Criticality, Weak Chaos, and Metastable Belief Dynamics in Lon
+203|2026-07|T2|Heterogeneous Agent Cohorts for Safe Open-Ended Exploration with Runtime Constraint Memory
+204|2026-07|T2|Quantifying Diversity of Thought: A Predictive Law of Weighted LLM Ensemble Lift
+205|2026-07|T2|LLMs and Agentic AI Systems for Smart Grids: A Tutorial on Architectures and Applications
+206|2026-07|T2|Dynamic Coalition Formation and Communication Pricing in Skill-Based Agentic AI Systems
+207|2026-07|T2|Mnesion: A Knowledge Accumulation and Consensus Protocol for LLM Agent Organizations
+208|2026-07|T2|PatientAgentBench: A Benchmark Framework for Evaluating Patient-Facing Health AI Agents
+209|2026-07|T2|Skill Use or Skill Theater? Evaluating the Reasoning Backroom in Skill-Augmented Language Agents
+210|2026-07|T2|TAPO: Transition-Aware Policy Optimization for LLM Agents
+211|2026-07|T2|Artificial Intelligence for Spatially Reconfigurable Antennas: Movable, Fluid, and Pinching Antenn
+212|2026-07|T2|Beyond Component Testing: Validating Agentic AI Systems
+213|2026-08|T2|MasDrift: Benchmarking Authorization Preservation Across Multi-Agent Architectures
+214|2026-08|T2|TumorBoard: Evidence-Grounded Multi-Agent Decision Support for Longitudinal Neuro-Oncology
+215|2026-08|T2|LLM Agents: A Survey
+216|2026-08|T2|SuperLocalMemory 4.0: The Governed Memory Operating System for AI Agents
+217|2026-08|T2|The Politician, the Liar, and the Obedient Worker: Emerging Behavior of LLM Agents in Hierarchical
+218|2026-08|T2|MEGA: Self-Evolving Agent Optimization Infrastructure via Wisdom Graph
+219|2026-08|T2|Learning to Persuade Exposes How Easily LLMs Abandon Correct Beliefs
+220|2026-08|T2|InterSAGE: The Secure and Verifiable Interoperability Protocol for An Internet of Agents
+221|2026-08|T2|Autonomous Cyber Defense in Connected Vehicles: A Multi-Agent Approach to V2X Security
+222|2026-08|T2|Minimal‑Symbol Hard‑Isolation Specification for LLM Inference V1.0: An Agent Mitigation Scheme bas
+223|2026-08|T2|Physical Agentic AI: An Architecture for Orchestrating a Robot Crew with LLMs
+224|2026-08|T2|A Control-Theoretic Approach for Resource-Aware Consensus in Multi-Agent AI
+225|2026-08|T2|A Practical Tutorial on Agentic AI
+226|2026-08|T2|When Context Gets Root: Privilege Escalation in LLM Harnesses
+227|2026-08|T2|Using Grounded Theory for Agent Behavior Analysis at Scale
+228|2026-08|T2|The Natural Language Interaction Protocol and Standard for AI Agents
+229|2026-08|T2|BIGMAE: Governed Internet of Agents
+230|2026-09|T2|Agents That Model Agents: Five Principles Toward a Theory of Mind for 6G Networks
+231|2026-09|T2|A Channel-Boosted Multi-Agent System with Iterative Consultation for Document Sensitivity Classifi
+232|2026-09|T2|Audit Without Verification: When LLM Accountability Layers Relay Rather Than Check
+233|2026-09|T2|Your Agent Says Yes: Interpreting Adversarial Market Behavior Beyond Individual Transactions
+234|2026-09|T2|Uncertainty Quantification for LLM Agents: A Taxonomy, an Evaluation Protocol, and an Empirical St
+235|2026-09|T2|Asclepius: An Adaptive Harness for Long-Horizon Clinical Agents
+236|2026-09|T2|System level taxonomy of adversarial pressure in heterogeneous autonomous ground systems
+237|2026-09|T2|ANASSA: An Agentic AI Orchestration Framework for Spatial Intelligence
+238|2026-09|T2|The Troy Moment: How LLM Agents Adjudicate the Decision Point Under Impossible Tasks, Claimed Auth
+239|2026-09|T2|Collective Loss of Control in LLM Agent Systems: An Epidemic Account of Mutation, Contagion, and R
+240|2026-09|T2|A Simulation Platform for AUV Fault Recovery: Exploring LLM-Based Diagnostic Strategies
+241|2026-09|T2|The Agentic Stack Architecture, Coordination, and Governance of Autonomous AI
+242|2026-09|T2|Autonomous Agents as First-Class Operating System Entities: Formal Architecture, Deterministic Pro
+243|2026-09|T2|Can Multimodal Large Language Models Generate and Detect Multimodal Social Media Fake News?
+244|2026-09|T2|From Ideal Motion to Flight-Executable Communications: LLM-Evolved Multi-UAV Deployment for Cell-F
+245|2026-09|T2|Fully Byzantine-Resilient Multi-Agent Reinforcement Learning
+246|2026-09|T2|Persistent Billable State: Denial-of-Wallet Attacks and Defenses in Tool-Calling LLM Agents
+247|2026-09|T2|ADVERSARIAL ANALYSIS OF AUTONOMOUS MULTI-AGENT NETWORK DEFENCE
+248|2026-09|T2|Trust the Brand, Lose Control: How Identity Hijacks LLM Agent Orchestration
+249|2026-09|T2|Systematic Multi-Agent Vision-and-Language Navigation: Formulation, Benchmark, and Method
+250|2026-10|T2|Pincer: Resource Authorization for Agents using a Digital Twin
+251|2026-10|T2|Agent Execution Control Planes: When 'Sandbox', 'Gateway', and 'Policy' Ship as Unauthenticated Co
+252|2026-10|T2|Experimental Demonstration of Autonomous Class Aware Optimization via Digital Twin Aided Optical N
+253|2026-10|T2|Reading the Room: Foundations, Design, and Challenges of Normative Competence in LLMs
+254|2026-10|T2|LLM-Enabled UAV Dispatch: A System-Level Survey and Taxonomy
+255|2026-10|T2|When Does Cross-Agent Peer Verification Detect Unfaithful Self- Reports? An Empirical Study of Rea
+256|2026-10|T2|Engineering Autonomous Intelligence / The Architecture, Tradecraft, and Deployment of Agentic AI S
+257|2026-10|T2|Reward Hacking as a Transmissible Strategy in Multi-Agent Coding Systems
+258|2026-10|T2|Agency as a New Organizing Abstraction for Computer Science
+259|2026-10|T2|Origin Attribution for Unsafe Behavior in Self-Evolving Multi-Agent Coding Systems
+260|2026-10|T2|Why Do Agent Teams Fail Across Boundaries? A Failure Taxonomy for Agent-to-Agent Systems with Priv
+261|2026-10|T2|An Agentic ENF Framework for Forensic Video Authentication Against Generative AI
+262|2026-10|T2|Verifiable Delegated Authority for LLM Agents in Banking: A Formal Architecture, Capability Protoc
+263|2026-10|T2|The Helpful Agent Problem: When Emergent Cooperation Among LLM Agents Bypasses Intended Workflows
+264|2026-10|T2|Aegis OS: A Transactional Multi-Tenant Operating System Runtime for Eliminating Authorization Fati
+265|2026-10|T2|Social-HUMINT: An LLM-Augmented Unified Framework for Measuring Social Media Exposure
+266|2026-10|T2|LLMs in Cloud: A Discussion on Architecture, Orchestration, and Inference
+267|2026-10|T2|Four-Layer Agent Memory: a typed memory substrate for long-horizon LLM agents
+268|2026-10|T2|Mapping LLM-agent reliability under chaos: a cross-architecture study of structured recovery playb
+269|2026-10|T2|Replication or Corroboration? An Axiomatic Framework for Evidential Dependence in Multi-Agent Deba
+270|2026-10|T2|The Envelope Layer: An Underestimated Surface of LLM Agent Defense
+271|2026-10|T2|When AI Agents Act on Our Behalf: A Taxonomy of Human-Agent Interaction Failure
+272|2026-11|T2|When Debate Amplifies Risk: Social-Bias Vulnerabilities in Multi-Agent Safety Deliberation
+273|2026-11|T2|Enabling Privacy-Preserving Natural Language Access to Industrial Smart Meter Data
+274|2026-11|T2|From Process Models to Composable Agentic Workflows: Combining BPMN, Agents and Enterprise Knowled
+275|2026-11|T2|Reference Monitors in Agentic AI Workflows: Governing Execution-Derived State Across Five Agent Fr
+276|2026-11|T2|AI Agents and Agentic AI in Medicine: An Autonomy-Centred Scoping Review and Research Agenda
+277|2026-11|T2|Agent-as-a-Judge
+278|2026-11|T2|MANGO Arena: A Supply-Chain Testbed for LLM Agents Under Disruption,
+279|2026-11|T2|The Field Coordination Residual Hypothesis: Can Mission-Relative Relational Analysis Reveal Coordi
+280|2026-11|T2|Verifiable Logic in Medical LLMs: A Critical Review of Agentic Clinical Reasoning Optimization and
+281|2026-11|T2|The FrontierOR Challenge: Agentic Algorithm Design for Operations Research
+282|2024-01|T?-cit|SocraSynth: Multi-LLM Reasoning with Conditional Statistics
+283|2024-04|T?-cit|Large Language Model Evaluation Via Multi AI Agents: Preliminary results
+284|2024-06|T?-cit|BELLS: A Framework Towards Future Proof Benchmarks for the Evaluation of LLM Safeguards
+285|2024-07|T?-cit|RedAgent: Red Teaming Large Language Models with Context-aware Autonomous Language Agent
+286|2024-12|T?-cit|KG4Diagnosis: A Hierarchical Multi-Agent LLM Framework with Knowledge Graph Enhancement for Medica
+287|2025-03|T?-cit|Advances and Challenges in Foundation Agents: From Brain-Inspired Intelligence to Evolutionary, Co
+288|2025-04|T?-cit|Large Language Models for Validating Network Protocol Parsers
+289|2025-04|T?-cit|FAIRGAME: a Framework for AI Agents Bias Recognition using Game Theory
+290|2025-06|T?-cit|Scenario-Guided LLM-based Mobile App GUI Testing
+291|2025-06|T?-cit|Effective Red-Teaming of Policy-Adherent Agents
+292|2025-06|T?-cit|Deep Research Agents: A Systematic Examination And Roadmap
+293|2025-06|T?-cit|LLM-based Multi-Agent System for Intelligent Refactoring of Haskell Code
+294|2025-07|T?-cit|From the Fluency Fallacy to the Micro-to-Macro Validity Gap: Opportunities and Pitfalls of LLMs in
+295|2025-07|T?-cit|Prescriptive Agents based on RAG for Automated Maintenance (PARAM)
+296|2025-07|T?-cit|OFCnetLLM: Large Language Model for Network Monitoring and Alertness
+297|2025-08|T?-cit|A Survey on Agent Workflow -- Status and Future
+298|2025-08|T?-cit|Can LLM Agents Solve Collaborative Tasks? A Study on Urgency-Aware Planning and Coordination
+299|2025-08|T?-cit|Rethinking Testing for LLM Applications: Characteristics, Challenges, and a Lightweight Interactio
+300|2025-09|T?-cit|RepLLM: Toward Automatically Reproducing Network Research Results
+301|2025-09|T?-cit|ID-RAG: Identity Retrieval-Augmented Generation for Long-Horizon Persona Coherence in Generative A
+302|2025-10|T?-cit|AURA: Adaptive Unified Reasoning and Automation with LLM-Guided MARL for NextG Cellular Networks
+303|2025-10|T?-cit|Mind the Goal: Data-Efficient Goal-Oriented Evaluation of Conversational Agents and Chatbots using
+304|2025-10|T?-cit|Haystack Engineering: Context Engineering for Heterogeneous and Agentic Long-Context Evaluation
+305|2025-10|T?-cit|Addressing the alignment problem in transportation policy making: an LLM approach
+306|2025-10|T?-cit|The Role of Social Learning and Collective Norm Formation in Fostering Cooperation in LLM Multi-Ag
+307|2025-10|T?-cit|EvolveR: Self-Evolving LLM Agents through an Experience-Driven Lifecycle
+308|2025-10|T?-cit|From AutoRecSys to AutoRecLab: A Call to Build, Evaluate, and Govern Autonomous Recommender-System
+309|2025-10|T?-cit|OrchVis: Hierarchical Multi-Agent Orchestration for Human Oversight
+310|2025-11|T?-cit|Knowledge-Informed Automatic Feature Extraction via Collaborative Large Language Model Agents
+311|2025-11|T?-cit|LLM and Agent-Driven Data Analysis: A Systematic Approach for Enterprise Applications and System-l
+312|2025-11|T?-cit|Enhanced Conditional Generation of Double Perovskite by Knowledge-Guided Language Model Feedback
+313|2025-12|T?-cit|AGENTSAFE: A Unified Framework for Ethical Assurance and Governance in Agentic AI
+314|2025-12|T?-cit|Towards a Science of Scaling Agent Systems
+315|2025-12|T?-cit|DREAM: Dynamic Red-teaming across Environments for AI Models
+316|2026-01|T?-cit|When Agents See Humans as the Outgroup: Belief-Dependent Bias in LLM-Powered Agents
+317|2026-01|T?-cit|AI Agent Systems: Architectures, Applications, and Evaluation
+318|2026-01|T?-cit|RAAR: Retrieval Augmented Agentic Reasoning for Cross-Domain Misinformation Detection
+319|2026-01|T?-cit|Stablecoin Design with Adversarial-Robust Multi-Agent Systems via Trust-Weighted Signal Aggregatio
+320|2026-01|T?-cit|VirtualCrime: Evaluating the Criminal Potential and Agentic Behaviors of Large Language Models via
+321|2026-01|T?-cit|AlertGuardian: Intelligent Alert Life-Cycle Management for Large-scale Cloud Systems
+322|2026-01|T?-cit|Sparks of Cooperative Reasoning: LLMs as Strategic Hanabi Agents
+323|2026-02|T?-cit|From Features to Actions: Explainability in Traditional and Agentic AI Systems
+324|2026-02|T?-cit|From Prompt-Response to Goal-Directed Systems: The Evolution of Agentic AI Software Architecture
+325|2026-02|T?-cit|From Agent-Only Social Networks to Autonomous Scientific Research: Lessons from OpenClaw and Moltb
+326|2026-02|T?-cit|Secure Semantic Communications via AI Defenses: Fundamentals, Solutions, and Future Directions
+327|2026-02|T?-cit|BLUFF: Benchmarking the Detection of False and Synthetic Content across 58 Low-Resource Languages
+328|2026-02|T?-cit|EMPA: Evaluating Persona-Aligned Empathy as a Process
+329|2026-03|T?-cit|Quantifying Divergence in Inter-LLM Communication Through API Retrieval and Ranking
+330|2026-03|T?-cit|Automated Self-Testing as a Quality Gate: Evidence-Driven Release Management for LLM Applications
+331|2026-03|T?-cit|Tabular LLMs for Interpretable Few-Shot Alzheimer's Disease Prediction with Multimodal Biomedical 
+332|2026-03|T?-cit|Detection of adversarial intent in Human-AI teams using LLMs
+333|2026-03|T?-cit|Conversation Tree Architecture: A Structured Framework for Context-Aware Multi-Branch LLM Conversa
+334|2026-03|T?-cit|GameplayQA: A Benchmarking Framework for Decision-Dense POV-Synced Multi-Video Understanding of 3D
+335|2026-03|T?-cit|GISclaw: A Comprehensive Open-Source LLM Agent System for Realistic Multi-Step Geospatial Analysis
+336|2026-03|T?-cit|MediHive: A Decentralized Agent Collective for Medical Reasoning
+337|2026-03|T?-cit|SciVisAgentBench: A Benchmark for Evaluating Scientific Data Analysis and Visualization Agents
+338|2026-04|T?-cit|Signals: Trajectory Sampling and Triage for Agentic Interactions
+339|2026-04|T?-cit|Beyond Retrieval: Modeling Confidence Decay and Deterministic Agentic Platforms in Generative Engi
+340|2026-04|T?-cit|LanG -- A Governance-Aware Agentic AI Platform for Unified Security Operations
+341|2026-04|T?-cit|Deep Researcher Agent: An Autonomous Framework for 24/7 Deep Learning Experimentation with Zero-Co
+342|2026-04|T?-cit|Qualixar OS: A Universal Operating System for AI Agent Orchestration
+343|2026-04|T?-cit|LungCURE: Benchmarking Multimodal Real-World Clinical Reasoning for Precision Lung Cancer Diagnosi
+344|2026-04|T?-cit|Activation Steering for Aligned Open-ended Generation without Sacrificing Coherence
+345|2026-04|T?-cit|SAGE: A Service Agent Graph-guided Evaluation Benchmark
+346|2026-04|T?-cit|OccuBench: Evaluating AI Agents on Real-World Professional Tasks via Language Environment Simulati
+347|2026-04|T?-cit|AgentForge: Execution-Grounded Multi-Agent LLM Framework for Autonomous Software Engineering
+348|2026-04|T?-cit|Zero-Shot Scalable Resilience in UAV Swarms: A Decentralized Imitation Learning Framework with Phy
+349|2026-04|T?-cit|STAR-Teaming: A Strategy-Response Multiplex Network Approach to Automated LLM Red Teaming
+350|2026-04|T?-cit|YAIFS: Yet (not) Another Intelligent Fog Simulator: A Framework for Agent-Driven Computing Continu
+351|2026-04|T?-cit|Reinforced Agent: Inference-Time Feedback for Tool-Calling Agents
+352|2026-04|T?-cit|In-Context Prompting Obsoletes Agent Orchestration for Procedural Tasks
+353|2026-04|T?-cit|AONA: A Comprehensive Architecture and Workflow Design for Global Agentic Collaboration
+354|2026-05|T?-cit|When Agents Handle Secrets: A Survey of Confidential Computing for Agentic AI
+355|2026-05|T?-cit|PropGuard: Safeguarding LLM-MAS via Propagation-Aware Exploration and Remediation
+356|2026-05|T?-cit|AgentCollabBench: Diagnosing When Good Agents Make Bad Collaborators
+357|2026-05|T?-cit|Token Economics for LLM Agents: A Dual-View Study from Computing and Economics
+358|2026-05|T?-cit|Assistance to Autonomy: A Systematic Literature Review of Agentic AI across the Software Developme
+359|2026-05|T?-cit|AInterviewer: A Platform for Designing and Conducting AI-led Qualitative Interviews
+360|2026-05|T?-cit|Code as Agent Harness
+361|2026-05|T?-cit|Declarative Data Services: Structured Agentic Discovery for Composing Data Systems
