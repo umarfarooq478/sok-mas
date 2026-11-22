@@ -89,3 +89,10 @@ B-adversarial tool misuse attack multi-agent LLM 400
 HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=collusion+LLM+agents&limit=100&fields=title%2Cauth
 HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=collusion+LLM+agents&limit=100&fields=title%2Cauth
 HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=collusion+LLM+agents&limit=100&fields=title%2Cauth
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=collusion+LLM+agents&limit=100&fields=title%2Cauth
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=collusion+LLM+agents&limit=100&fields=title%2Cauth
+B-adversarial collusion LLM agents 400
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=multi-agent+LLM+security+survey&limit=100&fields=t
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=multi-agent+LLM+security+survey&limit=100&fields=t
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=multi-agent+LLM+security+survey&limit=100&fields=t
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=multi-agent+LLM+security+survey&limit=100&fields=t
