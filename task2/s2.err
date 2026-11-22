@@ -43,3 +43,12 @@ HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=multi-agent
 HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=multi-agent+debate+failure+consensus&limit=100&fie
 HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=multi-agent+debate+failure+consensus&limit=100&fie
 HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=multi-agent+debate+failure+consensus&limit=100&fie
+A-benign multi-agent debate failure consensus 400
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=prompt+injection+multi-agent+LLM&limit=100&fields=
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=prompt+injection+multi-agent+LLM&limit=100&fields=
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=prompt+injection+multi-agent+LLM&limit=100&fields=
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=prompt+injection+multi-agent+LLM&limit=100&fields=
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=prompt+injection+multi-agent+LLM&limit=100&fields=
+B-adversarial prompt injection multi-agent LLM 400
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=attack+on+LLM+multi-agent+communication&limit=100&
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=attack+on+LLM+multi-agent+communication&limit=100&
