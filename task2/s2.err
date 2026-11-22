@@ -13,3 +13,8 @@ HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=error+propa
 HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=error+propagation+multi-agent+LLM&limit=100&fields
 A-benign error propagation multi-agent LLM 300
 HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=hallucination+propagation+multi-agent+LLM&limit=10
+A-benign hallucination propagation multi-agent LLM 400
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=cascading+errors+multi-agent+LLM&limit=100&fields=
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=cascading+errors+multi-agent+LLM&limit=100&fields=
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=cascading+errors+multi-agent+LLM&limit=100&fields=
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=cascading+errors+multi-agent+LLM&limit=100&fields=
