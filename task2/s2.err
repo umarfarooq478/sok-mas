@@ -66,3 +66,10 @@ HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=malicious+a
 HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=malicious+agent+multi-agent+LLM+defense&limit=100&
 HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=malicious+agent+multi-agent+LLM+defense&limit=100&
 HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=malicious+agent+multi-agent+LLM+defense&limit=100&
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=malicious+agent+multi-agent+LLM+defense&limit=100&
+B-adversarial malicious agent multi-agent LLM defense 400
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=infectious+jailbreak+multi-agent+propagation&limit
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=infectious+jailbreak+multi-agent+propagation&limit
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=infectious+jailbreak+multi-agent+propagation&limit
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=infectious+jailbreak+multi-agent+propagation&limit
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=infectious+jailbreak+multi-agent+propagation&limit
