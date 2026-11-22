@@ -30,3 +30,9 @@ HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=multi-agent
 HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=multi-agent+LLM+communication+failure&limit=100&fi
 HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=multi-agent+LLM+communication+failure&limit=100&fi
 HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=multi-agent+LLM+communication+failure&limit=100&fi
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=multi-agent+LLM+communication+failure&limit=100&fi
+A-benign multi-agent LLM communication failure 400
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=role+drift+specification+multi-agent+LLM&limit=100
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=role+drift+specification+multi-agent+LLM&limit=100
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=role+drift+specification+multi-agent+LLM&limit=100
+HTTP 429 https://api.semanticscholar.org/graph/v1/paper/search?query=role+drift+specification+multi-agent+LLM&limit=100
