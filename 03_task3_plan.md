@@ -1,6 +1,6 @@
 # Task 3 plan: code every paper
 
-Prepared Nov 23, 2026, from the full SoK plan, the scope memo (`01_scope_memo.md`) and the Task 2 corpus (`02_search_protocol.md`, `02_corpus.csv`). **Nothing in this plan has been started.** Start on your word.
+Prepared Nov 23, 2026, from the full SoK plan, the scope memo (`01_scope_memo.md`) and the Task 2 corpus (`02_search_protocol.md`, `02_corpus.csv`). **Status (Nov 23): subtask 3.0 is done** (codebook v0, coding-sheet template, validator). The pilot (3.1) and the batches have not started; they begin on your word.
 
 ## 1. What the SoK plan asks for
 
@@ -25,7 +25,7 @@ From the scope memo (Section 7): the codebook needs a field for **trigger eviden
 ## 2. Two things to settle before starting
 
 1. **Effort.** The plan's 45 hours assumed 120 to 180 papers (about 15 to 20 minutes each). We keep **384 included papers plus 54 maybes**, which is 2 to 3 times that. At the plan's pace this would be over 100 hours. The workable split is: I pre-code each paper from its abstract and, where a PDF exists, its threat-model, failure and evaluation sections; you check each row. Checking at about 7 minutes per paper gives about 45 hours for the 384, which matches the plan. If checking runs slower, the plan's fallback (cap at about 120) is still available, and the batch order below puts the most central work first.
-2. **Co-author and kappa.** The plan's kappa check needs two coders. The memo assumes a co-author, but that was never confirmed. Options: (a) a human co-author double-codes the 20% sample, which is the plan's version; (b) you code the sample against my pre-codes, and the paper reports **human versus LLM agreement**, stated honestly as that, not as two-human kappa. Pick one before the pilot, since the pilot is double-coded either way.
+2. **No co-author (decided Nov 23).** The plan's kappa check assumed two human coders. With one, the reliability check becomes **human versus LLM agreement**: you code the double-coded sample first, without opening my row, and Cohen's kappa is computed per field between your codes and mine. The paper must report it as that, not as two-human kappa. It tells us whether the codebook can be applied the same way twice; it does not prove the codes are right. Details are in `03_codebook.md`, Section 2.
 
 ## 3. Inputs and outputs
 
@@ -36,7 +36,9 @@ From the scope memo (Section 7): the codebook needs a field for **trigger eviden
 | One list per batch | `task3/batches/<batch>.md` and `.csv` |
 | Abstracts (4 papers have none) | `task3/abstracts.json` |
 | PDFs (207 of 438 have one; the rest have no arXiv id) | `task2/papers/` |
-| Codebook (to be written in subtask 3.0) | `03_codebook.md` |
+| Codebook v0 (subtask 3.0, done) | `03_codebook.md`, generated from `task3/schema.py` |
+| Coding-sheet template, blank-sheet maker, validator, tests (done) | `task3/coding/template.csv`, `task3/make_sheet.py`, `task3/validate_coding.py`, `task3/test_validator.py` |
+| Worked example row (P023, abstract only) | `task3/coding/example.csv` |
 | Per-batch coding sheets (to be written) | `task3/coding/<batch>.csv` |
 | Final matrix (to be merged in subtask 3.5) | `03_lit_matrix.csv` |
 | Weekly pattern notes | `task3/notes/week-N.md` |
@@ -44,34 +46,17 @@ From the scope memo (Section 7): the codebook needs a field for **trigger eviden
 
 **Paper ids:** `P001` to `P384` for included papers (ordered by date), `Q001` to `Q054` for the maybes. They are stable. Task 6 should cite these ids.
 
-## 4. Draft codebook (v0, to be fixed by the pilot)
+## 4. Codebook
 
-One row per paper. Every field is filled, or set to `not reported`. Anything I cannot verify from the text is `TBD`, never guessed.
+The first draft in this plan had 20 fields. **`03_codebook.md` (v0, written in subtask 3.0) supersedes it and has 21 coded fields**, each with a definition, its allowed values, rules, and an example, plus a worked row from the corpus. Changes from the first draft:
 
-| # | Field | Values (draft) | Why |
-|---|---|---|---|
-| 1 | `system_type` | debate, hierarchy, pipeline, swarm or decentralized, mixed, not reported | plan |
-| 2 | `framework` | AutoGen, CrewAI, LangGraph, MetaGPT, ChatDev, custom, other (name it), not reported | plan; Task 6 framework defaults |
-| 3 | `n_agents` | number, range, "varies", not reported | plan |
-| 4 | `failure_observed` | one-line description | plan |
-| 5 | `mechanism_candidate` | free-text label in mechanism terms (role drift, message corruption, shared-memory poisoning, unverified handoff, error cascade, collusion, orchestrator compromise, tool misuse, termination failure, other) | Task 4 grouping; not final |
-| 6 | `trigger` | benign bug, adversarial, both, not applicable (defense or tool only) | plan |
-| 7 | `trigger_evidence_level` | direct-both (one paper shows both), benign-only, adversarial-only, indirect | memo; RQ2 |
-| 8 | `locus` | one agent, message channel, shared memory, tool, orchestrator, environment input, not reported; plus the role or channel named | plan; memo's "same locus" test |
-| 9 | `spread` | stays local, cascades, amplifies, not studied | plan |
-| 10 | `detection_method` | none, trace or attribution analysis, anomaly detector, runtime monitor, output check, other | plan |
-| 11 | `defense_family` | none, input filtering, verification agent, provenance or authorization, sandboxing or isolation, monitoring, consensus or voting, redundancy or fault tolerance, other | plan; Task 4 matrix columns |
-| 12 | `defense_evaluated_against` | benign, adversarial, both, not evaluated, not applicable | memo; RQ3 |
-| 13 | `evaluation` | benchmark, metric, models, scale | plan |
-| 14 | `trace_release` | yes with host and license, no, not reported | Task 5 |
-| 15 | `limitation` | one line, as stated or evident | plan |
-| 16 | `paper_type` | attack, failure study, attribution method, defense, benchmark, framework bug study, theory, mixed | triage |
-| 17 | `evidence_type` | experiment, trace analysis, documented incident, theory only | inclusion rule check |
-| 18 | `coded_from` | abstract only, abstract plus sections, full text | honesty about depth |
-| 19 | `confidence` | high, medium, low | review queue |
-| 20 | `evidence_note` | the passage, section or figure each key field rests on (fields 6 to 9, 11, 12) | audit, Task 6 |
+- `locus_detail` is a new field (the specific role, channel, store or tool), because the "same locus" test needs it.
+- `trigger_evidence_level` no longer has an "indirect" value. Indirect evidence means two separate papers, so it is worked out across rows in Task 4. A within-paper value, `both-different-locus`, replaces it.
+- `swarm` is folded into `decentralized`.
+- The `mechanism_candidate` list adds three mechanisms the corpus calls for: privacy or information leakage, protocol or authorization flaw, and coordination or communication failure. `other:<label>` lets the data extend it.
+- `not reported` versus `TBD` is now defined: `not reported` means the sources read do not say; `TBD` means a reviewer must look, and it is rejected in the final check.
 
-The **dual-trigger test** from the memo goes into the codebook as written: a mechanism is dual-trigger when at least one included paper shows it arising without an adversary and at least one shows an adversary inducing it at the same locus. One paper showing both is direct evidence; two papers are indirect. Fields 6 to 9 are what make that test possible.
+The dual-trigger test from the scope memo is in the codebook as written. The pilot will fix whatever is ambiguous, and then the codebook is frozen as v1.
 
 ## 5. How the 384 papers are split
 
@@ -93,11 +78,11 @@ The **dual-trigger test** from the memo goes into the codebook as written: a mec
 
 Each subtask ends in a file, in the plan's spirit that a missed deadline still leaves a reusable result.
 
-- **3.0 Set up.** Write `03_codebook.md` v0 from Section 4, with a worked example for each field and each value. Make the coding sheet template and a validator that fails on blank cells, unknown values, or a missing `evidence_note` for fields 6 to 9, 11 and 12. *Done when:* the validator runs on an empty sheet and on one filled example.
-- **3.1 Pilot, 15 papers.** I pre-code all 15 from the abstract and the relevant sections. You (and the co-author, if any) code them independently. Compare, list every disagreement, fix the ambiguous field definitions, freeze **codebook v1**. *Done when:* a disagreement log exists, v1 is frozen, and no field is left ambiguous.
+- **3.0 Set up. Done Nov 23.** `03_codebook.md` v0 (21 fields, each with definition, values, rules and an example; a worked row for P023), the coding-sheet template, a blank-sheet maker per batch, and a validator with 21 tests. The validator passes on the empty template and on the filled example; in `--final` mode it correctly rejects the example because it still has a `TBD` and a pending review.
+- **3.1 Pilot, 15 papers.** I pre-code all 15 from the abstract and the relevant sections. You code them independently, before opening my rows. Compare, list every disagreement, fix the ambiguous field definitions, freeze **codebook v1**. *Done when:* a disagreement log exists, v1 is frozen, and no field is left ambiguous.
 - **3.2.01 to 3.2.19 Code batches B01 to B19.** For each batch I fill the sheet; you review it row by row, correct it, and flag `confidence = low` rows for a second look. *Done when:* the validator passes and every double-coded row has an independent second code.
 - **3.3.1 to 3.3.3 Resolve and code the maybes.** *Done when:* each of the 54 is marked in or out, with a reason, and the in-scope ones are coded.
-- **3.4 Reliability.** Compute Cohen's kappa on the double-coded sample, per field. Report the trigger and defense fields (6, 7, 11, 12) separately. Discuss disagreements. *Done when:* a kappa table exists, and any field below 0.7 has either been recoded or reported as weak.
+- **3.4 Reliability.** Compute Cohen's kappa between your independent codes and mine on the double-coded sample, per field (human versus LLM agreement; report it as that). Report the trigger and defense fields (6, 7, 11, 12) separately. Discuss disagreements. *Done when:* a kappa table exists, and any field below 0.7 has either been recoded or reported as weak.
 - **3.5 Weekly pattern notes.** After every five batches, a short note in `task3/notes/` on patterns seen: mechanisms studied by one community, defenses never tested against benign failures, and so on. These seed Task 6.
 - **3.6 Finalize.** Merge all sheets into `03_lit_matrix.csv`, run the completeness check, finalize `03_codebook.md`, and write the kappa result. *Done when:* every included paper has every field filled or `not reported`.
 
@@ -155,7 +140,7 @@ The plan puts Task 3 at Dec 7 to 27. We are ahead of plan, so this can start soo
 
 | Window | Work | Checkpoint |
 |---|---|---|
-| Dec 7 to 9 | 3.0 set up, 3.1 pilot | codebook v1 frozen |
+| Dec 7 to 9 | 3.1 pilot (3.0 is already done) | codebook v1 frozen |
 | Dec 10 to 13 | B01 to B05 | 100 papers reviewed |
 | Dec 14 to 20 | B06 to B13 | 260 papers reviewed; the plan's risk check is 60 by Dec 20, so we aim well above it |
 | Dec 21 to 27 | B14 to B19, M1 to M3, 3.4 reliability, 3.6 finalize | `03_lit_matrix.csv` complete |
@@ -171,8 +156,8 @@ Weekly check each Sunday against this table. If more than a week behind, use the
 - Each key judgment gets an `evidence_note`, so a reviewer can check it in seconds.
 - A paper that fails the inclusion rules on a close read (for example, single-agent) is moved to the maybe or exclude list with a reason, not coded.
 
-## 9. Decisions needed from you
+## 9. Decisions
 
-1. Co-author for the kappa check, or human versus LLM agreement (Section 2).
-2. Whether to start now or wait for Dec 7.
+1. ~~Co-author for the kappa check.~~ **Decided: no co-author.** Human versus LLM agreement (Section 2).
+2. Whether to start the pilot now or wait for Dec 7.
 3. Whether the 20-paper batch size and the theme grouping suit you, or you would rather mix themes within a batch for calibration.
