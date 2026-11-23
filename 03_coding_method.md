@@ -86,7 +86,9 @@ Coder A (Opus tier) and Coder B (Sonnet tier) coded the 15 pilot papers independ
 - **Some disagreement comes from the prompts, not the codebook.** Coder B's rule to require experimental support makes it write `not reported` for `spread` where Coder A accepts the abstract's claim. This is by design, but it means the agreement figure partly measures how different the two prompts are. Report it that way. The pilot disagreements are in `task3/coding/v0/`.
 - On the two papers that matter most for the bridge claim, both coders agreed (`both` and `both-different-locus`), and both marked those rows low confidence.
 
-The **v1 pilot run** then has the same two models code the same 15 papers again under v1, in fresh contexts. It is a **regression test of the new rules, not an independent reliability estimate**, because the rules were written after seeing these papers. Its agreement is expected to be higher than v0, and the paper must not present that as the reliability of the method. The reliability figures for the paper come from batches B01 to B19.
+The **v1 pilot run** then has the same two models code the same 15 papers again under v1, in fresh contexts. It is a **regression test of the new rules, not an independent reliability estimate**, because the rules were written after seeing these papers. The reliability figures for the paper come from batches B01 to B19.
+
+**v1 result (Nov 23):** the three fields that carry RQ2 and RQ3 were disputed on one paper only (P003), but the total number of disagreements did not fall (51 in v0, 54 in v1), because four secondary fields got worse (`trace_release`, `defense_family`, `locus`, `n_agents`). Four further rule fixes (v1.1) address those and have not been re-run. Table and discussion: `task3/coding/pilot_comparison.md`. Do not describe v1 as an overall improvement.
 
 ## 9. Cost and effort
 
