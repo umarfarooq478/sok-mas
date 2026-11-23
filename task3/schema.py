@@ -9,7 +9,7 @@ Every coded field also accepts `not reported` (the sources read do not say) and,
 (a reviewer still has to look). `strict` fields accept neither.
 """
 
-VERSION = "v1 candidate (revised after the v0 pilot; freezes once the v1 pilot run is adjudicated)"
+VERSION = "v1.1 candidate (revised after the v0 and v1 pilot runs; freezes once the pilot disagreements are adjudicated)"
 
 ID_COLS = ["pid", "coder"]
 TAIL_COLS = ["review_status", "review_note"]
@@ -20,7 +20,7 @@ REVIEW_STATUS = ["pending", "accepted", "corrected", "flagged"]
 # fields whose substantive values need a tagged passage in evidence_note ("<field>: ...")
 EVIDENCE_FIELDS = ["trigger", "trigger_evidence_level", "locus", "spread", "defense_family", "defense_evaluated_against"]
 # values that do not need evidence
-NO_EVIDENCE_VALUES = {"not reported", "not applicable", "none", "TBD", "not studied"}
+NO_EVIDENCE_VALUES = {"not reported", "not applicable", "none", "TBD"}
 
 FIELDS = [
  dict(name="system_type", kind="single", strict=False,
@@ -67,7 +67,7 @@ FIELDS = [
               "not reported": "the paper gives no way to place it"},
       definition="The one failure mechanism the paper is mainly about, named by how it works, not by its symptom. A working label that Task 4 will regroup; it is not the final taxonomy.",
       rules=["Name the mechanism, not the symptom: `wrong final answer` is a symptom; `error-cascade` is a mechanism.",
-             "Exactly one. Pick the mechanism the paper's main result is about. If two compete equally, take the one the paper names first or tests most, and put the other in `mechanism_secondary`.",
+             "Exactly one. For a broad study or an attribution paper with no single mechanism, pick the one the paper's evidence covers most. Pick the mechanism the paper's main result is about. If two compete equally, take the one the paper names first or tests most, and put the other in `mechanism_secondary`.",
              "If none fits, use `other:<short label>`; those labels are the data Task 4 uses to extend the list.",
              "Code what the paper shows or defends against, not what it mentions in related work."],
       example="Illustration: an attacker rewrites messages between two agents. Value: `message-corruption-or-injection`."),
@@ -121,7 +121,7 @@ FIELDS = [
               "environment-input": "it starts in outside data the system reads (web page, document, user input)",
               "not reported": "the sources read do not say"},
       definition="Where the failure starts, not where it ends.",
-      rules=["Up to three values. Pick where the first deviation happens or where the attacker acts. If a paper covers more than three loci, give the three it spends the most on and say so in `locus_detail`.",
+      rules=["Up to three values, **primary first**. Pick where the first deviation happens or where the attacker acts. If a paper covers more than three loci, give the three it spends the most on and say so in `locus_detail`.",
              "An injection through a web page that an agent reads is `environment-input` first; if the paper makes the agent's message the vehicle, add `message-channel`."],
       example="Illustration: a poisoned document read by one agent then summarized to others. Value: `environment-input`."),
  dict(name="locus_detail", kind="free", strict=False,
@@ -133,14 +133,13 @@ FIELDS = [
       values={"stays local": "the failure remains in the agent, message or step where it started",
               "cascades": "it passes from agent to agent or step to step",
               "amplifies": "it grows or gets worse as it passes on (more errors, more agents affected, higher attack success)",
-              "not studied": "the paper's design does not examine how it moves",
-              "not reported": "the sources read do not say"},
+              "not reported": "the sources read do not say how it moves, or the paper's design does not examine it"},
       definition="How the failure moves once it starts.",
       rules=["Code only what the paper measures or states about movement between agents or steps. A claim that 'the whole system is compromised' is an effect, not a measure of spread; use `not reported` unless the text shows how.",
              "`amplifies` needs evidence of growth, for example error rate or attack success rising with depth or number of agents.",
              "Attenuation (the failure fades) is `stays local` if it never passes on, or `cascades` if it passes on and shrinks. Say which in the note.",
              "`cascades` means the reach grows: more agents or steps are affected (counts of affected agents over time, hops or rounds). `amplifies` means severity grows: the effect gets worse per hop or per added agent (error rate, attack success rate).",
-             "A paper that reports only final performance split by structure, with no measure of movement, is `not reported`.",
+             "A paper that reports only final performance split by structure, with no measure of movement, is `not reported`. So is a paper whose design does not look at movement (an attribution method, a single-step attack): there is no separate `not studied` value.",
              "In an abstract-only row, an explicit statement in the abstract that the failure propagates between agents may be coded, but set `confidence` to `medium` or `low`."],
       example="Illustration: attack success rises with the number of agents in the chain. Value: `amplifies`."),
  dict(name="detection_method", kind="multi", other_ok=True, strict=False,
@@ -153,7 +152,7 @@ FIELDS = [
       definition="How the paper finds or localizes failures, if it does.",
       rules=["Code only methods the paper proposes or evaluates, not ones it cites.",
              "A paper may have both a detector and a defense. Code the detector here and the response in `defense_family`.",
-             "`anomaly-detector` is a trained or statistical model; `output-check` is a judge or rule on outputs or claims; `trace-analysis` is after-the-fact reading of a run. A method used only to find the failure classes in a study (the authors' analysis) is `trace-analysis`, not a tool they propose."],
+             "List the main method first. `anomaly-detector` is a trained or statistical model; `output-check` is a judge or rule on outputs or claims; `trace-analysis` is after-the-fact reading of a run. A method used only to find the failure classes in a study (the authors' analysis) is `trace-analysis`, not a tool they propose."],
       example="Illustration: an LLM judge that reads the full conversation to name the step that broke the run. Value: `trace-analysis`."),
  dict(name="defense_family", kind="multi", other_ok=True, strict=False,
       values={"none": "the paper proposes or evaluates no defense or mitigation",
@@ -167,8 +166,8 @@ FIELDS = [
               "not reported": "the sources read do not say"},
       definition="The kind of defense or mitigation the paper proposes or evaluates. The columns of the Task 4 coverage matrix.",
       rules=["Code defenses the paper proposes or tests, not ones it only discusses.",
-             "Up to three values. Prefer the main idea over every component.",
-             "`other:<label>` if none fits; those labels are how Task 4 learns that the family list is incomplete.",
+             "Up to two values, **main idea first**. Prefer the main idea over every component; a minor add-on component is not a second value.",
+             "`other:<label>` only when **no listed family fits the main idea**. Do not use it as an extra value next to a family that fits. Those labels are how Task 4 learns that the family list is incomplete.",
              "A defense that is argued for but never implemented is `none` for `defense_family` unless the paper evaluates it formally (then use the family and `formal-only`)."],
       example="Illustration: a graph model that detects and cuts off a malicious agent. Values: `monitoring`."),
  dict(name="defense_evaluated_against", kind="single", strict=False,
@@ -190,7 +189,8 @@ FIELDS = [
       example="Illustration: `500 runs over 10 domains; hallucination score; three LLMs`."),
  dict(name="trace_release", kind="pattern", strict=False, pattern=r"^(yes: .+|no)$",
       definition="Whether the paper released failure traces or runs, and where. Task 5 depends on this.",
-      rules=["`yes: <host or URL>; license: <name or unknown>` when traces are public, `no` when the paper does not release them.",
+      rules=["`yes: <host or URL>; license: <name or unknown>` when the paper names a public place for failure traces, run logs or the labeled runs. A repository with code only does not count.",
+             "`no` only when the paper says traces or data are not released. If the paper says nothing about releasing them, use `not reported`. For Task 5, only `yes` rows are candidates, so `no` and `not reported` are treated alike there; the difference is just whether the paper said it.",
              "Never guess a license. If the paper does not name one, write `license: unknown` and let Task 5 check the host."],
       example="Illustration: `yes: huggingface.co/datasets/example; license: unknown`."),
  dict(name="limitation", kind="free", strict=False,

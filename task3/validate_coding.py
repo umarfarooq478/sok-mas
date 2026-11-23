@@ -43,7 +43,7 @@ def check_row(row, final, known_pids, pdf_pids):
                 if x in f["values"]: continue
                 if f.get("other_ok") and re.fullmatch(r"other:\S.*", x): continue
                 err.append(f"{n}: {x!r} not in {sorted(f['values'])}" + (" or other:<label>" if f.get("other_ok") else ""))
-            if n == "defense_family" and len(vals) > 3: err.append(f"{n}: at most 3 values")
+            if n == "defense_family" and len(vals) > 2: err.append(f"{n}: at most 2 values")
             if n == "locus" and len(vals) > 3: err.append(f"{n}: at most 3 values")
             if n == "evidence_type" and len(vals) > 2: err.append(f"{n}: at most 2 values")
             if "none" in vals and len(vals) > 1: err.append(f"{n}: `none` cannot be combined with other values")

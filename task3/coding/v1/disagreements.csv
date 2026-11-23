@@ -1,0 +1,55 @@
+pid,field,llm_a,llm_b,adjudicated,rule_proposal
+P003,system_type,decentralized,not reported,,
+P003,n_agents,3,2,,
+P119,n_agents,not reported,varies,,
+P133,n_agents,4,varies,,
+P025,mechanism_primary,orchestrator-compromise,message-corruption-or-injection,,
+P026,mechanism_primary,coordination-or-communication-failure,role-or-spec-drift,,
+P032,mechanism_primary,error-cascade,not reported,,
+P230,mechanism_primary,other:framework-api-misuse-or-incompatibility,other:framework-bug,,
+P025,mechanism_secondary,message-corruption-or-injection,orchestrator-compromise,,
+P026,mechanism_secondary,role-or-spec-drift,coordination-or-communication-failure,,
+P128,mechanism_secondary,coordination-or-communication-failure,none,,
+P267,mechanism_secondary,none,error-cascade,,
+P289,mechanism_secondary,privacy-or-information-leakage,none,,
+P003,trigger,adversarial,both,,
+P003,trigger_evidence_level,adversarial-only,both-different-locus,,
+P003,locus,message-channel,message-channel; one-agent,,
+P012,locus,environment-input; message-channel; one-agent,environment-input; message-channel,,
+P056,locus,one-agent,message-channel,,
+P119,locus,one-agent; shared-memory; tool,message-channel; tool; shared-memory,,
+P128,locus,one-agent; message-channel; environment-input,one-agent; message-channel,,
+P267,locus,one-agent; message-channel,message-channel,,
+P289,locus,message-channel,message-channel; one-agent,,
+P025,spread,not reported,cascades,,
+P026,spread,not studied,not reported,,not reported (v1.1 removed `not studied`)
+P056,spread,cascades,not reported,,
+P289,spread,not studied,not reported,,not reported (v1.1 removed `not studied`)
+P003,detection_method,output-check,none,,
+P133,detection_method,runtime-monitor,runtime-monitor; output-check,,
+P230,detection_method,trace-analysis,none,,
+P289,detection_method,other:formal-specification-analysis,none,,
+P003,defense_family,monitoring; other:paraphrasing,monitoring; input-filtering,,"v1.1: at most two families, `other:` only if no listed family fits the main idea; human to choose"
+P008,defense_family,verification-agent; input-filtering,verification-agent,,
+P012,defense_family,provenance-authorization; other:prompt-based-instruction-defense,provenance-authorization; input-filtering,,"v1.1: at most two families, `other:` only if no listed family fits the main idea; human to choose"
+P026,defense_family,verification-agent; other:prompt-role-and-topology-redesign,verification-agent,,"v1.1: at most two families, `other:` only if no listed family fits the main idea; human to choose"
+P133,defense_family,provenance-authorization; input-filtering,monitoring,,
+P267,defense_family,input-filtering; other:epistemic-status-preservation,verification-agent,,"v1.1: at most two families, `other:` only if no listed family fits the main idea; human to choose"
+P003,defense_evaluated_against,adversarial,formal-only,,
+P003,trace_release,not reported,no,,not reported unless the paper states data are not released (v1.1 rule); check the coder note
+P008,trace_release,not reported,no,,not reported unless the paper states data are not released (v1.1 rule); check the coder note
+P026,trace_release,yes: huggingface.co/datasets/mcemri/MAST-Data; github.com/multi-agent-systems-failure-taxonomy/MAST; license: unknown,yes: huggingface.co/datasets/mcemri/MAST-Data; license: unknown,,
+P032,trace_release,yes: github.com/mingyin1/Agents_Failure_Attribution; license: unknown,yes: public repository named in the paper (URL not visible in extracted text); license: unknown,,
+P080,trace_release,not reported,no,,not reported unless the paper states data are not released (v1.1 rule); check the coder note
+P119,trace_release,not reported,no,,not reported unless the paper states data are not released (v1.1 rule); check the coder note
+P133,trace_release,not reported,no,,not reported unless the paper states data are not released (v1.1 rule); check the coder note
+P003,paper_type,benchmark,mixed,,
+P008,paper_type,failure-study,mixed,,
+P026,evidence_type,trace-analysis,trace-analysis; experiment,,
+P032,evidence_type,trace-analysis,trace-analysis; experiment,,
+P012,coded_from,full-text,abstract-plus-sections,,
+P248,coded_from,full-text,abstract-plus-sections,,
+P025,confidence,high,medium,,
+P230,confidence,medium,low,,
+P248,confidence,medium,low,,
+P289,confidence,high,low,,

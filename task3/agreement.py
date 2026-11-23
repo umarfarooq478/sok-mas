@@ -1,6 +1,6 @@
 """Agreement between two coding sheets (e.g. PILOT.llm-a.csv and PILOT.llm-b.csv).
 usage: python3 task3/agreement.py A.csv B.csv [out_prefix]
-Single-value fields: percent agreement and Cohen's kappa. Multi-value fields: exact-set agreement and mean Jaccard. Free-text fields are not scored.
+Single-value fields: percent agreement and Cohen's kappa. Multi-value fields: exact-set agreement, mean Jaccard, and agreement on the first (primary) value. Free-text fields are not scored.
 Writes <out_prefix>.disagreements.csv (every field where the two sheets differ, for the human to adjudicate) and prints a markdown table."""
 import csv, os, sys, collections
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -30,11 +30,12 @@ def main(pa, pb, prefix):
         if f["kind"] == "multi":
             ex = sum(sset(x) == sset(y) for x, y in zip(a, b)) / len(pids)
             jac = sum(len(sset(x) & sset(y)) / max(1, len(sset(x) | sset(y))) for x, y in zip(a, b)) / len(pids)
-            rows.append((n, "multi", f"{ex:.0%}", "-", f"{jac:.2f}"))
+            first = sum((x.split(";")[0].strip() == y.split(";")[0].strip()) for x, y in zip(a, b)) / len(pids)
+            rows.append((n, "multi", f"{ex:.0%}", "-", f"{jac:.2f}", f"{first:.0%}"))
         else:
             ag = sum(x == y for x, y in zip(a, b)) / len(pids); k = kappa(a, b)
-            rows.append((n, "single", f"{ag:.0%}", "n/a" if k is None else f"{k:.2f}", "-"))
-    print("| field | kind | exact agreement | Cohen's kappa | mean Jaccard |\n|---|---|---|---|---|")
+            rows.append((n, "single", f"{ag:.0%}", "n/a" if k is None else f"{k:.2f}", "-", "-"))
+    print("| field | kind | exact agreement | Cohen's kappa | mean Jaccard | first-value agreement |\n|---|---|---|---|---|---|")
     for r in rows: print("| " + " | ".join(r) + " |")
     with open(f"{prefix}.disagreements.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f); w.writerow(["pid", "field", "llm_a", "llm_b", "adjudicated"]); [w.writerow(list(d) + [""]) for d in dis]

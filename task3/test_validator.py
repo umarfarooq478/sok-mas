@@ -23,6 +23,8 @@ CASES = [  # (name, mutation, substring that must appear in an error, or None if
  ("none combined with another family", {"defense_family": "none; monitoring"}, "cannot be combined"),
  ("defense set but not applicable", {"defense_family": "monitoring", "defense_evaluated_against": "not applicable", "evidence_note": base["evidence_note"] + "; defense_family: \"x\""}, "cannot be `not applicable`"),
  ("defense paper without a defense", {"paper_type": "defense"}, "paper_type=defense"),
+ ("too many defense families", {"defense_family": "monitoring; input-filtering; sandboxing-isolation", "defense_evaluated_against": "adversarial", "evidence_note": base["evidence_note"] + "; defense_family: \"x\"; defense_evaluated_against: \"y\""}, "at most 2"),
+ ("not studied is gone", {"spread": "not studied"}, "spread: 'not studied' not in"),
  ("too many loci", {"locus": "one-agent; message-channel; tool; orchestrator"}, "at most 3"),
  ("three loci accepted", {"locus": "one-agent; message-channel; tool"}, None),
  ("other:<label> accepted as primary", {"mechanism_primary": "other:clock skew"}, None),

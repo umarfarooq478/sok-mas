@@ -1,6 +1,6 @@
 # Codebook for the SoK corpus
 
-**Version:** v1 candidate (revised after the v0 pilot; freezes once the v1 pilot run is adjudicated). Prepared Nov 23, 2026 for Task 3 of the SoK plan (subtask 3.0). This is v1 candidate: the v0 pilot (15 papers, two independent LLM coders) found six ambiguities, resolved in Section 10. It freezes as v1 once the v1 pilot run is adjudicated.
+**Version:** v1.1 candidate (revised after the v0 and v1 pilot runs; freezes once the pilot disagreements are adjudicated). Prepared Nov 23, 2026 for Task 3 of the SoK plan (subtask 3.0). This is v1 candidate: the v0 pilot (15 papers, two independent LLM coders) found six ambiguities, resolved in Section 10. It freezes as v1 once the v1 pilot run is adjudicated.
 This file is generated from `task3/schema.py`; the validator reads the same schema, so the two cannot disagree. Edit the schema, then run `python3 task3/render_codebook.py`.
 
 ## 1. What a row is
@@ -146,7 +146,7 @@ The one failure mechanism the paper is mainly about, named by how it works, not 
 **Rules**
 
 - Name the mechanism, not the symptom: `wrong final answer` is a symptom; `error-cascade` is a mechanism.
-- Exactly one. Pick the mechanism the paper's main result is about. If two compete equally, take the one the paper names first or tests most, and put the other in `mechanism_secondary`.
+- Exactly one. For a broad study or an attribution paper with no single mechanism, pick the one the paper's evidence covers most. Pick the mechanism the paper's main result is about. If two compete equally, take the one the paper names first or tests most, and put the other in `mechanism_secondary`.
 - If none fits, use `other:<short label>`; those labels are the data Task 4 uses to extend the list.
 - Code what the paper shows or defends against, not what it mentions in related work.
 
@@ -239,7 +239,7 @@ Separate several values with `;`.
 
 **Rules**
 
-- Up to three values. Pick where the first deviation happens or where the attacker acts. If a paper covers more than three loci, give the three it spends the most on and say so in `locus_detail`.
+- Up to three values, **primary first**. Pick where the first deviation happens or where the attacker acts. If a paper covers more than three loci, give the three it spends the most on and say so in `locus_detail`.
 - An injection through a web page that an agent reads is `environment-input` first; if the paper makes the agent's message the vehicle, add `message-channel`.
 
 **Example.** Illustration: a poisoned document read by one agent then summarized to others. Value: `environment-input`.
@@ -266,8 +266,7 @@ How the failure moves once it starts.
 | `stays local` | the failure remains in the agent, message or step where it started |
 | `cascades` | it passes from agent to agent or step to step |
 | `amplifies` | it grows or gets worse as it passes on (more errors, more agents affected, higher attack success) |
-| `not studied` | the paper's design does not examine how it moves |
-| `not reported` | the sources read do not say |
+| `not reported` | the sources read do not say how it moves, or the paper's design does not examine it |
 
 **Rules**
 
@@ -275,7 +274,7 @@ How the failure moves once it starts.
 - `amplifies` needs evidence of growth, for example error rate or attack success rising with depth or number of agents.
 - Attenuation (the failure fades) is `stays local` if it never passes on, or `cascades` if it passes on and shrinks. Say which in the note.
 - `cascades` means the reach grows: more agents or steps are affected (counts of affected agents over time, hops or rounds). `amplifies` means severity grows: the effect gets worse per hop or per added agent (error rate, attack success rate).
-- A paper that reports only final performance split by structure, with no measure of movement, is `not reported`.
+- A paper that reports only final performance split by structure, with no measure of movement, is `not reported`. So is a paper whose design does not look at movement (an attribution method, a single-step attack): there is no separate `not studied` value.
 - In an abstract-only row, an explicit statement in the abstract that the failure propagates between agents may be coded, but set `confidence` to `medium` or `low`.
 
 **Example.** Illustration: attack success rises with the number of agents in the chain. Value: `amplifies`.
@@ -299,7 +298,7 @@ Separate several values with `;`. `other:<label>` is also accepted.
 
 - Code only methods the paper proposes or evaluates, not ones it cites.
 - A paper may have both a detector and a defense. Code the detector here and the response in `defense_family`.
-- `anomaly-detector` is a trained or statistical model; `output-check` is a judge or rule on outputs or claims; `trace-analysis` is after-the-fact reading of a run. A method used only to find the failure classes in a study (the authors' analysis) is `trace-analysis`, not a tool they propose.
+- List the main method first. `anomaly-detector` is a trained or statistical model; `output-check` is a judge or rule on outputs or claims; `trace-analysis` is after-the-fact reading of a run. A method used only to find the failure classes in a study (the authors' analysis) is `trace-analysis`, not a tool they propose.
 
 **Example.** Illustration: an LLM judge that reads the full conversation to name the step that broke the run. Value: `trace-analysis`.
 
@@ -324,8 +323,8 @@ Separate several values with `;`. `other:<label>` is also accepted.
 **Rules**
 
 - Code defenses the paper proposes or tests, not ones it only discusses.
-- Up to three values. Prefer the main idea over every component.
-- `other:<label>` if none fits; those labels are how Task 4 learns that the family list is incomplete.
+- Up to two values, **main idea first**. Prefer the main idea over every component; a minor add-on component is not a second value.
+- `other:<label>` only when **no listed family fits the main idea**. Do not use it as an extra value next to a family that fits. Those labels are how Task 4 learns that the family list is incomplete.
 - A defense that is argued for but never implemented is `none` for `defense_family` unless the paper evaluates it formally (then use the family and `formal-only`).
 
 **Example.** Illustration: a graph model that detects and cuts off a malicious agent. Values: `monitoring`.
@@ -372,7 +371,8 @@ Format: `^(yes: .+|no)$`.
 
 **Rules**
 
-- `yes: <host or URL>; license: <name or unknown>` when traces are public, `no` when the paper does not release them.
+- `yes: <host or URL>; license: <name or unknown>` when the paper names a public place for failure traces, run logs or the labeled runs. A repository with code only does not count.
+- `no` only when the paper says traces or data are not released. If the paper says nothing about releasing them, use `not reported`. For Task 5, only `yes` rows are candidates, so `no` and `not reported` are treated alike there; the difference is just whether the paper said it.
 - Never guess a license. If the paper does not name one, write `license: unknown` and let Task 5 check the host.
 
 **Example.** Illustration: `yes: huggingface.co/datasets/example; license: unknown`.
