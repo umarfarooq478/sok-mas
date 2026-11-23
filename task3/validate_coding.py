@@ -34,7 +34,8 @@ def check_row(row, final, known_pids, pdf_pids):
             continue
         k = f["kind"]
         if k in ("single",):
-            if v not in f["values"]: err.append(f"{n}: {v!r} not in {sorted(f['values'])}")
+            if v not in f["values"] and not (f.get("other_ok") and re.fullmatch(r"other:\S.*", v)):
+                err.append(f"{n}: {v!r} not in {sorted(f['values'])}" + (" or other:<label>" if f.get("other_ok") else ""))
         elif k == "multi":
             vals = split(v)
             if not vals: err.append(f"{n}: empty list")
@@ -42,8 +43,9 @@ def check_row(row, final, known_pids, pdf_pids):
                 if x in f["values"]: continue
                 if f.get("other_ok") and re.fullmatch(r"other:\S.*", x): continue
                 err.append(f"{n}: {x!r} not in {sorted(f['values'])}" + (" or other:<label>" if f.get("other_ok") else ""))
-            if n in ("mechanism_candidate", "defense_family") and len(vals) > 3: err.append(f"{n}: at most 3 values")
-            if n in ("locus", "evidence_type") and len(vals) > 2: err.append(f"{n}: at most 2 values")
+            if n == "defense_family" and len(vals) > 3: err.append(f"{n}: at most 3 values")
+            if n == "locus" and len(vals) > 3: err.append(f"{n}: at most 3 values")
+            if n == "evidence_type" and len(vals) > 2: err.append(f"{n}: at most 2 values")
             if "none" in vals and len(vals) > 1: err.append(f"{n}: `none` cannot be combined with other values")
         elif k == "pattern":
             if not re.fullmatch(f["pattern"], v): err.append(f"{n}: {v!r} does not match {f['pattern']}")
@@ -56,6 +58,8 @@ def check_row(row, final, known_pids, pdf_pids):
     df, de = split(g("defense_family")), g("defense_evaluated_against")
     if df == ["none"] and de not in ("not applicable", TBD, NR): err.append("defense_family=none requires defense_evaluated_against=not applicable")
     if df and df != ["none"] and not set(df) <= {TBD, NR} and de == "not applicable": err.append("a defense family is set, so defense_evaluated_against cannot be `not applicable`")
+    if g("mechanism_secondary") not in ("none", TBD, NR) and g("mechanism_secondary") == g("mechanism_primary"): err.append("mechanism_secondary must differ from mechanism_primary")
+    if df and df != ["none"] and not set(df) <= {TBD, NR} and de not in ("not applicable", TBD, NR) and de not in {"benign", "adversarial", "both", "not evaluated", "formal-only"}: err.append("defense_evaluated_against value does not match a set defense_family")
     if g("paper_type") == "defense" and df == ["none"]: err.append("paper_type=defense but defense_family=none")
     if g("evidence_type") == "theory-only": warn.append("evidence_type=theory-only: the paper may not meet the inclusion rules")
     # evidence tags

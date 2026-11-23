@@ -7,12 +7,12 @@ out = []
 w = out.append
 w(f"""# Codebook for the SoK corpus
 
-**Version:** {S.VERSION}. Prepared Nov 23, 2026 for Task 3 of the SoK plan (subtask 3.0). The 15-paper pilot (subtask 3.1) will fix the fields that turn out to be ambiguous, and then this file is frozen as v1.
+**Version:** {S.VERSION}. Prepared Nov 23, 2026 for Task 3 of the SoK plan (subtask 3.0). This is v1 candidate: the v0 pilot (15 papers, two independent LLM coders) found six ambiguities, resolved in Section 10. It freezes as v1 once the v1 pilot run is adjudicated.
 This file is generated from `task3/schema.py`; the validator reads the same schema, so the two cannot disagree. Edit the schema, then run `python3 task3/render_codebook.py`.
 
 ## 1. What a row is
 
-One row per paper, 21 coded fields, plus the paper id, the coder, and two review fields. A row says what the paper shows, so that the taxonomy in Task 4 comes from data. It does not say whether the paper is good.
+One row per paper, {len(S.CODED)} coded fields, plus the paper id, the coder, and two review fields. A row says what the paper shows, so that the taxonomy in Task 4 comes from data. It does not say whether the paper is good.
 
 Papers have stable ids: `P001` to `P384` (included) and `Q001` to `Q054` (maybe). See `task3/paper_index.csv`.
 
@@ -61,7 +61,7 @@ Never guess. A value that cannot be checked is `TBD` or `not reported`, not the 
 
 - **RQ2 (shared triggers):** `trigger`, `trigger_evidence_level`, `locus`, `locus_detail`. A mechanism is **dual-trigger** when at least one included paper shows it arising without an adversary and at least one shows an adversary inducing it at the same locus. One paper showing both is direct evidence (`direct-both`); two separate papers are indirect evidence. Indirect evidence is worked out across rows in Task 4, so it is not a value of the field.
 - **RQ3 (defense coverage):** `defense_family` and `defense_evaluated_against`. The coverage matrix in Task 4 is built from them.
-- **Task 4 mechanism list:** `mechanism_candidate`, including every `other:<label>`.
+- **Task 4 mechanism list:** `mechanism_primary` and `mechanism_secondary`, including every `other:<label>`. Counts per mechanism use the primary value; the secondary value feeds the coverage matrix.
 - **Task 5 trace sources:** `trace_release`.
 - **Task 6 findings:** `framework`, `evidence_note` and the paper ids.
 
@@ -103,6 +103,11 @@ Reading the row: the abstract describes an attack (Agent-in-the-Middle) and no b
 - **Framework bug study or incident report.** `paper_type = framework-bug-study`, `evidence_type = documented-incident` (or `trace-analysis`), `trigger = benign-bug`. These count as grey literature in the corpus but are coded the same way.
 - **Collusion.** `adversarial` if an operator or attacker instructs the agents to collude; `benign-bug` if collusion emerges without instruction; `both` if the paper tests both.
 - **A paper that states a failure only in the motivation.** Do not code it. Code what the paper demonstrates or defends against.
+- **A paper that calls faulty agents "malicious" or "Byzantine".** Decide by how the failure is induced: a weaker model or an injected error is `benign-bug`; an agent instructed to deceive or sabotage is `adversarial`; both implemented is `both`.
+- **Benign failures from one system, attacks on another.** `both-different-locus`. `direct-both` needs the same role in the same experimental system.
+- **A defense checked only by proof or model checking.** `defense_evaluated_against = formal-only`.
+- **Main experiments use different agent counts.** `n_agents = varies`; give the counts in `evaluation`.
+- **An abstract claims propagation that the experiments do not show.** Code only what the text you read supports. In an abstract-only row, an explicit abstract statement may be coded with `confidence` medium or low.
 - **A judgment call on `trigger_evidence_level` or `defense_evaluated_against`.** Code the narrower value, set `confidence = low`, and say why in `evidence_note`.
 
 ## 9. Check a sheet
@@ -116,30 +121,40 @@ python3 task3/test_validator.py                                          # 21 te
 
 The validator fails on: a wrong header, a blank cell, a value outside this codebook, an unknown or duplicate paper id, a broken cross-field rule (`trigger` against `trigger_evidence_level`; `defense_family = none` against `defense_evaluated_against`; `paper_type = defense` with no defense), and a missing `<field>:` segment in `evidence_note`. It warns on an `abstract-only` row marked `high`, on `TBD`, and on `evidence_type = theory-only`.
 
-## 10. Changes from the plan's suggested fields (v0)
+## 10. Changes
 
-The plan lists 11 fields. This version adds:
+### v0 to v1 candidate (after the v0 pilot)
 
-- `mechanism_candidate`: Task 4 groups by mechanism and needs a label per paper. The list is the plan's candidate mechanisms plus three the corpus clearly calls for (privacy or information leakage; protocol or authorization flaw; coordination or communication failure). `other:<label>` lets the data extend it.
+The v0 pilot had two independent LLM coders (Opus and Sonnet tiers) code the same 15 papers. They agreed on `trigger` and `trigger_evidence_level` for 13 of 15 papers (87%), on `defense_evaluated_against` for 14 of 15 (93%), but only on 67% for `spread`, 60% for `locus` and 47% for `mechanism_candidate` (exact set match). Their notes pointed to six ambiguities. Each is resolved as follows:
+
+1. **"Malicious" fault models.** `trigger` is decided by how the failure is induced, not by the paper's label (Section 8).
+2. **"Same locus".** `direct-both` needs the same role in the same experimental system. Benign failures from one system and attacks on another are `both-different-locus`.
+3. **Formal verification.** New value `formal-only` for `defense_evaluated_against`, so the RQ3 matrix can separate it from experiments and from untested proposals.
+4. **`n_agents`.** `varies` whenever the main experiments use more than one count; the counts go in `evaluation`.
+5. **Mechanism and locus.** `mechanism_candidate` is split into `mechanism_primary` (exactly one) and `mechanism_secondary` (optional). `locus` allows up to three values.
+6. **Scope.** One pilot paper is a formal analysis of a protocol specification with no running system, and another is a framework bug study centred on a single-agent stage. Decisions: the formal-analysis paper is excluded from the final matrix (it meets neither inclusion rule 1 nor 2); the bug study stays as a flagged framework bug study. See `task3/scope_decisions.csv`.
+
+Smaller clarifications in the field rules: `spread` (reach versus severity; final performance by structure is `not reported`; abstract-only claims), `detection_method`, `defense_family` (a defense never implemented), `evidence_type` (formal analysis is `theory-only`), `system_type` (`mixed` only if several types are studied), `coded_from` (text extraction counts as reading) and `confidence` (now a rule, not a feeling; it was the least reliable field in the pilot, kappa 0.33, so use it for triage only).
+
+### Plan to v0
+
+The plan lists 11 fields. v0 added:
+
+- `mechanism_candidate` (now `mechanism_primary` and `mechanism_secondary`): Task 4 groups by mechanism and needs a label per paper. The list is the plan's candidate mechanisms plus three the corpus clearly calls for (privacy or information leakage; protocol or authorization flaw; coordination or communication failure). `other:<label>` lets the data extend it.
 - `trigger_evidence_level` and `defense_evaluated_against`: required by the scope memo for RQ2 and RQ3.
 - `locus_detail`: makes the "same locus" test possible.
 - `trace_release`: Task 5 needs to know which papers release traces.
 - `paper_type`, `evidence_type`: triage, and a check against the inclusion rule.
 - `coded_from`, `confidence`, `evidence_note`: so every judgment can be audited.
 
-Changes in how plan values are written:
+Other changes: `swarm` is folded into `decentralized` (system type). The memo's "indirect" evidence level is not a value of `trigger_evidence_level`; it is computed across papers in Task 4. A within-paper value, `both-different-locus`, takes its place.
 
-- `swarm` is folded into `decentralized` (system type).
-- The memo's "indirect" evidence level is not a value of `trigger_evidence_level`; it is computed across papers in Task 4. A within-paper value, `both-different-locus`, takes its place.
+## 11. Still open
 
-## 11. Open questions for the pilot
+1. Whether `direct-both` can be decided from an abstract at all, or always needs the PDF. The rule says to flag if unsure.
+2. Whether the `defense_family` list covers the corpus, or there are too many `other:<label>` values. Count them after the first batches.
+3. How long a row takes to adjudicate or audit. This sets the pace for B01 to B19.
 
-1. Is `trigger` clear for papers that simulate errors by injection, and for emergent deception?
-2. Can `direct-both` be decided from an abstract, or does it always need the PDF? (The draft rule says to flag if unsure.)
-3. Does the `defense_family` list cover the corpus, or are there too many `other:<label>` values?
-4. Is up to three `mechanism_candidate` values too many?
-5. Does `locus` (up to two values) lose information for orchestrator-related papers?
-6. How long does a row take to review? This sets the pace for B01 to B19.
 """)
 open("03_codebook.md", "w", encoding="utf-8").write("\n".join(out))
 print(len("\n".join(out).split()), "words")

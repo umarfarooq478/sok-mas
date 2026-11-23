@@ -49,8 +49,9 @@ From the scope memo (Section 7): the codebook needs a field for **trigger eviden
 
 ## 4. Codebook
 
-The first draft in this plan had 20 fields. **`03_codebook.md` (v0, written in subtask 3.0) supersedes it and has 21 coded fields**, each with a definition, its allowed values, rules, and an example, plus a worked row from the corpus. Changes from the first draft:
+The first draft in this plan had 20 fields. **`03_codebook.md` (now v1 candidate, first written in subtask 3.0) supersedes it and has 22 coded fields**, each with a definition, its allowed values, rules, and an example, plus a worked row from the corpus. Changes from the first draft:
 
+- `mechanism_candidate` became `mechanism_primary` (one value) and `mechanism_secondary` (optional); `locus` allows three values; `formal-only` was added to `defense_evaluated_against`; the "same locus" and "malicious fault model" rules were tightened. All of this came from the v0 pilot (codebook Section 10).
 - `locus_detail` is a new field (the specific role, channel, store or tool), because the "same locus" test needs it.
 - `trigger_evidence_level` no longer has an "indirect" value. Indirect evidence means two separate papers, so it is worked out across rows in Task 4. A within-paper value, `both-different-locus`, replaces it.
 - `swarm` is folded into `decentralized`.
@@ -80,7 +81,7 @@ The dual-trigger test from the scope memo is in the codebook as written. The pil
 Each subtask ends in a file, in the plan's spirit that a missed deadline still leaves a reusable result.
 
 - **3.0 Set up. Done Nov 23.** `03_codebook.md` v0 (21 fields, each with definition, values, rules and an example; a worked row for P023), the coding-sheet template, a blank-sheet maker per batch, and a validator with 21 tests. The validator passes on the empty template and on the filled example; in `--final` mode it correctly rejects the example because it still has a `TBD` and a pending review.
-- **3.1 Pilot, 15 papers.** Coder A (Opus) and Coder B (Sonnet) each code all 15 independently from the abstract and the relevant PDF sections. Compare with `task3/agreement.py`, list every disagreement, you adjudicate, fix the ambiguous field definitions, freeze **codebook v1** and the prompts. *Done when:* a disagreement log exists, v1 is frozen, and no field is left ambiguous.
+- **3.1 Pilot, 15 papers.** *Step 1 done Nov 23:* Coder A (Opus) and Coder B (Sonnet) each coded all 15 independently under codebook v0; the agreement report and 51 disagreements are in `task3/coding/v0/`. They exposed six ambiguities, resolved as codebook v1 candidate using the recommendations (codebook Section 10). *Step 2 (running):* the same two models code the 15 again under v1, as a regression test of the new rules, not as a reliability estimate. *Step 3:* you adjudicate the v1 disagreements, and the codebook and prompts freeze as **v1**. *Done when:* the disagreement log exists, v1 is frozen, and no field is left ambiguous.
 - **3.2.01 to 3.2.19 Code batches B01 to B19.** For each batch, Coder A and Coder B each fill a sheet; the agreement script lists the disagreements; you adjudicate them and audit the random 20% sample. *Done when:* both sheets pass the validator, every disagreement is adjudicated, and the audit meets the stopping rule in `03_coding_method.md`.
 - **3.3.1 to 3.3.3 Resolve and code the maybes.** *Done when:* each of the 54 is marked in or out, with a reason, and the in-scope ones are coded.
 - **3.4 Reliability.** Compute agreement between Coder A and Coder B on the whole corpus, per field (Cohen's kappa for single-value fields; report it as agreement between two LLM passes), and the audit acceptance rate on the human-audit sample. Report the trigger and defense fields (6, 7, 11, 12) separately. Discuss disagreements. *Done when:* a kappa table exists, and any field below 0.7 has either been recoded or reported as weak.

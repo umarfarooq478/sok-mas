@@ -77,7 +77,18 @@ If, in a batch, you accept fewer than **90%** of the audited agreed rows on any 
 
 Fill the brackets from `task3/agreement.py` output and the audit log. Do not fill any bracket you cannot back with a file.
 
-## 8. Cost and effort
+## 8. What the v0 pilot showed (Nov 23)
+
+Coder A (Opus tier) and Coder B (Sonnet tier) coded the 15 pilot papers independently under codebook v0. Results, with the caveat that n = 15 makes every kappa unstable:
+
+- `trigger` and `trigger_evidence_level`: 87% exact agreement (13 of 15), kappa 0.79. `defense_evaluated_against`: 93%, kappa 0.91. `spread`: 67%, kappa 0.55. `locus`: 60% exact, Jaccard 0.74. `mechanism_candidate`: 47% exact, Jaccard 0.67. `confidence`: 60%, kappa 0.33.
+- Both coders independently flagged the same ambiguities, which led to the v1 changes (codebook Section 10).
+- **Some disagreement comes from the prompts, not the codebook.** Coder B's rule to require experimental support makes it write `not reported` for `spread` where Coder A accepts the abstract's claim. This is by design, but it means the agreement figure partly measures how different the two prompts are. Report it that way. The pilot disagreements are in `task3/coding/v0/`.
+- On the two papers that matter most for the bridge claim, both coders agreed (`both` and `both-different-locus`), and both marked those rows low confidence.
+
+The **v1 pilot run** then has the same two models code the same 15 papers again under v1, in fresh contexts. It is a **regression test of the new rules, not an independent reliability estimate**, because the rules were written after seeing these papers. Its agreement is expected to be higher than v0, and the paper must not present that as the reliability of the method. The reliability figures for the paper come from batches B01 to B19.
+
+## 9. Cost and effort
 
 - The LLM cost doubles (two passes over 384 papers plus the 54 maybes).
 - Your time changes: instead of reviewing every row, you adjudicate disagreements and audit 20% of the rest. I cannot yet say how large that is; the pilot gives a first estimate of the disagreement rate. If the disagreement rate is high, the human time can approach the original plan's 45 hours.

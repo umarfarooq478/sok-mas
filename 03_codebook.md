@@ -1,11 +1,11 @@
 # Codebook for the SoK corpus
 
-**Version:** v0 (draft, to be fixed by the pilot in subtask 3.1). Prepared Nov 23, 2026 for Task 3 of the SoK plan (subtask 3.0). The 15-paper pilot (subtask 3.1) will fix the fields that turn out to be ambiguous, and then this file is frozen as v1.
+**Version:** v1 candidate (revised after the v0 pilot; freezes once the v1 pilot run is adjudicated). Prepared Nov 23, 2026 for Task 3 of the SoK plan (subtask 3.0). This is v1 candidate: the v0 pilot (15 papers, two independent LLM coders) found six ambiguities, resolved in Section 10. It freezes as v1 once the v1 pilot run is adjudicated.
 This file is generated from `task3/schema.py`; the validator reads the same schema, so the two cannot disagree. Edit the schema, then run `python3 task3/render_codebook.py`.
 
 ## 1. What a row is
 
-One row per paper, 21 coded fields, plus the paper id, the coder, and two review fields. A row says what the paper shows, so that the taxonomy in Task 4 comes from data. It does not say whether the paper is good.
+One row per paper, 22 coded fields, plus the paper id, the coder, and two review fields. A row says what the paper shows, so that the taxonomy in Task 4 comes from data. It does not say whether the paper is good.
 
 Papers have stable ids: `P001` to `P384` (included) and `Q001` to `Q054` (maybe). See `task3/paper_index.csv`.
 
@@ -54,7 +54,7 @@ Never guess. A value that cannot be checked is `TBD` or `not reported`, not the 
 
 - **RQ2 (shared triggers):** `trigger`, `trigger_evidence_level`, `locus`, `locus_detail`. A mechanism is **dual-trigger** when at least one included paper shows it arising without an adversary and at least one shows an adversary inducing it at the same locus. One paper showing both is direct evidence (`direct-both`); two separate papers are indirect evidence. Indirect evidence is worked out across rows in Task 4, so it is not a value of the field.
 - **RQ3 (defense coverage):** `defense_family` and `defense_evaluated_against`. The coverage matrix in Task 4 is built from them.
-- **Task 4 mechanism list:** `mechanism_candidate`, including every `other:<label>`.
+- **Task 4 mechanism list:** `mechanism_primary` and `mechanism_secondary`, including every `other:<label>`. Counts per mechanism use the primary value; the secondary value feeds the coverage matrix.
 - **Task 5 trace sources:** `trace_release`.
 - **Task 6 findings:** `framework`, `evidence_note` and the paper ids.
 
@@ -79,6 +79,7 @@ How the agents in the studied system are organized.
 
 - Code the system the failure or attack is demonstrated on. If the paper evaluates several, use `mixed` and list them in `evaluation`.
 - A planner that calls tools but has no second LLM agent is not a multi-agent system. That paper should go back to the maybe or exclude list.
+- `mixed` only when the paper explicitly studies several organization types. If the paper does not describe the structure (for example, it evaluates generated teams of unspecified shape), use `not reported`.
 
 **Example.** Illustration: three agents that each refine the previous agent's answer in order. Value: `pipeline`.
 
@@ -103,10 +104,11 @@ Format: `^(\d+(-\d+)?\+?|varies)$`.
 
 **Rules**
 
-- A single integer (`5`), a range (`3-10`), a lower bound (`10+`), or `varies` when scale is a studied variable.
-- Use the main experimental setting, not the largest one mentioned.
+- A single integer (`5`), a range (`3-10`), a lower bound (`10+`), or `varies`.
+- Use `varies` whenever the main experiments use more than one agent count, whether or not scale is a studied variable (several systems, datasets or topologies). Put the counts or ranges in `evaluation`.
+- If one setting is clearly the main one, give that number, not the largest one mentioned.
 
-**Example.** Illustration: a 10-agent network in the main table, scaled to 50 in an ablation. Value: `10`.
+**Example.** Illustration: a 10-agent network in the main table, scaled to 50 in an ablation. Value: `10`. Three case-study systems with 3, 5 and 7 agents: `varies`.
 
 ### 4. `failure_observed`
 
@@ -121,9 +123,9 @@ Free text.
 
 **Example.** Illustration: `A false claim in one agent's output is repeated and reinforced by the next agents until the group answer is wrong.`
 
-### 5. `mechanism_candidate`
+### 5. `mechanism_primary`
 
-Which failure mechanism the paper is about, named by how it works, not by its symptom. A working label that Task 4 will regroup; it is not the final taxonomy.
+The one failure mechanism the paper is mainly about, named by how it works, not by its symptom. A working label that Task 4 will regroup; it is not the final taxonomy.
 
 | Value | Meaning |
 |---|---|
@@ -141,17 +143,44 @@ Which failure mechanism the paper is about, named by how it works, not by its sy
 | `coordination-or-communication-failure` | agents fail to align, are misread, or lose context between them |
 | `not reported` | the paper gives no way to place it |
 
-Separate several values with `;`. `other:<label>` is also accepted.
-
 **Rules**
 
 - Name the mechanism, not the symptom: `wrong final answer` is a symptom; `error-cascade` is a mechanism.
-- Up to three values. If none fits, use `other:<short label>`; those labels are the data Task 4 uses to extend the list.
+- Exactly one. Pick the mechanism the paper's main result is about. If two compete equally, take the one the paper names first or tests most, and put the other in `mechanism_secondary`.
+- If none fits, use `other:<short label>`; those labels are the data Task 4 uses to extend the list.
 - Code what the paper shows or defends against, not what it mentions in related work.
 
 **Example.** Illustration: an attacker rewrites messages between two agents. Value: `message-corruption-or-injection`.
 
-### 6. `trigger`
+### 6. `mechanism_secondary`
+
+An optional second mechanism that is substantial in the paper.
+
+| Value | Meaning |
+|---|---|
+| `role-or-spec-drift` | an agent leaves its assigned role or specification |
+| `message-corruption-or-injection` | inter-agent messages are altered, forged or carry injected instructions |
+| `shared-memory-poisoning` | a shared or persistent memory or state store is corrupted |
+| `unverified-handoff` | one agent's output is accepted by the next without a check |
+| `error-cascade` | an error is passed on and grows or sticks across agents or steps |
+| `collusion-or-groupthink` | agents coordinate covertly, or converge on a wrong consensus through social pressure |
+| `orchestrator-compromise` | the controlling agent or planner is subverted or fails |
+| `tool-misuse` | a tool is called wrongly, with wrong arguments, or with abused authority |
+| `termination-failure` | the system does not stop, stops too early, or loops |
+| `privacy-or-information-leakage` | private data moves to an agent or place it should not |
+| `protocol-or-authorization-flaw` | identity, permission or protocol design lets the wrong party act |
+| `coordination-or-communication-failure` | agents fail to align, are misread, or lose context between them |
+| `none` | no second mechanism is substantial in the paper |
+| `not reported` | the paper gives no way to place it |
+
+**Rules**
+
+- `none` unless the paper gives a second mechanism real weight (its own experiments or its own section).
+- Never the same value as `mechanism_primary`.
+
+**Example.** Illustration: a paper on error cascades that also studies a missing handoff check. Primary: `error-cascade`. Secondary: `unverified-handoff`.
+
+### 7. `trigger`
 
 What causes the failure the paper studies, tests or defends against.
 
@@ -168,17 +197,18 @@ What causes the failure the paper studies, tests or defends against.
 - A defense paper takes the trigger(s) it was evaluated against. If it names an attacker but tests only clean runs, code `benign-bug` and say so in the note.
 - A paper that injects faults to simulate errors is `benign-bug`. A paper that simulates a malicious agent is `adversarial`. A paper that does both is `both`.
 - Misaligned goals or deception that an agent shows without anyone instructing it is `benign-bug` (no adversary). If an operator tells the agent to deceive, it is `adversarial`.
+- **Decide by how the failure is induced, not by the paper's label.** Papers call faulty or weak agents "malicious" or "Byzantine" loosely. A weaker model, an injected error or a corrupted message with no instruction to harm is `benign-bug`. An agent that is instructed to deceive, sabotage or subvert is `adversarial`. If the paper implements both kinds, it is `both`. Say which implementation you relied on in `evidence_note`.
 
 **Example.** Illustration: a study injects wrong answers into one agent to see how errors spread, and separately a prompt-injection attack on the same agent. Value: `both`.
 
-### 7. `trigger_evidence_level`
+### 8. `trigger_evidence_level`
 
 Whether the paper itself links the two triggers. This feeds RQ2 and the dual-trigger test in Task 4. Two separate papers that each show one side are 'indirect' evidence; that is worked out across papers in Task 4, not coded here.
 
 | Value | Meaning |
 |---|---|
-| `direct-both` | one paper shows both triggers acting at the same locus (same agent role, channel, store, tool or orchestrator step) |
-| `both-different-locus` | both triggers appear, but at different loci |
+| `direct-both` | one paper shows both triggers acting at the same locus: the same agent role, channel, store, tool or orchestrator step, in the same experimental system |
+| `both-different-locus` | both triggers appear, but at different loci, or in different systems or datasets |
 | `benign-only` | only benign triggers appear |
 | `adversarial-only` | only adversarial triggers appear |
 | `not applicable` | matches `trigger = not applicable` |
@@ -187,10 +217,11 @@ Whether the paper itself links the two triggers. This feeds RQ2 and the dual-tri
 
 - Must agree with `trigger`: `benign-bug` goes with `benign-only`; `adversarial` with `adversarial-only`; `both` with `direct-both` or `both-different-locus`; `not applicable` with `not applicable`.
 - `direct-both` needs a passage showing the same locus under both triggers; quote or cite it in `evidence_note`. If unsure, use `both-different-locus` and flag the row.
+- **Same locus means the same role in the same experimental system.** Benign failures taken from one system's traces and attacks run on a different pipeline are `both-different-locus`, even if the paper maps both to the same kind of boundary; record that mapping in `evidence_note`. The same role reached through two interfaces (a system prompt in one condition, a message in another) counts as the same locus only if the paper treats it as the same agent role.
 
 **Example.** Illustration: one pipeline where a hallucinated hand-off and an injected hand-off at the same step are both measured. Value: `direct-both`.
 
-### 8. `locus`
+### 9. `locus`
 
 Where the failure starts, not where it ends.
 
@@ -208,12 +239,12 @@ Separate several values with `;`.
 
 **Rules**
 
-- Up to two values. Pick where the first deviation happens or where the attacker acts.
+- Up to three values. Pick where the first deviation happens or where the attacker acts. If a paper covers more than three loci, give the three it spends the most on and say so in `locus_detail`.
 - An injection through a web page that an agent reads is `environment-input` first; if the paper makes the agent's message the vehicle, add `message-channel`.
 
 **Example.** Illustration: a poisoned document read by one agent then summarized to others. Value: `environment-input`.
 
-### 9. `locus_detail`
+### 10. `locus_detail`
 
 The specific role, channel, store or tool, as the paper names it.
 
@@ -226,7 +257,7 @@ Free text.
 
 **Example.** Illustration: `the verifier agent's output channel`.
 
-### 10. `spread`
+### 11. `spread`
 
 How the failure moves once it starts.
 
@@ -243,10 +274,13 @@ How the failure moves once it starts.
 - Code only what the paper measures or states about movement between agents or steps. A claim that 'the whole system is compromised' is an effect, not a measure of spread; use `not reported` unless the text shows how.
 - `amplifies` needs evidence of growth, for example error rate or attack success rising with depth or number of agents.
 - Attenuation (the failure fades) is `stays local` if it never passes on, or `cascades` if it passes on and shrinks. Say which in the note.
+- `cascades` means the reach grows: more agents or steps are affected (counts of affected agents over time, hops or rounds). `amplifies` means severity grows: the effect gets worse per hop or per added agent (error rate, attack success rate).
+- A paper that reports only final performance split by structure, with no measure of movement, is `not reported`.
+- In an abstract-only row, an explicit statement in the abstract that the failure propagates between agents may be coded, but set `confidence` to `medium` or `low`.
 
 **Example.** Illustration: attack success rises with the number of agents in the chain. Value: `amplifies`.
 
-### 11. `detection_method`
+### 12. `detection_method`
 
 How the paper finds or localizes failures, if it does.
 
@@ -265,10 +299,11 @@ Separate several values with `;`. `other:<label>` is also accepted.
 
 - Code only methods the paper proposes or evaluates, not ones it cites.
 - A paper may have both a detector and a defense. Code the detector here and the response in `defense_family`.
+- `anomaly-detector` is a trained or statistical model; `output-check` is a judge or rule on outputs or claims; `trace-analysis` is after-the-fact reading of a run. A method used only to find the failure classes in a study (the authors' analysis) is `trace-analysis`, not a tool they propose.
 
 **Example.** Illustration: an LLM judge that reads the full conversation to name the step that broke the run. Value: `trace-analysis`.
 
-### 12. `defense_family`
+### 13. `defense_family`
 
 The kind of defense or mitigation the paper proposes or evaluates. The columns of the Task 4 coverage matrix.
 
@@ -291,10 +326,11 @@ Separate several values with `;`. `other:<label>` is also accepted.
 - Code defenses the paper proposes or tests, not ones it only discusses.
 - Up to three values. Prefer the main idea over every component.
 - `other:<label>` if none fits; those labels are how Task 4 learns that the family list is incomplete.
+- A defense that is argued for but never implemented is `none` for `defense_family` unless the paper evaluates it formally (then use the family and `formal-only`).
 
 **Example.** Illustration: a graph model that detects and cuts off a malicious agent. Values: `monitoring`.
 
-### 13. `defense_evaluated_against`
+### 14. `defense_evaluated_against`
 
 Which trigger the defense was actually tested against. This feeds RQ3: which mechanism-by-trigger cells have no evaluated defense.
 
@@ -303,18 +339,19 @@ Which trigger the defense was actually tested against. This feeds RQ3: which mec
 | `benign` | tested only against benign failures |
 | `adversarial` | tested only against attackers |
 | `both` | tested against both |
-| `not evaluated` | proposed but no experiment tests it |
+| `not evaluated` | proposed but nothing tests it |
+| `formal-only` | checked by proof, model checking or formal analysis against the threat model, with no experiment |
 | `not applicable` | the paper has no defense (`defense_family = none`) |
 
 **Rules**
 
-- `none` in `defense_family` goes with `not applicable`; any other family goes with one of the four other values.
+- `none` in `defense_family` goes with `not applicable`; any other family goes with one of `benign`, `adversarial`, `both`, `not evaluated` or `formal-only`.
 - Test against means an experiment, not a sentence in the discussion. Quote the table or section in `evidence_note`.
 - Hardest field after `trigger_evidence_level`: when unsure, code the narrower value and flag the row.
 
 **Example.** Illustration: a monitor tested on injected prompt attacks only. Value: `adversarial`.
 
-### 14. `evaluation`
+### 15. `evaluation`
 
 Benchmarks or datasets, main metrics, models tested, and scale.
 
@@ -327,7 +364,7 @@ Free text.
 
 **Example.** Illustration: `500 runs over 10 domains; hallucination score; three LLMs`.
 
-### 15. `trace_release`
+### 16. `trace_release`
 
 Whether the paper released failure traces or runs, and where. Task 5 depends on this.
 
@@ -340,7 +377,7 @@ Format: `^(yes: .+|no)$`.
 
 **Example.** Illustration: `yes: huggingface.co/datasets/example; license: unknown`.
 
-### 16. `limitation`
+### 17. `limitation`
 
 The main limit the authors state, or an obvious one.
 
@@ -352,7 +389,7 @@ Free text.
 
 **Example.** Illustration: `Tested on three models only; no human baseline.`
 
-### 17. `paper_type`
+### 18. `paper_type`
 
 The main contribution type, for triage.
 
@@ -373,7 +410,7 @@ The main contribution type, for triage.
 
 **Example.** Illustration: a new attack and a defense for it with equal space. Value: `mixed`.
 
-### 18. `evidence_type`
+### 19. `evidence_type`
 
 What kind of evidence the paper rests on. Checks the inclusion rule.
 
@@ -388,12 +425,12 @@ Separate several values with `;`.
 
 **Rules**
 
-- `theory-only` papers should not be in the included set; flag the row so it can move to the exclude list.
-- Up to two values.
+- `theory-only` covers analytical or formal arguments, including formal verification and model checking, with no runs of a system. Such papers should not be in the included set; flag the row so it can move to the exclude list.
+- Code the evidence the paper's main results rest on. Up to two values.
 
 **Example.** Illustration: `experiment; trace-analysis`.
 
-### 19. `coded_from`
+### 20. `coded_from`
 
 How much of the paper was read for this row. Honesty about depth.
 
@@ -407,10 +444,11 @@ How much of the paper was read for this row. Honesty about depth.
 
 - Papers with no PDF can only be `abstract-only`.
 - A row coded from the abstract alone that still has `TBD` values needs a PDF read before it can pass the final check.
+- Reading a PDF through text extraction counts as reading it. Use `full-text` only if the whole paper was read, appendices included.
 
 **Example.** Illustration: `abstract-only`.
 
-### 20. `confidence`
+### 21. `confidence`
 
 How sure the coder is of the row as a whole.
 
@@ -423,11 +461,12 @@ How sure the coder is of the row as a whole.
 **Rules**
 
 - An `abstract-only` row can be `high` only if every substantive field is stated outright in the abstract; the validator warns otherwise.
-- Set `low` whenever `trigger_evidence_level` or `defense_evaluated_against` is a judgment call.
+- Set `low` whenever any of the six key fields (`trigger`, `trigger_evidence_level`, `locus`, `spread`, `defense_family`, `defense_evaluated_against`) is a judgment between two adjacent values, or rests only on a claim in the abstract that the experiments do not show.
+- Set `medium` when every key field is clear but at least one rests on a single passage. Set `high` only when all key fields are stated plainly in the text you read.
 
 **Example.** Illustration: `medium`.
 
-### 21. `evidence_note`
+### 22. `evidence_note`
 
 The passage, section or figure each key judgment rests on, so a reviewer can check it in seconds.
 
@@ -454,7 +493,8 @@ P023, *Red-Teaming LLM Multi-Agent Systems via Communication Attacks* (batch B13
 | `framework` | not reported |
 | `n_agents` | TBD |
 | `failure_observed` | An attacker intercepts and rewrites messages between agents (Agent-in-the-Middle) to steer the whole multi-agent system. |
-| `mechanism_candidate` | message-corruption-or-injection |
+| `mechanism_primary` | message-corruption-or-injection |
+| `mechanism_secondary` | none |
 | `trigger` | adversarial |
 | `trigger_evidence_level` | adversarial-only |
 | `locus` | message-channel |
@@ -485,6 +525,11 @@ Reading the row: the abstract describes an attack (Agent-in-the-Middle) and no b
 - **Framework bug study or incident report.** `paper_type = framework-bug-study`, `evidence_type = documented-incident` (or `trace-analysis`), `trigger = benign-bug`. These count as grey literature in the corpus but are coded the same way.
 - **Collusion.** `adversarial` if an operator or attacker instructs the agents to collude; `benign-bug` if collusion emerges without instruction; `both` if the paper tests both.
 - **A paper that states a failure only in the motivation.** Do not code it. Code what the paper demonstrates or defends against.
+- **A paper that calls faulty agents "malicious" or "Byzantine".** Decide by how the failure is induced: a weaker model or an injected error is `benign-bug`; an agent instructed to deceive or sabotage is `adversarial`; both implemented is `both`.
+- **Benign failures from one system, attacks on another.** `both-different-locus`. `direct-both` needs the same role in the same experimental system.
+- **A defense checked only by proof or model checking.** `defense_evaluated_against = formal-only`.
+- **Main experiments use different agent counts.** `n_agents = varies`; give the counts in `evaluation`.
+- **An abstract claims propagation that the experiments do not show.** Code only what the text you read supports. In an abstract-only row, an explicit abstract statement may be coded with `confidence` medium or low.
 - **A judgment call on `trigger_evidence_level` or `defense_evaluated_against`.** Code the narrower value, set `confidence = low`, and say why in `evidence_note`.
 
 ## 9. Check a sheet
@@ -498,27 +543,37 @@ python3 task3/test_validator.py                                          # 21 te
 
 The validator fails on: a wrong header, a blank cell, a value outside this codebook, an unknown or duplicate paper id, a broken cross-field rule (`trigger` against `trigger_evidence_level`; `defense_family = none` against `defense_evaluated_against`; `paper_type = defense` with no defense), and a missing `<field>:` segment in `evidence_note`. It warns on an `abstract-only` row marked `high`, on `TBD`, and on `evidence_type = theory-only`.
 
-## 10. Changes from the plan's suggested fields (v0)
+## 10. Changes
 
-The plan lists 11 fields. This version adds:
+### v0 to v1 candidate (after the v0 pilot)
 
-- `mechanism_candidate`: Task 4 groups by mechanism and needs a label per paper. The list is the plan's candidate mechanisms plus three the corpus clearly calls for (privacy or information leakage; protocol or authorization flaw; coordination or communication failure). `other:<label>` lets the data extend it.
+The v0 pilot had two independent LLM coders (Opus and Sonnet tiers) code the same 15 papers. They agreed on `trigger` and `trigger_evidence_level` for 13 of 15 papers (87%), on `defense_evaluated_against` for 14 of 15 (93%), but only on 67% for `spread`, 60% for `locus` and 47% for `mechanism_candidate` (exact set match). Their notes pointed to six ambiguities. Each is resolved as follows:
+
+1. **"Malicious" fault models.** `trigger` is decided by how the failure is induced, not by the paper's label (Section 8).
+2. **"Same locus".** `direct-both` needs the same role in the same experimental system. Benign failures from one system and attacks on another are `both-different-locus`.
+3. **Formal verification.** New value `formal-only` for `defense_evaluated_against`, so the RQ3 matrix can separate it from experiments and from untested proposals.
+4. **`n_agents`.** `varies` whenever the main experiments use more than one count; the counts go in `evaluation`.
+5. **Mechanism and locus.** `mechanism_candidate` is split into `mechanism_primary` (exactly one) and `mechanism_secondary` (optional). `locus` allows up to three values.
+6. **Scope.** One pilot paper is a formal analysis of a protocol specification with no running system, and another is a framework bug study centred on a single-agent stage. Decisions: the formal-analysis paper is excluded from the final matrix (it meets neither inclusion rule 1 nor 2); the bug study stays as a flagged framework bug study. See `task3/scope_decisions.csv`.
+
+Smaller clarifications in the field rules: `spread` (reach versus severity; final performance by structure is `not reported`; abstract-only claims), `detection_method`, `defense_family` (a defense never implemented), `evidence_type` (formal analysis is `theory-only`), `system_type` (`mixed` only if several types are studied), `coded_from` (text extraction counts as reading) and `confidence` (now a rule, not a feeling; it was the least reliable field in the pilot, kappa 0.33, so use it for triage only).
+
+### Plan to v0
+
+The plan lists 11 fields. v0 added:
+
+- `mechanism_candidate` (now `mechanism_primary` and `mechanism_secondary`): Task 4 groups by mechanism and needs a label per paper. The list is the plan's candidate mechanisms plus three the corpus clearly calls for (privacy or information leakage; protocol or authorization flaw; coordination or communication failure). `other:<label>` lets the data extend it.
 - `trigger_evidence_level` and `defense_evaluated_against`: required by the scope memo for RQ2 and RQ3.
 - `locus_detail`: makes the "same locus" test possible.
 - `trace_release`: Task 5 needs to know which papers release traces.
 - `paper_type`, `evidence_type`: triage, and a check against the inclusion rule.
 - `coded_from`, `confidence`, `evidence_note`: so every judgment can be audited.
 
-Changes in how plan values are written:
+Other changes: `swarm` is folded into `decentralized` (system type). The memo's "indirect" evidence level is not a value of `trigger_evidence_level`; it is computed across papers in Task 4. A within-paper value, `both-different-locus`, takes its place.
 
-- `swarm` is folded into `decentralized` (system type).
-- The memo's "indirect" evidence level is not a value of `trigger_evidence_level`; it is computed across papers in Task 4. A within-paper value, `both-different-locus`, takes its place.
+## 11. Still open
 
-## 11. Open questions for the pilot
+1. Whether `direct-both` can be decided from an abstract at all, or always needs the PDF. The rule says to flag if unsure.
+2. Whether the `defense_family` list covers the corpus, or there are too many `other:<label>` values. Count them after the first batches.
+3. How long a row takes to adjudicate or audit. This sets the pace for B01 to B19.
 
-1. Is `trigger` clear for papers that simulate errors by injection, and for emergent deception?
-2. Can `direct-both` be decided from an abstract, or does it always need the PDF? (The draft rule says to flag if unsure.)
-3. Does the `defense_family` list cover the corpus, or are there too many `other:<label>` values?
-4. Is up to three `mechanism_candidate` values too many?
-5. Does `locus` (up to two values) lose information for orchestrator-related papers?
-6. How long does a row take to review? This sets the pace for B01 to B19.
