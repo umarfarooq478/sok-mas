@@ -1,0 +1,10 @@
+pid,batch,theme,double_code,status,title,year,tier,venue,citations_openalex,arxiv,doi,pdf,has_abstract,grey
+P190,B19,T9 other multi-agent failure and risk,Y,include,HARP: Measuring Harm Amplification in Multi-Agent LLM Systems,2026,T2,arXiv (Cornell University),2,2605.27489,10.48550/arxiv.2605.27489,task2/papers/2605.27489.pdf,Y,
+P191,B19,T9 other multi-agent failure and risk,,include,Trace-Level Analysis of Information Contamination in Multi-Agent Systems,2026,T1-venue,ACM Conference on AI and Agentic Systems (CAIS),5,,10.1145/3786335.3813147,,Y,
+P221,B19,T9 other multi-agent failure and risk,Y,include,When Latent Agents Lie: KV-Cache Integrity in Multi-Agent LLM Collaboration,2026,T2,arXiv (Cornell University),6,,10.48550/arxiv.2606.28958,,Y,
+P223,B19,T9 other multi-agent failure and risk,,include,"""The Architecture of Failure: Investigating the Failure Patterns in Multi-Agent LLM Pipelines""",2026,T2,Zenodo (CERN European Organization for Nuclear Research),0,,10.5281/zenodo.22185860,,Y,framework-bug-study
+P228,B19,T9 other multi-agent failure and risk,,include,Metamorphic Testing of Multi-Agent LLM Systems: A Trace-Based Behavioral Oracle Framework,2026,T1-venue,IEEE International Conference on Artificial Intelligence Testing (AITest),1,,10.1109/aitest70988.2026.00036,,Y,
+P302,B19,T9 other multi-agent failure and risk,,include,MeshHeal: Two-Timescale Self-Healing for Gray Failures in Decentralized LLM Agent Networks,2026,T2,arXiv (Cornell University),1,,10.48550/arxiv.2609.29015,,Y,
+P331,B19,T9 other multi-agent failure and risk,,include,Reward Hacking as a Transmissible Strategy in Multi-Agent Coding Systems,2026,T2,arXiv (Cornell University),1,,10.48550/arxiv.2610.12822,,Y,
+P333,B19,T9 other multi-agent failure and risk,,include,EAIR: Interaction Risks in Enterprise LLM Multi-Agent Systems,2026,T2,arXiv (Cornell University),0,2610.14800,10.48550/arxiv.2610.14800,task2/papers/2610.14800.pdf,Y,
+P340,B19,T9 other multi-agent failure and risk,,include,"Multi-Agent LLM Systems: Memory Management, Coordination Failures and Semantic Conflict Resolution",2026,T1-venue,Dandao Xuebao/Journal of Ballistics,0,,,,Y,
