@@ -1,4 +1,4 @@
-pid,batch,theme,double_code,status,title,year,tier,venue,citations_openalex,arxiv,doi,pdf,has_abstract,grey
+pid,batch,theme,human_audit,status,title,year,tier,venue,citations_openalex,arxiv,doi,pdf,has_abstract,grey
 Q041,M3,T2 benign error and hallucination propagation,,maybe,CAVEAT: Reliability-aware active verification under correlated errors for multi-agent LLM reasoning,2026,T2,Research Square,0,,10.21203/rs.3.rs-11035327/v1,,Y,
 Q042,M3,T2 benign error and hallucination propagation,,maybe,Trust-Weighted Adaptive Consensus: A Resilient Coordination Framework for Next-Generation Large Language Model Multi-Agent Systems,2026,T1-venue,International Journal of Computer Applications,0,,10.5120/ijcaee078c422a35,,Y,
 Q043,M3,"T6 protocols, authorization, trust boundaries",,maybe,"Agent Execution Control Planes: When 'Sandbox', 'Gateway', and 'Policy' Ship as Unauthenticated Code Execution",2026,T2,Zenodo (CERN European Organization for Nuclear Research),0,,10.5281/zenodo.23129663,,Y,

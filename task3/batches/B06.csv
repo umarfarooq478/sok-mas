@@ -1,4 +1,4 @@
-pid,batch,theme,double_code,status,title,year,tier,venue,citations_openalex,arxiv,doi,pdf,has_abstract,grey
+pid,batch,theme,human_audit,status,title,year,tier,venue,citations_openalex,arxiv,doi,pdf,has_abstract,grey
 P183,B06,T2 benign error and hallucination propagation,Y,include,RoMa: A Credibility-Aware Fault-Tolerance Framework for LLM Multi-Agent Systems,2026,T1-venue,International Conference on Computer Supported Cooperative Work in Design,0,,10.1109/CSCWD68734.2026.11582680,,Y,
 P202,B06,T2 benign error and hallucination propagation,,include,Channel Fracture: Three Instances of Cross-Boundary Silent Delivery Reliability Failures in Multi-Agent Systems,2026,T2,arXiv (Cornell University),2,,10.48550/arxiv.2606.04896,,Y,
 P203,B06,T2 benign error and hallucination propagation,Y,include,Byzantine Cheap Talk: Adversarial Resilience and Topology Effects in LLM Coordination Games,2026,T2,arXiv (Cornell University),4,2606.07790,10.48550/arxiv.2606.07790,task2/papers/2606.07790.pdf,Y,

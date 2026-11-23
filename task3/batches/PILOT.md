@@ -1,8 +1,8 @@
 # Batch PILOT: 15 papers
 
-Double-coded (`Y`) papers are the 20% sample for the kappa check.
+`human_audit = Y` marks the random 20% audit sample the human checks whether or not the two LLM passes agree. The human also checks every paper where the two passes disagree.
 
-| pid | double | theme | year | tier | title |
+| pid | audit | theme | year | tier | title |
 |---|---|---|---|---|---|
 | P133 | Y | T2 | 2026 | T1-citations | From Spark to Fire: Modeling and Mitigating Error Cascades in LLM-Based Multi-Agent Collaboration |
 | P248 | Y | T7 | 2026 | T2 | Adversarial Attacks in Multi-Agent LLM Pipelines: Unveiling Structural Vulnerabilities in Agentic AI Architectures |

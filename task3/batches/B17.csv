@@ -1,4 +1,4 @@
-pid,batch,theme,double_code,status,title,year,tier,venue,citations_openalex,arxiv,doi,pdf,has_abstract,grey
+pid,batch,theme,human_audit,status,title,year,tier,venue,citations_openalex,arxiv,doi,pdf,has_abstract,grey
 P042,B17,T8 defenses and monitors,,include,SentinelAgent: Graph-based Anomaly Detection in Multi-Agent Systems,2025,T1-citations,arXiv (Cornell University),55,2505.24201,10.48550/arxiv.2505.24201,task2/papers/2505.24201.pdf,Y,
 P044,B17,T8 defenses and monitors,,include,To trust or not to trust: Attention-based Trust Management for LLM Multi-Agent Systems,2025,T1-citations,arXiv (Cornell University),19,,10.48550/arxiv.2506.02546,,Y,
 P046,B17,T8 defenses and monitors,Y,include,Enhancing Robustness of LLM-Driven Multi-Agent Systems through Randomized Smoothing,2025,T1-venue,Chinese Journal of Aeronautics,18,2507.04105,10.1016/j.cja.2025.103779,task2/papers/2507.04105.pdf,Y,

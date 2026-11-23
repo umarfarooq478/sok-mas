@@ -25,7 +25,7 @@ From the scope memo (Section 7): the codebook needs a field for **trigger eviden
 ## 2. Two things to settle before starting
 
 1. **Effort.** The plan's 45 hours assumed 120 to 180 papers (about 15 to 20 minutes each). We keep **384 included papers plus 54 maybes**, which is 2 to 3 times that. At the plan's pace this would be over 100 hours. The workable split is: I pre-code each paper from its abstract and, where a PDF exists, its threat-model, failure and evaluation sections; you check each row. Checking at about 7 minutes per paper gives about 45 hours for the 384, which matches the plan. If checking runs slower, the plan's fallback (cap at about 120) is still available, and the batch order below puts the most central work first.
-2. **No co-author (decided Nov 23).** The plan's kappa check assumed two human coders. With one, the reliability check becomes **human versus LLM agreement**: you code the double-coded sample first, without opening my row, and Cohen's kappa is computed per field between your codes and mine. The paper must report it as that, not as two-human kappa. It tells us whether the codebook can be applied the same way twice; it does not prove the codes are right. Details are in `03_codebook.md`, Section 2.
+2. **No co-author, so two independent LLM passes plus a human anchor (decided Nov 23).** Every paper is coded twice by LLM Coder A and Coder B (different model tiers, different prompts, fresh contexts, same frozen codebook). You adjudicate every disagreement and audit a random 20% of each batch. The paper reports agreement between two LLM passes plus the audit acceptance rate, and says plainly that it is not human inter-coder reliability. Conditions, limits and draft paper text: `03_coding_method.md`.
 
 ## 3. Inputs and outputs
 
@@ -36,6 +36,7 @@ From the scope memo (Section 7): the codebook needs a field for **trigger eviden
 | One list per batch | `task3/batches/<batch>.md` and `.csv` |
 | Abstracts (4 papers have none) | `task3/abstracts.json` |
 | PDFs (207 of 438 have one; the rest have no arXiv id) | `task2/papers/` |
+| How the coding is done and reported | `03_coding_method.md`, prompts in `task3/prompts/` |
 | Codebook v0 (subtask 3.0, done) | `03_codebook.md`, generated from `task3/schema.py` |
 | Coding-sheet template, blank-sheet maker, validator, tests (done) | `task3/coding/template.csv`, `task3/make_sheet.py`, `task3/validate_coding.py`, `task3/test_validator.py` |
 | Worked example row (P023, abstract only) | `task3/coding/example.csv` |
@@ -72,17 +73,17 @@ The dual-trigger test from the scope memo is in the codebook as written. The pil
 - T8 defenses and monitors: 45
 - T9 other multi-agent failure and risk: 16
 - **Batches M1 to M3 (54 maybes):** each paper gets an in-scope or out-of-scope decision first, then is coded if in scope.
-- **Double-coding sample:** 20% of each batch, picked with a fixed seed. That is 74 papers across B01 to B19, plus all 15 pilot papers, 89 in total. The kappa in the paper comes from the 74, not the pilot, because the pilot is used to fix the codebook.
+- **Human-audit sample:** a random 20% of each batch (picked with a fixed seed; 74 papers across B01 to B19) plus all 15 pilot papers, 89 in total. You check these whether or not the two LLM passes agree. You also adjudicate every paper where they disagree.
 
 ## 6. Subtasks
 
 Each subtask ends in a file, in the plan's spirit that a missed deadline still leaves a reusable result.
 
 - **3.0 Set up. Done Nov 23.** `03_codebook.md` v0 (21 fields, each with definition, values, rules and an example; a worked row for P023), the coding-sheet template, a blank-sheet maker per batch, and a validator with 21 tests. The validator passes on the empty template and on the filled example; in `--final` mode it correctly rejects the example because it still has a `TBD` and a pending review.
-- **3.1 Pilot, 15 papers.** I pre-code all 15 from the abstract and the relevant sections. You code them independently, before opening my rows. Compare, list every disagreement, fix the ambiguous field definitions, freeze **codebook v1**. *Done when:* a disagreement log exists, v1 is frozen, and no field is left ambiguous.
-- **3.2.01 to 3.2.19 Code batches B01 to B19.** For each batch I fill the sheet; you review it row by row, correct it, and flag `confidence = low` rows for a second look. *Done when:* the validator passes and every double-coded row has an independent second code.
+- **3.1 Pilot, 15 papers.** Coder A (Opus) and Coder B (Sonnet) each code all 15 independently from the abstract and the relevant PDF sections. Compare with `task3/agreement.py`, list every disagreement, you adjudicate, fix the ambiguous field definitions, freeze **codebook v1** and the prompts. *Done when:* a disagreement log exists, v1 is frozen, and no field is left ambiguous.
+- **3.2.01 to 3.2.19 Code batches B01 to B19.** For each batch, Coder A and Coder B each fill a sheet; the agreement script lists the disagreements; you adjudicate them and audit the random 20% sample. *Done when:* both sheets pass the validator, every disagreement is adjudicated, and the audit meets the stopping rule in `03_coding_method.md`.
 - **3.3.1 to 3.3.3 Resolve and code the maybes.** *Done when:* each of the 54 is marked in or out, with a reason, and the in-scope ones are coded.
-- **3.4 Reliability.** Compute Cohen's kappa between your independent codes and mine on the double-coded sample, per field (human versus LLM agreement; report it as that). Report the trigger and defense fields (6, 7, 11, 12) separately. Discuss disagreements. *Done when:* a kappa table exists, and any field below 0.7 has either been recoded or reported as weak.
+- **3.4 Reliability.** Compute agreement between Coder A and Coder B on the whole corpus, per field (Cohen's kappa for single-value fields; report it as agreement between two LLM passes), and the audit acceptance rate on the human-audit sample. Report the trigger and defense fields (6, 7, 11, 12) separately. Discuss disagreements. *Done when:* a kappa table exists, and any field below 0.7 has either been recoded or reported as weak.
 - **3.5 Weekly pattern notes.** After every five batches, a short note in `task3/notes/` on patterns seen: mechanisms studied by one community, defenses never tested against benign failures, and so on. These seed Task 6.
 - **3.6 Finalize.** Merge all sheets into `03_lit_matrix.csv`, run the completeness check, finalize `03_codebook.md`, and write the kappa result. *Done when:* every included paper has every field filled or `not reported`.
 
@@ -158,6 +159,7 @@ Weekly check each Sunday against this table. If more than a week behind, use the
 
 ## 9. Decisions
 
-1. ~~Co-author for the kappa check.~~ **Decided: no co-author.** Human versus LLM agreement (Section 2).
-2. Whether to start the pilot now or wait for Dec 7.
-3. Whether the 20-paper batch size and the theme grouping suit you, or you would rather mix themes within a batch for calibration.
+1. ~~Co-author for the kappa check.~~ **Decided: no co-author; two LLM passes plus a human audit** (Section 2 and `03_coding_method.md`).
+2. Confirm the stopping rule in `03_coding_method.md` Section 2 (review every agreed row for a field if the audit accepts under 90%).
+3. Whether to start the batches now or wait for Dec 7. (The pilot is already running with two LLM coders.)
+4. Whether the 20-paper batch size and the theme grouping suit you, or you would rather mix themes within a batch for calibration.

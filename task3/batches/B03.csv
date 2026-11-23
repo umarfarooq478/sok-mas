@@ -1,4 +1,4 @@
-pid,batch,theme,double_code,status,title,year,tier,venue,citations_openalex,arxiv,doi,pdf,has_abstract,grey
+pid,batch,theme,human_audit,status,title,year,tier,venue,citations_openalex,arxiv,doi,pdf,has_abstract,grey
 P234,B03,T1 failure attribution and debugging,,include,Who Broke the System? Failure Localization in LLM-Based Multi-Agent Systems,2026,T2,arXiv (Cornell University),6,2607.07989,10.48550/arxiv.2607.07989,task2/papers/2607.07989.pdf,Y,
 P235,B03,T1 failure attribution and debugging,,include,Who&When Pro: Can LLMs Really Attribute Failures in AI Agents?,2026,T1-citations,arXiv (Cornell University),27,,10.48550/arxiv.2607.09996,,Y,
 P237,B03,T1 failure attribution and debugging,,include,When Local Monitors Miss Compositional Harm: Diagnosing Distributed Backdoors in Multi-Agent Systems,2026,T2,,,2607.11751,,task2/papers/2607.11751.pdf,Y,

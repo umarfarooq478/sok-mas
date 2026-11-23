@@ -1,4 +1,4 @@
-pid,batch,theme,double_code,status,title,year,tier,venue,citations_openalex,arxiv,doi,pdf,has_abstract,grey
+pid,batch,theme,human_audit,status,title,year,tier,venue,citations_openalex,arxiv,doi,pdf,has_abstract,grey
 P093,B05,T2 benign error and hallucination propagation,,include,Agentic AI for Public Administration: A Multi-Agent Architecture and Controlled Fault Injection Evaluation,2026,T1-venue,Procedia Computer Science,0,,10.1016/j.procs.2026.10.246,,Y,
 P098,B05,T2 benign error and hallucination propagation,,include,Contamination Percolation in Multi-Agent LLM Systems: A Measurement Framework and Benchmark,2026,T1-venue,IEEE Access,0,,10.1109/access.2026.3717722,,Y,
 P099,B05,T2 benign error and hallucination propagation,,include,Facts Without Rules: Boundary Metadata Collapse in Multi-Agent LLM Handoffs,2026,T1-venue,Findings of the Association for Computational Linguistics: EMNLP (Findings of EMNLP),3,,10.18653/2026.findings-emnlp.422,,Y,

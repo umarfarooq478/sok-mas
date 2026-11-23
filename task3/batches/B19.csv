@@ -1,4 +1,4 @@
-pid,batch,theme,double_code,status,title,year,tier,venue,citations_openalex,arxiv,doi,pdf,has_abstract,grey
+pid,batch,theme,human_audit,status,title,year,tier,venue,citations_openalex,arxiv,doi,pdf,has_abstract,grey
 P190,B19,T9 other multi-agent failure and risk,Y,include,HARP: Measuring Harm Amplification in Multi-Agent LLM Systems,2026,T2,arXiv (Cornell University),2,2605.27489,10.48550/arxiv.2605.27489,task2/papers/2605.27489.pdf,Y,
 P191,B19,T9 other multi-agent failure and risk,,include,Trace-Level Analysis of Information Contamination in Multi-Agent Systems,2026,T1-venue,ACM Conference on AI and Agentic Systems (CAIS),5,,10.1145/3786335.3813147,,Y,
 P221,B19,T9 other multi-agent failure and risk,Y,include,When Latent Agents Lie: KV-Cache Integrity in Multi-Agent LLM Collaboration,2026,T2,arXiv (Cornell University),6,,10.48550/arxiv.2606.28958,,Y,

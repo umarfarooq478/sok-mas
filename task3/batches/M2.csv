@@ -1,4 +1,4 @@
-pid,batch,theme,double_code,status,title,year,tier,venue,citations_openalex,arxiv,doi,pdf,has_abstract,grey
+pid,batch,theme,human_audit,status,title,year,tier,venue,citations_openalex,arxiv,doi,pdf,has_abstract,grey
 Q021,M2,T1 failure attribution and debugging,,maybe,The Long-Horizon Task Mirage? Diagnosing Where and Why Agentic Systems Break,2026,T1-citations,arXiv (Cornell University),42,,10.48550/arxiv.2604.11978,,Y,
 Q022,M2,T2 benign error and hallucination propagation,,maybe,Predictive Self-Healing for Multi-Agent LLM Pipelines Using Model Predictive Control,2026,T1-venue,IEEE Conference on Technologies for Sustainability,0,,10.1109/SusTech67720.2026.11536606,,Y,
 Q023,M2,"T7 attacks: injection, jailbreak, poisoning, backdoor",,maybe,Explainable autonomous cyber defense using adversarial multi-agent reinforcement learning,2026,T1-venue,Expert Systems with Applications,7,,10.1016/j.eswa.2026.132741,,Y,

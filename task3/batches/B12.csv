@@ -1,4 +1,4 @@
-pid,batch,theme,double_code,status,title,year,tier,venue,citations_openalex,arxiv,doi,pdf,has_abstract,grey
+pid,batch,theme,human_audit,status,title,year,tier,venue,citations_openalex,arxiv,doi,pdf,has_abstract,grey
 P186,B12,"T6 protocols, authorization, trust boundaries",,include,Semantic Manipulation Attacks in Agentic AI Systems with Agent-to-Agent Communication and Model-Context-Protocol–Based Tool Invocation,2026,T1-venue,IEEE Conference on Computer Communications (INFOCOM),1,,10.1109/infocom59046.2026.11571532,,Y,
 P211,B12,"T6 protocols, authorization, trust boundaries",,include,When Language Becomes Workflow: Provenance Failures in Agentic LLM Systems,2026,T2,Zenodo (CERN European Organization for Nuclear Research),1,,10.5281/zenodo.20640424,,Y,
 P233,B12,"T6 protocols, authorization, trust boundaries",,include,Operational Reframing and Approval-Framed Delegation in Multi-Agent LLM Safety,2026,T2,,,2607.07097,,task2/papers/2607.07097.pdf,Y,

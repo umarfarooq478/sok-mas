@@ -1,4 +1,5 @@
-"""Task 3 planning: stable paper ids, themes, pilot set, batches of 20, double-coding sample. Deterministic (seeded)."""
+"""Task 3 planning: stable paper ids, themes, pilot set, batches of 20, human-audit sample. Deterministic (seeded).
+human_audit = Y marks the random 20% of each batch (and the whole pilot) that the human checks regardless of whether the two LLM passes agree."""
 import csv, json, os, random, re, collections
 rows = [r for r in csv.DictReader(open("../02_corpus.csv")) if r["status"] in ("include", "maybe")]
 ab = json.load(open("abstracts.json"))
@@ -42,18 +43,18 @@ rest = [r for r in inc if r["pid"] not in pset]
 order = sorted(rest, key=lambda r: (r["theme"], r["date"], r["title"]))
 for i, r in enumerate(order): r["batch"] = f"B{i // 20 + 1:02d}"
 for i, r in enumerate(may): r["batch"] = f"M{i // 20 + 1}"
-# double-coding sample: whole pilot, then 20% of each batch (seeded)
+# human-audit sample: whole pilot, then 20% of each batch (seeded)
 random.seed(3)
-for r in rows: r["double_code"] = ""
-for r in pilot: r["double_code"] = "Y"
+for r in rows: r["human_audit"] = ""
+for r in pilot: r["human_audit"] = "Y"
 for b in sorted({r["batch"] for r in order}):
     mem = [r for r in order if r["batch"] == b]
-    for r in random.sample(mem, max(1, round(len(mem) * 0.2))): r["double_code"] = "Y"
+    for r in random.sample(mem, max(1, round(len(mem) * 0.2))): r["human_audit"] = "Y"
 allr = pilot + order + may
 for r in allr:
     r["pdf"] = f"task2/papers/{r['arxiv']}.pdf" if r["arxiv"] and os.path.exists(f"../task2/papers/{r['arxiv']}.pdf") else ""
     r["has_abstract"] = "Y" if r["abstract"] else "N"
-cols = ["pid", "batch", "theme", "double_code", "status", "title", "year", "tier", "venue", "citations_openalex", "arxiv", "doi", "pdf", "has_abstract", "grey"]
+cols = ["pid", "batch", "theme", "human_audit", "status", "title", "year", "tier", "venue", "citations_openalex", "arxiv", "doi", "pdf", "has_abstract", "grey"]
 with open("paper_index.csv", "w", newline="", encoding="utf-8") as f:
     w = csv.DictWriter(f, cols, extrasaction="ignore"); w.writeheader(); w.writerows(allr)
 for b in sorted({r["batch"] for r in allr}):
@@ -61,9 +62,9 @@ for b in sorted({r["batch"] for r in allr}):
     with open(f"batches/{b}.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, cols, extrasaction="ignore"); w.writeheader(); w.writerows(mem)
     with open(f"batches/{b}.md", "w", encoding="utf-8") as f:
-        f.write(f"# Batch {b}: {len(mem)} papers\n\nDouble-coded (`Y`) papers are the 20% sample for the kappa check.\n\n| pid | double | theme | year | tier | title |\n|---|---|---|---|---|---|\n")
-        for r in mem: f.write(f"| {r['pid']} | {r['double_code']} | {r['theme'][:2]} | {r['year']} | {r['tier']} | {r['title'].replace('|','/')} |\n")
+        f.write(f"# Batch {b}: {len(mem)} papers\n\n`human_audit = Y` marks the random 20% audit sample the human checks whether or not the two LLM passes agree. The human also checks every paper where the two passes disagree.\n\n| pid | audit | theme | year | tier | title |\n|---|---|---|---|---|---|\n")
+        for r in mem: f.write(f"| {r['pid']} | {r['human_audit']} | {r['theme'][:2]} | {r['year']} | {r['tier']} | {r['title'].replace('|','/')} |\n")
 print(collections.Counter(r["batch"] for r in allr))
 print(collections.Counter(r["theme"] for r in inc))
-print("double-coded:", sum(r["double_code"] == "Y" for r in allr), "no pdf:", sum(not r["pdf"] for r in allr), "no abstract:", sum(r["has_abstract"] == "N" for r in allr))
+print("human-audit:", sum(r["human_audit"] == "Y" for r in allr), "no pdf:", sum(not r["pdf"] for r in allr), "no abstract:", sum(r["has_abstract"] == "N" for r in allr))
 print("pilot themes:", collections.Counter(r["theme"][:2] for r in pilot))

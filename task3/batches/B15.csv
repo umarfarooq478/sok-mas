@@ -1,4 +1,4 @@
-pid,batch,theme,double_code,status,title,year,tier,venue,citations_openalex,arxiv,doi,pdf,has_abstract,grey
+pid,batch,theme,human_audit,status,title,year,tier,venue,citations_openalex,arxiv,doi,pdf,has_abstract,grey
 P170,B15,"T7 attacks: injection, jailbreak, poisoning, backdoor",,include,Memory Poisoning Propagation Dynamics and Defense Strategy Comparison in Multi-Agent LLM Collaboration: An Empirical Study on AutoGen and LangGraph Frameworks,2026,T1-venue,Journal of Global Engineering Review,0,,,,Y,
 P182,B15,"T7 attacks: injection, jailbreak, poisoning, backdoor",,include,Adversarial robustness of LLM-based multi-agent systems for engineering problems,2026,T1-venue,Frontiers in Artificial Intelligence,3,,10.3389/frai.2026.1784484,,Y,
 P193,B15,"T7 attacks: injection, jailbreak, poisoning, backdoor",,include,Defending LLM-based Multi-Agent Systems Against Cooperative Attacks with Sentence-Level Rectification,2026,T2,arXiv (Cornell University),2,2605.28104,10.48550/arxiv.2605.28104,task2/papers/2605.28104.pdf,Y,

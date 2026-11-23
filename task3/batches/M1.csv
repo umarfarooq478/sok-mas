@@ -1,4 +1,4 @@
-pid,batch,theme,double_code,status,title,year,tier,venue,citations_openalex,arxiv,doi,pdf,has_abstract,grey
+pid,batch,theme,human_audit,status,title,year,tier,venue,citations_openalex,arxiv,doi,pdf,has_abstract,grey
 Q001,M1,T2 benign error and hallucination propagation,,maybe,Can Competition Outperform Collaboration? The Role of Misbehaving Agents,2023,T1-venue,IEEE Transactions on Automatic Control,12,,10.1109/tac.2023.3329850,,Y,
 Q002,M1,"T7 attacks: injection, jailbreak, poisoning, backdoor",,maybe,Agent vs. Agent: Automated Data Generation and Red-Teaming for Custom Agentic Workflows,2025,T1-venue,Conference on Empirical Methods in Natural Language Processing (EMNLP),6,,10.18653/v1/2025.emnlp-industry.62,,Y,
 Q003,M1,"T6 protocols, authorization, trust boundaries",,maybe,Systemic Vulnerabilities in Autonomous LLM Agents: A Comprehensive Threat Analysis and Authorization Framework,2025,T1-venue,International Journal of Innovative Research in Engineering &amp; Multidisciplinary Physical Sciences,0,,10.37082/ijirmps.v13.i1.232960,,Y,

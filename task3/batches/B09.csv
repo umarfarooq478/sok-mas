@@ -1,4 +1,4 @@
-pid,batch,theme,double_code,status,title,year,tier,venue,citations_openalex,arxiv,doi,pdf,has_abstract,grey
+pid,batch,theme,human_audit,status,title,year,tier,venue,citations_openalex,arxiv,doi,pdf,has_abstract,grey
 P303,B09,"T3 debate, consensus, sycophancy, conformity",,include,Towards Mitigating Fabricated Consensus: The Active Provenance Gate for Multi-Agent Debate Synthesis,2026,T2,arXiv (Cornell University),0,2609.31422,10.48550/arxiv.2609.31422,task2/papers/2609.31422.pdf,Y,
 P305,B09,"T3 debate, consensus, sycophancy, conformity",,include,LLMs Trust Their Own: Identity-Dependent Conformity in Multi-Agent Systems,2026,T2,arXiv (Cornell University),3,,10.48550/arxiv.2609.33495,,Y,
 P315,B09,"T3 debate, consensus, sycophancy, conformity",,include,MADBench: Benchmarking the Security of Multi-Agent Debate,2026,T2,arXiv (Cornell University),0,2609.39146,10.48550/arxiv.2609.39146,task2/papers/2609.39146.pdf,Y,

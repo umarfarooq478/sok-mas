@@ -1,4 +1,4 @@
-pid,batch,theme,double_code,status,title,year,tier,venue,citations_openalex,arxiv,doi,pdf,has_abstract,grey
+pid,batch,theme,human_audit,status,title,year,tier,venue,citations_openalex,arxiv,doi,pdf,has_abstract,grey
 P156,B02,T1 failure attribution and debugging,Y,include,"Understanding Bugs in Modern Agentic Frameworks: A Study of Symptoms, Root Causes, and Triggering Conditions",2026,T1-venue,IEEE/ACM International Conference on Automated Software Engineering (ASE),10,2604.08906,10.1145/3832783.3834378,task2/papers/2604.08906.pdf,Y,framework-bug-study
 P157,B02,T1 failure attribution and debugging,,include,DiLLS: Interactive Diagnosis of LLM-based Multi-agent Systems via Layered Summary of Agent Behaviors,2026,T1-venue,CHI Conference on Human Factors in Computing Systems,15,,10.1145/3772318.3790815,,Y,
 P160,B02,T1 failure attribution and debugging,Y,include,Towards Self-Improving Error Diagnosis in Multi-Agent Systems,2026,T1-venue,Findings of the Association for Computational Linguistics: ACL (Findings of ACL),12,2604.17658,10.18653/v1/2026.findings-acl.98,task2/papers/2604.17658.pdf,Y,

@@ -1,4 +1,4 @@
-pid,batch,theme,double_code,status,title,year,tier,venue,citations_openalex,arxiv,doi,pdf,has_abstract,grey
+pid,batch,theme,human_audit,status,title,year,tier,venue,citations_openalex,arxiv,doi,pdf,has_abstract,grey
 P332,B04,T1 failure attribution and debugging,,include,ClaimArena-LLM: Auditing Adversarial Propagation of False Causal Attributions in Multi-Agent LLM Debates,2026,T1-venue,Machine Learning and Knowledge Extraction,0,,10.3390/make8100327,,Y,
 P336,B04,T1 failure attribution and debugging,,include,Origin Attribution for Unsafe Behavior in Self-Evolving Multi-Agent Coding Systems,2026,T2,arXiv (Cornell University),0,,10.48550/arxiv.2610.17488,,Y,
 P338,B04,T1 failure attribution and debugging,,include,BLADE: Auditing Information Use for Failure Attribution in LLM Multi-Agent Systems,2026,T2,arXiv (Cornell University),0,2610.18780,10.48550/arxiv.2610.18780,task2/papers/2610.18780.pdf,Y,

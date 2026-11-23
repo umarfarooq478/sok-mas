@@ -1,4 +1,4 @@
-pid,batch,theme,double_code,status,title,year,tier,venue,citations_openalex,arxiv,doi,pdf,has_abstract,grey
+pid,batch,theme,human_audit,status,title,year,tier,venue,citations_openalex,arxiv,doi,pdf,has_abstract,grey
 P220,B10,T4 collusion and steganography,,include,Tool Use Enables Undetectable Steganography in Multi-Agent LLM Systems,2026,T1-citations,arXiv (Cornell University),12,2606.28425,10.48550/arxiv.2606.28425,task2/papers/2606.28425.pdf,Y,
 P240,B10,T4 collusion and steganography,Y,include,"ColludeBench: A pre-registered, RFC 3161-timestamped benchmark for measuring multi-agent LLM collusion",2026,T2,Zenodo (CERN European Organization for Nuclear Research),0,,10.5281/zenodo.21500261,,Y,
 P244,B10,T4 collusion and steganography,,include,Even More Deception: Objective Misalignment in Mixed-Motive LLM Multi-Agent Systems,2026,T2,arXiv (Cornell University),0,,10.48550/arxiv.2607.26120,,Y,

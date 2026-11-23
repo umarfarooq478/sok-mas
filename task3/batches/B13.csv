@@ -1,4 +1,4 @@
-pid,batch,theme,double_code,status,title,year,tier,venue,citations_openalex,arxiv,doi,pdf,has_abstract,grey
+pid,batch,theme,human_audit,status,title,year,tier,venue,citations_openalex,arxiv,doi,pdf,has_abstract,grey
 P007,B13,"T7 attacks: injection, jailbreak, poisoning, backdoor",,include,Flooding Spread of Manipulated Knowledge in LLM-Based Multi-Agent Communities,2024,T1-venue,Science China Information Sciences,111,2407.07791,10.1007/s11432-024-4663-2,task2/papers/2407.07791.pdf,Y,
 P014,B13,"T7 attacks: injection, jailbreak, poisoning, backdoor",,include,A Troublemaker with Contagious Jailbreak Makes Chaos in Honest Towns,2025,T1-venue,Proceedings of the conference - Association for Computational Linguistics. Meeting,14,,10.18653/v1/2025.acl-long.859,,Y,
 P016,B13,"T7 attacks: injection, jailbreak, poisoning, backdoor",,include,An Adversary-Resistant Multi-Agent LLM System via Credibility Scoring,2025,T1-venue,International Joint Conference on Natural Language Processing and Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics (IJCNLP-AACL),8,,10.18653/v1/2025.ijcnlp-long.90,,Y,

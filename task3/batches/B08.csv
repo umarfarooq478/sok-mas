@@ -1,4 +1,4 @@
-pid,batch,theme,double_code,status,title,year,tier,venue,citations_openalex,arxiv,doi,pdf,has_abstract,grey
+pid,batch,theme,human_audit,status,title,year,tier,venue,citations_openalex,arxiv,doi,pdf,has_abstract,grey
 P372,B08,T2 benign error and hallucination propagation,Y,include,When Does Hallucination Propagate? Reconciling Six Formalizations of Error Spread in Multi-Agent LLM Systems,2026,T2,Research Square,0,,10.21203/rs.3.rs-11536507/v1,,Y,
 P001,B08,"T3 debate, consensus, sycophancy, conformity",,include,MultiAgent Collaboration Attack: Investigating Adversarial Attacks in Large Language Model Collaborations via Debate,2024,T1-venue,Findings of the Association for Computational Linguistics: EMNLP (Findings of EMNLP),105,,10.18653/v1/2024.findings-emnlp.407,,Y,
 P017,B08,"T3 debate, consensus, sycophancy, conformity",,include,CONSENSAGENT: Towards Efficient and Effective Consensus in Multi-Agent LLM Interactions Through Sycophancy Mitigation,2025,T1-venue,Findings of the Association for Computational Linguistics: ACL (Findings of ACL),81,,10.18653/v1/2025.findings-acl.1141,,Y,

@@ -18,13 +18,14 @@ Papers have stable ids: `P001` to `P384` (included) and `Q001` to `Q054` (maybe)
 
 ## 2. Who codes what
 
-There is no co-author. Two coders are used:
+There is no co-author and no second human coder. Instead every paper is coded **twice by two independent LLM passes**, and the human anchors the result. Full reasoning, limits and the text for the paper are in `03_coding_method.md`.
 
-- **Claude** pre-codes every paper from its abstract and, where a PDF exists, from the threat-model or failure section and the evaluation. Output: `task3/coding/<batch>.claude.csv`.
-- **The human reviewer** (you) checks every row. For the **double-coded sample** (20% of each batch, and all 15 pilot papers; flagged `Y` in `paper_index.csv`) the reviewer **codes first, without opening Claude's row**, into `task3/coding/<batch>.human.csv`. Only then is Claude's row opened and the two compared.
-- The reliability number reported in the paper is therefore **human versus LLM agreement** (Cohen's kappa per field), and the paper must say so. It is not the two-human kappa the plan assumed. A limit worth stating: both coders work from the same codebook, and Claude's reading of an abstract is not independent of its reading of the same paper elsewhere. The kappa tells us whether the codebook is clear enough to be applied the same way twice; it does not prove the codes are right.
+- **Coder A (`llm-a`)** and **Coder B (`llm-b`)** each code every paper from a fresh context, with a different model, a different prompt (`task3/prompts/`), and a different reading order and burden of proof. They share the codebook, and they cannot see each other's sheets. Output: `task3/coding/<batch>.llm-a.csv` and `<batch>.llm-b.csv`.
+- Where A and B **disagree** on any field, the human decides, with both rows side by side and each coder's `evidence_note` in front of them. The decision goes in `<batch>.adjudicated.csv` (`coder = adjudicated`).
+- A random **audit sample** (20% of each batch, and the whole pilot; `human_audit = Y` in `paper_index.csv`) is checked by the human whether or not the passes agree. This is what shows whether agreement means correctness or shared error.
+- The numbers reported in the paper are: agreement between A and B per field (kappa for single-value fields), and the share of audited rows where the human accepts the agreed codes unchanged. The paper must call the first **agreement between two LLM passes**, not human inter-coder reliability.
 
-Rows Claude codes and the reviewer accepts keep `review_status = accepted`; rows the reviewer changes become `corrected`, with what changed in `review_note`; rows that need a closer look are `flagged`.
+Limits worth stating: both passes are language models from one vendor, so their errors are correlated, and a high agreement can mean shared bias. That is why the human audit exists. The agreement tells us whether the codebook is clear enough to be applied the same way twice; the audit tells us whether the codes are right.
 
 ## 3. What to read, and how to say so
 
@@ -107,9 +108,9 @@ Reading the row: the abstract describes an attack (Agent-in-the-Middle) and no b
 ## 9. Check a sheet
 
 ```
-python3 task3/make_sheet.py B01 claude     # blank sheet for a batch (human sheet: `... B01 human`, double-coded rows only)
-python3 task3/validate_coding.py task3/coding/B01.claude.csv            # draft: TBD allowed, warnings shown
-python3 task3/validate_coding.py task3/coding/B01.claude.csv --final    # final: no TBD, review_status must be accepted or corrected
+python3 task3/make_sheet.py B01 llm-a      # blank sheet for a batch (llm-b the same; `human` and `adjudicated` cover only the audit sample)
+python3 task3/validate_coding.py task3/coding/B01.llm-a.csv            # draft: TBD allowed, warnings shown
+python3 task3/validate_coding.py task3/coding/B01.llm-a.csv --final    # final: no TBD, review_status must be accepted or corrected
 python3 task3/test_validator.py                                          # 21 tests of the validator
 ```
 

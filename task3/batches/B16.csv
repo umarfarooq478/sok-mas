@@ -1,4 +1,4 @@
-pid,batch,theme,double_code,status,title,year,tier,venue,citations_openalex,arxiv,doi,pdf,has_abstract,grey
+pid,batch,theme,human_audit,status,title,year,tier,venue,citations_openalex,arxiv,doi,pdf,has_abstract,grey
 P298,B16,"T7 attacks: injection, jailbreak, poisoning, backdoor",,include,Beyond Single-Model Injection: A Threat Model and Defense Architecture for Prompt Injection in Multi-Agent Systems,2026,T2,arXiv (Cornell University),0,2609.22949,10.48550/arxiv.2609.22949,task2/papers/2609.22949.pdf,Y,
 P301,B16,"T7 attacks: injection, jailbreak, poisoning, backdoor",,include,How does Adversarial Influence Scale in Multi-Agent Systems?,2026,T2,arXiv (Cornell University),2,,10.48550/arxiv.2609.30028,,Y,
 P310,B16,"T7 attacks: injection, jailbreak, poisoning, backdoor",,include,Concealing LLM-Based Multi-Agent Topology via Phantom Structure Injection,2026,T2,,,2609.37567,,task2/papers/2609.37567.pdf,Y,

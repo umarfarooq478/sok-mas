@@ -1,4 +1,4 @@
-pid,batch,theme,double_code,status,title,year,tier,venue,citations_openalex,arxiv,doi,pdf,has_abstract,grey
+pid,batch,theme,human_audit,status,title,year,tier,venue,citations_openalex,arxiv,doi,pdf,has_abstract,grey
 P050,B01,T1 failure attribution and debugging,,include,The Multi-Agent Fault Localization System Based on Monte Carlo Tree Search Approach,2025,T1-citations,,11,2507.22800,,task2/papers/2507.22800.pdf,Y,
 P057,B01,T1 failure attribution and debugging,,include,Automatic Failure Attribution and Critical Step Prediction Method for Multi-Agent Systems Based on Causal Inference,2025,T1-citations,arXiv (Cornell University),28,,10.48550/arxiv.2509.08682,,Y,
 P058,B01,T1 failure attribution and debugging,,include,"Abduct, Act, Predict: Scaffolding Causal Inference for Automated Failure Attribution in Multi-Agent Systems",2025,T1-citations,arXiv (Cornell University),28,,10.48550/arxiv.2509.10401,,Y,

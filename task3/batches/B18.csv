@@ -1,4 +1,4 @@
-pid,batch,theme,double_code,status,title,year,tier,venue,citations_openalex,arxiv,doi,pdf,has_abstract,grey
+pid,batch,theme,human_audit,status,title,year,tier,venue,citations_openalex,arxiv,doi,pdf,has_abstract,grey
 P236,B18,T8 defenses and monitors,,include,A Continuous Alternative to Fixed-Fraction Byzantine Thresholds in Multi-Agent LLM Systems,2026,T2,Zenodo (CERN European Organization for Nuclear Research),0,,10.5281/zenodo.21341600,,Y,
 P239,B18,T8 defenses and monitors,,include,ChannelGuard: From Borrowed Safety to Application-Controlled Defenses in Multi-Agent LLMs,2026,T2,arXiv (Cornell University),2,,10.48550/arxiv.2607.19430,,Y,
 P254,B18,T8 defenses and monitors,Y,include,BRA-Audit: Budgeted Runtime Auditing for LLM Multi-Agent Systems via Cumulative-Exposure Audit-Point Placement,2026,T2,arXiv (Cornell University),1,2608.14668,10.48550/arxiv.2608.14668,task2/papers/2608.14668.pdf,Y,

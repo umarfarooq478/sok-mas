@@ -1,4 +1,4 @@
-pid,batch,theme,double_code,status,title,year,tier,venue,citations_openalex,arxiv,doi,pdf,has_abstract,grey
+pid,batch,theme,human_audit,status,title,year,tier,venue,citations_openalex,arxiv,doi,pdf,has_abstract,grey
 P270,B07,T2 benign error and hallucination propagation,,include,The Irreversibility Threshold: When Error in LLM Agent Pipelines Outruns Human Correction,2026,T2,Zenodo (CERN European Organization for Nuclear Research),0,,10.5281/zenodo.21989561,,Y,
 P272,B07,T2 benign error and hallucination propagation,Y,include,PropUQ-MAS: Propagation-Aware Uncertainty Quantification for LLM Multi-Agent Systems,2026,T1-venue,Conference on Empirical Methods in Natural Language Processing (EMNLP),3,2608.22130,10.18653/2026.emnlp-main.891,task2/papers/2608.22130.pdf,Y,
 P273,B07,T2 benign error and hallucination propagation,,include,The Illusion of Independent Quorums: Epistemic Fault Domains and Correlated Cognitive Failures in Agentic Quorums,2026,T2,arXiv (Cornell University),3,,10.48550/arxiv.2609.02925,,Y,

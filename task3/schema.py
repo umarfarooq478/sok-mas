@@ -14,7 +14,7 @@ VERSION = "v0 (draft, to be fixed by the pilot in subtask 3.1)"
 ID_COLS = ["pid", "coder"]
 TAIL_COLS = ["review_status", "review_note"]
 
-CODERS = ["claude", "human"]
+CODERS = ["llm-a", "llm-b", "adjudicated", "human"]
 REVIEW_STATUS = ["pending", "accepted", "corrected", "flagged"]
 
 # fields whose substantive values need a tagged passage in evidence_note ("<field>: ...")
