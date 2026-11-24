@@ -7,7 +7,7 @@ out = []
 w = out.append
 w(f"""# Codebook for the SoK corpus
 
-**Version:** {S.VERSION}. Prepared Nov 23, 2026 for Task 3 of the SoK plan (subtask 3.0). This is v1 candidate: the v0 pilot (15 papers, two independent LLM coders) found six ambiguities, resolved in Section 10. It freezes as v1 once the v1 pilot run is adjudicated.
+**Version:** {S.VERSION}. Prepared Nov 23, 2026 for Task 3 of the SoK plan (subtask 3.0). This is **v1, frozen Nov 24, 2026** after two pilot runs (v0 and v1, each coded by two independent LLM coders on the same 15 papers) and an adjudication of the disagreements. Changes are listed in Section 10. From here on, any change must be logged there with its reason.
 This file is generated from `task3/schema.py`; the validator reads the same schema, so the two cannot disagree. Edit the schema, then run `python3 task3/render_codebook.py`.
 
 ## 1. What a row is
@@ -122,6 +122,15 @@ python3 task3/test_validator.py                                          # 21 te
 The validator fails on: a wrong header, a blank cell, a value outside this codebook, an unknown or duplicate paper id, a broken cross-field rule (`trigger` against `trigger_evidence_level`; `defense_family = none` against `defense_evaluated_against`; `paper_type = defense` with no defense), and a missing `<field>:` segment in `evidence_note`. It warns on an `abstract-only` row marked `high`, on `TBD`, and on `evidence_type = theory-only`.
 
 ## 10. Changes
+
+### v1 candidate to v1 (after the v1 pilot run, Nov 24)
+
+The v1 pilot run did not reduce total disagreements (51 to 54), though the fields behind RQ2 and RQ3 were disputed on one paper only. Four secondary fields had got worse, so four rules were tightened. They have not been re-run on the pilot; batch B01 is their first test.
+
+1. `trace_release`: `no` only if the paper says the data are not released; `not reported` if it says nothing. Only a URL seen in the text may be written, never one from memory (both coders wrote the same Hugging Face address that the paper does not contain).
+2. `defense_family`: at most two values, main idea first, and `other:<label>` only when no listed family fits the main idea.
+3. `locus` and the other multi-value fields: primary value first; agreement is also reported on the first value.
+4. `spread`: the `not studied` value is removed; use `not reported`.
 
 ### v0 to v1 candidate (after the v0 pilot)
 

@@ -90,7 +90,15 @@ The **v1 pilot run** then has the same two models code the same 15 papers again 
 
 **v1 result (Nov 23):** the three fields that carry RQ2 and RQ3 were disputed on one paper only (P003), but the total number of disagreements did not fall (51 in v0, 54 in v1), because four secondary fields got worse (`trace_release`, `defense_family`, `locus`, `n_agents`). Four further rule fixes (v1.1) address those and have not been re-run. Table and discussion: `task3/coding/pilot_comparison.md`. Do not describe v1 as an overall improvement.
 
-## 9. Cost and effort
+## 9. Pilot adjudication (Nov 24) and what it means for the paper
+
+The 54 v1 pilot disagreements were adjudicated by **Claude, on your instruction to use my recommendations, not by a human**. Each decision has a rationale in `task3/coding/v1/disagreements.csv`; the result is `task3/coding/PILOT.adjudicated.csv`, with `review_status = pending` and a `review_note` saying so. Facts were checked against the paper text where a PDF exists. Free-text fields in that sheet are Coder A's. Codebook v1 is frozen.
+
+This is fine for the pilot, because the pilot is not used for any figure in the paper. **It would not be fine for batches B01 to B19.** If an LLM also adjudicates and audits those, then nothing in the pipeline is human, and the paper cannot say "a human adjudicated every disagreement and audited a random sample" (Section 4, condition 3, and the draft text in Section 7). Two honest options for the batches: you do the adjudication and the audit yourself, or the paper says the whole pipeline was LLM-based and drops the human claims, which weakens it considerably. Please decide before B01.
+
+The adjudication also produced one concrete example of correlated error: both coders wrote the same Hugging Face URL for the MAST dataset, and that URL is not in the paper's text. The most likely cause is that both models wrote it from shared memory. It is the kind of mistake agreement cannot catch and an audit can. Codebook v1 now forbids writing any URL not seen in the text.
+
+## 10. Cost and effort
 
 - The LLM cost doubles (two passes over 384 papers plus the 54 maybes).
 - Your time changes: instead of reviewing every row, you adjudicate disagreements and audit 20% of the rest. I cannot yet say how large that is; the pilot gives a first estimate of the disagreement rate. If the disagreement rate is high, the human time can approach the original plan's 45 hours.

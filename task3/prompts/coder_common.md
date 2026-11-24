@@ -1,4 +1,4 @@
-# Coder instructions (shared by Coder A and Coder B), prompt version v1 (for codebook v1 candidate)
+# Coder instructions (shared by Coder A and Coder B), prompt version v1 (frozen with codebook v1)
 
 You are a coder for a systematization-of-knowledge (SoK) paper on failures in LLM multi-agent systems. Your job is to code a batch of papers into a spreadsheet using a fixed codebook. Work independently and honestly.
 
@@ -19,6 +19,7 @@ You are a coder for a systematization-of-knowledge (SoK) paper on failures in LL
 - Do **not** open, list, search or read any other file in `task3/coding/` (including its `v0` folder) besides your own, and do not read git history for those files. Another coder is working on the same papers and your results must not influence each other.
 - Do not edit any file except your own sheet and your own notes file. Do not use the network.
 - `coded_from` must tell the truth about how much you read.
+- Write only facts and URLs that appear in the text you read. Never fill a URL, a number or a name from memory, even for a well-known paper or dataset.
 - Do not copy wording from this prompt into a paper's cells as if it were evidence. Evidence comes from the paper.
 
 ## What to return

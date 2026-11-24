@@ -9,7 +9,7 @@ Every coded field also accepts `not reported` (the sources read do not say) and,
 (a reviewer still has to look). `strict` fields accept neither.
 """
 
-VERSION = "v1.1 candidate (revised after the v0 and v1 pilot runs; freezes once the pilot disagreements are adjudicated)"
+VERSION = "v1 (frozen Nov 24, 2026, after the v0 and v1 pilot runs and the pilot adjudication)"
 
 ID_COLS = ["pid", "coder"]
 TAIL_COLS = ["review_status", "review_note"]
@@ -191,7 +191,8 @@ FIELDS = [
       definition="Whether the paper released failure traces or runs, and where. Task 5 depends on this.",
       rules=["`yes: <host or URL>; license: <name or unknown>` when the paper names a public place for failure traces, run logs or the labeled runs. A repository with code only does not count.",
              "`no` only when the paper says traces or data are not released. If the paper says nothing about releasing them, use `not reported`. For Task 5, only `yes` rows are candidates, so `no` and `not reported` are treated alike there; the difference is just whether the paper said it.",
-             "Never guess a license. If the paper does not name one, write `license: unknown` and let Task 5 check the host."],
+             "Never guess a license. If the paper does not name one, write `license: unknown` and let Task 5 check the host.",
+             "**Write only a URL you saw in the text you read.** Never write a URL from memory, even for a well-known dataset. If the paper says a repository exists but you cannot see the address, write `public repository named in the paper (URL to confirm in Task 5)`."],
       example="Illustration: `yes: huggingface.co/datasets/example; license: unknown`."),
  dict(name="limitation", kind="free", strict=False,
       definition="The main limit the authors state, or an obvious one.",

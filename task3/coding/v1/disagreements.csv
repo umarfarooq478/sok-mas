@@ -1,55 +1,55 @@
-pid,field,llm_a,llm_b,adjudicated,rule_proposal
-P003,system_type,decentralized,not reported,,
-P003,n_agents,3,2,,
-P119,n_agents,not reported,varies,,
-P133,n_agents,4,varies,,
-P025,mechanism_primary,orchestrator-compromise,message-corruption-or-injection,,
-P026,mechanism_primary,coordination-or-communication-failure,role-or-spec-drift,,
-P032,mechanism_primary,error-cascade,not reported,,
-P230,mechanism_primary,other:framework-api-misuse-or-incompatibility,other:framework-bug,,
-P025,mechanism_secondary,message-corruption-or-injection,orchestrator-compromise,,
-P026,mechanism_secondary,role-or-spec-drift,coordination-or-communication-failure,,
-P128,mechanism_secondary,coordination-or-communication-failure,none,,
-P267,mechanism_secondary,none,error-cascade,,
-P289,mechanism_secondary,privacy-or-information-leakage,none,,
-P003,trigger,adversarial,both,,
-P003,trigger_evidence_level,adversarial-only,both-different-locus,,
-P003,locus,message-channel,message-channel; one-agent,,
-P012,locus,environment-input; message-channel; one-agent,environment-input; message-channel,,
-P056,locus,one-agent,message-channel,,
-P119,locus,one-agent; shared-memory; tool,message-channel; tool; shared-memory,,
-P128,locus,one-agent; message-channel; environment-input,one-agent; message-channel,,
-P267,locus,one-agent; message-channel,message-channel,,
-P289,locus,message-channel,message-channel; one-agent,,
-P025,spread,not reported,cascades,,
-P026,spread,not studied,not reported,,not reported (v1.1 removed `not studied`)
-P056,spread,cascades,not reported,,
-P289,spread,not studied,not reported,,not reported (v1.1 removed `not studied`)
-P003,detection_method,output-check,none,,
-P133,detection_method,runtime-monitor,runtime-monitor; output-check,,
-P230,detection_method,trace-analysis,none,,
-P289,detection_method,other:formal-specification-analysis,none,,
-P003,defense_family,monitoring; other:paraphrasing,monitoring; input-filtering,,"v1.1: at most two families, `other:` only if no listed family fits the main idea; human to choose"
-P008,defense_family,verification-agent; input-filtering,verification-agent,,
-P012,defense_family,provenance-authorization; other:prompt-based-instruction-defense,provenance-authorization; input-filtering,,"v1.1: at most two families, `other:` only if no listed family fits the main idea; human to choose"
-P026,defense_family,verification-agent; other:prompt-role-and-topology-redesign,verification-agent,,"v1.1: at most two families, `other:` only if no listed family fits the main idea; human to choose"
-P133,defense_family,provenance-authorization; input-filtering,monitoring,,
-P267,defense_family,input-filtering; other:epistemic-status-preservation,verification-agent,,"v1.1: at most two families, `other:` only if no listed family fits the main idea; human to choose"
-P003,defense_evaluated_against,adversarial,formal-only,,
-P003,trace_release,not reported,no,,not reported unless the paper states data are not released (v1.1 rule); check the coder note
-P008,trace_release,not reported,no,,not reported unless the paper states data are not released (v1.1 rule); check the coder note
-P026,trace_release,yes: huggingface.co/datasets/mcemri/MAST-Data; github.com/multi-agent-systems-failure-taxonomy/MAST; license: unknown,yes: huggingface.co/datasets/mcemri/MAST-Data; license: unknown,,
-P032,trace_release,yes: github.com/mingyin1/Agents_Failure_Attribution; license: unknown,yes: public repository named in the paper (URL not visible in extracted text); license: unknown,,
-P080,trace_release,not reported,no,,not reported unless the paper states data are not released (v1.1 rule); check the coder note
-P119,trace_release,not reported,no,,not reported unless the paper states data are not released (v1.1 rule); check the coder note
-P133,trace_release,not reported,no,,not reported unless the paper states data are not released (v1.1 rule); check the coder note
-P003,paper_type,benchmark,mixed,,
-P008,paper_type,failure-study,mixed,,
-P026,evidence_type,trace-analysis,trace-analysis; experiment,,
-P032,evidence_type,trace-analysis,trace-analysis; experiment,,
-P012,coded_from,full-text,abstract-plus-sections,,
-P248,coded_from,full-text,abstract-plus-sections,,
-P025,confidence,high,medium,,
-P230,confidence,medium,low,,
-P248,confidence,medium,low,,
-P289,confidence,high,low,,
+pid,field,llm_a,llm_b,adjudicated,rationale,rule_proposal
+P003,system_type,decentralized,not reported,decentralized,"The paper states a decentralised setting (""DecAI"") in Section 4.",
+P003,n_agents,3,2,varies,Several scenarios with different agent counts; neither 2 nor 3 verified as the main one.,
+P119,n_agents,not reported,varies,varies,Text reports scaling to 20 and 50 agents; main count not verified in the extracted text.,
+P133,n_agents,4,varies,varies,Hub and other topologies are studied; a single count (4) was not verified in the text.,
+P025,mechanism_primary,orchestrator-compromise,message-corruption-or-injection,orchestrator-compromise,"Abstract: adversarial content hijacks control flow so the orchestrator invokes unsafe agents; message corruption is the vector, kept as secondary.",
+P026,mechanism_primary,coordination-or-communication-failure,role-or-spec-drift,coordination-or-communication-failure,Broad taxonomy; inter-agent misalignment is its central category. Role/specification issues kept as secondary.,
+P032,mechanism_primary,error-cascade,not reported,error-cascade,Attribution of the decisive error step in a failed run; the evidence covers error propagation most.,
+P230,mechanism_primary,other:framework-api-misuse-or-incompatibility,other:framework-bug,other:framework-bug,Simplest label for Task 4 grouping; the more specific label is not needed.,
+P025,mechanism_secondary,message-corruption-or-injection,orchestrator-compromise,message-corruption-or-injection,Follows row 4.,
+P026,mechanism_secondary,role-or-spec-drift,coordination-or-communication-failure,role-or-spec-drift,Follows row 5.,
+P128,mechanism_secondary,coordination-or-communication-failure,none,none,Rule: secondary only if substantial; the paper's fault taxonomy is the main thing.,
+P267,mechanism_secondary,none,error-cascade,none,Abstract-only row; the abstract gives no separate weight to a second mechanism.,
+P289,mechanism_secondary,privacy-or-information-leakage,none,none,No separate weight for leakage in what was read; paper is excluded from the matrix anyway.,
+P003,trigger,adversarial,both,adversarial,"Instructed collusion is the evidence; the emergent insider-trading case is a single qualitative anecdote, not counted (codebook hard case).",
+P003,trigger_evidence_level,adversarial-only,both-different-locus,adversarial-only,Follows row 13.,
+P003,locus,message-channel,message-channel; one-agent,message-channel,Collusion happens through messages; single-model capability tests are not a separate locus.,
+P012,locus,environment-input; message-channel; one-agent,environment-input; message-channel,environment-input; message-channel,Attack enters through external content and spreads by messages; one-agent not a separate locus.,
+P056,locus,one-agent,message-channel,message-channel; one-agent,Abstract: agents shift in response to peer reasoning; both the exchange and the agent's own conformity matter; primary first.,
+P119,locus,one-agent; shared-memory; tool,message-channel; tool; shared-memory,one-agent; shared-memory; tool,"Attacks start in a compromised agent via prompt, memory or tool (PI, MA, TA); propagation by messages is spread, not locus.",
+P128,locus,one-agent; message-channel; environment-input,one-agent; message-channel,one-agent; message-channel,Abstract names intra-agent cognitive errors and inter-agent coordination faults; an environment locus was not verified.,
+P267,locus,one-agent; message-channel,message-channel,message-channel; one-agent,Handoff boundary is the unit of analysis (message channel); Type I hallucination originates in the sending agent.,
+P289,locus,message-channel,message-channel; one-agent,message-channel,Protocol-level analysis of agent messages.,
+P025,spread,not reported,cascades,not reported,"Abstract states hijack and communication compromise, not how the failure moves between agents; no measure verified.",
+P026,spread,not studied,not reported,not reported,v1.1 removed `not studied`.,not reported (v1.1 removed `not studied`)
+P056,spread,cascades,not reported,not reported,"Abstract-only; abstract describes accuracy loss over rounds, not movement of a failure between agents.",
+P289,spread,not studied,not reported,not reported,v1.1 removed `not studied`.,not reported (v1.1 removed `not studied`)
+P003,detection_method,output-check,none,output-check,The overseer that checks conversations is a detection mechanism the paper evaluates.,
+P133,detection_method,runtime-monitor,runtime-monitor; output-check,runtime-monitor,Governance layer watches propagation at run time; main method first.,
+P230,detection_method,trace-analysis,none,none,"Analyses bug reports, not run traces; proposes no detection tool.",
+P289,detection_method,other:formal-specification-analysis,none,none,"Formal analysis of a spec is the study's method, not a detection tool; avoids a new `other:` label.",
+P003,defense_family,monitoring; other:paraphrasing,monitoring; input-filtering,monitoring; input-filtering,Overseer is the main idea; paraphrasing rewrites messages (input-filtering); no `other:` needed (v1.1).,"v1.1: at most two families, `other:` only if no listed family fits the main idea; human to choose"
+P008,defense_family,verification-agent; input-filtering,verification-agent,verification-agent,Challenger and inspector are both reviewing agents; no separate input filter.,
+P012,defense_family,provenance-authorization; other:prompt-based-instruction-defense,provenance-authorization; input-filtering,provenance-authorization; input-filtering,LLM Tagging marks message origin; marking and delimiting baselines are tested input defenses.,"v1.1: at most two families, `other:` only if no listed family fits the main idea; human to choose"
+P026,defense_family,verification-agent; other:prompt-role-and-topology-redesign,verification-agent,verification-agent,Case-study fixes include a verification step; `other:` not used when a family fits (v1.1).,"v1.1: at most two families, `other:` only if no listed family fits the main idea; human to choose"
+P133,defense_family,provenance-authorization; input-filtering,monitoring,provenance-authorization; monitoring,Abstract: genealogy-graph-based governance layer with atomic propagation control = provenance tracking plus intervention.,
+P267,defense_family,input-filtering; other:epistemic-status-preservation,verification-agent,verification-agent,Abstract: Handoff Verification Layer with factual-consistency checking.,"v1.1: at most two families, `other:` only if no listed family fits the main idea; human to choose"
+P003,defense_evaluated_against,adversarial,formal-only,adversarial,Monitoring was tested in the group evaluations; paraphrasing and parameter optimisation are theoretical and not the main defense.,
+P003,trace_release,not reported,no,not reported,v1.1: paper does not say traces are withheld; only an open evaluation framework is mentioned.,not reported unless the paper states data are not released (v1.1 rule); check the coder note
+P008,trace_release,not reported,no,not reported,Code and data link exists but the text does not say the data are failure traces; Task 5 should check the repository.,not reported unless the paper states data are not released (v1.1 rule); check the coder note
+P026,trace_release,yes: huggingface.co/datasets/mcemri/MAST-Data; github.com/multi-agent-systems-failure-taxonomy/MAST; license: unknown,yes: huggingface.co/datasets/mcemri/MAST-Data; license: unknown,yes: github.com/multi-agent-systems-failure-taxonomy/MAST (dataset MAST-Data); license: unknown,"Release of MAST-Data stated; GitHub URL found in the paper text. The Hugging Face URL both coders gave was NOT found in the extracted text, so it is not used.",
+P032,trace_release,yes: github.com/mingyin1/Agents_Failure_Attribution; license: unknown,yes: public repository named in the paper (URL not visible in extracted text); license: unknown,yes: public repository named in the paper (URL to confirm in Task 5); license: unknown,Paper says dataset is in a public repository; the specific URL one coder gave could not be confirmed in the text.,
+P080,trace_release,not reported,no,not reported,Code link only; no trace release stated.,not reported unless the paper states data are not released (v1.1 rule); check the coder note
+P119,trace_release,not reported,no,not reported,Code link only; no trace release stated.,not reported unless the paper states data are not released (v1.1 rule); check the coder note
+P133,trace_release,not reported,no,not reported,Code and data link; text does not say the data are failure traces; Task 5 should check the repository.,not reported unless the paper states data are not released (v1.1 rule); check the coder note
+P003,paper_type,benchmark,mixed,mixed,"Formal framework, evaluation framework and empirical findings in roughly equal parts.",
+P008,paper_type,failure-study,mixed,mixed,Study of faulty agents plus two fault-injection methods plus two defenses.,
+P026,evidence_type,trace-analysis,trace-analysis; experiment,trace-analysis; experiment,Traces analysed and intervention experiments run: union.,
+P032,evidence_type,trace-analysis,trace-analysis; experiment,trace-analysis; experiment,Failure logs analysed and methods evaluated: union.,
+P012,coded_from,full-text,abstract-plus-sections,full-text,Coder A's notes say the paper was read in full.,
+P248,coded_from,full-text,abstract-plus-sections,full-text,Coder A's notes say the paper was read in full.,
+P025,confidence,high,medium,medium,Lower of the two.,
+P230,confidence,medium,low,low,Lower of the two.,
+P248,confidence,medium,low,low,Lower of the two.,
+P289,confidence,high,low,low,Lower of the two.,
